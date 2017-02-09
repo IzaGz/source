@@ -1,0 +1,44 @@
+<!DOCTYPE html PUBLIC '-//W3C//DTD XHTML 1.0 Transitional//EN' 'http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd'>
+<html xmlns='http://www.w3.org/1999/xhtml'>
+<head>
+<title>profile</title>
+<meta name='robots' content='noindex,nofollow' />
+<meta name='generator' content='GLOBAL-6.5.2' />
+<meta http-equiv='Content-Style-Type' content='text/css' />
+<link rel='stylesheet' type='text/css' href='../style.css' />
+</head>
+<body>
+<pre>
+<span class='curline'><a href='../S/lib--widget--dialog.c.html#L183'>profile</a>           183 lib/widget/dialog.c     char *profile;</span>
+<span class='curline'><a href='../S/lib--widget--dialog.c.html#L189'>profile</a>           189 lib/widget/dialog.c     profile = mc_config_get_full_path (MC_HISTORY_FILE);</span>
+<span class='curline'><a href='../S/lib--widget--dialog.c.html#L190'>profile</a>           190 lib/widget/dialog.c     event_data.cfg = mc_config_init (profile, TRUE);</span>
+<span class='curline'><a href='../S/lib--widget--dialog.c.html#L197'>profile</a>           197 lib/widget/dialog.c     g_free (profile);</span>
+<span class='curline'><a href='../S/lib--widget--dialog.c.html#L1229'>profile</a>          1229 lib/widget/dialog.c     char *profile;</span>
+<span class='curline'><a href='../S/lib--widget--dialog.c.html#L1235'>profile</a>          1235 lib/widget/dialog.c     profile = mc_config_get_full_path (MC_HISTORY_FILE);</span>
+<span class='curline'><a href='../S/lib--widget--dialog.c.html#L1236'>profile</a>          1236 lib/widget/dialog.c     i = open (profile, O_CREAT | O_EXCL, S_IRUSR | S_IWUSR);</span>
+<span class='curline'><a href='../S/lib--widget--dialog.c.html#L1241'>profile</a>          1241 lib/widget/dialog.c     if (chmod (profile, S_IRUSR | S_IWUSR) != -1 || errno == ENOENT)</span>
+<span class='curline'><a href='../S/lib--widget--dialog.c.html#L1245'>profile</a>          1245 lib/widget/dialog.c         event_data.cfg = mc_config_init (profile, FALSE);</span>
+<span class='curline'><a href='../S/lib--widget--dialog.c.html#L1255'>profile</a>          1255 lib/widget/dialog.c     g_free (profile);</span>
+<span class='curline'><a href='../S/lib--widget--history.c.html#L143'>profile</a>           143 lib/widget/history.c     char *profile;</span>
+<span class='curline'><a href='../S/lib--widget--history.c.html#L151'>profile</a>           151 lib/widget/history.c     profile = mc_config_get_full_path (MC_HISTORY_FILE);</span>
+<span class='curline'><a href='../S/lib--widget--history.c.html#L152'>profile</a>           152 lib/widget/history.c     cfg = mc_config_init (profile, TRUE);</span>
+<span class='curline'><a href='../S/lib--widget--history.c.html#L157'>profile</a>           157 lib/widget/history.c     g_free (profile);</span>
+<span class='curline'><a href='../S/src--setup.c.html#L528'>profile</a>           528 src/setup.c    setup__move_panels_config_into_separate_file (const char *profile)</span>
+<span class='curline'><a href='../S/src--setup.c.html#L533'>profile</a>           533 src/setup.c        if (!exist_file (profile))</span>
+<span class='curline'><a href='../S/src--setup.c.html#L536'>profile</a>           536 src/setup.c        tmp_cfg = mc_config_init (profile, FALSE);</span>
+<span class='curline'><a href='../S/src--setup.c.html#L555'>profile</a>           555 src/setup.c        tmp_cfg = mc_config_init (profile, FALSE);</span>
+<span class='curline'><a href='../S/src--setup.c.html#L1035'>profile</a>          1035 src/setup.c            char *profile;</span>
+<span class='curline'><a href='../S/src--setup.c.html#L1037'>profile</a>          1037 src/setup.c            profile = mc_config_get_full_path (MC_CONFIG_FILE);</span>
+<span class='curline'><a href='../S/src--setup.c.html#L1038'>profile</a>          1038 src/setup.c            if (!exist_file (profile))</span>
+<span class='curline'><a href='../S/src--setup.c.html#L1045'>profile</a>          1045 src/setup.c                    g_free (profile);</span>
+<span class='curline'><a href='../S/src--setup.c.html#L1046'>profile</a>          1046 src/setup.c                    profile = inifile;</span>
+<span class='curline'><a href='../S/src--setup.c.html#L1056'>profile</a>          1056 src/setup.c                        g_free (profile);</span>
+<span class='curline'><a href='../S/src--setup.c.html#L1057'>profile</a>          1057 src/setup.c                        profile = inifile;</span>
+<span class='curline'><a href='../S/src--setup.c.html#L1062'>profile</a>          1062 src/setup.c            profile_name = profile;</span>
+<span class='curline'><a href='../S/src--setup.c.html#L1073'>profile</a>          1073 src/setup.c        const char *profile;</span>
+<span class='curline'><a href='../S/src--setup.c.html#L1082'>profile</a>          1082 src/setup.c        profile = setup_init ();</span>
+<span class='curline'><a href='../S/src--setup.c.html#L1097'>profile</a>          1097 src/setup.c        mc_global.main_config = mc_config_init (profile, FALSE);</span>
+<span class='curline'><a href='../S/src--setup.c.html#L1100'>profile</a>          1100 src/setup.c            setup__move_panels_config_into_separate_file (profile);</span>
+</pre>
+</body>
+</html>

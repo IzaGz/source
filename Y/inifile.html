@@ -1,0 +1,23 @@
+<!DOCTYPE html PUBLIC '-//W3C//DTD XHTML 1.0 Transitional//EN' 'http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd'>
+<html xmlns='http://www.w3.org/1999/xhtml'>
+<head>
+<title>inifile</title>
+<meta name='robots' content='noindex,nofollow' />
+<meta name='generator' content='GLOBAL-6.5.2' />
+<meta http-equiv='Content-Style-Type' content='text/css' />
+<link rel='stylesheet' type='text/css' href='../style.css' />
+</head>
+<body>
+<pre>
+<span class='curline'><a href='../S/src--setup.c.html#L1040'>inifile</a>          1040 src/setup.c                char *inifile;</span>
+<span class='curline'><a href='../S/src--setup.c.html#L1042'>inifile</a>          1042 src/setup.c                inifile = mc_build_filename (mc_global.sysconfig_dir, "mc.ini", (char *) NULL);</span>
+<span class='curline'><a href='../S/src--setup.c.html#L1043'>inifile</a>          1043 src/setup.c                if (exist_file (inifile))</span>
+<span class='curline'><a href='../S/src--setup.c.html#L1046'>inifile</a>          1046 src/setup.c                    profile = inifile;</span>
+<span class='curline'><a href='../S/src--setup.c.html#L1050'>inifile</a>          1050 src/setup.c                    g_free (inifile);</span>
+<span class='curline'><a href='../S/src--setup.c.html#L1051'>inifile</a>          1051 src/setup.c                    inifile = mc_build_filename (mc_global.share_data_dir, "mc.ini", (char *) NULL);</span>
+<span class='curline'><a href='../S/src--setup.c.html#L1052'>inifile</a>          1052 src/setup.c                    if (!exist_file (inifile))</span>
+<span class='curline'><a href='../S/src--setup.c.html#L1053'>inifile</a>          1053 src/setup.c                        g_free (inifile);</span>
+<span class='curline'><a href='../S/src--setup.c.html#L1057'>inifile</a>          1057 src/setup.c                        profile = inifile;</span>
+</pre>
+</body>
+</html>

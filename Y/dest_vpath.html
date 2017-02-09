@@ -1,0 +1,37 @@
+<!DOCTYPE html PUBLIC '-//W3C//DTD XHTML 1.0 Transitional//EN' 'http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd'>
+<html xmlns='http://www.w3.org/1999/xhtml'>
+<head>
+<title>dest_vpath</title>
+<meta name='robots' content='noindex,nofollow' />
+<meta name='generator' content='GLOBAL-6.5.2' />
+<meta http-equiv='Content-Style-Type' content='text/css' />
+<link rel='stylesheet' type='text/css' href='../style.css' />
+</head>
+<body>
+<pre>
+<span class='curline'><a href='../S/src--filemanager--cmd.c.html#L354'>dest_vpath</a>        354 src/filemanager/cmd.c     vfs_path_t *fname_vpath, *dest_vpath = NULL;</span>
+<span class='curline'><a href='../S/src--filemanager--cmd.c.html#L365'>dest_vpath</a>        365 src/filemanager/cmd.c         dest_vpath = vfs_path_from_str (dest);</span>
+<span class='curline'><a href='../S/src--filemanager--cmd.c.html#L366'>dest_vpath</a>        366 src/filemanager/cmd.c         if (-1 == mc_link (fname_vpath, dest_vpath))</span>
+<span class='curline'><a href='../S/src--filemanager--cmd.c.html#L400'>dest_vpath</a>        400 src/filemanager/cmd.c         dest_vpath = vfs_path_from_str_flags (dest, VPF_NO_CANON);</span>
+<span class='curline'><a href='../S/src--filemanager--cmd.c.html#L403'>dest_vpath</a>        403 src/filemanager/cmd.c         if (mc_symlink (dest_vpath, s) == -1)</span>
+<span class='curline'><a href='../S/src--filemanager--cmd.c.html#L413'>dest_vpath</a>        413 src/filemanager/cmd.c     vfs_path_free (dest_vpath);</span>
+<span class='curline'><a href='../S/src--filemanager--cmd.c.html#L1305'>dest_vpath</a>       1305 src/filemanager/cmd.c                     vfs_path_t *dest_vpath;</span>
+<span class='curline'><a href='../S/src--filemanager--cmd.c.html#L1307'>dest_vpath</a>       1307 src/filemanager/cmd.c                     dest_vpath = vfs_path_from_str_flags (dest, VPF_NO_CANON);</span>
+<span class='curline'><a href='../S/src--filemanager--cmd.c.html#L1308'>dest_vpath</a>       1308 src/filemanager/cmd.c                     if (mc_symlink (dest_vpath, p_vpath) == -1)</span>
+<span class='curline'><a href='../S/src--filemanager--cmd.c.html#L1311'>dest_vpath</a>       1311 src/filemanager/cmd.c                     vfs_path_free (dest_vpath);</span>
+<span class='curline'><a href='../S/src--filemanager--file.c.html#L2624'>dest_vpath</a>       2624 src/filemanager/file.c     vfs_path_t *dest_vpath = NULL;</span>
+<span class='curline'><a href='../S/src--filemanager--file.c.html#L2751'>dest_vpath</a>       2751 src/filemanager/file.c         dest_vpath = vfs_path_from_str (dest);</span>
+<span class='curline'><a href='../S/src--filemanager--file.c.html#L2805'>dest_vpath</a>       2805 src/filemanager/file.c             mc_setctl (dest_vpath, VFS_SETCTL_FORGET, NULL);</span>
+<span class='curline'><a href='../S/src--filemanager--file.c.html#L2806'>dest_vpath</a>       2806 src/filemanager/file.c             vfs_path_free (dest_vpath);</span>
+<span class='curline'><a href='../S/src--filemanager--file.c.html#L2830'>dest_vpath</a>       2830 src/filemanager/file.c         &amp;&amp; (mc_setctl (dest_vpath, VFS_SETCTL_STALE_DATA, GUINT_TO_POINTER (1)) != 0))</span>
+<span class='curline'><a href='../S/src--filemanager--file.c.html#L2900'>dest_vpath</a>       2900 src/filemanager/file.c                     vfs_path_free (dest_vpath);</span>
+<span class='curline'><a href='../S/src--filemanager--file.c.html#L2902'>dest_vpath</a>       2902 src/filemanager/file.c                     dest_vpath = vfs_path_from_str (dest);</span>
+<span class='curline'><a href='../S/src--filemanager--file.c.html#L2951'>dest_vpath</a>       2951 src/filemanager/file.c             dst_result = mc_stat (dest_vpath, &amp;dst_stat);</span>
+<span class='curline'><a href='../S/src--filemanager--file.c.html#L3100'>dest_vpath</a>       3100 src/filemanager/file.c     vfs_path_free (dest_vpath);</span>
+<span class='curline'><a href='../S/src--filemanager--tree.c.html#L748'>dest_vpath</a>        748 src/filemanager/tree.c     vfs_path_t *dest_vpath = NULL;</span>
+<span class='curline'><a href='../S/src--filemanager--tree.c.html#L762'>dest_vpath</a>        762 src/filemanager/tree.c     dest_vpath = vfs_path_from_str (dest);</span>
+<span class='curline'><a href='../S/src--filemanager--tree.c.html#L764'>dest_vpath</a>        764 src/filemanager/tree.c     if (mc_stat (dest_vpath, &amp;buf))</span>
+<span class='curline'><a href='../S/src--filemanager--tree.c.html#L785'>dest_vpath</a>        785 src/filemanager/tree.c     vfs_path_free (dest_vpath);</span>
+</pre>
+</body>
+</html>

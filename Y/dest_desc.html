@@ -1,0 +1,23 @@
+<!DOCTYPE html PUBLIC '-//W3C//DTD XHTML 1.0 Transitional//EN' 'http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd'>
+<html xmlns='http://www.w3.org/1999/xhtml'>
+<head>
+<title>dest_desc</title>
+<meta name='robots' content='noindex,nofollow' />
+<meta name='generator' content='GLOBAL-6.5.2' />
+<meta http-equiv='Content-Style-Type' content='text/css' />
+<link rel='stylesheet' type='text/css' href='../style.css' />
+</head>
+<body>
+<pre>
+<span class='curline'><a href='../S/lib--vfs--vfs.h.html#L288'>dest_desc</a>         288 lib/vfs/vfs.h  int vfs_preallocate (int dest_desc, off_t src_fsize, off_t dest_fsize);</span>
+<span class='curline'><a href='../S/src--filemanager--file.c.html#L1498'>dest_desc</a>        1498 src/filemanager/file.c     int src_desc, dest_desc = -1;</span>
+<span class='curline'><a href='../S/src--filemanager--file.c.html#L1718'>dest_desc</a>        1718 src/filemanager/file.c     while ((dest_desc = mc_open (dst_vpath, open_flags, src_mode)) &lt; 0)</span>
+<span class='curline'><a href='../S/src--filemanager--file.c.html#L1742'>dest_desc</a>        1742 src/filemanager/file.c     while (mc_fstat (dest_desc, &amp;dst_stat) != 0)</span>
+<span class='curline'><a href='../S/src--filemanager--file.c.html#L1758'>dest_desc</a>        1758 src/filemanager/file.c     while (vfs_preallocate (dest_desc, file_size, appending ? dst_stat.st_size : 0) != 0)</span>
+<span class='curline'><a href='../S/src--filemanager--file.c.html#L1782'>dest_desc</a>        1782 src/filemanager/file.c             mc_close (dest_desc);</span>
+<span class='curline'><a href='../S/src--filemanager--file.c.html#L1783'>dest_desc</a>        1783 src/filemanager/file.c             dest_desc = -1;</span>
+<span class='curline'><a href='../S/src--filemanager--file.c.html#L1852'>dest_desc</a>        1852 src/filemanager/file.c                 while ((n_written = mc_write (dest_desc, t, (size_t) n_read)) &lt; n_read)</span>
+<span class='curline'><a href='../S/src--filemanager--file.c.html#L1952'>dest_desc</a>        1952 src/filemanager/file.c     while (dest_desc != -1 &amp;&amp; mc_close (dest_desc) &lt; 0 &amp;&amp; !ctx-&gt;skip_all)</span>
+</pre>
+</body>
+</html>

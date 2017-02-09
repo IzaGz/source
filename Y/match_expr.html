@@ -1,0 +1,37 @@
+<!DOCTYPE html PUBLIC '-//W3C//DTD XHTML 1.0 Transitional//EN' 'http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd'>
+<html xmlns='http://www.w3.org/1999/xhtml'>
+<head>
+<title>match_expr</title>
+<meta name='robots' content='noindex,nofollow' />
+<meta name='generator' content='GLOBAL-6.5.2' />
+<meta http-equiv='Content-Style-Type' content='text/css' />
+<link rel='stylesheet' type='text/css' href='../style.css' />
+</head>
+<body>
+<pre>
+<span class='curline'><a href='../S/src--editor--editbuffer.c.html#L405'>match_expr</a>        405 src/editor/editbuffer.c     GString *match_expr;</span>
+<span class='curline'><a href='../S/src--editor--editbuffer.c.html#L417'>match_expr</a>        417 src/editor/editbuffer.c     match_expr = g_string_sized_new (16);</span>
+<span class='curline'><a href='../S/src--editor--editbuffer.c.html#L421'>match_expr</a>        421 src/editor/editbuffer.c         c1 = edit_buffer_get_byte (buf, word_start + match_expr-&gt;len);</span>
+<span class='curline'><a href='../S/src--editor--editbuffer.c.html#L422'>match_expr</a>        422 src/editor/editbuffer.c         c2 = edit_buffer_get_byte (buf, word_start + match_expr-&gt;len + 1);</span>
+<span class='curline'><a href='../S/src--editor--editbuffer.c.html#L423'>match_expr</a>        423 src/editor/editbuffer.c         g_string_append_c (match_expr, c1);</span>
+<span class='curline'><a href='../S/src--editor--editbuffer.c.html#L430'>match_expr</a>        430 src/editor/editbuffer.c     return match_expr;</span>
+<span class='curline'><a href='../S/src--editor--editcmd.c.html#L1213'>match_expr</a>       1213 src/editor/editcmd.c                           char *match_expr, GString ** compl, gsize * num)</span>
+<span class='curline'><a href='../S/src--editor--editcmd.c.html#L1227'>match_expr</a>       1227 src/editor/editcmd.c     srch = mc_search_new (match_expr, cp_source);</span>
+<span class='curline'><a href='../S/src--editor--editcmd.c.html#L1229'>match_expr</a>       1229 src/editor/editcmd.c     srch = mc_search_new (match_expr, NULL);</span>
+<span class='curline'><a href='../S/src--editor--editcmd.c.html#L3328'>match_expr</a>       3328 src/editor/editcmd.c     GString *match_expr;</span>
+<span class='curline'><a href='../S/src--editor--editcmd.c.html#L3337'>match_expr</a>       3337 src/editor/editcmd.c     match_expr = g_string_new ("(^|\\s+|\\b)");</span>
+<span class='curline'><a href='../S/src--editor--editcmd.c.html#L3339'>match_expr</a>       3339 src/editor/editcmd.c         g_string_append_c (match_expr, edit_buffer_get_byte (&amp;edit-&gt;buffer, word_start + i));</span>
+<span class='curline'><a href='../S/src--editor--editcmd.c.html#L3340'>match_expr</a>       3340 src/editor/editcmd.c     g_string_append (match_expr,</span>
+<span class='curline'><a href='../S/src--editor--editcmd.c.html#L3346'>match_expr</a>       3346 src/editor/editcmd.c         edit_collect_completions (edit, word_start, word_len, match_expr-&gt;str, (GString **) &amp; compl,</span>
+<span class='curline'><a href='../S/src--editor--editcmd.c.html#L3376'>match_expr</a>       3376 src/editor/editcmd.c     g_string_free (match_expr, TRUE);</span>
+<span class='curline'><a href='../S/src--editor--editcmd.c.html#L3499'>match_expr</a>       3499 src/editor/editcmd.c     GString *match_expr;</span>
+<span class='curline'><a href='../S/src--editor--editcmd.c.html#L3516'>match_expr</a>       3516 src/editor/editcmd.c     match_expr = g_string_sized_new (word_len);</span>
+<span class='curline'><a href='../S/src--editor--editcmd.c.html#L3518'>match_expr</a>       3518 src/editor/editcmd.c         g_string_append_c (match_expr, edit_buffer_get_byte (&amp;edit-&gt;buffer, word_start + i));</span>
+<span class='curline'><a href='../S/src--editor--editcmd.c.html#L3540'>match_expr</a>       3540 src/editor/editcmd.c             etags_set_definition_hash (tagfile, path, match_expr-&gt;str, (etags_hash_t *) &amp; def_hash);</span>
+<span class='curline'><a href='../S/src--editor--editcmd.c.html#L3549'>match_expr</a>       3549 src/editor/editcmd.c         editcmd_dialog_select_definition_show (edit, match_expr-&gt;str, max_len, word_len,</span>
+<span class='curline'><a href='../S/src--editor--editcmd.c.html#L3552'>match_expr</a>       3552 src/editor/editcmd.c     g_string_free (match_expr, TRUE);</span>
+<span class='curline'><a href='../S/src--editor--editcmd_dialogs.c.html#L414'>match_expr</a>        414 src/editor/editcmd_dialogs.c editcmd_dialog_select_definition_show (WEdit * edit, char *match_expr, int max_len, int word_len,</span>
+<span class='curline'><a href='../S/src--editor--editcmd_dialogs.c.html#L450'>match_expr</a>        450 src/editor/editcmd_dialogs.c                           dialog_colors, NULL, NULL, "[Definitions]", match_expr);</span>
+</pre>
+</body>
+</html>

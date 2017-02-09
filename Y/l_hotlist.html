@@ -1,0 +1,42 @@
+<!DOCTYPE html PUBLIC '-//W3C//DTD XHTML 1.0 Transitional//EN' 'http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd'>
+<html xmlns='http://www.w3.org/1999/xhtml'>
+<head>
+<title>l_hotlist</title>
+<meta name='robots' content='noindex,nofollow' />
+<meta name='generator' content='GLOBAL-6.5.2' />
+<meta http-equiv='Content-Style-Type' content='text/css' />
+<link rel='stylesheet' type='text/css' href='../style.css' />
+</head>
+<body>
+<pre>
+<span class='curline'><a href='../S/src--filemanager--hotlist.c.html#L163'>l_hotlist</a>         163 src/filemanager/hotlist.c static WListbox *l_hotlist, *l_movelist;</span>
+<span class='curline'><a href='../S/src--filemanager--hotlist.c.html#L237'>l_hotlist</a>         237 src/filemanager/hotlist.c     WListbox *list = hotlist_state.moving ? l_movelist : l_hotlist;</span>
+<span class='curline'><a href='../S/src--filemanager--hotlist.c.html#L327'>l_hotlist</a>         327 src/filemanager/hotlist.c     listbox_add_item (l_hotlist, LISTBOX_APPEND_AT_END, 0, path, NULL, FALSE);</span>
+<span class='curline'><a href='../S/src--filemanager--hotlist.c.html#L346'>l_hotlist</a>         346 src/filemanager/hotlist.c             if (listbox_is_empty (l_hotlist))</span>
+<span class='curline'><a href='../S/src--filemanager--hotlist.c.html#L349'>l_hotlist</a>         349 src/filemanager/hotlist.c             listbox_get_current (l_hotlist, NULL, (void **) &amp;item);</span>
+<span class='curline'><a href='../S/src--filemanager--hotlist.c.html#L364'>l_hotlist</a>         364 src/filemanager/hotlist.c             listbox_remove_current (l_hotlist);</span>
+<span class='curline'><a href='../S/src--filemanager--hotlist.c.html#L401'>l_hotlist</a>         401 src/filemanager/hotlist.c             listbox_remove_list (l_hotlist);</span>
+<span class='curline'><a href='../S/src--filemanager--hotlist.c.html#L402'>l_hotlist</a>         402 src/filemanager/hotlist.c             fill_listbox (l_hotlist);</span>
+<span class='curline'><a href='../S/src--filemanager--hotlist.c.html#L411'>l_hotlist</a>         411 src/filemanager/hotlist.c             listbox_get_current (l_hotlist, NULL, (void **) &amp;entry);</span>
+<span class='curline'><a href='../S/src--filemanager--hotlist.c.html#L435'>l_hotlist</a>         435 src/filemanager/hotlist.c             list = hotlist_state.moving ? l_movelist : l_hotlist;</span>
+<span class='curline'><a href='../S/src--filemanager--hotlist.c.html#L458'>l_hotlist</a>         458 src/filemanager/hotlist.c             WListbox *list = hotlist_state.moving ? l_movelist : l_hotlist;</span>
+<span class='curline'><a href='../S/src--filemanager--hotlist.c.html#L472'>l_hotlist</a>         472 src/filemanager/hotlist.c         listbox_remove_list (l_hotlist);</span>
+<span class='curline'><a href='../S/src--filemanager--hotlist.c.html#L473'>l_hotlist</a>         473 src/filemanager/hotlist.c         listbox_add_item (l_hotlist, LISTBOX_APPEND_AT_END, 0, mc_config_get_home_dir (), NULL,</span>
+<span class='curline'><a href='../S/src--filemanager--hotlist.c.html#L541'>l_hotlist</a>         541 src/filemanager/hotlist.c             listbox_get_current (l_hotlist, NULL, &amp;ldata);</span>
+<span class='curline'><a href='../S/src--filemanager--hotlist.c.html#L585'>l_hotlist</a>         585 src/filemanager/hotlist.c         widget_select (h == hotlist_dlg ? WIDGET (l_hotlist) : WIDGET (l_movelist));</span>
+<span class='curline'><a href='../S/src--filemanager--hotlist.c.html#L766'>l_hotlist</a>         766 src/filemanager/hotlist.c     l_hotlist =</span>
+<span class='curline'><a href='../S/src--filemanager--hotlist.c.html#L774'>l_hotlist</a>         774 src/filemanager/hotlist.c         listbox_add_item (l_hotlist, LISTBOX_APPEND_AT_END, 0, mc_config_get_home_dir (), NULL,</span>
+<span class='curline'><a href='../S/src--filemanager--hotlist.c.html#L780'>l_hotlist</a>         780 src/filemanager/hotlist.c         fill_listbox (l_hotlist);</span>
+<span class='curline'><a href='../S/src--filemanager--hotlist.c.html#L783'>l_hotlist</a>         783 src/filemanager/hotlist.c     add_widget_autopos (hotlist_dlg, l_hotlist, WPOS_KEEP_ALL, NULL);</span>
+<span class='curline'><a href='../S/src--filemanager--hotlist.c.html#L804'>l_hotlist</a>         804 src/filemanager/hotlist.c     widget_select (WIDGET (l_hotlist));</span>
+<span class='curline'><a href='../S/src--filemanager--hotlist.c.html#L868'>l_hotlist</a>         868 src/filemanager/hotlist.c     l_hotlist = NULL;</span>
+<span class='curline'><a href='../S/src--filemanager--hotlist.c.html#L898'>l_hotlist</a>         898 src/filemanager/hotlist.c     listbox_get_current (l_hotlist, NULL, (void **) &amp;current);</span>
+<span class='curline'><a href='../S/src--filemanager--hotlist.c.html#L961'>l_hotlist</a>         961 src/filemanager/hotlist.c             listbox_add_item (l_hotlist, pos, 0, lbl, new, FALSE);</span>
+<span class='curline'><a href='../S/src--filemanager--hotlist.c.html#L965'>l_hotlist</a>         965 src/filemanager/hotlist.c             listbox_add_item (l_hotlist, pos, 0, new-&gt;label, new, FALSE);</span>
+<span class='curline'><a href='../S/src--filemanager--hotlist.c.html#L966'>l_hotlist</a>         966 src/filemanager/hotlist.c         listbox_select_entry (l_hotlist, l_hotlist-&gt;pos);</span>
+<span class='curline'><a href='../S/src--filemanager--hotlist.c.html#L1163'>l_hotlist</a>        1163 src/filemanager/hotlist.c     listbox_remove_current (l_hotlist);</span>
+<span class='curline'><a href='../S/src--filemanager--hotlist.c.html#L1628'>l_hotlist</a>        1628 src/filemanager/hotlist.c         listbox_get_current (l_hotlist, &amp;text, (void **) &amp;hlp);</span>
+<span class='curline'><a href='../S/src--filemanager--hotlist.c.html#L1685'>l_hotlist</a>        1685 src/filemanager/hotlist.c     l_hotlist = NULL;</span>
+</pre>
+</body>
+</html>

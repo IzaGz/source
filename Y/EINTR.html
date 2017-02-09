@@ -1,0 +1,54 @@
+<!DOCTYPE html PUBLIC '-//W3C//DTD XHTML 1.0 Transitional//EN' 'http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd'>
+<html xmlns='http://www.w3.org/1999/xhtml'>
+<head>
+<title>EINTR</title>
+<meta name='robots' content='noindex,nofollow' />
+<meta name='generator' content='GLOBAL-6.5.2' />
+<meta http-equiv='Content-Style-Type' content='text/css' />
+<link rel='stylesheet' type='text/css' href='../style.css' />
+</head>
+<body>
+<pre>
+<span class='curline'><a href='../S/lib--tty--key.c.html#L2071'>EINTR</a>            2071 lib/tty/key.c          if (flag == -1 &amp;&amp; errno == EINTR)</span>
+<span class='curline'><a href='../S/lib--utilunix.c.html#L173'>EINTR</a>             173 lib/utilunix.c         if (errno != EINTR)</span>
+<span class='curline'><a href='../S/lib--utilunix.c.html#L260'>EINTR</a>             260 lib/utilunix.c     while (read_len &lt; 0 &amp;&amp; errno == EINTR);</span>
+<span class='curline'><a href='../S/lib--utilunix.c.html#L602'>EINTR</a>             602 lib/utilunix.c     if (res &lt; 0 &amp;&amp; errno != EINTR)</span>
+<span class='curline'><a href='../S/lib--utilunix.c.html#L646'>EINTR</a>             646 lib/utilunix.c     while (res &lt; 0 &amp;&amp; errno == EINTR);</span>
+<span class='curline'><a href='../S/lib--vfs--direntry.c.html#L1590'>EINTR</a>            1590 lib/vfs/direntry.c         if (n == -1 &amp;&amp; errno == EINTR)</span>
+<span class='curline'><a href='../S/lib--vfs--direntry.c.html#L1593'>EINTR</a>            1593 lib/vfs/direntry.c             res = EINTR;</span>
+<span class='curline'><a href='../S/src--background.c.html#L569'>EINTR</a>             569 src/background.c             while (dup2 (nullfd, STDIN_FILENO) == -1 &amp;&amp; errno == EINTR)</span>
+<span class='curline'><a href='../S/src--background.c.html#L571'>EINTR</a>             571 src/background.c             while (dup2 (nullfd, STDOUT_FILENO) == -1 &amp;&amp; errno == EINTR)</span>
+<span class='curline'><a href='../S/src--background.c.html#L573'>EINTR</a>             573 src/background.c             while (dup2 (nullfd, STDERR_FILENO) == -1 &amp;&amp; errno == EINTR)</span>
+<span class='curline'><a href='../S/src--editor--syntax.c.html#L659'>EINTR</a>             659 src/editor/syntax.c                 if (errno == EINTR)</span>
+<span class='curline'><a href='../S/src--filemanager--cmd.c.html#L250'>EINTR</a>             250 src/filemanager/cmd.c                 while ((n1 = read (file1, buf1, sizeof (buf1))) == -1 &amp;&amp; errno == EINTR)</span>
+<span class='curline'><a href='../S/src--filemanager--cmd.c.html#L252'>EINTR</a>             252 src/filemanager/cmd.c                 while ((n2 = read (file2, buf2, sizeof (buf2))) == -1 &amp;&amp; errno == EINTR)</span>
+<span class='curline'><a href='../S/src--filemanager--mountlist.c.html#L316'>EINTR</a>             316 src/filemanager/mountlist.c #ifdef EINTR</span>
+<span class='curline'><a href='../S/src--filemanager--mountlist.c.html#L317'>EINTR</a>             317 src/filemanager/mountlist.c #define IS_EINTR(x) ((x) == EINTR)</span>
+<span class='curline'><a href='../S/src--filemanager--mountlist.c.html#L1142'>EINTR</a>            1142 src/filemanager/mountlist.c                 if (errno != EINTR)</span>
+<span class='curline'><a href='../S/src--filemanager--panelize.c.html#L331'>EINTR</a>             331 src/filemanager/panelize.c             if (ferror (external) &amp;&amp; errno == EINTR)</span>
+<span class='curline'><a href='../S/src--subshell--common.c.html#L194'>EINTR</a>             194 src/subshell/common.c             if (errno == EINTR)</span>
+<span class='curline'><a href='../S/src--subshell--common.c.html#L532'>EINTR</a>             532 src/subshell/common.c             if (errno == EINTR)</span>
+<span class='curline'><a href='../S/src--subshell--common.c.html#L1189'>EINTR</a>            1189 src/subshell/common.c             if (errno == EINTR)</span>
+<span class='curline'><a href='../S/src--vfs--fish--fish.c.html#L420'>EINTR</a>             420 src/vfs/fish/fish.c             if ((res == 0) || (res == EINTR))</span>
+<span class='curline'><a href='../S/src--vfs--fish--fish.c.html#L709'>EINTR</a>             709 src/vfs/fish/fish.c         if ((res == 0) || (res == EINTR))</span>
+<span class='curline'><a href='../S/src--vfs--fish--fish.c.html#L972'>EINTR</a>             972 src/vfs/fish/fish.c             if ((errno == EINTR) &amp;&amp; tty_got_interrupt ())</span>
+<span class='curline'><a href='../S/src--vfs--fish--fish.c.html#L1103'>EINTR</a>            1103 src/vfs/fish/fish.c         if ((errno == EINTR) &amp;&amp; !tty_got_interrupt ())</span>
+<span class='curline'><a href='../S/src--vfs--fish--fish.c.html#L1154'>EINTR</a>            1154 src/vfs/fish/fish.c             return (((v &lt; 0) &amp;&amp; (errno == EINTR)) || v == 0) ? 1 : 0;</span>
+<span class='curline'><a href='../S/src--vfs--ftpfs--ftpfs.c.html#L919'>EINTR</a>             919 src/vfs/ftpfs/ftpfs.c         if (errno == EINTR &amp;&amp; tty_got_interrupt ())</span>
+<span class='curline'><a href='../S/src--vfs--ftpfs--ftpfs.c.html#L1755'>EINTR</a>            1755 src/vfs/ftpfs/ftpfs.c         if (res == EINTR)</span>
+<span class='curline'><a href='../S/src--vfs--ftpfs--ftpfs.c.html#L1878'>EINTR</a>            1878 src/vfs/ftpfs/ftpfs.c             if (errno != EINTR)</span>
+<span class='curline'><a href='../S/src--vfs--ftpfs--ftpfs.c.html#L1885'>EINTR</a>            1885 src/vfs/ftpfs/ftpfs.c                 ftpfs_errno = EINTR;</span>
+<span class='curline'><a href='../S/src--vfs--ftpfs--ftpfs.c.html#L1897'>EINTR</a>            1897 src/vfs/ftpfs/ftpfs.c                 if (errno == EINTR &amp;&amp; !tty_got_interrupt ())</span>
+<span class='curline'><a href='../S/src--vfs--ftpfs--ftpfs.c.html#L1957'>EINTR</a>            1957 src/vfs/ftpfs/ftpfs.c         if ((errno == EINTR) &amp;&amp; !tty_got_interrupt ())</span>
+<span class='curline'><a href='../S/src--vfs--ftpfs--ftpfs.c.html#L2005'>EINTR</a>            2005 src/vfs/ftpfs/ftpfs.c             return (((v &lt; 0) &amp;&amp; (errno == EINTR)) || v == 0) ? 1 : 0;</span>
+<span class='curline'><a href='../S/src--vfs--local--local.c.html#L239'>EINTR</a>             239 src/vfs/local/local.c #ifdef EINTR</span>
+<span class='curline'><a href='../S/src--vfs--local--local.c.html#L240'>EINTR</a>             240 src/vfs/local/local.c         if (errno == EINTR)</span>
+<span class='curline'><a href='../S/src--vfs--local--local.c.html#L367'>EINTR</a>             367 src/vfs/local/local.c #ifdef EINTR</span>
+<span class='curline'><a href='../S/src--vfs--local--local.c.html#L368'>EINTR</a>             368 src/vfs/local/local.c         if (errno == EINTR)</span>
+<span class='curline'><a href='../S/src--vfs--sftpfs--connection.c.html#L140'>EINTR</a>             140 src/vfs/sftpfs/connection.c         if (save_errno == EINTR &amp;&amp; tty_got_interrupt ())</span>
+<span class='curline'><a href='../S/src--vfs--smbfs--helpers--lib--system.c.html#L133'>EINTR</a>             133 src/vfs/smbfs/helpers/lib/system.c     while (pollrtn &lt; 0 &amp;&amp; errno == EINTR);</span>
+<span class='curline'><a href='../S/src--vfs--smbfs--helpers--lib--system.c.html#L154'>EINTR</a>             154 src/vfs/smbfs/helpers/lib/system.c     while (selrtn &lt; 0 &amp;&amp; errno == EINTR);</span>
+<span class='curline'><a href='../S/src--viewer--growbuf.c.html#L228'>EINTR</a>             228 src/viewer/growbuf.c             while (nread == -1 &amp;&amp; errno == EINTR);</span>
+</pre>
+</body>
+</html>

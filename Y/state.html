@@ -1,0 +1,272 @@
+<!DOCTYPE html PUBLIC '-//W3C//DTD XHTML 1.0 Transitional//EN' 'http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd'>
+<html xmlns='http://www.w3.org/1999/xhtml'>
+<head>
+<title>state</title>
+<meta name='robots' content='noindex,nofollow' />
+<meta name='generator' content='GLOBAL-6.5.2' />
+<meta http-equiv='Content-Style-Type' content='text/css' />
+<link rel='stylesheet' type='text/css' href='../style.css' />
+</head>
+<body>
+<pre>
+<span class='curline'><a href='../S/lib--strutil--strutil.c.html#L98'>state</a>              98 lib/strutil/strutil.c     estr_t state = ESTR_SUCCESS;</span>
+<span class='curline'><a href='../S/lib--strutil--strutil.c.html#L172'>state</a>             172 lib/strutil/strutil.c                 state = ESTR_PROBLEM;</span>
+<span class='curline'><a href='../S/lib--strutil--strutil.c.html#L205'>state</a>             205 lib/strutil/strutil.c             return state;</span>
+<span class='curline'><a href='../S/lib--strutil--strutil.c.html#L216'>state</a>             216 lib/strutil/strutil.c     return state;</span>
+<span class='curline'><a href='../S/lib--strutil--strverscmp.c.html#L79'>state</a>              79 lib/strutil/strverscmp.c     int state;</span>
+<span class='curline'><a href='../S/lib--strutil--strverscmp.c.html#L112'>state</a>             112 lib/strutil/strverscmp.c     state = S_N | ((c1 == '0') + (isdigit (c1) != 0));</span>
+<span class='curline'><a href='../S/lib--strutil--strverscmp.c.html#L116'>state</a>             116 lib/strutil/strverscmp.c         state = next_state[state];</span>
+<span class='curline'><a href='../S/lib--strutil--strverscmp.c.html#L119'>state</a>             119 lib/strutil/strverscmp.c         state |= (c1 == '0') + (isdigit (c1) != 0);</span>
+<span class='curline'><a href='../S/lib--strutil--strverscmp.c.html#L122'>state</a>             122 lib/strutil/strverscmp.c     state = result_type[state &lt;&lt; 2 | (((c2 == '0') + (isdigit (c2) != 0)))];</span>
+<span class='curline'><a href='../S/lib--strutil--strverscmp.c.html#L124'>state</a>             124 lib/strutil/strverscmp.c     switch (state)</span>
+<span class='curline'><a href='../S/lib--strutil--strverscmp.c.html#L137'>state</a>             137 lib/strutil/strverscmp.c         return state;</span>
+<span class='curline'><a href='../S/lib--vfs--vfs.c.html#L114'>state</a>             114 lib/vfs/vfs.c      estr_t state = ESTR_SUCCESS;</span>
+<span class='curline'><a href='../S/lib--vfs--vfs.c.html#L135'>state</a>             135 lib/vfs/vfs.c          state = _vfs_translate_path (path, ms, defcnv, buffer);</span>
+<span class='curline'><a href='../S/lib--vfs--vfs.c.html#L137'>state</a>             137 lib/vfs/vfs.c          if (state != ESTR_SUCCESS)</span>
+<span class='curline'><a href='../S/lib--vfs--vfs.c.html#L138'>state</a>             138 lib/vfs/vfs.c              return state;</span>
+<span class='curline'><a href='../S/lib--vfs--vfs.c.html#L161'>state</a>             161 lib/vfs/vfs.c                  state = str_vfs_convert_to (coder, slash + 1, path + size - slash - 1, buffer);</span>
+<span class='curline'><a href='../S/lib--vfs--vfs.c.html#L163'>state</a>             163 lib/vfs/vfs.c              return state;</span>
+<span class='curline'><a href='../S/lib--vfs--vfs.c.html#L167'>state</a>             167 lib/vfs/vfs.c          state = ESTR_FAILURE;</span>
+<span class='curline'><a href='../S/lib--vfs--vfs.c.html#L172'>state</a>             172 lib/vfs/vfs.c          state = str_vfs_convert_to (defcnv, path, size, buffer);</span>
+<span class='curline'><a href='../S/lib--vfs--vfs.c.html#L181'>state</a>             181 lib/vfs/vfs.c      return state;</span>
+<span class='curline'><a href='../S/lib--vfs--vfs.c.html#L349'>state</a>             349 lib/vfs/vfs.c      estr_t state;</span>
+<span class='curline'><a href='../S/lib--vfs--vfs.c.html#L352'>state</a>             352 lib/vfs/vfs.c      state = _vfs_translate_path (path, -1, str_cnv_from_term, vfs_str_buffer);</span>
+<span class='curline'><a href='../S/lib--vfs--vfs.c.html#L353'>state</a>             353 lib/vfs/vfs.c      return (state != ESTR_FAILURE) ? vfs_str_buffer-&gt;str : NULL;</span>
+<span class='curline'><a href='../S/lib--widget--check.c.html#L76'>state</a>              76 lib/widget/check.c         c-&gt;state = !c-&gt;state;</span>
+<span class='curline'><a href='../S/lib--widget--check.c.html#L92'>state</a>              92 lib/widget/check.c             tty_print_string (c-&gt;state ? "[x] " : "[ ] ");</span>
+<span class='curline'><a href='../S/lib--widget--check.c.html#L134'>state</a>             134 lib/widget/check.c check_new (int y, int x, gboolean state, const char *text)</span>
+<span class='curline'><a href='../S/lib--widget--check.c.html#L145'>state</a>             145 lib/widget/check.c     c-&gt;state = state;</span>
+<span class='curline'><a href='../S/lib--widget--check.h.html#L20'>state</a>              20 lib/widget/check.h     gboolean state;             /* check button state */</span>
+<span class='curline'><a href='../S/lib--widget--check.h.html#L28'>state</a>              28 lib/widget/check.h WCheck *check_new (int y, int x, gboolean state, const char *text);</span>
+<span class='curline'><a href='../S/lib--widget--dialog.c.html#L775'>state</a>             775 lib/widget/dialog.c     w-&gt;state |= WST_CONSTRUCT | WST_FOCUSED;</span>
+<span class='curline'><a href='../S/lib--widget--dialog.c.html#L777'>state</a>             777 lib/widget/dialog.c         w-&gt;state |= WST_MODAL;</span>
+<span class='curline'><a href='../S/lib--widget--input_complete.c.html#L78'>state</a>              78 lib/widget/input_complete.c typedef char *CompletionFunction (const char *text, int state, input_complete_t flags);</span>
+<span class='curline'><a href='../S/lib--widget--input_complete.c.html#L133'>state</a>             133 lib/widget/input_complete.c filename_completion_function (const char *text, int state, input_complete_t flags)</span>
+<span class='curline'><a href='../S/lib--widget--input_complete.c.html#L155'>state</a>             155 lib/widget/input_complete.c         result = filename_completion_function (u_text, state, flags &amp; (~INPUT_COMPLETE_SHELL_ESC));</span>
+<span class='curline'><a href='../S/lib--widget--input_complete.c.html#L165'>state</a>             165 lib/widget/input_complete.c     if (state == 0)</span>
+<span class='curline'><a href='../S/lib--widget--input_complete.c.html#L311'>state</a>             311 lib/widget/input_complete.c username_completion_function (const char *text, int state, input_complete_t flags)</span>
+<span class='curline'><a href='../S/lib--widget--input_complete.c.html#L321'>state</a>             321 lib/widget/input_complete.c     if (state == 0)</span>
+<span class='curline'><a href='../S/lib--widget--input_complete.c.html#L348'>state</a>             348 lib/widget/input_complete.c variable_completion_function (const char *text, int state, input_complete_t flags)</span>
+<span class='curline'><a href='../S/lib--widget--input_complete.c.html#L358'>state</a>             358 lib/widget/input_complete.c     if (state == 0)</span>
+<span class='curline'><a href='../S/lib--widget--input_complete.c.html#L493'>state</a>             493 lib/widget/input_complete.c hostname_completion_function (const char *text, int state, input_complete_t flags)</span>
+<span class='curline'><a href='../S/lib--widget--input_complete.c.html#L502'>state</a>             502 lib/widget/input_complete.c     if (state == 0)</span>
+<span class='curline'><a href='../S/lib--widget--input_complete.c.html#L556'>state</a>             556 lib/widget/input_complete.c command_completion_function (const char *text, int state, input_complete_t flags)</span>
+<span class='curline'><a href='../S/lib--widget--input_complete.c.html#L592'>state</a>             592 lib/widget/input_complete.c     if (state == 0)</span>
+<span class='curline'><a href='../S/lib--widget--input_complete.c.html#L617'>state</a>             617 lib/widget/input_complete.c         p = filename_completion_function (u_text, state, flags);</span>
+<span class='curline'><a href='../S/lib--widget--input_complete.c.html#L671'>state</a>             671 lib/widget/input_complete.c                 init_state = state;</span>
+<span class='curline'><a href='../S/lib--widget--input_complete.c.html#L673'>state</a>             673 lib/widget/input_complete.c             found = filename_completion_function (cur_word, state - init_state, flags);</span>
+<span class='curline'><a href='../S/lib--widget--input_complete.c.html#L838'>state</a>             838 lib/widget/input_complete.c try_complete_commands_prepare (try_complete_automation_state_t * state, char *text, int *lc_start)</span>
+<span class='curline'><a href='../S/lib--widget--input_complete.c.html#L853'>state</a>             853 lib/widget/input_complete.c         state-&gt;in_command_position++;</span>
+<span class='curline'><a href='../S/lib--widget--input_complete.c.html#L856'>state</a>             856 lib/widget/input_complete.c         state-&gt;in_command_position++;</span>
+<span class='curline'><a href='../S/lib--widget--input_complete.c.html#L870'>state</a>             870 lib/widget/input_complete.c                 state-&gt;in_command_position = 0;</span>
+<span class='curline'><a href='../S/lib--widget--input_complete.c.html#L878'>state</a>             878 lib/widget/input_complete.c try_complete_find_start_sign (try_complete_automation_state_t * state)</span>
+<span class='curline'><a href='../S/lib--widget--input_complete.c.html#L880'>state</a>             880 lib/widget/input_complete.c     if ((state-&gt;flags &amp; INPUT_COMPLETE_COMMANDS) != 0)</span>
+<span class='curline'><a href='../S/lib--widget--input_complete.c.html#L881'>state</a>             881 lib/widget/input_complete.c         state-&gt;p = strrchr (state-&gt;word, '`');</span>
+<span class='curline'><a href='../S/lib--widget--input_complete.c.html#L882'>state</a>             882 lib/widget/input_complete.c     if ((state-&gt;flags &amp; (INPUT_COMPLETE_COMMANDS | INPUT_COMPLETE_VARIABLES)) != 0)</span>
+<span class='curline'><a href='../S/lib--widget--input_complete.c.html#L884'>state</a>             884 lib/widget/input_complete.c         state-&gt;q = strrchr (state-&gt;word, '$');</span>
+<span class='curline'><a href='../S/lib--widget--input_complete.c.html#L887'>state</a>             887 lib/widget/input_complete.c         if (strutils_is_char_escaped (state-&gt;word, state-&gt;q))</span>
+<span class='curline'><a href='../S/lib--widget--input_complete.c.html#L891'>state</a>             891 lib/widget/input_complete.c             qlen = strlen (state-&gt;q);</span>
+<span class='curline'><a href='../S/lib--widget--input_complete.c.html#L893'>state</a>             893 lib/widget/input_complete.c             memmove (state-&gt;q - 1, state-&gt;q, qlen + 1);</span>
+<span class='curline'><a href='../S/lib--widget--input_complete.c.html#L895'>state</a>             895 lib/widget/input_complete.c             state-&gt;flags &amp;= ~INPUT_COMPLETE_VARIABLES;</span>
+<span class='curline'><a href='../S/lib--widget--input_complete.c.html#L896'>state</a>             896 lib/widget/input_complete.c             state-&gt;q = NULL;</span>
+<span class='curline'><a href='../S/lib--widget--input_complete.c.html#L899'>state</a>             899 lib/widget/input_complete.c     if ((state-&gt;flags &amp; INPUT_COMPLETE_HOSTNAMES) != 0)</span>
+<span class='curline'><a href='../S/lib--widget--input_complete.c.html#L900'>state</a>             900 lib/widget/input_complete.c         state-&gt;r = strrchr (state-&gt;word, '@');</span>
+<span class='curline'><a href='../S/lib--widget--input_complete.c.html#L901'>state</a>             901 lib/widget/input_complete.c     if (state-&gt;q != NULL &amp;&amp; state-&gt;q[1] == '(' &amp;&amp; (state-&gt;flags &amp; INPUT_COMPLETE_COMMANDS) != 0)</span>
+<span class='curline'><a href='../S/lib--widget--input_complete.c.html#L903'>state</a>             903 lib/widget/input_complete.c         if (state-&gt;q &gt; state-&gt;p)</span>
+<span class='curline'><a href='../S/lib--widget--input_complete.c.html#L904'>state</a>             904 lib/widget/input_complete.c             state-&gt;p = str_get_next_char (state-&gt;q);</span>
+<span class='curline'><a href='../S/lib--widget--input_complete.c.html#L905'>state</a>             905 lib/widget/input_complete.c         state-&gt;q = NULL;</span>
+<span class='curline'><a href='../S/lib--widget--input_complete.c.html#L912'>state</a>             912 lib/widget/input_complete.c try_complete_all_possible (try_complete_automation_state_t * state, char *text, int *lc_start)</span>
+<span class='curline'><a href='../S/lib--widget--input_complete.c.html#L916'>state</a>             916 lib/widget/input_complete.c     if (state-&gt;in_command_position != 0)</span>
+<span class='curline'><a href='../S/lib--widget--input_complete.c.html#L920'>state</a>             920 lib/widget/input_complete.c             completion_matches (state-&gt;word, command_completion_function,</span>
+<span class='curline'><a href='../S/lib--widget--input_complete.c.html#L921'>state</a>             921 lib/widget/input_complete.c                                 state-&gt;flags &amp; (~INPUT_COMPLETE_FILENAMES));</span>
+<span class='curline'><a href='../S/lib--widget--input_complete.c.html#L923'>state</a>             923 lib/widget/input_complete.c     else if ((state-&gt;flags &amp; INPUT_COMPLETE_FILENAMES) != 0)</span>
+<span class='curline'><a href='../S/lib--widget--input_complete.c.html#L925'>state</a>             925 lib/widget/input_complete.c         if (state-&gt;is_cd)</span>
+<span class='curline'><a href='../S/lib--widget--input_complete.c.html#L926'>state</a>             926 lib/widget/input_complete.c             state-&gt;flags &amp;= ~(INPUT_COMPLETE_FILENAMES | INPUT_COMPLETE_COMMANDS);</span>
+<span class='curline'><a href='../S/lib--widget--input_complete.c.html#L928'>state</a>             928 lib/widget/input_complete.c         matches = completion_matches (state-&gt;word, filename_completion_function, state-&gt;flags);</span>
+<span class='curline'><a href='../S/lib--widget--input_complete.c.html#L930'>state</a>             930 lib/widget/input_complete.c         if (matches == NULL &amp;&amp; state-&gt;is_cd &amp;&amp; !IS_PATH_SEP (*state-&gt;word) &amp;&amp; *state-&gt;word != '~')</span>
+<span class='curline'><a href='../S/lib--widget--input_complete.c.html#L932'>state</a>             932 lib/widget/input_complete.c             state-&gt;q = text + *lc_start;</span>
+<span class='curline'><a href='../S/lib--widget--input_complete.c.html#L933'>state</a>             933 lib/widget/input_complete.c             for (state-&gt;p = text;</span>
+<span class='curline'><a href='../S/lib--widget--input_complete.c.html#L934'>state</a>             934 lib/widget/input_complete.c                  *state-&gt;p != '\0' &amp;&amp; state-&gt;p &lt; state-&gt;q &amp;&amp; whitespace (*state-&gt;p);</span>
+<span class='curline'><a href='../S/lib--widget--input_complete.c.html#L935'>state</a>             935 lib/widget/input_complete.c                  str_next_char (&amp;state-&gt;p))</span>
+<span class='curline'><a href='../S/lib--widget--input_complete.c.html#L937'>state</a>             937 lib/widget/input_complete.c             if (strncmp (state-&gt;p, "cd", 2) == 0)</span>
+<span class='curline'><a href='../S/lib--widget--input_complete.c.html#L938'>state</a>             938 lib/widget/input_complete.c                 for (state-&gt;p += 2;</span>
+<span class='curline'><a href='../S/lib--widget--input_complete.c.html#L939'>state</a>             939 lib/widget/input_complete.c                      *state-&gt;p != '\0' &amp;&amp; state-&gt;p &lt; state-&gt;q &amp;&amp; whitespace (*state-&gt;p);</span>
+<span class='curline'><a href='../S/lib--widget--input_complete.c.html#L940'>state</a>             940 lib/widget/input_complete.c                      str_next_char (&amp;state-&gt;p))</span>
+<span class='curline'><a href='../S/lib--widget--input_complete.c.html#L942'>state</a>             942 lib/widget/input_complete.c             if (state-&gt;p == state-&gt;q)</span>
+<span class='curline'><a href='../S/lib--widget--input_complete.c.html#L963'>state</a>             963 lib/widget/input_complete.c                         state-&gt;r = mc_build_filename (cdpath, state-&gt;word, (char *) NULL);</span>
+<span class='curline'><a href='../S/lib--widget--input_complete.c.html#L966'>state</a>             966 lib/widget/input_complete.c                             completion_matches (state-&gt;r, filename_completion_function,</span>
+<span class='curline'><a href='../S/lib--widget--input_complete.c.html#L967'>state</a>             967 lib/widget/input_complete.c                                                 state-&gt;flags);</span>
+<span class='curline'><a href='../S/lib--widget--input_complete.c.html#L968'>state</a>             968 lib/widget/input_complete.c                         g_free (state-&gt;r);</span>
+<span class='curline'><a href='../S/lib--widget--input_complete.c.html#L1305'>state</a>            1305 lib/widget/input_complete.c     try_complete_automation_state_t state;</span>
+<span class='curline'><a href='../S/lib--widget--input_complete.c.html#L1308'>state</a>            1308 lib/widget/input_complete.c     memset (&amp;state, 0, sizeof (state));</span>
+<span class='curline'><a href='../S/lib--widget--input_complete.c.html#L1309'>state</a>            1309 lib/widget/input_complete.c     state.flags = flags;</span>
+<span class='curline'><a href='../S/lib--widget--input_complete.c.html#L1312'>state</a>            1312 lib/widget/input_complete.c     state.word = g_strndup (text + *lc_start, *lc_end - *lc_start);</span>
+<span class='curline'><a href='../S/lib--widget--input_complete.c.html#L1314'>state</a>            1314 lib/widget/input_complete.c     state.is_cd = check_is_cd (text, *lc_start, state.flags);</span>
+<span class='curline'><a href='../S/lib--widget--input_complete.c.html#L1320'>state</a>            1320 lib/widget/input_complete.c     if (!state.is_cd &amp;&amp; (flags &amp; INPUT_COMPLETE_COMMANDS) != 0)</span>
+<span class='curline'><a href='../S/lib--widget--input_complete.c.html#L1321'>state</a>            1321 lib/widget/input_complete.c         try_complete_commands_prepare (&amp;state, text, lc_start);</span>
+<span class='curline'><a href='../S/lib--widget--input_complete.c.html#L1323'>state</a>            1323 lib/widget/input_complete.c     try_complete_find_start_sign (&amp;state);</span>
+<span class='curline'><a href='../S/lib--widget--input_complete.c.html#L1326'>state</a>            1326 lib/widget/input_complete.c     if (state.p &gt; state.q &amp;&amp; state.p &gt; state.r)</span>
+<span class='curline'><a href='../S/lib--widget--input_complete.c.html#L1329'>state</a>            1329 lib/widget/input_complete.c         matches = completion_matches (str_cget_next_char (state.p),</span>
+<span class='curline'><a href='../S/lib--widget--input_complete.c.html#L1331'>state</a>            1331 lib/widget/input_complete.c                                       state.flags &amp; (~INPUT_COMPLETE_FILENAMES));</span>
+<span class='curline'><a href='../S/lib--widget--input_complete.c.html#L1333'>state</a>            1333 lib/widget/input_complete.c             *lc_start += str_get_next_char (state.p) - state.word;</span>
+<span class='curline'><a href='../S/lib--widget--input_complete.c.html#L1337'>state</a>            1337 lib/widget/input_complete.c     else if (state.q &gt; state.p &amp;&amp; state.q &gt; state.r)</span>
+<span class='curline'><a href='../S/lib--widget--input_complete.c.html#L1340'>state</a>            1340 lib/widget/input_complete.c         matches = completion_matches (state.q, variable_completion_function, state.flags);</span>
+<span class='curline'><a href='../S/lib--widget--input_complete.c.html#L1342'>state</a>            1342 lib/widget/input_complete.c             *lc_start += state.q - state.word;</span>
+<span class='curline'><a href='../S/lib--widget--input_complete.c.html#L1347'>state</a>            1347 lib/widget/input_complete.c     else if (state.r &gt; state.p &amp;&amp; state.r &gt; state.q)</span>
+<span class='curline'><a href='../S/lib--widget--input_complete.c.html#L1350'>state</a>            1350 lib/widget/input_complete.c         matches = completion_matches (state.r, hostname_completion_function, state.flags);</span>
+<span class='curline'><a href='../S/lib--widget--input_complete.c.html#L1352'>state</a>            1352 lib/widget/input_complete.c             *lc_start += state.r - state.word;</span>
+<span class='curline'><a href='../S/lib--widget--input_complete.c.html#L1357'>state</a>            1357 lib/widget/input_complete.c     if (matches == NULL &amp;&amp; *state.word == '~' &amp;&amp; (state.flags &amp; INPUT_COMPLETE_USERNAMES) != 0</span>
+<span class='curline'><a href='../S/lib--widget--input_complete.c.html#L1358'>state</a>            1358 lib/widget/input_complete.c         &amp;&amp; strchr (state.word, PATH_SEP) == NULL)</span>
+<span class='curline'><a href='../S/lib--widget--input_complete.c.html#L1361'>state</a>            1361 lib/widget/input_complete.c         matches = completion_matches (state.word, username_completion_function, state.flags);</span>
+<span class='curline'><a href='../S/lib--widget--input_complete.c.html#L1368'>state</a>            1368 lib/widget/input_complete.c         matches = try_complete_all_possible (&amp;state, text, lc_start);</span>
+<span class='curline'><a href='../S/lib--widget--input_complete.c.html#L1373'>state</a>            1373 lib/widget/input_complete.c         state.in_command_position = 0;</span>
+<span class='curline'><a href='../S/lib--widget--input_complete.c.html#L1374'>state</a>            1374 lib/widget/input_complete.c         matches = try_complete_all_possible (&amp;state, text, lc_start);</span>
+<span class='curline'><a href='../S/lib--widget--input_complete.c.html#L1377'>state</a>            1377 lib/widget/input_complete.c     g_free (state.word);</span>
+<span class='curline'><a href='../S/lib--widget--quick.c.html#L93'>state</a>              93 lib/widget/quick.c     label.quick_widget-&gt;state = quick_widget-&gt;state;</span>
+<span class='curline'><a href='../S/lib--widget--quick.c.html#L207'>state</a>             207 lib/widget/quick.c                         (++y, x, *quick_widget-&gt;u.checkbox.state,</span>
+<span class='curline'><a href='../S/lib--widget--quick.c.html#L566'>state</a>             566 lib/widget/quick.c             item-&gt;widget-&gt;state |= item-&gt;quick_widget-&gt;state;   /* FIXME: cannot reset flags, setup only */</span>
+<span class='curline'><a href='../S/lib--widget--quick.c.html#L589'>state</a>             589 lib/widget/quick.c                 *item-&gt;quick_widget-&gt;u.checkbox.state = CHECK (item-&gt;widget)-&gt;state;</span>
+<span class='curline'><a href='../S/lib--widget--quick.h.html#L21'>state</a>              21 lib/widget/quick.h             .state = st                                                         \</span>
+<span class='curline'><a href='../S/lib--widget--quick.h.html#L272'>state</a>             272 lib/widget/quick.h     widget_state_t state;</span>
+<span class='curline'><a href='../S/lib--widget--quick.h.html#L282'>state</a>             282 lib/widget/quick.h             gboolean *state;    /* in/out */</span>
+<span class='curline'><a href='../S/lib--widget--widget-common.c.html#L213'>state</a>             213 lib/widget/widget-common.c     w-&gt;state = WST_DEFAULT;</span>
+<span class='curline'><a href='../S/lib--widget--widget-common.c.html#L275'>state</a>             275 lib/widget/widget-common.c widget_set_state (Widget * w, widget_state_t state, gboolean enable)</span>
+<span class='curline'><a href='../S/lib--widget--widget-common.c.html#L280'>state</a>             280 lib/widget/widget-common.c         w-&gt;state |= state;</span>
+<span class='curline'><a href='../S/lib--widget--widget-common.c.html#L282'>state</a>             282 lib/widget/widget-common.c         w-&gt;state &amp;= ~state;</span>
+<span class='curline'><a href='../S/lib--widget--widget-common.c.html#L287'>state</a>             287 lib/widget/widget-common.c         if ((state &amp; WST_CONSTRUCT) != 0)</span>
+<span class='curline'><a href='../S/lib--widget--widget-common.c.html#L288'>state</a>             288 lib/widget/widget-common.c             w-&gt;state &amp;= ~(WST_ACTIVE | WST_SUSPENDED | WST_CLOSED);</span>
+<span class='curline'><a href='../S/lib--widget--widget-common.c.html#L289'>state</a>             289 lib/widget/widget-common.c         else if ((state &amp; WST_ACTIVE) != 0)</span>
+<span class='curline'><a href='../S/lib--widget--widget-common.c.html#L290'>state</a>             290 lib/widget/widget-common.c             w-&gt;state &amp;= ~(WST_CONSTRUCT | WST_SUSPENDED | WST_CLOSED);</span>
+<span class='curline'><a href='../S/lib--widget--widget-common.c.html#L291'>state</a>             291 lib/widget/widget-common.c         else if ((state &amp; WST_SUSPENDED) != 0)</span>
+<span class='curline'><a href='../S/lib--widget--widget-common.c.html#L292'>state</a>             292 lib/widget/widget-common.c             w-&gt;state &amp;= ~(WST_CONSTRUCT | WST_ACTIVE | WST_CLOSED);</span>
+<span class='curline'><a href='../S/lib--widget--widget-common.c.html#L293'>state</a>             293 lib/widget/widget-common.c         else if ((state &amp; WST_CLOSED) != 0)</span>
+<span class='curline'><a href='../S/lib--widget--widget-common.c.html#L294'>state</a>             294 lib/widget/widget-common.c             w-&gt;state &amp;= ~(WST_CONSTRUCT | WST_ACTIVE | WST_SUSPENDED);</span>
+<span class='curline'><a href='../S/lib--widget--widget-common.c.html#L300'>state</a>             300 lib/widget/widget-common.c     switch (state)</span>
+<span class='curline'><a href='../S/lib--widget--widget-common.h.html#L133'>state</a>             133 lib/widget/widget-common.h     widget_state_t state;</span>
+<span class='curline'><a href='../S/lib--widget--widget-common.h.html#L182'>state</a>             182 lib/widget/widget-common.h cb_ret_t widget_set_state (Widget * w, widget_state_t state, gboolean enable);</span>
+<span class='curline'><a href='../S/lib--widget--widget-common.h.html#L241'>state</a>             241 lib/widget/widget-common.h widget_get_state (const Widget * w, widget_state_t state)</span>
+<span class='curline'><a href='../S/lib--widget--widget-common.h.html#L243'>state</a>             243 lib/widget/widget-common.h     return ((w-&gt;state &amp; state) == state);</span>
+<span class='curline'><a href='../S/src--background.c.html#L94'>state</a>              94 src/background.c     new-&gt;state = Task_Running;</span>
+<span class='curline'><a href='../S/src--background.h.html#L23'>state</a>              23 src/background.h     int state;</span>
+<span class='curline'><a href='../S/src--editor--etags.c.html#L182'>state</a>             182 src/editor/etags.c     } state = start;</span>
+<span class='curline'><a href='../S/src--editor--etags.c.html#L203'>state</a>             203 src/editor/etags.c         switch (state)</span>
+<span class='curline'><a href='../S/src--editor--etags.c.html#L208'>state</a>             208 src/editor/etags.c                 state = in_filename;</span>
+<span class='curline'><a href='../S/src--editor--etags.c.html#L218'>state</a>             218 src/editor/etags.c                 state = in_define;</span>
+<span class='curline'><a href='../S/src--editor--etags.c.html#L224'>state</a>             224 src/editor/etags.c                 state = in_filename;</span>
+<span class='curline'><a href='../S/src--filemanager--boxes.c.html#L135'>state</a>             135 src/filemanager/boxes.c             const gboolean not_single = !CHECK (sender)-&gt;state;</span>
+<span class='curline'><a href='../S/src--filemanager--boxes.c.html#L292'>state</a>             292 src/filemanager/boxes.c             if (!ch-&gt;state)</span>
+<span class='curline'><a href='../S/src--filemanager--boxes.c.html#L308'>state</a>             308 src/filemanager/boxes.c             if (CHECK (sender)-&gt;state)</span>
+<span class='curline'><a href='../S/src--filemanager--boxes.c.html#L406'>state</a>             406 src/filemanager/boxes.c             const gboolean not_use = !CHECK (sender)-&gt;state;</span>
+<span class='curline'><a href='../S/src--filemanager--boxes.c.html#L441'>state</a>             441 src/filemanager/boxes.c         s = g_strconcat (state_str[tl-&gt;state], " ", tl-&gt;info, (char *) NULL);</span>
+<span class='curline'><a href='../S/src--filemanager--boxes.c.html#L467'>state</a>             467 src/filemanager/boxes.c         tl-&gt;state = Task_Stopped;</span>
+<span class='curline'><a href='../S/src--filemanager--boxes.c.html#L472'>state</a>             472 src/filemanager/boxes.c         tl-&gt;state = Task_Running;</span>
+<span class='curline'><a href='../S/src--filemanager--boxes.c.html#L569'>state</a>             569 src/filemanager/boxes.c         quick_widgets[17].state = WST_DISABLED;</span>
+<span class='curline'><a href='../S/src--filemanager--boxes.c.html#L573'>state</a>             573 src/filemanager/boxes.c             quick_widgets[10].state = quick_widgets[11].state = WST_DISABLED;</span>
+<span class='curline'><a href='../S/src--filemanager--boxes.c.html#L577'>state</a>             577 src/filemanager/boxes.c         quick_widgets[7].state = WST_DISABLED;</span>
+<span class='curline'><a href='../S/src--filemanager--boxes.c.html#L791'>state</a>             791 src/filemanager/boxes.c             quick_widgets[4].state = WST_DISABLED;</span>
+<span class='curline'><a href='../S/src--filemanager--boxes.c.html#L794'>state</a>             794 src/filemanager/boxes.c             quick_widgets[6].state = WST_DISABLED;</span>
+<span class='curline'><a href='../S/src--filemanager--boxes.c.html#L797'>state</a>             797 src/filemanager/boxes.c             quick_widgets[9].state = WST_DISABLED;</span>
+<span class='curline'><a href='../S/src--filemanager--boxes.c.html#L1139'>state</a>            1139 src/filemanager/boxes.c             quick_widgets[5].state = WST_DISABLED;</span>
+<span class='curline'><a href='../S/src--filemanager--chmod.c.html#L506'>state</a>             506 src/filemanager/chmod.c                     if (check_perm[i].check-&gt;state)</span>
+<span class='curline'><a href='../S/src--filemanager--command.c.html#L100'>state</a>             100 src/filemanager/command.c     state_t state = copy_sym;</span>
+<span class='curline'><a href='../S/src--filemanager--command.c.html#L118'>state</a>             118 src/filemanager/command.c         switch (state)</span>
+<span class='curline'><a href='../S/src--filemanager--command.c.html#L131'>state</a>             131 src/filemanager/command.c                 state = subst_var;</span>
+<span class='curline'><a href='../S/src--filemanager--command.c.html#L180'>state</a>             180 src/filemanager/command.c                 state = copy_sym;</span>
+<span class='curline'><a href='../S/src--filemanager--find.c.html#L428'>state</a>             428 src/filemanager/find.c     widget_disable (WIDGET (in_ignore), !ignore_dirs_cbox-&gt;state);</span>
+<span class='curline'><a href='../S/src--filemanager--find.c.html#L504'>state</a>             504 src/filemanager/find.c         if (!file_pattern_cbox-&gt;state &amp;&amp; (in_name-&gt;buffer[0] != '\0')</span>
+<span class='curline'><a href='../S/src--filemanager--find.c.html#L515'>state</a>             515 src/filemanager/find.c         if (content_regexp_cbox-&gt;state &amp;&amp; (in_with-&gt;buffer[0] != '\0')</span>
+<span class='curline'><a href='../S/src--filemanager--find.c.html#L802'>state</a>             802 src/filemanager/find.c             options.file_all_charsets = file_all_charsets_cbox-&gt;state;</span>
+<span class='curline'><a href='../S/src--filemanager--find.c.html#L803'>state</a>             803 src/filemanager/find.c             options.content_all_charsets = content_all_charsets_cbox-&gt;state;</span>
+<span class='curline'><a href='../S/src--filemanager--find.c.html#L805'>state</a>             805 src/filemanager/find.c             options.content_case_sens = content_case_sens_cbox-&gt;state;</span>
+<span class='curline'><a href='../S/src--filemanager--find.c.html#L806'>state</a>             806 src/filemanager/find.c             options.content_regexp = content_regexp_cbox-&gt;state;</span>
+<span class='curline'><a href='../S/src--filemanager--find.c.html#L807'>state</a>             807 src/filemanager/find.c             options.content_first_hit = content_first_hit_cbox-&gt;state;</span>
+<span class='curline'><a href='../S/src--filemanager--find.c.html#L808'>state</a>             808 src/filemanager/find.c             options.content_whole_words = content_whole_words_cbox-&gt;state;</span>
+<span class='curline'><a href='../S/src--filemanager--find.c.html#L809'>state</a>             809 src/filemanager/find.c             options.find_recurs = recursively_cbox-&gt;state;</span>
+<span class='curline'><a href='../S/src--filemanager--find.c.html#L810'>state</a>             810 src/filemanager/find.c             options.file_pattern = file_pattern_cbox-&gt;state;</span>
+<span class='curline'><a href='../S/src--filemanager--find.c.html#L811'>state</a>             811 src/filemanager/find.c             options.file_case_sens = file_case_sens_cbox-&gt;state;</span>
+<span class='curline'><a href='../S/src--filemanager--find.c.html#L812'>state</a>             812 src/filemanager/find.c             options.skip_hidden = skip_hidden_cbox-&gt;state;</span>
+<span class='curline'><a href='../S/src--filemanager--find.c.html#L813'>state</a>             813 src/filemanager/find.c             options.ignore_dirs_enable = ignore_dirs_cbox-&gt;state;</span>
+<span class='curline'><a href='../S/src--filemanager--layout.c.html#L226'>state</a>             226 src/filemanager/layout.c         check_options[0].widget-&gt;state = panels_layout.horizontal_equal ? 1 : 0;</span>
+<span class='curline'><a href='../S/src--filemanager--layout.c.html#L228'>state</a>             228 src/filemanager/layout.c         check_options[0].widget-&gt;state = panels_layout.vertical_equal ? 1 : 0;</span>
+<span class='curline'><a href='../S/src--filemanager--layout.c.html#L231'>state</a>             231 src/filemanager/layout.c     tty_setcolor (check_options[0].widget-&gt;state ? DISABLED_COLOR : COLOR_NORMAL);</span>
+<span class='curline'><a href='../S/src--filemanager--layout.c.html#L336'>state</a>             336 src/filemanager/layout.c             _menubar_visible = check_options[1].widget-&gt;state;</span>
+<span class='curline'><a href='../S/src--filemanager--layout.c.html#L337'>state</a>             337 src/filemanager/layout.c             _command_prompt = check_options[2].widget-&gt;state;</span>
+<span class='curline'><a href='../S/src--filemanager--layout.c.html#L338'>state</a>             338 src/filemanager/layout.c             _keybar_visible = check_options[3].widget-&gt;state;</span>
+<span class='curline'><a href='../S/src--filemanager--layout.c.html#L339'>state</a>             339 src/filemanager/layout.c             _message_visible = check_options[4].widget-&gt;state;</span>
+<span class='curline'><a href='../S/src--filemanager--layout.c.html#L413'>state</a>             413 src/filemanager/layout.c                 panels_layout.horizontal_equal = check_options[0].widget-&gt;state;</span>
+<span class='curline'><a href='../S/src--filemanager--layout.c.html#L418'>state</a>             418 src/filemanager/layout.c                 panels_layout.vertical_equal = check_options[0].widget-&gt;state;</span>
+<span class='curline'><a href='../S/src--filemanager--layout.c.html#L547'>state</a>             547 src/filemanager/layout.c         w-&gt;state |= disabled;</span>
+<span class='curline'><a href='../S/src--filemanager--layout.c.html#L552'>state</a>             552 src/filemanager/layout.c         w-&gt;state |= disabled;</span>
+<span class='curline'><a href='../S/src--filemanager--layout.c.html#L557'>state</a>             557 src/filemanager/layout.c         w-&gt;state |= disabled;</span>
+<span class='curline'><a href='../S/src--filemanager--layout.c.html#L653'>state</a>             653 src/filemanager/layout.c                 *check_options[i].variable = check_options[i].widget-&gt;state;</span>
+<span class='curline'><a href='../S/src--vfs--smbfs--helpers--include--proto.h.html#L256'>state</a>             256 src/vfs/smbfs/helpers/include/proto.h                        void (*fn) (const char *, uint32, const char *, void *), void *state);</span>
+<span class='curline'><a href='../S/src--vfs--smbfs--helpers--include--proto.h.html#L258'>state</a>             258 src/vfs/smbfs/helpers/include/proto.h                         void (*fn) (const char *, uint32, const char *, void *), void *state);</span>
+<span class='curline'><a href='../S/src--vfs--smbfs--helpers--include--proto.h.html#L293'>state</a>             293 src/vfs/smbfs/helpers/include/proto.h               void (*fn) (file_info *, const char *, void *), void *state);</span>
+<span class='curline'><a href='../S/src--vfs--smbfs--helpers--libsmb--clientgen.c.html#L564'>state</a>             564 src/vfs/smbfs/helpers/libsmb/clientgen.c                    void *state)</span>
+<span class='curline'><a href='../S/src--vfs--smbfs--helpers--libsmb--clientgen.c.html#L609'>state</a>             609 src/vfs/smbfs/helpers/libsmb/clientgen.c                 fn (sname, type, cmnt, state);</span>
+<span class='curline'><a href='../S/src--vfs--smbfs--helpers--libsmb--clientgen.c.html#L640'>state</a>             640 src/vfs/smbfs/helpers/libsmb/clientgen.c                    void (*fn) (const char *, uint32, const char *, void *), void *state)</span>
+<span class='curline'><a href='../S/src--vfs--smbfs--helpers--libsmb--clientgen.c.html#L694'>state</a>             694 src/vfs/smbfs/helpers/libsmb/clientgen.c                 fn (sname, stype, cmnt, state);</span>
+<span class='curline'><a href='../S/src--vfs--smbfs--helpers--libsmb--clientgen.c.html#L2157'>state</a>            2157 src/vfs/smbfs/helpers/libsmb/clientgen.c           void (*fn) (file_info *, const char *, void *), void *state)</span>
+<span class='curline'><a href='../S/src--vfs--smbfs--helpers--libsmb--clientgen.c.html#L2324'>state</a>            2324 src/vfs/smbfs/helpers/libsmb/clientgen.c         fn (&amp;finfo, Mask, state);</span>
+<span class='curline'><a href='../S/src--vfs--smbfs--smbfs.c.html#L551'>state</a>             551 src/vfs/smbfs/smbfs.c smbfs_browsing_helper (const char *name, uint32 type, const char *comment, void *state)</span>
+<span class='curline'><a href='../S/src--vfs--smbfs--smbfs.c.html#L556'>state</a>             556 src/vfs/smbfs/smbfs.c     (void) state;</span>
+<span class='curline'><a href='../S/src--vfs--smbfs--smbfs.c.html#L662'>state</a>             662 src/vfs/smbfs/smbfs.c smbfs_srv_browsing_helper (const char *name, uint32 m, const char *comment, void *state)</span>
+<span class='curline'><a href='../S/src--vfs--smbfs--smbfs.c.html#L667'>state</a>             667 src/vfs/smbfs/smbfs.c     (void) state;</span>
+<span class='curline'><a href='../S/src--viewer--ascii.c.html#L348'>state</a>             348 src/viewer/ascii.c mcview_get_next_char (WView * view, mcview_state_machine_t * state, int *c)</span>
+<span class='curline'><a href='../S/src--viewer--ascii.c.html#L351'>state</a>             351 src/viewer/ascii.c     if (view-&gt;force_max &gt;= 0 &amp;&amp; state-&gt;offset &gt;= view-&gt;force_max)</span>
+<span class='curline'><a href='../S/src--viewer--ascii.c.html#L359'>state</a>             359 src/viewer/ascii.c         if (!mcview_get_utf (view, state-&gt;offset, c, &amp;char_length))</span>
+<span class='curline'><a href='../S/src--viewer--ascii.c.html#L362'>state</a>             362 src/viewer/ascii.c         if (view-&gt;force_max &gt;= 0 &amp;&amp; state-&gt;offset + char_length &gt; view-&gt;force_max)</span>
+<span class='curline'><a href='../S/src--viewer--ascii.c.html#L365'>state</a>             365 src/viewer/ascii.c         state-&gt;offset += char_length;</span>
+<span class='curline'><a href='../S/src--viewer--ascii.c.html#L369'>state</a>             369 src/viewer/ascii.c     if (!mcview_get_byte (view, state-&gt;offset, c))</span>
+<span class='curline'><a href='../S/src--viewer--ascii.c.html#L371'>state</a>             371 src/viewer/ascii.c     state-&gt;offset++;</span>
+<span class='curline'><a href='../S/src--viewer--ascii.c.html#L395'>state</a>             395 src/viewer/ascii.c mcview_get_next_maybe_nroff_char (WView * view, mcview_state_machine_t * state, int *c, int *color)</span>
+<span class='curline'><a href='../S/src--viewer--ascii.c.html#L404'>state</a>             404 src/viewer/ascii.c         return mcview_get_next_char (view, state, c);</span>
+<span class='curline'><a href='../S/src--viewer--ascii.c.html#L406'>state</a>             406 src/viewer/ascii.c     if (!mcview_get_next_char (view, state, c))</span>
+<span class='curline'><a href='../S/src--viewer--ascii.c.html#L412'>state</a>             412 src/viewer/ascii.c     state_after_nroff = *state;</span>
+<span class='curline'><a href='../S/src--viewer--ascii.c.html#L426'>state</a>             426 src/viewer/ascii.c         *state = state_after_nroff;</span>
+<span class='curline'><a href='../S/src--viewer--ascii.c.html#L429'>state</a>             429 src/viewer/ascii.c                 state-&gt;nroff_underscore_is_underlined ? VIEW_UNDERLINED_COLOR : VIEW_BOLD_COLOR;</span>
+<span class='curline'><a href='../S/src--viewer--ascii.c.html#L433'>state</a>             433 src/viewer/ascii.c         *state = state_after_nroff;</span>
+<span class='curline'><a href='../S/src--viewer--ascii.c.html#L434'>state</a>             434 src/viewer/ascii.c         state-&gt;nroff_underscore_is_underlined = FALSE;</span>
+<span class='curline'><a href='../S/src--viewer--ascii.c.html#L441'>state</a>             441 src/viewer/ascii.c         *state = state_after_nroff;</span>
+<span class='curline'><a href='../S/src--viewer--ascii.c.html#L442'>state</a>             442 src/viewer/ascii.c         state-&gt;nroff_underscore_is_underlined = TRUE;</span>
+<span class='curline'><a href='../S/src--viewer--ascii.c.html#L478'>state</a>             478 src/viewer/ascii.c mcview_next_combining_char_sequence (WView * view, mcview_state_machine_t * state, int *cs,</span>
+<span class='curline'><a href='../S/src--viewer--ascii.c.html#L483'>state</a>             483 src/viewer/ascii.c     if (!mcview_get_next_maybe_nroff_char (view, state, cs, color))</span>
+<span class='curline'><a href='../S/src--viewer--ascii.c.html#L491'>state</a>             491 src/viewer/ascii.c         mcview_state_machine_t state_after_crlf = *state;</span>
+<span class='curline'><a href='../S/src--viewer--ascii.c.html#L494'>state</a>             494 src/viewer/ascii.c             *state = state_after_crlf;</span>
+<span class='curline'><a href='../S/src--viewer--ascii.c.html#L505'>state</a>             505 src/viewer/ascii.c         if (!state-&gt;print_lonely_combining)</span>
+<span class='curline'><a href='../S/src--viewer--ascii.c.html#L531'>state</a>             531 src/viewer/ascii.c         state_after_combining = *state;</span>
+<span class='curline'><a href='../S/src--viewer--ascii.c.html#L541'>state</a>             541 src/viewer/ascii.c                 *state = state_after_combining;</span>
+<span class='curline'><a href='../S/src--viewer--ascii.c.html#L546'>state</a>             546 src/viewer/ascii.c         *state = state_after_combining;</span>
+<span class='curline'><a href='../S/src--viewer--ascii.c.html#L577'>state</a>             577 src/viewer/ascii.c mcview_display_line (WView * view, mcview_state_machine_t * state, int row,</span>
+<span class='curline'><a href='../S/src--viewer--ascii.c.html#L600'>state</a>             600 src/viewer/ascii.c         eol = mcview_eol (view, state-&gt;offset, mcview_get_filesize (view));</span>
+<span class='curline'><a href='../S/src--viewer--ascii.c.html#L601'>state</a>             601 src/viewer/ascii.c         retval = (eol &gt; state-&gt;offset) ? 1 : 0;</span>
+<span class='curline'><a href='../S/src--viewer--ascii.c.html#L603'>state</a>             603 src/viewer/ascii.c         mcview_state_machine_init (state, eol);</span>
+<span class='curline'><a href='../S/src--viewer--ascii.c.html#L614'>state</a>             614 src/viewer/ascii.c         state_saved = *state;</span>
+<span class='curline'><a href='../S/src--viewer--ascii.c.html#L615'>state</a>             615 src/viewer/ascii.c         n = mcview_next_combining_char_sequence (view, state, cs, 1 + MAX_COMBINING_CHARS, &amp;color);</span>
+<span class='curline'><a href='../S/src--viewer--ascii.c.html#L623'>state</a>             623 src/viewer/ascii.c         if (view-&gt;search_start &lt;= state-&gt;offset &amp;&amp; state-&gt;offset &lt; view-&gt;search_end)</span>
+<span class='curline'><a href='../S/src--viewer--ascii.c.html#L629'>state</a>             629 src/viewer/ascii.c             mcview_state_machine_init (state, state-&gt;offset);</span>
+<span class='curline'><a href='../S/src--viewer--ascii.c.html#L653'>state</a>             653 src/viewer/ascii.c             charwidth = option_tab_spacing - state-&gt;unwrapped_column % option_tab_spacing;</span>
+<span class='curline'><a href='../S/src--viewer--ascii.c.html#L654'>state</a>             654 src/viewer/ascii.c             state-&gt;print_lonely_combining = TRUE;</span>
+<span class='curline'><a href='../S/src--viewer--ascii.c.html#L657'>state</a>             657 src/viewer/ascii.c             state-&gt;print_lonely_combining = FALSE;</span>
+<span class='curline'><a href='../S/src--viewer--ascii.c.html#L665'>state</a>             665 src/viewer/ascii.c             *state = state_saved;</span>
+<span class='curline'><a href='../S/src--viewer--ascii.c.html#L729'>state</a>             729 src/viewer/ascii.c         state-&gt;unwrapped_column += charwidth;</span>
+<span class='curline'><a href='../S/src--viewer--ascii.c.html#L738'>state</a>             738 src/viewer/ascii.c             eol = mcview_eol (view, state-&gt;offset, mcview_get_filesize (view));</span>
+<span class='curline'><a href='../S/src--viewer--ascii.c.html#L739'>state</a>             739 src/viewer/ascii.c             mcview_state_machine_init (state, eol);</span>
+<span class='curline'><a href='../S/src--viewer--ascii.c.html#L772'>state</a>             772 src/viewer/ascii.c mcview_display_paragraph (WView * view, mcview_state_machine_t * state, int row)</span>
+<span class='curline'><a href='../S/src--viewer--ascii.c.html#L781'>state</a>             781 src/viewer/ascii.c         lines += mcview_display_line (view, state, row, &amp;paragraph_ended, NULL);</span>
+<span class='curline'><a href='../S/src--viewer--ascii.c.html#L859'>state</a>             859 src/viewer/ascii.c     mcview_state_machine_t state;</span>
+<span class='curline'><a href='../S/src--viewer--ascii.c.html#L872'>state</a>             872 src/viewer/ascii.c             mcview_state_machine_init (&amp;state, view-&gt;dpy_start);</span>
+<span class='curline'><a href='../S/src--viewer--ascii.c.html#L876'>state</a>             876 src/viewer/ascii.c             state = view-&gt;dpy_state_top;</span>
+<span class='curline'><a href='../S/src--viewer--ascii.c.html#L881'>state</a>             881 src/viewer/ascii.c             n = mcview_display_paragraph (view, &amp;state, row);</span>
+<span class='curline'><a href='../S/src--viewer--ascii.c.html#L900'>state</a>             900 src/viewer/ascii.c     view-&gt;dpy_end = state.offset;</span>
+<span class='curline'><a href='../S/src--viewer--ascii.c.html#L901'>state</a>             901 src/viewer/ascii.c     view-&gt;dpy_state_bottom = state;</span>
+<span class='curline'><a href='../S/src--viewer--ascii.c.html#L1039'>state</a>            1039 src/viewer/ascii.c         mcview_state_machine_t state;</span>
+<span class='curline'><a href='../S/src--viewer--ascii.c.html#L1043'>state</a>            1043 src/viewer/ascii.c         mcview_state_machine_init (&amp;state, view-&gt;dpy_start);</span>
+<span class='curline'><a href='../S/src--viewer--ascii.c.html#L1044'>state</a>            1044 src/viewer/ascii.c         mcview_display_line (view, &amp;state, -1, NULL, &amp;linewidth);</span>
+<span class='curline'><a href='../S/src--viewer--ascii.c.html#L1052'>state</a>            1052 src/viewer/ascii.c mcview_state_machine_init (mcview_state_machine_t * state, off_t offset)</span>
+<span class='curline'><a href='../S/src--viewer--ascii.c.html#L1054'>state</a>            1054 src/viewer/ascii.c     memset (state, 0, sizeof (*state));</span>
+<span class='curline'><a href='../S/src--viewer--ascii.c.html#L1055'>state</a>            1055 src/viewer/ascii.c     state-&gt;offset = offset;</span>
+<span class='curline'><a href='../S/src--viewer--ascii.c.html#L1056'>state</a>            1056 src/viewer/ascii.c     state-&gt;print_lonely_combining = TRUE;</span>
+</pre>
+</body>
+</html>

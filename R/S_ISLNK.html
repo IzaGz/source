@@ -1,0 +1,48 @@
+<!DOCTYPE html PUBLIC '-//W3C//DTD XHTML 1.0 Transitional//EN' 'http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd'>
+<html xmlns='http://www.w3.org/1999/xhtml'>
+<head>
+<title>S_ISLNK</title>
+<meta name='robots' content='noindex,nofollow' />
+<meta name='generator' content='GLOBAL-6.5.2' />
+<meta http-equiv='Content-Style-Type' content='text/css' />
+<link rel='stylesheet' type='text/css' href='../style.css' />
+</head>
+<body>
+<pre>
+<span class='curline'><a href='../S/lib--filehighlight--get-color.c.html#L79'>S_ISLNK</a>            79 lib/filehighlight/get-color.c     return S_ISLNK (fe-&gt;st.st_mode);</span>
+<span class='curline'><a href='../S/lib--fs.h.html#L32'>S_ISLNK</a>            32 lib/fs.h       #ifdef S_ISLNK</span>
+<span class='curline'><a href='../S/lib--util.c.html#L143'>S_ISLNK</a>           143 lib/util.c             if (!S_ISLNK (mybuf.st_mode))</span>
+<span class='curline'><a href='../S/lib--util.c.html#L531'>S_ISLNK</a>           531 lib/util.c         if (S_ISLNK (mode_bits))</span>
+<span class='curline'><a href='../S/lib--vfs--direntry.c.html#L146'>S_ISLNK</a>           146 lib/vfs/direntry.c     if (!S_ISLNK (entry-&gt;ino-&gt;st.st_mode))</span>
+<span class='curline'><a href='../S/lib--vfs--direntry.c.html#L512'>S_ISLNK</a>           512 lib/vfs/direntry.c     if (!S_ISLNK (ino-&gt;st.st_mode))</span>
+<span class='curline'><a href='../S/lib--vfs--parse_ls_vga.c.html#L832'>S_ISLNK</a>           832 lib/vfs/parse_ls_vga.c     if (((S_ISLNK (s-&gt;st_mode) || (num_cols == idx + 3 &amp;&amp; s-&gt;st_nlink &gt; 1)))    /* Maybe a hardlink? (in extfs) */</span>
+<span class='curline'><a href='../S/src--filemanager--cmd.c.html#L1272'>S_ISLNK</a>          1272 src/filemanager/cmd.c     if (!S_ISLNK (fe-&gt;st.st_mode))</span>
+<span class='curline'><a href='../S/src--filemanager--dir.c.html#L178'>S_ISLNK</a>           178 src/filemanager/dir.c     if (S_ISLNK (buf1-&gt;st_mode))</span>
+<span class='curline'><a href='../S/src--filemanager--dir.c.html#L606'>S_ISLNK</a>           606 src/filemanager/dir.c     if (S_ISLNK (buf1-&gt;st_mode))</span>
+<span class='curline'><a href='../S/src--filemanager--dir.c.html#L683'>S_ISLNK</a>           683 src/filemanager/dir.c     if (S_ISLNK (file-&gt;st.st_mode) &amp;&amp; mc_stat (full_name_vpath, &amp;b) == 0)</span>
+<span class='curline'><a href='../S/src--filemanager--file.c.html#L401'>S_ISLNK</a>           401 src/filemanager/file.c     dst_is_symlink = (mc_lstat (dst_vpath, &amp;sb) == 0) &amp;&amp; S_ISLNK (sb.st_mode);</span>
+<span class='curline'><a href='../S/src--filemanager--file.c.html#L538'>S_ISLNK</a>           538 src/filemanager/file.c         if (S_ISLNK (s.st_mode))</span>
+<span class='curline'><a href='../S/src--filemanager--file.c.html#L991'>S_ISLNK</a>           991 src/filemanager/file.c         if (S_ISLNK (src_stats.st_mode) &amp;&amp; ctx-&gt;stable_symlinks)</span>
+<span class='curline'><a href='../S/src--filemanager--file.c.html#L1596'>S_ISLNK</a>          1596 src/filemanager/file.c         if (S_ISLNK (src_stat.st_mode))</span>
+<span class='curline'><a href='../S/src--filemanager--midnight.c.html#L745'>S_ISLNK</a>           745 src/filemanager/midnight.c     if (S_ISLNK (selection (panel)-&gt;st.st_mode))</span>
+<span class='curline'><a href='../S/src--filemanager--panel.c.html#L530'>S_ISLNK</a>           530 src/filemanager/panel.c     if (S_ISLNK (fe-&gt;st.st_mode) &amp;&amp; !link_isdir (fe))</span>
+<span class='curline'><a href='../S/src--filemanager--panel.c.html#L551'>S_ISLNK</a>           551 src/filemanager/panel.c     else if (S_ISLNK (fe-&gt;st.st_mode))</span>
+<span class='curline'><a href='../S/src--filemanager--panel.c.html#L1005'>S_ISLNK</a>          1005 src/filemanager/panel.c     if (S_ISLNK (panel-&gt;dir.list[panel-&gt;selected].st.st_mode))</span>
+<span class='curline'><a href='../S/src--filemanager--panel.c.html#L2930'>S_ISLNK</a>          2930 src/filemanager/panel.c     if (!S_ISLNK (panel-&gt;dir.list[panel-&gt;selected].st.st_mode))</span>
+<span class='curline'><a href='../S/src--filemanager--usermenu.c.html#L184'>S_ISLNK</a>           184 src/filemanager/usermenu.c             result |= S_ISLNK (st_mode);</span>
+<span class='curline'><a href='../S/src--vfs--cpio--cpio.c.html#L506'>S_ISLNK</a>           506 src/vfs/cpio/cpio.c         if (!S_ISLNK (st-&gt;st_mode))</span>
+<span class='curline'><a href='../S/src--vfs--extfs--extfs.c.html#L563'>S_ISLNK</a>           563 src/vfs/extfs/extfs.c                 if (!S_ISLNK (hstat.st_mode) &amp;&amp; (current_link_name != NULL))</span>
+<span class='curline'><a href='../S/src--vfs--extfs--extfs.c.html#L602'>S_ISLNK</a>           602 src/vfs/extfs/extfs.c                     if (current_link_name != NULL &amp;&amp; S_ISLNK (hstat.st_mode))</span>
+<span class='curline'><a href='../S/src--vfs--extfs--extfs.c.html#L609'>S_ISLNK</a>           609 src/vfs/extfs/extfs.c                         if (S_ISLNK (hstat.st_mode))</span>
+<span class='curline'><a href='../S/src--vfs--extfs--extfs.c.html#L751'>S_ISLNK</a>           751 src/vfs/extfs/extfs.c     if (!S_ISLNK (entry-&gt;inode-&gt;mode))</span>
+<span class='curline'><a href='../S/src--vfs--extfs--extfs.c.html#L1176'>S_ISLNK</a>          1176 src/vfs/extfs/extfs.c     if (!S_ISLNK (entry-&gt;inode-&gt;mode))</span>
+<span class='curline'><a href='../S/src--vfs--fish--fish.c.html#L749'>S_ISLNK</a>           749 src/vfs/fish/fish.c                 if (S_ISLNK (ST.st_mode))</span>
+<span class='curline'><a href='../S/src--vfs--ftpfs--ftpfs.c.html#L1521'>S_ISLNK</a>          1521 src/vfs/ftpfs/ftpfs.c         if (S_ISLNK (fel-&gt;s.st_mode) &amp;&amp; fel-&gt;linkname)</span>
+<span class='curline'><a href='../S/src--vfs--ftpfs--ftpfs.c.html#L1544'>S_ISLNK</a>          1544 src/vfs/ftpfs/ftpfs.c                     if (S_ISLNK (fe-&gt;s.st_mode) &amp;&amp; fe-&gt;l_stat == 0)</span>
+<span class='curline'><a href='../S/src--vfs--ftpfs--ftpfs.c.html#L1568'>S_ISLNK</a>          1568 src/vfs/ftpfs/ftpfs.c                         if (S_ISLNK (fe-&gt;s.st_mode))</span>
+<span class='curline'><a href='../S/src--vfs--ftpfs--ftpfs.c.html#L1633'>S_ISLNK</a>          1633 src/vfs/ftpfs/ftpfs.c         while (!S_ISLNK (fe-&gt;s.st_mode));</span>
+<span class='curline'><a href='../S/src--vfs--ftpfs--ftpfs.c.html#L1650'>S_ISLNK</a>          1650 src/vfs/ftpfs/ftpfs.c                     if (S_ISLNK (s.st_mode))</span>
+<span class='curline'><a href='../S/src--vfs--smbfs--helpers--include--includes.h.html#L116'>S_ISLNK</a>           116 src/vfs/smbfs/helpers/include/includes.h #ifndef S_ISLNK</span>
+</pre>
+</body>
+</html>

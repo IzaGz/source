@@ -1,0 +1,35 @@
+<!DOCTYPE html PUBLIC '-//W3C//DTD XHTML 1.0 Transitional//EN' 'http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd'>
+<html xmlns='http://www.w3.org/1999/xhtml'>
+<head>
+<title>new_path</title>
+<meta name='robots' content='noindex,nofollow' />
+<meta name='generator' content='GLOBAL-6.5.2' />
+<meta http-equiv='Content-Style-Type' content='text/css' />
+<link rel='stylesheet' type='text/css' href='../style.css' />
+</head>
+<body>
+<pre>
+<span class='curline'><a href='../S/lib--utilunix.c.html#L1100'>new_path</a>         1100 lib/utilunix.c     char *new_path = got_path;</span>
+<span class='curline'><a href='../S/lib--utilunix.c.html#L1120'>new_path</a>         1120 lib/utilunix.c         new_path = g_get_current_dir ();</span>
+<span class='curline'><a href='../S/lib--utilunix.c.html#L1121'>new_path</a>         1121 lib/utilunix.c         if (new_path == NULL)</span>
+<span class='curline'><a href='../S/lib--utilunix.c.html#L1127'>new_path</a>         1127 lib/utilunix.c             g_snprintf (got_path, sizeof (got_path), "%s", new_path);</span>
+<span class='curline'><a href='../S/lib--utilunix.c.html#L1128'>new_path</a>         1128 lib/utilunix.c             g_free (new_path);</span>
+<span class='curline'><a href='../S/lib--utilunix.c.html#L1129'>new_path</a>         1129 lib/utilunix.c             new_path = got_path;</span>
+<span class='curline'><a href='../S/lib--utilunix.c.html#L1132'>new_path</a>         1132 lib/utilunix.c         new_path += strlen (got_path);</span>
+<span class='curline'><a href='../S/lib--utilunix.c.html#L1133'>new_path</a>         1133 lib/utilunix.c         if (!IS_PATH_SEP (new_path[-1]))</span>
+<span class='curline'><a href='../S/lib--utilunix.c.html#L1134'>new_path</a>         1134 lib/utilunix.c             *new_path++ = PATH_SEP;</span>
+<span class='curline'><a href='../S/lib--utilunix.c.html#L1138'>new_path</a>         1138 lib/utilunix.c         *new_path++ = PATH_SEP;</span>
+<span class='curline'><a href='../S/lib--utilunix.c.html#L1164'>new_path</a>         1164 lib/utilunix.c                     if (new_path == got_path + 1)</span>
+<span class='curline'><a href='../S/lib--utilunix.c.html#L1167'>new_path</a>         1167 lib/utilunix.c                     while (!IS_PATH_SEP ((--new_path)[-1]))</span>
+<span class='curline'><a href='../S/lib--utilunix.c.html#L1181'>new_path</a>         1181 lib/utilunix.c             *new_path++ = *path++;</span>
+<span class='curline'><a href='../S/lib--utilunix.c.html#L1191'>new_path</a>         1191 lib/utilunix.c         *new_path = '\0';</span>
+<span class='curline'><a href='../S/lib--utilunix.c.html#L1199'>new_path</a>         1199 lib/utilunix.c                 *new_path = '\0';</span>
+<span class='curline'><a href='../S/lib--utilunix.c.html#L1210'>new_path</a>         1210 lib/utilunix.c                 new_path = got_path;</span>
+<span class='curline'><a href='../S/lib--utilunix.c.html#L1213'>new_path</a>         1213 lib/utilunix.c                 while (!IS_PATH_SEP (*(--new_path)))</span>
+<span class='curline'><a href='../S/lib--utilunix.c.html#L1227'>new_path</a>         1227 lib/utilunix.c         *new_path++ = PATH_SEP;</span>
+<span class='curline'><a href='../S/lib--utilunix.c.html#L1230'>new_path</a>         1230 lib/utilunix.c     if (new_path != got_path + 1 &amp;&amp; IS_PATH_SEP (new_path[-1]))</span>
+<span class='curline'><a href='../S/lib--utilunix.c.html#L1231'>new_path</a>         1231 lib/utilunix.c         new_path--;</span>
+<span class='curline'><a href='../S/lib--utilunix.c.html#L1233'>new_path</a>         1233 lib/utilunix.c     *new_path = '\0';</span>
+</pre>
+</body>
+</html>

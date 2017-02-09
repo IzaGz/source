@@ -1,0 +1,27 @@
+<!DOCTYPE html PUBLIC '-//W3C//DTD XHTML 1.0 Transitional//EN' 'http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd'>
+<html xmlns='http://www.w3.org/1999/xhtml'>
+<head>
+<title>link_target</title>
+<meta name='robots' content='noindex,nofollow' />
+<meta name='generator' content='GLOBAL-6.5.2' />
+<meta http-equiv='Content-Style-Type' content='text/css' />
+<link rel='stylesheet' type='text/css' href='../style.css' />
+</head>
+<body>
+<pre>
+<span class='curline'><a href='../S/src--filemanager--file.c.html#L390'>link_target</a>       390 src/filemanager/file.c     char link_target[MC_MAXPATHLEN];</span>
+<span class='curline'><a href='../S/src--filemanager--file.c.html#L404'>link_target</a>       404 src/filemanager/file.c     len = mc_readlink (src_vpath, link_target, sizeof (link_target) - 1);</span>
+<span class='curline'><a href='../S/src--filemanager--file.c.html#L420'>link_target</a>       420 src/filemanager/file.c     link_target[len] = '\0';</span>
+<span class='curline'><a href='../S/src--filemanager--file.c.html#L430'>link_target</a>       430 src/filemanager/file.c     if (ctx-&gt;stable_symlinks &amp;&amp; !g_path_is_absolute (link_target))</span>
+<span class='curline'><a href='../S/src--filemanager--file.c.html#L452'>link_target</a>       452 src/filemanager/file.c                 s = g_strconcat (p, link_target, (char *) NULL);</span>
+<span class='curline'><a href='../S/src--filemanager--file.c.html#L453'>link_target</a>       453 src/filemanager/file.c                 g_strlcpy (link_target, s, sizeof (link_target));</span>
+<span class='curline'><a href='../S/src--filemanager--file.c.html#L455'>link_target</a>       455 src/filemanager/file.c                 tmp_vpath2 = vfs_path_from_str (link_target);</span>
+<span class='curline'><a href='../S/src--filemanager--file.c.html#L461'>link_target</a>       461 src/filemanager/file.c                     g_strlcpy (link_target, s, sizeof (link_target));</span>
+<span class='curline'><a href='../S/src--filemanager--file.c.html#L469'>link_target</a>       469 src/filemanager/file.c     link_target_vpath = vfs_path_from_str_flags (link_target, VPF_NO_CANON);</span>
+<span class='curline'><a href='../S/src--filemanager--panel.c.html#L1007'>link_target</a>      1007 src/filemanager/panel.c         char link_target[MC_MAXPATHLEN];</span>
+<span class='curline'><a href='../S/src--filemanager--panel.c.html#L1014'>link_target</a>      1014 src/filemanager/panel.c         len = mc_readlink (lc_link_vpath, link_target, MC_MAXPATHLEN - 1);</span>
+<span class='curline'><a href='../S/src--filemanager--panel.c.html#L1018'>link_target</a>      1018 src/filemanager/panel.c             link_target[len] = 0;</span>
+<span class='curline'><a href='../S/src--filemanager--panel.c.html#L1020'>link_target</a>      1020 src/filemanager/panel.c             tty_print_string (str_fit_to_term (link_target, w-&gt;cols - 5, J_LEFT_FIT));</span>
+</pre>
+</body>
+</html>

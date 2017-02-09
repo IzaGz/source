@@ -1,0 +1,78 @@
+<!DOCTYPE html PUBLIC '-//W3C//DTD XHTML 1.0 Transitional//EN' 'http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd'>
+<html xmlns='http://www.w3.org/1999/xhtml'>
+<head>
+<title>dst_vpath</title>
+<meta name='robots' content='noindex,nofollow' />
+<meta name='generator' content='GLOBAL-6.5.2' />
+<meta http-equiv='Content-Style-Type' content='text/css' />
+<link rel='stylesheet' type='text/css' href='../style.css' />
+</head>
+<body>
+<pre>
+<span class='curline'><a href='../S/src--filemanager--file.c.html#L119'>dst_vpath</a>         119 src/filemanager/file.c     vfs_path_t *dst_vpath;</span>
+<span class='curline'><a href='../S/src--filemanager--file.c.html#L274'>dst_vpath</a>         274 src/filemanager/file.c     vfs_path_free (lp-&gt;dst_vpath);</span>
+<span class='curline'><a href='../S/src--filemanager--file.c.html#L318'>dst_vpath</a>         318 src/filemanager/file.c check_hardlinks (const vfs_path_t * src_vpath, const vfs_path_t * dst_vpath, struct stat *pstat)</span>
+<span class='curline'><a href='../S/src--filemanager--file.c.html#L350'>dst_vpath</a>         350 src/filemanager/file.c                 dst_name_class = vfs_path_get_last_path_vfs (dst_vpath);</span>
+<span class='curline'><a href='../S/src--filemanager--file.c.html#L351'>dst_vpath</a>         351 src/filemanager/file.c                 p_class = vfs_path_get_last_path_vfs (lnk-&gt;dst_vpath);</span>
+<span class='curline'><a href='../S/src--filemanager--file.c.html#L354'>dst_vpath</a>         354 src/filemanager/file.c                     mc_stat (lnk-&gt;dst_vpath, &amp;link_stat) == 0 &amp;&amp;</span>
+<span class='curline'><a href='../S/src--filemanager--file.c.html#L355'>dst_vpath</a>         355 src/filemanager/file.c                     mc_link (lnk-&gt;dst_vpath, dst_vpath) == 0)</span>
+<span class='curline'><a href='../S/src--filemanager--file.c.html#L371'>dst_vpath</a>         371 src/filemanager/file.c         lnk-&gt;dst_vpath = vfs_path_clone (dst_vpath);</span>
+<span class='curline'><a href='../S/src--filemanager--file.c.html#L395'>dst_vpath</a>         395 src/filemanager/file.c     vfs_path_t *dst_vpath;</span>
+<span class='curline'><a href='../S/src--filemanager--file.c.html#L400'>dst_vpath</a>         400 src/filemanager/file.c     dst_vpath = vfs_path_from_str (dst_path);</span>
+<span class='curline'><a href='../S/src--filemanager--file.c.html#L401'>dst_vpath</a>         401 src/filemanager/file.c     dst_is_symlink = (mc_lstat (dst_vpath, &amp;sb) == 0) &amp;&amp; S_ISLNK (sb.st_mode);</span>
+<span class='curline'><a href='../S/src--filemanager--file.c.html#L422'>dst_vpath</a>         422 src/filemanager/file.c     if (ctx-&gt;stable_symlinks &amp;&amp; !(vfs_file_is_local (src_vpath) &amp;&amp; vfs_file_is_local (dst_vpath)))</span>
+<span class='curline'><a href='../S/src--filemanager--file.c.html#L472'>dst_vpath</a>         472 src/filemanager/file.c     if (mc_symlink (link_target_vpath, dst_vpath) == 0)</span>
+<span class='curline'><a href='../S/src--filemanager--file.c.html#L482'>dst_vpath</a>         482 src/filemanager/file.c     if (dst_is_symlink &amp;&amp; mc_unlink (dst_vpath) == 0</span>
+<span class='curline'><a href='../S/src--filemanager--file.c.html#L483'>dst_vpath</a>         483 src/filemanager/file.c         &amp;&amp; mc_symlink (link_target_vpath, dst_vpath) == 0)</span>
+<span class='curline'><a href='../S/src--filemanager--file.c.html#L503'>dst_vpath</a>         503 src/filemanager/file.c     vfs_path_free (dst_vpath);</span>
+<span class='curline'><a href='../S/src--filemanager--file.c.html#L932'>dst_vpath</a>         932 src/filemanager/file.c     vfs_path_t *src_vpath, *dst_vpath;</span>
+<span class='curline'><a href='../S/src--filemanager--file.c.html#L935'>dst_vpath</a>         935 src/filemanager/file.c     dst_vpath = vfs_path_from_str (d);</span>
+<span class='curline'><a href='../S/src--filemanager--file.c.html#L938'>dst_vpath</a>         938 src/filemanager/file.c     file_progress_show_target (ctx, dst_vpath);</span>
+<span class='curline'><a href='../S/src--filemanager--file.c.html#L964'>dst_vpath</a>         964 src/filemanager/file.c     if (mc_lstat (dst_vpath, &amp;dst_stats) == 0)</span>
+<span class='curline'><a href='../S/src--filemanager--file.c.html#L999'>dst_vpath</a>         999 src/filemanager/file.c         if (mc_rename (src_vpath, dst_vpath) == 0)</span>
+<span class='curline'><a href='../S/src--filemanager--file.c.html#L1064'>dst_vpath</a>        1064 src/filemanager/file.c     vfs_path_free (dst_vpath);</span>
+<span class='curline'><a href='../S/src--filemanager--file.c.html#L1508'>dst_vpath</a>        1508 src/filemanager/file.c     vfs_path_t *src_vpath = NULL, *dst_vpath = NULL;</span>
+<span class='curline'><a href='../S/src--filemanager--file.c.html#L1515'>dst_vpath</a>        1515 src/filemanager/file.c     dst_vpath = vfs_path_from_str (dst_path);</span>
+<span class='curline'><a href='../S/src--filemanager--file.c.html#L1519'>dst_vpath</a>        1519 src/filemanager/file.c     file_progress_show_target (ctx, dst_vpath);</span>
+<span class='curline'><a href='../S/src--filemanager--file.c.html#L1529'>dst_vpath</a>        1529 src/filemanager/file.c     while (mc_stat (dst_vpath, &amp;dst_stat) == 0)</span>
+<span class='curline'><a href='../S/src--filemanager--file.c.html#L1589'>dst_vpath</a>        1589 src/filemanager/file.c             &amp;&amp; check_hardlinks (src_vpath, dst_vpath, &amp;src_stat))</span>
+<span class='curline'><a href='../S/src--filemanager--file.c.html#L1611'>dst_vpath</a>        1611 src/filemanager/file.c             while (mc_mknod (dst_vpath, src_stat.st_mode &amp; ctx-&gt;umask_kill, rdev) &lt; 0</span>
+<span class='curline'><a href='../S/src--filemanager--file.c.html#L1624'>dst_vpath</a>        1624 src/filemanager/file.c                    &amp;&amp; mc_chown (dst_vpath, src_stat.st_uid, src_stat.st_gid) != 0 &amp;&amp; !ctx-&gt;skip_all)</span>
+<span class='curline'><a href='../S/src--filemanager--file.c.html#L1638'>dst_vpath</a>        1638 src/filemanager/file.c             while (ctx-&gt;preserve &amp;&amp; mc_chmod (dst_vpath, src_stat.st_mode &amp; ctx-&gt;umask_kill) != 0</span>
+<span class='curline'><a href='../S/src--filemanager--file.c.html#L1718'>dst_vpath</a>        1718 src/filemanager/file.c     while ((dest_desc = mc_open (dst_vpath, open_flags, src_mode)) &lt; 0)</span>
+<span class='curline'><a href='../S/src--filemanager--file.c.html#L1784'>dst_vpath</a>        1784 src/filemanager/file.c             mc_unlink (dst_vpath);</span>
+<span class='curline'><a href='../S/src--filemanager--file.c.html#L1968'>dst_vpath</a>        1968 src/filemanager/file.c             mc_unlink (dst_vpath);</span>
+<span class='curline'><a href='../S/src--filemanager--file.c.html#L1975'>dst_vpath</a>        1975 src/filemanager/file.c             while (mc_chown (dst_vpath, src_uid, src_gid) != 0 &amp;&amp; !ctx-&gt;skip_all)</span>
+<span class='curline'><a href='../S/src--filemanager--file.c.html#L1995'>dst_vpath</a>        1995 src/filemanager/file.c                 while (mc_chmod (dst_vpath, (src_mode &amp; ctx-&gt;umask_kill)) != 0 &amp;&amp; !ctx-&gt;skip_all)</span>
+<span class='curline'><a href='../S/src--filemanager--file.c.html#L2015'>dst_vpath</a>        2015 src/filemanager/file.c                 mc_chmod (dst_vpath, (src_mode &amp; ctx-&gt;umask_kill));</span>
+<span class='curline'><a href='../S/src--filemanager--file.c.html#L2017'>dst_vpath</a>        2017 src/filemanager/file.c             mc_utime (dst_vpath, &amp;times);</span>
+<span class='curline'><a href='../S/src--filemanager--file.c.html#L2026'>dst_vpath</a>        2026 src/filemanager/file.c     vfs_path_free (dst_vpath);</span>
+<span class='curline'><a href='../S/src--filemanager--file.c.html#L2047'>dst_vpath</a>        2047 src/filemanager/file.c     vfs_path_t *src_vpath, *dst_vpath;</span>
+<span class='curline'><a href='../S/src--filemanager--file.c.html#L2051'>dst_vpath</a>        2051 src/filemanager/file.c     dst_vpath = vfs_path_from_str (d);</span>
+<span class='curline'><a href='../S/src--filemanager--file.c.html#L2084'>dst_vpath</a>        2084 src/filemanager/file.c     if (ctx-&gt;preserve &amp;&amp; cbuf.st_nlink &gt; 1 &amp;&amp; check_hardlinks (src_vpath, dst_vpath, &amp;cbuf))</span>
+<span class='curline'><a href='../S/src--filemanager--file.c.html#L2121'>dst_vpath</a>        2121 src/filemanager/file.c     if (mc_stat (dst_vpath, &amp;buf) != 0)</span>
+<span class='curline'><a href='../S/src--filemanager--file.c.html#L2124'>dst_vpath</a>        2124 src/filemanager/file.c         if (move_over &amp;&amp; mc_rename (src_vpath, dst_vpath) == 0)</span>
+<span class='curline'><a href='../S/src--filemanager--file.c.html#L2159'>dst_vpath</a>        2159 src/filemanager/file.c             tmp = dst_vpath;</span>
+<span class='curline'><a href='../S/src--filemanager--file.c.html#L2160'>dst_vpath</a>        2160 src/filemanager/file.c             dst_vpath = vfs_path_append_new (dst_vpath, x_basename (s), (char *) NULL);</span>
+<span class='curline'><a href='../S/src--filemanager--file.c.html#L2168'>dst_vpath</a>        2168 src/filemanager/file.c     d = vfs_path_as_str (dst_vpath);</span>
+<span class='curline'><a href='../S/src--filemanager--file.c.html#L2172'>dst_vpath</a>        2172 src/filemanager/file.c         while (my_mkdir (dst_vpath, (cbuf.st_mode &amp; ctx-&gt;umask_kill) | S_IRWXU) != 0)</span>
+<span class='curline'><a href='../S/src--filemanager--file.c.html#L2187'>dst_vpath</a>        2187 src/filemanager/file.c         mc_stat (dst_vpath, &amp;buf);</span>
+<span class='curline'><a href='../S/src--filemanager--file.c.html#L2188'>dst_vpath</a>        2188 src/filemanager/file.c         lp-&gt;vfs = vfs_path_get_by_index (dst_vpath, -1)-&gt;class;</span>
+<span class='curline'><a href='../S/src--filemanager--file.c.html#L2196'>dst_vpath</a>        2196 src/filemanager/file.c         while (mc_chown (dst_vpath, cbuf.st_uid, cbuf.st_gid) != 0)</span>
+<span class='curline'><a href='../S/src--filemanager--file.c.html#L2281'>dst_vpath</a>        2281 src/filemanager/file.c         mc_chmod (dst_vpath, cbuf.st_mode &amp; ctx-&gt;umask_kill);</span>
+<span class='curline'><a href='../S/src--filemanager--file.c.html#L2283'>dst_vpath</a>        2283 src/filemanager/file.c         mc_utime (dst_vpath, &amp;times);</span>
+<span class='curline'><a href='../S/src--filemanager--file.c.html#L2290'>dst_vpath</a>        2290 src/filemanager/file.c         mc_chmod (dst_vpath, cbuf.st_mode &amp; ctx-&gt;umask_kill);</span>
+<span class='curline'><a href='../S/src--filemanager--file.c.html#L2298'>dst_vpath</a>        2298 src/filemanager/file.c     vfs_path_free (dst_vpath);</span>
+<span class='curline'><a href='../S/src--filemanager--file.c.html#L2314'>dst_vpath</a>        2314 src/filemanager/file.c     vfs_path_t *src_vpath, *dst_vpath;</span>
+<span class='curline'><a href='../S/src--filemanager--file.c.html#L2317'>dst_vpath</a>        2317 src/filemanager/file.c     dst_vpath = vfs_path_from_str (d);</span>
+<span class='curline'><a href='../S/src--filemanager--file.c.html#L2320'>dst_vpath</a>        2320 src/filemanager/file.c     file_progress_show_target (ctx, dst_vpath);</span>
+<span class='curline'><a href='../S/src--filemanager--file.c.html#L2332'>dst_vpath</a>        2332 src/filemanager/file.c     dstat_ok = (mc_stat (dst_vpath, &amp;dbuf) == 0);</span>
+<span class='curline'><a href='../S/src--filemanager--file.c.html#L2347'>dst_vpath</a>        2347 src/filemanager/file.c         tmp = dst_vpath;</span>
+<span class='curline'><a href='../S/src--filemanager--file.c.html#L2348'>dst_vpath</a>        2348 src/filemanager/file.c         dst_vpath = vfs_path_append_new (dst_vpath, x_basename (s), (char *) NULL);</span>
+<span class='curline'><a href='../S/src--filemanager--file.c.html#L2352'>dst_vpath</a>        2352 src/filemanager/file.c     d = vfs_path_as_str (dst_vpath);</span>
+<span class='curline'><a href='../S/src--filemanager--file.c.html#L2356'>dst_vpath</a>        2356 src/filemanager/file.c     if (mc_stat (dst_vpath, &amp;dbuf) == 0)</span>
+<span class='curline'><a href='../S/src--filemanager--file.c.html#L2384'>dst_vpath</a>        2384 src/filemanager/file.c     if (mc_rename (src_vpath, dst_vpath) == 0)</span>
+<span class='curline'><a href='../S/src--filemanager--file.c.html#L2444'>dst_vpath</a>        2444 src/filemanager/file.c     vfs_path_free (dst_vpath);</span>
+</pre>
+</body>
+</html>

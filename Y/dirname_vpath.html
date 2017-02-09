@@ -1,0 +1,34 @@
+<!DOCTYPE html PUBLIC '-//W3C//DTD XHTML 1.0 Transitional//EN' 'http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd'>
+<html xmlns='http://www.w3.org/1999/xhtml'>
+<head>
+<title>dirname_vpath</title>
+<meta name='robots' content='noindex,nofollow' />
+<meta name='generator' content='GLOBAL-6.5.2' />
+<meta http-equiv='Content-Style-Type' content='text/css' />
+<link rel='stylesheet' type='text/css' href='../style.css' />
+</head>
+<body>
+<pre>
+<span class='curline'><a href='../S/lib--widget--input_complete.c.html#L140'>dirname_vpath</a>     140 lib/widget/input_complete.c     static vfs_path_t *dirname_vpath = NULL;</span>
+<span class='curline'><a href='../S/lib--widget--input_complete.c.html#L172'>dirname_vpath</a>     172 lib/widget/input_complete.c         vfs_path_free (dirname_vpath);</span>
+<span class='curline'><a href='../S/lib--widget--input_complete.c.html#L191'>dirname_vpath</a>     191 lib/widget/input_complete.c         dirname_vpath = vfs_path_from_str (dirname);</span>
+<span class='curline'><a href='../S/lib--widget--input_complete.c.html#L197'>dirname_vpath</a>     197 lib/widget/input_complete.c         directory = mc_opendir (dirname_vpath);</span>
+<span class='curline'><a href='../S/lib--widget--input_complete.c.html#L278'>dirname_vpath</a>     278 lib/widget/input_complete.c         vfs_path_free (dirname_vpath);</span>
+<span class='curline'><a href='../S/lib--widget--input_complete.c.html#L279'>dirname_vpath</a>     279 lib/widget/input_complete.c         dirname_vpath = NULL;</span>
+<span class='curline'><a href='../S/src--filemanager--file.c.html#L516'>dirname_vpath</a>     516 src/filemanager/file.c do_compute_dir_size (const vfs_path_t * dirname_vpath, dirsize_status_msg_t * dsm,</span>
+<span class='curline'><a href='../S/src--filemanager--file.c.html#L533'>dirname_vpath</a>     533 src/filemanager/file.c         res = mc_lstat (dirname_vpath, &amp;s);</span>
+<span class='curline'><a href='../S/src--filemanager--file.c.html#L548'>dirname_vpath</a>     548 src/filemanager/file.c     dir = mc_opendir (dirname_vpath);</span>
+<span class='curline'><a href='../S/src--filemanager--file.c.html#L559'>dirname_vpath</a>     559 src/filemanager/file.c         tmp_vpath = vfs_path_append_new (dirname_vpath, dirent-&gt;d_name, (char *) NULL);</span>
+<span class='curline'><a href='../S/src--filemanager--file.c.html#L578'>dirname_vpath</a>     578 src/filemanager/file.c                 dsm-&gt;dirname_vpath = tmp_vpath;</span>
+<span class='curline'><a href='../S/src--filemanager--file.c.html#L2556'>dirname_vpath</a>    2556 src/filemanager/file.c     label_set_text (dsm-&gt;dirname, str_trunc (vfs_path_as_str (dsm-&gt;dirname_vpath), wd-&gt;cols - 6));</span>
+<span class='curline'><a href='../S/src--filemanager--file.c.html#L2590'>dirname_vpath</a>    2590 src/filemanager/file.c compute_dir_size (const vfs_path_t * dirname_vpath, dirsize_status_msg_t * sm,</span>
+<span class='curline'><a href='../S/src--filemanager--file.c.html#L2594'>dirname_vpath</a>    2594 src/filemanager/file.c     return do_compute_dir_size (dirname_vpath, sm, ret_dir_count, ret_marked_count, ret_total,</span>
+<span class='curline'><a href='../S/src--filemanager--file.h.html#L33'>dirname_vpath</a>      33 src/filemanager/file.h     const vfs_path_t *dirname_vpath;</span>
+<span class='curline'><a href='../S/src--filemanager--file.h.html#L61'>dirname_vpath</a>      61 src/filemanager/file.h FileProgressStatus compute_dir_size (const vfs_path_t * dirname_vpath, dirsize_status_msg_t * sm,</span>
+<span class='curline'><a href='../S/src--filemanager--find.c.html#L1882'>dirname_vpath</a>    1882 src/filemanager/find.c                 vfs_path_t *dirname_vpath;</span>
+<span class='curline'><a href='../S/src--filemanager--find.c.html#L1884'>dirname_vpath</a>    1884 src/filemanager/find.c                 dirname_vpath = vfs_path_from_str (dirname);</span>
+<span class='curline'><a href='../S/src--filemanager--find.c.html#L1885'>dirname_vpath</a>    1885 src/filemanager/find.c                 do_cd (dirname_vpath, cd_exact);</span>
+<span class='curline'><a href='../S/src--filemanager--find.c.html#L1886'>dirname_vpath</a>    1886 src/filemanager/find.c                 vfs_path_free (dirname_vpath);</span>
+</pre>
+</body>
+</html>

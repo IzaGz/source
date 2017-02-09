@@ -1,0 +1,30 @@
+<!DOCTYPE html PUBLIC '-//W3C//DTD XHTML 1.0 Transitional//EN' 'http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd'>
+<html xmlns='http://www.w3.org/1999/xhtml'>
+<head>
+<title>wss</title>
+<meta name='robots' content='noindex,nofollow' />
+<meta name='generator' content='GLOBAL-6.5.2' />
+<meta http-equiv='Content-Style-Type' content='text/css' />
+<link rel='stylesheet' type='text/css' href='../style.css' />
+</head>
+<body>
+<pre>
+<span class='curline'><a href='../S/lib--widget--dialog.c.html#L570'>wss</a>               570 lib/widget/dialog.c     const widget_shift_scale_t *wss = (const widget_shift_scale_t *) user_data;</span>
+<span class='curline'><a href='../S/lib--widget--dialog.c.html#L580'>wss</a>               580 lib/widget/dialog.c         x += wss-&gt;shift_x;</span>
+<span class='curline'><a href='../S/lib--widget--dialog.c.html#L581'>wss</a>               581 lib/widget/dialog.c         cols += wss-&gt;scale_x;</span>
+<span class='curline'><a href='../S/lib--widget--dialog.c.html#L584'>wss</a>               584 lib/widget/dialog.c         x += wss-&gt;shift_x;</span>
+<span class='curline'><a href='../S/lib--widget--dialog.c.html#L586'>wss</a>               586 lib/widget/dialog.c         x += wss-&gt;shift_x + wss-&gt;scale_x;</span>
+<span class='curline'><a href='../S/lib--widget--dialog.c.html#L592'>wss</a>               592 lib/widget/dialog.c         y += wss-&gt;shift_y;</span>
+<span class='curline'><a href='../S/lib--widget--dialog.c.html#L593'>wss</a>               593 lib/widget/dialog.c         lines += wss-&gt;scale_y;</span>
+<span class='curline'><a href='../S/lib--widget--dialog.c.html#L596'>wss</a>               596 lib/widget/dialog.c         y += wss-&gt;shift_y;</span>
+<span class='curline'><a href='../S/lib--widget--dialog.c.html#L598'>wss</a>               598 lib/widget/dialog.c         y += wss-&gt;shift_y + wss-&gt;scale_y;</span>
+<span class='curline'><a href='../S/lib--widget--dialog.c.html#L669'>wss</a>               669 lib/widget/dialog.c     widget_shift_scale_t wss;</span>
+<span class='curline'><a href='../S/lib--widget--dialog.c.html#L693'>wss</a>               693 lib/widget/dialog.c     wss.shift_x = wh-&gt;x - ox;</span>
+<span class='curline'><a href='../S/lib--widget--dialog.c.html#L694'>wss</a>               694 lib/widget/dialog.c     wss.scale_x = wh-&gt;cols - oc;</span>
+<span class='curline'><a href='../S/lib--widget--dialog.c.html#L695'>wss</a>               695 lib/widget/dialog.c     wss.shift_y = wh-&gt;y - oy;</span>
+<span class='curline'><a href='../S/lib--widget--dialog.c.html#L696'>wss</a>               696 lib/widget/dialog.c     wss.scale_y = wh-&gt;lines - ol;</span>
+<span class='curline'><a href='../S/lib--widget--dialog.c.html#L698'>wss</a>               698 lib/widget/dialog.c     if (wss.shift_x != 0 || wss.shift_y != 0 || wss.scale_x != 0 || wss.scale_y != 0)</span>
+<span class='curline'><a href='../S/lib--widget--dialog.c.html#L699'>wss</a>               699 lib/widget/dialog.c         g_list_foreach (h-&gt;widgets, dlg_widget_set_position, &amp;wss);</span>
+</pre>
+</body>
+</html>

@@ -1,0 +1,126 @@
+<!DOCTYPE html PUBLIC '-//W3C//DTD XHTML 1.0 Transitional//EN' 'http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd'>
+<html xmlns='http://www.w3.org/1999/xhtml'>
+<head>
+<title>ent</title>
+<meta name='robots' content='noindex,nofollow' />
+<meta name='generator' content='GLOBAL-6.5.2' />
+<meta http-equiv='Content-Style-Type' content='text/css' />
+<link rel='stylesheet' type='text/css' href='../style.css' />
+</head>
+<body>
+<pre>
+<span class='curline'><a href='../S/lib--vfs--direntry.c.html#L183'>ent</a>               183 lib/vfs/direntry.c     struct vfs_s_entry *ent = NULL;</span>
+<span class='curline'><a href='../S/lib--vfs--direntry.c.html#L200'>ent</a>               200 lib/vfs/direntry.c             return ent;</span>
+<span class='curline'><a href='../S/lib--vfs--direntry.c.html#L208'>ent</a>               208 lib/vfs/direntry.c             ent = (struct vfs_s_entry *) iter-&gt;data;</span>
+<span class='curline'><a href='../S/lib--vfs--direntry.c.html#L209'>ent</a>               209 lib/vfs/direntry.c             if (strlen (ent-&gt;name) == pseg &amp;&amp; strncmp (ent-&gt;name, path, pseg) == 0)</span>
+<span class='curline'><a href='../S/lib--vfs--direntry.c.html#L214'>ent</a>               214 lib/vfs/direntry.c         ent = iter != NULL ? (struct vfs_s_entry *) iter-&gt;data : NULL;</span>
+<span class='curline'><a href='../S/lib--vfs--direntry.c.html#L216'>ent</a>               216 lib/vfs/direntry.c         if (ent == NULL &amp;&amp; (flags &amp; (FL_MKFILE | FL_MKDIR)) != 0)</span>
+<span class='curline'><a href='../S/lib--vfs--direntry.c.html#L217'>ent</a>               217 lib/vfs/direntry.c             ent = vfs_s_automake (me, root, path, flags);</span>
+<span class='curline'><a href='../S/lib--vfs--direntry.c.html#L218'>ent</a>               218 lib/vfs/direntry.c         if (ent == NULL)</span>
+<span class='curline'><a href='../S/lib--vfs--direntry.c.html#L227'>ent</a>               227 lib/vfs/direntry.c         ent = vfs_s_resolve_symlink (me, ent,</span>
+<span class='curline'><a href='../S/lib--vfs--direntry.c.html#L229'>ent</a>               229 lib/vfs/direntry.c         if (ent == NULL)</span>
+<span class='curline'><a href='../S/lib--vfs--direntry.c.html#L231'>ent</a>               231 lib/vfs/direntry.c         root = ent-&gt;ino;</span>
+<span class='curline'><a href='../S/lib--vfs--direntry.c.html#L244'>ent</a>               244 lib/vfs/direntry.c     struct vfs_s_entry *ent = NULL;</span>
+<span class='curline'><a href='../S/lib--vfs--direntry.c.html#L262'>ent</a>               262 lib/vfs/direntry.c         ent = vfs_s_find_entry_tree (me, ino, name, follow, flags);</span>
+<span class='curline'><a href='../S/lib--vfs--direntry.c.html#L266'>ent</a>               266 lib/vfs/direntry.c         return ent;</span>
+<span class='curline'><a href='../S/lib--vfs--direntry.c.html#L270'>ent</a>               270 lib/vfs/direntry.c     ent = iter != NULL ? (struct vfs_s_entry *) iter-&gt;data : NULL;</span>
+<span class='curline'><a href='../S/lib--vfs--direntry.c.html#L272'>ent</a>               272 lib/vfs/direntry.c     if (ent != NULL &amp;&amp; !MEDATA-&gt;dir_uptodate (me, ent-&gt;ino))</span>
+<span class='curline'><a href='../S/lib--vfs--direntry.c.html#L277'>ent</a>               277 lib/vfs/direntry.c         vfs_s_free_entry (me, ent);</span>
+<span class='curline'><a href='../S/lib--vfs--direntry.c.html#L278'>ent</a>               278 lib/vfs/direntry.c         ent = NULL;</span>
+<span class='curline'><a href='../S/lib--vfs--direntry.c.html#L281'>ent</a>               281 lib/vfs/direntry.c     if (ent == NULL)</span>
+<span class='curline'><a href='../S/lib--vfs--direntry.c.html#L286'>ent</a>               286 lib/vfs/direntry.c         ent = vfs_s_new_entry (me, path, ino);</span>
+<span class='curline'><a href='../S/lib--vfs--direntry.c.html#L289'>ent</a>               289 lib/vfs/direntry.c             vfs_s_free_entry (me, ent);</span>
+<span class='curline'><a href='../S/lib--vfs--direntry.c.html#L294'>ent</a>               294 lib/vfs/direntry.c         vfs_s_insert_entry (me, root, ent);</span>
+<span class='curline'><a href='../S/lib--vfs--direntry.c.html#L297'>ent</a>               297 lib/vfs/direntry.c         ent = iter != NULL ? (struct vfs_s_entry *) iter-&gt;data : NULL;</span>
+<span class='curline'><a href='../S/lib--vfs--direntry.c.html#L299'>ent</a>               299 lib/vfs/direntry.c     if (ent == NULL)</span>
+<span class='curline'><a href='../S/lib--vfs--direntry.c.html#L303'>ent</a>               303 lib/vfs/direntry.c     if (!vfs_s_resolve_symlink (me, ent, follow))</span>
+<span class='curline'><a href='../S/lib--vfs--direntry.c.html#L310'>ent</a>               310 lib/vfs/direntry.c     return ent;</span>
+<span class='curline'><a href='../S/lib--vfs--direntry.c.html#L914'>ent</a>               914 lib/vfs/direntry.c     entry-&gt;ino-&gt;ent = entry;</span>
+<span class='curline'><a href='../S/lib--vfs--direntry.c.html#L924'>ent</a>               924 lib/vfs/direntry.c vfs_s_free_entry (struct vfs_class *me, struct vfs_s_entry *ent)</span>
+<span class='curline'><a href='../S/lib--vfs--direntry.c.html#L926'>ent</a>               926 lib/vfs/direntry.c     if (ent-&gt;dir != NULL)</span>
+<span class='curline'><a href='../S/lib--vfs--direntry.c.html#L927'>ent</a>               927 lib/vfs/direntry.c         ent-&gt;dir-&gt;subdir = g_list_remove (ent-&gt;dir-&gt;subdir, ent);</span>
+<span class='curline'><a href='../S/lib--vfs--direntry.c.html#L929'>ent</a>               929 lib/vfs/direntry.c     MC_PTR_FREE (ent-&gt;name);</span>
+<span class='curline'><a href='../S/lib--vfs--direntry.c.html#L931'>ent</a>               931 lib/vfs/direntry.c     if (ent-&gt;ino != NULL)</span>
+<span class='curline'><a href='../S/lib--vfs--direntry.c.html#L933'>ent</a>               933 lib/vfs/direntry.c         ent-&gt;ino-&gt;ent = NULL;</span>
+<span class='curline'><a href='../S/lib--vfs--direntry.c.html#L934'>ent</a>               934 lib/vfs/direntry.c         vfs_s_free_inode (me, ent-&gt;ino);</span>
+<span class='curline'><a href='../S/lib--vfs--direntry.c.html#L937'>ent</a>               937 lib/vfs/direntry.c     g_free (ent);</span>
+<span class='curline'><a href='../S/lib--vfs--direntry.c.html#L943'>ent</a>               943 lib/vfs/direntry.c vfs_s_insert_entry (struct vfs_class *me, struct vfs_s_inode *dir, struct vfs_s_entry *ent)</span>
+<span class='curline'><a href='../S/lib--vfs--direntry.c.html#L947'>ent</a>               947 lib/vfs/direntry.c     ent-&gt;dir = dir;</span>
+<span class='curline'><a href='../S/lib--vfs--direntry.c.html#L949'>ent</a>               949 lib/vfs/direntry.c     ent-&gt;ino-&gt;st.st_nlink++;</span>
+<span class='curline'><a href='../S/lib--vfs--direntry.c.html#L950'>ent</a>               950 lib/vfs/direntry.c     dir-&gt;subdir = g_list_append (dir-&gt;subdir, ent);</span>
+<span class='curline'><a href='../S/lib--vfs--direntry.c.html#L1041'>ent</a>              1041 lib/vfs/direntry.c     struct vfs_s_entry *ent;</span>
+<span class='curline'><a href='../S/lib--vfs--direntry.c.html#L1046'>ent</a>              1046 lib/vfs/direntry.c     ent = (MEDATA-&gt;find_entry) (me, super-&gt;root, path, follow, flags);</span>
+<span class='curline'><a href='../S/lib--vfs--direntry.c.html#L1047'>ent</a>              1047 lib/vfs/direntry.c     return (ent != NULL) ? ent-&gt;ino : NULL;</span>
+<span class='curline'><a href='../S/lib--vfs--direntry.c.html#L1189'>ent</a>              1189 lib/vfs/direntry.c     if (!ino-&gt;ent)</span>
+<span class='curline'><a href='../S/lib--vfs--direntry.c.html#L1196'>ent</a>              1196 lib/vfs/direntry.c         char *path = g_strdup (ino-&gt;ent-&gt;name);</span>
+<span class='curline'><a href='../S/lib--vfs--direntry.c.html#L1199'>ent</a>              1199 lib/vfs/direntry.c             ino = ino-&gt;ent-&gt;dir;</span>
+<span class='curline'><a href='../S/lib--vfs--direntry.c.html#L1202'>ent</a>              1202 lib/vfs/direntry.c             newpath = g_strconcat (ino-&gt;ent-&gt;name, PATH_SEP_STR, path, (char *) NULL);</span>
+<span class='curline'><a href='../S/lib--vfs--direntry.c.html#L1210'>ent</a>              1210 lib/vfs/direntry.c     if ((!ino-&gt;ent-&gt;dir) || (!ino-&gt;ent-&gt;dir-&gt;ent))</span>
+<span class='curline'><a href='../S/lib--vfs--direntry.c.html#L1211'>ent</a>              1211 lib/vfs/direntry.c         return g_strdup (ino-&gt;ent-&gt;name);</span>
+<span class='curline'><a href='../S/lib--vfs--direntry.c.html#L1213'>ent</a>              1213 lib/vfs/direntry.c     return g_strconcat (ino-&gt;ent-&gt;dir-&gt;ent-&gt;name, PATH_SEP_STR, ino-&gt;ent-&gt;name, (char *) NULL);</span>
+<span class='curline'><a href='../S/lib--vfs--direntry.c.html#L1243'>ent</a>              1243 lib/vfs/direntry.c         struct vfs_s_entry *ent;</span>
+<span class='curline'><a href='../S/lib--vfs--direntry.c.html#L1259'>ent</a>              1259 lib/vfs/direntry.c         ent = vfs_s_generate_entry (path_element-&gt;class, name, dir, 0755);</span>
+<span class='curline'><a href='../S/lib--vfs--direntry.c.html#L1260'>ent</a>              1260 lib/vfs/direntry.c         ino = ent-&gt;ino;</span>
+<span class='curline'><a href='../S/lib--vfs--direntry.c.html#L1261'>ent</a>              1261 lib/vfs/direntry.c         vfs_s_insert_entry (path_element-&gt;class, dir, ent);</span>
+<span class='curline'><a href='../S/lib--vfs--direntry.c.html#L1385'>ent</a>              1385 lib/vfs/direntry.c     handle = vfs_mkstemps (&amp;tmp_vpath, me-&gt;name, ino-&gt;ent-&gt;name);</span>
+<span class='curline'><a href='../S/lib--vfs--direntry.c.html#L1408'>ent</a>              1408 lib/vfs/direntry.c         vfs_s_print_stats (me-&gt;name, _("Getting file"), ino-&gt;ent-&gt;name, total, stat_size);</span>
+<span class='curline'><a href='../S/lib--vfs--xdirentry.h.html#L92'>ent</a>                92 lib/vfs/xdirentry.h     struct vfs_s_entry *ent;    /* Our entry in the parent directory -</span>
+<span class='curline'><a href='../S/lib--vfs--xdirentry.h.html#L167'>ent</a>               167 lib/vfs/xdirentry.h void vfs_s_free_entry (struct vfs_class *me, struct vfs_s_entry *ent);</span>
+<span class='curline'><a href='../S/lib--vfs--xdirentry.h.html#L168'>ent</a>               168 lib/vfs/xdirentry.h void vfs_s_insert_entry (struct vfs_class *me, struct vfs_s_inode *dir, struct vfs_s_entry *ent);</span>
+<span class='curline'><a href='../S/src--filemanager--mountlist.c.html#L1096'>ent</a>              1096 src/filemanager/mountlist.c         struct mntent **mnttbl = getmnttbl (), **ent;</span>
+<span class='curline'><a href='../S/src--filemanager--mountlist.c.html#L1098'>ent</a>              1098 src/filemanager/mountlist.c         for (ent = mnttbl; *ent; ent++)</span>
+<span class='curline'><a href='../S/src--filemanager--mountlist.c.html#L1101'>ent</a>              1101 src/filemanager/mountlist.c             me-&gt;me_devname = g_strdup ((*ent)-&gt;mt_resource);</span>
+<span class='curline'><a href='../S/src--filemanager--mountlist.c.html#L1102'>ent</a>              1102 src/filemanager/mountlist.c             me-&gt;me_mountdir = g_strdup ((*ent)-&gt;mt_directory);</span>
+<span class='curline'><a href='../S/src--filemanager--mountlist.c.html#L1104'>ent</a>              1104 src/filemanager/mountlist.c             me-&gt;me_type = g_strdup ((*ent)-&gt;mt_fstype);</span>
+<span class='curline'><a href='../S/src--vfs--extfs--extfs.c.html#L156'>ent</a>               156 src/vfs/extfs/extfs.c extfs_make_dots (struct entry *ent)</span>
+<span class='curline'><a href='../S/src--vfs--extfs--extfs.c.html#L159'>ent</a>               159 src/vfs/extfs/extfs.c     struct entry *parentry = ent-&gt;dir;</span>
+<span class='curline'><a href='../S/src--vfs--extfs--extfs.c.html#L160'>ent</a>               160 src/vfs/extfs/extfs.c     struct inode *inode = ent-&gt;inode, *parent;</span>
+<span class='curline'><a href='../S/src--vfs--extfs--extfs.c.html#L165'>ent</a>               165 src/vfs/extfs/extfs.c     entry-&gt;dir = ent;</span>
+<span class='curline'><a href='../S/src--vfs--extfs--extfs.c.html#L184'>ent</a>               184 src/vfs/extfs/extfs.c         entry-&gt;dir = ent;</span>
+<span class='curline'><a href='../S/src--vfs--extfs--extfs.c.html#L1412'>ent</a>              1412 src/vfs/extfs/extfs.c     struct entry *pe, *ent, *prev;</span>
+<span class='curline'><a href='../S/src--vfs--extfs--extfs.c.html#L1425'>ent</a>              1425 src/vfs/extfs/extfs.c     for (ent = pe-&gt;inode-&gt;first_in_subdir; ent &amp;&amp; ent-&gt;next_in_dir; ent = ent-&gt;next_in_dir)</span>
+<span class='curline'><a href='../S/src--vfs--extfs--extfs.c.html#L1426'>ent</a>              1426 src/vfs/extfs/extfs.c         if (e == ent-&gt;next_in_dir)</span>
+<span class='curline'><a href='../S/src--vfs--extfs--extfs.c.html#L1428'>ent</a>              1428 src/vfs/extfs/extfs.c             prev = ent;</span>
+<span class='curline'><a href='../S/src--vfs--fish--fish.c.html#L677'>ent</a>               677 src/vfs/fish/fish.c     struct vfs_s_entry *ent = NULL;</span>
+<span class='curline'><a href='../S/src--vfs--fish--fish.c.html#L701'>ent</a>               701 src/vfs/fish/fish.c     ent = vfs_s_generate_entry (me, NULL, dir, 0);</span>
+<span class='curline'><a href='../S/src--vfs--fish--fish.c.html#L711'>ent</a>               711 src/vfs/fish/fish.c             vfs_s_free_entry (me, ent);</span>
+<span class='curline'><a href='../S/src--vfs--fish--fish.c.html#L725'>ent</a>               725 src/vfs/fish/fish.c             if (ent-&gt;name != NULL)</span>
+<span class='curline'><a href='../S/src--vfs--fish--fish.c.html#L727'>ent</a>               727 src/vfs/fish/fish.c                 vfs_s_insert_entry (me, dir, ent);</span>
+<span class='curline'><a href='../S/src--vfs--fish--fish.c.html#L728'>ent</a>               728 src/vfs/fish/fish.c                 ent = vfs_s_generate_entry (me, NULL, dir, 0);</span>
+<span class='curline'><a href='../S/src--vfs--fish--fish.c.html#L733'>ent</a>               733 src/vfs/fish/fish.c #define ST ent-&gt;ino-&gt;st</span>
+<span class='curline'><a href='../S/src--vfs--fish--fish.c.html#L779'>ent</a>               779 src/vfs/fish/fish.c                     ent-&gt;name = g_strndup (filename, filename_bound - filename);</span>
+<span class='curline'><a href='../S/src--vfs--fish--fish.c.html#L780'>ent</a>               780 src/vfs/fish/fish.c                     temp = ent-&gt;name;</span>
+<span class='curline'><a href='../S/src--vfs--fish--fish.c.html#L781'>ent</a>               781 src/vfs/fish/fish.c                     ent-&gt;name = strutils_shell_unescape (ent-&gt;name);</span>
+<span class='curline'><a href='../S/src--vfs--fish--fish.c.html#L784'>ent</a>               784 src/vfs/fish/fish.c                     ent-&gt;ino-&gt;linkname = g_strndup (linkname, linkname_bound - linkname);</span>
+<span class='curline'><a href='../S/src--vfs--fish--fish.c.html#L785'>ent</a>               785 src/vfs/fish/fish.c                     temp = ent-&gt;ino-&gt;linkname;</span>
+<span class='curline'><a href='../S/src--vfs--fish--fish.c.html#L786'>ent</a>               786 src/vfs/fish/fish.c                     ent-&gt;ino-&gt;linkname = strutils_shell_unescape (ent-&gt;ino-&gt;linkname);</span>
+<span class='curline'><a href='../S/src--vfs--fish--fish.c.html#L803'>ent</a>               803 src/vfs/fish/fish.c                     ent-&gt;name = g_strndup (filename, filename_bound - filename);</span>
+<span class='curline'><a href='../S/src--vfs--fish--fish.c.html#L804'>ent</a>               804 src/vfs/fish/fish.c                     temp = ent-&gt;name;</span>
+<span class='curline'><a href='../S/src--vfs--fish--fish.c.html#L805'>ent</a>               805 src/vfs/fish/fish.c                     ent-&gt;name = strutils_shell_unescape (ent-&gt;name);</span>
+<span class='curline'><a href='../S/src--vfs--fish--fish.c.html#L866'>ent</a>               866 src/vfs/fish/fish.c     vfs_s_free_entry (me, ent);</span>
+<span class='curline'><a href='../S/src--vfs--fish--fish.c.html#L1630'>ent</a>              1630 src/vfs/fish/fish.c             tmp_handle = vfs_mkstemps (&amp;vpath, me-&gt;name, fh-&gt;ino-&gt;ent-&gt;name);</span>
+<span class='curline'><a href='../S/src--vfs--ftpfs--ftpfs.c.html#L1694'>ent</a>              1694 src/vfs/ftpfs/ftpfs.c     struct vfs_s_entry *ent;</span>
+<span class='curline'><a href='../S/src--vfs--ftpfs--ftpfs.c.html#L1773'>ent</a>              1773 src/vfs/ftpfs/ftpfs.c         ent = vfs_s_generate_entry (me, NULL, dir, 0);</span>
+<span class='curline'><a href='../S/src--vfs--ftpfs--ftpfs.c.html#L1774'>ent</a>              1774 src/vfs/ftpfs/ftpfs.c         i = ent-&gt;ino-&gt;st.st_nlink;</span>
+<span class='curline'><a href='../S/src--vfs--ftpfs--ftpfs.c.html#L1776'>ent</a>              1776 src/vfs/ftpfs/ftpfs.c             (lc_buffer, &amp;ent-&gt;ino-&gt;st, &amp;ent-&gt;name, &amp;ent-&gt;ino-&gt;linkname, &amp;count_spaces))</span>
+<span class='curline'><a href='../S/src--vfs--ftpfs--ftpfs.c.html#L1778'>ent</a>              1778 src/vfs/ftpfs/ftpfs.c             vfs_s_free_entry (me, ent);</span>
+<span class='curline'><a href='../S/src--vfs--ftpfs--ftpfs.c.html#L1781'>ent</a>              1781 src/vfs/ftpfs/ftpfs.c         ent-&gt;ino-&gt;st.st_nlink = i;      /* Ouch, we need to preserve our counts :-( */</span>
+<span class='curline'><a href='../S/src--vfs--ftpfs--ftpfs.c.html#L1783'>ent</a>              1783 src/vfs/ftpfs/ftpfs.c         vfs_s_store_filename_leading_spaces (ent, count_spaces);</span>
+<span class='curline'><a href='../S/src--vfs--ftpfs--ftpfs.c.html#L1784'>ent</a>              1784 src/vfs/ftpfs/ftpfs.c         vfs_s_insert_entry (me, dir, ent);</span>
+<span class='curline'><a href='../S/src--vfs--ftpfs--ftpfs.c.html#L2234'>ent</a>              2234 src/vfs/ftpfs/ftpfs.c                 handle = vfs_mkstemps (&amp;vpath, me-&gt;name, fh-&gt;ino-&gt;ent-&gt;name);</span>
+<span class='curline'><a href='../S/src--vfs--sftpfs--vfs_class.c.html#L122'>ent</a>               122 src/vfs/sftpfs/vfs_class.c         struct vfs_s_entry *ent;</span>
+<span class='curline'><a href='../S/src--vfs--sftpfs--vfs_class.c.html#L134'>ent</a>               134 src/vfs/sftpfs/vfs_class.c         ent = vfs_s_generate_entry (path_element-&gt;class, name, dir, 0755);</span>
+<span class='curline'><a href='../S/src--vfs--sftpfs--vfs_class.c.html#L135'>ent</a>               135 src/vfs/sftpfs/vfs_class.c         path_inode = ent-&gt;ino;</span>
+<span class='curline'><a href='../S/src--vfs--sftpfs--vfs_class.c.html#L136'>ent</a>               136 src/vfs/sftpfs/vfs_class.c         vfs_s_insert_entry (path_element-&gt;class, dir, ent);</span>
+<span class='curline'><a href='../S/tests--lib--vfs--vfs_parse_ls_lga.c.html#L356'>ent</a>               356 tests/lib/vfs/vfs_parse_ls_lga.c     ent[ent_index] = vfs_s_generate_entry (&amp;vfs_test_ops1, NULL, vfs_root_inode, 0);\</span>
+<span class='curline'><a href='../S/tests--lib--vfs--vfs_parse_ls_lga.c.html#L358'>ent</a>               358 tests/lib/vfs/vfs_parse_ls_lga.c     &amp;ent[ent_index]-&gt;ino-&gt;st, &amp;ent[ent_index]-&gt;name, &amp;ent[ent_index]-&gt;ino-&gt;linkname, &amp;filepos))\</span>
+<span class='curline'><a href='../S/tests--lib--vfs--vfs_parse_ls_lga.c.html#L363'>ent</a>               363 tests/lib/vfs/vfs_parse_ls_lga.c     vfs_s_store_filename_leading_spaces (ent[ent_index], filepos);\</span>
+<span class='curline'><a href='../S/tests--lib--vfs--vfs_parse_ls_lga.c.html#L364'>ent</a>               364 tests/lib/vfs/vfs_parse_ls_lga.c     vfs_s_insert_entry (&amp;vfs_test_ops1, vfs_root_inode, ent[ent_index]);\</span>
+<span class='curline'><a href='../S/tests--lib--vfs--vfs_parse_ls_lga.c.html#L375'>ent</a>               375 tests/lib/vfs/vfs_parse_ls_lga.c     struct vfs_s_entry *ent[4];</span>
+<span class='curline'><a href='../S/tests--lib--vfs--vfs_parse_ls_lga.c.html#L389'>ent</a>               389 tests/lib/vfs/vfs_parse_ls_lga.c     mctest_assert_str_eq (ent[0]-&gt;name, "build_root1");</span>
+<span class='curline'><a href='../S/tests--lib--vfs--vfs_parse_ls_lga.c.html#L390'>ent</a>               390 tests/lib/vfs/vfs_parse_ls_lga.c     mctest_assert_str_eq (ent[0]-&gt;name, "build_root1");</span>
+<span class='curline'><a href='../S/tests--lib--vfs--vfs_parse_ls_lga.c.html#L391'>ent</a>               391 tests/lib/vfs/vfs_parse_ls_lga.c     mctest_assert_str_eq (ent[1]-&gt;name, "   build_root2");</span>
+<span class='curline'><a href='../S/tests--lib--vfs--vfs_parse_ls_lga.c.html#L392'>ent</a>               392 tests/lib/vfs/vfs_parse_ls_lga.c     mctest_assert_str_eq (ent[3]-&gt;name, " build_root 0");</span>
+</pre>
+</body>
+</html>

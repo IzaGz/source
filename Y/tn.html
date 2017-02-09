@@ -1,0 +1,27 @@
+<!DOCTYPE html PUBLIC '-//W3C//DTD XHTML 1.0 Transitional//EN' 'http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd'>
+<html xmlns='http://www.w3.org/1999/xhtml'>
+<head>
+<title>tn</title>
+<meta name='robots' content='noindex,nofollow' />
+<meta name='generator' content='GLOBAL-6.5.2' />
+<meta http-equiv='Content-Style-Type' content='text/css' />
+<link rel='stylesheet' type='text/css' href='../style.css' />
+</head>
+<body>
+<pre>
+<span class='curline'><a href='../S/src--vfs--cpio--cpio.c.html#L373'>tn</a>                373 src/vfs/cpio/cpio.c     char *tn;</span>
+<span class='curline'><a href='../S/src--vfs--cpio--cpio.c.html#L427'>tn</a>                427 src/vfs/cpio/cpio.c     for (tn = name + strlen (name) - 1; tn &gt;= name &amp;&amp; IS_PATH_SEP (*tn); tn--)</span>
+<span class='curline'><a href='../S/src--vfs--cpio--cpio.c.html#L428'>tn</a>                428 src/vfs/cpio/cpio.c         *tn = '\0';</span>
+<span class='curline'><a href='../S/src--vfs--cpio--cpio.c.html#L430'>tn</a>                430 src/vfs/cpio/cpio.c     tn = strrchr (name, PATH_SEP);</span>
+<span class='curline'><a href='../S/src--vfs--cpio--cpio.c.html#L431'>tn</a>                431 src/vfs/cpio/cpio.c     if (tn == NULL)</span>
+<span class='curline'><a href='../S/src--vfs--cpio--cpio.c.html#L432'>tn</a>                432 src/vfs/cpio/cpio.c         tn = name;</span>
+<span class='curline'><a href='../S/src--vfs--cpio--cpio.c.html#L433'>tn</a>                433 src/vfs/cpio/cpio.c     else if (tn == name + 1)</span>
+<span class='curline'><a href='../S/src--vfs--cpio--cpio.c.html#L436'>tn</a>                436 src/vfs/cpio/cpio.c         tn++;</span>
+<span class='curline'><a href='../S/src--vfs--cpio--cpio.c.html#L440'>tn</a>                440 src/vfs/cpio/cpio.c         *tn = '\0';</span>
+<span class='curline'><a href='../S/src--vfs--cpio--cpio.c.html#L442'>tn</a>                442 src/vfs/cpio/cpio.c         *tn = PATH_SEP;</span>
+<span class='curline'><a href='../S/src--vfs--cpio--cpio.c.html#L443'>tn</a>                443 src/vfs/cpio/cpio.c         tn++;</span>
+<span class='curline'><a href='../S/src--vfs--cpio--cpio.c.html#L446'>tn</a>                446 src/vfs/cpio/cpio.c     entry = MEDATA-&gt;find_entry (me, root, tn, LINK_FOLLOW, FL_NONE);    /* In case entry is already there */</span>
+<span class='curline'><a href='../S/src--vfs--cpio--cpio.c.html#L500'>tn</a>                500 src/vfs/cpio/cpio.c             entry = vfs_s_new_entry (me, tn, inode);</span>
+</pre>
+</body>
+</html>

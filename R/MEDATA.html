@@ -1,0 +1,73 @@
+<!DOCTYPE html PUBLIC '-//W3C//DTD XHTML 1.0 Transitional//EN' 'http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd'>
+<html xmlns='http://www.w3.org/1999/xhtml'>
+<head>
+<title>MEDATA</title>
+<meta name='robots' content='noindex,nofollow' />
+<meta name='generator' content='GLOBAL-6.5.2' />
+<meta http-equiv='Content-Style-Type' content='text/css' />
+<link rel='stylesheet' type='text/css' href='../style.css' />
+</head>
+<body>
+<pre>
+<span class='curline'><a href='../S/lib--vfs--direntry.c.html#L83'>MEDATA</a>             83 lib/vfs/direntry.c #define CALL(x) if (MEDATA-&gt;x) MEDATA-&gt;x</span>
+<span class='curline'><a href='../S/lib--vfs--direntry.c.html#L167'>MEDATA</a>            167 lib/vfs/direntry.c     target = (MEDATA-&gt;find_entry) (me, entry-&gt;dir-&gt;super-&gt;root, linkname, follow - 1, 0);</span>
+<span class='curline'><a href='../S/lib--vfs--direntry.c.html#L272'>MEDATA</a>            272 lib/vfs/direntry.c     if (ent != NULL &amp;&amp; !MEDATA-&gt;dir_uptodate (me, ent-&gt;ino))</span>
+<span class='curline'><a href='../S/lib--vfs--direntry.c.html#L287'>MEDATA</a>            287 lib/vfs/direntry.c         if (MEDATA-&gt;dir_load (me, ino, path) == -1)</span>
+<span class='curline'><a href='../S/lib--vfs--direntry.c.html#L332'>MEDATA</a>            332 lib/vfs/direntry.c     MEDATA-&gt;supers = g_list_prepend (MEDATA-&gt;supers, super);</span>
+<span class='curline'><a href='../S/lib--vfs--direntry.c.html#L356'>MEDATA</a>            356 lib/vfs/direntry.c     MEDATA-&gt;supers = g_list_remove (MEDATA-&gt;supers, super);</span>
+<span class='curline'><a href='../S/lib--vfs--direntry.c.html#L541'>MEDATA</a>            541 lib/vfs/direntry.c         if (!MEDATA-&gt;linear_start (me, FH, FH-&gt;pos))</span>
+<span class='curline'><a href='../S/lib--vfs--direntry.c.html#L549'>MEDATA</a>            549 lib/vfs/direntry.c         return MEDATA-&gt;linear_read (me, FH, buffer, count);</span>
+<span class='curline'><a href='../S/lib--vfs--direntry.c.html#L642'>MEDATA</a>            642 lib/vfs/direntry.c         MEDATA-&gt;linear_close (me, fh);</span>
+<span class='curline'><a href='../S/lib--vfs--direntry.c.html#L643'>MEDATA</a>            643 lib/vfs/direntry.c     if (MEDATA-&gt;fh_close)</span>
+<span class='curline'><a href='../S/lib--vfs--direntry.c.html#L644'>MEDATA</a>            644 lib/vfs/direntry.c         res = MEDATA-&gt;fh_close (me, fh);</span>
+<span class='curline'><a href='../S/lib--vfs--direntry.c.html#L645'>MEDATA</a>            645 lib/vfs/direntry.c     if ((MEDATA-&gt;flags &amp; VFS_S_USETMP) &amp;&amp; FH-&gt;changed &amp;&amp; MEDATA-&gt;file_store)</span>
+<span class='curline'><a href='../S/lib--vfs--direntry.c.html#L652'>MEDATA</a>            652 lib/vfs/direntry.c             res = MEDATA-&gt;file_store (me, fh, s, FH-&gt;ino-&gt;localname);</span>
+<span class='curline'><a href='../S/lib--vfs--direntry.c.html#L661'>MEDATA</a>            661 lib/vfs/direntry.c     if (MEDATA-&gt;fh_free_data != NULL)</span>
+<span class='curline'><a href='../S/lib--vfs--direntry.c.html#L662'>MEDATA</a>            662 lib/vfs/direntry.c         MEDATA-&gt;fh_free_data (fh);</span>
+<span class='curline'><a href='../S/lib--vfs--direntry.c.html#L689'>MEDATA</a>            689 lib/vfs/direntry.c     for (iter = MEDATA-&gt;supers; iter != NULL; iter = g_list_next (iter))</span>
+<span class='curline'><a href='../S/lib--vfs--direntry.c.html#L731'>MEDATA</a>            731 lib/vfs/direntry.c         if ((MEDATA-&gt;flags &amp; VFS_S_USETMP) != 0 &amp;&amp; (fh-&gt;ino != NULL))</span>
+<span class='curline'><a href='../S/lib--vfs--direntry.c.html#L834'>MEDATA</a>            834 lib/vfs/direntry.c     if (MEDATA-&gt;flush)</span>
+<span class='curline'><a href='../S/lib--vfs--direntry.c.html#L836'>MEDATA</a>            836 lib/vfs/direntry.c         MEDATA-&gt;flush = 0;</span>
+<span class='curline'><a href='../S/lib--vfs--direntry.c.html#L864'>MEDATA</a>            864 lib/vfs/direntry.c     ino-&gt;st.st_ino = MEDATA-&gt;inode_counter++;</span>
+<span class='curline'><a href='../S/lib--vfs--direntry.c.html#L865'>MEDATA</a>            865 lib/vfs/direntry.c     ino-&gt;st.st_dev = MEDATA-&gt;rdev;</span>
+<span class='curline'><a href='../S/lib--vfs--direntry.c.html#L894'>MEDATA</a>            894 lib/vfs/direntry.c     if ((MEDATA-&gt;flags &amp; VFS_S_USETMP) != 0 &amp;&amp; ino-&gt;localname != NULL)</span>
+<span class='curline'><a href='../S/lib--vfs--direntry.c.html#L1043'>MEDATA</a>           1043 lib/vfs/direntry.c     if (((MEDATA-&gt;flags &amp; VFS_S_REMOTE) == 0) &amp;&amp; (*path == '\0'))</span>
+<span class='curline'><a href='../S/lib--vfs--direntry.c.html#L1046'>MEDATA</a>           1046 lib/vfs/direntry.c     ent = (MEDATA-&gt;find_entry) (me, super-&gt;root, path, follow, flags);</span>
+<span class='curline'><a href='../S/lib--vfs--direntry.c.html#L1192'>MEDATA</a>           1192 lib/vfs/direntry.c     if ((MEDATA-&gt;flags &amp; VFS_S_USETMP) == 0)</span>
+<span class='curline'><a href='../S/lib--vfs--direntry.c.html#L1377'>MEDATA</a>           1377 lib/vfs/direntry.c     if ((MEDATA-&gt;flags &amp; VFS_S_USETMP) == 0)</span>
+<span class='curline'><a href='../S/lib--vfs--direntry.c.html#L1394'>MEDATA</a>           1394 lib/vfs/direntry.c     if (!MEDATA-&gt;linear_start (me, &amp;fh, 0))</span>
+<span class='curline'><a href='../S/lib--vfs--direntry.c.html#L1401'>MEDATA</a>           1401 lib/vfs/direntry.c     while ((n = MEDATA-&gt;linear_read (me, &amp;fh, buffer, sizeof (buffer))))</span>
+<span class='curline'><a href='../S/lib--vfs--direntry.c.html#L1421'>MEDATA</a>           1421 lib/vfs/direntry.c     MEDATA-&gt;linear_close (me, &amp;fh);</span>
+<span class='curline'><a href='../S/lib--vfs--direntry.c.html#L1429'>MEDATA</a>           1429 lib/vfs/direntry.c     MEDATA-&gt;linear_close (me, &amp;fh);</span>
+<span class='curline'><a href='../S/lib--vfs--direntry.c.html#L1530'>MEDATA</a>           1530 lib/vfs/direntry.c     FILE *logfile = MEDATA-&gt;logfile;</span>
+<span class='curline'><a href='../S/src--vfs--cpio--cpio.c.html#L268'>MEDATA</a>            268 src/vfs/cpio/cpio.c     root-&gt;st.st_dev = MEDATA-&gt;rdev++;</span>
+<span class='curline'><a href='../S/src--vfs--cpio--cpio.c.html#L446'>MEDATA</a>            446 src/vfs/cpio/cpio.c     entry = MEDATA-&gt;find_entry (me, root, tn, LINK_FOLLOW, FL_NONE);    /* In case entry is already there */</span>
+<span class='curline'><a href='../S/src--vfs--fish--fish.c.html#L271'>MEDATA</a>            271 src/vfs/fish/fish.c     FILE *logfile = MEDATA-&gt;logfile;</span>
+<span class='curline'><a href='../S/src--vfs--fish--fish.c.html#L687'>MEDATA</a>            687 src/vfs/fish/fish.c     if (MEDATA-&gt;logfile == NULL)</span>
+<span class='curline'><a href='../S/src--vfs--fish--fish.c.html#L688'>MEDATA</a>            688 src/vfs/fish/fish.c         MEDATA-&gt;logfile = fopen ("/tmp/mc-FISH.sh", "w");</span>
+<span class='curline'><a href='../S/src--vfs--fish--fish.c.html#L690'>MEDATA</a>            690 src/vfs/fish/fish.c     logfile = MEDATA-&gt;logfile;</span>
+<span class='curline'><a href='../S/src--vfs--fish--fish.c.html#L1660'>MEDATA</a>           1660 src/vfs/fish/fish.c     for (iter = MEDATA-&gt;supers; iter != NULL; iter = g_list_next (iter))</span>
+<span class='curline'><a href='../S/src--vfs--ftpfs--ftpfs.c.html#L308'>MEDATA</a>            308 src/vfs/ftpfs/ftpfs.c         if (MEDATA-&gt;logfile)</span>
+<span class='curline'><a href='../S/src--vfs--ftpfs--ftpfs.c.html#L310'>MEDATA</a>            310 src/vfs/ftpfs/ftpfs.c             fprintf (MEDATA-&gt;logfile, "MC -- ftpfs_translate_path: %s\n", remote_path);</span>
+<span class='curline'><a href='../S/src--vfs--ftpfs--ftpfs.c.html#L311'>MEDATA</a>            311 src/vfs/ftpfs/ftpfs.c             fflush (MEDATA-&gt;logfile);</span>
+<span class='curline'><a href='../S/src--vfs--ftpfs--ftpfs.c.html#L494'>MEDATA</a>            494 src/vfs/ftpfs/ftpfs.c     if (MEDATA-&gt;logfile)</span>
+<span class='curline'><a href='../S/src--vfs--ftpfs--ftpfs.c.html#L498'>MEDATA</a>            498 src/vfs/ftpfs/ftpfs.c             fputs ("PASS &lt;Password not logged&gt;\r\n", MEDATA-&gt;logfile);</span>
+<span class='curline'><a href='../S/src--vfs--ftpfs--ftpfs.c.html#L503'>MEDATA</a>            503 src/vfs/ftpfs/ftpfs.c             ret = fwrite (cmdstr, cmdlen, 1, MEDATA-&gt;logfile);</span>
+<span class='curline'><a href='../S/src--vfs--ftpfs--ftpfs.c.html#L507'>MEDATA</a>            507 src/vfs/ftpfs/ftpfs.c         fflush (MEDATA-&gt;logfile);</span>
+<span class='curline'><a href='../S/src--vfs--ftpfs--ftpfs.c.html#L632'>MEDATA</a>            632 src/vfs/ftpfs/ftpfs.c     if (!anon || MEDATA-&gt;logfile)</span>
+<span class='curline'><a href='../S/src--vfs--ftpfs--ftpfs.c.html#L660'>MEDATA</a>            660 src/vfs/ftpfs/ftpfs.c         if (MEDATA-&gt;logfile)</span>
+<span class='curline'><a href='../S/src--vfs--ftpfs--ftpfs.c.html#L662'>MEDATA</a>            662 src/vfs/ftpfs/ftpfs.c             fprintf (MEDATA-&gt;logfile, "MC -- remote_is_amiga =  %d\n", SUP-&gt;remote_is_amiga);</span>
+<span class='curline'><a href='../S/src--vfs--ftpfs--ftpfs.c.html#L663'>MEDATA</a>            663 src/vfs/ftpfs/ftpfs.c             fflush (MEDATA-&gt;logfile);</span>
+<span class='curline'><a href='../S/src--vfs--ftpfs--ftpfs.c.html#L1638'>MEDATA</a>           1638 src/vfs/ftpfs/ftpfs.c             if (MEDATA-&gt;logfile)</span>
+<span class='curline'><a href='../S/src--vfs--ftpfs--ftpfs.c.html#L1640'>MEDATA</a>           1640 src/vfs/ftpfs/ftpfs.c                 fputs (buffer, MEDATA-&gt;logfile);</span>
+<span class='curline'><a href='../S/src--vfs--ftpfs--ftpfs.c.html#L1641'>MEDATA</a>           1641 src/vfs/ftpfs/ftpfs.c                 fflush (MEDATA-&gt;logfile);</span>
+<span class='curline'><a href='../S/src--vfs--ftpfs--ftpfs.c.html#L1766'>MEDATA</a>           1766 src/vfs/ftpfs/ftpfs.c         if (MEDATA-&gt;logfile)</span>
+<span class='curline'><a href='../S/src--vfs--ftpfs--ftpfs.c.html#L1768'>MEDATA</a>           1768 src/vfs/ftpfs/ftpfs.c             fputs (lc_buffer, MEDATA-&gt;logfile);</span>
+<span class='curline'><a href='../S/src--vfs--ftpfs--ftpfs.c.html#L1769'>MEDATA</a>           1769 src/vfs/ftpfs/ftpfs.c             fputs ("\n", MEDATA-&gt;logfile);</span>
+<span class='curline'><a href='../S/src--vfs--ftpfs--ftpfs.c.html#L1770'>MEDATA</a>           1770 src/vfs/ftpfs/ftpfs.c             fflush (MEDATA-&gt;logfile);</span>
+<span class='curline'><a href='../S/src--vfs--ftpfs--ftpfs.c.html#L2326'>MEDATA</a>           2326 src/vfs/ftpfs/ftpfs.c     for (iter = MEDATA-&gt;supers; iter != NULL; iter = g_list_next (iter))</span>
+<span class='curline'><a href='../S/src--vfs--tar--tar.c.html#L343'>MEDATA</a>            343 src/vfs/tar/tar.c     root-&gt;st.st_dev = MEDATA-&gt;rdev++;</span>
+<span class='curline'><a href='../S/src--vfs--tar--tar.c.html#L728'>MEDATA</a>            728 src/vfs/tar/tar.c             entry = MEDATA-&gt;find_entry (me, parent, p, LINK_NO_FOLLOW, FL_NONE);</span>
+</pre>
+</body>
+</html>

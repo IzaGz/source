@@ -1,0 +1,195 @@
+<!DOCTYPE html PUBLIC '-//W3C//DTD XHTML 1.0 Transitional//EN' 'http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd'>
+<html xmlns='http://www.w3.org/1999/xhtml'>
+<head>
+<title>selected</title>
+<meta name='robots' content='noindex,nofollow' />
+<meta name='generator' content='GLOBAL-6.5.2' />
+<meta http-equiv='Content-Style-Type' content='text/css' />
+<link rel='stylesheet' type='text/css' href='../style.css' />
+</head>
+<body>
+<pre>
+<span class='curline'><a href='../S/lib--widget--dialog-switch.c.html#L223'>selected</a>          223 lib/widget/dialog-switch.c     GList *h, *selected;</span>
+<span class='curline'><a href='../S/lib--widget--dialog-switch.c.html#L251'>selected</a>          251 lib/widget/dialog-switch.c     selected = run_listbox_with_data (listbox, mc_current);</span>
+<span class='curline'><a href='../S/lib--widget--dialog-switch.c.html#L252'>selected</a>          252 lib/widget/dialog-switch.c     if (selected != NULL)</span>
+<span class='curline'><a href='../S/lib--widget--dialog-switch.c.html#L253'>selected</a>          253 lib/widget/dialog-switch.c         dialog_switch_goto (selected);</span>
+<span class='curline'><a href='../S/lib--widget--menu.c.html#L70'>selected</a>           70 lib/widget/menu.c     unsigned int selected;      /* pointer to current menu entry */</span>
+<span class='curline'><a href='../S/lib--widget--menu.c.html#L122'>selected</a>          122 lib/widget/menu.c     const menu_t *menu = MENU (g_list_nth_data (menubar-&gt;menu, menubar-&gt;selected));</span>
+<span class='curline'><a href='../S/lib--widget--menu.c.html#L180'>selected</a>          180 lib/widget/menu.c     const menu_t *menu = MENU (g_list_nth_data (menubar-&gt;menu, menubar-&gt;selected));</span>
+<span class='curline'><a href='../S/lib--widget--menu.c.html#L193'>selected</a>          193 lib/widget/menu.c                            i == menu-&gt;selected ? MENU_SELECTED_COLOR : MENU_ENTRY_COLOR);</span>
+<span class='curline'><a href='../S/lib--widget--menu.c.html#L225'>selected</a>          225 lib/widget/menu.c         gboolean is_selected = (menubar-&gt;selected == (gsize) g_list_position (menubar-&gt;menu, i));</span>
+<span class='curline'><a href='../S/lib--widget--menu.c.html#L249'>selected</a>          249 lib/widget/menu.c         widget_move (w, 0, MENU (g_list_nth_data (menubar-&gt;menu, menubar-&gt;selected))-&gt;start_x);</span>
+<span class='curline'><a href='../S/lib--widget--menu.c.html#L283'>selected</a>          283 lib/widget/menu.c     if (menubar-&gt;selected == 0)</span>
+<span class='curline'><a href='../S/lib--widget--menu.c.html#L284'>selected</a>          284 lib/widget/menu.c         menubar-&gt;selected = g_list_length (menubar-&gt;menu) - 1;</span>
+<span class='curline'><a href='../S/lib--widget--menu.c.html#L286'>selected</a>          286 lib/widget/menu.c         menubar-&gt;selected--;</span>
+<span class='curline'><a href='../S/lib--widget--menu.c.html#L296'>selected</a>          296 lib/widget/menu.c     menubar-&gt;selected = (menubar-&gt;selected + 1) % g_list_length (menubar-&gt;menu);</span>
+<span class='curline'><a href='../S/lib--widget--menu.c.html#L324'>selected</a>          324 lib/widget/menu.c menubar_drop (WMenuBar * menubar, unsigned int selected)</span>
+<span class='curline'><a href='../S/lib--widget--menu.c.html#L327'>selected</a>          327 lib/widget/menu.c     menubar-&gt;selected = selected;</span>
+<span class='curline'><a href='../S/lib--widget--menu.c.html#L336'>selected</a>          336 lib/widget/menu.c     const menu_t *menu = MENU (g_list_nth_data (menubar-&gt;menu, menubar-&gt;selected));</span>
+<span class='curline'><a href='../S/lib--widget--menu.c.html#L337'>selected</a>          337 lib/widget/menu.c     const menu_entry_t *entry = MENUENTRY (g_list_nth_data (menu-&gt;entries, menu-&gt;selected));</span>
+<span class='curline'><a href='../S/lib--widget--menu.c.html#L343'>selected</a>          343 lib/widget/menu.c         mc_global.widget.is_right = (menubar-&gt;selected != 0);</span>
+<span class='curline'><a href='../S/lib--widget--menu.c.html#L355'>selected</a>          355 lib/widget/menu.c     menu_t *menu = MENU (g_list_nth_data (menubar-&gt;menu, menubar-&gt;selected));</span>
+<span class='curline'><a href='../S/lib--widget--menu.c.html#L359'>selected</a>          359 lib/widget/menu.c     menubar_paint_idx (menubar, menu-&gt;selected, MENU_ENTRY_COLOR);</span>
+<span class='curline'><a href='../S/lib--widget--menu.c.html#L363'>selected</a>          363 lib/widget/menu.c         menu-&gt;selected = (menu-&gt;selected + 1) % len;</span>
+<span class='curline'><a href='../S/lib--widget--menu.c.html#L364'>selected</a>          364 lib/widget/menu.c         entry = MENUENTRY (g_list_nth_data (menu-&gt;entries, menu-&gt;selected));</span>
+<span class='curline'><a href='../S/lib--widget--menu.c.html#L368'>selected</a>          368 lib/widget/menu.c     menubar_paint_idx (menubar, menu-&gt;selected, MENU_SELECTED_COLOR);</span>
+<span class='curline'><a href='../S/lib--widget--menu.c.html#L376'>selected</a>          376 lib/widget/menu.c     menu_t *menu = MENU (g_list_nth_data (menubar-&gt;menu, menubar-&gt;selected));</span>
+<span class='curline'><a href='../S/lib--widget--menu.c.html#L380'>selected</a>          380 lib/widget/menu.c     menubar_paint_idx (menubar, menu-&gt;selected, MENU_ENTRY_COLOR);</span>
+<span class='curline'><a href='../S/lib--widget--menu.c.html#L384'>selected</a>          384 lib/widget/menu.c         if (menu-&gt;selected == 0)</span>
+<span class='curline'><a href='../S/lib--widget--menu.c.html#L385'>selected</a>          385 lib/widget/menu.c             menu-&gt;selected = len - 1;</span>
+<span class='curline'><a href='../S/lib--widget--menu.c.html#L387'>selected</a>          387 lib/widget/menu.c             menu-&gt;selected--;</span>
+<span class='curline'><a href='../S/lib--widget--menu.c.html#L388'>selected</a>          388 lib/widget/menu.c         entry = MENUENTRY (g_list_nth_data (menu-&gt;entries, menu-&gt;selected));</span>
+<span class='curline'><a href='../S/lib--widget--menu.c.html#L392'>selected</a>          392 lib/widget/menu.c     menubar_paint_idx (menubar, menu-&gt;selected, MENU_SELECTED_COLOR);</span>
+<span class='curline'><a href='../S/lib--widget--menu.c.html#L400'>selected</a>          400 lib/widget/menu.c     menu_t *menu = MENU (g_list_nth_data (menubar-&gt;menu, menubar-&gt;selected));</span>
+<span class='curline'><a href='../S/lib--widget--menu.c.html#L402'>selected</a>          402 lib/widget/menu.c     if (menu-&gt;selected == 0)</span>
+<span class='curline'><a href='../S/lib--widget--menu.c.html#L405'>selected</a>          405 lib/widget/menu.c     menubar_paint_idx (menubar, menu-&gt;selected, MENU_ENTRY_COLOR);</span>
+<span class='curline'><a href='../S/lib--widget--menu.c.html#L407'>selected</a>          407 lib/widget/menu.c     menu-&gt;selected = 0;</span>
+<span class='curline'><a href='../S/lib--widget--menu.c.html#L413'>selected</a>          413 lib/widget/menu.c         entry = MENUENTRY (g_list_nth_data (menu-&gt;entries, menu-&gt;selected));</span>
+<span class='curline'><a href='../S/lib--widget--menu.c.html#L416'>selected</a>          416 lib/widget/menu.c             menu-&gt;selected++;</span>
+<span class='curline'><a href='../S/lib--widget--menu.c.html#L421'>selected</a>          421 lib/widget/menu.c     menubar_paint_idx (menubar, menu-&gt;selected, MENU_SELECTED_COLOR);</span>
+<span class='curline'><a href='../S/lib--widget--menu.c.html#L429'>selected</a>          429 lib/widget/menu.c     menu_t *menu = MENU (g_list_nth_data (menubar-&gt;menu, menubar-&gt;selected));</span>
+<span class='curline'><a href='../S/lib--widget--menu.c.html#L433'>selected</a>          433 lib/widget/menu.c     if (menu-&gt;selected == len - 1)</span>
+<span class='curline'><a href='../S/lib--widget--menu.c.html#L436'>selected</a>          436 lib/widget/menu.c     menubar_paint_idx (menubar, menu-&gt;selected, MENU_ENTRY_COLOR);</span>
+<span class='curline'><a href='../S/lib--widget--menu.c.html#L438'>selected</a>          438 lib/widget/menu.c     menu-&gt;selected = len;</span>
+<span class='curline'><a href='../S/lib--widget--menu.c.html#L442'>selected</a>          442 lib/widget/menu.c         menu-&gt;selected--;</span>
+<span class='curline'><a href='../S/lib--widget--menu.c.html#L443'>selected</a>          443 lib/widget/menu.c         entry = MENUENTRY (g_list_nth_data (menu-&gt;entries, menu-&gt;selected));</span>
+<span class='curline'><a href='../S/lib--widget--menu.c.html#L447'>selected</a>          447 lib/widget/menu.c     menubar_paint_idx (menubar, menu-&gt;selected, MENU_SELECTED_COLOR);</span>
+<span class='curline'><a href='../S/lib--widget--menu.c.html#L474'>selected</a>          474 lib/widget/menu.c                     MENU (g_list_nth_data (menubar-&gt;menu, menubar-&gt;selected))-&gt;help_node;</span>
+<span class='curline'><a href='../S/lib--widget--menu.c.html#L515'>selected</a>          515 lib/widget/menu.c             menubar_drop (menubar, menubar-&gt;selected);</span>
+<span class='curline'><a href='../S/lib--widget--menu.c.html#L521'>selected</a>          521 lib/widget/menu.c         menu_t *menu = MENU (g_list_nth_data (menubar-&gt;menu, menubar-&gt;selected));</span>
+<span class='curline'><a href='../S/lib--widget--menu.c.html#L532'>selected</a>          532 lib/widget/menu.c                 menu-&gt;selected = g_list_position (menu-&gt;entries, i);</span>
+<span class='curline'><a href='../S/lib--widget--menu.c.html#L686'>selected</a>          686 lib/widget/menu.c     menu = MENU (g_list_nth_data (menubar-&gt;menu, menubar-&gt;selected));</span>
+<span class='curline'><a href='../S/lib--widget--menu.c.html#L709'>selected</a>          709 lib/widget/menu.c     menu = MENU (g_list_nth_data (menubar-&gt;menu, menubar-&gt;selected));</span>
+<span class='curline'><a href='../S/lib--widget--menu.c.html#L714'>selected</a>          714 lib/widget/menu.c         menubar_paint_idx (menubar, menu-&gt;selected, MENU_ENTRY_COLOR);</span>
+<span class='curline'><a href='../S/lib--widget--menu.c.html#L715'>selected</a>          715 lib/widget/menu.c         menu-&gt;selected = y;</span>
+<span class='curline'><a href='../S/lib--widget--menu.c.html#L716'>selected</a>          716 lib/widget/menu.c         menubar_paint_idx (menubar, menu-&gt;selected, MENU_SELECTED_COLOR);</span>
+<span class='curline'><a href='../S/lib--widget--menu.c.html#L740'>selected</a>          740 lib/widget/menu.c             unsigned int selected;</span>
+<span class='curline'><a href='../S/lib--widget--menu.c.html#L742'>selected</a>          742 lib/widget/menu.c             selected = menubar_get_menu_by_x_coord (menubar, event-&gt;x);</span>
+<span class='curline'><a href='../S/lib--widget--menu.c.html#L743'>selected</a>          743 lib/widget/menu.c             menubar_activate (menubar, TRUE, selected);</span>
+<span class='curline'><a href='../S/lib--widget--menu.c.html#L745'>selected</a>          745 lib/widget/menu.c             menubar_drop (menubar, selected);</span>
+<span class='curline'><a href='../S/lib--widget--menu.c.html#L878'>selected</a>          878 lib/widget/menu.c     menu-&gt;selected = 0;</span>
+<span class='curline'><a href='../S/lib--widget--menu.c.html#L934'>selected</a>          934 lib/widget/menu.c     menubar-&gt;selected = 0;</span>
+<span class='curline'><a href='../S/lib--widget--menu.c.html#L1035'>selected</a>         1035 lib/widget/menu.c             menubar-&gt;selected = (guint) which;</span>
+<span class='curline'><a href='../S/lib--widget--menu.h.html#L36'>selected</a>           36 lib/widget/menu.h     guint selected;             /* Selected menu on the top bar */</span>
+<span class='curline'><a href='../S/src--editor--editwidget.c.html#L326'>selected</a>          326 src/editor/editwidget.c     WEdit *selected;</span>
+<span class='curline'><a href='../S/src--editor--editwidget.c.html#L352'>selected</a>          352 src/editor/editwidget.c     selected = run_listbox_with_data (listbox, h-&gt;current-&gt;data);</span>
+<span class='curline'><a href='../S/src--editor--editwidget.c.html#L353'>selected</a>          353 src/editor/editwidget.c     if (selected != NULL)</span>
+<span class='curline'><a href='../S/src--editor--editwidget.c.html#L354'>selected</a>          354 src/editor/editwidget.c         widget_select (WIDGET (selected));</span>
+<span class='curline'><a href='../S/src--filemanager--chmod.c.html#L77'>selected</a>           77 src/filemanager/chmod.c     gboolean selected;</span>
+<span class='curline'><a href='../S/src--filemanager--chmod.c.html#L185'>selected</a>          185 src/filemanager/chmod.c     check_perm[Id].selected = !check_perm[Id].selected;</span>
+<span class='curline'><a href='../S/src--filemanager--chmod.c.html#L188'>selected</a>          188 src/filemanager/chmod.c     tty_print_char (check_perm[Id].selected ? '*' : ' ');</span>
+<span class='curline'><a href='../S/src--filemanager--chmod.c.html#L504'>selected</a>          504 src/filemanager/chmod.c                 if (check_perm[i].selected || result == B_ALL)</span>
+<span class='curline'><a href='../S/src--filemanager--chmod.c.html#L520'>selected</a>          520 src/filemanager/chmod.c                 if (check_perm[i].selected)</span>
+<span class='curline'><a href='../S/src--filemanager--chmod.c.html#L531'>selected</a>          531 src/filemanager/chmod.c                 if (check_perm[i].selected)</span>
+<span class='curline'><a href='../S/src--filemanager--cmd.c.html#L154'>selected</a>          154 src/filemanager/cmd.c         file_idx = current_panel-&gt;selected;</span>
+<span class='curline'><a href='../S/src--filemanager--cmd.c.html#L1440'>selected</a>         1440 src/filemanager/cmd.c     entry = &amp;(panel-&gt;dir.list[panel-&gt;selected]);</span>
+<span class='curline'><a href='../S/src--filemanager--cmd.c.html#L1455'>selected</a>         1455 src/filemanager/cmd.c     entry = &amp;(panel-&gt;dir.list[panel-&gt;selected]);</span>
+<span class='curline'><a href='../S/src--filemanager--file.c.html#L1273'>selected</a>         1273 src/filemanager/file.c     return panel-&gt;dir.list[panel-&gt;selected].fname;</span>
+<span class='curline'><a href='../S/src--filemanager--info.c.html#L136'>selected</a>          136 src/filemanager/info.c     st = current_panel-&gt;dir.list[current_panel-&gt;selected].st;</span>
+<span class='curline'><a href='../S/src--filemanager--info.c.html#L266'>selected</a>          266 src/filemanager/info.c             fname = current_panel-&gt;dir.list[current_panel-&gt;selected].fname;</span>
+<span class='curline'><a href='../S/src--filemanager--layout.c.html#L1051'>selected</a>         1051 src/filemanager/layout.c             file_name = the_other_panel-&gt;dir.list[the_other_panel-&gt;selected].fname;</span>
+<span class='curline'><a href='../S/src--filemanager--layout.c.html#L1151'>selected</a>         1151 src/filemanager/layout.c         panelswap (selected);</span>
+<span class='curline'><a href='../S/src--filemanager--midnight.c.html#L379'>selected</a>          379 src/filemanager/midnight.c     int selected;</span>
+<span class='curline'><a href='../S/src--filemanager--midnight.c.html#L382'>selected</a>          382 src/filemanager/midnight.c         selected = 0;</span>
+<span class='curline'><a href='../S/src--filemanager--midnight.c.html#L384'>selected</a>          384 src/filemanager/midnight.c         selected = g_list_length (the_menubar-&gt;menu) - 1;</span>
+<span class='curline'><a href='../S/src--filemanager--midnight.c.html#L386'>selected</a>          386 src/filemanager/midnight.c     menubar_activate (the_menubar, drop_menus, selected);</span>
+<span class='curline'><a href='../S/src--filemanager--midnight.c.html#L826'>selected</a>          826 src/filemanager/midnight.c         command_insert (cmdline, panel-&gt;dir.list[panel-&gt;selected].fname, TRUE);</span>
+<span class='curline'><a href='../S/src--filemanager--panel.c.html#L1005'>selected</a>         1005 src/filemanager/panel.c     if (S_ISLNK (panel-&gt;dir.list[panel-&gt;selected].st.st_mode))</span>
+<span class='curline'><a href='../S/src--filemanager--panel.c.html#L1012'>selected</a>         1012 src/filemanager/panel.c             vfs_path_append_new (panel-&gt;cwd_vpath, panel-&gt;dir.list[panel-&gt;selected].fname,</span>
+<span class='curline'><a href='../S/src--filemanager--panel.c.html#L1025'>selected</a>         1025 src/filemanager/panel.c     else if (DIR_IS_DOTDOT (panel-&gt;dir.list[panel-&gt;selected].fname))</span>
+<span class='curline'><a href='../S/src--filemanager--panel.c.html#L1035'>selected</a>         1035 src/filemanager/panel.c         repaint_file (panel, panel-&gt;selected, FALSE, STATUS, TRUE);</span>
+<span class='curline'><a href='../S/src--filemanager--panel.c.html#L1057'>selected</a>         1057 src/filemanager/panel.c             color += (panel-&gt;selected == i + panel-&gt;top_file &amp;&amp; panel-&gt;active);</span>
+<span class='curline'><a href='../S/src--filemanager--panel.c.html#L1318'>selected</a>         1318 src/filemanager/panel.c             if (S_ISREG (panel-&gt;dir.list[panel-&gt;selected].st.st_mode))</span>
+<span class='curline'><a href='../S/src--filemanager--panel.c.html#L1323'>selected</a>         1323 src/filemanager/panel.c                             size_trunc_sep (panel-&gt;dir.list[panel-&gt;selected].st.st_size,</span>
+<span class='curline'><a href='../S/src--filemanager--panel.c.html#L1371'>selected</a>         1371 src/filemanager/panel.c         i = panel-&gt;selected - items + 1;</span>
+<span class='curline'><a href='../S/src--filemanager--panel.c.html#L1379'>selected</a>         1379 src/filemanager/panel.c         if (panel-&gt;top_file &gt; panel-&gt;selected)</span>
+<span class='curline'><a href='../S/src--filemanager--panel.c.html#L1380'>selected</a>         1380 src/filemanager/panel.c             panel-&gt;top_file = panel-&gt;selected;</span>
+<span class='curline'><a href='../S/src--filemanager--panel.c.html#L2028'>selected</a>         2028 src/filemanager/panel.c     repaint_file (panel, panel-&gt;selected, TRUE, 2 * selection (panel)-&gt;f.marked, FALSE);</span>
+<span class='curline'><a href='../S/src--filemanager--panel.c.html#L2089'>selected</a>         2089 src/filemanager/panel.c         top += lines * ((panel-&gt;selected - top) / lines);</span>
+<span class='curline'><a href='../S/src--filemanager--panel.c.html#L2091'>selected</a>         2091 src/filemanager/panel.c     return (panel-&gt;selected - top - lines / 2);</span>
+<span class='curline'><a href='../S/src--filemanager--panel.c.html#L2101'>selected</a>         2101 src/filemanager/panel.c     if (panel-&gt;selected + 1 == panel-&gt;dir.len)</span>
+<span class='curline'><a href='../S/src--filemanager--panel.c.html#L2105'>selected</a>         2105 src/filemanager/panel.c     panel-&gt;selected++;</span>
+<span class='curline'><a href='../S/src--filemanager--panel.c.html#L2109'>selected</a>         2109 src/filemanager/panel.c     if (panels_options.scroll_pages &amp;&amp; panel-&gt;selected - panel-&gt;top_file == items)</span>
+<span class='curline'><a href='../S/src--filemanager--panel.c.html#L2132'>selected</a>         2132 src/filemanager/panel.c     if (panel-&gt;selected == 0)</span>
+<span class='curline'><a href='../S/src--filemanager--panel.c.html#L2136'>selected</a>         2136 src/filemanager/panel.c     panel-&gt;selected--;</span>
+<span class='curline'><a href='../S/src--filemanager--panel.c.html#L2138'>selected</a>         2138 src/filemanager/panel.c     if (panels_options.scroll_pages &amp;&amp; panel-&gt;selected &lt; panel-&gt;top_file)</span>
+<span class='curline'><a href='../S/src--filemanager--panel.c.html#L2165'>selected</a>         2165 src/filemanager/panel.c     new_pos = panel-&gt;selected + lines;</span>
+<span class='curline'><a href='../S/src--filemanager--panel.c.html#L2173'>selected</a>         2173 src/filemanager/panel.c     panel-&gt;selected = new_pos;</span>
+<span class='curline'><a href='../S/src--filemanager--panel.c.html#L2175'>selected</a>         2175 src/filemanager/panel.c     if (panel-&gt;selected - panel-&gt;top_file &gt;= panel_items (panel))</span>
+<span class='curline'><a href='../S/src--filemanager--panel.c.html#L2181'>selected</a>         2181 src/filemanager/panel.c     if (panel-&gt;selected - panel-&gt;top_file &lt; 0)</span>
+<span class='curline'><a href='../S/src--filemanager--panel.c.html#L2189'>selected</a>         2189 src/filemanager/panel.c         if (panel-&gt;top_file &gt; panel-&gt;selected)</span>
+<span class='curline'><a href='../S/src--filemanager--panel.c.html#L2190'>selected</a>         2190 src/filemanager/panel.c             panel-&gt;top_file = panel-&gt;selected;</span>
+<span class='curline'><a href='../S/src--filemanager--panel.c.html#L2233'>selected</a>         2233 src/filemanager/panel.c     if (!panel-&gt;selected &amp;&amp; !panel-&gt;top_file)</span>
+<span class='curline'><a href='../S/src--filemanager--panel.c.html#L2241'>selected</a>         2241 src/filemanager/panel.c         panel-&gt;selected = 0;</span>
+<span class='curline'><a href='../S/src--filemanager--panel.c.html#L2243'>selected</a>         2243 src/filemanager/panel.c         panel-&gt;selected -= items;</span>
+<span class='curline'><a href='../S/src--filemanager--panel.c.html#L2265'>selected</a>         2265 src/filemanager/panel.c         char *fname = panel-&gt;dir.list[panel-&gt;selected].fname;</span>
+<span class='curline'><a href='../S/src--filemanager--panel.c.html#L2304'>selected</a>         2304 src/filemanager/panel.c     if (panel-&gt;selected == panel-&gt;dir.len - 1)</span>
+<span class='curline'><a href='../S/src--filemanager--panel.c.html#L2314'>selected</a>         2314 src/filemanager/panel.c         panel-&gt;selected = panel-&gt;dir.len - 1;</span>
+<span class='curline'><a href='../S/src--filemanager--panel.c.html#L2316'>selected</a>         2316 src/filemanager/panel.c         panel-&gt;selected += items;</span>
+<span class='curline'><a href='../S/src--filemanager--panel.c.html#L2344'>selected</a>         2344 src/filemanager/panel.c     panel-&gt;selected = panel-&gt;top_file;</span>
+<span class='curline'><a href='../S/src--filemanager--panel.c.html#L2354'>selected</a>         2354 src/filemanager/panel.c     panel-&gt;selected = panel-&gt;top_file + panel_items (panel) / 2;</span>
+<span class='curline'><a href='../S/src--filemanager--panel.c.html#L2364'>selected</a>         2364 src/filemanager/panel.c     panel-&gt;selected = panel-&gt;top_file + panel_items (panel) - 1;</span>
+<span class='curline'><a href='../S/src--filemanager--panel.c.html#L2373'>selected</a>         2373 src/filemanager/panel.c     if (panel-&gt;selected == 0)</span>
+<span class='curline'><a href='../S/src--filemanager--panel.c.html#L2382'>selected</a>         2382 src/filemanager/panel.c         if (panel-&gt;selected &gt; middle_pos)</span>
+<span class='curline'><a href='../S/src--filemanager--panel.c.html#L2387'>selected</a>         2387 src/filemanager/panel.c         if (panel-&gt;selected != panel-&gt;top_file)</span>
+<span class='curline'><a href='../S/src--filemanager--panel.c.html#L2395'>selected</a>         2395 src/filemanager/panel.c     panel-&gt;selected = 0;</span>
+<span class='curline'><a href='../S/src--filemanager--panel.c.html#L2406'>selected</a>         2406 src/filemanager/panel.c     if (panel-&gt;selected == panel-&gt;dir.len - 1)</span>
+<span class='curline'><a href='../S/src--filemanager--panel.c.html#L2418'>selected</a>         2418 src/filemanager/panel.c         if (panel-&gt;selected &lt; middle_pos)</span>
+<span class='curline'><a href='../S/src--filemanager--panel.c.html#L2423'>selected</a>         2423 src/filemanager/panel.c         if (panel-&gt;selected != panel-&gt;top_file + items - 1)</span>
+<span class='curline'><a href='../S/src--filemanager--panel.c.html#L2430'>selected</a>         2430 src/filemanager/panel.c     panel-&gt;selected = panel-&gt;dir.len - 1;</span>
+<span class='curline'><a href='../S/src--filemanager--panel.c.html#L2440'>selected</a>         2440 src/filemanager/panel.c     do_file_mark (panel, panel-&gt;selected, selection (panel)-&gt;f.marked ? 0 : 1);</span>
+<span class='curline'><a href='../S/src--filemanager--panel.c.html#L2482'>selected</a>         2482 src/filemanager/panel.c     lines = MIN (lines, panel-&gt;dir.len - panel-&gt;selected - 1);</span>
+<span class='curline'><a href='../S/src--filemanager--panel.c.html#L2485'>selected</a>         2485 src/filemanager/panel.c         do_file_mark (panel, panel-&gt;selected, state_mark);</span>
+<span class='curline'><a href='../S/src--filemanager--panel.c.html#L2488'>selected</a>         2488 src/filemanager/panel.c     do_file_mark (panel, panel-&gt;selected, state_mark);</span>
+<span class='curline'><a href='../S/src--filemanager--panel.c.html#L2502'>selected</a>         2502 src/filemanager/panel.c     lines = MIN (lines, panel-&gt;selected + 1);</span>
+<span class='curline'><a href='../S/src--filemanager--panel.c.html#L2505'>selected</a>         2505 src/filemanager/panel.c         do_file_mark (panel, panel-&gt;selected, state_mark);</span>
+<span class='curline'><a href='../S/src--filemanager--panel.c.html#L2508'>selected</a>         2508 src/filemanager/panel.c     do_file_mark (panel, panel-&gt;selected, state_mark);</span>
+<span class='curline'><a href='../S/src--filemanager--panel.c.html#L2691'>selected</a>         2691 src/filemanager/panel.c     sel = panel-&gt;selected;</span>
+<span class='curline'><a href='../S/src--filemanager--panel.c.html#L2693'>selected</a>         2693 src/filemanager/panel.c     for (i = panel-&gt;selected; !wrapped || i != panel-&gt;selected; i++)</span>
+<span class='curline'><a href='../S/src--filemanager--panel.c.html#L2712'>selected</a>         2712 src/filemanager/panel.c         panel-&gt;selected = sel;</span>
+<span class='curline'><a href='../S/src--filemanager--panel.c.html#L2737'>selected</a>         2737 src/filemanager/panel.c         if (panel-&gt;selected + 1 == panel-&gt;dir.len)</span>
+<span class='curline'><a href='../S/src--filemanager--panel.c.html#L2738'>selected</a>         2738 src/filemanager/panel.c             panel-&gt;selected = 0;</span>
+<span class='curline'><a href='../S/src--filemanager--panel.c.html#L2867'>selected</a>         2867 src/filemanager/panel.c     const file_entry_t *entry = &amp;panel-&gt;dir.list[panel-&gt;selected];</span>
+<span class='curline'><a href='../S/src--filemanager--panel.c.html#L2930'>selected</a>         2930 src/filemanager/panel.c     if (!S_ISLNK (panel-&gt;dir.list[panel-&gt;selected].st.st_mode))</span>
+<span class='curline'><a href='../S/src--filemanager--panel.c.html#L3889'>selected</a>         3889 src/filemanager/panel.c             if (my_index != panel-&gt;selected)</span>
+<span class='curline'><a href='../S/src--filemanager--panel.c.html#L3892'>selected</a>         3892 src/filemanager/panel.c                 panel-&gt;selected = my_index;</span>
+<span class='curline'><a href='../S/src--filemanager--panel.c.html#L4006'>selected</a>         4006 src/filemanager/panel.c         my_current_file = g_strdup (panel-&gt;dir.list[panel-&gt;selected].fname);</span>
+<span class='curline'><a href='../S/src--filemanager--panel.c.html#L4043'>selected</a>         4043 src/filemanager/panel.c     if (i != panel-&gt;selected)</span>
+<span class='curline'><a href='../S/src--filemanager--panel.c.html#L4046'>selected</a>         4046 src/filemanager/panel.c         panel-&gt;selected = i;</span>
+<span class='curline'><a href='../S/src--filemanager--panel.c.html#L4047'>selected</a>         4047 src/filemanager/panel.c         panel-&gt;top_file = panel-&gt;selected - (WIDGET (panel)-&gt;lines - 2) / 2;</span>
+<span class='curline'><a href='../S/src--filemanager--panel.c.html#L4088'>selected</a>         4088 src/filemanager/panel.c     if (panel-&gt;selected &gt;= panel-&gt;dir.len)</span>
+<span class='curline'><a href='../S/src--filemanager--panel.c.html#L4203'>selected</a>         4203 src/filemanager/panel.c     panel-&gt;selected = 0;</span>
+<span class='curline'><a href='../S/src--filemanager--panel.c.html#L4302'>selected</a>         4302 src/filemanager/panel.c     panel-&gt;selected = 0;</span>
+<span class='curline'><a href='../S/src--filemanager--panel.c.html#L4413'>selected</a>         4413 src/filemanager/panel.c     if (panel-&gt;selected &gt;= panel-&gt;dir.len)</span>
+<span class='curline'><a href='../S/src--filemanager--panel.c.html#L4490'>selected</a>         4490 src/filemanager/panel.c     if (panel-&gt;selected &lt; 0)</span>
+<span class='curline'><a href='../S/src--filemanager--panel.c.html#L4491'>selected</a>         4491 src/filemanager/panel.c         panel-&gt;selected = 0;</span>
+<span class='curline'><a href='../S/src--filemanager--panel.c.html#L4493'>selected</a>         4493 src/filemanager/panel.c     if (panel-&gt;selected &gt; panel-&gt;dir.len - 1)</span>
+<span class='curline'><a href='../S/src--filemanager--panel.c.html#L4494'>selected</a>         4494 src/filemanager/panel.c         panel-&gt;selected = panel-&gt;dir.len - 1;</span>
+<span class='curline'><a href='../S/src--filemanager--panel.c.html#L4631'>selected</a>         4631 src/filemanager/panel.c     panel-&gt;selected = -1;</span>
+<span class='curline'><a href='../S/src--filemanager--panel.c.html#L4636'>selected</a>         4636 src/filemanager/panel.c             panel-&gt;selected = i - 1;</span>
+<span class='curline'><a href='../S/src--filemanager--panel.c.html#L4641'>selected</a>         4641 src/filemanager/panel.c     panel-&gt;top_file = panel-&gt;selected - panel_items (panel) / 2;</span>
+<span class='curline'><a href='../S/src--filemanager--panel.c.html#L4661'>selected</a>         4661 src/filemanager/panel.c         current_file = g_strdup (panel-&gt;dir.list[panel-&gt;selected].fname);</span>
+<span class='curline'><a href='../S/src--filemanager--panel.h.html#L21'>selected</a>           21 src/filemanager/panel.h #define selection(p) (&amp;(p-&gt;dir.list[p-&gt;selected]))</span>
+<span class='curline'><a href='../S/src--filemanager--panel.h.html#L107'>selected</a>          107 src/filemanager/panel.h     int selected;               /* Index to the selected file */</span>
+<span class='curline'><a href='../S/src--filemanager--usermenu.c.html#L168'>selected</a>          168 src/filemanager/usermenu.c     mode_t st_mode = panel-&gt;dir.list[panel-&gt;selected].st.st_mode;</span>
+<span class='curline'><a href='../S/src--filemanager--usermenu.c.html#L258'>selected</a>          258 src/filemanager/usermenu.c                     mc_search (arg, DEFAULT_CHARSET, panel-&gt;dir.list[panel-&gt;selected].fname,</span>
+<span class='curline'><a href='../S/src--filemanager--usermenu.c.html#L758'>selected</a>          758 src/filemanager/usermenu.c         fname = panel-&gt;dir.list[panel-&gt;selected].fname;</span>
+<span class='curline'><a href='../S/src--filemanager--usermenu.c.html#L925'>selected</a>          925 src/filemanager/usermenu.c     int selected;</span>
+<span class='curline'><a href='../S/src--filemanager--usermenu.c.html#L990'>selected</a>          990 src/filemanager/usermenu.c     selected = 0;</span>
+<span class='curline'><a href='../S/src--filemanager--usermenu.c.html#L1030'>selected</a>         1030 src/filemanager/usermenu.c                     if (selected == 0 &amp;&amp; accept_entry)</span>
+<span class='curline'><a href='../S/src--filemanager--usermenu.c.html#L1031'>selected</a>         1031 src/filemanager/usermenu.c                         selected = menu_lines;</span>
+<span class='curline'><a href='../S/src--filemanager--usermenu.c.html#L1045'>selected</a>         1045 src/filemanager/usermenu.c                     if (selected == 0 &amp;&amp; accept_entry)</span>
+<span class='curline'><a href='../S/src--filemanager--usermenu.c.html#L1046'>selected</a>         1046 src/filemanager/usermenu.c                         selected = menu_lines;</span>
+<span class='curline'><a href='../S/src--filemanager--usermenu.c.html#L1053'>selected</a>         1053 src/filemanager/usermenu.c                     if (selected == 0 &amp;&amp; i != 0)</span>
+<span class='curline'><a href='../S/src--filemanager--usermenu.c.html#L1054'>selected</a>         1054 src/filemanager/usermenu.c                         selected = menu_lines;</span>
+<span class='curline'><a href='../S/src--filemanager--usermenu.c.html#L1092'>selected</a>         1092 src/filemanager/usermenu.c             selected = selected_entry;</span>
+<span class='curline'><a href='../S/src--filemanager--usermenu.c.html#L1110'>selected</a>         1110 src/filemanager/usermenu.c             listbox_select_entry (listbox-&gt;list, selected);</span>
+<span class='curline'><a href='../S/src--filemanager--usermenu.c.html#L1112'>selected</a>         1112 src/filemanager/usermenu.c             selected = run_listbox (listbox);</span>
+<span class='curline'><a href='../S/src--filemanager--usermenu.c.html#L1114'>selected</a>         1114 src/filemanager/usermenu.c         if (selected &gt;= 0)</span>
+<span class='curline'><a href='../S/src--filemanager--usermenu.c.html#L1116'>selected</a>         1116 src/filemanager/usermenu.c             execute_menu_command (edit_widget, entries[selected], interactive);</span>
+<span class='curline'><a href='../S/src--viewer--actions_cmd.c.html#L213'>selected</a>          213 src/viewer/actions_cmd.c     mcview_load (view, 0, panel-&gt;dir.list[panel-&gt;selected].fname, 0, 0, 0);</span>
+<span class='curline'><a href='../S/src--viewer--actions_cmd.c.html#L293'>selected</a>          293 src/viewer/actions_cmd.c         view-&gt;dir_idx = &amp;current_panel-&gt;selected;</span>
+<span class='curline'><a href='../S/tests--src--filemanager--exec_get_export_variables_ext.c.html#L77'>selected</a>           77 tests/src/filemanager/exec_get_export_variables_ext.c     current_panel-&gt;selected = 0;</span>
+</pre>
+</body>
+</html>

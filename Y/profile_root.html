@@ -1,0 +1,27 @@
+<!DOCTYPE html PUBLIC '-//W3C//DTD XHTML 1.0 Transitional//EN' 'http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd'>
+<html xmlns='http://www.w3.org/1999/xhtml'>
+<head>
+<title>profile_root</title>
+<meta name='robots' content='noindex,nofollow' />
+<meta name='generator' content='GLOBAL-6.5.2' />
+<meta http-equiv='Content-Style-Type' content='text/css' />
+<link rel='stylesheet' type='text/css' href='../style.css' />
+</head>
+<body>
+<pre>
+<span class='curline'><a href='../S/lib--mcconfig--paths.c.html#L287'>profile_root</a>      287 lib/mcconfig/paths.c     const char *profile_root;</span>
+<span class='curline'><a href='../S/lib--mcconfig--paths.c.html#L298'>profile_root</a>      298 lib/mcconfig/paths.c     profile_root = mc_get_profile_root ();</span>
+<span class='curline'><a href='../S/lib--mcconfig--paths.c.html#L301'>profile_root</a>      301 lib/mcconfig/paths.c     if (strcmp (profile_root, mc_config_get_home_dir ()) != 0)</span>
+<span class='curline'><a href='../S/lib--mcconfig--paths.c.html#L310'>profile_root</a>      310 lib/mcconfig/paths.c         dir = g_build_filename (profile_root, ".config", (char *) NULL);</span>
+<span class='curline'><a href='../S/lib--mcconfig--paths.c.html#L314'>profile_root</a>      314 lib/mcconfig/paths.c         dir = g_build_filename (profile_root, ".cache", (char *) NULL);</span>
+<span class='curline'><a href='../S/lib--mcconfig--paths.c.html#L318'>profile_root</a>      318 lib/mcconfig/paths.c         dir = g_build_filename (profile_root, ".local", "share", (char *) NULL);</span>
+<span class='curline'><a href='../S/lib--mcconfig--paths.c.html#L340'>profile_root</a>      340 lib/mcconfig/paths.c         dir = g_build_filename (profile_root, MC_USERCONF_DIR, (char *) NULL);</span>
+<span class='curline'><a href='../S/lib--util.c.html#L1433'>profile_root</a>     1433 lib/util.c         static const char *profile_root = NULL;</span>
+<span class='curline'><a href='../S/lib--util.c.html#L1435'>profile_root</a>     1435 lib/util.c         if (profile_root == NULL)</span>
+<span class='curline'><a href='../S/lib--util.c.html#L1437'>profile_root</a>     1437 lib/util.c             profile_root = g_getenv ("MC_PROFILE_ROOT");</span>
+<span class='curline'><a href='../S/lib--util.c.html#L1438'>profile_root</a>     1438 lib/util.c             if (profile_root == NULL || *profile_root == '\0')</span>
+<span class='curline'><a href='../S/lib--util.c.html#L1439'>profile_root</a>     1439 lib/util.c                 profile_root = mc_config_get_home_dir ();</span>
+<span class='curline'><a href='../S/lib--util.c.html#L1442'>profile_root</a>     1442 lib/util.c         return profile_root;</span>
+</pre>
+</body>
+</html>

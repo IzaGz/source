@@ -1,0 +1,57 @@
+<!DOCTYPE html PUBLIC '-//W3C//DTD XHTML 1.0 Transitional//EN' 'http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd'>
+<html xmlns='http://www.w3.org/1999/xhtml'>
+<head>
+<title>FH</title>
+<meta name='robots' content='noindex,nofollow' />
+<meta name='generator' content='GLOBAL-6.5.2' />
+<meta http-equiv='Content-Style-Type' content='text/css' />
+<link rel='stylesheet' type='text/css' href='../style.css' />
+</head>
+<body>
+<pre>
+<span class='curline'><a href='../S/lib--vfs--direntry.c.html#L539'>FH</a>                539 lib/vfs/direntry.c     if (FH-&gt;linear == LS_LINEAR_PREOPEN)</span>
+<span class='curline'><a href='../S/lib--vfs--direntry.c.html#L541'>FH</a>                541 lib/vfs/direntry.c         if (!MEDATA-&gt;linear_start (me, FH, FH-&gt;pos))</span>
+<span class='curline'><a href='../S/lib--vfs--direntry.c.html#L545'>FH</a>                545 lib/vfs/direntry.c     if (FH-&gt;linear == LS_LINEAR_CLOSED)</span>
+<span class='curline'><a href='../S/lib--vfs--direntry.c.html#L548'>FH</a>                548 lib/vfs/direntry.c     if (FH-&gt;linear == LS_LINEAR_OPEN)</span>
+<span class='curline'><a href='../S/lib--vfs--direntry.c.html#L549'>FH</a>                549 lib/vfs/direntry.c         return MEDATA-&gt;linear_read (me, FH, buffer, count);</span>
+<span class='curline'><a href='../S/lib--vfs--direntry.c.html#L551'>FH</a>                551 lib/vfs/direntry.c     if (FH-&gt;handle != -1)</span>
+<span class='curline'><a href='../S/lib--vfs--direntry.c.html#L555'>FH</a>                555 lib/vfs/direntry.c         n = read (FH-&gt;handle, buffer, count);</span>
+<span class='curline'><a href='../S/lib--vfs--direntry.c.html#L571'>FH</a>                571 lib/vfs/direntry.c     if (FH-&gt;linear)</span>
+<span class='curline'><a href='../S/lib--vfs--direntry.c.html#L574'>FH</a>                574 lib/vfs/direntry.c     FH-&gt;changed = 1;</span>
+<span class='curline'><a href='../S/lib--vfs--direntry.c.html#L575'>FH</a>                575 lib/vfs/direntry.c     if (FH-&gt;handle != -1)</span>
+<span class='curline'><a href='../S/lib--vfs--direntry.c.html#L579'>FH</a>                579 lib/vfs/direntry.c         n = write (FH-&gt;handle, buffer, count);</span>
+<span class='curline'><a href='../S/lib--vfs--direntry.c.html#L593'>FH</a>                593 lib/vfs/direntry.c     off_t size = FH-&gt;ino-&gt;st.st_size;</span>
+<span class='curline'><a href='../S/lib--vfs--direntry.c.html#L595'>FH</a>                595 lib/vfs/direntry.c     if (FH-&gt;linear == LS_LINEAR_OPEN)</span>
+<span class='curline'><a href='../S/lib--vfs--direntry.c.html#L598'>FH</a>                598 lib/vfs/direntry.c     if (FH-&gt;handle != -1)</span>
+<span class='curline'><a href='../S/lib--vfs--direntry.c.html#L600'>FH</a>                600 lib/vfs/direntry.c         off_t retval = lseek (FH-&gt;handle, offset, whence);</span>
+<span class='curline'><a href='../S/lib--vfs--direntry.c.html#L602'>FH</a>                602 lib/vfs/direntry.c             FH-&gt;ino-&gt;super-&gt;me-&gt;verrno = errno;</span>
+<span class='curline'><a href='../S/lib--vfs--direntry.c.html#L609'>FH</a>                609 lib/vfs/direntry.c         offset += FH-&gt;pos;</span>
+<span class='curline'><a href='../S/lib--vfs--direntry.c.html#L618'>FH</a>                618 lib/vfs/direntry.c         FH-&gt;pos = 0;</span>
+<span class='curline'><a href='../S/lib--vfs--direntry.c.html#L620'>FH</a>                620 lib/vfs/direntry.c         FH-&gt;pos = offset;</span>
+<span class='curline'><a href='../S/lib--vfs--direntry.c.html#L622'>FH</a>                622 lib/vfs/direntry.c         FH-&gt;pos = size;</span>
+<span class='curline'><a href='../S/lib--vfs--direntry.c.html#L623'>FH</a>                623 lib/vfs/direntry.c     return FH-&gt;pos;</span>
+<span class='curline'><a href='../S/lib--vfs--direntry.c.html#L641'>FH</a>                641 lib/vfs/direntry.c     if (FH-&gt;linear == LS_LINEAR_OPEN)</span>
+<span class='curline'><a href='../S/lib--vfs--direntry.c.html#L645'>FH</a>                645 lib/vfs/direntry.c     if ((MEDATA-&gt;flags &amp; VFS_S_USETMP) &amp;&amp; FH-&gt;changed &amp;&amp; MEDATA-&gt;file_store)</span>
+<span class='curline'><a href='../S/lib--vfs--direntry.c.html#L647'>FH</a>                647 lib/vfs/direntry.c         char *s = vfs_s_fullpath (me, FH-&gt;ino);</span>
+<span class='curline'><a href='../S/lib--vfs--direntry.c.html#L652'>FH</a>                652 lib/vfs/direntry.c             res = MEDATA-&gt;file_store (me, fh, s, FH-&gt;ino-&gt;localname);</span>
+<span class='curline'><a href='../S/lib--vfs--direntry.c.html#L657'>FH</a>                657 lib/vfs/direntry.c     if (FH-&gt;handle != -1)</span>
+<span class='curline'><a href='../S/lib--vfs--direntry.c.html#L658'>FH</a>                658 lib/vfs/direntry.c         close (FH-&gt;handle);</span>
+<span class='curline'><a href='../S/lib--vfs--direntry.c.html#L660'>FH</a>                660 lib/vfs/direntry.c     vfs_s_free_inode (me, FH-&gt;ino);</span>
+<span class='curline'><a href='../S/lib--vfs--direntry.c.html#L1359'>FH</a>               1359 lib/vfs/direntry.c     *buf = FH-&gt;ino-&gt;st;</span>
+<span class='curline'><a href='../S/lib--vfs--xdirentry.h.html#L42'>FH</a>                 42 lib/vfs/xdirentry.h #define FH_SUPER FH-&gt;ino-&gt;super</span>
+<span class='curline'><a href='../S/src--vfs--cpio--cpio.c.html#L830'>FH</a>                830 src/vfs/cpio/cpio.c     off_t begin = FH-&gt;ino-&gt;data_offset;</span>
+<span class='curline'><a href='../S/src--vfs--cpio--cpio.c.html#L835'>FH</a>                835 src/vfs/cpio/cpio.c     if (mc_lseek (fd, begin + FH-&gt;pos, SEEK_SET) != begin + FH-&gt;pos)</span>
+<span class='curline'><a href='../S/src--vfs--cpio--cpio.c.html#L838'>FH</a>                838 src/vfs/cpio/cpio.c     count = MIN (count, (size_t) (FH-&gt;ino-&gt;st.st_size - FH-&gt;pos));</span>
+<span class='curline'><a href='../S/src--vfs--cpio--cpio.c.html#L844'>FH</a>                844 src/vfs/cpio/cpio.c     FH-&gt;pos += res;</span>
+<span class='curline'><a href='../S/src--vfs--fish--fish.c.html#L1147'>FH</a>               1147 src/vfs/fish/fish.c             if (FH-&gt;linear == 0)</span>
+<span class='curline'><a href='../S/src--vfs--fish--fish.c.html#L1149'>FH</a>               1149 src/vfs/fish/fish.c             if (FH-&gt;linear == LS_LINEAR_CLOSED || FH-&gt;linear == LS_LINEAR_PREOPEN)</span>
+<span class='curline'><a href='../S/src--vfs--ftpfs--ftpfs.c.html#L1999'>FH</a>               1999 src/vfs/ftpfs/ftpfs.c             if (!FH-&gt;linear)</span>
+<span class='curline'><a href='../S/src--vfs--ftpfs--ftpfs.c.html#L2001'>FH</a>               2001 src/vfs/ftpfs/ftpfs.c             if (FH-&gt;linear == LS_LINEAR_CLOSED || FH-&gt;linear == LS_LINEAR_PREOPEN)</span>
+<span class='curline'><a href='../S/src--vfs--ftpfs--ftpfs.c.html#L2004'>FH</a>               2004 src/vfs/ftpfs/ftpfs.c             v = vfs_s_select_on_two (((ftp_fh_data_t *) (FH-&gt;data))-&gt;sock, 0);</span>
+<span class='curline'><a href='../S/src--vfs--tar--tar.c.html#L884'>FH</a>                884 src/vfs/tar/tar.c     off_t begin = FH-&gt;ino-&gt;data_offset;</span>
+<span class='curline'><a href='../S/src--vfs--tar--tar.c.html#L889'>FH</a>                889 src/vfs/tar/tar.c     if (mc_lseek (fd, begin + FH-&gt;pos, SEEK_SET) != begin + FH-&gt;pos)</span>
+<span class='curline'><a href='../S/src--vfs--tar--tar.c.html#L892'>FH</a>                892 src/vfs/tar/tar.c     count = MIN (count, (size_t) (FH-&gt;ino-&gt;st.st_size - FH-&gt;pos));</span>
+<span class='curline'><a href='../S/src--vfs--tar--tar.c.html#L898'>FH</a>                898 src/vfs/tar/tar.c     FH-&gt;pos += res;</span>
+</pre>
+</body>
+</html>

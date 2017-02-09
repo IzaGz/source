@@ -1,0 +1,45 @@
+<!DOCTYPE html PUBLIC '-//W3C//DTD XHTML 1.0 Transitional//EN' 'http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd'>
+<html xmlns='http://www.w3.org/1999/xhtml'>
+<head>
+<title>localname</title>
+<meta name='robots' content='noindex,nofollow' />
+<meta name='generator' content='GLOBAL-6.5.2' />
+<meta http-equiv='Content-Style-Type' content='text/css' />
+<link rel='stylesheet' type='text/css' href='../style.css' />
+</head>
+<body>
+<pre>
+<span class='curline'><a href='../S/lib--vfs--direntry.c.html#L652'>localname</a>         652 lib/vfs/direntry.c             res = MEDATA-&gt;file_store (me, fh, s, FH-&gt;ino-&gt;localname);</span>
+<span class='curline'><a href='../S/lib--vfs--direntry.c.html#L732'>localname</a>         732 lib/vfs/direntry.c             local = vfs_path_from_str_flags (fh-&gt;ino-&gt;localname, VPF_NO_CANON);</span>
+<span class='curline'><a href='../S/lib--vfs--direntry.c.html#L894'>localname</a>         894 lib/vfs/direntry.c     if ((MEDATA-&gt;flags &amp; VFS_S_USETMP) != 0 &amp;&amp; ino-&gt;localname != NULL)</span>
+<span class='curline'><a href='../S/lib--vfs--direntry.c.html#L896'>localname</a>         896 lib/vfs/direntry.c         unlink (ino-&gt;localname);</span>
+<span class='curline'><a href='../S/lib--vfs--direntry.c.html#L897'>localname</a>         897 lib/vfs/direntry.c         g_free (ino-&gt;localname);</span>
+<span class='curline'><a href='../S/lib--vfs--direntry.c.html#L1268'>localname</a>        1268 lib/vfs/direntry.c             ino-&gt;localname = g_strdup (vfs_path_as_str (tmp_vpath));</span>
+<span class='curline'><a href='../S/lib--vfs--direntry.c.html#L1320'>localname</a>        1320 lib/vfs/direntry.c     if ((VFSDATA (path_element)-&gt;flags &amp; VFS_S_USETMP) != 0 &amp;&amp; fh-&gt;ino-&gt;localname != NULL)</span>
+<span class='curline'><a href='../S/lib--vfs--direntry.c.html#L1322'>localname</a>        1322 lib/vfs/direntry.c         fh-&gt;handle = open (fh-&gt;ino-&gt;localname, NO_LINEAR (flags), mode);</span>
+<span class='curline'><a href='../S/lib--vfs--direntry.c.html#L1386'>localname</a>        1386 lib/vfs/direntry.c     ino-&gt;localname = g_strdup (vfs_path_as_str (tmp_vpath));</span>
+<span class='curline'><a href='../S/lib--vfs--direntry.c.html#L1433'>localname</a>        1433 lib/vfs/direntry.c     unlink (ino-&gt;localname);</span>
+<span class='curline'><a href='../S/lib--vfs--direntry.c.html#L1435'>localname</a>        1435 lib/vfs/direntry.c     MC_PTR_FREE (ino-&gt;localname);</span>
+<span class='curline'><a href='../S/lib--vfs--xdirentry.h.html#L98'>localname</a>          98 lib/vfs/xdirentry.h     char *localname;            /* Filename of local file, if we have one */</span>
+<span class='curline'><a href='../S/lib--vfs--xdirentry.h.html#L148'>localname</a>         148 lib/vfs/xdirentry.h     int (*file_store) (struct vfs_class * me, vfs_file_handler_t * fh, char *path, char *localname);</span>
+<span class='curline'><a href='../S/src--vfs--extfs--extfs.c.html#L827'>localname</a>         827 src/vfs/extfs/extfs.c            struct entry *entry, const char *localname)</span>
+<span class='curline'><a href='../S/src--vfs--extfs--extfs.c.html#L844'>localname</a>         844 src/vfs/extfs/extfs.c     quoted_localname = name_quote (localname, FALSE);</span>
+<span class='curline'><a href='../S/src--vfs--fish--fish.c.html#L884'>localname</a>         884 src/vfs/fish/fish.c fish_file_store (struct vfs_class *me, vfs_file_handler_t * fh, char *name, char *localname)</span>
+<span class='curline'><a href='../S/src--vfs--fish--fish.c.html#L896'>localname</a>         896 src/vfs/fish/fish.c     h = open (localname, O_RDONLY);</span>
+<span class='curline'><a href='../S/src--vfs--fish--fish.c.html#L1625'>localname</a>        1625 src/vfs/fish/fish.c         if (fh-&gt;ino-&gt;localname == NULL)</span>
+<span class='curline'><a href='../S/src--vfs--fish--fish.c.html#L1636'>localname</a>        1636 src/vfs/fish/fish.c             fh-&gt;ino-&gt;localname = g_strdup (vfs_path_as_str (vpath));</span>
+<span class='curline'><a href='../S/src--vfs--fish--fish.c.html#L1642'>localname</a>        1642 src/vfs/fish/fish.c     if (fh-&gt;ino-&gt;localname == NULL &amp;&amp; vfs_s_retrieve_file (me, fh-&gt;ino) == -1)</span>
+<span class='curline'><a href='../S/src--vfs--fish--fish.c.html#L1644'>localname</a>        1644 src/vfs/fish/fish.c     if (fh-&gt;ino-&gt;localname == NULL)</span>
+<span class='curline'><a href='../S/src--vfs--ftpfs--ftpfs.c.html#L1835'>localname</a>        1835 src/vfs/ftpfs/ftpfs.c ftpfs_file_store (struct vfs_class *me, vfs_file_handler_t * fh, char *name, char *localname)</span>
+<span class='curline'><a href='../S/src--vfs--ftpfs--ftpfs.c.html#L1850'>localname</a>        1850 src/vfs/ftpfs/ftpfs.c     h = open (localname, O_RDONLY);</span>
+<span class='curline'><a href='../S/src--vfs--ftpfs--ftpfs.c.html#L2229'>localname</a>        2229 src/vfs/ftpfs/ftpfs.c             if (!fh-&gt;ino-&gt;localname)</span>
+<span class='curline'><a href='../S/src--vfs--ftpfs--ftpfs.c.html#L2241'>localname</a>        2241 src/vfs/ftpfs/ftpfs.c                 fh-&gt;ino-&gt;localname = g_strdup (vfs_path_as_str (vpath));</span>
+<span class='curline'><a href='../S/src--vfs--ftpfs--ftpfs.c.html#L2263'>localname</a>        2263 src/vfs/ftpfs/ftpfs.c         if (fh-&gt;ino-&gt;localname)</span>
+<span class='curline'><a href='../S/src--vfs--ftpfs--ftpfs.c.html#L2265'>localname</a>        2265 src/vfs/ftpfs/ftpfs.c             unlink (fh-&gt;ino-&gt;localname);</span>
+<span class='curline'><a href='../S/src--vfs--ftpfs--ftpfs.c.html#L2266'>localname</a>        2266 src/vfs/ftpfs/ftpfs.c             MC_PTR_FREE (fh-&gt;ino-&gt;localname);</span>
+<span class='curline'><a href='../S/src--vfs--ftpfs--ftpfs.c.html#L2271'>localname</a>        2271 src/vfs/ftpfs/ftpfs.c     if (!fh-&gt;ino-&gt;localname &amp;&amp; vfs_s_retrieve_file (me, fh-&gt;ino) == -1)</span>
+<span class='curline'><a href='../S/src--vfs--ftpfs--ftpfs.c.html#L2273'>localname</a>        2273 src/vfs/ftpfs/ftpfs.c     if (!fh-&gt;ino-&gt;localname)</span>
+<span class='curline'><a href='../S/src--vfs--ftpfs--ftpfs.c.html#L2287'>localname</a>        2287 src/vfs/ftpfs/ftpfs.c     if (fh-&gt;handle != -1 &amp;&amp; !fh-&gt;ino-&gt;localname)</span>
+</pre>
+</body>
+</html>

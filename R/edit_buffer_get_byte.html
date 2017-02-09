@@ -1,0 +1,88 @@
+<!DOCTYPE html PUBLIC '-//W3C//DTD XHTML 1.0 Transitional//EN' 'http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd'>
+<html xmlns='http://www.w3.org/1999/xhtml'>
+<head>
+<title>edit_buffer_get_byte</title>
+<meta name='robots' content='noindex,nofollow' />
+<meta name='generator' content='GLOBAL-6.5.2' />
+<meta http-equiv='Content-Style-Type' content='text/css' />
+<link rel='stylesheet' type='text/css' href='../style.css' />
+</head>
+<body>
+<pre>
+<span class='curline'><a href='../S/src--editor--edit.c.html#L646'>edit_buffer_get_byte</a>  646 src/editor/edit.c         if (strchr (" \t", edit_buffer_get_byte (buf, p)) == NULL)</span>
+<span class='curline'><a href='../S/src--editor--edit.c.html#L672'>edit_buffer_get_byte</a>  672 src/editor/edit.c         c = edit_buffer_get_byte (buf, s++);</span>
+<span class='curline'><a href='../S/src--editor--edit.c.html#L1368'>edit_buffer_get_byte</a> 1368 src/editor/edit.c         ch |= edit_buffer_get_byte (&amp;edit-&gt;buffer, edit-&gt;buffer.curs1 - i);</span>
+<span class='curline'><a href='../S/src--editor--edit.c.html#L1381'>edit_buffer_get_byte</a> 1381 src/editor/edit.c         ch |= edit_buffer_get_byte (&amp;edit-&gt;buffer, edit-&gt;buffer.curs1 + i);</span>
+<span class='curline'><a href='../S/src--editor--edit.c.html#L1401'>edit_buffer_get_byte</a> 1401 src/editor/edit.c         c = edit_buffer_get_byte (&amp;edit-&gt;buffer, p++);</span>
+<span class='curline'><a href='../S/src--editor--edit.c.html#L1415'>edit_buffer_get_byte</a> 1415 src/editor/edit.c         || edit_buffer_get_byte (&amp;edit-&gt;buffer, edit-&gt;buffer.curs1 - 2) == '\n')</span>
+<span class='curline'><a href='../S/src--editor--edit.c.html#L1488'>edit_buffer_get_byte</a> 1488 src/editor/edit.c         c = edit_buffer_get_byte (&amp;edit-&gt;buffer, curs);</span>
+<span class='curline'><a href='../S/src--editor--edit.c.html#L1544'>edit_buffer_get_byte</a> 1544 src/editor/edit.c         a = edit_buffer_get_byte (&amp;edit-&gt;buffer, q);</span>
+<span class='curline'><a href='../S/src--editor--edit.c.html#L1735'>edit_buffer_get_byte</a> 1735 src/editor/edit.c                     if (edit_buffer_get_byte (&amp;edit-&gt;buffer, p) == '\n')</span>
+<span class='curline'><a href='../S/src--editor--edit.c.html#L1849'>edit_buffer_get_byte</a> 1849 src/editor/edit.c             if (fputc (edit_buffer_get_byte (&amp;edit-&gt;buffer, i), f) &lt; 0)</span>
+<span class='curline'><a href='../S/src--editor--edit.c.html#L1859'>edit_buffer_get_byte</a> 1859 src/editor/edit.c         c = edit_buffer_get_byte (&amp;edit-&gt;buffer, i);</span>
+<span class='curline'><a href='../S/src--editor--edit.c.html#L1870'>edit_buffer_get_byte</a> 1870 src/editor/edit.c             c1 = edit_buffer_get_byte (&amp;edit-&gt;buffer, i + 1);   /* next char */</span>
+<span class='curline'><a href='../S/src--editor--edit.c.html#L2790'>edit_buffer_get_byte</a> 2790 src/editor/edit.c         orig_c = c = edit_buffer_get_byte (&amp;edit-&gt;buffer, p);</span>
+<span class='curline'><a href='../S/src--editor--edit.c.html#L3098'>edit_buffer_get_byte</a> 3098 src/editor/edit.c         c1 = edit_buffer_get_byte (&amp;edit-&gt;buffer, pos);</span>
+<span class='curline'><a href='../S/src--editor--edit.c.html#L3099'>edit_buffer_get_byte</a> 3099 src/editor/edit.c         c2 = edit_buffer_get_byte (&amp;edit-&gt;buffer, pos - 1);</span>
+<span class='curline'><a href='../S/src--editor--edit.c.html#L3111'>edit_buffer_get_byte</a> 3111 src/editor/edit.c         c1 = edit_buffer_get_byte (&amp;edit-&gt;buffer, pos);</span>
+<span class='curline'><a href='../S/src--editor--edit.c.html#L3112'>edit_buffer_get_byte</a> 3112 src/editor/edit.c         c2 = edit_buffer_get_byte (&amp;edit-&gt;buffer, pos + 1);</span>
+<span class='curline'><a href='../S/src--editor--editbuffer.c.html#L243'>edit_buffer_get_byte</a>  243 src/editor/editbuffer.c             utf8_buf[i] = edit_buffer_get_byte (buf, byte_index + i);</span>
+<span class='curline'><a href='../S/src--editor--editbuffer.c.html#L293'>edit_buffer_get_byte</a>  293 src/editor/editbuffer.c         utf8_buf[i] = edit_buffer_get_byte (buf, byte_index + i - (2 * UTF8_CHAR_LEN));</span>
+<span class='curline'><a href='../S/src--editor--editbuffer.c.html#L337'>edit_buffer_get_byte</a>  337 src/editor/editbuffer.c         if (edit_buffer_get_byte (buf, first++) == '\n')</span>
+<span class='curline'><a href='../S/src--editor--editbuffer.c.html#L359'>edit_buffer_get_byte</a>  359 src/editor/editbuffer.c     for (; edit_buffer_get_byte (buf, current - 1) != '\n'; current--)</span>
+<span class='curline'><a href='../S/src--editor--editbuffer.c.html#L381'>edit_buffer_get_byte</a>  381 src/editor/editbuffer.c     for (; edit_buffer_get_byte (buf, current) != '\n'; current++)</span>
+<span class='curline'><a href='../S/src--editor--editbuffer.c.html#L410'>edit_buffer_get_byte</a>  410 src/editor/editbuffer.c         c1 = edit_buffer_get_byte (buf, word_start);</span>
+<span class='curline'><a href='../S/src--editor--editbuffer.c.html#L411'>edit_buffer_get_byte</a>  411 src/editor/editbuffer.c         c2 = edit_buffer_get_byte (buf, word_start - 1);</span>
+<span class='curline'><a href='../S/src--editor--editbuffer.c.html#L421'>edit_buffer_get_byte</a>  421 src/editor/editbuffer.c         c1 = edit_buffer_get_byte (buf, word_start + match_expr-&gt;len);</span>
+<span class='curline'><a href='../S/src--editor--editbuffer.c.html#L422'>edit_buffer_get_byte</a>  422 src/editor/editbuffer.c         c2 = edit_buffer_get_byte (buf, word_start + match_expr-&gt;len + 1);</span>
+<span class='curline'><a href='../S/src--editor--editbuffer.h.html#L41'>edit_buffer_get_byte</a>   41 src/editor/editbuffer.h int edit_buffer_get_byte (const edit_buffer_t * buf, off_t byte_index);</span>
+<span class='curline'><a href='../S/src--editor--editbuffer.h.html#L72'>edit_buffer_get_byte</a>   72 src/editor/editbuffer.h     return edit_buffer_get_byte (buf, buf-&gt;curs1);</span>
+<span class='curline'><a href='../S/src--editor--editbuffer.h.html#L80'>edit_buffer_get_byte</a>   80 src/editor/editbuffer.h     return edit_buffer_get_byte (buf, buf-&gt;curs1 - 1);</span>
+<span class='curline'><a href='../S/src--editor--editcmd.c.html#L421'>edit_buffer_get_byte</a>  421 src/editor/editcmd.c              &amp;&amp; edit_buffer_get_byte (buf, buf-&gt;size - 1) != '\n'</span>
+<span class='curline'><a href='../S/src--editor--editcmd.c.html#L701'>edit_buffer_get_byte</a>  701 src/editor/editcmd.c         if (edit_buffer_get_byte (buf, i) == end_string_symbol)</span>
+<span class='curline'><a href='../S/src--editor--editcmd.c.html#L725'>edit_buffer_get_byte</a>  725 src/editor/editcmd.c         if (edit_buffer_get_byte (buf, i) == end_string_symbol)</span>
+<span class='curline'><a href='../S/src--editor--editcmd.c.html#L827'>edit_buffer_get_byte</a>  827 src/editor/editcmd.c                 || edit_buffer_get_byte (&amp;edit-&gt;buffer, start_mark - 1) != end_string_symbol))</span>
+<span class='curline'><a href='../S/src--editor--editcmd.c.html#L834'>edit_buffer_get_byte</a>  834 src/editor/editcmd.c                 || edit_buffer_get_byte (&amp;edit-&gt;buffer, end_mark) != end_string_symbol))</span>
+<span class='curline'><a href='../S/src--editor--editcmd.c.html#L1062'>edit_buffer_get_byte</a> 1062 src/editor/editcmd.c             c = edit_buffer_get_byte (&amp;edit-&gt;buffer, start);</span>
+<span class='curline'><a href='../S/src--editor--editcmd.c.html#L1076'>edit_buffer_get_byte</a> 1076 src/editor/editcmd.c             *s++ = edit_buffer_get_byte (&amp;edit-&gt;buffer, start++);</span>
+<span class='curline'><a href='../S/src--editor--editcmd.c.html#L1124'>edit_buffer_get_byte</a> 1124 src/editor/editcmd.c             fputc (edit_buffer_get_byte (buf, i), p);</span>
+<span class='curline'><a href='../S/src--editor--editcmd.c.html#L1153'>edit_buffer_get_byte</a> 1153 src/editor/editcmd.c         c = edit_buffer_get_byte (buf, buf-&gt;curs1 - i - 1);</span>
+<span class='curline'><a href='../S/src--editor--editcmd.c.html#L1200'>edit_buffer_get_byte</a> 1200 src/editor/editcmd.c         chr = edit_buffer_get_byte (&amp;edit-&gt;buffer, word_start + i);</span>
+<span class='curline'><a href='../S/src--editor--editcmd.c.html#L1265'>edit_buffer_get_byte</a> 1265 src/editor/editcmd.c             skip = edit_buffer_get_byte (&amp;edit-&gt;buffer, start + i);</span>
+<span class='curline'><a href='../S/src--editor--editcmd.c.html#L1370'>edit_buffer_get_byte</a> 1370 src/editor/editcmd.c                 if (edit_buffer_get_byte (&amp;edit-&gt;buffer, p) == '\n')</span>
+<span class='curline'><a href='../S/src--editor--editcmd.c.html#L2749'>edit_buffer_get_byte</a> 2749 src/editor/editcmd.c     *current_char = edit_buffer_get_byte (&amp;edit-&gt;buffer, (off_t) char_offset);</span>
+<span class='curline'><a href='../S/src--editor--editcmd.c.html#L2941'>edit_buffer_get_byte</a> 2941 src/editor/editcmd.c                 buf[i - start] = edit_buffer_get_byte (&amp;edit-&gt;buffer, i);</span>
+<span class='curline'><a href='../S/src--editor--editcmd.c.html#L3339'>edit_buffer_get_byte</a> 3339 src/editor/editcmd.c         g_string_append_c (match_expr, edit_buffer_get_byte (&amp;edit-&gt;buffer, word_start + i));</span>
+<span class='curline'><a href='../S/src--editor--editcmd.c.html#L3518'>edit_buffer_get_byte</a> 3518 src/editor/editcmd.c         g_string_append_c (match_expr, edit_buffer_get_byte (&amp;edit-&gt;buffer, word_start + i));</span>
+<span class='curline'><a href='../S/src--editor--editdraw.c.html#L586'>edit_buffer_get_byte</a>  586 src/editor/editdraw.c                     c = edit_buffer_get_byte (&amp;edit-&gt;buffer, tws - 1);</span>
+<span class='curline'><a href='../S/src--editor--editdraw.c.html#L630'>edit_buffer_get_byte</a>  630 src/editor/editdraw.c                     c = edit_buffer_get_byte (&amp;edit-&gt;buffer, q);</span>
+<span class='curline'><a href='../S/src--editor--format.c.html#L89'>edit_buffer_get_byte</a>   89 src/editor/format.c     while (strchr ("\t ", edit_buffer_get_byte (buf, p)) != NULL)</span>
+<span class='curline'><a href='../S/src--editor--format.c.html#L101'>edit_buffer_get_byte</a>  101 src/editor/format.c     c = edit_buffer_get_byte (buf, p);</span>
+<span class='curline'><a href='../S/src--editor--format.c.html#L105'>edit_buffer_get_byte</a>  105 src/editor/format.c         return !(edit_buffer_get_byte (buf, p + 1) == '.'</span>
+<span class='curline'><a href='../S/src--editor--format.c.html#L106'>edit_buffer_get_byte</a>  106 src/editor/format.c                  &amp;&amp; edit_buffer_get_byte (buf, p + 2) == '.');</span>
+<span class='curline'><a href='../S/src--editor--format.c.html#L111'>edit_buffer_get_byte</a>  111 src/editor/format.c         return !(edit_buffer_get_byte (buf, p + 1) == '-'</span>
+<span class='curline'><a href='../S/src--editor--format.c.html#L112'>edit_buffer_get_byte</a>  112 src/editor/format.c                  &amp;&amp; edit_buffer_get_byte (buf, p + 2) == '-');</span>
+<span class='curline'><a href='../S/src--editor--format.c.html#L180'>edit_buffer_get_byte</a>  180 src/editor/format.c         if (indent &amp;&amp; edit_buffer_get_byte (buf, p - 1) == '\n')</span>
+<span class='curline'><a href='../S/src--editor--format.c.html#L181'>edit_buffer_get_byte</a>  181 src/editor/format.c             while (strchr ("\t ", edit_buffer_get_byte (buf, p)) != NULL)</span>
+<span class='curline'><a href='../S/src--editor--format.c.html#L184'>edit_buffer_get_byte</a>  184 src/editor/format.c         g_string_append_c (t, edit_buffer_get_byte (buf, p));</span>
+<span class='curline'><a href='../S/src--editor--format.c.html#L377'>edit_buffer_get_byte</a>  377 src/editor/format.c     while (strchr ("\t ", edit_buffer_get_byte (&amp;edit-&gt;buffer, q)) != NULL</span>
+<span class='curline'><a href='../S/src--editor--format.c.html#L412'>edit_buffer_get_byte</a>  412 src/editor/format.c         while (strchr ("\t ", edit_buffer_get_byte (&amp;edit-&gt;buffer, p)) != NULL)</span>
+<span class='curline'><a href='../S/src--editor--format.c.html#L420'>edit_buffer_get_byte</a>  420 src/editor/format.c                 while (strchr ("\t ", edit_buffer_get_byte (&amp;edit-&gt;buffer, p)) != NULL)</span>
+<span class='curline'><a href='../S/src--editor--format.c.html#L437'>edit_buffer_get_byte</a>  437 src/editor/format.c                 while (strchr ("\t ", edit_buffer_get_byte (&amp;edit-&gt;buffer, p)) != NULL)</span>
+<span class='curline'><a href='../S/src--editor--format.c.html#L447'>edit_buffer_get_byte</a>  447 src/editor/format.c         c = edit_buffer_get_byte (&amp;edit-&gt;buffer, p);</span>
+<span class='curline'><a href='../S/src--editor--format.c.html#L465'>edit_buffer_get_byte</a>  465 src/editor/format.c         if (edit_buffer_get_byte (&amp;edit-&gt;buffer, p - 1) == '\n'</span>
+<span class='curline'><a href='../S/src--editor--syntax.c.html#L254'>edit_buffer_get_byte</a>  254 src/editor/syntax.c     c = xx_tolower (edit, edit_buffer_get_byte (&amp;edit-&gt;buffer, i - 1));</span>
+<span class='curline'><a href='../S/src--editor--syntax.c.html#L267'>edit_buffer_get_byte</a>  267 src/editor/syntax.c                 c = xx_tolower (edit, edit_buffer_get_byte (&amp;edit-&gt;buffer, i));</span>
+<span class='curline'><a href='../S/src--editor--syntax.c.html#L283'>edit_buffer_get_byte</a>  283 src/editor/syntax.c                 c = xx_tolower (edit, edit_buffer_get_byte (&amp;edit-&gt;buffer, i));</span>
+<span class='curline'><a href='../S/src--editor--syntax.c.html#L314'>edit_buffer_get_byte</a>  314 src/editor/syntax.c                 c = xx_tolower (edit, edit_buffer_get_byte (&amp;edit-&gt;buffer, i));</span>
+<span class='curline'><a href='../S/src--editor--syntax.c.html#L333'>edit_buffer_get_byte</a>  333 src/editor/syntax.c             c = xx_tolower (edit, edit_buffer_get_byte (&amp;edit-&gt;buffer, i));</span>
+<span class='curline'><a href='../S/src--editor--syntax.c.html#L343'>edit_buffer_get_byte</a>  343 src/editor/syntax.c             if (*p != xx_tolower (edit, edit_buffer_get_byte (&amp;edit-&gt;buffer, i)))</span>
+<span class='curline'><a href='../S/src--editor--syntax.c.html#L349'>edit_buffer_get_byte</a>  349 src/editor/syntax.c                     xx_tolower (edit, edit_buffer_get_byte (&amp;edit-&gt;buffer, i))) != NULL) ? -1 : i;</span>
+<span class='curline'><a href='../S/src--editor--syntax.c.html#L377'>edit_buffer_get_byte</a>  377 src/editor/syntax.c     c = xx_tolower (edit, edit_buffer_get_byte (&amp;edit-&gt;buffer, i));</span>
+<span class='curline'><a href='../S/src--editor--syntax.c.html#L386'>edit_buffer_get_byte</a>  386 src/editor/syntax.c         if (edit_buffer_get_byte (&amp;edit-&gt;buffer, i - 1) == '\n')</span>
+<span class='curline'><a href='../S/src--editor--syntax.c.html#L1389'>edit_buffer_get_byte</a> 1389 src/editor/syntax.c             s[i] = edit_buffer_get_byte (&amp;edit-&gt;buffer, i);</span>
+<span class='curline'><a href='../S/tests--src--editor--editcmd__edit_complete_word_cmd.c.html#L273'>edit_buffer_get_byte</a>  273 tests/src/editor/editcmd__edit_complete_word_cmd.c                 edit_buffer_get_byte (&amp;test_edit-&gt;buffer,</span>
+<span class='curline'><a href='../S/tests--src--editor--editcmd__edit_complete_word_cmd.c.html#L347'>edit_buffer_get_byte</a>  347 tests/src/editor/editcmd__edit_complete_word_cmd.c                 edit_buffer_get_byte (&amp;test_edit-&gt;buffer,</span>
+</pre>
+</body>
+</html>

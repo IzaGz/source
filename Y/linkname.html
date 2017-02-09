@@ -1,0 +1,86 @@
+<!DOCTYPE html PUBLIC '-//W3C//DTD XHTML 1.0 Transitional//EN' 'http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd'>
+<html xmlns='http://www.w3.org/1999/xhtml'>
+<head>
+<title>linkname</title>
+<meta name='robots' content='noindex,nofollow' />
+<meta name='generator' content='GLOBAL-6.5.2' />
+<meta http-equiv='Content-Style-Type' content='text/css' />
+<link rel='stylesheet' type='text/css' href='../style.css' />
+</head>
+<body>
+<pre>
+<span class='curline'><a href='../S/lib--vfs--direntry.c.html#L136'>linkname</a>          136 lib/vfs/direntry.c     char *linkname;</span>
+<span class='curline'><a href='../S/lib--vfs--direntry.c.html#L149'>linkname</a>          149 lib/vfs/direntry.c     linkname = entry-&gt;ino-&gt;linkname;</span>
+<span class='curline'><a href='../S/lib--vfs--direntry.c.html#L150'>linkname</a>          150 lib/vfs/direntry.c     if (linkname == NULL)</span>
+<span class='curline'><a href='../S/lib--vfs--direntry.c.html#L154'>linkname</a>          154 lib/vfs/direntry.c     if (!IS_PATH_SEP (*linkname))</span>
+<span class='curline'><a href='../S/lib--vfs--direntry.c.html#L161'>linkname</a>          161 lib/vfs/direntry.c             fullname = g_strconcat (fullpath, PATH_SEP_STR, linkname, (char *) NULL);</span>
+<span class='curline'><a href='../S/lib--vfs--direntry.c.html#L162'>linkname</a>          162 lib/vfs/direntry.c             linkname = fullname;</span>
+<span class='curline'><a href='../S/lib--vfs--direntry.c.html#L167'>linkname</a>          167 lib/vfs/direntry.c     target = (MEDATA-&gt;find_entry) (me, entry-&gt;dir-&gt;super-&gt;root, linkname, follow - 1, 0);</span>
+<span class='curline'><a href='../S/lib--vfs--direntry.c.html#L518'>linkname</a>          518 lib/vfs/direntry.c     if (ino-&gt;linkname == NULL)</span>
+<span class='curline'><a href='../S/lib--vfs--direntry.c.html#L524'>linkname</a>          524 lib/vfs/direntry.c     len = strlen (ino-&gt;linkname);</span>
+<span class='curline'><a href='../S/lib--vfs--direntry.c.html#L528'>linkname</a>          528 lib/vfs/direntry.c     memcpy (buf, ino-&gt;linkname, len);</span>
+<span class='curline'><a href='../S/lib--vfs--direntry.c.html#L893'>linkname</a>          893 lib/vfs/direntry.c     g_free (ino-&gt;linkname);</span>
+<span class='curline'><a href='../S/lib--vfs--parse_ls_vga.c.html#L692'>linkname</a>          692 lib/vfs/parse_ls_vga.c vfs_parse_ls_lga (const char *p, struct stat * s, char **filename, char **linkname,</span>
+<span class='curline'><a href='../S/lib--vfs--parse_ls_vga.c.html#L840'>linkname</a>          840 lib/vfs/parse_ls_vga.c         if (linkname)</span>
+<span class='curline'><a href='../S/lib--vfs--parse_ls_vga.c.html#L843'>linkname</a>          843 lib/vfs/parse_ls_vga.c             *linkname = t;</span>
+<span class='curline'><a href='../S/lib--vfs--parse_ls_vga.c.html#L860'>linkname</a>          860 lib/vfs/parse_ls_vga.c         if (linkname)</span>
+<span class='curline'><a href='../S/lib--vfs--parse_ls_vga.c.html#L861'>linkname</a>          861 lib/vfs/parse_ls_vga.c             *linkname = NULL;</span>
+<span class='curline'><a href='../S/lib--vfs--utilvfs.h.html#L57'>linkname</a>           57 lib/vfs/utilvfs.h gboolean vfs_parse_ls_lga (const char *p, struct stat *s, char **filename, char **linkname,</span>
+<span class='curline'><a href='../S/lib--vfs--xdirentry.h.html#L97'>linkname</a>           97 lib/vfs/xdirentry.h     char *linkname;             /* Symlink's contents */</span>
+<span class='curline'><a href='../S/src--vfs--cpio--cpio.c.html#L514'>linkname</a>          514 src/vfs/cpio/cpio.c                 inode-&gt;linkname = g_malloc (st-&gt;st_size + 1);</span>
+<span class='curline'><a href='../S/src--vfs--cpio--cpio.c.html#L516'>linkname</a>          516 src/vfs/cpio/cpio.c                 if (mc_read (arch-&gt;fd, inode-&gt;linkname, st-&gt;st_size) &lt; st-&gt;st_size)</span>
+<span class='curline'><a href='../S/src--vfs--cpio--cpio.c.html#L518'>linkname</a>          518 src/vfs/cpio/cpio.c                     inode-&gt;linkname[0] = '\0';</span>
+<span class='curline'><a href='../S/src--vfs--cpio--cpio.c.html#L522'>linkname</a>          522 src/vfs/cpio/cpio.c                 inode-&gt;linkname[st-&gt;st_size] = '\0';    /* Linkname stored without terminating \0 !!! */</span>
+<span class='curline'><a href='../S/src--vfs--extfs--extfs.c.html#L92'>linkname</a>           92 src/vfs/extfs/extfs.c     char *linkname;</span>
+<span class='curline'><a href='../S/src--vfs--extfs--extfs.c.html#L213'>linkname</a>          213 src/vfs/extfs/extfs.c     inode-&gt;linkname = NULL;</span>
+<span class='curline'><a href='../S/src--vfs--extfs--extfs.c.html#L604'>linkname</a>          604 src/vfs/extfs/extfs.c                         inode-&gt;linkname = current_link_name;</span>
+<span class='curline'><a href='../S/src--vfs--extfs--extfs.c.html#L611'>linkname</a>          611 src/vfs/extfs/extfs.c                         inode-&gt;linkname = NULL;</span>
+<span class='curline'><a href='../S/src--vfs--extfs--extfs.c.html#L764'>linkname</a>          764 src/vfs/extfs/extfs.c         pent = extfs_find_entry_int (entry-&gt;dir, entry-&gt;inode-&gt;linkname, looping, FALSE, FALSE);</span>
+<span class='curline'><a href='../S/src--vfs--extfs--extfs.c.html#L1184'>linkname</a>         1184 src/vfs/extfs/extfs.c     len = strlen (entry-&gt;inode-&gt;linkname);</span>
+<span class='curline'><a href='../S/src--vfs--extfs--extfs.c.html#L1189'>linkname</a>         1189 src/vfs/extfs/extfs.c     memcpy (buf, entry-&gt;inode-&gt;linkname, result);</span>
+<span class='curline'><a href='../S/src--vfs--extfs--extfs.c.html#L1443'>linkname</a>         1443 src/vfs/extfs/extfs.c         g_free (e-&gt;inode-&gt;linkname);</span>
+<span class='curline'><a href='../S/src--vfs--extfs--extfs.c.html#L1472'>linkname</a>         1472 src/vfs/extfs/extfs.c         g_free (e-&gt;inode-&gt;linkname);</span>
+<span class='curline'><a href='../S/src--vfs--fish--fish.c.html#L751'>linkname</a>          751 src/vfs/fish/fish.c                     char *linkname;</span>
+<span class='curline'><a href='../S/src--vfs--fish--fish.c.html#L763'>linkname</a>          763 src/vfs/fish/fish.c                     linkname = strstr (filename, "\" -&gt; \"");</span>
+<span class='curline'><a href='../S/src--vfs--fish--fish.c.html#L764'>linkname</a>          764 src/vfs/fish/fish.c                     if (linkname == NULL)</span>
+<span class='curline'><a href='../S/src--vfs--fish--fish.c.html#L767'>linkname</a>          767 src/vfs/fish/fish.c                         linkname = filename_bound;</span>
+<span class='curline'><a href='../S/src--vfs--fish--fish.c.html#L773'>linkname</a>          773 src/vfs/fish/fish.c                         filename_bound = linkname;</span>
+<span class='curline'><a href='../S/src--vfs--fish--fish.c.html#L774'>linkname</a>          774 src/vfs/fish/fish.c                         linkname += 6;  /* strlen ("\" -&gt; \"") */</span>
+<span class='curline'><a href='../S/src--vfs--fish--fish.c.html#L784'>linkname</a>          784 src/vfs/fish/fish.c                     ent-&gt;ino-&gt;linkname = g_strndup (linkname, linkname_bound - linkname);</span>
+<span class='curline'><a href='../S/src--vfs--fish--fish.c.html#L785'>linkname</a>          785 src/vfs/fish/fish.c                     temp = ent-&gt;ino-&gt;linkname;</span>
+<span class='curline'><a href='../S/src--vfs--fish--fish.c.html#L786'>linkname</a>          786 src/vfs/fish/fish.c                     ent-&gt;ino-&gt;linkname = strutils_shell_unescape (ent-&gt;ino-&gt;linkname);</span>
+<span class='curline'><a href='../S/src--vfs--ftpfs--ftpfs.c.html#L1521'>linkname</a>         1521 src/vfs/ftpfs/ftpfs.c         if (S_ISLNK (fel-&gt;s.st_mode) &amp;&amp; fel-&gt;linkname)</span>
+<span class='curline'><a href='../S/src--vfs--ftpfs--ftpfs.c.html#L1523'>linkname</a>         1523 src/vfs/ftpfs/ftpfs.c             if (IS_PATH_SEP (fel-&gt;linkname[0]))</span>
+<span class='curline'><a href='../S/src--vfs--ftpfs--ftpfs.c.html#L1525'>linkname</a>         1525 src/vfs/ftpfs/ftpfs.c                 if (strlen (fel-&gt;linkname) &gt;= MC_MAXPATHLEN)</span>
+<span class='curline'><a href='../S/src--vfs--ftpfs--ftpfs.c.html#L1527'>linkname</a>         1527 src/vfs/ftpfs/ftpfs.c                 strcpy (tmp, fel-&gt;linkname);</span>
+<span class='curline'><a href='../S/src--vfs--ftpfs--ftpfs.c.html#L1531'>linkname</a>         1531 src/vfs/ftpfs/ftpfs.c                 if ((strlen (dir-&gt;remote_path) + strlen (fel-&gt;linkname)) &gt;= MC_MAXPATHLEN)</span>
+<span class='curline'><a href='../S/src--vfs--ftpfs--ftpfs.c.html#L1536'>linkname</a>         1536 src/vfs/ftpfs/ftpfs.c                 strcat (tmp + 1, fel-&gt;linkname);</span>
+<span class='curline'><a href='../S/src--vfs--ftpfs--ftpfs.c.html#L1547'>linkname</a>         1547 src/vfs/ftpfs/ftpfs.c                         if (IS_PATH_SEP (fe-&gt;linkname[0]))</span>
+<span class='curline'><a href='../S/src--vfs--ftpfs--ftpfs.c.html#L1549'>linkname</a>         1549 src/vfs/ftpfs/ftpfs.c                             if (strlen (fe-&gt;linkname) &gt;= MC_MAXPATHLEN)</span>
+<span class='curline'><a href='../S/src--vfs--ftpfs--ftpfs.c.html#L1551'>linkname</a>         1551 src/vfs/ftpfs/ftpfs.c                             strcpy (tmp, fe-&gt;linkname);</span>
+<span class='curline'><a href='../S/src--vfs--ftpfs--ftpfs.c.html#L1559'>linkname</a>         1559 src/vfs/ftpfs/ftpfs.c                             if ((strlen (tmp) + strlen (fe-&gt;linkname)) &gt;= MC_MAXPATHLEN)</span>
+<span class='curline'><a href='../S/src--vfs--ftpfs--ftpfs.c.html#L1561'>linkname</a>         1561 src/vfs/ftpfs/ftpfs.c                             strcat (tmp, fe-&gt;linkname);</span>
+<span class='curline'><a href='../S/src--vfs--ftpfs--ftpfs.c.html#L1776'>linkname</a>         1776 src/vfs/ftpfs/ftpfs.c             (lc_buffer, &amp;ent-&gt;ino-&gt;st, &amp;ent-&gt;name, &amp;ent-&gt;ino-&gt;linkname, &amp;count_spaces))</span>
+<span class='curline'><a href='../S/src--vfs--tar--tar.c.html#L737'>linkname</a>          737 src/vfs/tar/tar.c             inode-&gt;linkname = current_link_name;</span>
+<span class='curline'><a href='../S/tests--lib--vfs--vfs_parse_ls_lga.c.html#L259'>linkname</a>          259 tests/lib/vfs/vfs_parse_ls_lga.c     char *linkname = NULL;</span>
+<span class='curline'><a href='../S/tests--lib--vfs--vfs_parse_ls_lga.c.html#L273'>linkname</a>          273 tests/lib/vfs/vfs_parse_ls_lga.c         vfs_parse_ls_lga (data-&gt;input_string, &amp;test_stat, &amp;filename, &amp;linkname, &amp;filepos);</span>
+<span class='curline'><a href='../S/tests--lib--vfs--vfs_parse_ls_lga.c.html#L279'>linkname</a>          279 tests/lib/vfs/vfs_parse_ls_lga.c     mctest_assert_str_eq (linkname, data-&gt;expected_linkname);</span>
+<span class='curline'><a href='../S/tests--lib--vfs--vfs_parse_ls_lga.c.html#L324'>linkname</a>          324 tests/lib/vfs/vfs_parse_ls_lga.c          &amp;ent1-&gt;name, &amp;ent1-&gt;ino-&gt;linkname, &amp;filepos);</span>
+<span class='curline'><a href='../S/tests--lib--vfs--vfs_parse_ls_lga.c.html#L332'>linkname</a>          332 tests/lib/vfs/vfs_parse_ls_lga.c                       &amp;ent2-&gt;ino-&gt;st, &amp;ent2-&gt;name, &amp;ent2-&gt;ino-&gt;linkname, &amp;filepos);</span>
+<span class='curline'><a href='../S/tests--lib--vfs--vfs_parse_ls_lga.c.html#L339'>linkname</a>          339 tests/lib/vfs/vfs_parse_ls_lga.c                       &amp;ent3-&gt;ino-&gt;st, &amp;ent3-&gt;name, &amp;ent3-&gt;ino-&gt;linkname, &amp;filepos);</span>
+<span class='curline'><a href='../S/tests--lib--vfs--vfs_parse_ls_lga.c.html#L358'>linkname</a>          358 tests/lib/vfs/vfs_parse_ls_lga.c     &amp;ent[ent_index]-&gt;ino-&gt;st, &amp;ent[ent_index]-&gt;name, &amp;ent[ent_index]-&gt;ino-&gt;linkname, &amp;filepos))\</span>
+<span class='curline'><a href='../S/tests--src--vfs--extfs--helpers-list--mc_parse_ls_l.c.html#L269'>linkname</a>          269 tests/src/vfs/extfs/helpers-list/mc_parse_ls_l.c                   const char *filename, const char *linkname)</span>
+<span class='curline'><a href='../S/tests--src--vfs--extfs--helpers-list--mc_parse_ls_l.c.html#L277'>linkname</a>          277 tests/src/vfs/extfs/helpers-list/mc_parse_ls_l.c         if (linkname != NULL)</span>
+<span class='curline'><a href='../S/tests--src--vfs--extfs--helpers-list--mc_parse_ls_l.c.html#L278'>linkname</a>          278 tests/src/vfs/extfs/helpers-list/mc_parse_ls_l.c             yaml_dump_string ("linkname", linkname);</span>
+<span class='curline'><a href='../S/tests--src--vfs--extfs--helpers-list--mc_parse_ls_l.c.html#L312'>linkname</a>          312 tests/src/vfs/extfs/helpers-list/mc_parse_ls_l.c                 const char *filename, const char *linkname)</span>
+<span class='curline'><a href='../S/tests--src--vfs--extfs--helpers-list--mc_parse_ls_l.c.html#L319'>linkname</a>          319 tests/src/vfs/extfs/helpers-list/mc_parse_ls_l.c         if (linkname != NULL)</span>
+<span class='curline'><a href='../S/tests--src--vfs--extfs--helpers-list--mc_parse_ls_l.c.html#L320'>linkname</a>          320 tests/src/vfs/extfs/helpers-list/mc_parse_ls_l.c             printf (" -&gt; %s", linkname);</span>
+<span class='curline'><a href='../S/tests--src--vfs--extfs--helpers-list--mc_parse_ls_l.c.html#L339'>linkname</a>          339 tests/src/vfs/extfs/helpers-list/mc_parse_ls_l.c     char *filename, *linkname;</span>
+<span class='curline'><a href='../S/tests--src--vfs--extfs--helpers-list--mc_parse_ls_l.c.html#L344'>linkname</a>          344 tests/src/vfs/extfs/helpers-list/mc_parse_ls_l.c     linkname = NULL;</span>
+<span class='curline'><a href='../S/tests--src--vfs--extfs--helpers-list--mc_parse_ls_l.c.html#L346'>linkname</a>          346 tests/src/vfs/extfs/helpers-list/mc_parse_ls_l.c     success = vfs_parse_ls_lga (line, &amp;st, &amp;filename, &amp;linkname, NULL);</span>
+<span class='curline'><a href='../S/tests--src--vfs--extfs--helpers-list--mc_parse_ls_l.c.html#L352'>linkname</a>          352 tests/src/vfs/extfs/helpers-list/mc_parse_ls_l.c         yaml_dump_record (success, line, &amp;st, filename, linkname);</span>
+<span class='curline'><a href='../S/tests--src--vfs--extfs--helpers-list--mc_parse_ls_l.c.html#L354'>linkname</a>          354 tests/src/vfs/extfs/helpers-list/mc_parse_ls_l.c         ls_dump_record (success, line, &amp;st, filename, linkname);</span>
+<span class='curline'><a href='../S/tests--src--vfs--extfs--helpers-list--mc_parse_ls_l.c.html#L357'>linkname</a>          357 tests/src/vfs/extfs/helpers-list/mc_parse_ls_l.c     g_free (linkname);</span>
+</pre>
+</body>
+</html>

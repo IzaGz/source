@@ -1,0 +1,34 @@
+<!DOCTYPE html PUBLIC '-//W3C//DTD XHTML 1.0 Transitional//EN' 'http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd'>
+<html xmlns='http://www.w3.org/1999/xhtml'>
+<head>
+<title>source_with_vpath</title>
+<meta name='robots' content='noindex,nofollow' />
+<meta name='generator' content='GLOBAL-6.5.2' />
+<meta http-equiv='Content-Style-Type' content='text/css' />
+<link rel='stylesheet' type='text/css' href='../style.css' />
+</head>
+<body>
+<pre>
+<span class='curline'><a href='../S/src--filemanager--file.c.html#L2621'>source_with_vpath</a> 2621 src/filemanager/file.c     vfs_path_t *source_with_vpath = NULL;</span>
+<span class='curline'><a href='../S/src--filemanager--file.c.html#L2863'>source_with_vpath</a> 2863 src/filemanager/file.c             source_with_vpath = vfs_path_from_str (source);</span>
+<span class='curline'><a href='../S/src--filemanager--file.c.html#L2865'>source_with_vpath</a> 2865 src/filemanager/file.c             source_with_vpath = vfs_path_append_new (panel-&gt;cwd_vpath, source, (char *) NULL);</span>
+<span class='curline'><a href='../S/src--filemanager--file.c.html#L2867'>source_with_vpath</a> 2867 src/filemanager/file.c         if (panel_operate_init_totals (panel, vfs_path_as_str (source_with_vpath), ctx, dialog_type)</span>
+<span class='curline'><a href='../S/src--filemanager--file.c.html#L2873'>source_with_vpath</a> 2873 src/filemanager/file.c                     value = erase_dir (tctx, ctx, source_with_vpath);</span>
+<span class='curline'><a href='../S/src--filemanager--file.c.html#L2875'>source_with_vpath</a> 2875 src/filemanager/file.c                     value = erase_file (tctx, ctx, source_with_vpath);</span>
+<span class='curline'><a href='../S/src--filemanager--file.c.html#L2879'>source_with_vpath</a> 2879 src/filemanager/file.c                 temp = transform_source (ctx, source_with_vpath);</span>
+<span class='curline'><a href='../S/src--filemanager--file.c.html#L2908'>source_with_vpath</a> 2908 src/filemanager/file.c                         ctx-&gt;stat_func (source_with_vpath, &amp;src_stat);</span>
+<span class='curline'><a href='../S/src--filemanager--file.c.html#L2912'>source_with_vpath</a> 2912 src/filemanager/file.c                                 copy_dir_dir (tctx, ctx, vfs_path_as_str (source_with_vpath),</span>
+<span class='curline'><a href='../S/src--filemanager--file.c.html#L2916'>source_with_vpath</a> 2916 src/filemanager/file.c                                 copy_file_file (tctx, ctx, vfs_path_as_str (source_with_vpath),</span>
+<span class='curline'><a href='../S/src--filemanager--file.c.html#L2923'>source_with_vpath</a> 2923 src/filemanager/file.c                                 move_dir_dir (tctx, ctx, vfs_path_as_str (source_with_vpath), dest);</span>
+<span class='curline'><a href='../S/src--filemanager--file.c.html#L2926'>source_with_vpath</a> 2926 src/filemanager/file.c                                 move_file_file (tctx, ctx, vfs_path_as_str (source_with_vpath),</span>
+<span class='curline'><a href='../S/src--filemanager--file.c.html#L2975'>source_with_vpath</a> 2975 src/filemanager/file.c                 vfs_path_free (source_with_vpath);</span>
+<span class='curline'><a href='../S/src--filemanager--file.c.html#L2977'>source_with_vpath</a> 2977 src/filemanager/file.c                     source_with_vpath = vfs_path_from_str (source2);</span>
+<span class='curline'><a href='../S/src--filemanager--file.c.html#L2979'>source_with_vpath</a> 2979 src/filemanager/file.c                     source_with_vpath =</span>
+<span class='curline'><a href='../S/src--filemanager--file.c.html#L2986'>source_with_vpath</a> 2986 src/filemanager/file.c                         value = erase_dir (tctx, ctx, source_with_vpath);</span>
+<span class='curline'><a href='../S/src--filemanager--file.c.html#L2988'>source_with_vpath</a> 2988 src/filemanager/file.c                         value = erase_file (tctx, ctx, source_with_vpath);</span>
+<span class='curline'><a href='../S/src--filemanager--file.c.html#L2992'>source_with_vpath</a> 2992 src/filemanager/file.c                     temp = transform_source (ctx, source_with_vpath);</span>
+<span class='curline'><a href='../S/src--filemanager--file.c.html#L3013'>source_with_vpath</a> 3013 src/filemanager/file.c                             strutils_shell_unescape (vfs_path_as_str (source_with_vpath));</span>
+<span class='curline'><a href='../S/src--filemanager--file.c.html#L3097'>source_with_vpath</a> 3097 src/filemanager/file.c     vfs_path_free (source_with_vpath);</span>
+</pre>
+</body>
+</html>

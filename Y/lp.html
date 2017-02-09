@@ -1,0 +1,57 @@
+<!DOCTYPE html PUBLIC '-//W3C//DTD XHTML 1.0 Transitional//EN' 'http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd'>
+<html xmlns='http://www.w3.org/1999/xhtml'>
+<head>
+<title>lp</title>
+<meta name='robots' content='noindex,nofollow' />
+<meta name='generator' content='GLOBAL-6.5.2' />
+<meta http-equiv='Content-Style-Type' content='text/css' />
+<link rel='stylesheet' type='text/css' href='../style.css' />
+</head>
+<body>
+<pre>
+<span class='curline'><a href='../S/src--filemanager--file.c.html#L271'>lp</a>                271 src/filemanager/file.c     struct link *lp = (struct link *) data;</span>
+<span class='curline'><a href='../S/src--filemanager--file.c.html#L273'>lp</a>                273 src/filemanager/file.c     vfs_path_free (lp-&gt;src_vpath);</span>
+<span class='curline'><a href='../S/src--filemanager--file.c.html#L274'>lp</a>                274 src/filemanager/file.c     vfs_path_free (lp-&gt;dst_vpath);</span>
+<span class='curline'><a href='../S/src--filemanager--file.c.html#L275'>lp</a>                275 src/filemanager/file.c     g_free (lp);</span>
+<span class='curline'><a href='../S/src--filemanager--file.c.html#L281'>lp</a>                281 src/filemanager/file.c free_linklist (GSList * lp)</span>
+<span class='curline'><a href='../S/src--filemanager--file.c.html#L283'>lp</a>                283 src/filemanager/file.c     g_slist_free_full (lp, free_link);</span>
+<span class='curline'><a href='../S/src--filemanager--file.c.html#L291'>lp</a>                291 src/filemanager/file.c is_in_linklist (const GSList * lp, const vfs_path_t * vpath, const struct stat *sb)</span>
+<span class='curline'><a href='../S/src--filemanager--file.c.html#L299'>lp</a>                299 src/filemanager/file.c     for (; lp != NULL; lp = (const GSList *) g_slist_next (lp))</span>
+<span class='curline'><a href='../S/src--filemanager--file.c.html#L301'>lp</a>                301 src/filemanager/file.c         const struct link *lnk = (const struct link *) lp-&gt;data;</span>
+<span class='curline'><a href='../S/src--filemanager--file.c.html#L320'>lp</a>                320 src/filemanager/file.c     GSList *lp;</span>
+<span class='curline'><a href='../S/src--filemanager--file.c.html#L333'>lp</a>                333 src/filemanager/file.c     for (lp = linklist; lp != NULL; lp = g_slist_next (lp))</span>
+<span class='curline'><a href='../S/src--filemanager--file.c.html#L335'>lp</a>                335 src/filemanager/file.c         lnk = (struct link *) lp-&gt;data;</span>
+<span class='curline'><a href='../S/src--filemanager--file.c.html#L2046'>lp</a>               2046 src/filemanager/file.c     struct link *lp;</span>
+<span class='curline'><a href='../S/src--filemanager--file.c.html#L2113'>lp</a>               2113 src/filemanager/file.c     lp = g_new0 (struct link, 1);</span>
+<span class='curline'><a href='../S/src--filemanager--file.c.html#L2114'>lp</a>               2114 src/filemanager/file.c     lp-&gt;vfs = vfs_path_get_by_index (src_vpath, -1)-&gt;class;</span>
+<span class='curline'><a href='../S/src--filemanager--file.c.html#L2115'>lp</a>               2115 src/filemanager/file.c     lp-&gt;ino = cbuf.st_ino;</span>
+<span class='curline'><a href='../S/src--filemanager--file.c.html#L2116'>lp</a>               2116 src/filemanager/file.c     lp-&gt;dev = cbuf.st_dev;</span>
+<span class='curline'><a href='../S/src--filemanager--file.c.html#L2117'>lp</a>               2117 src/filemanager/file.c     parent_dirs = g_slist_prepend (parent_dirs, lp);</span>
+<span class='curline'><a href='../S/src--filemanager--file.c.html#L2186'>lp</a>               2186 src/filemanager/file.c         lp = g_new0 (struct link, 1);</span>
+<span class='curline'><a href='../S/src--filemanager--file.c.html#L2188'>lp</a>               2188 src/filemanager/file.c         lp-&gt;vfs = vfs_path_get_by_index (dst_vpath, -1)-&gt;class;</span>
+<span class='curline'><a href='../S/src--filemanager--file.c.html#L2189'>lp</a>               2189 src/filemanager/file.c         lp-&gt;ino = buf.st_ino;</span>
+<span class='curline'><a href='../S/src--filemanager--file.c.html#L2190'>lp</a>               2190 src/filemanager/file.c         lp-&gt;dev = buf.st_dev;</span>
+<span class='curline'><a href='../S/src--filemanager--file.c.html#L2191'>lp</a>               2191 src/filemanager/file.c         dest_dirs = g_slist_prepend (dest_dirs, lp);</span>
+<span class='curline'><a href='../S/src--filemanager--file.c.html#L2262'>lp</a>               2262 src/filemanager/file.c                 lp = g_new0 (struct link, 1);</span>
+<span class='curline'><a href='../S/src--filemanager--file.c.html#L2263'>lp</a>               2263 src/filemanager/file.c                 lp-&gt;src_vpath = tmp_vpath;</span>
+<span class='curline'><a href='../S/src--filemanager--file.c.html#L2264'>lp</a>               2264 src/filemanager/file.c                 lp-&gt;st_mode = buf.st_mode;</span>
+<span class='curline'><a href='../S/src--filemanager--file.c.html#L2265'>lp</a>               2265 src/filemanager/file.c                 erase_list = g_slist_append (erase_list, lp);</span>
+<span class='curline'><a href='../S/src--filemanager--file.c.html#L2424'>lp</a>               2424 src/filemanager/file.c             struct link *lp = (struct link *) erase_list-&gt;data;</span>
+<span class='curline'><a href='../S/src--filemanager--file.c.html#L2426'>lp</a>               2426 src/filemanager/file.c             if (S_ISDIR (lp-&gt;st_mode))</span>
+<span class='curline'><a href='../S/src--filemanager--file.c.html#L2427'>lp</a>               2427 src/filemanager/file.c                 return_status = erase_dir_iff_empty (ctx, lp-&gt;src_vpath, tctx-&gt;progress_count);</span>
+<span class='curline'><a href='../S/src--filemanager--file.c.html#L2429'>lp</a>               2429 src/filemanager/file.c                 return_status = erase_file (tctx, ctx, lp-&gt;src_vpath);</span>
+<span class='curline'><a href='../S/src--filemanager--file.c.html#L2431'>lp</a>               2431 src/filemanager/file.c             erase_list = g_slist_remove (erase_list, lp);</span>
+<span class='curline'><a href='../S/src--filemanager--file.c.html#L2432'>lp</a>               2432 src/filemanager/file.c             free_link (lp);</span>
+<span class='curline'><a href='../S/src--vfs--smbfs--helpers--lib--util_str.c.html#L1093'>lp</a>               1093 src/vfs/smbfs/helpers/lib/util_str.c     size_t ls, lp, li, i;</span>
+<span class='curline'><a href='../S/src--vfs--smbfs--helpers--lib--util_str.c.html#L1099'>lp</a>               1099 src/vfs/smbfs/helpers/lib/util_str.c     lp = strlen (pattern);</span>
+<span class='curline'><a href='../S/src--vfs--smbfs--helpers--lib--util_str.c.html#L1105'>lp</a>               1105 src/vfs/smbfs/helpers/lib/util_str.c     while (lp &lt;= ls &amp;&amp; (p = strstr (s, pattern)))</span>
+<span class='curline'><a href='../S/src--vfs--smbfs--helpers--lib--util_str.c.html#L1107'>lp</a>               1107 src/vfs/smbfs/helpers/lib/util_str.c         memmove (p + li, p + lp, ls + 1 - (PTR_DIFF (p, s) + lp));</span>
+<span class='curline'><a href='../S/src--vfs--smbfs--helpers--lib--util_str.c.html#L1123'>lp</a>               1123 src/vfs/smbfs/helpers/lib/util_str.c         ls += (li - lp);</span>
+<span class='curline'><a href='../S/src--vfs--smbfs--helpers--lib--util_str.c.html#L1136'>lp</a>               1136 src/vfs/smbfs/helpers/lib/util_str.c     size_t ls, lp, li;</span>
+<span class='curline'><a href='../S/src--vfs--smbfs--helpers--lib--util_str.c.html#L1142'>lp</a>               1142 src/vfs/smbfs/helpers/lib/util_str.c     lp = strlen (pattern);</span>
+<span class='curline'><a href='../S/src--vfs--smbfs--helpers--lib--util_str.c.html#L1148'>lp</a>               1148 src/vfs/smbfs/helpers/lib/util_str.c     while (lp &lt;= ls &amp;&amp; (p = strstr (s, pattern)))</span>
+<span class='curline'><a href='../S/src--vfs--smbfs--helpers--lib--util_str.c.html#L1150'>lp</a>               1150 src/vfs/smbfs/helpers/lib/util_str.c         memmove (p + li, p + lp, ls + 1 - (PTR_DIFF (p, s) + lp));</span>
+<span class='curline'><a href='../S/src--vfs--smbfs--helpers--lib--util_str.c.html#L1153'>lp</a>               1153 src/vfs/smbfs/helpers/lib/util_str.c         ls += (li - lp);</span>
+</pre>
+</body>
+</html>

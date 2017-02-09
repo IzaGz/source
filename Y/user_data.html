@@ -1,0 +1,69 @@
+<!DOCTYPE html PUBLIC '-//W3C//DTD XHTML 1.0 Transitional//EN' 'http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd'>
+<html xmlns='http://www.w3.org/1999/xhtml'>
+<head>
+<title>user_data</title>
+<meta name='robots' content='noindex,nofollow' />
+<meta name='generator' content='GLOBAL-6.5.2' />
+<meta http-equiv='Content-Style-Type' content='text/css' />
+<link rel='stylesheet' type='text/css' href='../style.css' />
+</head>
+<body>
+<pre>
+<span class='curline'><a href='../S/lib--charsets.c.html#L81'>user_data</a>          81 lib/charsets.c free_codepage_desc (gpointer data, gpointer user_data)</span>
+<span class='curline'><a href='../S/lib--charsets.c.html#L84'>user_data</a>          84 lib/charsets.c     (void) user_data;</span>
+<span class='curline'><a href='../S/lib--search.h.html#L18'>user_data</a>          18 lib/search.h   typedef mc_search_cbret_t (*mc_search_fn) (const void *user_data, gsize char_offset,</span>
+<span class='curline'><a href='../S/lib--search.h.html#L20'>user_data</a>          20 lib/search.h   typedef mc_search_cbret_t (*mc_update_fn) (const void *user_data, gsize char_offset);</span>
+<span class='curline'><a href='../S/lib--search.h.html#L150'>user_data</a>         150 lib/search.h   gboolean mc_search_run (mc_search_t * mc_search, const void *user_data, gsize start_search,</span>
+<span class='curline'><a href='../S/lib--search--glob.c.html#L183'>user_data</a>         183 lib/search/glob.c mc_search__run_glob (mc_search_t * lc_mc_search, const void *user_data,</span>
+<span class='curline'><a href='../S/lib--search--glob.c.html#L186'>user_data</a>         186 lib/search/glob.c     return mc_search__run_regex (lc_mc_search, user_data, start_search, end_search, found_len);</span>
+<span class='curline'><a href='../S/lib--search--hex.c.html#L213'>user_data</a>         213 lib/search/hex.c mc_search__run_hex (mc_search_t * lc_mc_search, const void *user_data,</span>
+<span class='curline'><a href='../S/lib--search--hex.c.html#L216'>user_data</a>         216 lib/search/hex.c     return mc_search__run_regex (lc_mc_search, user_data, start_search, end_search, found_len);</span>
+<span class='curline'><a href='../S/lib--search--normal.c.html#L101'>user_data</a>         101 lib/search/normal.c mc_search__run_normal (mc_search_t * lc_mc_search, const void *user_data,</span>
+<span class='curline'><a href='../S/lib--search--normal.c.html#L104'>user_data</a>         104 lib/search/normal.c     return mc_search__run_regex (lc_mc_search, user_data, start_search, end_search, found_len);</span>
+<span class='curline'><a href='../S/lib--search--regex.c.html#L884'>user_data</a>         884 lib/search/regex.c mc_search__run_regex (mc_search_t * lc_mc_search, const void *user_data,</span>
+<span class='curline'><a href='../S/lib--search--regex.c.html#L909'>user_data</a>         909 lib/search/regex.c                 ret = lc_mc_search-&gt;search_fn (user_data, current_pos, &amp;current_chr);</span>
+<span class='curline'><a href='../S/lib--search--regex.c.html#L938'>user_data</a>         938 lib/search/regex.c                 const char current_chr = ((const char *) user_data)[current_pos];</span>
+<span class='curline'><a href='../S/lib--search--regex.c.html#L950'>user_data</a>         950 lib/search/regex.c             g_string_append_len (lc_mc_search-&gt;regex_buffer, (const char *) user_data + virtual_pos,</span>
+<span class='curline'><a href='../S/lib--search--regex.c.html#L977'>user_data</a>         977 lib/search/regex.c             ((lc_mc_search-&gt;update_fn) (user_data, current_pos) == MC_SEARCH_CB_ABORT))</span>
+<span class='curline'><a href='../S/lib--search--search.c.html#L280'>user_data</a>         280 lib/search/search.c mc_search_run (mc_search_t * lc_mc_search, const void *user_data,</span>
+<span class='curline'><a href='../S/lib--search--search.c.html#L285'>user_data</a>         285 lib/search/search.c     if (lc_mc_search == NULL || user_data == NULL)</span>
+<span class='curline'><a href='../S/lib--search--search.c.html#L308'>user_data</a>         308 lib/search/search.c         ret = mc_search__run_normal (lc_mc_search, user_data, start_search, end_search, found_len);</span>
+<span class='curline'><a href='../S/lib--search--search.c.html#L311'>user_data</a>         311 lib/search/search.c         ret = mc_search__run_regex (lc_mc_search, user_data, start_search, end_search, found_len);</span>
+<span class='curline'><a href='../S/lib--search--search.c.html#L314'>user_data</a>         314 lib/search/search.c         ret = mc_search__run_glob (lc_mc_search, user_data, start_search, end_search, found_len);</span>
+<span class='curline'><a href='../S/lib--search--search.c.html#L317'>user_data</a>         317 lib/search/search.c         ret = mc_search__run_hex (lc_mc_search, user_data, start_search, end_search, found_len);</span>
+<span class='curline'><a href='../S/lib--tty--color.c.html#L68'>user_data</a>          68 lib/tty/color.c tty_color_free_condition_cb (gpointer key, gpointer value, gpointer user_data)</span>
+<span class='curline'><a href='../S/lib--tty--color.c.html#L74'>user_data</a>          74 lib/tty/color.c     is_temp_color = user_data != NULL;</span>
+<span class='curline'><a href='../S/lib--tty--color.c.html#L91'>user_data</a>          91 lib/tty/color.c tty_color_get_next_cpn_cb (gpointer key, gpointer value, gpointer user_data)</span>
+<span class='curline'><a href='../S/lib--tty--color.c.html#L97'>user_data</a>          97 lib/tty/color.c     cp = GPOINTER_TO_SIZE (user_data);</span>
+<span class='curline'><a href='../S/lib--widget--dialog-switch.c.html#L70'>user_data</a>          70 lib/widget/dialog-switch.c dialog_switch_suspend (void *data, void *user_data)</span>
+<span class='curline'><a href='../S/lib--widget--dialog-switch.c.html#L72'>user_data</a>          72 lib/widget/dialog-switch.c     (void) user_data;</span>
+<span class='curline'><a href='../S/lib--widget--dialog.c.html#L561'>user_data</a>         561 lib/widget/dialog.c dlg_widget_set_position (gpointer data, gpointer user_data)</span>
+<span class='curline'><a href='../S/lib--widget--dialog.c.html#L570'>user_data</a>         570 lib/widget/dialog.c     const widget_shift_scale_t *wss = (const widget_shift_scale_t *) user_data;</span>
+<span class='curline'><a href='../S/lib--widget--listbox.c.html#L64'>user_data</a>          64 lib/widget/listbox.c listbox_entry_cmp (const void *a, const void *b, void *user_data)</span>
+<span class='curline'><a href='../S/lib--widget--listbox.c.html#L69'>user_data</a>          69 lib/widget/listbox.c     (void) user_data;</span>
+<span class='curline'><a href='../S/src--editor--edit-impl.h.html#L199'>user_data</a>         199 src/editor/edit-impl.h mc_search_cbret_t edit_search_cmd_callback (const void *user_data, gsize char_offset,</span>
+<span class='curline'><a href='../S/src--editor--edit-impl.h.html#L201'>user_data</a>         201 src/editor/edit-impl.h mc_search_cbret_t edit_search_update_callback (const void *user_data, gsize char_offset);</span>
+<span class='curline'><a href='../S/src--editor--editcmd.c.html#L1484'>user_data</a>        1484 src/editor/editcmd.c edit_syntax_onoff_cb (void *data, void *user_data)</span>
+<span class='curline'><a href='../S/src--editor--editcmd.c.html#L1486'>user_data</a>        1486 src/editor/editcmd.c     (void) user_data;</span>
+<span class='curline'><a href='../S/src--editor--editcmd.c.html#L1508'>user_data</a>        1508 src/editor/editcmd.c edit_redraw_page_cb (void *data, void *user_data)</span>
+<span class='curline'><a href='../S/src--editor--editcmd.c.html#L1510'>user_data</a>        1510 src/editor/editcmd.c     (void) user_data;</span>
+<span class='curline'><a href='../S/src--editor--editcmd.c.html#L2745'>user_data</a>        2745 src/editor/editcmd.c edit_search_cmd_callback (const void *user_data, gsize char_offset, int *current_char)</span>
+<span class='curline'><a href='../S/src--editor--editcmd.c.html#L2747'>user_data</a>        2747 src/editor/editcmd.c     WEdit *edit = ((const edit_search_status_msg_t *) user_data)-&gt;edit;</span>
+<span class='curline'><a href='../S/src--editor--editcmd.c.html#L2756'>user_data</a>        2756 src/editor/editcmd.c edit_search_update_callback (const void *user_data, gsize char_offset)</span>
+<span class='curline'><a href='../S/src--editor--editcmd.c.html#L2758'>user_data</a>        2758 src/editor/editcmd.c     status_msg_t *sm = STATUS_MSG (user_data);</span>
+<span class='curline'><a href='../S/src--editor--editoptions.c.html#L83'>user_data</a>          83 src/editor/editoptions.c edit_reset_over_col (void *data, void *user_data)</span>
+<span class='curline'><a href='../S/src--editor--editoptions.c.html#L85'>user_data</a>          85 src/editor/editoptions.c     (void) user_data;</span>
+<span class='curline'><a href='../S/src--editor--editoptions.c.html#L101'>user_data</a>         101 src/editor/editoptions.c edit_reload_syntax (void *data, void *user_data)</span>
+<span class='curline'><a href='../S/src--editor--editoptions.c.html#L103'>user_data</a>         103 src/editor/editoptions.c     (void) user_data;</span>
+<span class='curline'><a href='../S/src--editor--editwidget.c.html#L190'>user_data</a>         190 src/editor/editwidget.c edit_dialog_resize_cb (void *data, void *user_data)</span>
+<span class='curline'><a href='../S/src--editor--editwidget.c.html#L194'>user_data</a>         194 src/editor/editwidget.c     (void) user_data;</span>
+<span class='curline'><a href='../S/src--viewer--internal.h.html#L347'>user_data</a>         347 src/viewer/internal.h mc_search_cbret_t mcview_search_cmd_callback (const void *user_data, gsize char_offset,</span>
+<span class='curline'><a href='../S/src--viewer--internal.h.html#L349'>user_data</a>         349 src/viewer/internal.h mc_search_cbret_t mcview_search_update_cmd_callback (const void *user_data, gsize char_offset);</span>
+<span class='curline'><a href='../S/src--viewer--search.c.html#L202'>user_data</a>         202 src/viewer/search.c mcview_search_cmd_callback (const void *user_data, gsize char_offset, int *current_char)</span>
+<span class='curline'><a href='../S/src--viewer--search.c.html#L204'>user_data</a>         204 src/viewer/search.c     WView *view = ((const mcview_search_status_msg_t *) user_data)-&gt;view;</span>
+<span class='curline'><a href='../S/src--viewer--search.c.html#L257'>user_data</a>         257 src/viewer/search.c mcview_search_update_cmd_callback (const void *user_data, gsize char_offset)</span>
+<span class='curline'><a href='../S/src--viewer--search.c.html#L259'>user_data</a>         259 src/viewer/search.c     status_msg_t *sm = STATUS_MSG (user_data);</span>
+<span class='curline'><a href='../S/src--viewer--search.c.html#L260'>user_data</a>         260 src/viewer/search.c     mcview_search_status_msg_t *vsm = (mcview_search_status_msg_t *) user_data;</span>
+</pre>
+</body>
+</html>

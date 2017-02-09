@@ -1,0 +1,117 @@
+<!DOCTYPE html PUBLIC '-//W3C//DTD XHTML 1.0 Transitional//EN' 'http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd'>
+<html xmlns='http://www.w3.org/1999/xhtml'>
+<head>
+<title>st_size</title>
+<meta name='robots' content='noindex,nofollow' />
+<meta name='generator' content='GLOBAL-6.5.2' />
+<meta http-equiv='Content-Style-Type' content='text/css' />
+<link rel='stylesheet' type='text/css' href='../style.css' />
+</head>
+<body>
+<pre>
+<span class='curline'><a href='../S/lib--mcconfig--common.c.html#L126'>st_size</a>           126 lib/mcconfig/common.c         if (mc_stat (vpath, &amp;st) == 0 &amp;&amp; st.st_size != 0)</span>
+<span class='curline'><a href='../S/lib--stat-size.h.html#L61'>st_size</a>            61 lib/stat-size.h   ((statbuf).st_size / ST_NBLOCKSIZE + ((statbuf).st_size % ST_NBLOCKSIZE != 0))</span>
+<span class='curline'><a href='../S/lib--stat-size.h.html#L66'>st_size</a>            66 lib/stat-size.h    st_blocks ((statbuf).st_size) : 0)</span>
+<span class='curline'><a href='../S/lib--vfs--direntry.c.html#L593'>st_size</a>           593 lib/vfs/direntry.c     off_t size = FH-&gt;ino-&gt;st.st_size;</span>
+<span class='curline'><a href='../S/lib--vfs--direntry.c.html#L978'>st_size</a>           978 lib/vfs/direntry.c     st.st_size = 0;</span>
+<span class='curline'><a href='../S/lib--vfs--direntry.c.html#L998'>st_size</a>           998 lib/vfs/direntry.c     if (s-&gt;st_size == 0)</span>
+<span class='curline'><a href='../S/lib--vfs--direntry.c.html#L1007'>st_size</a>          1007 lib/vfs/direntry.c         ioblocks = 1 + (s-&gt;st_size - 1) / s-&gt;st_blksize;</span>
+<span class='curline'><a href='../S/lib--vfs--direntry.c.html#L1014'>st_size</a>          1014 lib/vfs/direntry.c         s-&gt;st_blocks = 1 + (s-&gt;st_size - 1) / 512;</span>
+<span class='curline'><a href='../S/lib--vfs--direntry.c.html#L1373'>st_size</a>          1373 lib/vfs/direntry.c     off_t stat_size = ino-&gt;st.st_size;</span>
+<span class='curline'><a href='../S/lib--vfs--parse_ls_vga.c.html#L792'>st_size</a>           792 lib/vfs/parse_ls_vga.c         s-&gt;st_size = 0;</span>
+<span class='curline'><a href='../S/lib--vfs--parse_ls_vga.c.html#L801'>st_size</a>           801 lib/vfs/parse_ls_vga.c         s-&gt;st_size = (off_t) g_ascii_strtoll (columns[idx2], NULL, 10);</span>
+<span class='curline'><a href='../S/src--editor--edit.c.html#L349'>st_size</a>           349 src/editor/edit.c     if (st-&gt;st_size &gt; 0)</span>
+<span class='curline'><a href='../S/src--editor--edit.c.html#L352'>st_size</a>           352 src/editor/edit.c     if ((uintmax_t) st-&gt;st_size &gt; threshold)</span>
+<span class='curline'><a href='../S/src--editor--edit.c.html#L429'>st_size</a>           429 src/editor/edit.c         edit_buffer_init (&amp;edit-&gt;buffer, edit-&gt;stat1.st_size);</span>
+<span class='curline'><a href='../S/src--editor--edit.c.html#L1784'>st_size</a>          1784 src/editor/edit.c         &amp;&amp; (mc_stat (block_file_vpath, &amp;status) == 0) &amp;&amp; (status.st_size != 0))</span>
+<span class='curline'><a href='../S/src--filemanager--chown.c.html#L371'>st_size</a>           371 src/filemanager/chown.c         size_trunc_len (buffer, GW - 4, sf_stat.st_size, 0, panels_options.kilobyte_si);</span>
+<span class='curline'><a href='../S/src--filemanager--cmd.c.html#L313'>st_size</a>           313 src/filemanager/cmd.c             if (source-&gt;st.st_size != target-&gt;st.st_size)</span>
+<span class='curline'><a href='../S/src--filemanager--cmd.c.html#L339'>st_size</a>           339 src/filemanager/cmd.c                 if (compare_files (src_name, dst_name, source-&gt;st.st_size))</span>
+<span class='curline'><a href='../S/src--filemanager--cmd.c.html#L1472'>st_size</a>          1472 src/filemanager/cmd.c             entry-&gt;st.st_size = (off_t) total;</span>
+<span class='curline'><a href='../S/src--filemanager--cmd.c.html#L1522'>st_size</a>          1522 src/filemanager/cmd.c             panel-&gt;dir.list[i].st.st_size = (off_t) total;</span>
+<span class='curline'><a href='../S/src--filemanager--dir.c.html#L496'>st_size</a>           496 src/filemanager/dir.c     result = a-&gt;st.st_size &lt; b-&gt;st.st_size ? -1 : a-&gt;st.st_size &gt; b-&gt;st.st_size;</span>
+<span class='curline'><a href='../S/src--filemanager--file.c.html#L541'>st_size</a>           541 src/filemanager/file.c             *ret_total += (uintmax_t) s.st_size;</span>
+<span class='curline'><a href='../S/src--filemanager--file.c.html#L573'>st_size</a>           573 src/filemanager/file.c                 *ret_total += (uintmax_t) s.st_size;</span>
+<span class='curline'><a href='../S/src--filemanager--file.c.html#L1001'>st_size</a>          1001 src/filemanager/file.c             return_status = progress_update_one (tctx, ctx, src_stats.st_size);</span>
+<span class='curline'><a href='../S/src--filemanager--file.c.html#L1060'>st_size</a>          1060 src/filemanager/file.c         return_status = progress_update_one (tctx, ctx, src_stats.st_size);</span>
+<span class='curline'><a href='../S/src--filemanager--file.c.html#L1090'>st_size</a>          1090 src/filemanager/file.c         buf.st_size = 0;</span>
+<span class='curline'><a href='../S/src--filemanager--file.c.html#L1317'>st_size</a>          1317 src/filemanager/file.c             *ret_total += (uintmax_t) s-&gt;st_size;</span>
+<span class='curline'><a href='../S/src--filemanager--file.c.html#L1703'>st_size</a>          1703 src/filemanager/file.c     file_size = src_stat.st_size;</span>
+<span class='curline'><a href='../S/src--filemanager--file.c.html#L1758'>st_size</a>          1758 src/filemanager/file.c     while (vfs_preallocate (dest_desc, file_size, appending ? dst_stat.st_size : 0) != 0)</span>
+<span class='curline'><a href='../S/src--filemanager--filegui.c.html#L554'>st_size</a>           554 src/filemanager/filegui.c     size_trunc_len (fsize_buffer, sizeof (fsize_buffer), ui-&gt;s_stat-&gt;st_size, 0,</span>
+<span class='curline'><a href='../S/src--filemanager--filegui.c.html#L559'>st_size</a>           559 src/filemanager/filegui.c     size_trunc_len (fsize_buffer, sizeof (fsize_buffer), ui-&gt;d_stat-&gt;st_size, 0,</span>
+<span class='curline'><a href='../S/src--filemanager--filegui.c.html#L575'>st_size</a>           575 src/filemanager/filegui.c         if ((ctx-&gt;operation == OP_COPY) &amp;&amp; (ui-&gt;d_stat-&gt;st_size != 0)</span>
+<span class='curline'><a href='../S/src--filemanager--filegui.c.html#L576'>st_size</a>           576 src/filemanager/filegui.c             &amp;&amp; (ui-&gt;s_stat-&gt;st_size &gt; ui-&gt;d_stat-&gt;st_size))</span>
+<span class='curline'><a href='../S/src--filemanager--filegui.c.html#L1138'>st_size</a>          1138 src/filemanager/filegui.c         if (_s_stat-&gt;st_size == _d_stat-&gt;st_size)</span>
+<span class='curline'><a href='../S/src--filemanager--filegui.c.html#L1145'>st_size</a>          1145 src/filemanager/filegui.c         ctx-&gt;do_reget = _d_stat-&gt;st_size;</span>
+<span class='curline'><a href='../S/src--filemanager--find.c.html#L1030'>st_size</a>          1030 src/filemanager/find.c     if (s.st_size &gt;= MIN_REFRESH_FILE_SIZE || seconds &gt; 0 || useconds &gt; MAX_REFRESH_INTERVAL)</span>
+<span class='curline'><a href='../S/src--filemanager--info.c.html#L236'>st_size</a>           236 src/filemanager/info.c             size_trunc_len (buffer, 9, st.st_size, 0, panels_options.kilobyte_si);</span>
+<span class='curline'><a href='../S/src--filemanager--panel.c.html#L519'>st_size</a>           519 src/filemanager/panel.c         size_trunc_len (buffer, (unsigned int) len, fe-&gt;st.st_size, 0, panels_options.kilobyte_si);</span>
+<span class='curline'><a href='../S/src--filemanager--panel.c.html#L1323'>st_size</a>          1323 src/filemanager/panel.c                             size_trunc_sep (panel-&gt;dir.list[panel-&gt;selected].st.st_size,</span>
+<span class='curline'><a href='../S/src--filemanager--panel.c.html#L4566'>st_size</a>          4566 src/filemanager/panel.c                 panel-&gt;total += (uintmax_t) panel-&gt;dir.list[idx].st.st_size;</span>
+<span class='curline'><a href='../S/src--filemanager--panel.c.html#L4570'>st_size</a>          4570 src/filemanager/panel.c             panel-&gt;total += (uintmax_t) panel-&gt;dir.list[idx].st.st_size;</span>
+<span class='curline'><a href='../S/src--filemanager--panel.c.html#L4579'>st_size</a>          4579 src/filemanager/panel.c                 panel-&gt;total -= (uintmax_t) panel-&gt;dir.list[idx].st.st_size;</span>
+<span class='curline'><a href='../S/src--filemanager--panel.c.html#L4583'>st_size</a>          4583 src/filemanager/panel.c             panel-&gt;total -= (uintmax_t) panel-&gt;dir.list[idx].st.st_size;</span>
+<span class='curline'><a href='../S/src--vfs--cpio--cpio.c.html#L392'>st_size</a>           392 src/vfs/cpio/cpio.c         if ((st-&gt;st_size != 0) &amp;&amp; (st-&gt;st_rdev == 0x0001))</span>
+<span class='curline'><a href='../S/src--vfs--cpio--cpio.c.html#L396'>st_size</a>           396 src/vfs/cpio/cpio.c             st-&gt;st_rdev = (unsigned) st-&gt;st_size;</span>
+<span class='curline'><a href='../S/src--vfs--cpio--cpio.c.html#L397'>st_size</a>           397 src/vfs/cpio/cpio.c             st-&gt;st_size = 0;</span>
+<span class='curline'><a href='../S/src--vfs--cpio--cpio.c.html#L414'>st_size</a>           414 src/vfs/cpio/cpio.c             if (inode-&gt;st.st_size != 0 &amp;&amp; st-&gt;st_size != 0 &amp;&amp; (inode-&gt;st.st_size != st-&gt;st_size))</span>
+<span class='curline'><a href='../S/src--vfs--cpio--cpio.c.html#L421'>st_size</a>           421 src/vfs/cpio/cpio.c             else if (inode-&gt;st.st_size == 0)</span>
+<span class='curline'><a href='../S/src--vfs--cpio--cpio.c.html#L422'>st_size</a>           422 src/vfs/cpio/cpio.c                 inode-&gt;st.st_size = st-&gt;st_size;</span>
+<span class='curline'><a href='../S/src--vfs--cpio--cpio.c.html#L497'>st_size</a>           497 src/vfs/cpio/cpio.c             if (st-&gt;st_size != 0)</span>
+<span class='curline'><a href='../S/src--vfs--cpio--cpio.c.html#L507'>st_size</a>           507 src/vfs/cpio/cpio.c             CPIO_SEEK_CUR (super, st-&gt;st_size);</span>
+<span class='curline'><a href='../S/src--vfs--cpio--cpio.c.html#L514'>st_size</a>           514 src/vfs/cpio/cpio.c                 inode-&gt;linkname = g_malloc (st-&gt;st_size + 1);</span>
+<span class='curline'><a href='../S/src--vfs--cpio--cpio.c.html#L516'>st_size</a>           516 src/vfs/cpio/cpio.c                 if (mc_read (arch-&gt;fd, inode-&gt;linkname, st-&gt;st_size) &lt; st-&gt;st_size)</span>
+<span class='curline'><a href='../S/src--vfs--cpio--cpio.c.html#L522'>st_size</a>           522 src/vfs/cpio/cpio.c                 inode-&gt;linkname[st-&gt;st_size] = '\0';    /* Linkname stored without terminating \0 !!! */</span>
+<span class='curline'><a href='../S/src--vfs--cpio--cpio.c.html#L525'>st_size</a>           525 src/vfs/cpio/cpio.c             CPIO_POS (super) += st-&gt;st_size;</span>
+<span class='curline'><a href='../S/src--vfs--cpio--cpio.c.html#L591'>st_size</a>           591 src/vfs/cpio/cpio.c     st.st_size = (u.buf.c_filesizes[0] &lt;&lt; 16) | u.buf.c_filesizes[1];</span>
+<span class='curline'><a href='../S/src--vfs--cpio--cpio.c.html#L660'>st_size</a>           660 src/vfs/cpio/cpio.c     u.st.st_size = hd.c_filesize;</span>
+<span class='curline'><a href='../S/src--vfs--cpio--cpio.c.html#L738'>st_size</a>           738 src/vfs/cpio/cpio.c     u.st.st_size = hd.c_filesize;</span>
+<span class='curline'><a href='../S/src--vfs--cpio--cpio.c.html#L838'>st_size</a>           838 src/vfs/cpio/cpio.c     count = MIN (count, (size_t) (FH-&gt;ino-&gt;st.st_size - FH-&gt;pos));</span>
+<span class='curline'><a href='../S/src--vfs--extfs--extfs.c.html#L596'>st_size</a>           596 src/vfs/extfs/extfs.c                     inode-&gt;size = hstat.st_size;</span>
+<span class='curline'><a href='../S/src--vfs--extfs--extfs.c.html#L1000'>st_size</a>          1000 src/vfs/extfs/extfs.c             file-&gt;entry-&gt;inode-&gt;size = file_status.st_size;</span>
+<span class='curline'><a href='../S/src--vfs--extfs--extfs.c.html#L1094'>st_size</a>          1094 src/vfs/extfs/extfs.c     buf-&gt;st_size = inode-&gt;size;</span>
+<span class='curline'><a href='../S/src--vfs--fish--fish.c.html#L811'>st_size</a>           811 src/vfs/fish/fish.c             ST.st_size = (off_t) g_ascii_strtoll (buffer + 1, NULL, 10);</span>
+<span class='curline'><a href='../S/src--vfs--fish--fish.c.html#L945'>st_size</a>           945 src/vfs/fish/fish.c                              (uintmax_t) s.st_size);</span>
+<span class='curline'><a href='../S/src--vfs--fish--fish.c.html#L954'>st_size</a>           954 src/vfs/fish/fish.c                              (uintmax_t) s.st_size);</span>
+<span class='curline'><a href='../S/src--vfs--fish--fish.c.html#L994'>st_size</a>           994 src/vfs/fish/fish.c                            (uintmax_t) total, (uintmax_t) s.st_size);</span>
+<span class='curline'><a href='../S/src--vfs--ftpfs--ftpfs.c.html#L1907'>st_size</a>          1907 src/vfs/ftpfs/ftpfs.c                            _("ftpfs: storing file"), (uintmax_t) n_stored, (uintmax_t) s.st_size);</span>
+<span class='curline'><a href='../S/src--vfs--sftpfs--file.c.html#L175'>st_size</a>           175 src/vfs/sftpfs/file.c             libssh2_sftp_seek64 (file_handler_data-&gt;handle, file_info.st_size);</span>
+<span class='curline'><a href='../S/src--vfs--sftpfs--file.c.html#L237'>st_size</a>           237 src/vfs/sftpfs/file.c         buf-&gt;st_size = attrs.filesize;</span>
+<span class='curline'><a href='../S/src--vfs--sftpfs--file.c.html#L414'>st_size</a>           414 src/vfs/sftpfs/file.c         if (file_handler-&gt;pos &gt; file_handler-&gt;ino-&gt;st.st_size - offset)</span>
+<span class='curline'><a href='../S/src--vfs--sftpfs--file.c.html#L419'>st_size</a>           419 src/vfs/sftpfs/file.c         file_handler-&gt;pos = file_handler-&gt;ino-&gt;st.st_size - offset;</span>
+<span class='curline'><a href='../S/src--vfs--sftpfs--internal.c.html#L210'>st_size</a>           210 src/vfs/sftpfs/internal.c         buf-&gt;st_size = attrs.filesize;</span>
+<span class='curline'><a href='../S/src--vfs--sftpfs--internal.c.html#L293'>st_size</a>           293 src/vfs/sftpfs/internal.c         buf-&gt;st_size = attrs.filesize;</span>
+<span class='curline'><a href='../S/src--vfs--smbfs--helpers--lib--charset.c.html#L237'>st_size</a>           237 src/vfs/smbfs/helpers/lib/charset.c     size = st.st_size;</span>
+<span class='curline'><a href='../S/src--vfs--smbfs--helpers--lib--util.c.html#L427'>st_size</a>           427 src/vfs/smbfs/helpers/lib/util.c     buf.st_size = 0;</span>
+<span class='curline'><a href='../S/src--vfs--smbfs--helpers--lib--util.c.html#L430'>st_size</a>           430 src/vfs/smbfs/helpers/lib/util.c     return (buf.st_size);</span>
+<span class='curline'><a href='../S/src--vfs--smbfs--helpers--lib--util.c.html#L1757'>st_size</a>          1757 src/vfs/smbfs/helpers/lib/util.c     if (st.st_size == len)</span>
+<span class='curline'><a href='../S/src--vfs--smbfs--helpers--lib--util.c.html#L1759'>st_size</a>          1759 src/vfs/smbfs/helpers/lib/util.c     if (st.st_size &gt; len)</span>
+<span class='curline'><a href='../S/src--vfs--smbfs--smbfs.c.html#L598'>st_size</a>           598 src/vfs/smbfs/smbfs.c     new_entry-&gt;my_stat.st_size = finfo-&gt;size;</span>
+<span class='curline'><a href='../S/src--vfs--tar--tar.c.html#L444'>st_size</a>           444 src/vfs/tar/tar.c     st-&gt;st_size = h_size;</span>
+<span class='curline'><a href='../S/src--vfs--tar--tar.c.html#L892'>st_size</a>           892 src/vfs/tar/tar.c     count = MIN (count, (size_t) (FH-&gt;ino-&gt;st.st_size - FH-&gt;pos));</span>
+<span class='curline'><a href='../S/src--vfs--undelfs--undelfs.c.html#L633'>st_size</a>           633 src/vfs/undelfs/undelfs.c     buf-&gt;st_size = delarray[inode_index].size;</span>
+<span class='curline'><a href='../S/src--viewer--datasource.c.html#L131'>st_size</a>           131 src/viewer/datasource.c             view-&gt;ds_file_filesize = st.st_size;</span>
+<span class='curline'><a href='../S/src--viewer--datasource.c.html#L371'>st_size</a>           371 src/viewer/datasource.c     view-&gt;ds_file_filesize = st-&gt;st_size;</span>
+<span class='curline'><a href='../S/src--viewer--mcviewer.c.html#L360'>st_size</a>           360 src/viewer/mcviewer.c         if (st.st_size == 0 || mc_lseek (fd, 0, SEEK_SET) == -1)</span>
+<span class='curline'><a href='../S/tests--lib--vfs--vfs_adjust_stat.c.html#L45'>st_size</a>            45 tests/lib/vfs/vfs_adjust_stat.c             .st_size = 0,</span>
+<span class='curline'><a href='../S/tests--lib--vfs--vfs_adjust_stat.c.html#L58'>st_size</a>            58 tests/lib/vfs/vfs_adjust_stat.c             .st_size = 4096,</span>
+<span class='curline'><a href='../S/tests--lib--vfs--vfs_adjust_stat.c.html#L71'>st_size</a>            71 tests/lib/vfs/vfs_adjust_stat.c             .st_size = 4096,</span>
+<span class='curline'><a href='../S/tests--lib--vfs--vfs_adjust_stat.c.html#L84'>st_size</a>            84 tests/lib/vfs/vfs_adjust_stat.c             .st_size = 4096,</span>
+<span class='curline'><a href='../S/tests--lib--vfs--vfs_adjust_stat.c.html#L97'>st_size</a>            97 tests/lib/vfs/vfs_adjust_stat.c             .st_size = 4096,</span>
+<span class='curline'><a href='../S/tests--lib--vfs--vfs_adjust_stat.c.html#L110'>st_size</a>           110 tests/lib/vfs/vfs_adjust_stat.c             .st_size = 5000,</span>
+<span class='curline'><a href='../S/tests--lib--vfs--vfs_adjust_stat.c.html#L123'>st_size</a>           123 tests/lib/vfs/vfs_adjust_stat.c             .st_size = 5000,</span>
+<span class='curline'><a href='../S/tests--lib--vfs--vfs_adjust_stat.c.html#L136'>st_size</a>           136 tests/lib/vfs/vfs_adjust_stat.c             .st_size = 5000,</span>
+<span class='curline'><a href='../S/tests--lib--vfs--vfs_adjust_stat.c.html#L149'>st_size</a>           149 tests/lib/vfs/vfs_adjust_stat.c             .st_size = 5000,</span>
+<span class='curline'><a href='../S/tests--lib--vfs--vfs_adjust_stat.c.html#L172'>st_size</a>           172 tests/lib/vfs/vfs_adjust_stat.c     expected_stat.st_size = data-&gt;etalon_stat.st_size;</span>
+<span class='curline'><a href='../S/tests--lib--vfs--vfs_parse_ls_lga.c.html#L125'>st_size</a>           125 tests/lib/vfs/vfs_parse_ls_lga.c         etalon_stat-&gt;st_size = 4096;</span>
+<span class='curline'><a href='../S/tests--lib--vfs--vfs_parse_ls_lga.c.html#L146'>st_size</a>           146 tests/lib/vfs/vfs_parse_ls_lga.c         etalon_stat-&gt;st_size = 11;</span>
+<span class='curline'><a href='../S/tests--lib--vfs--vfs_parse_ls_lga.c.html#L167'>st_size</a>           167 tests/lib/vfs/vfs_parse_ls_lga.c         etalon_stat-&gt;st_size = 4096;</span>
+<span class='curline'><a href='../S/tests--lib--vfs--vfs_parse_ls_lga.c.html#L188'>st_size</a>           188 tests/lib/vfs/vfs_parse_ls_lga.c         etalon_stat-&gt;st_size = 4096;</span>
+<span class='curline'><a href='../S/tests--lib--vfs--vfs_parse_ls_lga.c.html#L267'>st_size</a>           267 tests/lib/vfs/vfs_parse_ls_lga.c     etalon_stat.st_size = 0;</span>
+<span class='curline'><a href='../S/tests--lib--vfs--vfs_parse_ls_lga.c.html#L289'>st_size</a>           289 tests/lib/vfs/vfs_parse_ls_lga.c     mctest_assert_int_eq (etalon_stat.st_size, test_stat.st_size);</span>
+<span class='curline'><a href='../S/tests--src--vfs--extfs--helpers-list--mc_parse_ls_l.c.html#L247'>st_size</a>           247 tests/src/vfs/extfs/helpers-list/mc_parse_ls_l.c     printf ("  size: %" PRIuMAX "\n", (uintmax_t) st-&gt;st_size);</span>
+<span class='curline'><a href='../S/tests--src--vfs--extfs--helpers-list--mc_parse_ls_l.c.html#L303'>st_size</a>           303 tests/src/vfs/extfs/helpers-list/mc_parse_ls_l.c     printf ("%10" PRIuMAX " ", (uintmax_t) st-&gt;st_size);</span>
+</pre>
+</body>
+</html>

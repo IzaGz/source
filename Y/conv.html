@@ -1,0 +1,114 @@
+<!DOCTYPE html PUBLIC '-//W3C//DTD XHTML 1.0 Transitional//EN' 'http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd'>
+<html xmlns='http://www.w3.org/1999/xhtml'>
+<head>
+<title>conv</title>
+<meta name='robots' content='noindex,nofollow' />
+<meta name='generator' content='GLOBAL-6.5.2' />
+<meta http-equiv='Content-Style-Type' content='text/css' />
+<link rel='stylesheet' type='text/css' href='../style.css' />
+</head>
+<body>
+<pre>
+<span class='curline'><a href='../S/lib--charsets.c.html#L367'>conv</a>              367 lib/charsets.c     GIConv conv;</span>
+<span class='curline'><a href='../S/lib--charsets.c.html#L375'>conv</a>              375 lib/charsets.c     conv = str_crt_conv_from (cp_source);</span>
+<span class='curline'><a href='../S/lib--charsets.c.html#L378'>conv</a>              378 lib/charsets.c     str_nconvert (conv, str, len, buff);</span>
+<span class='curline'><a href='../S/lib--charsets.c.html#L379'>conv</a>              379 lib/charsets.c     str_close_conv (conv);</span>
+<span class='curline'><a href='../S/lib--charsets.c.html#L412'>conv</a>              412 lib/charsets.c     GIConv conv;</span>
+<span class='curline'><a href='../S/lib--charsets.c.html#L420'>conv</a>              420 lib/charsets.c     conv = str_crt_conv_to (cp_source);</span>
+<span class='curline'><a href='../S/lib--charsets.c.html#L423'>conv</a>              423 lib/charsets.c     str_nconvert (conv, str, len, buff);</span>
+<span class='curline'><a href='../S/lib--charsets.c.html#L424'>conv</a>              424 lib/charsets.c     str_close_conv (conv);</span>
+<span class='curline'><a href='../S/lib--charsets.c.html#L435'>conv</a>              435 lib/charsets.c     GIConv conv;</span>
+<span class='curline'><a href='../S/lib--charsets.c.html#L442'>conv</a>              442 lib/charsets.c     conv = str_crt_conv_to (cp_to);</span>
+<span class='curline'><a href='../S/lib--charsets.c.html#L444'>conv</a>              444 lib/charsets.c     if (conv != INVALID_CONV)</span>
+<span class='curline'><a href='../S/lib--charsets.c.html#L446'>conv</a>              446 lib/charsets.c         switch (str_translate_char (conv, str, -1, (char *) buf_ch, sizeof (buf_ch)))</span>
+<span class='curline'><a href='../S/lib--charsets.c.html#L458'>conv</a>              458 lib/charsets.c         str_close_conv (conv);</span>
+<span class='curline'><a href='../S/lib--charsets.c.html#L467'>conv</a>              467 lib/charsets.c convert_from_utf_to_current_c (int input_char, GIConv conv)</span>
+<span class='curline'><a href='../S/lib--charsets.c.html#L480'>conv</a>              480 lib/charsets.c     switch (str_translate_char (conv, (char *) str, -1, (char *) buf_ch, sizeof (buf_ch)))</span>
+<span class='curline'><a href='../S/lib--charsets.c.html#L499'>conv</a>              499 lib/charsets.c convert_from_8bit_to_utf_c (char input_char, GIConv conv)</span>
+<span class='curline'><a href='../S/lib--charsets.c.html#L508'>conv</a>              508 lib/charsets.c     switch (str_translate_char (conv, (char *) str, -1, (char *) buf_ch, sizeof (buf_ch)))</span>
+<span class='curline'><a href='../S/lib--charsets.c.html#L535'>conv</a>              535 lib/charsets.c     GIConv conv;</span>
+<span class='curline'><a href='../S/lib--charsets.c.html#L542'>conv</a>              542 lib/charsets.c     conv = str_crt_conv_to (cp_from);</span>
+<span class='curline'><a href='../S/lib--charsets.c.html#L544'>conv</a>              544 lib/charsets.c     if (conv != INVALID_CONV)</span>
+<span class='curline'><a href='../S/lib--charsets.c.html#L548'>conv</a>              548 lib/charsets.c         switch (str_translate_char (conv, (char *) str, -1, (char *) buf_ch, sizeof (buf_ch)))</span>
+<span class='curline'><a href='../S/lib--charsets.c.html#L564'>conv</a>              564 lib/charsets.c         str_close_conv (conv);</span>
+<span class='curline'><a href='../S/lib--charsets.h.html#L53'>conv</a>               53 lib/charsets.h unsigned char convert_from_utf_to_current_c (int input_char, GIConv conv);</span>
+<span class='curline'><a href='../S/lib--charsets.h.html#L60'>conv</a>               60 lib/charsets.h int convert_from_8bit_to_utf_c (char input_char, GIConv conv);</span>
+<span class='curline'><a href='../S/lib--mcconfig--get.c.html#L85'>conv</a>               85 lib/mcconfig/get.c     GIConv conv;</span>
+<span class='curline'><a href='../S/lib--mcconfig--get.c.html#L107'>conv</a>              107 lib/mcconfig/get.c     conv = str_crt_conv_from ("UTF-8");</span>
+<span class='curline'><a href='../S/lib--mcconfig--get.c.html#L108'>conv</a>              108 lib/mcconfig/get.c     if (conv == INVALID_CONV)</span>
+<span class='curline'><a href='../S/lib--mcconfig--get.c.html#L112'>conv</a>              112 lib/mcconfig/get.c     conv_res = str_convert (conv, ret, buffer);</span>
+<span class='curline'><a href='../S/lib--mcconfig--get.c.html#L113'>conv</a>              113 lib/mcconfig/get.c     str_close_conv (conv);</span>
+<span class='curline'><a href='../S/lib--mcconfig--set.c.html#L43'>conv</a>               43 lib/mcconfig/set.c     GIConv conv;</span>
+<span class='curline'><a href='../S/lib--mcconfig--set.c.html#L50'>conv</a>               50 lib/mcconfig/set.c     conv = str_crt_conv_to ("UTF-8");</span>
+<span class='curline'><a href='../S/lib--mcconfig--set.c.html#L51'>conv</a>               51 lib/mcconfig/set.c     if (conv == INVALID_CONV)</span>
+<span class='curline'><a href='../S/lib--mcconfig--set.c.html#L56'>conv</a>               56 lib/mcconfig/set.c     ok = (str_convert (conv, value, buffer) != ESTR_FAILURE);</span>
+<span class='curline'><a href='../S/lib--mcconfig--set.c.html#L57'>conv</a>               57 lib/mcconfig/set.c     str_close_conv (conv);</span>
+<span class='curline'><a href='../S/lib--search--lib.c.html#L66'>conv</a>               66 lib/search/lib.c     GIConv conv;</span>
+<span class='curline'><a href='../S/lib--search--lib.c.html#L75'>conv</a>               75 lib/search/lib.c     conv = g_iconv_open (charset_to, charset_from);</span>
+<span class='curline'><a href='../S/lib--search--lib.c.html#L76'>conv</a>               76 lib/search/lib.c     if (conv == INVALID_CONV)</span>
+<span class='curline'><a href='../S/lib--search--lib.c.html#L82'>conv</a>               82 lib/search/lib.c     ret = g_convert_with_iconv (str, str_len, conv, &amp;bytes_read, bytes_written, NULL);</span>
+<span class='curline'><a href='../S/lib--search--lib.c.html#L83'>conv</a>               83 lib/search/lib.c     g_iconv_close (conv);</span>
+<span class='curline'><a href='../S/lib--strutil.h.html#L242'>conv</a>              242 lib/strutil.h  estr_t str_translate_char (GIConv conv, const char *ch, size_t ch_size,</span>
+<span class='curline'><a href='../S/lib--strutil--strutil.c.html#L273'>conv</a>              273 lib/strutil/strutil.c str_close_conv (GIConv conv)</span>
+<span class='curline'><a href='../S/lib--strutil--strutil.c.html#L275'>conv</a>              275 lib/strutil/strutil.c     if (conv != str_cnv_not_convert)</span>
+<span class='curline'><a href='../S/lib--strutil--strutil.c.html#L276'>conv</a>              276 lib/strutil/strutil.c         g_iconv_close (conv);</span>
+<span class='curline'><a href='../S/lib--strutil--strutil.c.html#L349'>conv</a>              349 lib/strutil/strutil.c str_translate_char (GIConv conv, const char *keys, size_t ch_size, char *output, size_t out_size)</span>
+<span class='curline'><a href='../S/lib--strutil--strutil.c.html#L354'>conv</a>              354 lib/strutil/strutil.c     g_iconv (conv, NULL, NULL, NULL, NULL);</span>
+<span class='curline'><a href='../S/lib--strutil--strutil.c.html#L358'>conv</a>              358 lib/strutil/strutil.c     cnv = g_iconv (conv, (gchar **) &amp; keys, &amp;left, &amp;output, &amp;out_size);</span>
+<span class='curline'><a href='../S/lib--strutil--strutil8bit.c.html#L242'>conv</a>              242 lib/strutil/strutil8bit.c     GIConv conv;</span>
+<span class='curline'><a href='../S/lib--strutil--strutil8bit.c.html#L246'>conv</a>              246 lib/strutil/strutil8bit.c     conv = str_crt_conv_from ("UTF-8");</span>
+<span class='curline'><a href='../S/lib--strutil--strutil8bit.c.html#L248'>conv</a>              248 lib/strutil/strutil8bit.c     if (conv == INVALID_CONV)</span>
+<span class='curline'><a href='../S/lib--strutil--strutil8bit.c.html#L256'>conv</a>              256 lib/strutil/strutil8bit.c         if (str_convert (conv, mcerror-&gt;message, buf) != ESTR_FAILURE)</span>
+<span class='curline'><a href='../S/lib--strutil--strutil8bit.c.html#L264'>conv</a>              264 lib/strutil/strutil8bit.c         str_close_conv (conv);</span>
+<span class='curline'><a href='../S/lib--tty--tty.c.html#L216'>conv</a>              216 lib/tty/tty.c      GIConv conv;</span>
+<span class='curline'><a href='../S/lib--tty--tty.c.html#L223'>conv</a>              223 lib/tty/tty.c      conv = g_iconv_open (_system_codepage, "UTF-8");</span>
+<span class='curline'><a href='../S/lib--tty--tty.c.html#L224'>conv</a>              224 lib/tty/tty.c      if (conv == INVALID_CONV)</span>
+<span class='curline'><a href='../S/lib--tty--tty.c.html#L229'>conv</a>              229 lib/tty/tty.c      if (str_convert (conv, str, buffer) == ESTR_FAILURE)</span>
+<span class='curline'><a href='../S/lib--tty--tty.c.html#L232'>conv</a>              232 lib/tty/tty.c          str_close_conv (conv);</span>
+<span class='curline'><a href='../S/lib--tty--tty.c.html#L235'>conv</a>              235 lib/tty/tty.c      str_close_conv (conv);</span>
+<span class='curline'><a href='../S/lib--widget--history.c.html#L174'>conv</a>              174 lib/widget/history.c     GIConv conv = INVALID_CONV;</span>
+<span class='curline'><a href='../S/lib--widget--history.c.html#L187'>conv</a>              187 lib/widget/history.c         conv = str_crt_conv_from ("UTF-8");</span>
+<span class='curline'><a href='../S/lib--widget--history.c.html#L202'>conv</a>              202 lib/widget/history.c         if (conv == INVALID_CONV)</span>
+<span class='curline'><a href='../S/lib--widget--history.c.html#L207'>conv</a>              207 lib/widget/history.c             if (str_convert (conv, this_entry, buffer) == ESTR_FAILURE)</span>
+<span class='curline'><a href='../S/lib--widget--history.c.html#L218'>conv</a>              218 lib/widget/history.c     if (conv != INVALID_CONV)</span>
+<span class='curline'><a href='../S/lib--widget--history.c.html#L219'>conv</a>              219 lib/widget/history.c         str_close_conv (conv);</span>
+<span class='curline'><a href='../S/lib--widget--history.c.html#L233'>conv</a>              233 lib/widget/history.c     GIConv conv = INVALID_CONV;</span>
+<span class='curline'><a href='../S/lib--widget--history.c.html#L253'>conv</a>              253 lib/widget/history.c         conv = str_crt_conv_to ("UTF-8");</span>
+<span class='curline'><a href='../S/lib--widget--history.c.html#L268'>conv</a>              268 lib/widget/history.c         if (conv == INVALID_CONV)</span>
+<span class='curline'><a href='../S/lib--widget--history.c.html#L273'>conv</a>              273 lib/widget/history.c             if (str_convert (conv, text, buffer) == ESTR_FAILURE)</span>
+<span class='curline'><a href='../S/lib--widget--history.c.html#L281'>conv</a>              281 lib/widget/history.c     if (conv != INVALID_CONV)</span>
+<span class='curline'><a href='../S/lib--widget--history.c.html#L282'>conv</a>              282 lib/widget/history.c         str_close_conv (conv);</span>
+<span class='curline'><a href='../S/src--args.c.html#L423'>conv</a>              423 src/args.c         GIConv conv;</span>
+<span class='curline'><a href='../S/src--args.c.html#L427'>conv</a>              427 src/args.c         conv = g_iconv_open (charset, "UTF-8");</span>
+<span class='curline'><a href='../S/src--args.c.html#L430'>conv</a>              430 src/args.c         str_convert (conv, full_help_str, buffer);</span>
+<span class='curline'><a href='../S/src--args.c.html#L433'>conv</a>              433 src/args.c         g_iconv_close (conv);</span>
+<span class='curline'><a href='../S/src--diffviewer--ydiff.c.html#L2322'>conv</a>             2322 src/diffviewer/ydiff.c         GIConv conv;</span>
+<span class='curline'><a href='../S/src--diffviewer--ydiff.c.html#L2324'>conv</a>             2324 src/diffviewer/ydiff.c         conv = str_crt_conv_from (encoding_id);</span>
+<span class='curline'><a href='../S/src--diffviewer--ydiff.c.html#L2325'>conv</a>             2325 src/diffviewer/ydiff.c         if (conv != INVALID_CONV)</span>
+<span class='curline'><a href='../S/src--diffviewer--ydiff.c.html#L2329'>conv</a>             2329 src/diffviewer/ydiff.c             dview-&gt;converter = conv;</span>
+<span class='curline'><a href='../S/src--editor--edit.c.html#L2276'>conv</a>             2276 src/editor/edit.c         GIConv conv;</span>
+<span class='curline'><a href='../S/src--editor--edit.c.html#L2277'>conv</a>             2277 src/editor/edit.c         conv = str_crt_conv_from (cp_id);</span>
+<span class='curline'><a href='../S/src--editor--edit.c.html#L2278'>conv</a>             2278 src/editor/edit.c         if (conv != INVALID_CONV)</span>
+<span class='curline'><a href='../S/src--editor--edit.c.html#L2282'>conv</a>             2282 src/editor/edit.c             edit-&gt;converter = conv;</span>
+<span class='curline'><a href='../S/src--filemanager--midnight.c.html#L1614'>conv</a>             1614 src/filemanager/midnight.c     GIConv conv;</span>
+<span class='curline'><a href='../S/src--filemanager--midnight.c.html#L1650'>conv</a>             1650 src/filemanager/midnight.c     conv = str_crt_conv_from ("UTF-8");</span>
+<span class='curline'><a href='../S/src--filemanager--midnight.c.html#L1651'>conv</a>             1651 src/filemanager/midnight.c     if (conv != INVALID_CONV)</span>
+<span class='curline'><a href='../S/src--filemanager--midnight.c.html#L1656'>conv</a>             1656 src/filemanager/midnight.c         if (str_convert (conv, &amp;data[start], buffer) != ESTR_FAILURE)</span>
+<span class='curline'><a href='../S/src--filemanager--midnight.c.html#L1660'>conv</a>             1660 src/filemanager/midnight.c         str_close_conv (conv);</span>
+<span class='curline'><a href='../S/src--filemanager--panelize.c.html#L577'>conv</a>              577 src/filemanager/panelize.c         GIConv conv;</span>
+<span class='curline'><a href='../S/src--filemanager--panelize.c.html#L580'>conv</a>              580 src/filemanager/panelize.c         conv = str_crt_conv_from ("UTF-8");</span>
+<span class='curline'><a href='../S/src--filemanager--panelize.c.html#L586'>conv</a>              586 src/filemanager/panelize.c             if (mc_global.utf8_display || conv == INVALID_CONV)</span>
+<span class='curline'><a href='../S/src--filemanager--panelize.c.html#L591'>conv</a>              591 src/filemanager/panelize.c                 if (str_convert (conv, *profile_keys, buffer) == ESTR_FAILURE)</span>
+<span class='curline'><a href='../S/src--filemanager--panelize.c.html#L600'>conv</a>              600 src/filemanager/panelize.c         str_close_conv (conv);</span>
+<span class='curline'><a href='../S/src--help.c.html#L908'>conv</a>              908 src/help.c         GIConv conv;</span>
+<span class='curline'><a href='../S/src--help.c.html#L914'>conv</a>              914 src/help.c         conv = str_crt_conv_from ("UTF-8");</span>
+<span class='curline'><a href='../S/src--help.c.html#L916'>conv</a>              916 src/help.c         if (conv == INVALID_CONV)</span>
+<span class='curline'><a href='../S/src--help.c.html#L922'>conv</a>              922 src/help.c             if (str_convert (conv, filedata, translated_data) != ESTR_FAILURE)</span>
+<span class='curline'><a href='../S/src--help.c.html#L929'>conv</a>              929 src/help.c             str_close_conv (conv);</span>
+<span class='curline'><a href='../S/src--viewer--lib.c.html#L281'>conv</a>              281 src/viewer/lib.c         GIConv conv;</span>
+<span class='curline'><a href='../S/src--viewer--lib.c.html#L282'>conv</a>              282 src/viewer/lib.c         conv = str_crt_conv_from (cp_id);</span>
+<span class='curline'><a href='../S/src--viewer--lib.c.html#L283'>conv</a>              283 src/viewer/lib.c         if (conv != INVALID_CONV)</span>
+<span class='curline'><a href='../S/src--viewer--lib.c.html#L287'>conv</a>              287 src/viewer/lib.c             view-&gt;converter = conv;</span>
+</pre>
+</body>
+</html>

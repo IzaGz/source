@@ -1,0 +1,105 @@
+<!DOCTYPE html PUBLIC '-//W3C//DTD XHTML 1.0 Transitional//EN' 'http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd'>
+<html xmlns='http://www.w3.org/1999/xhtml'>
+<head>
+<title>total</title>
+<meta name='robots' content='noindex,nofollow' />
+<meta name='generator' content='GLOBAL-6.5.2' />
+<meta http-equiv='Content-Style-Type' content='text/css' />
+<link rel='stylesheet' type='text/css' href='../style.css' />
+</head>
+<body>
+<pre>
+<span class='curline'><a href='../S/lib--vfs--direntry.c.html#L1369'>total</a>            1369 lib/vfs/direntry.c     off_t total = 0;</span>
+<span class='curline'><a href='../S/lib--vfs--direntry.c.html#L1407'>total</a>            1407 lib/vfs/direntry.c         total += n;</span>
+<span class='curline'><a href='../S/lib--vfs--direntry.c.html#L1408'>total</a>            1408 lib/vfs/direntry.c         vfs_s_print_stats (me-&gt;name, _("Getting file"), ino-&gt;ent-&gt;name, total, stat_size);</span>
+<span class='curline'><a href='../S/lib--widget--gauge.c.html#L76'>total</a>              76 lib/widget/gauge.c             int total = g-&gt;max;</span>
+<span class='curline'><a href='../S/lib--widget--gauge.c.html#L79'>total</a>              79 lib/widget/gauge.c             if (total &lt;= 0 || done &lt; 0)</span>
+<span class='curline'><a href='../S/lib--widget--gauge.c.html#L82'>total</a>              82 lib/widget/gauge.c                 total = 100;</span>
+<span class='curline'><a href='../S/lib--widget--gauge.c.html#L84'>total</a>              84 lib/widget/gauge.c             if (done &gt; total)</span>
+<span class='curline'><a href='../S/lib--widget--gauge.c.html#L85'>total</a>              85 lib/widget/gauge.c                 done = total;</span>
+<span class='curline'><a href='../S/lib--widget--gauge.c.html#L86'>total</a>              86 lib/widget/gauge.c             while (total &gt; 65535)</span>
+<span class='curline'><a href='../S/lib--widget--gauge.c.html#L88'>total</a>              88 lib/widget/gauge.c                 total /= 256;</span>
+<span class='curline'><a href='../S/lib--widget--gauge.c.html#L94'>total</a>              94 lib/widget/gauge.c             percentage = (200 * done / total + 1) / 2;</span>
+<span class='curline'><a href='../S/lib--widget--gauge.c.html#L95'>total</a>              95 lib/widget/gauge.c             columns = (2 * gauge_len * done / total + 1) / 2;</span>
+<span class='curline'><a href='../S/src--filemanager--cmd.c.html#L276'>total</a>             276 src/filemanager/cmd.c     panel-&gt;total = 0;</span>
+<span class='curline'><a href='../S/src--filemanager--cmd.c.html#L1460'>total</a>            1460 src/filemanager/cmd.c         uintmax_t total = 0;</span>
+<span class='curline'><a href='../S/src--filemanager--cmd.c.html#L1470'>total</a>            1470 src/filemanager/cmd.c         if (compute_dir_size (p, &amp;dsm, &amp;dir_count, &amp;count, &amp;total, TRUE) == FILE_CONT)</span>
+<span class='curline'><a href='../S/src--filemanager--cmd.c.html#L1472'>total</a>            1472 src/filemanager/cmd.c             entry-&gt;st.st_size = (off_t) total;</span>
+<span class='curline'><a href='../S/src--filemanager--cmd.c.html#L1513'>total</a>            1513 src/filemanager/cmd.c             uintmax_t total = 0;</span>
+<span class='curline'><a href='../S/src--filemanager--cmd.c.html#L1517'>total</a>            1517 src/filemanager/cmd.c             ok = compute_dir_size (p, &amp;dsm, &amp;dir_count, &amp;count, &amp;total, TRUE) != FILE_CONT;</span>
+<span class='curline'><a href='../S/src--filemanager--cmd.c.html#L1522'>total</a>            1522 src/filemanager/cmd.c             panel-&gt;dir.list[i].st.st_size = (off_t) total;</span>
+<span class='curline'><a href='../S/src--filemanager--file.c.html#L1375'>total</a>            1375 src/filemanager/file.c         ctx-&gt;progress_bytes = panel-&gt;total;</span>
+<span class='curline'><a href='../S/src--filemanager--filegui.c.html#L880'>total</a>             880 src/filemanager/filegui.c file_progress_show (file_op_context_t * ctx, off_t done, off_t total,</span>
+<span class='curline'><a href='../S/src--filemanager--filegui.c.html#L891'>total</a>             891 src/filemanager/filegui.c     if (total == 0)</span>
+<span class='curline'><a href='../S/src--filemanager--filegui.c.html#L897'>total</a>             897 src/filemanager/filegui.c     gauge_set_value (ui-&gt;progress_file_gauge, 1024, (int) (1024 * done / total));</span>
+<span class='curline'><a href='../S/src--filemanager--filegui.c.html#L929'>total</a>             929 src/filemanager/filegui.c file_progress_show_count (file_op_context_t * ctx, size_t done, size_t total)</span>
+<span class='curline'><a href='../S/src--filemanager--filegui.c.html#L942'>total</a>             942 src/filemanager/filegui.c         g_snprintf (buffer, sizeof (buffer), _("Files processed: %zu/%zu"), done, total);</span>
+<span class='curline'><a href='../S/src--filemanager--filegui.h.html#L32'>total</a>              32 src/filemanager/filegui.h void file_progress_show (file_op_context_t * ctx, off_t done, off_t total,</span>
+<span class='curline'><a href='../S/src--filemanager--filegui.h.html#L34'>total</a>              34 src/filemanager/filegui.h void file_progress_show_count (file_op_context_t * ctx, size_t done, size_t total);</span>
+<span class='curline'><a href='../S/src--filemanager--info.c.html#L175'>total</a>             175 src/filemanager/info.c         if (myfs_stats.avail == 0 &amp;&amp; myfs_stats.total == 0)</span>
+<span class='curline'><a href='../S/src--filemanager--info.c.html#L182'>total</a>             182 src/filemanager/info.c             size_trunc_len (buffer2, 5, myfs_stats.total, 1, panels_options.kilobyte_si);</span>
+<span class='curline'><a href='../S/src--filemanager--info.c.html#L184'>total</a>             184 src/filemanager/info.c                         myfs_stats.total == 0 ? 0 :</span>
+<span class='curline'><a href='../S/src--filemanager--info.c.html#L185'>total</a>             185 src/filemanager/info.c                         (int) (100 * (long double) myfs_stats.avail / myfs_stats.total));</span>
+<span class='curline'><a href='../S/src--filemanager--layout.c.html#L1149'>total</a>            1149 src/filemanager/layout.c         panelswap (total);</span>
+<span class='curline'><a href='../S/src--filemanager--mountlist.c.html#L1454'>total</a>            1454 src/filemanager/mountlist.c     size_t total = 0;</span>
+<span class='curline'><a href='../S/src--filemanager--mountlist.c.html#L1467'>total</a>            1467 src/filemanager/mountlist.c         total += n_rw;</span>
+<span class='curline'><a href='../S/src--filemanager--mountlist.c.html#L1472'>total</a>            1472 src/filemanager/mountlist.c     return total;</span>
+<span class='curline'><a href='../S/src--filemanager--mountlist.c.html#L1737'>total</a>            1737 src/filemanager/mountlist.c         myfs_stats-&gt;total = ((uintmax_t) fs_use.fsu_blocks * fs_use.fsu_blocksize) &gt;&gt; 10;</span>
+<span class='curline'><a href='../S/src--filemanager--mountlist.c.html#L1765'>total</a>            1765 src/filemanager/mountlist.c         myfs_stats-&gt;total = ((uintmax_t) fs_use.fsu_blocks * fs_use.fsu_blocksize) &gt;&gt; 10;</span>
+<span class='curline'><a href='../S/src--filemanager--mountlist.c.html#L1776'>total</a>            1776 src/filemanager/mountlist.c         myfs_stats-&gt;total = 0;</span>
+<span class='curline'><a href='../S/src--filemanager--mountlist.h.html#L29'>total</a>              29 src/filemanager/mountlist.h     uintmax_t total;            /* in kB */</span>
+<span class='curline'><a href='../S/src--filemanager--panel.c.html#L1083'>total</a>            1083 src/filemanager/panel.c     g_strlcpy (b_bytes, size_trunc_sep (panel-&gt;total, panels_options.kilobyte_si),</span>
+<span class='curline'><a href='../S/src--filemanager--panel.c.html#L1155'>total</a>            1155 src/filemanager/panel.c     if (myfs_stats.avail != 0 || myfs_stats.total != 0)</span>
+<span class='curline'><a href='../S/src--filemanager--panel.c.html#L1162'>total</a>            1162 src/filemanager/panel.c         size_trunc_len (buffer2, sizeof (buffer2) - 1, myfs_stats.total, 1,</span>
+<span class='curline'><a href='../S/src--filemanager--panel.c.html#L1165'>total</a>            1165 src/filemanager/panel.c                     myfs_stats.total == 0 ? 0 :</span>
+<span class='curline'><a href='../S/src--filemanager--panel.c.html#L1166'>total</a>            1166 src/filemanager/panel.c                     (int) (100 * (long double) myfs_stats.avail / myfs_stats.total));</span>
+<span class='curline'><a href='../S/src--filemanager--panel.c.html#L4206'>total</a>            4206 src/filemanager/panel.c     panel-&gt;total = 0;</span>
+<span class='curline'><a href='../S/src--filemanager--panel.c.html#L4304'>total</a>            4304 src/filemanager/panel.c     panel-&gt;total = 0;</span>
+<span class='curline'><a href='../S/src--filemanager--panel.c.html#L4518'>total</a>            4518 src/filemanager/panel.c     panel-&gt;total = 0;</span>
+<span class='curline'><a href='../S/src--filemanager--panel.c.html#L4532'>total</a>            4532 src/filemanager/panel.c     panel-&gt;total = 0;</span>
+<span class='curline'><a href='../S/src--filemanager--panel.c.html#L4566'>total</a>            4566 src/filemanager/panel.c                 panel-&gt;total += (uintmax_t) panel-&gt;dir.list[idx].st.st_size;</span>
+<span class='curline'><a href='../S/src--filemanager--panel.c.html#L4570'>total</a>            4570 src/filemanager/panel.c             panel-&gt;total += (uintmax_t) panel-&gt;dir.list[idx].st.st_size;</span>
+<span class='curline'><a href='../S/src--filemanager--panel.c.html#L4579'>total</a>            4579 src/filemanager/panel.c                 panel-&gt;total -= (uintmax_t) panel-&gt;dir.list[idx].st.st_size;</span>
+<span class='curline'><a href='../S/src--filemanager--panel.c.html#L4583'>total</a>            4583 src/filemanager/panel.c             panel-&gt;total -= (uintmax_t) panel-&gt;dir.list[idx].st.st_size;</span>
+<span class='curline'><a href='../S/src--filemanager--panel.h.html#L105'>total</a>             105 src/filemanager/panel.h     uintmax_t total;            /* Bytes in marked files */</span>
+<span class='curline'><a href='../S/src--vfs--fish--fish.c.html#L150'>total</a>             150 src/vfs/fish/fish.c     off_t total;</span>
+<span class='curline'><a href='../S/src--vfs--fish--fish.c.html#L890'>total</a>             890 src/vfs/fish/fish.c     off_t total = 0;</span>
+<span class='curline'><a href='../S/src--vfs--fish--fish.c.html#L992'>total</a>             992 src/vfs/fish/fish.c         total += n;</span>
+<span class='curline'><a href='../S/src--vfs--fish--fish.c.html#L994'>total</a>             994 src/vfs/fish/fish.c                            (uintmax_t) total, (uintmax_t) s.st_size);</span>
+<span class='curline'><a href='../S/src--vfs--fish--fish.c.html#L1050'>total</a>            1050 src/vfs/fish/fish.c     fish-&gt;total = (off_t) strtol (reply_str, NULL, 10);</span>
+<span class='curline'><a href='../S/src--vfs--fish--fish.c.html#L1052'>total</a>            1052 src/vfs/fish/fish.c     fish-&gt;total = (off_t) g_ascii_strtoll (reply_str, NULL, 10);</span>
+<span class='curline'><a href='../S/src--vfs--fish--fish.c.html#L1073'>total</a>            1073 src/vfs/fish/fish.c         n = MIN ((off_t) sizeof (buffer), (fish-&gt;total - fish-&gt;got));</span>
+<span class='curline'><a href='../S/src--vfs--fish--fish.c.html#L1099'>total</a>            1099 src/vfs/fish/fish.c     len = MIN ((size_t) (fish-&gt;total - fish-&gt;got), len);</span>
+<span class='curline'><a href='../S/src--vfs--fish--fish.c.html#L1125'>total</a>            1125 src/vfs/fish/fish.c     if (fish-&gt;total != fish-&gt;got)</span>
+<span class='curline'><a href='../S/src--vfs--smbfs--helpers--include--proto.h.html#L311'>total</a>             311 src/vfs/smbfs/helpers/include/proto.h BOOL cli_dskattr (struct cli_state *cli, int *bsize, int *total, int *avail);</span>
+<span class='curline'><a href='../S/src--vfs--smbfs--helpers--lib--util.c.html#L1050'>total</a>            1050 src/vfs/smbfs/helpers/lib/util.c     SMB_OFF_T total = 0;</span>
+<span class='curline'><a href='../S/src--vfs--smbfs--helpers--lib--util.c.html#L1115'>total</a>            1115 src/vfs/smbfs/helpers/lib/util.c                 total += ret2;</span>
+<span class='curline'><a href='../S/src--vfs--smbfs--helpers--lib--util.c.html#L1121'>total</a>            1121 src/vfs/smbfs/helpers/lib/util.c             return (total);</span>
+<span class='curline'><a href='../S/src--vfs--smbfs--helpers--lib--util.c.html#L1124'>total</a>            1124 src/vfs/smbfs/helpers/lib/util.c     return (total);</span>
+<span class='curline'><a href='../S/src--vfs--smbfs--helpers--lib--util_sock.c.html#L412'>total</a>             412 src/vfs/smbfs/helpers/lib/util_sock.c     size_t total = 0;</span>
+<span class='curline'><a href='../S/src--vfs--smbfs--helpers--lib--util_sock.c.html#L416'>total</a>             416 src/vfs/smbfs/helpers/lib/util_sock.c     while (total &lt; N)</span>
+<span class='curline'><a href='../S/src--vfs--smbfs--helpers--lib--util_sock.c.html#L421'>total</a>             421 src/vfs/smbfs/helpers/lib/util_sock.c             ret = SSL_read (ssl, buffer + total, N - total);</span>
+<span class='curline'><a href='../S/src--vfs--smbfs--helpers--lib--util_sock.c.html#L425'>total</a>             425 src/vfs/smbfs/helpers/lib/util_sock.c             ret = read (fd, buffer + total, N - total);</span>
+<span class='curline'><a href='../S/src--vfs--smbfs--helpers--lib--util_sock.c.html#L428'>total</a>             428 src/vfs/smbfs/helpers/lib/util_sock.c         ret = read (fd, buffer + total, N - total);</span>
+<span class='curline'><a href='../S/src--vfs--smbfs--helpers--lib--util_sock.c.html#L434'>total</a>             434 src/vfs/smbfs/helpers/lib/util_sock.c                    ("read_data: read of %d returned 0. Error = %s\n", (int) (N - total),</span>
+<span class='curline'><a href='../S/src--vfs--smbfs--helpers--lib--util_sock.c.html#L442'>total</a>             442 src/vfs/smbfs/helpers/lib/util_sock.c                    ("read_data: read failure for %d. Error = %s\n", (int) (N - total),</span>
+<span class='curline'><a href='../S/src--vfs--smbfs--helpers--lib--util_sock.c.html#L447'>total</a>             447 src/vfs/smbfs/helpers/lib/util_sock.c         total += ret;</span>
+<span class='curline'><a href='../S/src--vfs--smbfs--helpers--lib--util_sock.c.html#L449'>total</a>             449 src/vfs/smbfs/helpers/lib/util_sock.c     return (ssize_t) total;</span>
+<span class='curline'><a href='../S/src--vfs--smbfs--helpers--lib--util_sock.c.html#L459'>total</a>             459 src/vfs/smbfs/helpers/lib/util_sock.c     size_t total = 0;</span>
+<span class='curline'><a href='../S/src--vfs--smbfs--helpers--lib--util_sock.c.html#L462'>total</a>             462 src/vfs/smbfs/helpers/lib/util_sock.c     while (total &lt; N)</span>
+<span class='curline'><a href='../S/src--vfs--smbfs--helpers--lib--util_sock.c.html#L467'>total</a>             467 src/vfs/smbfs/helpers/lib/util_sock.c             ret = SSL_write (ssl, buffer + total, N - total);</span>
+<span class='curline'><a href='../S/src--vfs--smbfs--helpers--lib--util_sock.c.html#L471'>total</a>             471 src/vfs/smbfs/helpers/lib/util_sock.c             ret = write (fd, buffer + total, N - total);</span>
+<span class='curline'><a href='../S/src--vfs--smbfs--helpers--lib--util_sock.c.html#L474'>total</a>             474 src/vfs/smbfs/helpers/lib/util_sock.c         ret = write (fd, buffer + total, N - total);</span>
+<span class='curline'><a href='../S/src--vfs--smbfs--helpers--lib--util_sock.c.html#L483'>total</a>             483 src/vfs/smbfs/helpers/lib/util_sock.c             return total;</span>
+<span class='curline'><a href='../S/src--vfs--smbfs--helpers--lib--util_sock.c.html#L485'>total</a>             485 src/vfs/smbfs/helpers/lib/util_sock.c         total += ret;</span>
+<span class='curline'><a href='../S/src--vfs--smbfs--helpers--lib--util_sock.c.html#L487'>total</a>             487 src/vfs/smbfs/helpers/lib/util_sock.c     return (ssize_t) total;</span>
+<span class='curline'><a href='../S/src--vfs--smbfs--helpers--libsmb--clientgen.c.html#L1430'>total</a>            1430 src/vfs/smbfs/helpers/libsmb/clientgen.c     int total = -1;</span>
+<span class='curline'><a href='../S/src--vfs--smbfs--helpers--libsmb--clientgen.c.html#L1454'>total</a>            1454 src/vfs/smbfs/helpers/libsmb/clientgen.c             return total;</span>
+<span class='curline'><a href='../S/src--vfs--smbfs--helpers--libsmb--clientgen.c.html#L1471'>total</a>            1471 src/vfs/smbfs/helpers/libsmb/clientgen.c             total = MAX (total, 0);</span>
+<span class='curline'><a href='../S/src--vfs--smbfs--helpers--libsmb--clientgen.c.html#L1489'>total</a>            1489 src/vfs/smbfs/helpers/libsmb/clientgen.c         total = MAX (total, mid * block + size2);</span>
+<span class='curline'><a href='../S/src--vfs--smbfs--helpers--libsmb--clientgen.c.html#L1498'>total</a>            1498 src/vfs/smbfs/helpers/libsmb/clientgen.c     return total;</span>
+<span class='curline'><a href='../S/src--vfs--smbfs--helpers--libsmb--clientgen.c.html#L3070'>total</a>            3070 src/vfs/smbfs/helpers/libsmb/clientgen.c cli_dskattr (struct cli_state * cli, int *bsize, int *total, int *avail)</span>
+<span class='curline'><a href='../S/src--vfs--smbfs--helpers--libsmb--clientgen.c.html#L3085'>total</a>            3085 src/vfs/smbfs/helpers/libsmb/clientgen.c     *total = SVAL (cli-&gt;inbuf, smb_vwv0);</span>
+</pre>
+</body>
+</html>

@@ -1,0 +1,77 @@
+<!DOCTYPE html PUBLIC '-//W3C//DTD XHTML 1.0 Transitional//EN' 'http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd'>
+<html xmlns='http://www.w3.org/1999/xhtml'>
+<head>
+<title>arch</title>
+<meta name='robots' content='noindex,nofollow' />
+<meta name='generator' content='GLOBAL-6.5.2' />
+<meta http-equiv='Content-Style-Type' content='text/css' />
+<link rel='stylesheet' type='text/css' href='../style.css' />
+</head>
+<body>
+<pre>
+<span class='curline'><a href='../S/src--vfs--cpio--cpio.c.html#L196'>arch</a>              196 src/vfs/cpio/cpio.c     cpio_super_data_t *arch = (cpio_super_data_t *) super-&gt;data;</span>
+<span class='curline'><a href='../S/src--vfs--cpio--cpio.c.html#L203'>arch</a>              203 src/vfs/cpio/cpio.c     if (arch-&gt;fd != -1)</span>
+<span class='curline'><a href='../S/src--vfs--cpio--cpio.c.html#L204'>arch</a>              204 src/vfs/cpio/cpio.c         mc_close (arch-&gt;fd);</span>
+<span class='curline'><a href='../S/src--vfs--cpio--cpio.c.html#L205'>arch</a>              205 src/vfs/cpio/cpio.c     arch-&gt;fd = -1;</span>
+<span class='curline'><a href='../S/src--vfs--cpio--cpio.c.html#L206'>arch</a>              206 src/vfs/cpio/cpio.c     g_slist_free_full (arch-&gt;deferred, g_free);</span>
+<span class='curline'><a href='../S/src--vfs--cpio--cpio.c.html#L207'>arch</a>              207 src/vfs/cpio/cpio.c     arch-&gt;deferred = NULL;</span>
+<span class='curline'><a href='../S/src--vfs--cpio--cpio.c.html#L217'>arch</a>              217 src/vfs/cpio/cpio.c     cpio_super_data_t *arch;</span>
+<span class='curline'><a href='../S/src--vfs--cpio--cpio.c.html#L230'>arch</a>              230 src/vfs/cpio/cpio.c     arch = (cpio_super_data_t *) super-&gt;data;</span>
+<span class='curline'><a href='../S/src--vfs--cpio--cpio.c.html#L231'>arch</a>              231 src/vfs/cpio/cpio.c     arch-&gt;fd = -1;              /* for now */</span>
+<span class='curline'><a href='../S/src--vfs--cpio--cpio.c.html#L232'>arch</a>              232 src/vfs/cpio/cpio.c     mc_stat (vpath, &amp;arch-&gt;st);</span>
+<span class='curline'><a href='../S/src--vfs--cpio--cpio.c.html#L233'>arch</a>              233 src/vfs/cpio/cpio.c     arch-&gt;type = CPIO_UNKNOWN;</span>
+<span class='curline'><a href='../S/src--vfs--cpio--cpio.c.html#L234'>arch</a>              234 src/vfs/cpio/cpio.c     arch-&gt;deferred = NULL;</span>
+<span class='curline'><a href='../S/src--vfs--cpio--cpio.c.html#L259'>arch</a>              259 src/vfs/cpio/cpio.c     arch-&gt;fd = fd;</span>
+<span class='curline'><a href='../S/src--vfs--cpio--cpio.c.html#L260'>arch</a>              260 src/vfs/cpio/cpio.c     mode = arch-&gt;st.st_mode &amp; 07777;</span>
+<span class='curline'><a href='../S/src--vfs--cpio--cpio.c.html#L264'>arch</a>              264 src/vfs/cpio/cpio.c     root = vfs_s_new_inode (me, super, &amp;arch-&gt;st);</span>
+<span class='curline'><a href='../S/src--vfs--cpio--cpio.c.html#L305'>arch</a>              305 src/vfs/cpio/cpio.c     cpio_super_data_t *arch = (cpio_super_data_t *) super-&gt;data;</span>
+<span class='curline'><a href='../S/src--vfs--cpio--cpio.c.html#L311'>arch</a>              311 src/vfs/cpio/cpio.c     top = mc_read (arch-&gt;fd, buf, sizeof (buf));</span>
+<span class='curline'><a href='../S/src--vfs--cpio--cpio.c.html#L325'>arch</a>              325 src/vfs/cpio/cpio.c             tmp = mc_read (arch-&gt;fd, buf, top);</span>
+<span class='curline'><a href='../S/src--vfs--cpio--cpio.c.html#L369'>arch</a>              369 src/vfs/cpio/cpio.c     cpio_super_data_t *arch = (cpio_super_data_t *) super-&gt;data;</span>
+<span class='curline'><a href='../S/src--vfs--cpio--cpio.c.html#L405'>arch</a>              405 src/vfs/cpio/cpio.c     if ((st-&gt;st_nlink &gt; 1) &amp;&amp; ((arch-&gt;type == CPIO_NEWC) || (arch-&gt;type == CPIO_CRC)))</span>
+<span class='curline'><a href='../S/src--vfs--cpio--cpio.c.html#L410'>arch</a>              410 src/vfs/cpio/cpio.c         l = g_slist_find_custom (arch-&gt;deferred, &amp;i, cpio_defer_find);</span>
+<span class='curline'><a href='../S/src--vfs--cpio--cpio.c.html#L483'>arch</a>              483 src/vfs/cpio/cpio.c                 if ((st-&gt;st_nlink &gt; 0) &amp;&amp; ((arch-&gt;type == CPIO_NEWC) || (arch-&gt;type == CPIO_CRC)))</span>
+<span class='curline'><a href='../S/src--vfs--cpio--cpio.c.html#L493'>arch</a>              493 src/vfs/cpio/cpio.c                     arch-&gt;deferred = g_slist_prepend (arch-&gt;deferred, i);</span>
+<span class='curline'><a href='../S/src--vfs--cpio--cpio.c.html#L516'>arch</a>              516 src/vfs/cpio/cpio.c                 if (mc_read (arch-&gt;fd, inode-&gt;linkname, st-&gt;st_size) &lt; st-&gt;st_size)</span>
+<span class='curline'><a href='../S/src--vfs--cpio--cpio.c.html#L544'>arch</a>              544 src/vfs/cpio/cpio.c     cpio_super_data_t *arch = (cpio_super_data_t *) super-&gt;data;</span>
+<span class='curline'><a href='../S/src--vfs--cpio--cpio.c.html#L549'>arch</a>              549 src/vfs/cpio/cpio.c     len = mc_read (arch-&gt;fd, (char *) &amp;u.buf, HEAD_LENGTH);</span>
+<span class='curline'><a href='../S/src--vfs--cpio--cpio.c.html#L553'>arch</a>              553 src/vfs/cpio/cpio.c     if (arch-&gt;type == CPIO_BINRE)</span>
+<span class='curline'><a href='../S/src--vfs--cpio--cpio.c.html#L566'>arch</a>              566 src/vfs/cpio/cpio.c     len = mc_read (arch-&gt;fd, name, u.buf.c_namesize);</span>
+<span class='curline'><a href='../S/src--vfs--cpio--cpio.c.html#L605'>arch</a>              605 src/vfs/cpio/cpio.c     cpio_super_data_t *arch = (cpio_super_data_t *) super-&gt;data;</span>
+<span class='curline'><a href='../S/src--vfs--cpio--cpio.c.html#L615'>arch</a>              615 src/vfs/cpio/cpio.c     if (mc_read (arch-&gt;fd, u.buf, HEAD_LENGTH) != HEAD_LENGTH)</span>
+<span class='curline'><a href='../S/src--vfs--cpio--cpio.c.html#L635'>arch</a>              635 src/vfs/cpio/cpio.c     len = mc_read (arch-&gt;fd, name, hd.c_namesize);</span>
+<span class='curline'><a href='../S/src--vfs--cpio--cpio.c.html#L674'>arch</a>              674 src/vfs/cpio/cpio.c     cpio_super_data_t *arch = (cpio_super_data_t *) super-&gt;data;</span>
+<span class='curline'><a href='../S/src--vfs--cpio--cpio.c.html#L684'>arch</a>              684 src/vfs/cpio/cpio.c     if (mc_read (arch-&gt;fd, u.buf, HEAD_LENGTH) != HEAD_LENGTH)</span>
+<span class='curline'><a href='../S/src--vfs--cpio--cpio.c.html#L701'>arch</a>              701 src/vfs/cpio/cpio.c     if ((arch-&gt;type == CPIO_NEWC &amp;&amp; hd.c_magic != 070701) ||</span>
+<span class='curline'><a href='../S/src--vfs--cpio--cpio.c.html#L702'>arch</a>              702 src/vfs/cpio/cpio.c         (arch-&gt;type == CPIO_CRC &amp;&amp; hd.c_magic != 070702))</span>
+<span class='curline'><a href='../S/src--vfs--cpio--cpio.c.html#L712'>arch</a>              712 src/vfs/cpio/cpio.c     len = mc_read (arch-&gt;fd, name, hd.c_namesize);</span>
+<span class='curline'><a href='../S/src--vfs--tar--tar.c.html#L272'>arch</a>              272 src/vfs/tar/tar.c         tar_super_data_t *arch = (tar_super_data_t *) archive-&gt;data;</span>
+<span class='curline'><a href='../S/src--vfs--tar--tar.c.html#L274'>arch</a>              274 src/vfs/tar/tar.c         if (arch-&gt;fd != -1)</span>
+<span class='curline'><a href='../S/src--vfs--tar--tar.c.html#L275'>arch</a>              275 src/vfs/tar/tar.c             mc_close (arch-&gt;fd);</span>
+<span class='curline'><a href='../S/src--vfs--tar--tar.c.html#L287'>arch</a>              287 src/vfs/tar/tar.c     tar_super_data_t *arch;</span>
+<span class='curline'><a href='../S/src--vfs--tar--tar.c.html#L300'>arch</a>              300 src/vfs/tar/tar.c     arch = (tar_super_data_t *) archive-&gt;data;</span>
+<span class='curline'><a href='../S/src--vfs--tar--tar.c.html#L301'>arch</a>              301 src/vfs/tar/tar.c     mc_stat (vpath, &amp;arch-&gt;st);</span>
+<span class='curline'><a href='../S/src--vfs--tar--tar.c.html#L302'>arch</a>              302 src/vfs/tar/tar.c     arch-&gt;fd = -1;</span>
+<span class='curline'><a href='../S/src--vfs--tar--tar.c.html#L303'>arch</a>              303 src/vfs/tar/tar.c     arch-&gt;type = TAR_UNKNOWN;</span>
+<span class='curline'><a href='../S/src--vfs--tar--tar.c.html#L329'>arch</a>              329 src/vfs/tar/tar.c     arch-&gt;fd = result;</span>
+<span class='curline'><a href='../S/src--vfs--tar--tar.c.html#L330'>arch</a>              330 src/vfs/tar/tar.c     mode = arch-&gt;st.st_mode &amp; 07777;</span>
+<span class='curline'><a href='../S/src--vfs--tar--tar.c.html#L339'>arch</a>              339 src/vfs/tar/tar.c     root = vfs_s_new_inode (me, archive, &amp;arch-&gt;st);</span>
+<span class='curline'><a href='../S/src--vfs--tar--tar.c.html#L382'>arch</a>              382 src/vfs/tar/tar.c     tar_super_data_t *arch = (tar_super_data_t *) archive-&gt;data;</span>
+<span class='curline'><a href='../S/src--vfs--tar--tar.c.html#L409'>arch</a>              409 src/vfs/tar/tar.c     switch (arch-&gt;type)</span>
+<span class='curline'><a href='../S/src--vfs--tar--tar.c.html#L448'>arch</a>              448 src/vfs/tar/tar.c     if (arch-&gt;type == TAR_GNU)</span>
+<span class='curline'><a href='../S/src--vfs--tar--tar.c.html#L469'>arch</a>              469 src/vfs/tar/tar.c     tar_super_data_t *arch = (tar_super_data_t *) archive-&gt;data;</span>
+<span class='curline'><a href='../S/src--vfs--tar--tar.c.html#L520'>arch</a>              520 src/vfs/tar/tar.c     if (arch-&gt;type == TAR_UNKNOWN)</span>
+<span class='curline'><a href='../S/src--vfs--tar--tar.c.html#L525'>arch</a>              525 src/vfs/tar/tar.c                 arch-&gt;type = TAR_POSIX;</span>
+<span class='curline'><a href='../S/src--vfs--tar--tar.c.html#L527'>arch</a>              527 src/vfs/tar/tar.c                 arch-&gt;type = TAR_USTAR;</span>
+<span class='curline'><a href='../S/src--vfs--tar--tar.c.html#L530'>arch</a>              530 src/vfs/tar/tar.c             arch-&gt;type = TAR_GNU;</span>
+<span class='curline'><a href='../S/src--vfs--tar--tar.c.html#L563'>arch</a>              563 src/vfs/tar/tar.c         if (arch-&gt;type == TAR_UNKNOWN)</span>
+<span class='curline'><a href='../S/src--vfs--tar--tar.c.html#L564'>arch</a>              564 src/vfs/tar/tar.c             arch-&gt;type = TAR_GNU;</span>
+<span class='curline'><a href='../S/src--vfs--tar--tar.c.html#L574'>arch</a>              574 src/vfs/tar/tar.c         if (arch-&gt;type == TAR_UNKNOWN)</span>
+<span class='curline'><a href='../S/src--vfs--tar--tar.c.html#L575'>arch</a>              575 src/vfs/tar/tar.c             arch-&gt;type = TAR_POSIX;</span>
+<span class='curline'><a href='../S/src--vfs--tar--tar.c.html#L586'>arch</a>              586 src/vfs/tar/tar.c         if (arch-&gt;type == TAR_UNKNOWN)</span>
+<span class='curline'><a href='../S/src--vfs--tar--tar.c.html#L587'>arch</a>              587 src/vfs/tar/tar.c             arch-&gt;type = TAR_GNU;</span>
+<span class='curline'><a href='../S/src--vfs--tar--tar.c.html#L643'>arch</a>              643 src/vfs/tar/tar.c         switch (arch-&gt;type)</span>
+<span class='curline'><a href='../S/src--vfs--tar--tar.c.html#L751'>arch</a>              751 src/vfs/tar/tar.c         if (arch-&gt;type == TAR_GNU &amp;&amp; header-&gt;header.unused.oldgnu.isextended)</span>
+</pre>
+</body>
+</html>

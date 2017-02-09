@@ -1,0 +1,166 @@
+<!DOCTYPE html PUBLIC '-//W3C//DTD XHTML 1.0 Transitional//EN' 'http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd'>
+<html xmlns='http://www.w3.org/1999/xhtml'>
+<head>
+<title>vfs_path_from_str</title>
+<meta name='robots' content='noindex,nofollow' />
+<meta name='generator' content='GLOBAL-6.5.2' />
+<meta http-equiv='Content-Style-Type' content='text/css' />
+<link rel='stylesheet' type='text/css' href='../style.css' />
+</head>
+<body>
+<pre>
+<span class='curline'><a href='../S/lib--mcconfig--common.c.html#L68'>vfs_path_from_str</a>   68 lib/mcconfig/common.c     ini_vpath = vfs_path_from_str (ini_path);</span>
+<span class='curline'><a href='../S/lib--mcconfig--common.c.html#L125'>vfs_path_from_str</a>  125 lib/mcconfig/common.c         vpath = vfs_path_from_str (ini_path);</span>
+<span class='curline'><a href='../S/lib--mcconfig--paths.c.html#L533'>vfs_path_from_str</a>  533 lib/mcconfig/paths.c     ret_vpath = vfs_path_from_str (str_path);</span>
+<span class='curline'><a href='../S/lib--util.c.html#L332'>vfs_path_from_str</a>  332 lib/util.c         vpath = vfs_path_from_str (path);</span>
+<span class='curline'><a href='../S/lib--util.c.html#L1374'>vfs_path_from_str</a> 1374 lib/util.c             vpath = vfs_path_from_str (backup_path);</span>
+<span class='curline'><a href='../S/lib--vfs--gc.c.html#L199'>vfs_path_from_str</a>  199 lib/vfs/gc.c       vpath = vfs_path_from_str (path);</span>
+<span class='curline'><a href='../S/lib--vfs--interface.c.html#L811'>vfs_path_from_str</a>  811 lib/vfs/interface.c         *pname_vpath = vfs_path_from_str (p2);</span>
+<span class='curline'><a href='../S/lib--vfs--path.c.html#L1234'>vfs_path_from_str</a> 1234 lib/vfs/path.c     vpath = vfs_path_from_str (str_path);</span>
+<span class='curline'><a href='../S/lib--vfs--path.c.html#L1640'>vfs_path_from_str</a> 1640 lib/vfs/path.c     absolute_vpath = vfs_path_from_str (path_str);</span>
+<span class='curline'><a href='../S/lib--vfs--path.h.html#L68'>vfs_path_from_str</a>   68 lib/vfs/path.h vfs_path_t *vfs_path_from_str (const char *path_str);</span>
+<span class='curline'><a href='../S/lib--vfs--vfs.c.html#L566'>vfs_path_from_str</a>  566 lib/vfs/vfs.c          vfs_set_raw_current_dir (vfs_path_from_str (current_dir));</span>
+<span class='curline'><a href='../S/lib--vfs--vfs.c.html#L570'>vfs_path_from_str</a>  570 lib/vfs/vfs.c          tmp_vpath = vfs_path_from_str (current_dir);</span>
+<span class='curline'><a href='../S/lib--vfs--vfs.c.html#L586'>vfs_path_from_str</a>  586 lib/vfs/vfs.c          tmp_vpath = vfs_path_from_str (current_dir);</span>
+<span class='curline'><a href='../S/lib--widget--input_complete.c.html#L191'>vfs_path_from_str</a>  191 lib/widget/input_complete.c         dirname_vpath = vfs_path_from_str (dirname);</span>
+<span class='curline'><a href='../S/src--args.c.html#L505'>vfs_path_from_str</a>  505 src/args.c         return mcedit_arg_vpath_new (vfs_path_from_str (file_name), line_number);</span>
+<span class='curline'><a href='../S/src--args.c.html#L572'>vfs_path_from_str</a>  572 src/args.c                 tmp_vpath = vfs_path_from_str (tmp);</span>
+<span class='curline'><a href='../S/src--args.c.html#L573'>vfs_path_from_str</a>  573 src/args.c                 fname_vpath = vfs_path_from_str (fname);</span>
+<span class='curline'><a href='../S/src--args.c.html#L755'>vfs_path_from_str</a>  755 src/args.c             vpath = vfs_path_from_str ("ftp://");</span>
+<span class='curline'><a href='../S/src--args.c.html#L760'>vfs_path_from_str</a>  760 src/args.c             vpath = vfs_path_from_str ("smb://");</span>
+<span class='curline'><a href='../S/src--diffviewer--ydiff.c.html#L2772'>vfs_path_from_str</a> 2772 src/diffviewer/ydiff.c     vpath = vfs_path_from_str (dview-&gt;label[ord]);</span>
+<span class='curline'><a href='../S/src--diffviewer--ydiff.c.html#L2903'>vfs_path_from_str</a> 2903 src/diffviewer/ydiff.c         tmp_vpath = vfs_path_from_str (dview-&gt;file[ord]);</span>
+<span class='curline'><a href='../S/src--diffviewer--ydiff.c.html#L3578'>vfs_path_from_str</a> 3578 src/diffviewer/ydiff.c             file0 = vfs_path_from_str (p0);</span>
+<span class='curline'><a href='../S/src--diffviewer--ydiff.c.html#L3595'>vfs_path_from_str</a> 3595 src/diffviewer/ydiff.c             file1 = vfs_path_from_str (p1);</span>
+<span class='curline'><a href='../S/src--editor--edit.c.html#L1776'>vfs_path_from_str</a> 1776 src/editor/edit.c     block_file_vpath = vfs_path_from_str (block_file);</span>
+<span class='curline'><a href='../S/src--editor--editcmd.c.html#L469'>vfs_path_from_str</a>  469 src/editor/editcmd.c         ret_vpath = vfs_path_from_str (fname);</span>
+<span class='curline'><a href='../S/src--editor--editcmd.c.html#L2102'>vfs_path_from_str</a> 2102 src/editor/editcmd.c         exp_vpath = vfs_path_from_str (exp);</span>
+<span class='curline'><a href='../S/src--editor--editcmd.c.html#L2189'>vfs_path_from_str</a> 2189 src/editor/editcmd.c         buffer_vpath = vfs_path_from_str (EDIT_LOCAL_MENU);</span>
+<span class='curline'><a href='../S/src--editor--editcmd.c.html#L2901'>vfs_path_from_str</a> 2901 src/editor/editcmd.c     vpath = vfs_path_from_str (filename);</span>
+<span class='curline'><a href='../S/src--editor--editcmd.c.html#L3124'>vfs_path_from_str</a> 3124 src/editor/editcmd.c         exp_vpath = vfs_path_from_str (exp);</span>
+<span class='curline'><a href='../S/src--editor--editcmd_dialogs.c.html#L514'>vfs_path_from_str</a>  514 src/editor/editcmd_dialogs.c                     vfs_path_from_str ((char *) curr_def-&gt;fullpath);</span>
+<span class='curline'><a href='../S/src--filemanager--achown.c.html#L783'>vfs_path_from_str</a>  783 src/filemanager/achown.c     vpath = vfs_path_from_str (lc_fname);</span>
+<span class='curline'><a href='../S/src--filemanager--achown.c.html#L799'>vfs_path_from_str</a>  799 src/filemanager/achown.c         vpath = vfs_path_from_str (lc_fname);</span>
+<span class='curline'><a href='../S/src--filemanager--achown.c.html#L849'>vfs_path_from_str</a>  849 src/filemanager/achown.c         vpath = vfs_path_from_str (fname);</span>
+<span class='curline'><a href='../S/src--filemanager--chmod.c.html#L402'>vfs_path_from_str</a>  402 src/filemanager/chmod.c     vpath = vfs_path_from_str (current_panel-&gt;dir.list[c_file].fname);</span>
+<span class='curline'><a href='../S/src--filemanager--chmod.c.html#L428'>vfs_path_from_str</a>  428 src/filemanager/chmod.c         vpath = vfs_path_from_str (fname);</span>
+<span class='curline'><a href='../S/src--filemanager--chmod.c.html#L470'>vfs_path_from_str</a>  470 src/filemanager/chmod.c         vpath = vfs_path_from_str (fname);</span>
+<span class='curline'><a href='../S/src--filemanager--chown.c.html#L301'>vfs_path_from_str</a>  301 src/filemanager/chown.c     vpath = vfs_path_from_str (current_panel-&gt;dir.list[current_file].fname);</span>
+<span class='curline'><a href='../S/src--filemanager--chown.c.html#L355'>vfs_path_from_str</a>  355 src/filemanager/chown.c         vpath = vfs_path_from_str (fname);</span>
+<span class='curline'><a href='../S/src--filemanager--chown.c.html#L430'>vfs_path_from_str</a>  430 src/filemanager/chown.c                     fname_vpath = vfs_path_from_str (fname);</span>
+<span class='curline'><a href='../S/src--filemanager--cmd.c.html#L144'>vfs_path_from_str</a>  144 src/filemanager/cmd.c         fname_vpath = vfs_path_from_str (selection (current_panel)-&gt;fname);</span>
+<span class='curline'><a href='../S/src--filemanager--cmd.c.html#L155'>vfs_path_from_str</a>  155 src/filemanager/cmd.c         filename_vpath = vfs_path_from_str (current_panel-&gt;dir.list[file_idx].fname);</span>
+<span class='curline'><a href='../S/src--filemanager--cmd.c.html#L356'>vfs_path_from_str</a>  356 src/filemanager/cmd.c     fname_vpath = vfs_path_from_str (fname);</span>
+<span class='curline'><a href='../S/src--filemanager--cmd.c.html#L365'>vfs_path_from_str</a>  365 src/filemanager/cmd.c         dest_vpath = vfs_path_from_str (dest);</span>
+<span class='curline'><a href='../S/src--filemanager--cmd.c.html#L380'>vfs_path_from_str</a>  380 src/filemanager/cmd.c             d = vfs_path_from_str (fname);</span>
+<span class='curline'><a href='../S/src--filemanager--cmd.c.html#L402'>vfs_path_from_str</a>  402 src/filemanager/cmd.c         s = vfs_path_from_str (src);</span>
+<span class='curline'><a href='../S/src--filemanager--cmd.c.html#L659'>vfs_path_from_str</a>  659 src/filemanager/cmd.c     vpath = vfs_path_from_str (filename);</span>
+<span class='curline'><a href='../S/src--filemanager--cmd.c.html#L744'>vfs_path_from_str</a>  744 src/filemanager/cmd.c     fname = vfs_path_from_str (selection (current_panel)-&gt;fname);</span>
+<span class='curline'><a href='../S/src--filemanager--cmd.c.html#L758'>vfs_path_from_str</a>  758 src/filemanager/cmd.c     fname = vfs_path_from_str (selection (current_panel)-&gt;fname);</span>
+<span class='curline'><a href='../S/src--filemanager--cmd.c.html#L782'>vfs_path_from_str</a>  782 src/filemanager/cmd.c             fname_vpath = vfs_path_from_str (fname);</span>
+<span class='curline'><a href='../S/src--filemanager--cmd.c.html#L873'>vfs_path_from_str</a>  873 src/filemanager/cmd.c             absdir = vfs_path_from_str (dir);</span>
+<span class='curline'><a href='../S/src--filemanager--cmd.c.html#L1037'>vfs_path_from_str</a> 1037 src/filemanager/cmd.c         buffer_vpath = vfs_path_from_str (MC_LOCAL_MENU);</span>
+<span class='curline'><a href='../S/src--filemanager--cmd.c.html#L1129'>vfs_path_from_str</a> 1129 src/filemanager/cmd.c         vpath = vfs_path_from_str (target);</span>
+<span class='curline'><a href='../S/src--filemanager--cmd.c.html#L1159'>vfs_path_from_str</a> 1159 src/filemanager/cmd.c     target_vpath = vfs_path_from_str (target);</span>
+<span class='curline'><a href='../S/src--filemanager--cmd.c.html#L1296'>vfs_path_from_str</a> 1296 src/filemanager/cmd.c                 p_vpath = vfs_path_from_str (p);</span>
+<span class='curline'><a href='../S/src--filemanager--cmd.c.html#L1464'>vfs_path_from_str</a> 1464 src/filemanager/cmd.c         p = vfs_path_from_str (entry-&gt;fname);</span>
+<span class='curline'><a href='../S/src--filemanager--cmd.c.html#L1516'>vfs_path_from_str</a> 1516 src/filemanager/cmd.c             p = vfs_path_from_str (panel-&gt;dir.list[i].fname);</span>
+<span class='curline'><a href='../S/src--filemanager--command.c.html#L404'>vfs_path_from_str</a>  404 src/filemanager/command.c             new_vpath = vfs_path_from_str (mc_config_get_home_dir ());</span>
+<span class='curline'><a href='../S/src--filemanager--command.c.html#L423'>vfs_path_from_str</a>  423 src/filemanager/command.c                 new_vpath = vfs_path_from_str (cmd + operand_pos);</span>
+<span class='curline'><a href='../S/src--filemanager--command.c.html#L443'>vfs_path_from_str</a>  443 src/filemanager/command.c             q_vpath = vfs_path_from_str (mc_config_get_home_dir ());</span>
+<span class='curline'><a href='../S/src--filemanager--dir.c.html#L161'>vfs_path_from_str</a>  161 src/filemanager/dir.c     vpath = vfs_path_from_str (dp-&gt;d_name);</span>
+<span class='curline'><a href='../S/src--filemanager--dir.c.html#L593'>vfs_path_from_str</a>  593 src/filemanager/dir.c     vpath = vfs_path_from_str (path);</span>
+<span class='curline'><a href='../S/src--filemanager--file.c.html#L399'>vfs_path_from_str</a>  399 src/filemanager/file.c     src_vpath = vfs_path_from_str (src_path);</span>
+<span class='curline'><a href='../S/src--filemanager--file.c.html#L400'>vfs_path_from_str</a>  400 src/filemanager/file.c     dst_vpath = vfs_path_from_str (dst_path);</span>
+<span class='curline'><a href='../S/src--filemanager--file.c.html#L455'>vfs_path_from_str</a>  455 src/filemanager/file.c                 tmp_vpath2 = vfs_path_from_str (link_target);</span>
+<span class='curline'><a href='../S/src--filemanager--file.c.html#L934'>vfs_path_from_str</a>  934 src/filemanager/file.c     src_vpath = vfs_path_from_str (s);</span>
+<span class='curline'><a href='../S/src--filemanager--file.c.html#L935'>vfs_path_from_str</a>  935 src/filemanager/file.c     dst_vpath = vfs_path_from_str (d);</span>
+<span class='curline'><a href='../S/src--filemanager--file.c.html#L1358'>vfs_path_from_str</a> 1358 src/filemanager/file.c             p = vfs_path_from_str (source);</span>
+<span class='curline'><a href='../S/src--filemanager--file.c.html#L1515'>vfs_path_from_str</a> 1515 src/filemanager/file.c     dst_vpath = vfs_path_from_str (dst_path);</span>
+<span class='curline'><a href='../S/src--filemanager--file.c.html#L1516'>vfs_path_from_str</a> 1516 src/filemanager/file.c     src_vpath = vfs_path_from_str (src_path);</span>
+<span class='curline'><a href='../S/src--filemanager--file.c.html#L2050'>vfs_path_from_str</a> 2050 src/filemanager/file.c     src_vpath = vfs_path_from_str (s);</span>
+<span class='curline'><a href='../S/src--filemanager--file.c.html#L2051'>vfs_path_from_str</a> 2051 src/filemanager/file.c     dst_vpath = vfs_path_from_str (d);</span>
+<span class='curline'><a href='../S/src--filemanager--file.c.html#L2229'>vfs_path_from_str</a> 2229 src/filemanager/file.c         tmp_vpath = vfs_path_from_str (path);</span>
+<span class='curline'><a href='../S/src--filemanager--file.c.html#L2316'>vfs_path_from_str</a> 2316 src/filemanager/file.c     src_vpath = vfs_path_from_str (s);</span>
+<span class='curline'><a href='../S/src--filemanager--file.c.html#L2317'>vfs_path_from_str</a> 2317 src/filemanager/file.c     dst_vpath = vfs_path_from_str (d);</span>
+<span class='curline'><a href='../S/src--filemanager--file.c.html#L2666'>vfs_path_from_str</a> 2666 src/filemanager/file.c             source_vpath = vfs_path_from_str (source);</span>
+<span class='curline'><a href='../S/src--filemanager--file.c.html#L2751'>vfs_path_from_str</a> 2751 src/filemanager/file.c         dest_vpath = vfs_path_from_str (dest);</span>
+<span class='curline'><a href='../S/src--filemanager--file.c.html#L2850'>vfs_path_from_str</a> 2850 src/filemanager/file.c             vpath = vfs_path_from_str (PATH_SEP_STR);</span>
+<span class='curline'><a href='../S/src--filemanager--file.c.html#L2863'>vfs_path_from_str</a> 2863 src/filemanager/file.c             source_with_vpath = vfs_path_from_str (source);</span>
+<span class='curline'><a href='../S/src--filemanager--file.c.html#L2902'>vfs_path_from_str</a> 2902 src/filemanager/file.c                     dest_vpath = vfs_path_from_str (dest);</span>
+<span class='curline'><a href='../S/src--filemanager--file.c.html#L2977'>vfs_path_from_str</a> 2977 src/filemanager/file.c                     source_with_vpath = vfs_path_from_str (source2);</span>
+<span class='curline'><a href='../S/src--filemanager--file.c.html#L3024'>vfs_path_from_str</a> 3024 src/filemanager/file.c                                 vpath = vfs_path_from_str (source_with_path_str);</span>
+<span class='curline'><a href='../S/src--filemanager--file.c.html#L3080'>vfs_path_from_str</a> 3080 src/filemanager/file.c         tmp_vpath = vfs_path_from_str (save_cwd);</span>
+<span class='curline'><a href='../S/src--filemanager--file.c.html#L3088'>vfs_path_from_str</a> 3088 src/filemanager/file.c         tmp_vpath = vfs_path_from_str (save_dest);</span>
+<span class='curline'><a href='../S/src--filemanager--filegui.c.html#L477'>vfs_path_from_str</a>  477 src/filemanager/filegui.c     stripped_vpath = vfs_path_from_str (ui-&gt;replace_filename);</span>
+<span class='curline'><a href='../S/src--filemanager--filegui.c.html#L1326'>vfs_path_from_str</a> 1326 src/filemanager/filegui.c         vpath = vfs_path_from_str (dest_dir);</span>
+<span class='curline'><a href='../S/src--filemanager--find.c.html#L1734'>vfs_path_from_str</a> 1734 src/filemanager/find.c     push_directory (vfs_path_from_str (start_dir));</span>
+<span class='curline'><a href='../S/src--filemanager--find.c.html#L1832'>vfs_path_from_str</a> 1832 src/filemanager/find.c                 current_panel-&gt;cwd_vpath = vfs_path_from_str (PATH_SEP_STR);</span>
+<span class='curline'><a href='../S/src--filemanager--find.c.html#L1884'>vfs_path_from_str</a> 1884 src/filemanager/find.c                 dirname_vpath = vfs_path_from_str (dirname);</span>
+<span class='curline'><a href='../S/src--filemanager--find.c.html#L1896'>vfs_path_from_str</a> 1896 src/filemanager/find.c                 filename_vpath = vfs_path_from_str (filename);</span>
+<span class='curline'><a href='../S/src--filemanager--layout.c.html#L611'>vfs_path_from_str</a>  611 src/filemanager/layout.c         saved_dir_vpath = vfs_path_from_str (saved_dir);</span>
+<span class='curline'><a href='../S/src--filemanager--midnight.c.html#L159'>vfs_path_from_str</a>  159 src/filemanager/midnight.c         sel_vdir = vfs_path_from_str (sel_dir);</span>
+<span class='curline'><a href='../S/src--filemanager--midnight.c.html#L657'>vfs_path_from_str</a>  657 src/filemanager/midnight.c             vpath = vfs_path_from_str (other_dir);</span>
+<span class='curline'><a href='../S/src--filemanager--midnight.c.html#L673'>vfs_path_from_str</a>  673 src/filemanager/midnight.c             vpath = vfs_path_from_str (current_dir);</span>
+<span class='curline'><a href='../S/src--filemanager--midnight.c.html#L897'>vfs_path_from_str</a>  897 src/filemanager/midnight.c     vpath = vfs_path_from_str (d);</span>
+<span class='curline'><a href='../S/src--filemanager--midnight.c.html#L965'>vfs_path_from_str</a>  965 src/filemanager/midnight.c     vpath = vfs_path_from_str (filename);</span>
+<span class='curline'><a href='../S/src--filemanager--panel.c.html#L1985'>vfs_path_from_str</a> 1985 src/filemanager/panel.c             up_dir = vfs_path_from_str ("..");</span>
+<span class='curline'><a href='../S/src--filemanager--panel.c.html#L1996'>vfs_path_from_str</a> 1996 src/filemanager/panel.c             vpath = vfs_path_from_str (selection (current_panel)-&gt;fname);</span>
+<span class='curline'><a href='../S/src--filemanager--panel.c.html#L2014'>vfs_path_from_str</a> 2014 src/filemanager/panel.c         vfs_path_t *up_dir = vfs_path_from_str ("..");</span>
+<span class='curline'><a href='../S/src--filemanager--panel.c.html#L2259'>vfs_path_from_str</a> 2259 src/filemanager/panel.c         up_dir = vfs_path_from_str ("..");</span>
+<span class='curline'><a href='../S/src--filemanager--panel.c.html#L2279'>vfs_path_from_str</a> 2279 src/filemanager/panel.c             dname_vpath = vfs_path_from_str (".");</span>
+<span class='curline'><a href='../S/src--filemanager--panel.c.html#L2285'>vfs_path_from_str</a> 2285 src/filemanager/panel.c             dname_vpath = vfs_path_from_str (dname);</span>
+<span class='curline'><a href='../S/src--filemanager--panel.c.html#L2332'>vfs_path_from_str</a> 2332 src/filemanager/panel.c         vpath = vfs_path_from_str (selection (panel)-&gt;fname);</span>
+<span class='curline'><a href='../S/src--filemanager--panel.c.html#L2794'>vfs_path_from_str</a> 2794 src/filemanager/panel.c         fname_vpath = vfs_path_from_str (fe-&gt;fname);</span>
+<span class='curline'><a href='../S/src--filemanager--panel.c.html#L2937'>vfs_path_from_str</a> 2937 src/filemanager/panel.c     panel_fname_vpath = vfs_path_from_str (selection (panel)-&gt;fname);</span>
+<span class='curline'><a href='../S/src--filemanager--panel.c.html#L2959'>vfs_path_from_str</a> 2959 src/filemanager/panel.c         new_dir_vpath = vfs_path_from_str (buffer);</span>
+<span class='curline'><a href='../S/src--filemanager--panel.c.html#L3326'>vfs_path_from_str</a> 3326 src/filemanager/panel.c             data_vpath = vfs_path_from_str ((char *) next-&gt;data);</span>
+<span class='curline'><a href='../S/src--filemanager--panel.c.html#L3353'>vfs_path_from_str</a> 3353 src/filemanager/panel.c             data_vpath = vfs_path_from_str ((char *) prev-&gt;data);</span>
+<span class='curline'><a href='../S/src--filemanager--panel.c.html#L3379'>vfs_path_from_str</a> 3379 src/filemanager/panel.c         s_vpath = vfs_path_from_str (s);</span>
+<span class='curline'><a href='../S/src--filemanager--panel.c.html#L3964'>vfs_path_from_str</a> 3964 src/filemanager/panel.c         vpath = vfs_path_from_str (list-&gt;list[i].fname);</span>
+<span class='curline'><a href='../S/src--filemanager--panel.c.html#L4372'>vfs_path_from_str</a> 4372 src/filemanager/panel.c         tmp_vpath = vfs_path_from_str (curdir);</span>
+<span class='curline'><a href='../S/src--filemanager--panel.c.html#L4399'>vfs_path_from_str</a> 4399 src/filemanager/panel.c         panel-&gt;cwd_vpath = vfs_path_from_str (PATH_SEP_STR);</span>
+<span class='curline'><a href='../S/src--filemanager--panelize.c.html#L366'>vfs_path_from_str</a>  366 src/filemanager/panelize.c         vpath_root = vfs_path_from_str (PATH_SEP_STR);</span>
+<span class='curline'><a href='../S/src--filemanager--tree.c.html#L220'>vfs_path_from_str</a>  220 src/filemanager/tree.c     vpath = vfs_path_from_str (mc_config_get_home_dir ());</span>
+<span class='curline'><a href='../S/src--filemanager--tree.c.html#L762'>vfs_path_from_str</a>  762 src/filemanager/tree.c     dest_vpath = vfs_path_from_str (dest);</span>
+<span class='curline'><a href='../S/src--filemanager--treestore.c.html#L267'>vfs_path_from_str</a>  267 src/filemanager/treestore.c                         vpath = vfs_path_from_str (oldname);</span>
+<span class='curline'><a href='../S/src--filemanager--treestore.c.html#L273'>vfs_path_from_str</a>  273 src/filemanager/treestore.c                             tmp_vpath = vfs_path_from_str (oldname);</span>
+<span class='curline'><a href='../S/src--filemanager--treestore.c.html#L286'>vfs_path_from_str</a>  286 src/filemanager/treestore.c                 vpath = vfs_path_from_str (lc_name);</span>
+<span class='curline'><a href='../S/src--filemanager--treestore.c.html#L304'>vfs_path_from_str</a>  304 src/filemanager/treestore.c         vfs_path_t *tmp_vpath = vfs_path_from_str (PATH_SEP_STR);</span>
+<span class='curline'><a href='../S/src--main.c.html#L309'>vfs_path_from_str</a>  309 src/main.c             vpath = vfs_path_from_str (buffer);</span>
+<span class='curline'><a href='../S/src--subshell--common.c.html#L1149'>vfs_path_from_str</a> 1149 src/subshell/common.c             *new_dir_vpath = vfs_path_from_str (subshell_cwd);  /* Make MC change to the subshell's CWD */</span>
+<span class='curline'><a href='../S/src--vfs--extfs--extfs.c.html#L379'>vfs_path_from_str</a>  379 src/vfs/extfs/extfs.c         local_name_vpath = vfs_path_from_str (archive-&gt;local_name);</span>
+<span class='curline'><a href='../S/src--vfs--extfs--extfs.c.html#L380'>vfs_path_from_str</a>  380 src/vfs/extfs/extfs.c         name_vpath = vfs_path_from_str (archive-&gt;name);</span>
+<span class='curline'><a href='../S/src--vfs--extfs--extfs.c.html#L409'>vfs_path_from_str</a>  409 src/vfs/extfs/extfs.c     name_vpath = vfs_path_from_str (name);</span>
+<span class='curline'><a href='../S/src--vfs--extfs--extfs.c.html#L814'>vfs_path_from_str</a>  814 src/vfs/extfs/extfs.c         vpath = vfs_path_from_str (archive_name);</span>
+<span class='curline'><a href='../S/src--vfs--extfs--extfs.c.html#L1521'>vfs_path_from_str</a> 1521 src/vfs/extfs/extfs.c     p = vfs_path_from_str (fp-&gt;entry-&gt;inode-&gt;local_filename);</span>
+<span class='curline'><a href='../S/src--vfs--sfs--sfs.c.html#L405'>vfs_path_from_str</a>  405 src/vfs/sfs/sfs.c     return vfs_path_from_str (sfs_redirect (vpath));</span>
+<span class='curline'><a href='../S/src--vfs--sftpfs--config_parser.c.html#L126'>vfs_path_from_str</a>  126 src/vfs/sftpfs/config_parser.c     vpath = vfs_path_from_str (ret_value);</span>
+<span class='curline'><a href='../S/src--vfs--smbfs--smbfs.c.html#L1484'>vfs_path_from_str</a> 1484 src/vfs/smbfs/smbfs.c         vpath = vfs_path_from_str (path);</span>
+<span class='curline'><a href='../S/src--viewer--mcviewer.c.html#L276'>vfs_path_from_str</a>  276 src/viewer/mcviewer.c     view-&gt;filename_vpath = vfs_path_from_str (file);</span>
+<span class='curline'><a href='../S/src--viewer--mcviewer.c.html#L299'>vfs_path_from_str</a>  299 src/viewer/mcviewer.c             view-&gt;workdir_vpath = vfs_path_from_str (dir);</span>
+<span class='curline'><a href='../S/src--viewer--mcviewer.c.html#L318'>vfs_path_from_str</a>  318 src/viewer/mcviewer.c         vpath = vfs_path_from_str (file);</span>
+<span class='curline'><a href='../S/src--viewer--mcviewer.c.html#L380'>vfs_path_from_str</a>  380 src/viewer/mcviewer.c                     vpath1 = vfs_path_from_str (tmp_filename);</span>
+<span class='curline'><a href='../S/tests--lib--vfs--current_dir.c.html#L172'>vfs_path_from_str</a>  172 tests/lib/vfs/current_dir.c     vfs_set_raw_current_dir (vfs_path_from_str (data-&gt;input_initial_path));</span>
+<span class='curline'><a href='../S/tests--lib--vfs--current_dir.c.html#L174'>vfs_path_from_str</a>  174 tests/lib/vfs/current_dir.c     vpath = vfs_path_from_str (data-&gt;input_cd_path);</span>
+<span class='curline'><a href='../S/tests--lib--vfs--path_cmp.c.html#L131'>vfs_path_from_str</a>  131 tests/lib/vfs/path_cmp.c     vpath1 = vfs_path_from_str (data-&gt;input_path1);</span>
+<span class='curline'><a href='../S/tests--lib--vfs--path_cmp.c.html#L132'>vfs_path_from_str</a>  132 tests/lib/vfs/path_cmp.c     vpath2 = vfs_path_from_str (data-&gt;input_path2);</span>
+<span class='curline'><a href='../S/tests--lib--vfs--path_cmp.c.html#L219'>vfs_path_from_str</a>  219 tests/lib/vfs/path_cmp.c     vpath1 = vfs_path_from_str (data-&gt;input_path1);</span>
+<span class='curline'><a href='../S/tests--lib--vfs--path_cmp.c.html#L220'>vfs_path_from_str</a>  220 tests/lib/vfs/path_cmp.c     vpath2 = vfs_path_from_str (data-&gt;input_path2);</span>
+<span class='curline'><a href='../S/tests--lib--vfs--path_len.c.html#L110'>vfs_path_from_str</a>  110 tests/lib/vfs/path_len.c     vpath = vfs_path_from_str (data-&gt;input_path);</span>
+<span class='curline'><a href='../S/tests--lib--vfs--path_manipulations.c.html#L351'>vfs_path_from_str</a>  351 tests/lib/vfs/path_manipulations.c     vpath1 = vfs_path_from_str (data-&gt;input_path1);</span>
+<span class='curline'><a href='../S/tests--lib--vfs--path_manipulations.c.html#L352'>vfs_path_from_str</a>  352 tests/lib/vfs/path_manipulations.c     vpath2 = vfs_path_from_str (data-&gt;input_path2);</span>
+<span class='curline'><a href='../S/tests--lib--vfs--path_recode.c.html#L148'>vfs_path_from_str</a>  148 tests/lib/vfs/path_recode.c     vpath = vfs_path_from_str (data-&gt;input_path);</span>
+<span class='curline'><a href='../S/tests--lib--vfs--relative_cd.c.html#L177'>vfs_path_from_str</a>  177 tests/lib/vfs/relative_cd.c     vpath = vfs_path_from_str ("/test1://some.host/dir");</span>
+<span class='curline'><a href='../S/tests--src--editor--editcmd__edit_complete_word_cmd.c.html#L162'>vfs_path_from_str</a>  162 tests/src/editor/editcmd__edit_complete_word_cmd.c     test_edit = edit_init (NULL, 0, 0, 24, 80, vfs_path_from_str ("test-data.txt"), 1);</span>
+<span class='curline'><a href='../S/tests--src--execute__execute_external_editor_or_viewer.c.html#L144'>vfs_path_from_str</a>  144 tests/src/execute__execute_external_editor_or_viewer.c     filename_vpath = vfs_path_from_str ("/path/to/file.txt");</span>
+<span class='curline'><a href='../S/tests--src--execute__execute_get_external_cmd_opts_from_config.c.html#L158'>vfs_path_from_str</a>  158 tests/src/execute__execute_get_external_cmd_opts_from_config.c     filename_vpath = vfs_path_from_str (data-&gt;file_name);</span>
+<span class='curline'><a href='../S/tests--src--execute__execute_with_vfs_arg.c.html#L57'>vfs_path_from_str</a>   57 tests/src/execute__execute_with_vfs_arg.c     filename_vpath = vfs_path_from_str (data-&gt;input_path);</span>
+<span class='curline'><a href='../S/tests--src--execute__execute_with_vfs_arg.c.html#L133'>vfs_path_from_str</a>  133 tests/src/execute__execute_with_vfs_arg.c     filename_vpath = vfs_path_from_str ("/ftp://some.host/editme.txt");</span>
+<span class='curline'><a href='../S/tests--src--execute__execute_with_vfs_arg.c.html#L175'>vfs_path_from_str</a>  175 tests/src/execute__execute_with_vfs_arg.c     filename_vpath = vfs_path_from_str ("/ftp://some.host/editme.txt");</span>
+<span class='curline'><a href='../S/tests--src--execute__execute_with_vfs_arg.c.html#L176'>vfs_path_from_str</a>  176 tests/src/execute__execute_with_vfs_arg.c     local_vpath = vfs_path_from_str ("/tmp/blabla-editme.txt");</span>
+<span class='curline'><a href='../S/tests--src--filemanager--exec_get_export_variables_ext.c.html#L53'>vfs_path_from_str</a>   53 tests/src/filemanager/exec_get_export_variables_ext.c     current_panel-&gt;cwd_vpath = vfs_path_from_str ("/home");</span>
+<span class='curline'><a href='../S/tests--src--filemanager--exec_get_export_variables_ext.c.html#L86'>vfs_path_from_str</a>   86 tests/src/filemanager/exec_get_export_variables_ext.c     filename_vpath = vfs_path_from_str ("/tmp/blabla.txt");</span>
+</pre>
+</body>
+</html>

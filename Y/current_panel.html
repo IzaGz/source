@@ -1,0 +1,227 @@
+<!DOCTYPE html PUBLIC '-//W3C//DTD XHTML 1.0 Transitional//EN' 'http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd'>
+<html xmlns='http://www.w3.org/1999/xhtml'>
+<head>
+<title>current_panel</title>
+<meta name='robots' content='noindex,nofollow' />
+<meta name='generator' content='GLOBAL-6.5.2' />
+<meta http-equiv='Content-Style-Type' content='text/css' />
+<link rel='stylesheet' type='text/css' href='../style.css' />
+</head>
+<body>
+<pre>
+<span class='curline'><a href='../S/src--filemanager--achown.c.html#L663'>current_panel</a>     663 src/filemanager/achown.c     single_set = (current_panel-&gt;marked &lt; 2);</span>
+<span class='curline'><a href='../S/src--filemanager--achown.c.html#L756'>current_panel</a>     756 src/filemanager/achown.c     chown (current_panel-&gt;dir.list[current_file].fname, u, g);</span>
+<span class='curline'><a href='../S/src--filemanager--achown.c.html#L757'>current_panel</a>     757 src/filemanager/achown.c     file_mark (current_panel, current_file, 0);</span>
+<span class='curline'><a href='../S/src--filemanager--achown.c.html#L766'>current_panel</a>     766 src/filemanager/achown.c     while (!current_panel-&gt;dir.list[current_file].f.marked)</span>
+<span class='curline'><a href='../S/src--filemanager--achown.c.html#L769'>current_panel</a>     769 src/filemanager/achown.c     return current_panel-&gt;dir.list[current_file].fname;</span>
+<span class='curline'><a href='../S/src--filemanager--achown.c.html#L782'>current_panel</a>     782 src/filemanager/achown.c     lc_fname = current_panel-&gt;dir.list[current_file].fname;</span>
+<span class='curline'><a href='../S/src--filemanager--achown.c.html#L793'>current_panel</a>     793 src/filemanager/achown.c     do_file_mark (current_panel, current_file, 0);</span>
+<span class='curline'><a href='../S/src--filemanager--achown.c.html#L818'>current_panel</a>     818 src/filemanager/achown.c         do_file_mark (current_panel, current_file, 0);</span>
+<span class='curline'><a href='../S/src--filemanager--achown.c.html#L821'>current_panel</a>     821 src/filemanager/achown.c     while (current_panel-&gt;marked != 0);</span>
+<span class='curline'><a href='../S/src--filemanager--achown.c.html#L834'>current_panel</a>     834 src/filemanager/achown.c     files_on_begin = MAX (1, current_panel-&gt;marked);</span>
+<span class='curline'><a href='../S/src--filemanager--achown.c.html#L845'>current_panel</a>     845 src/filemanager/achown.c         if (current_panel-&gt;marked)</span>
+<span class='curline'><a href='../S/src--filemanager--achown.c.html#L848'>current_panel</a>     848 src/filemanager/achown.c             fname = selection (current_panel)-&gt;fname;   /* single file */</span>
+<span class='curline'><a href='../S/src--filemanager--achown.c.html#L860'>current_panel</a>     860 src/filemanager/achown.c         file_idx = files_on_begin == 1 ? 1 : (files_on_begin - current_panel-&gt;marked + 1);</span>
+<span class='curline'><a href='../S/src--filemanager--achown.c.html#L898'>current_panel</a>     898 src/filemanager/achown.c         if (current_panel-&gt;marked &amp;&amp; result != B_CANCEL)</span>
+<span class='curline'><a href='../S/src--filemanager--achown.c.html#L900'>current_panel</a>     900 src/filemanager/achown.c             do_file_mark (current_panel, current_file, 0);</span>
+<span class='curline'><a href='../S/src--filemanager--achown.c.html#L906'>current_panel</a>     906 src/filemanager/achown.c     while (current_panel-&gt;marked &amp;&amp; !end_chown);</span>
+<span class='curline'><a href='../S/src--filemanager--boxes.c.html#L1172'>current_panel</a>    1172 src/filemanager/boxes.c     const Widget *w = CONST_WIDGET (current_panel);</span>
+<span class='curline'><a href='../S/src--filemanager--chmod.c.html#L291'>current_panel</a>     291 src/filemanager/chmod.c     single_set = (current_panel-&gt;marked &lt; 2);</span>
+<span class='curline'><a href='../S/src--filemanager--chmod.c.html#L387'>current_panel</a>     387 src/filemanager/chmod.c     while (!current_panel-&gt;dir.list[c_file].f.marked)</span>
+<span class='curline'><a href='../S/src--filemanager--chmod.c.html#L390'>current_panel</a>     390 src/filemanager/chmod.c     return current_panel-&gt;dir.list[c_file].fname;</span>
+<span class='curline'><a href='../S/src--filemanager--chmod.c.html#L402'>current_panel</a>     402 src/filemanager/chmod.c     vpath = vfs_path_from_str (current_panel-&gt;dir.list[c_file].fname);</span>
+<span class='curline'><a href='../S/src--filemanager--chmod.c.html#L405'>current_panel</a>     405 src/filemanager/chmod.c                  current_panel-&gt;dir.list[c_file].fname, unix_error_string (errno));</span>
+<span class='curline'><a href='../S/src--filemanager--chmod.c.html#L408'>current_panel</a>     408 src/filemanager/chmod.c     do_file_mark (current_panel, c_file, 0);</span>
+<span class='curline'><a href='../S/src--filemanager--chmod.c.html#L438'>current_panel</a>     438 src/filemanager/chmod.c     while (current_panel-&gt;marked != 0);</span>
+<span class='curline'><a href='../S/src--filemanager--chmod.c.html#L465'>current_panel</a>     465 src/filemanager/chmod.c         if (current_panel-&gt;marked != 0)</span>
+<span class='curline'><a href='../S/src--filemanager--chmod.c.html#L468'>current_panel</a>     468 src/filemanager/chmod.c             fname = selection (current_panel)-&gt;fname;   /* single file */</span>
+<span class='curline'><a href='../S/src--filemanager--chmod.c.html#L541'>current_panel</a>     541 src/filemanager/chmod.c         if (current_panel-&gt;marked != 0 &amp;&amp; result != B_CANCEL)</span>
+<span class='curline'><a href='../S/src--filemanager--chmod.c.html#L543'>current_panel</a>     543 src/filemanager/chmod.c             do_file_mark (current_panel, c_file, 0);</span>
+<span class='curline'><a href='../S/src--filemanager--chmod.c.html#L551'>current_panel</a>     551 src/filemanager/chmod.c     while (current_panel-&gt;marked != 0 &amp;&amp; !end_chmod);</span>
+<span class='curline'><a href='../S/src--filemanager--chown.c.html#L173'>current_panel</a>     173 src/filemanager/chown.c     while (!current_panel-&gt;dir.list[current_file].f.marked)</span>
+<span class='curline'><a href='../S/src--filemanager--chown.c.html#L176'>current_panel</a>     176 src/filemanager/chown.c     return current_panel-&gt;dir.list[current_file].fname;</span>
+<span class='curline'><a href='../S/src--filemanager--chown.c.html#L210'>current_panel</a>     210 src/filemanager/chown.c     single_set = (current_panel-&gt;marked &lt; 2) ? 3 : 0;</span>
+<span class='curline'><a href='../S/src--filemanager--chown.c.html#L301'>current_panel</a>     301 src/filemanager/chown.c     vpath = vfs_path_from_str (current_panel-&gt;dir.list[current_file].fname);</span>
+<span class='curline'><a href='../S/src--filemanager--chown.c.html#L304'>current_panel</a>     304 src/filemanager/chown.c                  current_panel-&gt;dir.list[current_file].fname, unix_error_string (errno));</span>
+<span class='curline'><a href='../S/src--filemanager--chown.c.html#L307'>current_panel</a>     307 src/filemanager/chown.c     do_file_mark (current_panel, current_file, 0);</span>
+<span class='curline'><a href='../S/src--filemanager--chown.c.html#L324'>current_panel</a>     324 src/filemanager/chown.c     while (current_panel-&gt;marked);</span>
+<span class='curline'><a href='../S/src--filemanager--chown.c.html#L350'>current_panel</a>     350 src/filemanager/chown.c         if (current_panel-&gt;marked)</span>
+<span class='curline'><a href='../S/src--filemanager--chown.c.html#L353'>current_panel</a>     353 src/filemanager/chown.c             fname = selection (current_panel)-&gt;fname;   /* single file */</span>
+<span class='curline'><a href='../S/src--filemanager--chown.c.html#L446'>current_panel</a>     446 src/filemanager/chown.c         if (current_panel-&gt;marked &amp;&amp; ch_dlg-&gt;ret_value != B_CANCEL)</span>
+<span class='curline'><a href='../S/src--filemanager--chown.c.html#L448'>current_panel</a>     448 src/filemanager/chown.c             do_file_mark (current_panel, current_file, 0);</span>
+<span class='curline'><a href='../S/src--filemanager--chown.c.html#L454'>current_panel</a>     454 src/filemanager/chown.c     while (current_panel-&gt;marked &amp;&amp; !end_chown);</span>
+<span class='curline'><a href='../S/src--filemanager--cmd.c.html#L131'>current_panel</a>     131 src/filemanager/cmd.c     if (S_ISDIR (selection (current_panel)-&gt;st.st_mode) || link_isdir (selection (current_panel)))</span>
+<span class='curline'><a href='../S/src--filemanager--cmd.c.html#L135'>current_panel</a>     135 src/filemanager/cmd.c         if (confirm_view_dir &amp;&amp; (current_panel-&gt;marked || current_panel-&gt;dirs_marked))</span>
+<span class='curline'><a href='../S/src--filemanager--cmd.c.html#L144'>current_panel</a>     144 src/filemanager/cmd.c         fname_vpath = vfs_path_from_str (selection (current_panel)-&gt;fname);</span>
+<span class='curline'><a href='../S/src--filemanager--cmd.c.html#L154'>current_panel</a>     154 src/filemanager/cmd.c         file_idx = current_panel-&gt;selected;</span>
+<span class='curline'><a href='../S/src--filemanager--cmd.c.html#L155'>current_panel</a>     155 src/filemanager/cmd.c         filename_vpath = vfs_path_from_str (current_panel-&gt;dir.list[file_idx].fname);</span>
+<span class='curline'><a href='../S/src--filemanager--cmd.c.html#L375'>current_panel</a>     375 src/filemanager/cmd.c         s = vfs_path_append_new (current_panel-&gt;cwd_vpath, fname, (char *) NULL);</span>
+<span class='curline'><a href='../S/src--filemanager--cmd.c.html#L467'>current_panel</a>     467 src/filemanager/cmd.c     if (MENU_PANEL != current_panel)</span>
+<span class='curline'><a href='../S/src--filemanager--cmd.c.html#L468'>current_panel</a>     468 src/filemanager/cmd.c         (void) mc_chdir (current_panel-&gt;cwd_vpath);</span>
+<span class='curline'><a href='../S/src--filemanager--cmd.c.html#L654'>current_panel</a>     654 src/filemanager/cmd.c                              MC_HISTORY_FM_VIEW_FILE, selection (current_panel)-&gt;fname,</span>
+<span class='curline'><a href='../S/src--filemanager--cmd.c.html#L682'>current_panel</a>     682 src/filemanager/cmd.c         initial_command = selection (current_panel)-&gt;fname;</span>
+<span class='curline'><a href='../S/src--filemanager--cmd.c.html#L744'>current_panel</a>     744 src/filemanager/cmd.c     fname = vfs_path_from_str (selection (current_panel)-&gt;fname);</span>
+<span class='curline'><a href='../S/src--filemanager--cmd.c.html#L758'>current_panel</a>     758 src/filemanager/cmd.c     fname = vfs_path_from_str (selection (current_panel)-&gt;fname);</span>
+<span class='curline'><a href='../S/src--filemanager--cmd.c.html#L802'>current_panel</a>     802 src/filemanager/cmd.c     if (panel_operate (current_panel, OP_COPY, FALSE))</span>
+<span class='curline'><a href='../S/src--filemanager--cmd.c.html#L816'>current_panel</a>     816 src/filemanager/cmd.c     if (panel_operate (current_panel, OP_MOVE, FALSE))</span>
+<span class='curline'><a href='../S/src--filemanager--cmd.c.html#L830'>current_panel</a>     830 src/filemanager/cmd.c     if (panel_operate (current_panel, OP_COPY, TRUE))</span>
+<span class='curline'><a href='../S/src--filemanager--cmd.c.html#L844'>current_panel</a>     844 src/filemanager/cmd.c     if (panel_operate (current_panel, OP_MOVE, TRUE))</span>
+<span class='curline'><a href='../S/src--filemanager--cmd.c.html#L860'>current_panel</a>     860 src/filemanager/cmd.c     if (auto_fill_mkdir_name &amp;&amp; !DIR_IS_DOTDOT (selection (current_panel)-&gt;fname))</span>
+<span class='curline'><a href='../S/src--filemanager--cmd.c.html#L861'>current_panel</a>     861 src/filemanager/cmd.c         name = selection (current_panel)-&gt;fname;</span>
+<span class='curline'><a href='../S/src--filemanager--cmd.c.html#L883'>current_panel</a>     883 src/filemanager/cmd.c             absdir = vfs_path_append_new (current_panel-&gt;cwd_vpath, tmpdir, (char *) NULL);</span>
+<span class='curline'><a href='../S/src--filemanager--cmd.c.html#L891'>current_panel</a>     891 src/filemanager/cmd.c             select_item (current_panel);</span>
+<span class='curline'><a href='../S/src--filemanager--cmd.c.html#L909'>current_panel</a>     909 src/filemanager/cmd.c     if (panel_operate (current_panel, OP_DELETE, FALSE))</span>
+<span class='curline'><a href='../S/src--filemanager--cmd.c.html#L924'>current_panel</a>     924 src/filemanager/cmd.c     if (panel_operate (current_panel, OP_DELETE, TRUE))</span>
+<span class='curline'><a href='../S/src--filemanager--cmd.c.html#L962'>current_panel</a>     962 src/filemanager/cmd.c         vfs_path_equal (current_panel-&gt;cwd_vpath, other_panel-&gt;cwd_vpath))</span>
+<span class='curline'><a href='../S/src--filemanager--cmd.c.html#L1187'>current_panel</a>    1187 src/filemanager/cmd.c         compare_dir (current_panel, other_panel, thorough_flag);</span>
+<span class='curline'><a href='../S/src--filemanager--cmd.c.html#L1188'>current_panel</a>    1188 src/filemanager/cmd.c         compare_dir (other_panel, current_panel, thorough_flag);</span>
+<span class='curline'><a href='../S/src--filemanager--cmd.c.html#L1208'>current_panel</a>    1208 src/filemanager/cmd.c         dview_diff_cmd (current_panel, other_panel);</span>
+<span class='curline'><a href='../S/src--filemanager--cmd.c.html#L1210'>current_panel</a>    1210 src/filemanager/cmd.c         dview_diff_cmd (other_panel, current_panel);</span>
+<span class='curline'><a href='../S/src--filemanager--cmd.c.html#L1255'>current_panel</a>    1255 src/filemanager/cmd.c     char *filename = selection (current_panel)-&gt;fname;</span>
+<span class='curline'><a href='../S/src--filemanager--cmd.c.html#L1269'>current_panel</a>    1269 src/filemanager/cmd.c     fe = selection (current_panel);</span>
+<span class='curline'><a href='../S/src--filemanager--cmd.c.html#L1332'>current_panel</a>    1332 src/filemanager/cmd.c     if (current_panel-&gt;searching)</span>
+<span class='curline'><a href='../S/src--filemanager--cmd.c.html#L1437'>current_panel</a>    1437 src/filemanager/cmd.c     WPanel *panel = current_panel;</span>
+<span class='curline'><a href='../S/src--filemanager--cmd.c.html#L1452'>current_panel</a>    1452 src/filemanager/cmd.c     WPanel *panel = current_panel;</span>
+<span class='curline'><a href='../S/src--filemanager--cmd.c.html#L1486'>current_panel</a>    1486 src/filemanager/cmd.c     if (current_panel-&gt;sort_field-&gt;sort_routine == (GCompareFunc) sort_size)</span>
+<span class='curline'><a href='../S/src--filemanager--cmd.c.html#L1497'>current_panel</a>    1497 src/filemanager/cmd.c     WPanel *panel = current_panel;</span>
+<span class='curline'><a href='../S/src--filemanager--cmd.c.html#L1530'>current_panel</a>    1530 src/filemanager/cmd.c     if (current_panel-&gt;sort_field-&gt;sort_routine == (GCompareFunc) sort_size)</span>
+<span class='curline'><a href='../S/src--filemanager--cmd.c.html#L1565'>current_panel</a>    1565 src/filemanager/cmd.c         set_display_type (current_panel == left_panel ? 1 : 0, view_info);</span>
+<span class='curline'><a href='../S/src--filemanager--cmd.c.html#L1578'>current_panel</a>    1578 src/filemanager/cmd.c         set_display_type (current_panel == left_panel ? 1 : 0, view_quick);</span>
+<span class='curline'><a href='../S/src--filemanager--cmd.c.html#L1635'>current_panel</a>    1635 src/filemanager/cmd.c     if (PANEL (get_panel_widget (MENU_PANEL_IDX)) == current_panel)</span>
+<span class='curline'><a href='../S/src--filemanager--command.c.html#L409'>current_panel</a>     409 src/filemanager/command.c             if (vfs_path_elements_count (current_panel-&gt;cwd_vpath) != 1 ||</span>
+<span class='curline'><a href='../S/src--filemanager--command.c.html#L410'>current_panel</a>     410 src/filemanager/command.c                 strlen (vfs_path_get_by_index (current_panel-&gt;cwd_vpath, 0)-&gt;path) &gt; 1)</span>
+<span class='curline'><a href='../S/src--filemanager--command.c.html#L412'>current_panel</a>     412 src/filemanager/command.c                 vfs_path_t *tmp_vpath = current_panel-&gt;cwd_vpath;</span>
+<span class='curline'><a href='../S/src--filemanager--command.c.html#L414'>current_panel</a>     414 src/filemanager/command.c                 current_panel-&gt;cwd_vpath =</span>
+<span class='curline'><a href='../S/src--filemanager--command.c.html#L418'>current_panel</a>     418 src/filemanager/command.c             sync_tree (current_panel-&gt;cwd_vpath);</span>
+<span class='curline'><a href='../S/src--filemanager--command.c.html#L426'>current_panel</a>     426 src/filemanager/command.c                     vfs_path_append_new (current_panel-&gt;cwd_vpath, cmd + operand_pos,</span>
+<span class='curline'><a href='../S/src--filemanager--filegui.c.html#L767'>current_panel</a>     767 src/filemanager/filegui.c         if (!classic_progressbar &amp;&amp; (current_panel == right_panel))</span>
+<span class='curline'><a href='../S/src--filemanager--filegui.c.html#L784'>current_panel</a>     784 src/filemanager/filegui.c                 if (!classic_progressbar &amp;&amp; (current_panel == right_panel))</span>
+<span class='curline'><a href='../S/src--filemanager--find.c.html#L779'>current_panel</a>     779 src/filemanager/find.c                 temp_dir = g_strdup (vfs_path_as_str (current_panel-&gt;cwd_vpath));</span>
+<span class='curline'><a href='../S/src--filemanager--find.c.html#L832'>current_panel</a>     832 src/filemanager/find.c                 *start_dir = g_strdup (vfs_path_as_str (current_panel-&gt;cwd_vpath));</span>
+<span class='curline'><a href='../S/src--filemanager--find.c.html#L847'>current_panel</a>     847 src/filemanager/find.c                     mc_build_filename (vfs_path_as_str (current_panel-&gt;cwd_vpath), s,</span>
+<span class='curline'><a href='../S/src--filemanager--find.c.html#L849'>current_panel</a>     849 src/filemanager/find.c                 *start_dir_len = (ssize_t) strlen (vfs_path_as_str (current_panel-&gt;cwd_vpath));</span>
+<span class='curline'><a href='../S/src--filemanager--find.c.html#L1754'>current_panel</a>    1754 src/filemanager/find.c         dir_list *list = &amp;current_panel-&gt;dir;</span>
+<span class='curline'><a href='../S/src--filemanager--find.c.html#L1807'>current_panel</a>    1807 src/filemanager/find.c                 panel_clean_dir (current_panel);</span>
+<span class='curline'><a href='../S/src--filemanager--find.c.html#L1825'>current_panel</a>    1825 src/filemanager/find.c             current_panel-&gt;is_panelized = TRUE;</span>
+<span class='curline'><a href='../S/src--filemanager--find.c.html#L1831'>current_panel</a>    1831 src/filemanager/find.c                 vfs_path_free (current_panel-&gt;cwd_vpath);</span>
+<span class='curline'><a href='../S/src--filemanager--find.c.html#L1832'>current_panel</a>    1832 src/filemanager/find.c                 current_panel-&gt;cwd_vpath = vfs_path_from_str (PATH_SEP_STR);</span>
+<span class='curline'><a href='../S/src--filemanager--find.c.html#L1836'>current_panel</a>    1836 src/filemanager/find.c             panelize_save_panel (current_panel);</span>
+<span class='curline'><a href='../S/src--filemanager--find.c.html#L1888'>current_panel</a>    1888 src/filemanager/find.c                     try_to_select (current_panel,</span>
+<span class='curline'><a href='../S/src--filemanager--find.c.html#L1911'>current_panel</a>    1911 src/filemanager/find.c             panel_re_sort (current_panel);</span>
+<span class='curline'><a href='../S/src--filemanager--find.c.html#L1912'>current_panel</a>    1912 src/filemanager/find.c             try_to_select (current_panel, NULL);</span>
+<span class='curline'><a href='../S/src--filemanager--hotlist.c.html#L1015'>current_panel</a>    1015 src/filemanager/hotlist.c     to_free = title = url = vfs_path_to_str_flags (current_panel-&gt;cwd_vpath, 0, VPF_STRIP_PASSWORD);</span>
+<span class='curline'><a href='../S/src--filemanager--hotlist.c.html#L1583'>current_panel</a>    1583 src/filemanager/hotlist.c     label_string = vfs_path_to_str_flags (current_panel-&gt;cwd_vpath, 0, VPF_STRIP_PASSWORD);</span>
+<span class='curline'><a href='../S/src--filemanager--info.c.html#L130'>current_panel</a>     130 src/filemanager/info.c     p_rp_cwd = mc_realpath (vfs_path_as_str (current_panel-&gt;cwd_vpath), rp_cwd);</span>
+<span class='curline'><a href='../S/src--filemanager--info.c.html#L132'>current_panel</a>     132 src/filemanager/info.c         p_rp_cwd = vfs_path_as_str (current_panel-&gt;cwd_vpath);</span>
+<span class='curline'><a href='../S/src--filemanager--info.c.html#L136'>current_panel</a>     136 src/filemanager/info.c     st = current_panel-&gt;dir.list[current_panel-&gt;selected].st;</span>
+<span class='curline'><a href='../S/src--filemanager--info.c.html#L266'>current_panel</a>     266 src/filemanager/info.c             fname = current_panel-&gt;dir.list[current_panel-&gt;selected].fname;</span>
+<span class='curline'><a href='../S/src--filemanager--layout.c.html#L1116'>current_panel</a>    1116 src/filemanager/layout.c     if ((type != view_listing) &amp;&amp; (current_panel == PANEL (old_widget)))</span>
+<span class='curline'><a href='../S/src--filemanager--layout.c.html#L1117'>current_panel</a>    1117 src/filemanager/layout.c         current_panel = num == 0 ? right_panel : left_panel;</span>
+<span class='curline'><a href='../S/src--filemanager--layout.c.html#L1159'>current_panel</a>    1159 src/filemanager/layout.c         if (current_panel == panel1)</span>
+<span class='curline'><a href='../S/src--filemanager--layout.c.html#L1160'>current_panel</a>    1160 src/filemanager/layout.c             current_panel = panel2;</span>
+<span class='curline'><a href='../S/src--filemanager--layout.c.html#L1162'>current_panel</a>    1162 src/filemanager/layout.c             current_panel = panel1;</span>
+<span class='curline'><a href='../S/src--filemanager--layout.c.html#L1168'>current_panel</a>    1168 src/filemanager/layout.c             panel_re_sort (current_panel);</span>
+<span class='curline'><a href='../S/src--filemanager--layout.c.html#L1254'>current_panel</a>    1254 src/filemanager/layout.c     if (panels[0].widget == WIDGET (current_panel))</span>
+<span class='curline'><a href='../S/src--filemanager--layout.c.html#L1282'>current_panel</a>    1282 src/filemanager/layout.c     if (panels[0].widget == WIDGET (current_panel))</span>
+<span class='curline'><a href='../S/src--filemanager--layout.c.html#L1294'>current_panel</a>    1294 src/filemanager/layout.c     if (panels[0].widget == WIDGET (current_panel))</span>
+<span class='curline'><a href='../S/src--filemanager--layout.c.html#L1397'>current_panel</a>    1397 src/filemanager/layout.c         vfs_path_to_str_flags (current_panel-&gt;cwd_vpath, 0, VPF_STRIP_HOME | VPF_STRIP_PASSWORD);</span>
+<span class='curline'><a href='../S/src--filemanager--midnight.c.html#L103'>current_panel</a>     103 src/filemanager/midnight.c WPanel *current_panel = NULL;</span>
+<span class='curline'><a href='../S/src--filemanager--midnight.c.html#L154'>current_panel</a>     154 src/filemanager/midnight.c     sel_dir = tree_box (selection (current_panel)-&gt;fname);</span>
+<span class='curline'><a href='../S/src--filemanager--midnight.c.html#L177'>current_panel</a>     177 src/filemanager/midnight.c     newmode = listmode_edit (current_panel-&gt;user_format);</span>
+<span class='curline'><a href='../S/src--filemanager--midnight.c.html#L181'>current_panel</a>     181 src/filemanager/midnight.c     g_free (current_panel-&gt;user_format);</span>
+<span class='curline'><a href='../S/src--filemanager--midnight.c.html#L182'>current_panel</a>     182 src/filemanager/midnight.c     current_panel-&gt;list_type = list_user;</span>
+<span class='curline'><a href='../S/src--filemanager--midnight.c.html#L183'>current_panel</a>     183 src/filemanager/midnight.c     current_panel-&gt;user_format = newmode;</span>
+<span class='curline'><a href='../S/src--filemanager--midnight.c.html#L184'>current_panel</a>     184 src/filemanager/midnight.c     set_panel_formats (current_panel);</span>
+<span class='curline'><a href='../S/src--filemanager--midnight.c.html#L381'>current_panel</a>     381 src/filemanager/midnight.c     if ((get_current_index () == 0) == (current_panel-&gt;active != 0))</span>
+<span class='curline'><a href='../S/src--filemanager--midnight.c.html#L499'>current_panel</a>     499 src/filemanager/midnight.c         check_panel_timestamp (current_panel, get_current_type (), event_data-&gt;vclass,</span>
+<span class='curline'><a href='../S/src--filemanager--midnight.c.html#L682'>current_panel</a>     682 src/filemanager/midnight.c         current_panel = left_panel;</span>
+<span class='curline'><a href='../S/src--filemanager--midnight.c.html#L684'>current_panel</a>     684 src/filemanager/midnight.c         current_panel = right_panel;</span>
+<span class='curline'><a href='../S/src--filemanager--midnight.c.html#L686'>current_panel</a>     686 src/filemanager/midnight.c         current_panel = left_panel;</span>
+<span class='curline'><a href='../S/src--filemanager--midnight.c.html#L768'>current_panel</a>     768 src/filemanager/midnight.c     put_link (current_panel);</span>
+<span class='curline'><a href='../S/src--filemanager--midnight.c.html#L801'>current_panel</a>     801 src/filemanager/midnight.c         tmp = selection (current_panel)-&gt;fname;</span>
+<span class='curline'><a href='../S/src--filemanager--midnight.c.html#L836'>current_panel</a>     836 src/filemanager/midnight.c     put_tagged (current_panel);</span>
+<span class='curline'><a href='../S/src--filemanager--midnight.c.html#L921'>current_panel</a>     921 src/filemanager/midnight.c     if ((current_panel != NULL) &amp;&amp; (get_current_type () == view_listing))</span>
+<span class='curline'><a href='../S/src--filemanager--midnight.c.html#L922'>current_panel</a>     922 src/filemanager/midnight.c         vfs_stamp_path (vfs_path_as_str (current_panel-&gt;cwd_vpath));</span>
+<span class='curline'><a href='../S/src--filemanager--midnight.c.html#L1077'>current_panel</a>    1077 src/filemanager/midnight.c     if (get_current_type () == view_listing &amp;&amp; current_panel-&gt;dirty)</span>
+<span class='curline'><a href='../S/src--filemanager--midnight.c.html#L1078'>current_panel</a>    1078 src/filemanager/midnight.c         widget_redraw (WIDGET (current_panel));</span>
+<span class='curline'><a href='../S/src--filemanager--midnight.c.html#L1105'>current_panel</a>    1105 src/filemanager/midnight.c     send_message (current_panel, NULL, MSG_ACTION, CK_SearchStop, NULL);</span>
+<span class='curline'><a href='../S/src--filemanager--midnight.c.html#L1145'>current_panel</a>    1145 src/filemanager/midnight.c         midnight_put_panel_path (current_panel);</span>
+<span class='curline'><a href='../S/src--filemanager--midnight.c.html#L1151'>current_panel</a>    1151 src/filemanager/midnight.c         midnight_put_panel_path (current_panel);</span>
+<span class='curline'><a href='../S/src--filemanager--midnight.c.html#L1332'>current_panel</a>    1332 src/filemanager/midnight.c         res = send_message (current_panel, midnight_dlg, MSG_ACTION, command, NULL);</span>
+<span class='curline'><a href='../S/src--filemanager--midnight.c.html#L1471'>current_panel</a>    1471 src/filemanager/midnight.c             if (current_panel-&gt;active == 0 &amp;&amp; get_other_type () == view_quick)</span>
+<span class='curline'><a href='../S/src--filemanager--midnight.c.html#L1489'>current_panel</a>    1489 src/filemanager/midnight.c             &amp;&amp; !current_panel-&gt;searching)</span>
+<span class='curline'><a href='../S/src--filemanager--midnight.c.html#L1495'>current_panel</a>    1495 src/filemanager/midnight.c                     return send_message (current_panel, midnight_dlg, MSG_ACTION, CK_Select, NULL);</span>
+<span class='curline'><a href='../S/src--filemanager--midnight.c.html#L1498'>current_panel</a>    1498 src/filemanager/midnight.c                     return send_message (current_panel, midnight_dlg, MSG_ACTION, CK_Unselect,</span>
+<span class='curline'><a href='../S/src--filemanager--midnight.c.html#L1502'>current_panel</a>    1502 src/filemanager/midnight.c                     return send_message (current_panel, midnight_dlg, MSG_ACTION, CK_SelectInvert,</span>
+<span class='curline'><a href='../S/src--filemanager--midnight.c.html#L1511'>current_panel</a>    1511 src/filemanager/midnight.c                     return send_message (current_panel, midnight_dlg, MSG_ACTION, CK_Select, NULL);</span>
+<span class='curline'><a href='../S/src--filemanager--midnight.c.html#L1514'>current_panel</a>    1514 src/filemanager/midnight.c                     return send_message (current_panel, midnight_dlg, MSG_ACTION, CK_Unselect,</span>
+<span class='curline'><a href='../S/src--filemanager--midnight.c.html#L1518'>current_panel</a>    1518 src/filemanager/midnight.c                     return send_message (current_panel, midnight_dlg, MSG_ACTION, CK_SelectInvert,</span>
+<span class='curline'><a href='../S/src--filemanager--midnight.c.html#L1525'>current_panel</a>    1525 src/filemanager/midnight.c         if ((get_current_type () == view_listing) &amp;&amp; current_panel-&gt;searching)</span>
+<span class='curline'><a href='../S/src--filemanager--midnight.c.html#L1527'>current_panel</a>    1527 src/filemanager/midnight.c             current_panel-&gt;dirty = 1;   /* FIXME: unneeded? */</span>
+<span class='curline'><a href='../S/src--filemanager--midnight.c.html#L1528'>current_panel</a>    1528 src/filemanager/midnight.c             send_message (current_panel, NULL, MSG_ACTION, CK_SearchStop, NULL);</span>
+<span class='curline'><a href='../S/src--filemanager--midnight.c.html#L1726'>current_panel</a>    1726 src/filemanager/midnight.c         mc_stat (current_panel-&gt;cwd_vpath, &amp;(current_panel-&gt;dir_stat));</span>
+<span class='curline'><a href='../S/src--filemanager--midnight.c.html#L1776'>current_panel</a>    1776 src/filemanager/midnight.c             last_wd_string = g_strdup (vfs_path_as_str (current_panel-&gt;cwd_vpath));</span>
+<span class='curline'><a href='../S/src--filemanager--midnight.c.html#L1789'>current_panel</a>    1789 src/filemanager/midnight.c     current_panel = NULL;</span>
+<span class='curline'><a href='../S/src--filemanager--midnight.h.html#L36'>current_panel</a>      36 src/filemanager/midnight.h extern WPanel *current_panel;</span>
+<span class='curline'><a href='../S/src--filemanager--panel.c.html#L1991'>current_panel</a>    1991 src/filemanager/panel.c         if (S_ISDIR (selection (current_panel)-&gt;st.st_mode)</span>
+<span class='curline'><a href='../S/src--filemanager--panel.c.html#L1992'>current_panel</a>    1992 src/filemanager/panel.c             || link_isdir (selection (current_panel)))</span>
+<span class='curline'><a href='../S/src--filemanager--panel.c.html#L1996'>current_panel</a>    1996 src/filemanager/panel.c             vpath = vfs_path_from_str (selection (current_panel)-&gt;fname);</span>
+<span class='curline'><a href='../S/src--filemanager--panel.c.html#L2037'>current_panel</a>    2037 src/filemanager/panel.c     gboolean do_select = !selection (current_panel)-&gt;f.marked;</span>
+<span class='curline'><a href='../S/src--filemanager--panel.c.html#L2038'>current_panel</a>    2038 src/filemanager/panel.c     char *filename = selection (current_panel)-&gt;fname;</span>
+<span class='curline'><a href='../S/src--filemanager--panel.c.html#L2059'>current_panel</a>    2059 src/filemanager/panel.c     for (i = 0; i &lt; current_panel-&gt;dir.len; i++)</span>
+<span class='curline'><a href='../S/src--filemanager--panel.c.html#L2061'>current_panel</a>    2061 src/filemanager/panel.c         file_entry_t *file_entry = &amp;current_panel-&gt;dir.list[i];</span>
+<span class='curline'><a href='../S/src--filemanager--panel.c.html#L2069'>current_panel</a>    2069 src/filemanager/panel.c         do_file_mark (current_panel, i, do_select);</span>
+<span class='curline'><a href='../S/src--filemanager--panel.c.html#L2801'>current_panel</a>    2801 src/filemanager/panel.c     full_name_vpath = vfs_path_append_new (current_panel-&gt;cwd_vpath, fe-&gt;fname, (char *) NULL);</span>
+<span class='curline'><a href='../S/src--filemanager--panel.c.html#L2810'>current_panel</a>    2810 src/filemanager/panel.c     full_name_vpath = vfs_path_append_new (current_panel-&gt;cwd_vpath, fe-&gt;fname, (char *) NULL);</span>
+<span class='curline'><a href='../S/src--filemanager--panel.c.html#L2888'>current_panel</a>    2888 src/filemanager/panel.c         try_to_select (current_panel, sel_entry);</span>
+<span class='curline'><a href='../S/src--filemanager--panel.c.html#L2908'>current_panel</a>    2908 src/filemanager/panel.c     do_panel_cd (other_panel, current_panel-&gt;cwd_vpath, cd_exact);</span>
+<span class='curline'><a href='../S/src--filemanager--panel.c.html#L3664'>current_panel</a>    3664 src/filemanager/panel.c         current_panel = panel;</span>
+<span class='curline'><a href='../S/src--filemanager--panel.c.html#L3724'>current_panel</a>    3724 src/filemanager/panel.c     mouse_mark_panel = current_panel;</span>
+<span class='curline'><a href='../S/src--filemanager--panel.c.html#L3982'>current_panel</a>    3982 src/filemanager/panel.c     if (panel != current_panel)</span>
+<span class='curline'><a href='../S/src--filemanager--panel.c.html#L3983'>current_panel</a>    3983 src/filemanager/panel.c         (void) mc_chdir (current_panel-&gt;cwd_vpath);</span>
+<span class='curline'><a href='../S/src--filemanager--panel.c.html#L4122'>current_panel</a>    4122 src/filemanager/panel.c     if (current_panel-&gt;marked == 0)</span>
+<span class='curline'><a href='../S/src--filemanager--panel.c.html#L4124'>current_panel</a>    4124 src/filemanager/panel.c                         (gpointer) selection (current_panel)-&gt;fname);</span>
+<span class='curline'><a href='../S/src--filemanager--panel.c.html#L4131'>current_panel</a>    4131 src/filemanager/panel.c         for (i = 0; i &lt; current_panel-&gt;dir.len; i++)</span>
+<span class='curline'><a href='../S/src--filemanager--panel.c.html#L4132'>current_panel</a>    4132 src/filemanager/panel.c             if (current_panel-&gt;dir.list[i].f.marked != 0)</span>
+<span class='curline'><a href='../S/src--filemanager--panel.c.html#L4136'>current_panel</a>    4136 src/filemanager/panel.c                     flist = g_strdup (current_panel-&gt;dir.list[i].fname);</span>
+<span class='curline'><a href='../S/src--filemanager--panel.c.html#L4145'>current_panel</a>    4145 src/filemanager/panel.c                         g_strconcat (flist, "\n", current_panel-&gt;dir.list[i].fname, (char *) NULL);</span>
+<span class='curline'><a href='../S/src--filemanager--panel.c.html#L4990'>current_panel</a>    4990 src/filemanager/panel.c     if (current_panel-&gt;is_panelized)</span>
+<span class='curline'><a href='../S/src--filemanager--panel.c.html#L4999'>current_panel</a>    4999 src/filemanager/panel.c     res = do_panel_cd (current_panel, _new_dir_vpath, exact);</span>
+<span class='curline'><a href='../S/src--filemanager--panel.c.html#L5006'>current_panel</a>    5006 src/filemanager/panel.c         path_element = vfs_path_get_by_index (current_panel-&gt;cwd_vpath, -1);</span>
+<span class='curline'><a href='../S/src--filemanager--panel.c.html#L5008'>current_panel</a>    5008 src/filemanager/panel.c             current_panel-&gt;codepage = get_codepage_index (path_element-&gt;encoding);</span>
+<span class='curline'><a href='../S/src--filemanager--panel.c.html#L5010'>current_panel</a>    5010 src/filemanager/panel.c             current_panel-&gt;codepage = SELECT_CHARSET_NO_TRANSLATE;</span>
+<span class='curline'><a href='../S/src--filemanager--panelize.c.html#L307'>current_panel</a>     307 src/filemanager/panelize.c     dir_list *list = &amp;current_panel-&gt;dir;</span>
+<span class='curline'><a href='../S/src--filemanager--panelize.c.html#L320'>current_panel</a>     320 src/filemanager/panelize.c     panel_clean_dir (current_panel);</span>
+<span class='curline'><a href='../S/src--filemanager--panelize.c.html#L322'>current_panel</a>     322 src/filemanager/panelize.c     panelize_change_root (current_panel-&gt;cwd_vpath);</span>
+<span class='curline'><a href='../S/src--filemanager--panelize.c.html#L351'>current_panel</a>     351 src/filemanager/panelize.c         file_mark (current_panel, list-&gt;len - 1, 0);</span>
+<span class='curline'><a href='../S/src--filemanager--panelize.c.html#L357'>current_panel</a>     357 src/filemanager/panelize.c     current_panel-&gt;is_panelized = TRUE;</span>
+<span class='curline'><a href='../S/src--filemanager--panelize.c.html#L367'>current_panel</a>     367 src/filemanager/panelize.c         panel_set_cwd (current_panel, vpath_root);</span>
+<span class='curline'><a href='../S/src--filemanager--panelize.c.html#L377'>current_panel</a>     377 src/filemanager/panelize.c     try_to_select (current_panel, NULL);</span>
+<span class='curline'><a href='../S/src--filemanager--panelize.c.html#L378'>current_panel</a>     378 src/filemanager/panelize.c     panel_re_sort (current_panel);</span>
+<span class='curline'><a href='../S/src--filemanager--panelize.c.html#L393'>current_panel</a>     393 src/filemanager/panelize.c         panelize_change_root (current_panel-&gt;cwd_vpath);</span>
+<span class='curline'><a href='../S/src--filemanager--panelize.c.html#L461'>current_panel</a>     461 src/filemanager/panelize.c     panelize_change_root (current_panel-&gt;cwd_vpath);</span>
+<span class='curline'><a href='../S/src--filemanager--tree.c.html#L586'>current_panel</a>     586 src/filemanager/tree.c             select_item (current_panel);</span>
+<span class='curline'><a href='../S/src--filemanager--tree.c.html#L591'>current_panel</a>     591 src/filemanager/tree.c         widget_redraw (WIDGET (current_panel));</span>
+<span class='curline'><a href='../S/src--filemanager--usermenu.c.html#L232'>current_panel</a>     232 src/filemanager/usermenu.c             panel = current_panel;</span>
+<span class='curline'><a href='../S/src--filemanager--usermenu.c.html#L751'>current_panel</a>     751 src/filemanager/usermenu.c             panel = current_panel;</span>
+<span class='curline'><a href='../S/src--setup.c.html#L1013'>current_panel</a>    1013 src/setup.c        if (current_panel != NULL)</span>
+<span class='curline'><a href='../S/src--subshell--proxyfunc.c.html#L59'>current_panel</a>      59 src/subshell/proxyfunc.c     return current_panel-&gt;cwd_vpath;</span>
+<span class='curline'><a href='../S/src--viewer--actions_cmd.c.html#L205'>current_panel</a>     205 src/viewer/actions_cmd.c         panel = current_panel;</span>
+<span class='curline'><a href='../S/src--viewer--actions_cmd.c.html#L292'>current_panel</a>     292 src/viewer/actions_cmd.c         view-&gt;dir = &amp;current_panel-&gt;dir;</span>
+<span class='curline'><a href='../S/src--viewer--actions_cmd.c.html#L293'>current_panel</a>     293 src/viewer/actions_cmd.c         view-&gt;dir_idx = &amp;current_panel-&gt;selected;</span>
+<span class='curline'><a href='../S/tests--src--filemanager--examine_cd.c.html#L50'>current_panel</a>      50 tests/src/filemanager/examine_cd.c WPanel *current_panel = NULL;</span>
+<span class='curline'><a href='../S/tests--src--filemanager--exec_get_export_variables_ext.c.html#L52'>current_panel</a>      52 tests/src/filemanager/exec_get_export_variables_ext.c     current_panel = g_new0 (WPanel, 1);</span>
+<span class='curline'><a href='../S/tests--src--filemanager--exec_get_export_variables_ext.c.html#L53'>current_panel</a>      53 tests/src/filemanager/exec_get_export_variables_ext.c     current_panel-&gt;cwd_vpath = vfs_path_from_str ("/home");</span>
+<span class='curline'><a href='../S/tests--src--filemanager--exec_get_export_variables_ext.c.html#L54'>current_panel</a>      54 tests/src/filemanager/exec_get_export_variables_ext.c     current_panel-&gt;dir.size = DIR_LIST_MIN_SIZE;</span>
+<span class='curline'><a href='../S/tests--src--filemanager--exec_get_export_variables_ext.c.html#L55'>current_panel</a>      55 tests/src/filemanager/exec_get_export_variables_ext.c     current_panel-&gt;dir.list = g_new0 (file_entry_t, current_panel-&gt;dir.size);</span>
+<span class='curline'><a href='../S/tests--src--filemanager--exec_get_export_variables_ext.c.html#L56'>current_panel</a>      56 tests/src/filemanager/exec_get_export_variables_ext.c     current_panel-&gt;dir.len = 0;</span>
+<span class='curline'><a href='../S/tests--src--filemanager--exec_get_export_variables_ext.c.html#L77'>current_panel</a>      77 tests/src/filemanager/exec_get_export_variables_ext.c     current_panel-&gt;selected = 0;</span>
+<span class='curline'><a href='../S/tests--src--filemanager--exec_get_export_variables_ext.c.html#L78'>current_panel</a>      78 tests/src/filemanager/exec_get_export_variables_ext.c     current_panel-&gt;dir.len = 3;</span>
+<span class='curline'><a href='../S/tests--src--filemanager--exec_get_export_variables_ext.c.html#L79'>current_panel</a>      79 tests/src/filemanager/exec_get_export_variables_ext.c     current_panel-&gt;dir.list[0].fname = (char *) "selected file.txt";</span>
+<span class='curline'><a href='../S/tests--src--filemanager--exec_get_export_variables_ext.c.html#L80'>current_panel</a>      80 tests/src/filemanager/exec_get_export_variables_ext.c     current_panel-&gt;dir.list[1].fname = (char *) "tagged file1.txt";</span>
+<span class='curline'><a href='../S/tests--src--filemanager--exec_get_export_variables_ext.c.html#L81'>current_panel</a>      81 tests/src/filemanager/exec_get_export_variables_ext.c     current_panel-&gt;dir.list[1].f.marked = TRUE;</span>
+<span class='curline'><a href='../S/tests--src--filemanager--exec_get_export_variables_ext.c.html#L82'>current_panel</a>      82 tests/src/filemanager/exec_get_export_variables_ext.c     current_panel-&gt;dir.list[2].fname = (char *) "tagged file2.txt";</span>
+<span class='curline'><a href='../S/tests--src--filemanager--exec_get_export_variables_ext.c.html#L83'>current_panel</a>      83 tests/src/filemanager/exec_get_export_variables_ext.c     current_panel-&gt;dir.list[2].f.marked = TRUE;</span>
+</pre>
+</body>
+</html>

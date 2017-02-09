@@ -1,0 +1,61 @@
+<!DOCTYPE html PUBLIC '-//W3C//DTD XHTML 1.0 Transitional//EN' 'http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd'>
+<html xmlns='http://www.w3.org/1999/xhtml'>
+<head>
+<title>vclass</title>
+<meta name='robots' content='noindex,nofollow' />
+<meta name='generator' content='GLOBAL-6.5.2' />
+<meta http-equiv='Content-Style-Type' content='text/css' />
+<link rel='stylesheet' type='text/css' href='../style.css' />
+</head>
+<body>
+<pre>
+<span class='curline'><a href='../S/lib--event-types.h.html#L28'>vclass</a>             28 lib/event-types.h     struct vfs_class *vclass;</span>
+<span class='curline'><a href='../S/lib--utilunix.c.html#L967'>vclass</a>            967 lib/utilunix.c                     vfs_class *vclass;</span>
+<span class='curline'><a href='../S/lib--utilunix.c.html#L975'>vclass</a>            975 lib/utilunix.c                     vclass = vfs_prefix_to_class (vfs_prefix);</span>
+<span class='curline'><a href='../S/lib--utilunix.c.html#L978'>vclass</a>            978 lib/utilunix.c                     if (vclass != NULL)</span>
+<span class='curline'><a href='../S/lib--utilunix.c.html#L980'>vclass</a>            980 lib/utilunix.c                         struct vfs_s_subclass *sub = (struct vfs_s_subclass *) vclass-&gt;data;</span>
+<span class='curline'><a href='../S/lib--vfs--direntry.c.html#L1445'>vclass</a>           1445 lib/vfs/direntry.c vfs_s_init_class (struct vfs_class *vclass, struct vfs_s_subclass *sub)</span>
+<span class='curline'><a href='../S/lib--vfs--direntry.c.html#L1447'>vclass</a>           1447 lib/vfs/direntry.c     vclass-&gt;data = sub;</span>
+<span class='curline'><a href='../S/lib--vfs--direntry.c.html#L1448'>vclass</a>           1448 lib/vfs/direntry.c     vclass-&gt;fill_names = vfs_s_fill_names;</span>
+<span class='curline'><a href='../S/lib--vfs--direntry.c.html#L1449'>vclass</a>           1449 lib/vfs/direntry.c     vclass-&gt;open = vfs_s_open;</span>
+<span class='curline'><a href='../S/lib--vfs--direntry.c.html#L1450'>vclass</a>           1450 lib/vfs/direntry.c     vclass-&gt;close = vfs_s_close;</span>
+<span class='curline'><a href='../S/lib--vfs--direntry.c.html#L1451'>vclass</a>           1451 lib/vfs/direntry.c     vclass-&gt;read = vfs_s_read;</span>
+<span class='curline'><a href='../S/lib--vfs--direntry.c.html#L1454'>vclass</a>           1454 lib/vfs/direntry.c         vclass-&gt;write = vfs_s_write;</span>
+<span class='curline'><a href='../S/lib--vfs--direntry.c.html#L1456'>vclass</a>           1456 lib/vfs/direntry.c     vclass-&gt;opendir = vfs_s_opendir;</span>
+<span class='curline'><a href='../S/lib--vfs--direntry.c.html#L1457'>vclass</a>           1457 lib/vfs/direntry.c     vclass-&gt;readdir = vfs_s_readdir;</span>
+<span class='curline'><a href='../S/lib--vfs--direntry.c.html#L1458'>vclass</a>           1458 lib/vfs/direntry.c     vclass-&gt;closedir = vfs_s_closedir;</span>
+<span class='curline'><a href='../S/lib--vfs--direntry.c.html#L1459'>vclass</a>           1459 lib/vfs/direntry.c     vclass-&gt;stat = vfs_s_stat;</span>
+<span class='curline'><a href='../S/lib--vfs--direntry.c.html#L1460'>vclass</a>           1460 lib/vfs/direntry.c     vclass-&gt;lstat = vfs_s_lstat;</span>
+<span class='curline'><a href='../S/lib--vfs--direntry.c.html#L1461'>vclass</a>           1461 lib/vfs/direntry.c     vclass-&gt;fstat = vfs_s_fstat;</span>
+<span class='curline'><a href='../S/lib--vfs--direntry.c.html#L1462'>vclass</a>           1462 lib/vfs/direntry.c     vclass-&gt;readlink = vfs_s_readlink;</span>
+<span class='curline'><a href='../S/lib--vfs--direntry.c.html#L1463'>vclass</a>           1463 lib/vfs/direntry.c     vclass-&gt;chdir = vfs_s_chdir;</span>
+<span class='curline'><a href='../S/lib--vfs--direntry.c.html#L1464'>vclass</a>           1464 lib/vfs/direntry.c     vclass-&gt;ferrno = vfs_s_ferrno;</span>
+<span class='curline'><a href='../S/lib--vfs--direntry.c.html#L1465'>vclass</a>           1465 lib/vfs/direntry.c     vclass-&gt;lseek = vfs_s_lseek;</span>
+<span class='curline'><a href='../S/lib--vfs--direntry.c.html#L1466'>vclass</a>           1466 lib/vfs/direntry.c     vclass-&gt;getid = vfs_s_getid;</span>
+<span class='curline'><a href='../S/lib--vfs--direntry.c.html#L1467'>vclass</a>           1467 lib/vfs/direntry.c     vclass-&gt;nothingisopen = vfs_s_nothingisopen;</span>
+<span class='curline'><a href='../S/lib--vfs--direntry.c.html#L1468'>vclass</a>           1468 lib/vfs/direntry.c     vclass-&gt;free = vfs_s_free;</span>
+<span class='curline'><a href='../S/lib--vfs--direntry.c.html#L1471'>vclass</a>           1471 lib/vfs/direntry.c         vclass-&gt;getlocalcopy = vfs_s_getlocalcopy;</span>
+<span class='curline'><a href='../S/lib--vfs--direntry.c.html#L1472'>vclass</a>           1472 lib/vfs/direntry.c         vclass-&gt;ungetlocalcopy = vfs_s_ungetlocalcopy;</span>
+<span class='curline'><a href='../S/lib--vfs--direntry.c.html#L1479'>vclass</a>           1479 lib/vfs/direntry.c     vclass-&gt;setctl = vfs_s_setctl;</span>
+<span class='curline'><a href='../S/lib--vfs--gc.c.html#L213'>vclass</a>            213 lib/vfs/gc.c   vfs_stamp_create (struct vfs_class *vclass, vfsid id)</span>
+<span class='curline'><a href='../S/lib--vfs--gc.c.html#L217'>vclass</a>            217 lib/vfs/gc.c       ev_vfs_stamp_create_t event_data = { vclass, id, FALSE };</span>
+<span class='curline'><a href='../S/lib--vfs--gc.c.html#L235'>vclass</a>            235 lib/vfs/gc.c       if (!(id == NULL || (path_element-&gt;class == vclass &amp;&amp; nvfsid == id)))</span>
+<span class='curline'><a href='../S/lib--vfs--gc.c.html#L239'>vclass</a>            239 lib/vfs/gc.c           if (!event_data.ret &amp;&amp; vclass != NULL &amp;&amp; vclass-&gt;nothingisopen != NULL</span>
+<span class='curline'><a href='../S/lib--vfs--gc.c.html#L240'>vclass</a>            240 lib/vfs/gc.c               &amp;&amp; vclass-&gt;nothingisopen (id) != 0)</span>
+<span class='curline'><a href='../S/lib--vfs--gc.c.html#L241'>vclass</a>            241 lib/vfs/gc.c               vfs_addstamp (vclass, id);</span>
+<span class='curline'><a href='../S/lib--vfs--gc.h.html#L29'>vclass</a>             29 lib/vfs/gc.h   void vfs_stamp (struct vfs_class *vclass, vfsid id);</span>
+<span class='curline'><a href='../S/lib--vfs--gc.h.html#L30'>vclass</a>             30 lib/vfs/gc.h   void vfs_rmstamp (struct vfs_class *vclass, vfsid id);</span>
+<span class='curline'><a href='../S/lib--vfs--gc.h.html#L31'>vclass</a>             31 lib/vfs/gc.h   void vfs_stamp_create (struct vfs_class *vclass, vfsid id);</span>
+<span class='curline'><a href='../S/lib--vfs--vfs.c.html#L87'>vclass</a>             87 lib/vfs/vfs.c      vfs_class *vclass;</span>
+<span class='curline'><a href='../S/lib--vfs--vfs.c.html#L254'>vclass</a>            254 lib/vfs/vfs.c      return h-&gt;vclass;</span>
+<span class='curline'><a href='../S/lib--vfs--vfs.c.html#L264'>vclass</a>            264 lib/vfs/vfs.c  vfs_new_handle (struct vfs_class *vclass, void *fsinfo)</span>
+<span class='curline'><a href='../S/lib--vfs--vfs.c.html#L270'>vclass</a>            270 lib/vfs/vfs.c      h-&gt;vclass = vclass;</span>
+<span class='curline'><a href='../S/lib--vfs--vfs.h.html#L279'>vclass</a>            279 lib/vfs/vfs.h  int vfs_new_handle (struct vfs_class *vclass, void *fsinfo);</span>
+<span class='curline'><a href='../S/lib--vfs--xdirentry.h.html#L179'>vclass</a>            179 lib/vfs/xdirentry.h void vfs_s_init_class (struct vfs_class *vclass, struct vfs_s_subclass *sub);</span>
+<span class='curline'><a href='../S/src--filemanager--midnight.c.html#L467'>vclass</a>            467 src/filemanager/midnight.c check_panel_timestamp (const WPanel * panel, panel_view_mode_t mode, struct vfs_class *vclass,</span>
+<span class='curline'><a href='../S/src--filemanager--midnight.c.html#L476'>vclass</a>            476 src/filemanager/midnight.c         if (path_element-&gt;class != vclass)</span>
+<span class='curline'><a href='../S/src--filemanager--midnight.c.html#L499'>vclass</a>            499 src/filemanager/midnight.c         check_panel_timestamp (current_panel, get_current_type (), event_data-&gt;vclass,</span>
+<span class='curline'><a href='../S/src--filemanager--midnight.c.html#L518'>vclass</a>            518 src/filemanager/midnight.c         check_panel_timestamp (other_panel, get_other_type (), event_data-&gt;vclass, event_data-&gt;id);</span>
+</pre>
+</body>
+</html>

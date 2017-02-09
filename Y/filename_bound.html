@@ -1,0 +1,26 @@
+<!DOCTYPE html PUBLIC '-//W3C//DTD XHTML 1.0 Transitional//EN' 'http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd'>
+<html xmlns='http://www.w3.org/1999/xhtml'>
+<head>
+<title>filename_bound</title>
+<meta name='robots' content='noindex,nofollow' />
+<meta name='generator' content='GLOBAL-6.5.2' />
+<meta http-equiv='Content-Style-Type' content='text/css' />
+<link rel='stylesheet' type='text/css' href='../style.css' />
+</head>
+<body>
+<pre>
+<span class='curline'><a href='../S/src--vfs--fish--fish.c.html#L742'>filename_bound</a>    742 src/vfs/fish/fish.c                 char *filename_bound;</span>
+<span class='curline'><a href='../S/src--vfs--fish--fish.c.html#L744'>filename_bound</a>    744 src/vfs/fish/fish.c                 filename_bound = filename + strlen (filename);</span>
+<span class='curline'><a href='../S/src--vfs--fish--fish.c.html#L758'>filename_bound</a>    758 src/vfs/fish/fish.c                     linkname_bound = filename_bound;</span>
+<span class='curline'><a href='../S/src--vfs--fish--fish.c.html#L767'>filename_bound</a>    767 src/vfs/fish/fish.c                         linkname = filename_bound;</span>
+<span class='curline'><a href='../S/src--vfs--fish--fish.c.html#L768'>filename_bound</a>    768 src/vfs/fish/fish.c                         if (filename_bound &gt; filename &amp;&amp; *(filename_bound - 1) == '"')</span>
+<span class='curline'><a href='../S/src--vfs--fish--fish.c.html#L769'>filename_bound</a>    769 src/vfs/fish/fish.c                             --filename_bound;   /* skip trailing " */</span>
+<span class='curline'><a href='../S/src--vfs--fish--fish.c.html#L773'>filename_bound</a>    773 src/vfs/fish/fish.c                         filename_bound = linkname;</span>
+<span class='curline'><a href='../S/src--vfs--fish--fish.c.html#L779'>filename_bound</a>    779 src/vfs/fish/fish.c                     ent-&gt;name = g_strndup (filename, filename_bound - filename);</span>
+<span class='curline'><a href='../S/src--vfs--fish--fish.c.html#L792'>filename_bound</a>    792 src/vfs/fish/fish.c                     if (filename_bound - filename &gt; 2)</span>
+<span class='curline'><a href='../S/src--vfs--fish--fish.c.html#L800'>filename_bound</a>    800 src/vfs/fish/fish.c                         if (*(filename_bound - 1) == '"')</span>
+<span class='curline'><a href='../S/src--vfs--fish--fish.c.html#L801'>filename_bound</a>    801 src/vfs/fish/fish.c                             --filename_bound;</span>
+<span class='curline'><a href='../S/src--vfs--fish--fish.c.html#L803'>filename_bound</a>    803 src/vfs/fish/fish.c                     ent-&gt;name = g_strndup (filename, filename_bound - filename);</span>
+</pre>
+</body>
+</html>

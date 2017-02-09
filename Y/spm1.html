@@ -1,0 +1,28 @@
+<!DOCTYPE html PUBLIC '-//W3C//DTD XHTML 1.0 Transitional//EN' 'http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd'>
+<html xmlns='http://www.w3.org/1999/xhtml'>
+<head>
+<title>spm1</title>
+<meta name='robots' content='noindex,nofollow' />
+<meta name='generator' content='GLOBAL-6.5.2' />
+<meta http-equiv='Content-Style-Type' content='text/css' />
+<link rel='stylesheet' type='text/css' href='../style.css' />
+</head>
+<body>
+<pre>
+<span class='curline'><a href='../S/src--editor--edit.c.html#L2341'>spm1</a>             2341 src/editor/edit.c     unsigned long spm1;</span>
+<span class='curline'><a href='../S/src--editor--edit.c.html#L2360'>spm1</a>             2360 src/editor/edit.c     spm1 = (edit-&gt;undo_stack_pointer - 1) &amp; edit-&gt;undo_stack_size_mask;</span>
+<span class='curline'><a href='../S/src--editor--edit.c.html#L2372'>spm1</a>             2372 src/editor/edit.c         &amp;&amp; spm1 != edit-&gt;undo_stack_bottom</span>
+<span class='curline'><a href='../S/src--editor--edit.c.html#L2376'>spm1</a>             2376 src/editor/edit.c         if (edit-&gt;undo_stack[spm1] &lt; 0)</span>
+<span class='curline'><a href='../S/src--editor--edit.c.html#L2379'>spm1</a>             2379 src/editor/edit.c             if (d == c &amp;&amp; edit-&gt;undo_stack[spm1] &gt; -1000000000)</span>
+<span class='curline'><a href='../S/src--editor--edit.c.html#L2382'>spm1</a>             2382 src/editor/edit.c                     edit-&gt;undo_stack[spm1]--;</span>
+<span class='curline'><a href='../S/src--editor--edit.c.html#L2388'>spm1</a>             2388 src/editor/edit.c             d = edit-&gt;undo_stack[spm1];</span>
+<span class='curline'><a href='../S/src--editor--edit.c.html#L2430'>spm1</a>             2430 src/editor/edit.c     unsigned long spm1;</span>
+<span class='curline'><a href='../S/src--editor--edit.c.html#L2448'>spm1</a>             2448 src/editor/edit.c     spm1 = (edit-&gt;redo_stack_pointer - 1) &amp; edit-&gt;redo_stack_size_mask;</span>
+<span class='curline'><a href='../S/src--editor--edit.c.html#L2451'>spm1</a>             2451 src/editor/edit.c         &amp;&amp; spm1 != edit-&gt;redo_stack_bottom</span>
+<span class='curline'><a href='../S/src--editor--edit.c.html#L2455'>spm1</a>             2455 src/editor/edit.c         if (edit-&gt;redo_stack[spm1] &lt; 0)</span>
+<span class='curline'><a href='../S/src--editor--edit.c.html#L2458'>spm1</a>             2458 src/editor/edit.c             if (d == c &amp;&amp; edit-&gt;redo_stack[spm1] &gt; -1000000000)</span>
+<span class='curline'><a href='../S/src--editor--edit.c.html#L2461'>spm1</a>             2461 src/editor/edit.c                     edit-&gt;redo_stack[spm1]--;</span>
+<span class='curline'><a href='../S/src--editor--edit.c.html#L2467'>spm1</a>             2467 src/editor/edit.c             d = edit-&gt;redo_stack[spm1];</span>
+</pre>
+</body>
+</html>

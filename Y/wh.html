@@ -1,0 +1,87 @@
+<!DOCTYPE html PUBLIC '-//W3C//DTD XHTML 1.0 Transitional//EN' 'http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd'>
+<html xmlns='http://www.w3.org/1999/xhtml'>
+<head>
+<title>wh</title>
+<meta name='robots' content='noindex,nofollow' />
+<meta name='generator' content='GLOBAL-6.5.2' />
+<meta http-equiv='Content-Style-Type' content='text/css' />
+<link rel='stylesheet' type='text/css' href='../style.css' />
+</head>
+<body>
+<pre>
+<span class='curline'><a href='../S/lib--widget--dialog-switch.c.html#L266'>wh</a>                266 lib/widget/dialog-switch.c         Widget *wh = WIDGET (h);</span>
+<span class='curline'><a href='../S/lib--widget--dialog-switch.c.html#L269'>wh</a>                269 lib/widget/dialog-switch.c         widget_set_state (wh, WST_SUSPENDED, TRUE);</span>
+<span class='curline'><a href='../S/lib--widget--dialog-switch.c.html#L271'>wh</a>                271 lib/widget/dialog-switch.c         if (widget_get_state (wh, WST_CLOSED))</span>
+<span class='curline'><a href='../S/lib--widget--dialog.c.html#L332'>wh</a>                332 lib/widget/dialog.c     Widget *wh = WIDGET (h);</span>
+<span class='curline'><a href='../S/lib--widget--dialog.c.html#L337'>wh</a>                337 lib/widget/dialog.c     if (mouse_close_dialog &amp;&amp; (wh-&gt;pos_flags &amp; WPOS_FULLSCREEN) == 0</span>
+<span class='curline'><a href='../S/lib--widget--dialog.c.html#L339'>wh</a>                339 lib/widget/dialog.c         &amp;&amp; !mouse_global_in_widget (event, wh))</span>
+<span class='curline'><a href='../S/lib--widget--dialog.c.html#L346'>wh</a>                346 lib/widget/dialog.c     if (wh-&gt;mouse_callback != NULL)</span>
+<span class='curline'><a href='../S/lib--widget--dialog.c.html#L350'>wh</a>                350 lib/widget/dialog.c         mou = dlg_mouse_translator (event, wh);</span>
+<span class='curline'><a href='../S/lib--widget--dialog.c.html#L503'>wh</a>                503 lib/widget/dialog.c     Widget *wh = WIDGET (h);</span>
+<span class='curline'><a href='../S/lib--widget--dialog.c.html#L509'>wh</a>                509 lib/widget/dialog.c     if (!widget_get_state (wh, WST_MODAL) &amp;&amp; mc_global.midnight_shutdown)</span>
+<span class='curline'><a href='../S/lib--widget--dialog.c.html#L515'>wh</a>                515 lib/widget/dialog.c     while (widget_get_state (wh, WST_ACTIVE))</span>
+<span class='curline'><a href='../S/lib--widget--dialog.c.html#L527'>wh</a>                527 lib/widget/dialog.c             while (widget_get_state (wh, WST_IDLE) &amp;&amp; is_idle ())</span>
+<span class='curline'><a href='../S/lib--widget--dialog.c.html#L528'>wh</a>                528 lib/widget/dialog.c                 send_message (wh, NULL, MSG_IDLE, 0, NULL);</span>
+<span class='curline'><a href='../S/lib--widget--dialog.c.html#L531'>wh</a>                531 lib/widget/dialog.c             if (!widget_get_state (wh, WST_ACTIVE))</span>
+<span class='curline'><a href='../S/lib--widget--dialog.c.html#L543'>wh</a>                543 lib/widget/dialog.c         if (widget_get_state (wh, WST_CLOSED))</span>
+<span class='curline'><a href='../S/lib--widget--dialog.c.html#L569'>wh</a>                569 lib/widget/dialog.c     Widget *wh = WIDGET (c-&gt;owner);</span>
+<span class='curline'><a href='../S/lib--widget--dialog.c.html#L577'>wh</a>                577 lib/widget/dialog.c         x = wh-&gt;x + (wh-&gt;cols - c-&gt;cols) / 2;</span>
+<span class='curline'><a href='../S/lib--widget--dialog.c.html#L589'>wh</a>                589 lib/widget/dialog.c         y = wh-&gt;y + (wh-&gt;lines - c-&gt;lines) / 2;</span>
+<span class='curline'><a href='../S/lib--widget--dialog.c.html#L641'>wh</a>                641 lib/widget/dialog.c     Widget *wh = WIDGET (h);</span>
+<span class='curline'><a href='../S/lib--widget--dialog.c.html#L645'>wh</a>                645 lib/widget/dialog.c     if (!widget_get_state (wh, WST_ACTIVE))</span>
+<span class='curline'><a href='../S/lib--widget--dialog.c.html#L652'>wh</a>                652 lib/widget/dialog.c     tty_draw_box (wh-&gt;y + space, wh-&gt;x + space, wh-&gt;lines - 2 * space, wh-&gt;cols - 2 * space, FALSE);</span>
+<span class='curline'><a href='../S/lib--widget--dialog.c.html#L657'>wh</a>                657 lib/widget/dialog.c         widget_move (h, space, (wh-&gt;cols - str_term_width1 (h-&gt;title)) / 2);</span>
+<span class='curline'><a href='../S/lib--widget--dialog.c.html#L668'>wh</a>                668 lib/widget/dialog.c     Widget *wh = WIDGET (h);</span>
+<span class='curline'><a href='../S/lib--widget--dialog.c.html#L675'>wh</a>                675 lib/widget/dialog.c     ox = wh-&gt;x;</span>
+<span class='curline'><a href='../S/lib--widget--dialog.c.html#L676'>wh</a>                676 lib/widget/dialog.c     oy = wh-&gt;y;</span>
+<span class='curline'><a href='../S/lib--widget--dialog.c.html#L677'>wh</a>                677 lib/widget/dialog.c     oc = wh-&gt;cols;</span>
+<span class='curline'><a href='../S/lib--widget--dialog.c.html#L678'>wh</a>                678 lib/widget/dialog.c     ol = wh-&gt;lines;</span>
+<span class='curline'><a href='../S/lib--widget--dialog.c.html#L680'>wh</a>                680 lib/widget/dialog.c     wh-&gt;x = x;</span>
+<span class='curline'><a href='../S/lib--widget--dialog.c.html#L681'>wh</a>                681 lib/widget/dialog.c     wh-&gt;y = y;</span>
+<span class='curline'><a href='../S/lib--widget--dialog.c.html#L682'>wh</a>                682 lib/widget/dialog.c     wh-&gt;lines = lines;</span>
+<span class='curline'><a href='../S/lib--widget--dialog.c.html#L683'>wh</a>                683 lib/widget/dialog.c     wh-&gt;cols = cols;</span>
+<span class='curline'><a href='../S/lib--widget--dialog.c.html#L693'>wh</a>                693 lib/widget/dialog.c     wss.shift_x = wh-&gt;x - ox;</span>
+<span class='curline'><a href='../S/lib--widget--dialog.c.html#L694'>wh</a>                694 lib/widget/dialog.c     wss.scale_x = wh-&gt;cols - oc;</span>
+<span class='curline'><a href='../S/lib--widget--dialog.c.html#L695'>wh</a>                695 lib/widget/dialog.c     wss.shift_y = wh-&gt;y - oy;</span>
+<span class='curline'><a href='../S/lib--widget--dialog.c.html#L696'>wh</a>                696 lib/widget/dialog.c     wss.scale_y = wh-&gt;lines - ol;</span>
+<span class='curline'><a href='../S/lib--widget--dialog.c.html#L832'>wh</a>                832 lib/widget/dialog.c     Widget *wh = WIDGET (h);</span>
+<span class='curline'><a href='../S/lib--widget--dialog.c.html#L834'>wh</a>                834 lib/widget/dialog.c     if (wh != NULL &amp;&amp; widget_get_state (wh, WST_ACTIVE))</span>
+<span class='curline'><a href='../S/lib--widget--dialog.c.html#L835'>wh</a>                835 lib/widget/dialog.c         tty_fill_region (wh-&gt;y, wh-&gt;x, wh-&gt;lines, wh-&gt;cols, ' ');</span>
+<span class='curline'><a href='../S/lib--widget--dialog.c.html#L846'>wh</a>                846 lib/widget/dialog.c     Widget *wh = WIDGET (h);</span>
+<span class='curline'><a href='../S/lib--widget--dialog.c.html#L857'>wh</a>                857 lib/widget/dialog.c         widget-&gt;x = (wh-&gt;cols - widget-&gt;cols) / 2;</span>
+<span class='curline'><a href='../S/lib--widget--dialog.c.html#L858'>wh</a>                858 lib/widget/dialog.c     widget-&gt;x += wh-&gt;x;</span>
+<span class='curline'><a href='../S/lib--widget--dialog.c.html#L861'>wh</a>                861 lib/widget/dialog.c         widget-&gt;y = (wh-&gt;lines - widget-&gt;lines) / 2;</span>
+<span class='curline'><a href='../S/lib--widget--dialog.c.html#L862'>wh</a>                862 lib/widget/dialog.c     widget-&gt;y += wh-&gt;y;</span>
+<span class='curline'><a href='../S/lib--widget--dialog.c.html#L892'>wh</a>                892 lib/widget/dialog.c     if (widget_get_state (wh, WST_ACTIVE))</span>
+<span class='curline'><a href='../S/lib--widget--dialog.c.html#L1122'>wh</a>               1122 lib/widget/dialog.c     Widget *wh = WIDGET (h);</span>
+<span class='curline'><a href='../S/lib--widget--dialog.c.html#L1125'>wh</a>               1125 lib/widget/dialog.c         widget_set_state (wh, WST_MODAL, TRUE);</span>
+<span class='curline'><a href='../S/lib--widget--dialog.c.html#L1131'>wh</a>               1131 lib/widget/dialog.c     if (widget_get_state (wh, WST_CONSTRUCT))</span>
+<span class='curline'><a href='../S/lib--widget--dialog.c.html#L1133'>wh</a>               1133 lib/widget/dialog.c         if (!widget_get_state (wh, WST_MODAL))</span>
+<span class='curline'><a href='../S/lib--widget--dialog.c.html#L1146'>wh</a>               1146 lib/widget/dialog.c     widget_set_state (wh, WST_ACTIVE, TRUE);</span>
+<span class='curline'><a href='../S/src--editor--editdraw.c.html#L865'>wh</a>                865 src/editor/editdraw.c     Widget *wh = WIDGET (w-&gt;owner);</span>
+<span class='curline'><a href='../S/src--editor--editdraw.c.html#L875'>wh</a>                875 src/editor/editdraw.c     last_line = wh-&gt;y + wh-&gt;lines - 1;</span>
+<span class='curline'><a href='../S/src--editor--editdraw.c.html#L881'>wh</a>                881 src/editor/editdraw.c     last_column = wh-&gt;x + wh-&gt;cols - 1;</span>
+<span class='curline'><a href='../S/src--editor--editdraw.c.html#L888'>wh</a>                888 src/editor/editdraw.c     if (y2 &lt; wh-&gt;y + 1 /* menubar */ )</span>
+<span class='curline'><a href='../S/src--editor--editdraw.c.html#L892'>wh</a>                892 src/editor/editdraw.c     if (x2 &lt; wh-&gt;x)</span>
+<span class='curline'><a href='../S/src--editor--editdraw.c.html#L902'>wh</a>                902 src/editor/editdraw.c         else if (y1 &gt;= wh-&gt;y + 1 /* menubar */ )</span>
+<span class='curline'><a href='../S/src--editor--editdraw.c.html#L903'>wh</a>                903 src/editor/editdraw.c             end_row = wh-&gt;lines - 1 - y1 - 1;</span>
+<span class='curline'><a href='../S/src--editor--editdraw.c.html#L905'>wh</a>                905 src/editor/editdraw.c             end_row = start_row + wh-&gt;lines - 1 - 1;</span>
+<span class='curline'><a href='../S/src--editor--editdraw.c.html#L909'>wh</a>                909 src/editor/editdraw.c         else if (x1 &gt;= wh-&gt;x)</span>
+<span class='curline'><a href='../S/src--editor--editdraw.c.html#L910'>wh</a>                910 src/editor/editdraw.c             end_column = wh-&gt;cols - 1 - x1;</span>
+<span class='curline'><a href='../S/src--editor--editdraw.c.html#L912'>wh</a>                912 src/editor/editdraw.c             end_column = start_column + wh-&gt;cols - 1;</span>
+<span class='curline'><a href='../S/src--editor--editwidget.c.html#L198'>wh</a>                198 src/editor/editwidget.c         Widget *wh = WIDGET (w-&gt;owner);</span>
+<span class='curline'><a href='../S/src--editor--editwidget.c.html#L200'>wh</a>                200 src/editor/editwidget.c         w-&gt;lines = wh-&gt;lines - 2;</span>
+<span class='curline'><a href='../S/src--editor--editwidget.c.html#L201'>wh</a>                201 src/editor/editwidget.c         w-&gt;cols = wh-&gt;cols;</span>
+<span class='curline'><a href='../S/src--editor--editwidget.c.html#L235'>wh</a>                235 src/editor/editwidget.c     Widget *wh = WIDGET (w-&gt;owner);</span>
+<span class='curline'><a href='../S/src--editor--editwidget.c.html#L240'>wh</a>                240 src/editor/editwidget.c         if (w-&gt;y &gt; wh-&gt;y + 1)   /* menubar */</span>
+<span class='curline'><a href='../S/src--editor--editwidget.c.html#L244'>wh</a>                244 src/editor/editwidget.c         if (w-&gt;y &lt; wh-&gt;y + wh-&gt;lines - 2)       /* buttonbar */</span>
+<span class='curline'><a href='../S/src--editor--editwidget.c.html#L248'>wh</a>                248 src/editor/editwidget.c         if (w-&gt;x + w-&gt;cols &gt; wh-&gt;x)</span>
+<span class='curline'><a href='../S/src--editor--editwidget.c.html#L252'>wh</a>                252 src/editor/editwidget.c         if (w-&gt;x &lt; wh-&gt;x + wh-&gt;cols)</span>
+<span class='curline'><a href='../S/src--editor--editwidget.c.html#L275'>wh</a>                275 src/editor/editwidget.c     Widget *wh = WIDGET (w-&gt;owner);</span>
+<span class='curline'><a href='../S/src--editor--editwidget.c.html#L284'>wh</a>                284 src/editor/editwidget.c         if (w-&gt;y + w-&gt;lines &lt; wh-&gt;y + wh-&gt;lines - 1)    /* buttonbar */</span>
+<span class='curline'><a href='../S/src--editor--editwidget.c.html#L292'>wh</a>                292 src/editor/editwidget.c         if (w-&gt;x + w-&gt;cols &lt; wh-&gt;x + wh-&gt;cols)</span>
+<span class='curline'><a href='../S/src--editor--editwidget.c.html#L406'>wh</a>                406 src/editor/editwidget.c     Widget *wh = WIDGET (h);</span>
+<span class='curline'><a href='../S/src--editor--editwidget.c.html#L412'>wh</a>                412 src/editor/editwidget.c         edit_add_window (h, wh-&gt;y + 1, wh-&gt;x, wh-&gt;lines - 2, wh-&gt;cols, NULL, 0);</span>
+</pre>
+</body>
+</html>

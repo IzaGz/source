@@ -1,0 +1,29 @@
+<!DOCTYPE html PUBLIC '-//W3C//DTD XHTML 1.0 Transitional//EN' 'http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd'>
+<html xmlns='http://www.w3.org/1999/xhtml'>
+<head>
+<title>cc_offset</title>
+<meta name='robots' content='noindex,nofollow' />
+<meta name='generator' content='GLOBAL-6.5.2' />
+<meta http-equiv='Content-Style-Type' content='text/css' />
+<link rel='stylesheet' type='text/css' href='../style.css' />
+</head>
+<body>
+<pre>
+<span class='curline'><a href='../S/src--viewer--coord_cache.c.html#L106'>cc_offset</a>         106 src/viewer/coord_cache.c     return (a-&gt;cc_offset &lt; b-&gt;cc_offset);</span>
+<span class='curline'><a href='../S/src--viewer--coord_cache.c.html#L233'>cc_offset</a>         233 src/viewer/coord_cache.c                         (uintmax_t) cache-&gt;cache[i]-&gt;cc_offset,</span>
+<span class='curline'><a href='../S/src--viewer--coord_cache.c.html#L304'>cc_offset</a>         304 src/viewer/coord_cache.c         current.cc_offset = 0;</span>
+<span class='curline'><a href='../S/src--viewer--coord_cache.c.html#L330'>cc_offset</a>         330 src/viewer/coord_cache.c         limit = cache-&gt;cache[i + 1]-&gt;cc_offset;</span>
+<span class='curline'><a href='../S/src--viewer--coord_cache.c.html#L332'>cc_offset</a>         332 src/viewer/coord_cache.c         limit = current.cc_offset + VIEW_COORD_CACHE_GRANUL;</span>
+<span class='curline'><a href='../S/src--viewer--coord_cache.c.html#L336'>cc_offset</a>         336 src/viewer/coord_cache.c     for (; current.cc_offset &lt; limit; current = next)</span>
+<span class='curline'><a href='../S/src--viewer--coord_cache.c.html#L340'>cc_offset</a>         340 src/viewer/coord_cache.c         if (!mcview_get_byte (view, current.cc_offset, &amp;c))</span>
+<span class='curline'><a href='../S/src--viewer--coord_cache.c.html#L356'>cc_offset</a>         356 src/viewer/coord_cache.c         next.cc_offset = current.cc_offset + 1;</span>
+<span class='curline'><a href='../S/src--viewer--coord_cache.c.html#L366'>cc_offset</a>         366 src/viewer/coord_cache.c             mcview_get_byte_indexed (view, current.cc_offset, 1, &amp;nextc);</span>
+<span class='curline'><a href='../S/src--viewer--coord_cache.c.html#L412'>cc_offset</a>         412 src/viewer/coord_cache.c             nroff_state = mcview_is_nroff_sequence (view, current.cc_offset)</span>
+<span class='curline'><a href='../S/src--viewer--coord_cache.c.html#L430'>cc_offset</a>         430 src/viewer/coord_cache.c     if (i + 1 == cache-&gt;size &amp;&amp; entry.cc_offset != cache-&gt;cache[i]-&gt;cc_offset)</span>
+<span class='curline'><a href='../S/src--viewer--coord_cache.c.html#L442'>cc_offset</a>         442 src/viewer/coord_cache.c         coord-&gt;cc_offset = current.cc_offset;</span>
+<span class='curline'><a href='../S/src--viewer--internal.h.html#L76'>cc_offset</a>          76 src/viewer/internal.h     off_t cc_offset;</span>
+<span class='curline'><a href='../S/src--viewer--move.c.html#L354'>cc_offset</a>         354 src/viewer/move.c     *ret_offset = coord.cc_offset;</span>
+<span class='curline'><a href='../S/src--viewer--move.c.html#L364'>cc_offset</a>         364 src/viewer/move.c     coord.cc_offset = offset;</span>
+</pre>
+</body>
+</html>

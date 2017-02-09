@@ -1,0 +1,25 @@
+<!DOCTYPE html PUBLIC '-//W3C//DTD XHTML 1.0 Transitional//EN' 'http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd'>
+<html xmlns='http://www.w3.org/1999/xhtml'>
+<head>
+<title>n_written</title>
+<meta name='robots' content='noindex,nofollow' />
+<meta name='generator' content='GLOBAL-6.5.2' />
+<meta http-equiv='Content-Style-Type' content='text/css' />
+<link rel='stylesheet' type='text/css' href='../style.css' />
+</head>
+<body>
+<pre>
+<span class='curline'><a href='../S/src--filemanager--file.c.html#L1818'>n_written</a>        1818 src/filemanager/file.c             ssize_t n_read = -1, n_written;</span>
+<span class='curline'><a href='../S/src--filemanager--file.c.html#L1852'>n_written</a>        1852 src/filemanager/file.c                 while ((n_written = mc_write (dest_desc, t, (size_t) n_read)) &lt; n_read)</span>
+<span class='curline'><a href='../S/src--filemanager--file.c.html#L1856'>n_written</a>        1856 src/filemanager/file.c                     if (n_written &gt; 0)</span>
+<span class='curline'><a href='../S/src--filemanager--file.c.html#L1858'>n_written</a>        1858 src/filemanager/file.c                         n_read -= n_written;</span>
+<span class='curline'><a href='../S/src--filemanager--file.c.html#L1859'>n_written</a>        1859 src/filemanager/file.c                         t += n_written;</span>
+<span class='curline'><a href='../S/src--filemanager--file.c.html#L1863'>n_written</a>        1863 src/filemanager/file.c                     write_errno_nospace = (n_written &lt; 0 &amp;&amp; errno == ENOSPC);</span>
+<span class='curline'><a href='../S/src--vfs--ftpfs--ftpfs.c.html#L1874'>n_written</a>        1874 src/vfs/ftpfs/ftpfs.c         ssize_t n_read, n_written;</span>
+<span class='curline'><a href='../S/src--vfs--ftpfs--ftpfs.c.html#L1893'>n_written</a>        1893 src/vfs/ftpfs/ftpfs.c         while ((n_written = write (sock, w_buf, n_read)) != n_read)</span>
+<span class='curline'><a href='../S/src--vfs--ftpfs--ftpfs.c.html#L1895'>n_written</a>        1895 src/vfs/ftpfs/ftpfs.c             if (n_written == -1)</span>
+<span class='curline'><a href='../S/src--vfs--ftpfs--ftpfs.c.html#L1903'>n_written</a>        1903 src/vfs/ftpfs/ftpfs.c             w_buf += n_written;</span>
+<span class='curline'><a href='../S/src--vfs--ftpfs--ftpfs.c.html#L1904'>n_written</a>        1904 src/vfs/ftpfs/ftpfs.c             n_read -= n_written;</span>
+</pre>
+</body>
+</html>

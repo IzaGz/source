@@ -1,0 +1,57 @@
+<!DOCTYPE html PUBLIC '-//W3C//DTD XHTML 1.0 Transitional//EN' 'http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd'>
+<html xmlns='http://www.w3.org/1999/xhtml'>
+<head>
+<title>list_type</title>
+<meta name='robots' content='noindex,nofollow' />
+<meta name='generator' content='GLOBAL-6.5.2' />
+<meta http-equiv='Content-Style-Type' content='text/css' />
+<link rel='stylesheet' type='text/css' href='../style.css' />
+</head>
+<body>
+<pre>
+<span class='curline'><a href='../S/src--filemanager--boxes.c.html#L727'>list_type</a>         727 src/filemanager/boxes.c         panel-&gt;list_type = list_full;</span>
+<span class='curline'><a href='../S/src--filemanager--boxes.c.html#L771'>list_type</a>         771 src/filemanager/boxes.c             QUICK_INPUT (panel-&gt;user_status_format[panel-&gt;list_type], "mini_input",</span>
+<span class='curline'><a href='../S/src--filemanager--boxes.c.html#L785'>list_type</a>         785 src/filemanager/boxes.c         result = panel-&gt;list_type;</span>
+<span class='curline'><a href='../S/src--filemanager--boxes.c.html#L790'>list_type</a>         790 src/filemanager/boxes.c         if ((int) panel-&gt;list_type != panel_listing_brief_idx)</span>
+<span class='curline'><a href='../S/src--filemanager--boxes.c.html#L793'>list_type</a>         793 src/filemanager/boxes.c         if ((int) panel-&gt;list_type != panel_listing_user_idx)</span>
+<span class='curline'><a href='../S/src--filemanager--cmd.c.html#L475'>list_type</a>         475 src/filemanager/cmd.c configure_panel_listing (WPanel * p, int list_type, int brief_cols, gboolean use_msformat,</span>
+<span class='curline'><a href='../S/src--filemanager--cmd.c.html#L479'>list_type</a>         479 src/filemanager/cmd.c     p-&gt;list_type = list_type;</span>
+<span class='curline'><a href='../S/src--filemanager--cmd.c.html#L481'>list_type</a>         481 src/filemanager/cmd.c     if (list_type == list_brief)</span>
+<span class='curline'><a href='../S/src--filemanager--cmd.c.html#L484'>list_type</a>         484 src/filemanager/cmd.c     if (list_type == list_user || use_msformat)</span>
+<span class='curline'><a href='../S/src--filemanager--cmd.c.html#L490'>list_type</a>         490 src/filemanager/cmd.c         g_free (p-&gt;user_status_format[list_type]);</span>
+<span class='curline'><a href='../S/src--filemanager--cmd.c.html#L491'>list_type</a>         491 src/filemanager/cmd.c         p-&gt;user_status_format[list_type] = *status;</span>
+<span class='curline'><a href='../S/src--filemanager--cmd.c.html#L532'>list_type</a>         532 src/filemanager/cmd.c     p-&gt;list_type = listing_mode;</span>
+<span class='curline'><a href='../S/src--filemanager--cmd.c.html#L1594'>list_type</a>        1594 src/filemanager/cmd.c     int list_type;</span>
+<span class='curline'><a href='../S/src--filemanager--cmd.c.html#L1603'>list_type</a>        1603 src/filemanager/cmd.c     list_type = panel_listing_box (p, MENU_PANEL_IDX, &amp;user, &amp;status, &amp;use_msformat, &amp;brief_cols);</span>
+<span class='curline'><a href='../S/src--filemanager--cmd.c.html#L1604'>list_type</a>        1604 src/filemanager/cmd.c     if (list_type != -1)</span>
+<span class='curline'><a href='../S/src--filemanager--cmd.c.html#L1608'>list_type</a>        1608 src/filemanager/cmd.c         configure_panel_listing (p, list_type, brief_cols, use_msformat, &amp;user, &amp;status);</span>
+<span class='curline'><a href='../S/src--filemanager--cmd.c.html#L1651'>list_type</a>        1651 src/filemanager/cmd.c     set_basic_panel_listing_to (current, (p-&gt;list_type + 1) % LIST_TYPES);</span>
+<span class='curline'><a href='../S/src--filemanager--hotlist.c.html#L652'>list_type</a>         652 src/filemanager/hotlist.c init_i18n_stuff (int list_type, int cols)</span>
+<span class='curline'><a href='../S/src--filemanager--hotlist.c.html#L684'>list_type</a>         684 src/filemanager/hotlist.c             if ((hotlist_but[i].type &amp; list_type) != 0)</span>
+<span class='curline'><a href='../S/src--filemanager--hotlist.c.html#L700'>list_type</a>         700 src/filemanager/hotlist.c             if ((hotlist_but[i].type &amp; list_type) != 0)</span>
+<span class='curline'><a href='../S/src--filemanager--hotlist.c.html#L725'>list_type</a>         725 src/filemanager/hotlist.c init_hotlist (hotlist_t list_type)</span>
+<span class='curline'><a href='../S/src--filemanager--hotlist.c.html#L738'>list_type</a>         738 src/filemanager/hotlist.c     cols = init_i18n_stuff (list_type, COLS - 6);</span>
+<span class='curline'><a href='../S/src--filemanager--hotlist.c.html#L744'>list_type</a>         744 src/filemanager/hotlist.c     if (list_type == LIST_VFSLIST)</span>
+<span class='curline'><a href='../S/src--filemanager--hotlist.c.html#L772'>list_type</a>         772 src/filemanager/hotlist.c     if (list_type == LIST_VFSLIST)</span>
+<span class='curline'><a href='../S/src--filemanager--hotlist.c.html#L797'>list_type</a>         797 src/filemanager/hotlist.c         if ((hotlist_but[i].type &amp; list_type) != 0)</span>
+<span class='curline'><a href='../S/src--filemanager--hotlist.c.html#L1605'>list_type</a>        1605 src/filemanager/hotlist.c hotlist_show (hotlist_t list_type)</span>
+<span class='curline'><a href='../S/src--filemanager--hotlist.c.html#L1610'>list_type</a>        1610 src/filemanager/hotlist.c     hotlist_state.type = list_type;</span>
+<span class='curline'><a href='../S/src--filemanager--hotlist.c.html#L1613'>list_type</a>        1613 src/filemanager/hotlist.c     init_hotlist (list_type);</span>
+<span class='curline'><a href='../S/src--filemanager--hotlist.h.html#L26'>list_type</a>          26 src/filemanager/hotlist.h char *hotlist_show (hotlist_t list_type);</span>
+<span class='curline'><a href='../S/src--filemanager--midnight.c.html#L182'>list_type</a>         182 src/filemanager/midnight.c     current_panel-&gt;list_type = list_user;</span>
+<span class='curline'><a href='../S/src--filemanager--panel.c.html#L956'>list_type</a>         956 src/filemanager/panel.c             if (panel-&gt;list_type != list_long)</span>
+<span class='curline'><a href='../S/src--filemanager--panel.c.html#L1579'>list_type</a>        1579 src/filemanager/panel.c                 if (panel-&gt;list_type == list_long</span>
+<span class='curline'><a href='../S/src--filemanager--panel.c.html#L1615'>list_type</a>        1615 src/filemanager/panel.c     if (panel-&gt;list_type != list_long)</span>
+<span class='curline'><a href='../S/src--filemanager--panel.c.html#L1915'>list_type</a>        1915 src/filemanager/panel.c     switch (panel-&gt;list_type)</span>
+<span class='curline'><a href='../S/src--filemanager--panel.c.html#L1950'>list_type</a>        1950 src/filemanager/panel.c         return panel-&gt;user_status_format[panel-&gt;list_type];</span>
+<span class='curline'><a href='../S/src--filemanager--panel.c.html#L1952'>list_type</a>        1952 src/filemanager/panel.c     switch (panel-&gt;list_type)</span>
+<span class='curline'><a href='../S/src--filemanager--panel.c.html#L4473'>list_type</a>        4473 src/filemanager/panel.c         g_free (p-&gt;user_status_format[p-&gt;list_type]);</span>
+<span class='curline'><a href='../S/src--filemanager--panel.c.html#L4474'>list_type</a>        4474 src/filemanager/panel.c         p-&gt;user_status_format[p-&gt;list_type] = g_strdup (DEFAULT_USER_FORMAT);</span>
+<span class='curline'><a href='../S/src--filemanager--panel.h.html#L96'>list_type</a>          96 src/filemanager/panel.h     list_type_t list_type;      /* listing type */</span>
+<span class='curline'><a href='../S/src--setup.c.html#L234'>list_type</a>         234 src/setup.c        int  list_type;</span>
+<span class='curline'><a href='../S/src--setup.c.html#L1476'>list_type</a>        1476 src/setup.c        panel-&gt;list_type = list_full;</span>
+<span class='curline'><a href='../S/src--setup.c.html#L1480'>list_type</a>        1480 src/setup.c                panel-&gt;list_type = list_types[i].list_type;</span>
+<span class='curline'><a href='../S/src--setup.c.html#L1520'>list_type</a>        1520 src/setup.c            if (list_types[i].list_type == (int) panel-&gt;list_type)</span>
+</pre>
+</body>
+</html>

@@ -1,0 +1,122 @@
+<!DOCTYPE html PUBLIC '-//W3C//DTD XHTML 1.0 Transitional//EN' 'http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd'>
+<html xmlns='http://www.w3.org/1999/xhtml'>
+<head>
+<title>panels_options</title>
+<meta name='robots' content='noindex,nofollow' />
+<meta name='generator' content='GLOBAL-6.5.2' />
+<meta http-equiv='Content-Style-Type' content='text/css' />
+<link rel='stylesheet' type='text/css' href='../style.css' />
+</head>
+<body>
+<pre>
+<span class='curline'><a href='../S/src--filemanager--boxes.c.html#L647'>panels_options</a>    647 src/filemanager/boxes.c                     QUICK_CHECKBOX (N_("Show mi&amp;ni-status"), &amp;panels_options.show_mini_info, NULL),</span>
+<span class='curline'><a href='../S/src--filemanager--boxes.c.html#L648'>panels_options</a>    648 src/filemanager/boxes.c                     QUICK_CHECKBOX (N_("Use SI si&amp;ze units"), &amp;panels_options.kilobyte_si, NULL),</span>
+<span class='curline'><a href='../S/src--filemanager--boxes.c.html#L649'>panels_options</a>    649 src/filemanager/boxes.c                     QUICK_CHECKBOX (N_("Mi&amp;x all files"), &amp;panels_options.mix_all_files, NULL),</span>
+<span class='curline'><a href='../S/src--filemanager--boxes.c.html#L650'>panels_options</a>    650 src/filemanager/boxes.c                     QUICK_CHECKBOX (N_("Show &amp;backup files"), &amp;panels_options.show_backups, NULL),</span>
+<span class='curline'><a href='../S/src--filemanager--boxes.c.html#L651'>panels_options</a>    651 src/filemanager/boxes.c                     QUICK_CHECKBOX (N_("Show &amp;hidden files"), &amp;panels_options.show_dot_files, NULL),</span>
+<span class='curline'><a href='../S/src--filemanager--boxes.c.html#L652'>panels_options</a>    652 src/filemanager/boxes.c                     QUICK_CHECKBOX (N_("&amp;Fast dir reload"), &amp;panels_options.fast_reload, NULL),</span>
+<span class='curline'><a href='../S/src--filemanager--boxes.c.html#L653'>panels_options</a>    653 src/filemanager/boxes.c                     QUICK_CHECKBOX (N_("Ma&amp;rk moves down"), &amp;panels_options.mark_moves_down, NULL),</span>
+<span class='curline'><a href='../S/src--filemanager--boxes.c.html#L654'>panels_options</a>    654 src/filemanager/boxes.c                     QUICK_CHECKBOX (N_("Re&amp;verse files only"), &amp;panels_options.reverse_files_only,</span>
+<span class='curline'><a href='../S/src--filemanager--boxes.c.html#L657'>panels_options</a>    657 src/filemanager/boxes.c                     QUICK_CHECKBOX (N_("A&amp;uto save panels setup"), &amp;panels_options.auto_save_setup,</span>
+<span class='curline'><a href='../S/src--filemanager--boxes.c.html#L665'>panels_options</a>    665 src/filemanager/boxes.c                     QUICK_CHECKBOX (N_("L&amp;ynx-like motion"), &amp;panels_options.navigate_with_arrows,</span>
+<span class='curline'><a href='../S/src--filemanager--boxes.c.html#L667'>panels_options</a>    667 src/filemanager/boxes.c                     QUICK_CHECKBOX (N_("Pa&amp;ge scrolling"), &amp;panels_options.scroll_pages, NULL),</span>
+<span class='curline'><a href='../S/src--filemanager--boxes.c.html#L668'>panels_options</a>    668 src/filemanager/boxes.c                     QUICK_CHECKBOX (N_("Center &amp;scrolling"), &amp;panels_options.scroll_center, NULL),</span>
+<span class='curline'><a href='../S/src--filemanager--boxes.c.html#L669'>panels_options</a>    669 src/filemanager/boxes.c                     QUICK_CHECKBOX (N_("&amp;Mouse page scrolling"), &amp;panels_options.mouse_move_pages,</span>
+<span class='curline'><a href='../S/src--filemanager--boxes.c.html#L673'>panels_options</a>    673 src/filemanager/boxes.c                     QUICK_CHECKBOX (N_("File &amp;types"), &amp;panels_options.filetype_mode, NULL),</span>
+<span class='curline'><a href='../S/src--filemanager--boxes.c.html#L674'>panels_options</a>    674 src/filemanager/boxes.c                     QUICK_CHECKBOX (N_("&amp;Permissions"), &amp;panels_options.permission_mode, NULL),</span>
+<span class='curline'><a href='../S/src--filemanager--boxes.c.html#L677'>panels_options</a>    677 src/filemanager/boxes.c                     QUICK_RADIO (QSEARCH_NUM, qsearch_options, (int *) &amp;panels_options.qsearch_mode,</span>
+<span class='curline'><a href='../S/src--filemanager--boxes.c.html#L698'>panels_options</a>    698 src/filemanager/boxes.c     if (!panels_options.fast_reload_msg_shown &amp;&amp; panels_options.fast_reload)</span>
+<span class='curline'><a href='../S/src--filemanager--boxes.c.html#L704'>panels_options</a>    704 src/filemanager/boxes.c         panels_options.fast_reload_msg_shown = TRUE;</span>
+<span class='curline'><a href='../S/src--filemanager--chown.c.html#L371'>panels_options</a>    371 src/filemanager/chown.c         size_trunc_len (buffer, GW - 4, sf_stat.st_size, 0, panels_options.kilobyte_si);</span>
+<span class='curline'><a href='../S/src--filemanager--cmd.c.html#L1481'>panels_options</a>   1481 src/filemanager/cmd.c     if (panels_options.mark_moves_down)</span>
+<span class='curline'><a href='../S/src--filemanager--dir.c.html#L156'>panels_options</a>    156 src/filemanager/dir.c     if (!panels_options.show_dot_files &amp;&amp; (dp-&gt;d_name[0] == '.'))</span>
+<span class='curline'><a href='../S/src--filemanager--dir.c.html#L158'>panels_options</a>    158 src/filemanager/dir.c     if (!panels_options.show_backups &amp;&amp; dp-&gt;d_name[strlen (dp-&gt;d_name) - 1] == '~')</span>
+<span class='curline'><a href='../S/src--filemanager--dir.c.html#L352'>panels_options</a>    352 src/filemanager/dir.c     if (ad == bd || panels_options.mix_all_files)</span>
+<span class='curline'><a href='../S/src--filemanager--dir.c.html#L373'>panels_options</a>    373 src/filemanager/dir.c     if (ad == bd || panels_options.mix_all_files)</span>
+<span class='curline'><a href='../S/src--filemanager--dir.c.html#L391'>panels_options</a>    391 src/filemanager/dir.c     if (ad == bd || panels_options.mix_all_files)</span>
+<span class='curline'><a href='../S/src--filemanager--dir.c.html#L418'>panels_options</a>    418 src/filemanager/dir.c     if (ad == bd || panels_options.mix_all_files)</span>
+<span class='curline'><a href='../S/src--filemanager--dir.c.html#L438'>panels_options</a>    438 src/filemanager/dir.c     if (ad == bd || panels_options.mix_all_files)</span>
+<span class='curline'><a href='../S/src--filemanager--dir.c.html#L458'>panels_options</a>    458 src/filemanager/dir.c     if (ad == bd || panels_options.mix_all_files)</span>
+<span class='curline'><a href='../S/src--filemanager--dir.c.html#L478'>panels_options</a>    478 src/filemanager/dir.c     if (ad == bd || panels_options.mix_all_files)</span>
+<span class='curline'><a href='../S/src--filemanager--dir.c.html#L493'>panels_options</a>    493 src/filemanager/dir.c     if (ad != bd &amp;&amp; !panels_options.mix_all_files)</span>
+<span class='curline'><a href='../S/src--filemanager--file.c.html#L2545'>panels_options</a>   2545 src/filemanager/file.c                      dsm-&gt;dir_count, size_trunc_sep (dsm-&gt;total_size, panels_options.kilobyte_si));</span>
+<span class='curline'><a href='../S/src--filemanager--filegui.c.html#L555'>panels_options</a>    555 src/filemanager/filegui.c                     panels_options.kilobyte_si);</span>
+<span class='curline'><a href='../S/src--filemanager--filegui.c.html#L560'>panels_options</a>    560 src/filemanager/filegui.c                     panels_options.kilobyte_si);</span>
+<span class='curline'><a href='../S/src--filemanager--filegui.c.html#L1016'>panels_options</a>   1016 src/filemanager/filegui.c         size_trunc_len (buffer2, 5, tctx-&gt;copied_bytes, 0, panels_options.kilobyte_si);</span>
+<span class='curline'><a href='../S/src--filemanager--filegui.c.html#L1021'>panels_options</a>   1021 src/filemanager/filegui.c             size_trunc_len (buffer3, 5, ctx-&gt;progress_bytes, 0, panels_options.kilobyte_si);</span>
+<span class='curline'><a href='../S/src--filemanager--info.c.html#L181'>panels_options</a>    181 src/filemanager/info.c             size_trunc_len (buffer1, 5, myfs_stats.avail, 1, panels_options.kilobyte_si);</span>
+<span class='curline'><a href='../S/src--filemanager--info.c.html#L182'>panels_options</a>    182 src/filemanager/info.c             size_trunc_len (buffer2, 5, myfs_stats.total, 1, panels_options.kilobyte_si);</span>
+<span class='curline'><a href='../S/src--filemanager--info.c.html#L236'>panels_options</a>    236 src/filemanager/info.c             size_trunc_len (buffer, 9, st.st_size, 0, panels_options.kilobyte_si);</span>
+<span class='curline'><a href='../S/src--filemanager--midnight.c.html#L916'>panels_options</a>    916 src/filemanager/midnight.c     save_setup (auto_save_setup, panels_options.auto_save_setup);</span>
+<span class='curline'><a href='../S/src--filemanager--midnight.c.html#L1089'>panels_options</a>   1089 src/filemanager/midnight.c     panels_options.show_dot_files = !panels_options.show_dot_files;</span>
+<span class='curline'><a href='../S/src--filemanager--midnight.c.html#L1724'>panels_options</a>   1724 src/filemanager/midnight.c     if (panels_options.fast_reload)</span>
+<span class='curline'><a href='../S/src--filemanager--panel.c.html#L408'>panels_options</a>    408 src/filemanager/panel.c     return (CONST_WIDGET (p)-&gt;lines - 3 - (panels_options.show_mini_info ? 2 : 0));</span>
+<span class='curline'><a href='../S/src--filemanager--panel.c.html#L519'>panels_options</a>    519 src/filemanager/panel.c         size_trunc_len (buffer, (unsigned int) len, fe-&gt;st.st_size, 0, panels_options.kilobyte_si);</span>
+<span class='curline'><a href='../S/src--filemanager--panel.c.html#L770'>panels_options</a>    770 src/filemanager/panel.c         if (!panels_options.filetype_mode)</span>
+<span class='curline'><a href='../S/src--filemanager--panel.c.html#L851'>panels_options</a>    851 src/filemanager/panel.c             if (panels_options.permission_mode)</span>
+<span class='curline'><a href='../S/src--filemanager--panel.c.html#L989'>panels_options</a>    989 src/filemanager/panel.c     if (!panels_options.show_mini_info)</span>
+<span class='curline'><a href='../S/src--filemanager--panel.c.html#L1083'>panels_options</a>   1083 src/filemanager/panel.c     g_strlcpy (b_bytes, size_trunc_sep (panel-&gt;total, panels_options.kilobyte_si),</span>
+<span class='curline'><a href='../S/src--filemanager--panel.c.html#L1112'>panels_options</a>   1112 src/filemanager/panel.c     if (panels_options.show_mini_info)</span>
+<span class='curline'><a href='../S/src--filemanager--panel.c.html#L1161'>panels_options</a>   1161 src/filemanager/panel.c                         panels_options.kilobyte_si);</span>
+<span class='curline'><a href='../S/src--filemanager--panel.c.html#L1163'>panels_options</a>   1163 src/filemanager/panel.c                         panels_options.kilobyte_si);</span>
+<span class='curline'><a href='../S/src--filemanager--panel.c.html#L1265'>panels_options</a>   1265 src/filemanager/panel.c     if (panels_options.show_mini_info)</span>
+<span class='curline'><a href='../S/src--filemanager--panel.c.html#L1280'>panels_options</a>   1280 src/filemanager/panel.c     tmp = panels_options.show_dot_files ? panel_hiddenfiles_sign_show : panel_hiddenfiles_sign_hide;</span>
+<span class='curline'><a href='../S/src--filemanager--panel.c.html#L1313'>panels_options</a>   1313 src/filemanager/panel.c     if (!panels_options.show_mini_info)</span>
+<span class='curline'><a href='../S/src--filemanager--panel.c.html#L1324'>panels_options</a>   1324 src/filemanager/panel.c                                             panels_options.kilobyte_si));</span>
+<span class='curline'><a href='../S/src--filemanager--panel.c.html#L1468'>panels_options</a>   1468 src/filemanager/panel.c     if (panels_options.auto_save_setup)</span>
+<span class='curline'><a href='../S/src--filemanager--panel.c.html#L1979'>panels_options</a>   1979 src/filemanager/panel.c     if (panels_options.navigate_with_arrows &amp;&amp; (cmdline-&gt;buffer[0] == '\0'))</span>
+<span class='curline'><a href='../S/src--filemanager--panel.c.html#L2109'>panels_options</a>   2109 src/filemanager/panel.c     if (panels_options.scroll_pages &amp;&amp; panel-&gt;selected - panel-&gt;top_file == items)</span>
+<span class='curline'><a href='../S/src--filemanager--panel.c.html#L2117'>panels_options</a>   2117 src/filemanager/panel.c     else if (panels_options.scroll_center &amp;&amp; panel_selected_at_half (panel) &gt; 0)</span>
+<span class='curline'><a href='../S/src--filemanager--panel.c.html#L2138'>panels_options</a>   2138 src/filemanager/panel.c     if (panels_options.scroll_pages &amp;&amp; panel-&gt;selected &lt; panel-&gt;top_file)</span>
+<span class='curline'><a href='../S/src--filemanager--panel.c.html#L2146'>panels_options</a>   2146 src/filemanager/panel.c     else if (panels_options.scroll_center &amp;&amp; panel_selected_at_half (panel) &lt; 0)</span>
+<span class='curline'><a href='../S/src--filemanager--panel.c.html#L2378'>panels_options</a>   2378 src/filemanager/panel.c     if (panels_options.torben_fj_mode)</span>
+<span class='curline'><a href='../S/src--filemanager--panel.c.html#L2411'>panels_options</a>   2411 src/filemanager/panel.c     if (panels_options.torben_fj_mode)</span>
+<span class='curline'><a href='../S/src--filemanager--panel.c.html#L2441'>panels_options</a>   2441 src/filemanager/panel.c     if ((panels_options.mark_moves_down &amp;&amp; do_move == MARK_DOWN) || do_move == MARK_FORCE_DOWN)</span>
+<span class='curline'><a href='../S/src--filemanager--panel.c.html#L2517'>panels_options</a>   2517 src/filemanager/panel.c     gboolean files_only = (panels_options.select_flags &amp; SELECT_FILES_ONLY) != 0;</span>
+<span class='curline'><a href='../S/src--filemanager--panel.c.html#L2518'>panels_options</a>   2518 src/filemanager/panel.c     gboolean case_sens = (panels_options.select_flags &amp; SELECT_MATCH_CASE) != 0;</span>
+<span class='curline'><a href='../S/src--filemanager--panel.c.html#L2519'>panels_options</a>   2519 src/filemanager/panel.c     gboolean shell_patterns = (panels_options.select_flags &amp; SELECT_SHELL_PATTERNS) != 0;</span>
+<span class='curline'><a href='../S/src--filemanager--panel.c.html#L2574'>panels_options</a>   2574 src/filemanager/panel.c     panels_options.select_flags = 0;</span>
+<span class='curline'><a href='../S/src--filemanager--panel.c.html#L2576'>panels_options</a>   2576 src/filemanager/panel.c         panels_options.select_flags |= SELECT_MATCH_CASE;</span>
+<span class='curline'><a href='../S/src--filemanager--panel.c.html#L2578'>panels_options</a>   2578 src/filemanager/panel.c         panels_options.select_flags |= SELECT_FILES_ONLY;</span>
+<span class='curline'><a href='../S/src--filemanager--panel.c.html#L2580'>panels_options</a>   2580 src/filemanager/panel.c         panels_options.select_flags |= SELECT_SHELL_PATTERNS;</span>
+<span class='curline'><a href='../S/src--filemanager--panel.c.html#L2610'>panels_options</a>   2610 src/filemanager/panel.c         if (!panels_options.reverse_files_only || !S_ISDIR (file-&gt;st.st_mode))</span>
+<span class='curline'><a href='../S/src--filemanager--panel.c.html#L2678'>panels_options</a>   2678 src/filemanager/panel.c     switch (panels_options.qsearch_mode)</span>
+<span class='curline'><a href='../S/src--filemanager--panel.c.html#L3617'>panels_options</a>   3617 src/filemanager/panel.c     if (panels_options.torben_fj_mode &amp;&amp; key == ALT ('h'))</span>
+<span class='curline'><a href='../S/src--filemanager--panel.c.html#L3923'>panels_options</a>   3923 src/filemanager/panel.c             if (panels_options.mouse_move_pages &amp;&amp; panel-&gt;top_file &gt; 0)</span>
+<span class='curline'><a href='../S/src--filemanager--panel.c.html#L3933'>panels_options</a>   3933 src/filemanager/panel.c             if (panels_options.mouse_move_pages</span>
+<span class='curline'><a href='../S/src--filemanager--panel.c.html#L4389'>panels_options</a>   4389 src/filemanager/panel.c     if (panels_options.fast_reload &amp;&amp; stat (vfs_path_as_str (panel-&gt;cwd_vpath), &amp;current_stat) == 0</span>
+<span class='curline'><a href='../S/src--filemanager--panel.c.html#L4444'>panels_options</a>   4444 src/filemanager/panel.c     if (panels_options.show_mini_info)</span>
+<span class='curline'><a href='../S/src--filemanager--tree.c.html#L86'>panels_options</a>     86 src/filemanager/tree.c                     (panels_options.show_mini_info ? 2 : 0) : WIDGET (t)-&gt;lines)</span>
+<span class='curline'><a href='../S/src--filemanager--tree.c.html#L236'>panels_options</a>    236 src/filemanager/tree.c         if (!panels_options.show_mini_info)</span>
+<span class='curline'><a href='../S/src--filemanager--tree.c.html#L1132'>panels_options</a>   1132 src/filemanager/tree.c         if (panels_options.show_mini_info)</span>
+<span class='curline'><a href='../S/src--setup.c.html#L129'>panels_options</a>    129 src/setup.c    panels_options_t panels_options = {</span>
+<span class='curline'><a href='../S/src--setup.c.html#L408'>panels_options</a>    408 src/setup.c        { "show_mini_info", &amp;panels_options.show_mini_info },</span>
+<span class='curline'><a href='../S/src--setup.c.html#L409'>panels_options</a>    409 src/setup.c        { "kilobyte_si", &amp;panels_options.kilobyte_si },</span>
+<span class='curline'><a href='../S/src--setup.c.html#L410'>panels_options</a>    410 src/setup.c        { "mix_all_files", &amp;panels_options.mix_all_files },</span>
+<span class='curline'><a href='../S/src--setup.c.html#L411'>panels_options</a>    411 src/setup.c        { "show_backups", &amp;panels_options.show_backups },</span>
+<span class='curline'><a href='../S/src--setup.c.html#L412'>panels_options</a>    412 src/setup.c        { "show_dot_files", &amp;panels_options.show_dot_files },</span>
+<span class='curline'><a href='../S/src--setup.c.html#L413'>panels_options</a>    413 src/setup.c        { "fast_reload", &amp;panels_options.fast_reload },</span>
+<span class='curline'><a href='../S/src--setup.c.html#L414'>panels_options</a>    414 src/setup.c        { "fast_reload_msg_shown", &amp;panels_options.fast_reload_msg_shown },</span>
+<span class='curline'><a href='../S/src--setup.c.html#L415'>panels_options</a>    415 src/setup.c        { "mark_moves_down", &amp;panels_options.mark_moves_down },</span>
+<span class='curline'><a href='../S/src--setup.c.html#L416'>panels_options</a>    416 src/setup.c        { "reverse_files_only", &amp;panels_options.reverse_files_only },</span>
+<span class='curline'><a href='../S/src--setup.c.html#L417'>panels_options</a>    417 src/setup.c        { "auto_save_setup_panels", &amp;panels_options.auto_save_setup },</span>
+<span class='curline'><a href='../S/src--setup.c.html#L418'>panels_options</a>    418 src/setup.c        { "navigate_with_arrows", &amp;panels_options.navigate_with_arrows },</span>
+<span class='curline'><a href='../S/src--setup.c.html#L419'>panels_options</a>    419 src/setup.c        { "panel_scroll_pages", &amp;panels_options.scroll_pages },</span>
+<span class='curline'><a href='../S/src--setup.c.html#L420'>panels_options</a>    420 src/setup.c        { "panel_scroll_center", &amp;panels_options.scroll_center },</span>
+<span class='curline'><a href='../S/src--setup.c.html#L421'>panels_options</a>    421 src/setup.c        { "mouse_move_pages",  &amp;panels_options.mouse_move_pages },</span>
+<span class='curline'><a href='../S/src--setup.c.html#L422'>panels_options</a>    422 src/setup.c        { "filetype_mode", &amp;panels_options.filetype_mode },</span>
+<span class='curline'><a href='../S/src--setup.c.html#L423'>panels_options</a>    423 src/setup.c        { "permission_mode", &amp;panels_options.permission_mode },</span>
+<span class='curline'><a href='../S/src--setup.c.html#L424'>panels_options</a>    424 src/setup.c        { "torben_fj_mode", &amp;panels_options.torben_fj_mode },</span>
+<span class='curline'><a href='../S/src--setup.c.html#L915'>panels_options</a>    915 src/setup.c                                       "quick_search_mode", (int) panels_options.qsearch_mode);</span>
+<span class='curline'><a href='../S/src--setup.c.html#L917'>panels_options</a>    917 src/setup.c                panels_options.qsearch_mode = QSEARCH_CASE_INSENSITIVE;</span>
+<span class='curline'><a href='../S/src--setup.c.html#L919'>panels_options</a>    919 src/setup.c                panels_options.qsearch_mode = QSEARCH_PANEL_CASE;</span>
+<span class='curline'><a href='../S/src--setup.c.html#L921'>panels_options</a>    921 src/setup.c                panels_options.qsearch_mode = (qsearch_mode_t) qmode;</span>
+<span class='curline'><a href='../S/src--setup.c.html#L923'>panels_options</a>    923 src/setup.c            panels_options.select_flags =</span>
+<span class='curline'><a href='../S/src--setup.c.html#L925'>panels_options</a>    925 src/setup.c                                   (int) panels_options.select_flags);</span>
+<span class='curline'><a href='../S/src--setup.c.html#L944'>panels_options</a>    944 src/setup.c                           "quick_search_mode", (int) panels_options.qsearch_mode);</span>
+<span class='curline'><a href='../S/src--setup.c.html#L946'>panels_options</a>    946 src/setup.c                           "select_flags", (int) panels_options.select_flags);</span>
+<span class='curline'><a href='../S/src--setup.h.html#L102'>panels_options</a>    102 src/setup.h    extern panels_options_t panels_options;</span>
+<span class='curline'><a href='../S/src--viewer--display.c.html#L178'>panels_options</a>    178 src/viewer/display.c                             panels_options.kilobyte_si);</span>
+</pre>
+</body>
+</html>

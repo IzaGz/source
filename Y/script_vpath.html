@@ -1,0 +1,32 @@
+<!DOCTYPE html PUBLIC '-//W3C//DTD XHTML 1.0 Transitional//EN' 'http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd'>
+<html xmlns='http://www.w3.org/1999/xhtml'>
+<head>
+<title>script_vpath</title>
+<meta name='robots' content='noindex,nofollow' />
+<meta name='generator' content='GLOBAL-6.5.2' />
+<meta http-equiv='Content-Style-Type' content='text/css' />
+<link rel='stylesheet' type='text/css' href='../style.css' />
+</head>
+<body>
+<pre>
+<span class='curline'><a href='../S/src--filemanager--ext.c.html#L106'>script_vpath</a>      106 src/filemanager/ext.c exec_cleanup_script (vfs_path_t * script_vpath)</span>
+<span class='curline'><a href='../S/src--filemanager--ext.c.html#L108'>script_vpath</a>      108 src/filemanager/ext.c     if (script_vpath != NULL)</span>
+<span class='curline'><a href='../S/src--filemanager--ext.c.html#L110'>script_vpath</a>      110 src/filemanager/ext.c         (void) mc_unlink (script_vpath);</span>
+<span class='curline'><a href='../S/src--filemanager--ext.c.html#L111'>script_vpath</a>      111 src/filemanager/ext.c         vfs_path_free (script_vpath);</span>
+<span class='curline'><a href='../S/src--filemanager--ext.c.html#L409'>script_vpath</a>      409 src/filemanager/ext.c     vfs_path_t *script_vpath = NULL;</span>
+<span class='curline'><a href='../S/src--filemanager--ext.c.html#L444'>script_vpath</a>      444 src/filemanager/ext.c     cmd_file_fd = mc_mkstemps (&amp;script_vpath, "mcext", SCRIPT_SUFFIX);</span>
+<span class='curline'><a href='../S/src--filemanager--ext.c.html#L472'>script_vpath</a>      472 src/filemanager/ext.c         fprintf (cmd_file, "\n/bin/rm -f %s\n", vfs_path_as_str (script_vpath));</span>
+<span class='curline'><a href='../S/src--filemanager--ext.c.html#L478'>script_vpath</a>      478 src/filemanager/ext.c         exec_cleanup_script (script_vpath);</span>
+<span class='curline'><a href='../S/src--filemanager--ext.c.html#L479'>script_vpath</a>      479 src/filemanager/ext.c         script_vpath = NULL;</span>
+<span class='curline'><a href='../S/src--filemanager--ext.c.html#L484'>script_vpath</a>      484 src/filemanager/ext.c         mc_chmod (script_vpath, S_IRWXU);</span>
+<span class='curline'><a href='../S/src--filemanager--ext.c.html#L486'>script_vpath</a>      486 src/filemanager/ext.c         cmd = g_strconcat ("/bin/sh ", vfs_path_as_str (script_vpath), (char *) NULL);</span>
+<span class='curline'><a href='../S/src--filemanager--ext.c.html#L514'>script_vpath</a>      514 src/filemanager/ext.c     return script_vpath;</span>
+<span class='curline'><a href='../S/src--filemanager--ext.c.html#L766'>script_vpath</a>      766 src/filemanager/ext.c                    vfs_path_t ** script_vpath)</span>
+<span class='curline'><a href='../S/src--filemanager--ext.c.html#L783'>script_vpath</a>      783 src/filemanager/ext.c     if (script_vpath != NULL)</span>
+<span class='curline'><a href='../S/src--filemanager--ext.c.html#L784'>script_vpath</a>      784 src/filemanager/ext.c         *script_vpath = NULL;</span>
+<span class='curline'><a href='../S/src--filemanager--ext.c.html#L1018'>script_vpath</a>     1018 src/filemanager/ext.c                             if (script_vpath != NULL)</span>
+<span class='curline'><a href='../S/src--filemanager--ext.c.html#L1019'>script_vpath</a>     1019 src/filemanager/ext.c                                 *script_vpath = sv;</span>
+<span class='curline'><a href='../S/src--filemanager--ext.h.html#L18'>script_vpath</a>       18 src/filemanager/ext.h                        vfs_path_t ** script_vpath);</span>
+</pre>
+</body>
+</html>

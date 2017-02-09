@@ -1,0 +1,65 @@
+<!DOCTYPE html PUBLIC '-//W3C//DTD XHTML 1.0 Transitional//EN' 'http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd'>
+<html xmlns='http://www.w3.org/1999/xhtml'>
+<head>
+<title>domain</title>
+<meta name='robots' content='noindex,nofollow' />
+<meta name='generator' content='GLOBAL-6.5.2' />
+<meta http-equiv='Content-Style-Type' content='text/css' />
+<link rel='stylesheet' type='text/css' href='../style.css' />
+</head>
+<body>
+<pre>
+<span class='curline'><a href='../S/src--filemanager--boxes.c.html#L1297'>domain</a>           1297 src/filemanager/boxes.c vfs_smb_get_authinfo (const char *host, const char *share, const char *domain, const char *user)</span>
+<span class='curline'><a href='../S/src--filemanager--boxes.c.html#L1302'>domain</a>           1302 src/filemanager/boxes.c     if (domain == NULL)</span>
+<span class='curline'><a href='../S/src--filemanager--boxes.c.html#L1303'>domain</a>           1303 src/filemanager/boxes.c         domain = "";</span>
+<span class='curline'><a href='../S/src--filemanager--boxes.c.html#L1323'>domain</a>           1323 src/filemanager/boxes.c                 QUICK_INPUT (domain, "auth_domain", &amp;ret_domain, NULL, FALSE, FALSE, INPUT_COMPLETE_HOSTNAMES),</span>
+<span class='curline'><a href='../S/src--vfs--ftpfs--ftpfs.c.html#L783'>domain</a>            783 src/vfs/ftpfs/ftpfs.c         const char *domain = (const char *) npe-&gt;data;</span>
+<span class='curline'><a href='../S/src--vfs--ftpfs--ftpfs.c.html#L785'>domain</a>            785 src/vfs/ftpfs/ftpfs.c         if (domain[0] == '.')</span>
+<span class='curline'><a href='../S/src--vfs--ftpfs--ftpfs.c.html#L787'>domain</a>            787 src/vfs/ftpfs/ftpfs.c             size_t ld = strlen (domain);</span>
+<span class='curline'><a href='../S/src--vfs--ftpfs--ftpfs.c.html#L790'>domain</a>            790 src/vfs/ftpfs/ftpfs.c             while (ld != 0 &amp;&amp; lh != 0 &amp;&amp; host[lh - 1] == domain[ld - 1])</span>
+<span class='curline'><a href='../S/src--vfs--ftpfs--ftpfs.c.html#L799'>domain</a>            799 src/vfs/ftpfs/ftpfs.c         else if (g_ascii_strcasecmp (host, domain) == 0)</span>
+<span class='curline'><a href='../S/src--vfs--ftpfs--ftpfs.c.html#L2417'>domain</a>           2417 src/vfs/ftpfs/ftpfs.c ftpfs_find_machine (const char *host, const char *domain)</span>
+<span class='curline'><a href='../S/src--vfs--ftpfs--ftpfs.c.html#L2423'>domain</a>           2423 src/vfs/ftpfs/ftpfs.c     if (!domain)</span>
+<span class='curline'><a href='../S/src--vfs--ftpfs--ftpfs.c.html#L2424'>domain</a>           2424 src/vfs/ftpfs/ftpfs.c         domain = "";</span>
+<span class='curline'><a href='../S/src--vfs--ftpfs--ftpfs.c.html#L2461'>domain</a>           2461 src/vfs/ftpfs/ftpfs.c             if (g_ascii_strcasecmp (host_domain, domain) != 0)</span>
+<span class='curline'><a href='../S/src--vfs--ftpfs--ftpfs.c.html#L2487'>domain</a>           2487 src/vfs/ftpfs/ftpfs.c     const char *domain;</span>
+<span class='curline'><a href='../S/src--vfs--ftpfs--ftpfs.c.html#L2525'>domain</a>           2525 src/vfs/ftpfs/ftpfs.c     domain = strchr (hostname, '.');</span>
+<span class='curline'><a href='../S/src--vfs--ftpfs--ftpfs.c.html#L2526'>domain</a>           2526 src/vfs/ftpfs/ftpfs.c     if (domain == NULL)</span>
+<span class='curline'><a href='../S/src--vfs--ftpfs--ftpfs.c.html#L2527'>domain</a>           2527 src/vfs/ftpfs/ftpfs.c         domain = "";</span>
+<span class='curline'><a href='../S/src--vfs--ftpfs--ftpfs.c.html#L2530'>domain</a>           2530 src/vfs/ftpfs/ftpfs.c     ftpfs_find_machine (host, domain);</span>
+<span class='curline'><a href='../S/src--vfs--smbfs--helpers--include--client.h.html#L73'>domain</a>             73 src/vfs/smbfs/helpers/include/client.h     fstring domain;</span>
+<span class='curline'><a href='../S/src--vfs--smbfs--helpers--include--smb.h.html#L689'>domain</a>            689 src/vfs/smbfs/helpers/include/smb.h     fstring domain;             /* used ONLY in ipc.c NOT namework.c */</span>
+<span class='curline'><a href='../S/src--vfs--smbfs--helpers--lib--system.c.html#L276'>domain</a>            276 src/vfs/smbfs/helpers/lib/system.c     char *domain;</span>
+<span class='curline'><a href='../S/src--vfs--smbfs--helpers--lib--system.c.html#L290'>domain</a>            290 src/vfs/smbfs/helpers/lib/system.c     if ((domain = strchr (hostname, '.')) == NULL)</span>
+<span class='curline'><a href='../S/src--vfs--smbfs--helpers--lib--system.c.html#L298'>domain</a>            298 src/vfs/smbfs/helpers/lib/system.c     if ((strlen (name) + strlen (domain)) &gt;= sizeof (query))</span>
+<span class='curline'><a href='../S/src--vfs--smbfs--helpers--lib--system.c.html#L301'>domain</a>            301 src/vfs/smbfs/helpers/lib/system.c     slprintf (query, sizeof (query) - 1, "%s%s", name, domain);</span>
+<span class='curline'><a href='../S/src--vfs--smbfs--helpers--libsmb--clientgen.c.html#L2778'>domain</a>           2778 src/vfs/smbfs/helpers/libsmb/clientgen.c                inet_ntoa (cli-&gt;dest_ip), cli-&gt;user_name, cli-&gt;domain));</span>
+<span class='curline'><a href='../S/src--vfs--smbfs--helpers--libsmb--clientgen.c.html#L2809'>domain</a>           2809 src/vfs/smbfs/helpers/libsmb/clientgen.c                cli-&gt;user_name, cli-&gt;domain));</span>
+<span class='curline'><a href='../S/src--vfs--smbfs--helpers--libsmb--clientgen.c.html#L2863'>domain</a>           2863 src/vfs/smbfs/helpers/libsmb/clientgen.c         if (!cli_session_setup (cli, cli-&gt;user_name, passwd, pass_len, NULL, 0, cli-&gt;domain))</span>
+<span class='curline'><a href='../S/src--vfs--smbfs--helpers--libsmb--clientgen.c.html#L2898'>domain</a>           2898 src/vfs/smbfs/helpers/libsmb/clientgen.c                                 (char *) nt_sess_pwd, sizeof (nt_sess_pwd), cli-&gt;domain))</span>
+<span class='curline'><a href='../S/src--vfs--smbfs--smbfs.c.html#L148'>domain</a>            148 src/vfs/smbfs/smbfs.c     char *domain;</span>
+<span class='curline'><a href='../S/src--vfs--smbfs--smbfs.c.html#L213'>domain</a>            213 src/vfs/smbfs/smbfs.c     g_free (a-&gt;domain);</span>
+<span class='curline'><a href='../S/src--vfs--smbfs--smbfs.c.html#L268'>domain</a>            268 src/vfs/smbfs/smbfs.c smbfs_auth_add (const char *host, const char *share, const char *domain,</span>
+<span class='curline'><a href='../S/src--vfs--smbfs--smbfs.c.html#L273'>domain</a>            273 src/vfs/smbfs/smbfs.c     auth = vfs_smb_authinfo_new (host, share, domain, user, pass);</span>
+<span class='curline'><a href='../S/src--vfs--smbfs--smbfs.c.html#L307'>domain</a>            307 src/vfs/smbfs/smbfs.c                            const char *domain, const char *user, const char *pass,</span>
+<span class='curline'><a href='../S/src--vfs--smbfs--smbfs.c.html#L314'>domain</a>            314 src/vfs/smbfs/smbfs.c     if (domain &amp;&amp; user &amp;&amp; pass)</span>
+<span class='curline'><a href='../S/src--vfs--smbfs--smbfs.c.html#L316'>domain</a>            316 src/vfs/smbfs/smbfs.c         g_free (bucket-&gt;domain);</span>
+<span class='curline'><a href='../S/src--vfs--smbfs--smbfs.c.html#L319'>domain</a>            319 src/vfs/smbfs/smbfs.c         bucket-&gt;domain = g_strdup (domain);</span>
+<span class='curline'><a href='../S/src--vfs--smbfs--smbfs.c.html#L323'>domain</a>            323 src/vfs/smbfs/smbfs.c         smbfs_auth_add (bucket-&gt;host, bucket-&gt;service, domain, user, pass);</span>
+<span class='curline'><a href='../S/src--vfs--smbfs--smbfs.c.html#L335'>domain</a>            335 src/vfs/smbfs/smbfs.c         bucket-&gt;domain = g_strdup (auth-&gt;domain);</span>
+<span class='curline'><a href='../S/src--vfs--smbfs--smbfs.c.html#L343'>domain</a>            343 src/vfs/smbfs/smbfs.c         bucket-&gt;domain = g_strdup (lp_workgroup ());</span>
+<span class='curline'><a href='../S/src--vfs--smbfs--smbfs.c.html#L350'>domain</a>            350 src/vfs/smbfs/smbfs.c                                  bucket-&gt;service, (domain ? domain : lp_workgroup ()), user);</span>
+<span class='curline'><a href='../S/src--vfs--smbfs--smbfs.c.html#L353'>domain</a>            353 src/vfs/smbfs/smbfs.c         g_free (bucket-&gt;domain);</span>
+<span class='curline'><a href='../S/src--vfs--smbfs--smbfs.c.html#L356'>domain</a>            356 src/vfs/smbfs/smbfs.c         bucket-&gt;domain = g_strdup (auth-&gt;domain);</span>
+<span class='curline'><a href='../S/src--vfs--smbfs--smbfs.c.html#L847'>domain</a>            847 src/vfs/smbfs/smbfs.c                 (smbfs_info-&gt;conn-&gt;cli, smbfs_info-&gt;conn-&gt;domain,</span>
+<span class='curline'><a href='../S/src--vfs--smbfs--smbfs.c.html#L1114'>domain</a>           1114 src/vfs/smbfs/smbfs.c                                 current_bucket-&gt;domain))</span>
+<span class='curline'><a href='../S/src--vfs--smbfs--smbfs.c.html#L1182'>domain</a>           1182 src/vfs/smbfs/smbfs.c     g_free (bucket-&gt;domain);</span>
+<span class='curline'><a href='../S/src--vfs--smbfs--smbfs.c.html#L1323'>domain</a>           1323 src/vfs/smbfs/smbfs.c         if (!smbfs_bucket_set_authinfo (bucket, bucket-&gt;domain, bucket-&gt;user, 0, 0))</span>
+<span class='curline'><a href='../S/src--vfs--smbfs--smbfs.c.html#L2216'>domain</a>           2216 src/vfs/smbfs/smbfs.c vfs_smb_authinfo_new (const char *host, const char *share, const char *domain,</span>
+<span class='curline'><a href='../S/src--vfs--smbfs--smbfs.c.html#L2227'>domain</a>           2227 src/vfs/smbfs/smbfs.c         auth-&gt;domain = g_strdup (domain);</span>
+<span class='curline'><a href='../S/src--vfs--smbfs--smbfs.h.html#L20'>domain</a>             20 src/vfs/smbfs/smbfs.h     char *domain;</span>
+<span class='curline'><a href='../S/src--vfs--smbfs--smbfs.h.html#L35'>domain</a>             35 src/vfs/smbfs/smbfs.h                                     const char *domain, const char *user, const char *pass);</span>
+<span class='curline'><a href='../S/src--vfs--smbfs--smbfs.h.html#L39'>domain</a>             39 src/vfs/smbfs/smbfs.h                                     const char *share, const char *domain, const char *user);</span>
+</pre>
+</body>
+</html>

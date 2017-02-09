@@ -1,0 +1,27 @@
+<!DOCTYPE html PUBLIC '-//W3C//DTD XHTML 1.0 Transitional//EN' 'http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd'>
+<html xmlns='http://www.w3.org/1999/xhtml'>
+<head>
+<title>search_chpoint</title>
+<meta name='robots' content='noindex,nofollow' />
+<meta name='generator' content='GLOBAL-6.5.2' />
+<meta http-equiv='Content-Style-Type' content='text/css' />
+<link rel='stylesheet' type='text/css' href='../style.css' />
+</head>
+<body>
+<pre>
+<span class='curline'><a href='../S/src--filemanager--panel.c.html#L2641'>search_chpoint</a>   2641 src/filemanager/panel.c         panel-&gt;search_chpoint = 0;</span>
+<span class='curline'><a href='../S/src--filemanager--panel.c.html#L2645'>search_chpoint</a>   2645 src/filemanager/panel.c         if (c_code != 0 &amp;&amp; (gsize) panel-&gt;search_chpoint &lt; sizeof (panel-&gt;search_char))</span>
+<span class='curline'><a href='../S/src--filemanager--panel.c.html#L2647'>search_chpoint</a>   2647 src/filemanager/panel.c             panel-&gt;search_char[panel-&gt;search_chpoint] = c_code;</span>
+<span class='curline'><a href='../S/src--filemanager--panel.c.html#L2648'>search_chpoint</a>   2648 src/filemanager/panel.c             panel-&gt;search_chpoint++;</span>
+<span class='curline'><a href='../S/src--filemanager--panel.c.html#L2651'>search_chpoint</a>   2651 src/filemanager/panel.c         if (panel-&gt;search_chpoint &gt; 0)</span>
+<span class='curline'><a href='../S/src--filemanager--panel.c.html#L2653'>search_chpoint</a>   2653 src/filemanager/panel.c             switch (str_is_valid_char (panel-&gt;search_char, panel-&gt;search_chpoint))</span>
+<span class='curline'><a href='../S/src--filemanager--panel.c.html#L2658'>search_chpoint</a>   2658 src/filemanager/panel.c                 panel-&gt;search_chpoint = 0;</span>
+<span class='curline'><a href='../S/src--filemanager--panel.c.html#L2661'>search_chpoint</a>   2661 src/filemanager/panel.c                 if (l + panel-&gt;search_chpoint &lt; sizeof (panel-&gt;search_buffer))</span>
+<span class='curline'><a href='../S/src--filemanager--panel.c.html#L2663'>search_chpoint</a>   2663 src/filemanager/panel.c                     memcpy (panel-&gt;search_buffer + l, panel-&gt;search_char, panel-&gt;search_chpoint);</span>
+<span class='curline'><a href='../S/src--filemanager--panel.c.html#L2664'>search_chpoint</a>   2664 src/filemanager/panel.c                     l += panel-&gt;search_chpoint;</span>
+<span class='curline'><a href='../S/src--filemanager--panel.c.html#L2666'>search_chpoint</a>   2666 src/filemanager/panel.c                     panel-&gt;search_chpoint = 0;</span>
+<span class='curline'><a href='../S/src--filemanager--panel.c.html#L2755'>search_chpoint</a>   2755 src/filemanager/panel.c         panel-&gt;search_chpoint = 0;</span>
+<span class='curline'><a href='../S/src--filemanager--panel.h.html#L140'>search_chpoint</a>    140 src/filemanager/panel.h     int search_chpoint;         /*point after last characters in search_char */</span>
+</pre>
+</body>
+</html>

@@ -1,0 +1,36 @@
+<!DOCTYPE html PUBLIC '-//W3C//DTD XHTML 1.0 Transitional//EN' 'http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd'>
+<html xmlns='http://www.w3.org/1999/xhtml'>
+<head>
+<title>dentry</title>
+<meta name='robots' content='noindex,nofollow' />
+<meta name='generator' content='GLOBAL-6.5.2' />
+<meta http-equiv='Content-Style-Type' content='text/css' />
+<link rel='stylesheet' type='text/css' href='../style.css' />
+</head>
+<body>
+<pre>
+<span class='curline'><a href='../S/src--vfs--smbfs--smbfs.c.html#L1434'>dentry</a>           1434 src/vfs/smbfs/smbfs.c     dir_entry *dentry;</span>
+<span class='curline'><a href='../S/src--vfs--smbfs--smbfs.c.html#L1450'>dentry</a>           1450 src/vfs/smbfs/smbfs.c         dentry = current_info-&gt;entries;</span>
+<span class='curline'><a href='../S/src--vfs--smbfs--smbfs.c.html#L1452'>dentry</a>           1452 src/vfs/smbfs/smbfs.c         while (dentry)</span>
+<span class='curline'><a href='../S/src--vfs--smbfs--smbfs.c.html#L1454'>dentry</a>           1454 src/vfs/smbfs/smbfs.c             if (strcmp (dentry-&gt;text, path) == 0)</span>
+<span class='curline'><a href='../S/src--vfs--smbfs--smbfs.c.html#L1457'>dentry</a>           1457 src/vfs/smbfs/smbfs.c                            dentry-&gt;text, (int) dentry-&gt;my_stat.st_mode));</span>
+<span class='curline'><a href='../S/src--vfs--smbfs--smbfs.c.html#L1458'>dentry</a>           1458 src/vfs/smbfs/smbfs.c                 memcpy (buf, &amp;dentry-&gt;my_stat, sizeof (struct stat));</span>
+<span class='curline'><a href='../S/src--vfs--smbfs--smbfs.c.html#L1461'>dentry</a>           1461 src/vfs/smbfs/smbfs.c             dentry = dentry-&gt;next;</span>
+<span class='curline'><a href='../S/src--vfs--smbfs--smbfs.c.html#L1473'>dentry</a>           1473 src/vfs/smbfs/smbfs.c     dir_entry *dentry;</span>
+<span class='curline'><a href='../S/src--vfs--smbfs--smbfs.c.html#L1512'>dentry</a>           1512 src/vfs/smbfs/smbfs.c     dentry = current_share_info-&gt;entries;</span>
+<span class='curline'><a href='../S/src--vfs--smbfs--smbfs.c.html#L1514'>dentry</a>           1514 src/vfs/smbfs/smbfs.c     while (dentry)</span>
+<span class='curline'><a href='../S/src--vfs--smbfs--smbfs.c.html#L1516'>dentry</a>           1516 src/vfs/smbfs/smbfs.c         if (strcmp (dentry-&gt;text, path) == 0)</span>
+<span class='curline'><a href='../S/src--vfs--smbfs--smbfs.c.html#L1519'>dentry</a>           1519 src/vfs/smbfs/smbfs.c                        dentry-&gt;text, (int) dentry-&gt;my_stat.st_mode));</span>
+<span class='curline'><a href='../S/src--vfs--smbfs--smbfs.c.html#L1520'>dentry</a>           1520 src/vfs/smbfs/smbfs.c             memcpy (buf, &amp;dentry-&gt;my_stat, sizeof (struct stat));</span>
+<span class='curline'><a href='../S/src--vfs--smbfs--smbfs.c.html#L1523'>dentry</a>           1523 src/vfs/smbfs/smbfs.c         dentry = dentry-&gt;next;</span>
+<span class='curline'><a href='../S/src--vfs--smbfs--smbfs.c.html#L1571'>dentry</a>           1571 src/vfs/smbfs/smbfs.c smbfs_search_dir_entry (dir_entry * dentry, const char *text, struct stat *buf)</span>
+<span class='curline'><a href='../S/src--vfs--smbfs--smbfs.c.html#L1573'>dentry</a>           1573 src/vfs/smbfs/smbfs.c     while (dentry)</span>
+<span class='curline'><a href='../S/src--vfs--smbfs--smbfs.c.html#L1575'>dentry</a>           1575 src/vfs/smbfs/smbfs.c         if (strcmp (text, dentry-&gt;text) == 0)</span>
+<span class='curline'><a href='../S/src--vfs--smbfs--smbfs.c.html#L1577'>dentry</a>           1577 src/vfs/smbfs/smbfs.c             memcpy (buf, &amp;dentry-&gt;my_stat, sizeof (struct stat));</span>
+<span class='curline'><a href='../S/src--vfs--smbfs--smbfs.c.html#L1578'>dentry</a>           1578 src/vfs/smbfs/smbfs.c             memcpy (&amp;single_entry-&gt;my_stat, &amp;dentry-&gt;my_stat, sizeof (struct stat));</span>
+<span class='curline'><a href='../S/src--vfs--smbfs--smbfs.c.html#L1581'>dentry</a>           1581 src/vfs/smbfs/smbfs.c         dentry = dentry-&gt;next;</span>
+<span class='curline'><a href='../S/src--vfs--smbfs--smbfs.c.html#L1593'>dentry</a>           1593 src/vfs/smbfs/smbfs.c     dir_entry *dentry = current_info-&gt;entries;</span>
+<span class='curline'><a href='../S/src--vfs--smbfs--smbfs.c.html#L1603'>dentry</a>           1603 src/vfs/smbfs/smbfs.c     if (!dentry)</span>
+</pre>
+</body>
+</html>

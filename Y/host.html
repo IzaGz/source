@@ -1,0 +1,167 @@
+<!DOCTYPE html PUBLIC '-//W3C//DTD XHTML 1.0 Transitional//EN' 'http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd'>
+<html xmlns='http://www.w3.org/1999/xhtml'>
+<head>
+<title>host</title>
+<meta name='robots' content='noindex,nofollow' />
+<meta name='generator' content='GLOBAL-6.5.2' />
+<meta http-equiv='Content-Style-Type' content='text/css' />
+<link rel='stylesheet' type='text/css' href='../style.css' />
+</head>
+<body>
+<pre>
+<span class='curline'><a href='../S/lib--lock.c.html#L90'>host</a>               90 lib/lock.c         char host[BUF_SIZE];</span>
+<span class='curline'><a href='../S/lib--lock.c.html#L107'>host</a>              107 lib/lock.c         if (gethostname (host, BUF_SIZE - 1) == -1)</span>
+<span class='curline'><a href='../S/lib--lock.c.html#L108'>host</a>              108 lib/lock.c             *host = '\0';</span>
+<span class='curline'><a href='../S/lib--lock.c.html#L110'>host</a>              110 lib/lock.c         return g_strdup_printf ("%s@%s.%d", user, host, (int) getpid ());</span>
+<span class='curline'><a href='../S/lib--vfs--path.c.html#L315'>host</a>              315 lib/vfs/path.c     path_element-&gt;host = g_strdup (rest);</span>
+<span class='curline'><a href='../S/lib--vfs--path.c.html#L856'>host</a>              856 lib/vfs/path.c     new_element-&gt;host = g_strdup (element-&gt;host);</span>
+<span class='curline'><a href='../S/lib--vfs--path.c.html#L890'>host</a>              890 lib/vfs/path.c     g_free (element-&gt;host);</span>
+<span class='curline'><a href='../S/lib--vfs--path.c.html#L1121'>host</a>             1121 lib/vfs/path.c         mc_config_set_string_raw (cpath, groupname, "host", element-&gt;host);</span>
+<span class='curline'><a href='../S/lib--vfs--path.c.html#L1193'>host</a>             1193 lib/vfs/path.c         element-&gt;host = mc_config_get_string_raw (cpath, groupname, "host", NULL);</span>
+<span class='curline'><a href='../S/lib--vfs--path.c.html#L1499'>host</a>             1499 lib/vfs/path.c     if (element-&gt;host != NULL)</span>
+<span class='curline'><a href='../S/lib--vfs--path.c.html#L1505'>host</a>             1505 lib/vfs/path.c         g_string_append (buffer, element-&gt;host);</span>
+<span class='curline'><a href='../S/lib--vfs--path.c.html#L1510'>host</a>             1510 lib/vfs/path.c     if ((element-&gt;port) != 0 &amp;&amp; (element-&gt;host != NULL))</span>
+<span class='curline'><a href='../S/lib--vfs--path.h.html#L37'>host</a>               37 lib/vfs/path.h     char *host;</span>
+<span class='curline'><a href='../S/lib--vfs--utilvfs.c.html#L343'>host</a>              343 lib/vfs/utilvfs.c     path_element-&gt;host = g_strdup (rest);</span>
+<span class='curline'><a href='../S/src--filemanager--boxes.c.html#L1297'>host</a>             1297 src/filemanager/boxes.c vfs_smb_get_authinfo (const char *host, const char *share, const char *domain, const char *user)</span>
+<span class='curline'><a href='../S/src--filemanager--boxes.c.html#L1307'>host</a>             1307 src/filemanager/boxes.c     label = g_strdup_printf (_("Password for \\\\%s\\%s"), host, share);</span>
+<span class='curline'><a href='../S/src--filemanager--boxes.c.html#L1342'>host</a>             1342 src/filemanager/boxes.c             return_value = vfs_smb_authinfo_new (host, share, ret_domain, ret_user, ret_password);</span>
+<span class='curline'><a href='../S/src--filemanager--layout.c.html#L1392'>host</a>             1392 src/filemanager/layout.c     char host[BUF_TINY];</span>
+<span class='curline'><a href='../S/src--filemanager--layout.c.html#L1399'>host</a>             1399 src/filemanager/layout.c     res = gethostname (host, sizeof (host));</span>
+<span class='curline'><a href='../S/src--filemanager--layout.c.html#L1401'>host</a>             1401 src/filemanager/layout.c         host[0] = '\0';</span>
+<span class='curline'><a href='../S/src--filemanager--layout.c.html#L1403'>host</a>             1403 src/filemanager/layout.c         host[sizeof (host) - 1] = '\0';</span>
+<span class='curline'><a href='../S/src--filemanager--layout.c.html#L1407'>host</a>             1407 src/filemanager/layout.c         *login = g_strdup_printf ("%s@%s", pw-&gt;pw_name, host);</span>
+<span class='curline'><a href='../S/src--filemanager--layout.c.html#L1409'>host</a>             1409 src/filemanager/layout.c         *login = g_strdup (host);</span>
+<span class='curline'><a href='../S/src--filemanager--mountlist.c.html#L1223'>host</a>             1223 src/filemanager/mountlist.c                 char *host, *dir;</span>
+<span class='curline'><a href='../S/src--filemanager--mountlist.c.html#L1227'>host</a>             1227 src/filemanager/mountlist.c                 host = thisent + vmp-&gt;vmt_data[VMT_HOSTNAME].vmt_off;</span>
+<span class='curline'><a href='../S/src--filemanager--mountlist.c.html#L1229'>host</a>             1229 src/filemanager/mountlist.c                 me-&gt;me_devname = g_strconcat (host, ":", dir, (char *) NULL);</span>
+<span class='curline'><a href='../S/src--vfs--fish--fish.c.html#L470'>host</a>              470 src/vfs/fish/fish.c     argv[i++] = super-&gt;path_element-&gt;host;</span>
+<span class='curline'><a href='../S/src--vfs--fish--fish.c.html#L574'>host</a>              574 src/vfs/fish/fish.c         g_strconcat ("sh://", super-&gt;path_element-&gt;user, "@", super-&gt;path_element-&gt;host,</span>
+<span class='curline'><a href='../S/src--vfs--fish--fish.c.html#L600'>host</a>              600 src/vfs/fish/fish.c         fish_load_script_from_file (super-&gt;path_element-&gt;host, FISH_LS_FILE, FISH_LS_DEF_CONTENT);</span>
+<span class='curline'><a href='../S/src--vfs--fish--fish.c.html#L602'>host</a>              602 src/vfs/fish/fish.c         fish_load_script_from_file (super-&gt;path_element-&gt;host, FISH_EXISTS_FILE,</span>
+<span class='curline'><a href='../S/src--vfs--fish--fish.c.html#L605'>host</a>              605 src/vfs/fish/fish.c         fish_load_script_from_file (super-&gt;path_element-&gt;host, FISH_MKDIR_FILE,</span>
+<span class='curline'><a href='../S/src--vfs--fish--fish.c.html#L608'>host</a>              608 src/vfs/fish/fish.c         fish_load_script_from_file (super-&gt;path_element-&gt;host, FISH_UNLINK_FILE,</span>
+<span class='curline'><a href='../S/src--vfs--fish--fish.c.html#L611'>host</a>              611 src/vfs/fish/fish.c         fish_load_script_from_file (super-&gt;path_element-&gt;host, FISH_CHOWN_FILE,</span>
+<span class='curline'><a href='../S/src--vfs--fish--fish.c.html#L614'>host</a>              614 src/vfs/fish/fish.c         fish_load_script_from_file (super-&gt;path_element-&gt;host, FISH_CHMOD_FILE,</span>
+<span class='curline'><a href='../S/src--vfs--fish--fish.c.html#L617'>host</a>              617 src/vfs/fish/fish.c         fish_load_script_from_file (super-&gt;path_element-&gt;host, FISH_UTIME_FILE,</span>
+<span class='curline'><a href='../S/src--vfs--fish--fish.c.html#L620'>host</a>              620 src/vfs/fish/fish.c         fish_load_script_from_file (super-&gt;path_element-&gt;host, FISH_RMDIR_FILE,</span>
+<span class='curline'><a href='../S/src--vfs--fish--fish.c.html#L623'>host</a>              623 src/vfs/fish/fish.c         fish_load_script_from_file (super-&gt;path_element-&gt;host, FISH_LN_FILE, FISH_LN_DEF_CONTENT);</span>
+<span class='curline'><a href='../S/src--vfs--fish--fish.c.html#L625'>host</a>              625 src/vfs/fish/fish.c         fish_load_script_from_file (super-&gt;path_element-&gt;host, FISH_MV_FILE, FISH_MV_DEF_CONTENT);</span>
+<span class='curline'><a href='../S/src--vfs--fish--fish.c.html#L627'>host</a>              627 src/vfs/fish/fish.c         fish_load_script_from_file (super-&gt;path_element-&gt;host, FISH_HARDLINK_FILE,</span>
+<span class='curline'><a href='../S/src--vfs--fish--fish.c.html#L630'>host</a>              630 src/vfs/fish/fish.c         fish_load_script_from_file (super-&gt;path_element-&gt;host, FISH_GET_FILE, FISH_GET_DEF_CONTENT);</span>
+<span class='curline'><a href='../S/src--vfs--fish--fish.c.html#L632'>host</a>              632 src/vfs/fish/fish.c         fish_load_script_from_file (super-&gt;path_element-&gt;host, FISH_SEND_FILE,</span>
+<span class='curline'><a href='../S/src--vfs--fish--fish.c.html#L635'>host</a>              635 src/vfs/fish/fish.c         fish_load_script_from_file (super-&gt;path_element-&gt;host, FISH_APPEND_FILE,</span>
+<span class='curline'><a href='../S/src--vfs--fish--fish.c.html#L638'>host</a>              638 src/vfs/fish/fish.c         fish_load_script_from_file (super-&gt;path_element-&gt;host, FISH_INFO_FILE,</span>
+<span class='curline'><a href='../S/src--vfs--fish--fish.c.html#L661'>host</a>              661 src/vfs/fish/fish.c     result = ((strcmp (path_element-&gt;host, super-&gt;path_element-&gt;host) == 0)</span>
+<span class='curline'><a href='../S/src--vfs--fish--fish.c.html#L1687'>host</a>             1687 src/vfs/fish/fish.c                          super-&gt;path_element-&gt;user, "@", super-&gt;path_element-&gt;host, flags,</span>
+<span class='curline'><a href='../S/src--vfs--ftpfs--ftpfs.c.html#L270'>host</a>              270 src/vfs/ftpfs/ftpfs.c static int ftpfs_netrc_lookup (const char *host, char **login, char **pass);</span>
+<span class='curline'><a href='../S/src--vfs--ftpfs--ftpfs.c.html#L365'>host</a>              365 src/vfs/ftpfs/ftpfs.c             ftpfs_netrc_lookup (path_element-&gt;host, &amp;path_element-&gt;user, &amp;path_element-&gt;password);</span>
+<span class='curline'><a href='../S/src--vfs--ftpfs--ftpfs.c.html#L376'>host</a>              376 src/vfs/ftpfs/ftpfs.c         ftpfs_netrc_lookup (path_element-&gt;host, &amp;new_user, &amp;new_passwd);</span>
+<span class='curline'><a href='../S/src--vfs--ftpfs--ftpfs.c.html#L572'>host</a>              572 src/vfs/ftpfs/ftpfs.c         vfs_print_message (_("ftpfs: Disconnecting from %s"), super-&gt;path_element-&gt;host);</span>
+<span class='curline'><a href='../S/src--vfs--ftpfs--ftpfs.c.html#L644'>host</a>              644 src/vfs/ftpfs/ftpfs.c                          super-&gt;path_element-&gt;host[0] ==</span>
+<span class='curline'><a href='../S/src--vfs--ftpfs--ftpfs.c.html#L645'>host</a>              645 src/vfs/ftpfs/ftpfs.c                          '!' ? super-&gt;path_element-&gt;host + 1 : super-&gt;path_element-&gt;host,</span>
+<span class='curline'><a href='../S/src--vfs--ftpfs--ftpfs.c.html#L764'>host</a>              764 src/vfs/ftpfs/ftpfs.c ftpfs_check_proxy (const char *host)</span>
+<span class='curline'><a href='../S/src--vfs--ftpfs--ftpfs.c.html#L768'>host</a>              768 src/vfs/ftpfs/ftpfs.c     if (ftpfs_proxy_host == NULL || *ftpfs_proxy_host == '\0' || host == NULL || *host == '\0')</span>
+<span class='curline'><a href='../S/src--vfs--ftpfs--ftpfs.c.html#L771'>host</a>              771 src/vfs/ftpfs/ftpfs.c     if (*host == '!')</span>
+<span class='curline'><a href='../S/src--vfs--ftpfs--ftpfs.c.html#L777'>host</a>              777 src/vfs/ftpfs/ftpfs.c     if (strchr (host, '.') == NULL)</span>
+<span class='curline'><a href='../S/src--vfs--ftpfs--ftpfs.c.html#L788'>host</a>              788 src/vfs/ftpfs/ftpfs.c             size_t lh = strlen (host);</span>
+<span class='curline'><a href='../S/src--vfs--ftpfs--ftpfs.c.html#L790'>host</a>              790 src/vfs/ftpfs/ftpfs.c             while (ld != 0 &amp;&amp; lh != 0 &amp;&amp; host[lh - 1] == domain[ld - 1])</span>
+<span class='curline'><a href='../S/src--vfs--ftpfs--ftpfs.c.html#L799'>host</a>              799 src/vfs/ftpfs/ftpfs.c         else if (g_ascii_strcasecmp (host, domain) == 0)</span>
+<span class='curline'><a href='../S/src--vfs--ftpfs--ftpfs.c.html#L809'>host</a>              809 src/vfs/ftpfs/ftpfs.c ftpfs_get_proxy_host_and_port (const char *proxy, char **host, int *port)</span>
+<span class='curline'><a href='../S/src--vfs--ftpfs--ftpfs.c.html#L814'>host</a>              814 src/vfs/ftpfs/ftpfs.c     *host = g_strdup (path_element-&gt;host);</span>
+<span class='curline'><a href='../S/src--vfs--ftpfs--ftpfs.c.html#L826'>host</a>              826 src/vfs/ftpfs/ftpfs.c     char *host = NULL;</span>
+<span class='curline'><a href='../S/src--vfs--ftpfs--ftpfs.c.html#L834'>host</a>              834 src/vfs/ftpfs/ftpfs.c     host = g_strdup (super-&gt;path_element-&gt;host);</span>
+<span class='curline'><a href='../S/src--vfs--ftpfs--ftpfs.c.html#L836'>host</a>              836 src/vfs/ftpfs/ftpfs.c     if (host == NULL || *host == '\0')</span>
+<span class='curline'><a href='../S/src--vfs--ftpfs--ftpfs.c.html#L840'>host</a>              840 src/vfs/ftpfs/ftpfs.c         g_free (host);</span>
+<span class='curline'><a href='../S/src--vfs--ftpfs--ftpfs.c.html#L848'>host</a>              848 src/vfs/ftpfs/ftpfs.c         ftpfs_get_proxy_host_and_port (ftpfs_proxy_host, &amp;host, &amp;tmp_port);</span>
+<span class='curline'><a href='../S/src--vfs--ftpfs--ftpfs.c.html#L853'>host</a>              853 src/vfs/ftpfs/ftpfs.c         g_free (host);</span>
+<span class='curline'><a href='../S/src--vfs--ftpfs--ftpfs.c.html#L871'>host</a>              871 src/vfs/ftpfs/ftpfs.c     e = getaddrinfo (host, port, &amp;hints, &amp;res);</span>
+<span class='curline'><a href='../S/src--vfs--ftpfs--ftpfs.c.html#L878'>host</a>              878 src/vfs/ftpfs/ftpfs.c         e = getaddrinfo (host, port, &amp;hints, &amp;res);</span>
+<span class='curline'><a href='../S/src--vfs--ftpfs--ftpfs.c.html#L888'>host</a>              888 src/vfs/ftpfs/ftpfs.c         g_free (host);</span>
+<span class='curline'><a href='../S/src--vfs--ftpfs--ftpfs.c.html#L904'>host</a>              904 src/vfs/ftpfs/ftpfs.c             g_free (host);</span>
+<span class='curline'><a href='../S/src--vfs--ftpfs--ftpfs.c.html#L910'>host</a>              910 src/vfs/ftpfs/ftpfs.c         vfs_print_message (_("ftpfs: making connection to %s"), host);</span>
+<span class='curline'><a href='../S/src--vfs--ftpfs--ftpfs.c.html#L911'>host</a>              911 src/vfs/ftpfs/ftpfs.c         MC_PTR_FREE (host);</span>
+<span class='curline'><a href='../S/src--vfs--ftpfs--ftpfs.c.html#L1011'>host</a>             1011 src/vfs/ftpfs/ftpfs.c     if (ftpfs_check_proxy (super-&gt;path_element-&gt;host))</span>
+<span class='curline'><a href='../S/src--vfs--ftpfs--ftpfs.c.html#L1039'>host</a>             1039 src/vfs/ftpfs/ftpfs.c     result = ((strcmp (path_element-&gt;host, super-&gt;path_element-&gt;host) == 0)</span>
+<span class='curline'><a href='../S/src--vfs--ftpfs--ftpfs.c.html#L2417'>host</a>             2417 src/vfs/ftpfs/ftpfs.c ftpfs_find_machine (const char *host, const char *domain)</span>
+<span class='curline'><a href='../S/src--vfs--ftpfs--ftpfs.c.html#L2421'>host</a>             2421 src/vfs/ftpfs/ftpfs.c     if (!host)</span>
+<span class='curline'><a href='../S/src--vfs--ftpfs--ftpfs.c.html#L2422'>host</a>             2422 src/vfs/ftpfs/ftpfs.c         host = "";</span>
+<span class='curline'><a href='../S/src--vfs--ftpfs--ftpfs.c.html#L2453'>host</a>             2453 src/vfs/ftpfs/ftpfs.c         if (g_ascii_strcasecmp (host, buffer) != 0)</span>
+<span class='curline'><a href='../S/src--vfs--ftpfs--ftpfs.c.html#L2456'>host</a>             2456 src/vfs/ftpfs/ftpfs.c             const char *host_domain = strchr (host, '.');</span>
+<span class='curline'><a href='../S/src--vfs--ftpfs--ftpfs.c.html#L2465'>host</a>             2465 src/vfs/ftpfs/ftpfs.c             if (g_ascii_strncasecmp (host, buffer, host_domain - host) != 0)</span>
+<span class='curline'><a href='../S/src--vfs--ftpfs--ftpfs.c.html#L2482'>host</a>             2482 src/vfs/ftpfs/ftpfs.c ftpfs_netrc_lookup (const char *host, char **login, char **pass)</span>
+<span class='curline'><a href='../S/src--vfs--ftpfs--ftpfs.c.html#L2491'>host</a>             2491 src/vfs/ftpfs/ftpfs.c         char *host;</span>
+<span class='curline'><a href='../S/src--vfs--ftpfs--ftpfs.c.html#L2503'>host</a>             2503 src/vfs/ftpfs/ftpfs.c         if (strcmp (host, rupp-&gt;host) == 0)</span>
+<span class='curline'><a href='../S/src--vfs--ftpfs--ftpfs.c.html#L2530'>host</a>             2530 src/vfs/ftpfs/ftpfs.c     ftpfs_find_machine (host, domain);</span>
+<span class='curline'><a href='../S/src--vfs--ftpfs--ftpfs.c.html#L2608'>host</a>             2608 src/vfs/ftpfs/ftpfs.c     rupp-&gt;host = g_strdup (host);</span>
+<span class='curline'><a href='../S/src--vfs--sftpfs--config_parser.c.html#L258'>host</a>              258 src/vfs/sftpfs/config_parser.c             if (strcmp (host_pattern, vpath_element-&gt;host) == 0)</span>
+<span class='curline'><a href='../S/src--vfs--sftpfs--config_parser.c.html#L272'>host</a>              272 src/vfs/sftpfs/config_parser.c                     mc_search_run (pattern_regexp, vpath_element-&gt;host, 0,</span>
+<span class='curline'><a href='../S/src--vfs--sftpfs--config_parser.c.html#L273'>host</a>              273 src/vfs/sftpfs/config_parser.c                                    strlen (vpath_element-&gt;host), NULL);</span>
+<span class='curline'><a href='../S/src--vfs--sftpfs--config_parser.c.html#L381'>host</a>              381 src/vfs/sftpfs/config_parser.c         g_free (super-&gt;path_element-&gt;host);</span>
+<span class='curline'><a href='../S/src--vfs--sftpfs--config_parser.c.html#L382'>host</a>              382 src/vfs/sftpfs/config_parser.c         super-&gt;path_element-&gt;host = g_strdup (config_entity-&gt;real_host);</span>
+<span class='curline'><a href='../S/src--vfs--sftpfs--connection.c.html#L76'>host</a>               76 src/vfs/sftpfs/connection.c     if (super-&gt;path_element-&gt;host == NULL || *super-&gt;path_element-&gt;host == '\0')</span>
+<span class='curline'><a href='../S/src--vfs--sftpfs--connection.c.html#L97'>host</a>               97 src/vfs/sftpfs/connection.c     e = getaddrinfo (super-&gt;path_element-&gt;host, port, &amp;hints, &amp;res);</span>
+<span class='curline'><a href='../S/src--vfs--sftpfs--connection.c.html#L104'>host</a>              104 src/vfs/sftpfs/connection.c         e = getaddrinfo (super-&gt;path_element-&gt;host, port, &amp;hints, &amp;res);</span>
+<span class='curline'><a href='../S/src--vfs--sftpfs--connection.c.html#L131'>host</a>              131 src/vfs/sftpfs/connection.c         vfs_print_message (_("sftp: making connection to %s"), super-&gt;path_element-&gt;host);</span>
+<span class='curline'><a href='../S/src--vfs--sftpfs--vfs_subclass.c.html#L72'>host</a>               72 src/vfs/sftpfs/vfs_subclass.c     result = ((g_strcmp0 (vpath_element-&gt;host, orig_connect_info-&gt;host) == 0)</span>
+<span class='curline'><a href='../S/src--vfs--sftpfs--vfs_subclass.c.html#L99'>host</a>               99 src/vfs/sftpfs/vfs_subclass.c     if (vpath_element-&gt;host == NULL || *vpath_element-&gt;host == '\0')</span>
+<span class='curline'><a href='../S/src--vfs--smbfs--helpers--include--proto.h.html#L296'>host</a>              296 src/vfs/smbfs/helpers/include/proto.h BOOL cli_connect (struct cli_state *cli, const char *host, struct in_addr *ip);</span>
+<span class='curline'><a href='../S/src--vfs--smbfs--helpers--include--proto.h.html#L308'>host</a>              308 src/vfs/smbfs/helpers/include/proto.h BOOL cli_message_start (struct cli_state *cli, char *host, char *username, int *grp);</span>
+<span class='curline'><a href='../S/src--vfs--smbfs--helpers--libsmb--clientgen.c.html#L2515'>host</a>             2515 src/vfs/smbfs/helpers/libsmb/clientgen.c cli_connect (struct cli_state * cli, const char *host, struct in_addr * ip)</span>
+<span class='curline'><a href='../S/src--vfs--smbfs--helpers--libsmb--clientgen.c.html#L2519'>host</a>             2519 src/vfs/smbfs/helpers/libsmb/clientgen.c     fstrcpy (cli-&gt;desthost, host);</span>
+<span class='curline'><a href='../S/src--vfs--smbfs--helpers--libsmb--clientgen.c.html#L2966'>host</a>             2966 src/vfs/smbfs/helpers/libsmb/clientgen.c cli_message_start (struct cli_state * cli, char *host, char *username, int *grp)</span>
+<span class='curline'><a href='../S/src--vfs--smbfs--helpers--libsmb--clientgen.c.html#L2982'>host</a>             2982 src/vfs/smbfs/helpers/libsmb/clientgen.c     pstrcpy (p, host);</span>
+<span class='curline'><a href='../S/src--vfs--smbfs--smbfs.c.html#L146'>host</a>              146 src/vfs/smbfs/smbfs.c     char *host;                 /* server name */</span>
+<span class='curline'><a href='../S/src--vfs--smbfs--smbfs.c.html#L211'>host</a>              211 src/vfs/smbfs/smbfs.c     g_free (a-&gt;host);</span>
+<span class='curline'><a href='../S/src--vfs--smbfs--smbfs.c.html#L239'>host</a>              239 src/vfs/smbfs/smbfs.c     if (!a-&gt;host || !a-&gt;share || !b-&gt;host || !b-&gt;share)</span>
+<span class='curline'><a href='../S/src--vfs--smbfs--smbfs.c.html#L241'>host</a>              241 src/vfs/smbfs/smbfs.c     if (strcmp (a-&gt;host, b-&gt;host) != 0)</span>
+<span class='curline'><a href='../S/src--vfs--smbfs--smbfs.c.html#L256'>host</a>              256 src/vfs/smbfs/smbfs.c     if (!a-&gt;host || !b-&gt;host)</span>
+<span class='curline'><a href='../S/src--vfs--smbfs--smbfs.c.html#L258'>host</a>              258 src/vfs/smbfs/smbfs.c     if (strcmp (a-&gt;host, b-&gt;host) != 0)</span>
+<span class='curline'><a href='../S/src--vfs--smbfs--smbfs.c.html#L268'>host</a>              268 src/vfs/smbfs/smbfs.c smbfs_auth_add (const char *host, const char *share, const char *domain,</span>
+<span class='curline'><a href='../S/src--vfs--smbfs--smbfs.c.html#L273'>host</a>              273 src/vfs/smbfs/smbfs.c     auth = vfs_smb_authinfo_new (host, share, domain, user, pass);</span>
+<span class='curline'><a href='../S/src--vfs--smbfs--smbfs.c.html#L282'>host</a>              282 src/vfs/smbfs/smbfs.c smbfs_auth_remove (const char *host, const char *share)</span>
+<span class='curline'><a href='../S/src--vfs--smbfs--smbfs.c.html#L288'>host</a>              288 src/vfs/smbfs/smbfs.c     data.host = g_strdup (host);</span>
+<span class='curline'><a href='../S/src--vfs--smbfs--smbfs.c.html#L291'>host</a>              291 src/vfs/smbfs/smbfs.c     g_free (data.host);</span>
+<span class='curline'><a href='../S/src--vfs--smbfs--smbfs.c.html#L322'>host</a>              322 src/vfs/smbfs/smbfs.c         smbfs_auth_remove (bucket-&gt;host, bucket-&gt;service);</span>
+<span class='curline'><a href='../S/src--vfs--smbfs--smbfs.c.html#L323'>host</a>              323 src/vfs/smbfs/smbfs.c         smbfs_auth_add (bucket-&gt;host, bucket-&gt;service, domain, user, pass);</span>
+<span class='curline'><a href='../S/src--vfs--smbfs--smbfs.c.html#L327'>host</a>              327 src/vfs/smbfs/smbfs.c     data.host = bucket-&gt;host;</span>
+<span class='curline'><a href='../S/src--vfs--smbfs--smbfs.c.html#L349'>host</a>              349 src/vfs/smbfs/smbfs.c     auth = vfs_smb_get_authinfo (bucket-&gt;host,</span>
+<span class='curline'><a href='../S/src--vfs--smbfs--smbfs.c.html#L359'>host</a>              359 src/vfs/smbfs/smbfs.c         smbfs_auth_remove (bucket-&gt;host, bucket-&gt;service);</span>
+<span class='curline'><a href='../S/src--vfs--smbfs--smbfs.c.html#L444'>host</a>              444 src/vfs/smbfs/smbfs.c                                 smbfs_connections[i].host,</span>
+<span class='curline'><a href='../S/src--vfs--smbfs--smbfs.c.html#L681'>host</a>              681 src/vfs/smbfs/smbfs.c     char *host;</span>
+<span class='curline'><a href='../S/src--vfs--smbfs--smbfs.c.html#L684'>host</a>              684 src/vfs/smbfs/smbfs.c     if (*(conn-&gt;host) == 0)</span>
+<span class='curline'><a href='../S/src--vfs--smbfs--smbfs.c.html#L685'>host</a>              685 src/vfs/smbfs/smbfs.c         host = g_strdup (conn-&gt;cli-&gt;desthost);  /* server browsing */</span>
+<span class='curline'><a href='../S/src--vfs--smbfs--smbfs.c.html#L687'>host</a>              687 src/vfs/smbfs/smbfs.c         host = g_strdup (conn-&gt;host);</span>
+<span class='curline'><a href='../S/src--vfs--smbfs--smbfs.c.html#L691'>host</a>              691 src/vfs/smbfs/smbfs.c     if (!(conn-&gt;cli = smbfs_do_connect (host, conn-&gt;service)))</span>
+<span class='curline'><a href='../S/src--vfs--smbfs--smbfs.c.html#L693'>host</a>              693 src/vfs/smbfs/smbfs.c         message (D_ERROR, MSG_ERROR, _("reconnect to %s failed"), conn-&gt;host);</span>
+<span class='curline'><a href='../S/src--vfs--smbfs--smbfs.c.html#L694'>host</a>              694 src/vfs/smbfs/smbfs.c         g_free (host);</span>
+<span class='curline'><a href='../S/src--vfs--smbfs--smbfs.c.html#L697'>host</a>              697 src/vfs/smbfs/smbfs.c     g_free (host);</span>
+<span class='curline'><a href='../S/src--vfs--smbfs--smbfs.c.html#L1149'>host</a>             1149 src/vfs/smbfs/smbfs.c smbfs_get_master_browser (char **host)</span>
+<span class='curline'><a href='../S/src--vfs--smbfs--smbfs.c.html#L1169'>host</a>             1169 src/vfs/smbfs/smbfs.c         *host = g_strdup (inet_ntoa (ip_list[0]));</span>
+<span class='curline'><a href='../S/src--vfs--smbfs--smbfs.c.html#L1180'>host</a>             1180 src/vfs/smbfs/smbfs.c     g_free (bucket-&gt;host);</span>
+<span class='curline'><a href='../S/src--vfs--smbfs--smbfs.c.html#L1226'>host</a>             1226 src/vfs/smbfs/smbfs.c smbfs_open_link (char *host, char *path, const char *user, int *port, char *this_pass)</span>
+<span class='curline'><a href='../S/src--vfs--smbfs--smbfs.c.html#L1233'>host</a>             1233 src/vfs/smbfs/smbfs.c     DEBUG (3, ("smbfs_open_link(host:%s, path:%s)\n", host, path));</span>
+<span class='curline'><a href='../S/src--vfs--smbfs--smbfs.c.html#L1235'>host</a>             1235 src/vfs/smbfs/smbfs.c     if (strcmp (host, path) == 0)       /* if host &amp; path are same: */</span>
+<span class='curline'><a href='../S/src--vfs--smbfs--smbfs.c.html#L1261'>host</a>             1261 src/vfs/smbfs/smbfs.c         if ((strcmp (host, smbfs_connections[i].host) == 0) &amp;&amp;</span>
+<span class='curline'><a href='../S/src--vfs--smbfs--smbfs.c.html#L1266'>host</a>             1266 src/vfs/smbfs/smbfs.c             BOOL inshare = (*host != 0 &amp;&amp; *path != 0 &amp;&amp; strchr (path, '/'));</span>
+<span class='curline'><a href='../S/src--vfs--smbfs--smbfs.c.html#L1279'>host</a>             1279 src/vfs/smbfs/smbfs.c         if (strcmp (host, smbfs_connections[i].host) == 0)</span>
+<span class='curline'><a href='../S/src--vfs--smbfs--smbfs.c.html#L1299'>host</a>             1299 src/vfs/smbfs/smbfs.c     if (!(*host))</span>
+<span class='curline'><a href='../S/src--vfs--smbfs--smbfs.c.html#L1301'>host</a>             1301 src/vfs/smbfs/smbfs.c         if (!smbfs_get_master_browser (&amp;host))  /* set host to ip of master browser */</span>
+<span class='curline'><a href='../S/src--vfs--smbfs--smbfs.c.html#L1303'>host</a>             1303 src/vfs/smbfs/smbfs.c         g_free (host);</span>
+<span class='curline'><a href='../S/src--vfs--smbfs--smbfs.c.html#L1304'>host</a>             1304 src/vfs/smbfs/smbfs.c         bucket-&gt;host = g_strdup ("");   /* blank host means master browser */</span>
+<span class='curline'><a href='../S/src--vfs--smbfs--smbfs.c.html#L1307'>host</a>             1307 src/vfs/smbfs/smbfs.c         bucket-&gt;host = g_strdup (host);</span>
+<span class='curline'><a href='../S/src--vfs--smbfs--smbfs.c.html#L1314'>host</a>             1314 src/vfs/smbfs/smbfs.c     while (!(bucket-&gt;cli = smbfs_do_connect (host, service)))</span>
+<span class='curline'><a href='../S/src--vfs--smbfs--smbfs.c.html#L1322'>host</a>             1322 src/vfs/smbfs/smbfs.c         smbfs_auth_remove (bucket-&gt;host, bucket-&gt;service);</span>
+<span class='curline'><a href='../S/src--vfs--smbfs--smbfs.c.html#L1358'>host</a>             1358 src/vfs/smbfs/smbfs.c         *sc = smbfs_open_link (url-&gt;host, url-&gt;path, url-&gt;user, &amp;url-&gt;port, url-&gt;password);</span>
+<span class='curline'><a href='../S/src--vfs--smbfs--smbfs.c.html#L1771'>host</a>             1771 src/vfs/smbfs/smbfs.c     pstrcat (server_url, current_bucket-&gt;host);</span>
+<span class='curline'><a href='../S/src--vfs--smbfs--smbfs.c.html#L1792'>host</a>             1792 src/vfs/smbfs/smbfs.c         int hostlen = strlen (current_bucket-&gt;host);</span>
+<span class='curline'><a href='../S/src--vfs--smbfs--smbfs.c.html#L2003'>host</a>             2003 src/vfs/smbfs/smbfs.c                 &amp;&amp; (strcmp (p-&gt;host, smbfs_connections[i].host) == 0)</span>
+<span class='curline'><a href='../S/src--vfs--smbfs--smbfs.c.html#L2012'>host</a>             2012 src/vfs/smbfs/smbfs.c                 smbfs_connections[i].cli = smbfs_do_connect (p-&gt;host, smbfs_connections[i].service);</span>
+<span class='curline'><a href='../S/src--vfs--smbfs--smbfs.c.html#L2216'>host</a>             2216 src/vfs/smbfs/smbfs.c vfs_smb_authinfo_new (const char *host, const char *share, const char *domain,</span>
+<span class='curline'><a href='../S/src--vfs--smbfs--smbfs.c.html#L2225'>host</a>             2225 src/vfs/smbfs/smbfs.c         auth-&gt;host = g_strdup (host);</span>
+<span class='curline'><a href='../S/src--vfs--smbfs--smbfs.h.html#L18'>host</a>               18 src/vfs/smbfs/smbfs.h     char *host;</span>
+<span class='curline'><a href='../S/src--vfs--smbfs--smbfs.h.html#L33'>host</a>               33 src/vfs/smbfs/smbfs.h smb_authinfo *vfs_smb_authinfo_new (const char *host,</span>
+<span class='curline'><a href='../S/src--vfs--smbfs--smbfs.h.html#L38'>host</a>               38 src/vfs/smbfs/smbfs.h smb_authinfo *vfs_smb_get_authinfo (const char *host,</span>
+</pre>
+</body>
+</html>

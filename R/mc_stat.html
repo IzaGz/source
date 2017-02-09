@@ -1,0 +1,68 @@
+<!DOCTYPE html PUBLIC '-//W3C//DTD XHTML 1.0 Transitional//EN' 'http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd'>
+<html xmlns='http://www.w3.org/1999/xhtml'>
+<head>
+<title>mc_stat</title>
+<meta name='robots' content='noindex,nofollow' />
+<meta name='generator' content='GLOBAL-6.5.2' />
+<meta http-equiv='Content-Style-Type' content='text/css' />
+<link rel='stylesheet' type='text/css' href='../style.css' />
+</head>
+<body>
+<pre>
+<span class='curline'><a href='../S/lib--mcconfig--common.c.html#L126'>mc_stat</a>           126 lib/mcconfig/common.c         if (mc_stat (vpath, &amp;st) == 0 &amp;&amp; st.st_size != 0)</span>
+<span class='curline'><a href='../S/lib--vfs--interface.c.html#L114'>mc_stat</a>           114 lib/vfs/interface.c     if (mc_stat (filename_vpath, &amp;mystat) != -1)</span>
+<span class='curline'><a href='../S/lib--vfs--vfs.c.html#L210'>mc_stat</a>           210 lib/vfs/vfs.c      return (mc_global.vfs.cd_symlinks &amp;&amp; mc_stat (vpath, &amp;my_stat) == 0</span>
+<span class='curline'><a href='../S/lib--vfs--vfs.c.html#L211'>mc_stat</a>           211 lib/vfs/vfs.c              &amp;&amp; mc_stat (vfs_get_raw_current_dir (), &amp;my_stat2) == 0</span>
+<span class='curline'><a href='../S/lib--vfs--vfs.h.html#L302'>mc_stat</a>           302 lib/vfs/vfs.h  int mc_stat (const vfs_path_t * vpath, struct stat *buf);</span>
+<span class='curline'><a href='../S/lib--widget--input_complete.c.html#L235'>mc_stat</a>           235 lib/widget/input_complete.c             if (mc_stat (tmp_vpath, &amp;tempstat) == 0)</span>
+<span class='curline'><a href='../S/src--args.c.html#L579'>mc_stat</a>           579 src/args.c                 if (mc_stat (tmp_vpath, &amp;st) == -1 &amp;&amp; mc_stat (fname_vpath, &amp;st) != -1)</span>
+<span class='curline'><a href='../S/src--diffviewer--ydiff.c.html#L3506'>mc_stat</a>          3506 src/diffviewer/ydiff.c             if (mc_stat (real_file##n, &amp;st##n) != 0) \</span>
+<span class='curline'><a href='../S/src--diffviewer--ydiff.c.html#L3523'>mc_stat</a>          3523 src/diffviewer/ydiff.c             if (mc_stat (real_file##n, &amp;st##n) == 0) \</span>
+<span class='curline'><a href='../S/src--diffviewer--ydiff.c.html#L3579'>mc_stat</a>          3579 src/diffviewer/ydiff.c             if (mc_stat (file0, &amp;st) == 0)</span>
+<span class='curline'><a href='../S/src--diffviewer--ydiff.c.html#L3596'>mc_stat</a>          3596 src/diffviewer/ydiff.c             if (mc_stat (file1, &amp;st) == 0)</span>
+<span class='curline'><a href='../S/src--editor--edit.c.html#L1784'>mc_stat</a>          1784 src/editor/edit.c         &amp;&amp; (mc_stat (block_file_vpath, &amp;status) == 0) &amp;&amp; (status.st_size != 0))</span>
+<span class='curline'><a href='../S/src--editor--editcmd.c.html#L224'>mc_stat</a>           224 src/editor/editcmd.c     rv = mc_stat (real_filename_vpath, &amp;sb);</span>
+<span class='curline'><a href='../S/src--editor--editcmd.c.html#L345'>mc_stat</a>           345 src/editor/editcmd.c         if (mc_stat (savename_vpath, &amp;edit-&gt;stat1) == -1)</span>
+<span class='curline'><a href='../S/src--editor--editcmd.c.html#L1707'>mc_stat</a>          1707 src/editor/editcmd.c                 if (mc_stat (exp_vpath, &amp;sb) == 0 &amp;&amp; !S_ISREG (sb.st_mode))</span>
+<span class='curline'><a href='../S/src--execute.c.html#L201'>mc_stat</a>           201 src/execute.c      mc_stat (*localcopy_vpath, &amp;st);</span>
+<span class='curline'><a href='../S/src--execute.c.html#L221'>mc_stat</a>           221 src/execute.c          mc_stat (*localcopy_vpath, &amp;st);</span>
+<span class='curline'><a href='../S/src--filemanager--achown.c.html#L801'>mc_stat</a>           801 src/filemanager/achown.c         if (mc_stat (vpath, sf) != 0)</span>
+<span class='curline'><a href='../S/src--filemanager--achown.c.html#L851'>mc_stat</a>           851 src/filemanager/achown.c         if (mc_stat (vpath, sf_stat) != 0)</span>
+<span class='curline'><a href='../S/src--filemanager--chmod.c.html#L429'>mc_stat</a>           429 src/filemanager/chmod.c         ok = (mc_stat (vpath, sf) == 0);</span>
+<span class='curline'><a href='../S/src--filemanager--chmod.c.html#L472'>mc_stat</a>           472 src/filemanager/chmod.c         if (mc_stat (vpath, &amp;sf_stat) != 0)</span>
+<span class='curline'><a href='../S/src--filemanager--chown.c.html#L356'>mc_stat</a>           356 src/filemanager/chown.c         if (mc_stat (vpath, &amp;sf_stat) != 0)</span>
+<span class='curline'><a href='../S/src--filemanager--dir.c.html#L182'>mc_stat</a>           182 src/filemanager/dir.c         if (mc_stat (vpath, &amp;buf2) == 0)</span>
+<span class='curline'><a href='../S/src--filemanager--dir.c.html#L212'>mc_stat</a>           212 src/filemanager/dir.c             ret = mc_stat (tmp_vpath, st) == 0;</span>
+<span class='curline'><a href='../S/src--filemanager--dir.c.html#L610'>mc_stat</a>           610 src/filemanager/dir.c         if (mc_stat (vpath, &amp;buf2) == 0)</span>
+<span class='curline'><a href='../S/src--filemanager--dir.c.html#L683'>mc_stat</a>           683 src/filemanager/dir.c     if (S_ISLNK (file-&gt;st.st_mode) &amp;&amp; mc_stat (full_name_vpath, &amp;b) == 0)</span>
+<span class='curline'><a href='../S/src--filemanager--ext.c.html#L127'>mc_stat</a>           127 src/filemanager/ext.c         mc_stat (localfilecopy_vpath, &amp;mystat);</span>
+<span class='curline'><a href='../S/src--filemanager--ext.c.html#L150'>mc_stat</a>           150 src/filemanager/ext.c         mc_stat (localfilecopy_vpath, &amp;mystat);</span>
+<span class='curline'><a href='../S/src--filemanager--ext.c.html#L863'>mc_stat</a>           863 src/filemanager/ext.c     mc_stat (filename_vpath, &amp;mystat);</span>
+<span class='curline'><a href='../S/src--filemanager--file.c.html#L343'>mc_stat</a>           343 src/filemanager/file.c             stat_result = mc_stat (lnk-&gt;src_vpath, &amp;link_stat);</span>
+<span class='curline'><a href='../S/src--filemanager--file.c.html#L354'>mc_stat</a>           354 src/filemanager/file.c                     mc_stat (lnk-&gt;dst_vpath, &amp;link_stat) == 0 &amp;&amp;</span>
+<span class='curline'><a href='../S/src--filemanager--file.c.html#L1529'>mc_stat</a>          1529 src/filemanager/file.c     while (mc_stat (dst_vpath, &amp;dst_stat) == 0)</span>
+<span class='curline'><a href='../S/src--filemanager--file.c.html#L2121'>mc_stat</a>          2121 src/filemanager/file.c     if (mc_stat (dst_vpath, &amp;buf) != 0)</span>
+<span class='curline'><a href='../S/src--filemanager--file.c.html#L2187'>mc_stat</a>          2187 src/filemanager/file.c         mc_stat (dst_vpath, &amp;buf);</span>
+<span class='curline'><a href='../S/src--filemanager--file.c.html#L2330'>mc_stat</a>          2330 src/filemanager/file.c     mc_stat (src_vpath, &amp;sbuf);</span>
+<span class='curline'><a href='../S/src--filemanager--file.c.html#L2332'>mc_stat</a>          2332 src/filemanager/file.c     dstat_ok = (mc_stat (dst_vpath, &amp;dbuf) == 0);</span>
+<span class='curline'><a href='../S/src--filemanager--file.c.html#L2356'>mc_stat</a>          2356 src/filemanager/file.c     if (mc_stat (dst_vpath, &amp;dbuf) == 0)</span>
+<span class='curline'><a href='../S/src--filemanager--file.c.html#L2951'>mc_stat</a>          2951 src/filemanager/file.c             dst_result = mc_stat (dest_vpath, &amp;dst_stat);</span>
+<span class='curline'><a href='../S/src--filemanager--filegui.c.html#L1277'>mc_stat</a>          1277 src/filemanager/filegui.c             ctx-&gt;stat_func = mc_stat;</span>
+<span class='curline'><a href='../S/src--filemanager--filegui.c.html#L1337'>mc_stat</a>          1337 src/filemanager/filegui.c                     || (mc_stat (vpath, &amp;buf) == 0 &amp;&amp; S_ISDIR (buf.st_mode))))</span>
+<span class='curline'><a href='../S/src--filemanager--filegui.c.html#L1340'>mc_stat</a>          1340 src/filemanager/filegui.c                     || (only_one &amp;&amp; mc_stat (vpath, &amp;buf) == 0 &amp;&amp; S_ISDIR (buf.st_mode)))))</span>
+<span class='curline'><a href='../S/src--filemanager--find.c.html#L1003'>mc_stat</a>          1003 src/filemanager/find.c     if (mc_stat (vpath, &amp;s) != 0 || !S_ISREG (s.st_mode))</span>
+<span class='curline'><a href='../S/src--filemanager--midnight.c.html#L1726'>mc_stat</a>          1726 src/filemanager/midnight.c         mc_stat (current_panel-&gt;cwd_vpath, &amp;(current_panel-&gt;dir_stat));</span>
+<span class='curline'><a href='../S/src--filemanager--midnight.c.html#L1728'>mc_stat</a>          1728 src/filemanager/midnight.c             mc_stat (other_panel-&gt;cwd_vpath, &amp;(other_panel-&gt;dir_stat));</span>
+<span class='curline'><a href='../S/src--filemanager--panel.c.html#L2938'>mc_stat</a>          2938 src/filemanager/panel.c     ok = (mc_stat (panel_fname_vpath, &amp;st) &gt;= 0);</span>
+<span class='curline'><a href='../S/src--filemanager--tree.c.html#L764'>mc_stat</a>           764 src/filemanager/tree.c     if (mc_stat (dest_vpath, &amp;buf))</span>
+<span class='curline'><a href='../S/src--filemanager--treestore.c.html#L811'>mc_stat</a>           811 src/filemanager/treestore.c         if (mc_stat (vpath, &amp;s) == -1)</span>
+<span class='curline'><a href='../S/src--vfs--cpio--cpio.c.html#L232'>mc_stat</a>           232 src/vfs/cpio/cpio.c     mc_stat (vpath, &amp;arch-&gt;st);</span>
+<span class='curline'><a href='../S/src--vfs--cpio--cpio.c.html#L794'>mc_stat</a>           794 src/vfs/cpio/cpio.c     stat_result = mc_stat (vpath, &amp;sb);</span>
+<span class='curline'><a href='../S/src--vfs--extfs--extfs.c.html#L381'>mc_stat</a>           381 src/vfs/extfs/extfs.c         mc_stat (local_name_vpath, &amp;my);</span>
+<span class='curline'><a href='../S/src--vfs--extfs--extfs.c.html#L414'>mc_stat</a>           414 src/vfs/extfs/extfs.c         if (mc_stat (name_vpath, &amp;mystat) == -1)</span>
+<span class='curline'><a href='../S/src--vfs--extfs--extfs.c.html#L457'>mc_stat</a>           457 src/vfs/extfs/extfs.c         mc_stat (local_name_vpath, &amp;current_archive-&gt;local_stat);</span>
+<span class='curline'><a href='../S/src--vfs--tar--tar.c.html#L301'>mc_stat</a>           301 src/vfs/tar/tar.c     mc_stat (vpath, &amp;arch-&gt;st);</span>
+<span class='curline'><a href='../S/src--vfs--tar--tar.c.html#L848'>mc_stat</a>           848 src/vfs/tar/tar.c     stat_result = mc_stat (vpath, &amp;stat_buf);</span>
+</pre>
+</body>
+</html>

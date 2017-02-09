@@ -1,0 +1,91 @@
+<!DOCTYPE html PUBLIC '-//W3C//DTD XHTML 1.0 Transitional//EN' 'http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd'>
+<html xmlns='http://www.w3.org/1999/xhtml'>
+<head>
+<title>panels_layout</title>
+<meta name='robots' content='noindex,nofollow' />
+<meta name='generator' content='GLOBAL-6.5.2' />
+<meta http-equiv='Content-Style-Type' content='text/css' />
+<link rel='stylesheet' type='text/css' href='../style.css' />
+</head>
+<body>
+<pre>
+<span class='curline'><a href='../S/src--filemanager--layout.c.html#L71'>panels_layout</a>      71 src/filemanager/layout.c panels_layout_t panels_layout = {</span>
+<span class='curline'><a href='../S/src--filemanager--layout.c.html#L223'>panels_layout</a>     223 src/filemanager/layout.c     check_split (&amp;panels_layout);</span>
+<span class='curline'><a href='../S/src--filemanager--layout.c.html#L225'>panels_layout</a>     225 src/filemanager/layout.c     if (panels_layout.horizontal_split)</span>
+<span class='curline'><a href='../S/src--filemanager--layout.c.html#L226'>panels_layout</a>     226 src/filemanager/layout.c         check_options[0].widget-&gt;state = panels_layout.horizontal_equal ? 1 : 0;</span>
+<span class='curline'><a href='../S/src--filemanager--layout.c.html#L228'>panels_layout</a>     228 src/filemanager/layout.c         check_options[0].widget-&gt;state = panels_layout.vertical_equal ? 1 : 0;</span>
+<span class='curline'><a href='../S/src--filemanager--layout.c.html#L234'>panels_layout</a>     234 src/filemanager/layout.c     if (panels_layout.horizontal_split)</span>
+<span class='curline'><a href='../S/src--filemanager--layout.c.html#L235'>panels_layout</a>     235 src/filemanager/layout.c         tty_printf ("%03d", panels_layout.top_panel_size);</span>
+<span class='curline'><a href='../S/src--filemanager--layout.c.html#L237'>panels_layout</a>     237 src/filemanager/layout.c         tty_printf ("%03d", panels_layout.left_panel_size);</span>
+<span class='curline'><a href='../S/src--filemanager--layout.c.html#L240'>panels_layout</a>     240 src/filemanager/layout.c     if (panels_layout.horizontal_split)</span>
+<span class='curline'><a href='../S/src--filemanager--layout.c.html#L241'>panels_layout</a>     241 src/filemanager/layout.c         tty_printf ("%03d", height - panels_layout.top_panel_size);</span>
+<span class='curline'><a href='../S/src--filemanager--layout.c.html#L243'>panels_layout</a>     243 src/filemanager/layout.c         tty_printf ("%03d", COLS - panels_layout.left_panel_size);</span>
+<span class='curline'><a href='../S/src--filemanager--layout.c.html#L258'>panels_layout</a>     258 src/filemanager/layout.c         if (panels_layout.horizontal_split)</span>
+<span class='curline'><a href='../S/src--filemanager--layout.c.html#L259'>panels_layout</a>     259 src/filemanager/layout.c             panels_layout.top_panel_size++;</span>
+<span class='curline'><a href='../S/src--filemanager--layout.c.html#L261'>panels_layout</a>     261 src/filemanager/layout.c             panels_layout.left_panel_size++;</span>
+<span class='curline'><a href='../S/src--filemanager--layout.c.html#L265'>panels_layout</a>     265 src/filemanager/layout.c         if (panels_layout.horizontal_split)</span>
+<span class='curline'><a href='../S/src--filemanager--layout.c.html#L266'>panels_layout</a>     266 src/filemanager/layout.c             panels_layout.top_panel_size--;</span>
+<span class='curline'><a href='../S/src--filemanager--layout.c.html#L268'>panels_layout</a>     268 src/filemanager/layout.c             panels_layout.left_panel_size--;</span>
+<span class='curline'><a href='../S/src--filemanager--layout.c.html#L350'>panels_layout</a>     350 src/filemanager/layout.c                 minimum = MINHEIGHT * (1 + panels_layout.horizontal_split);</span>
+<span class='curline'><a href='../S/src--filemanager--layout.c.html#L375'>panels_layout</a>     375 src/filemanager/layout.c             if (panels_layout.horizontal_split != radio_widget-&gt;sel)</span>
+<span class='curline'><a href='../S/src--filemanager--layout.c.html#L379'>panels_layout</a>     379 src/filemanager/layout.c                 panels_layout.horizontal_split = radio_widget-&gt;sel;</span>
+<span class='curline'><a href='../S/src--filemanager--layout.c.html#L381'>panels_layout</a>     381 src/filemanager/layout.c                 if (panels_layout.horizontal_split)</span>
+<span class='curline'><a href='../S/src--filemanager--layout.c.html#L383'>panels_layout</a>     383 src/filemanager/layout.c                     eq = panels_layout.horizontal_equal;</span>
+<span class='curline'><a href='../S/src--filemanager--layout.c.html#L385'>panels_layout</a>     385 src/filemanager/layout.c                         panels_layout.top_panel_size = height / 2;</span>
+<span class='curline'><a href='../S/src--filemanager--layout.c.html#L389'>panels_layout</a>     389 src/filemanager/layout.c                     eq = panels_layout.vertical_equal;</span>
+<span class='curline'><a href='../S/src--filemanager--layout.c.html#L391'>panels_layout</a>     391 src/filemanager/layout.c                         panels_layout.left_panel_size = COLS / 2;</span>
+<span class='curline'><a href='../S/src--filemanager--layout.c.html#L411'>panels_layout</a>     411 src/filemanager/layout.c             if (panels_layout.horizontal_split)</span>
+<span class='curline'><a href='../S/src--filemanager--layout.c.html#L413'>panels_layout</a>     413 src/filemanager/layout.c                 panels_layout.horizontal_equal = check_options[0].widget-&gt;state;</span>
+<span class='curline'><a href='../S/src--filemanager--layout.c.html#L414'>panels_layout</a>     414 src/filemanager/layout.c                 eq = panels_layout.horizontal_equal;</span>
+<span class='curline'><a href='../S/src--filemanager--layout.c.html#L418'>panels_layout</a>     418 src/filemanager/layout.c                 panels_layout.vertical_equal = check_options[0].widget-&gt;state;</span>
+<span class='curline'><a href='../S/src--filemanager--layout.c.html#L419'>panels_layout</a>     419 src/filemanager/layout.c                 eq = panels_layout.vertical_equal;</span>
+<span class='curline'><a href='../S/src--filemanager--layout.c.html#L522'>panels_layout</a>     522 src/filemanager/layout.c     radio_widget-&gt;sel = panels_layout.horizontal_split;</span>
+<span class='curline'><a href='../S/src--filemanager--layout.c.html#L528'>panels_layout</a>     528 src/filemanager/layout.c     equal_split = panels_layout.horizontal_split ?</span>
+<span class='curline'><a href='../S/src--filemanager--layout.c.html#L529'>panels_layout</a>     529 src/filemanager/layout.c         panels_layout.horizontal_equal : panels_layout.vertical_equal;</span>
+<span class='curline'><a href='../S/src--filemanager--layout.c.html#L643'>panels_layout</a>     643 src/filemanager/layout.c     old_layout = panels_layout;</span>
+<span class='curline'><a href='../S/src--filemanager--layout.c.html#L660'>panels_layout</a>     660 src/filemanager/layout.c         panels_layout = old_layout;</span>
+<span class='curline'><a href='../S/src--filemanager--layout.c.html#L662'>panels_layout</a>     662 src/filemanager/layout.c         check_split (&amp;panels_layout);   /* FIXME: is it really needed? */</span>
+<span class='curline'><a href='../S/src--filemanager--layout.c.html#L683'>panels_layout</a>     683 src/filemanager/layout.c     if (panels_layout.horizontal_split)</span>
+<span class='curline'><a href='../S/src--filemanager--layout.c.html#L696'>panels_layout</a>     696 src/filemanager/layout.c         cols = panels_layout.left_panel_size;</span>
+<span class='curline'><a href='../S/src--filemanager--layout.c.html#L701'>panels_layout</a>     701 src/filemanager/layout.c         cols = COLS - panels_layout.left_panel_size;</span>
+<span class='curline'><a href='../S/src--filemanager--layout.c.html#L702'>panels_layout</a>     702 src/filemanager/layout.c         origin = panels_layout.left_panel_size;</span>
+<span class='curline'><a href='../S/src--filemanager--layout.c.html#L725'>panels_layout</a>     725 src/filemanager/layout.c         minimum = MINHEIGHT * (1 + panels_layout.horizontal_split);</span>
+<span class='curline'><a href='../S/src--filemanager--layout.c.html#L739'>panels_layout</a>     739 src/filemanager/layout.c     check_split (&amp;panels_layout);</span>
+<span class='curline'><a href='../S/src--filemanager--layout.c.html#L747'>panels_layout</a>     747 src/filemanager/layout.c     if (panels_layout.horizontal_split)</span>
+<span class='curline'><a href='../S/src--filemanager--layout.c.html#L749'>panels_layout</a>     749 src/filemanager/layout.c         widget_set_size (panels[0].widget, start_y, 0, panels_layout.top_panel_size,</span>
+<span class='curline'><a href='../S/src--filemanager--layout.c.html#L751'>panels_layout</a>     751 src/filemanager/layout.c         widget_set_size (panels[1].widget, start_y + panels_layout.top_panel_size, 0,</span>
+<span class='curline'><a href='../S/src--filemanager--layout.c.html#L752'>panels_layout</a>     752 src/filemanager/layout.c                          height - panels_layout.top_panel_size, panels[1].widget-&gt;cols);</span>
+<span class='curline'><a href='../S/src--filemanager--layout.c.html#L801'>panels_layout</a>     801 src/filemanager/layout.c     if (panels_layout.horizontal_split)</span>
+<span class='curline'><a href='../S/src--filemanager--layout.c.html#L802'>panels_layout</a>     802 src/filemanager/layout.c         panels_layout.horizontal_equal = TRUE;</span>
+<span class='curline'><a href='../S/src--filemanager--layout.c.html#L804'>panels_layout</a>     804 src/filemanager/layout.c         panels_layout.vertical_equal = TRUE;</span>
+<span class='curline'><a href='../S/src--filemanager--layout.c.html#L815'>panels_layout</a>     815 src/filemanager/layout.c     if (panels_layout.horizontal_split)</span>
+<span class='curline'><a href='../S/src--filemanager--layout.c.html#L817'>panels_layout</a>     817 src/filemanager/layout.c         panels_layout.horizontal_equal = FALSE;</span>
+<span class='curline'><a href='../S/src--filemanager--layout.c.html#L818'>panels_layout</a>     818 src/filemanager/layout.c         panels_layout.top_panel_size++;</span>
+<span class='curline'><a href='../S/src--filemanager--layout.c.html#L822'>panels_layout</a>     822 src/filemanager/layout.c         panels_layout.vertical_equal = FALSE;</span>
+<span class='curline'><a href='../S/src--filemanager--layout.c.html#L823'>panels_layout</a>     823 src/filemanager/layout.c         panels_layout.left_panel_size++;</span>
+<span class='curline'><a href='../S/src--filemanager--layout.c.html#L834'>panels_layout</a>     834 src/filemanager/layout.c     if (panels_layout.horizontal_split)</span>
+<span class='curline'><a href='../S/src--filemanager--layout.c.html#L836'>panels_layout</a>     836 src/filemanager/layout.c         panels_layout.horizontal_equal = FALSE;</span>
+<span class='curline'><a href='../S/src--filemanager--layout.c.html#L837'>panels_layout</a>     837 src/filemanager/layout.c         panels_layout.top_panel_size--;</span>
+<span class='curline'><a href='../S/src--filemanager--layout.c.html#L841'>panels_layout</a>     841 src/filemanager/layout.c         panels_layout.vertical_equal = FALSE;</span>
+<span class='curline'><a href='../S/src--filemanager--layout.c.html#L842'>panels_layout</a>     842 src/filemanager/layout.c         panels_layout.left_panel_size--;</span>
+<span class='curline'><a href='../S/src--filemanager--layout.c.html#L1012'>panels_layout</a>    1012 src/filemanager/layout.c             if (panels_layout.horizontal_split)</span>
+<span class='curline'><a href='../S/src--filemanager--layout.c.html#L1019'>panels_layout</a>    1019 src/filemanager/layout.c                 cols = COLS - panels_layout.left_panel_size;</span>
+<span class='curline'><a href='../S/src--filemanager--layout.c.html#L1021'>panels_layout</a>    1021 src/filemanager/layout.c                     x = panels_layout.left_panel_size;</span>
+<span class='curline'><a href='../S/src--filemanager--layout.h.html#L53'>panels_layout</a>      53 src/filemanager/layout.h extern panels_layout_t panels_layout;</span>
+<span class='curline'><a href='../S/src--filemanager--midnight.c.html#L457'>panels_layout</a>     457 src/filemanager/midnight.c     panels_layout.horizontal_split = !panels_layout.horizontal_split;</span>
+<span class='curline'><a href='../S/src--filemanager--midnight.c.html#L1578'>panels_layout</a>    1578 src/filemanager/midnight.c     menu_set_name (left_menu, panels_layout.horizontal_split ? _("&amp;Above") : _("&amp;Left"));</span>
+<span class='curline'><a href='../S/src--filemanager--midnight.c.html#L1579'>panels_layout</a>    1579 src/filemanager/midnight.c     menu_set_name (right_menu, panels_layout.horizontal_split ? _("&amp;Below") : _("&amp;Right"));</span>
+<span class='curline'><a href='../S/src--setup.c.html#L267'>panels_layout</a>     267 src/setup.c        { "horizontal_split", &amp;panels_layout.horizontal_split },</span>
+<span class='curline'><a href='../S/src--setup.c.html#L268'>panels_layout</a>     268 src/setup.c        { "vertical_equal", &amp;panels_layout.vertical_equal },</span>
+<span class='curline'><a href='../S/src--setup.c.html#L269'>panels_layout</a>     269 src/setup.c        { "left_panel_size", &amp;panels_layout.left_panel_size },</span>
+<span class='curline'><a href='../S/src--setup.c.html#L270'>panels_layout</a>     270 src/setup.c        { "horizontal_equal", &amp;panels_layout.horizontal_equal },</span>
+<span class='curline'><a href='../S/src--setup.c.html#L271'>panels_layout</a>     271 src/setup.c        { "top_panel_size", &amp;panels_layout.top_panel_size },</span>
+<span class='curline'><a href='../S/src--setup.c.html#L674'>panels_layout</a>     674 src/setup.c        panels_layout.horizontal_split = mc_config_get_int (mc_global.main_config, CONFIG_APP_SECTION,</span>
+<span class='curline'><a href='../S/src--setup.c.html#L678'>panels_layout</a>     678 src/setup.c        if (panels_layout.horizontal_split)</span>
+<span class='curline'><a href='../S/src--setup.c.html#L680'>panels_layout</a>     680 src/setup.c            panels_layout.horizontal_equal = equal_split;</span>
+<span class='curline'><a href='../S/src--setup.c.html#L681'>panels_layout</a>     681 src/setup.c            panels_layout.left_panel_size = first_panel_size;</span>
+<span class='curline'><a href='../S/src--setup.c.html#L685'>panels_layout</a>     685 src/setup.c            panels_layout.vertical_equal = equal_split;</span>
+<span class='curline'><a href='../S/src--setup.c.html#L686'>panels_layout</a>     686 src/setup.c            panels_layout.top_panel_size = first_panel_size;</span>
+</pre>
+</body>
+</html>

@@ -1,0 +1,28 @@
+<!DOCTYPE html PUBLIC '-//W3C//DTD XHTML 1.0 Transitional//EN' 'http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd'>
+<html xmlns='http://www.w3.org/1999/xhtml'>
+<head>
+<title>bi</title>
+<meta name='robots' content='noindex,nofollow' />
+<meta name='generator' content='GLOBAL-6.5.2' />
+<meta http-equiv='Content-Style-Type' content='text/css' />
+<link rel='stylesheet' type='text/css' href='../style.css' />
+</head>
+<body>
+<pre>
+<span class='curline'><a href='../S/lib--widget--input_complete.c.html#L404'>bi</a>                404 lib/widget/input_complete.c     char *bi;</span>
+<span class='curline'><a href='../S/lib--widget--input_complete.c.html#L413'>bi</a>                413 lib/widget/input_complete.c         for (bi = buffer; bi[0] != '\0' &amp;&amp; str_isspace (bi); str_next_char (&amp;bi))</span>
+<span class='curline'><a href='../S/lib--widget--input_complete.c.html#L417'>bi</a>                417 lib/widget/input_complete.c         if (bi[0] == '#')</span>
+<span class='curline'><a href='../S/lib--widget--input_complete.c.html#L421'>bi</a>                421 lib/widget/input_complete.c         if (strncmp (bi, "$include ", 9) == 0)</span>
+<span class='curline'><a href='../S/lib--widget--input_complete.c.html#L426'>bi</a>                426 lib/widget/input_complete.c             includefile = bi + 9;</span>
+<span class='curline'><a href='../S/lib--widget--input_complete.c.html#L441'>bi</a>                441 lib/widget/input_complete.c         while (bi[0] != '\0' &amp;&amp; !str_isspace (bi))</span>
+<span class='curline'><a href='../S/lib--widget--input_complete.c.html#L442'>bi</a>                442 lib/widget/input_complete.c             str_next_char (&amp;bi);</span>
+<span class='curline'><a href='../S/lib--widget--input_complete.c.html#L445'>bi</a>                445 lib/widget/input_complete.c         while (bi[0] != '\0' &amp;&amp; bi[0] != '#')</span>
+<span class='curline'><a href='../S/lib--widget--input_complete.c.html#L447'>bi</a>                447 lib/widget/input_complete.c             while (bi[0] != '\0' &amp;&amp; str_isspace (bi))</span>
+<span class='curline'><a href='../S/lib--widget--input_complete.c.html#L448'>bi</a>                448 lib/widget/input_complete.c                 str_next_char (&amp;bi);</span>
+<span class='curline'><a href='../S/lib--widget--input_complete.c.html#L449'>bi</a>                449 lib/widget/input_complete.c             if (bi[0] == '#')</span>
+<span class='curline'><a href='../S/lib--widget--input_complete.c.html#L451'>bi</a>                451 lib/widget/input_complete.c             for (lc_start = bi; bi[0] != '\0' &amp;&amp; !str_isspace (bi); str_next_char (&amp;bi))</span>
+<span class='curline'><a href='../S/lib--widget--input_complete.c.html#L454'>bi</a>                454 lib/widget/input_complete.c             if (bi == lc_start)</span>
+<span class='curline'><a href='../S/lib--widget--input_complete.c.html#L457'>bi</a>                457 lib/widget/input_complete.c             name = g_strndup (lc_start, bi - lc_start);</span>
+</pre>
+</body>
+</html>

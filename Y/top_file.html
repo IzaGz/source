@@ -1,0 +1,81 @@
+<!DOCTYPE html PUBLIC '-//W3C//DTD XHTML 1.0 Transitional//EN' 'http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd'>
+<html xmlns='http://www.w3.org/1999/xhtml'>
+<head>
+<title>top_file</title>
+<meta name='robots' content='noindex,nofollow' />
+<meta name='generator' content='GLOBAL-6.5.2' />
+<meta http-equiv='Content-Style-Type' content='text/css' />
+<link rel='stylesheet' type='text/css' href='../style.css' />
+</head>
+<body>
+<pre>
+<span class='curline'><a href='../S/src--filemanager--layout.c.html#L1150'>top_file</a>         1150 src/filemanager/layout.c         panelswap (top_file);</span>
+<span class='curline'><a href='../S/src--filemanager--panel.c.html#L920'>top_file</a>          920 src/filemanager/panel.c         nth_column = (file_index - panel-&gt;top_file) / panel_lines (panel);</span>
+<span class='curline'><a href='../S/src--filemanager--panel.c.html#L935'>top_file</a>          935 src/filemanager/panel.c         ypos = file_index - panel-&gt;top_file;</span>
+<span class='curline'><a href='../S/src--filemanager--panel.c.html#L1054'>top_file</a>         1054 src/filemanager/panel.c         if (i + panel-&gt;top_file &lt; panel-&gt;dir.len)</span>
+<span class='curline'><a href='../S/src--filemanager--panel.c.html#L1056'>top_file</a>         1056 src/filemanager/panel.c             color = 2 * (panel-&gt;dir.list[i + panel-&gt;top_file].f.marked);</span>
+<span class='curline'><a href='../S/src--filemanager--panel.c.html#L1057'>top_file</a>         1057 src/filemanager/panel.c             color += (panel-&gt;selected == i + panel-&gt;top_file &amp;&amp; panel-&gt;active);</span>
+<span class='curline'><a href='../S/src--filemanager--panel.c.html#L1060'>top_file</a>         1060 src/filemanager/panel.c         repaint_file (panel, i + panel-&gt;top_file, TRUE, color, FALSE);</span>
+<span class='curline'><a href='../S/src--filemanager--panel.c.html#L1356'>top_file</a>         1356 src/filemanager/panel.c         panel-&gt;top_file = 0;</span>
+<span class='curline'><a href='../S/src--filemanager--panel.c.html#L1368'>top_file</a>         1368 src/filemanager/panel.c         if (panel-&gt;top_file &lt; 0)</span>
+<span class='curline'><a href='../S/src--filemanager--panel.c.html#L1369'>top_file</a>         1369 src/filemanager/panel.c             panel-&gt;top_file = 0;</span>
+<span class='curline'><a href='../S/src--filemanager--panel.c.html#L1372'>top_file</a>         1372 src/filemanager/panel.c         if (panel-&gt;top_file &lt; i)</span>
+<span class='curline'><a href='../S/src--filemanager--panel.c.html#L1373'>top_file</a>         1373 src/filemanager/panel.c             panel-&gt;top_file = i;</span>
+<span class='curline'><a href='../S/src--filemanager--panel.c.html#L1376'>top_file</a>         1376 src/filemanager/panel.c         if (panel-&gt;top_file &gt; i)</span>
+<span class='curline'><a href='../S/src--filemanager--panel.c.html#L1377'>top_file</a>         1377 src/filemanager/panel.c             panel-&gt;top_file = i;</span>
+<span class='curline'><a href='../S/src--filemanager--panel.c.html#L1379'>top_file</a>         1379 src/filemanager/panel.c         if (panel-&gt;top_file &gt; panel-&gt;selected)</span>
+<span class='curline'><a href='../S/src--filemanager--panel.c.html#L1380'>top_file</a>         1380 src/filemanager/panel.c             panel-&gt;top_file = panel-&gt;selected;</span>
+<span class='curline'><a href='../S/src--filemanager--panel.c.html#L2087'>top_file</a>         2087 src/filemanager/panel.c     top = panel-&gt;top_file;</span>
+<span class='curline'><a href='../S/src--filemanager--panel.c.html#L2109'>top_file</a>         2109 src/filemanager/panel.c     if (panels_options.scroll_pages &amp;&amp; panel-&gt;selected - panel-&gt;top_file == items)</span>
+<span class='curline'><a href='../S/src--filemanager--panel.c.html#L2112'>top_file</a>         2112 src/filemanager/panel.c         panel-&gt;top_file += items / 2;</span>
+<span class='curline'><a href='../S/src--filemanager--panel.c.html#L2113'>top_file</a>         2113 src/filemanager/panel.c         if (panel-&gt;top_file &gt; panel-&gt;dir.len - items)</span>
+<span class='curline'><a href='../S/src--filemanager--panel.c.html#L2114'>top_file</a>         2114 src/filemanager/panel.c             panel-&gt;top_file = panel-&gt;dir.len - items;</span>
+<span class='curline'><a href='../S/src--filemanager--panel.c.html#L2120'>top_file</a>         2120 src/filemanager/panel.c         panel-&gt;top_file++;</span>
+<span class='curline'><a href='../S/src--filemanager--panel.c.html#L2121'>top_file</a>         2121 src/filemanager/panel.c         if (panel-&gt;top_file &gt; panel-&gt;dir.len - items)</span>
+<span class='curline'><a href='../S/src--filemanager--panel.c.html#L2122'>top_file</a>         2122 src/filemanager/panel.c             panel-&gt;top_file = panel-&gt;dir.len - items;</span>
+<span class='curline'><a href='../S/src--filemanager--panel.c.html#L2138'>top_file</a>         2138 src/filemanager/panel.c     if (panels_options.scroll_pages &amp;&amp; panel-&gt;selected &lt; panel-&gt;top_file)</span>
+<span class='curline'><a href='../S/src--filemanager--panel.c.html#L2141'>top_file</a>         2141 src/filemanager/panel.c         panel-&gt;top_file -= panel_items (panel) / 2;</span>
+<span class='curline'><a href='../S/src--filemanager--panel.c.html#L2142'>top_file</a>         2142 src/filemanager/panel.c         if (panel-&gt;top_file &lt; 0)</span>
+<span class='curline'><a href='../S/src--filemanager--panel.c.html#L2143'>top_file</a>         2143 src/filemanager/panel.c             panel-&gt;top_file = 0;</span>
+<span class='curline'><a href='../S/src--filemanager--panel.c.html#L2149'>top_file</a>         2149 src/filemanager/panel.c         panel-&gt;top_file--;</span>
+<span class='curline'><a href='../S/src--filemanager--panel.c.html#L2150'>top_file</a>         2150 src/filemanager/panel.c         if (panel-&gt;top_file &lt; 0)</span>
+<span class='curline'><a href='../S/src--filemanager--panel.c.html#L2151'>top_file</a>         2151 src/filemanager/panel.c             panel-&gt;top_file = 0;</span>
+<span class='curline'><a href='../S/src--filemanager--panel.c.html#L2175'>top_file</a>         2175 src/filemanager/panel.c     if (panel-&gt;selected - panel-&gt;top_file &gt;= panel_items (panel))</span>
+<span class='curline'><a href='../S/src--filemanager--panel.c.html#L2177'>top_file</a>         2177 src/filemanager/panel.c         panel-&gt;top_file += lines;</span>
+<span class='curline'><a href='../S/src--filemanager--panel.c.html#L2181'>top_file</a>         2181 src/filemanager/panel.c     if (panel-&gt;selected - panel-&gt;top_file &lt; 0)</span>
+<span class='curline'><a href='../S/src--filemanager--panel.c.html#L2183'>top_file</a>         2183 src/filemanager/panel.c         panel-&gt;top_file += lines;</span>
+<span class='curline'><a href='../S/src--filemanager--panel.c.html#L2189'>top_file</a>         2189 src/filemanager/panel.c         if (panel-&gt;top_file &gt; panel-&gt;selected)</span>
+<span class='curline'><a href='../S/src--filemanager--panel.c.html#L2190'>top_file</a>         2190 src/filemanager/panel.c             panel-&gt;top_file = panel-&gt;selected;</span>
+<span class='curline'><a href='../S/src--filemanager--panel.c.html#L2191'>top_file</a>         2191 src/filemanager/panel.c         if (panel-&gt;top_file &lt; 0)</span>
+<span class='curline'><a href='../S/src--filemanager--panel.c.html#L2192'>top_file</a>         2192 src/filemanager/panel.c             panel-&gt;top_file = 0;</span>
+<span class='curline'><a href='../S/src--filemanager--panel.c.html#L2233'>top_file</a>         2233 src/filemanager/panel.c     if (!panel-&gt;selected &amp;&amp; !panel-&gt;top_file)</span>
+<span class='curline'><a href='../S/src--filemanager--panel.c.html#L2238'>top_file</a>         2238 src/filemanager/panel.c     if (panel-&gt;top_file &lt; items)</span>
+<span class='curline'><a href='../S/src--filemanager--panel.c.html#L2239'>top_file</a>         2239 src/filemanager/panel.c         items = panel-&gt;top_file;</span>
+<span class='curline'><a href='../S/src--filemanager--panel.c.html#L2244'>top_file</a>         2244 src/filemanager/panel.c     panel-&gt;top_file -= items;</span>
+<span class='curline'><a href='../S/src--filemanager--panel.c.html#L2309'>top_file</a>         2309 src/filemanager/panel.c     if (panel-&gt;top_file &gt; panel-&gt;dir.len - 2 * items)</span>
+<span class='curline'><a href='../S/src--filemanager--panel.c.html#L2310'>top_file</a>         2310 src/filemanager/panel.c         items = panel-&gt;dir.len - items - panel-&gt;top_file;</span>
+<span class='curline'><a href='../S/src--filemanager--panel.c.html#L2311'>top_file</a>         2311 src/filemanager/panel.c     if (panel-&gt;top_file + items &lt; 0)</span>
+<span class='curline'><a href='../S/src--filemanager--panel.c.html#L2312'>top_file</a>         2312 src/filemanager/panel.c         items = -panel-&gt;top_file;</span>
+<span class='curline'><a href='../S/src--filemanager--panel.c.html#L2317'>top_file</a>         2317 src/filemanager/panel.c     panel-&gt;top_file += items;</span>
+<span class='curline'><a href='../S/src--filemanager--panel.c.html#L2344'>top_file</a>         2344 src/filemanager/panel.c     panel-&gt;selected = panel-&gt;top_file;</span>
+<span class='curline'><a href='../S/src--filemanager--panel.c.html#L2354'>top_file</a>         2354 src/filemanager/panel.c     panel-&gt;selected = panel-&gt;top_file + panel_items (panel) / 2;</span>
+<span class='curline'><a href='../S/src--filemanager--panel.c.html#L2364'>top_file</a>         2364 src/filemanager/panel.c     panel-&gt;selected = panel-&gt;top_file + panel_items (panel) - 1;</span>
+<span class='curline'><a href='../S/src--filemanager--panel.c.html#L2380'>top_file</a>         2380 src/filemanager/panel.c         int middle_pos = panel-&gt;top_file + panel_items (panel) / 2;</span>
+<span class='curline'><a href='../S/src--filemanager--panel.c.html#L2387'>top_file</a>         2387 src/filemanager/panel.c         if (panel-&gt;selected != panel-&gt;top_file)</span>
+<span class='curline'><a href='../S/src--filemanager--panel.c.html#L2394'>top_file</a>         2394 src/filemanager/panel.c     panel-&gt;top_file = 0;</span>
+<span class='curline'><a href='../S/src--filemanager--panel.c.html#L2416'>top_file</a>         2416 src/filemanager/panel.c         middle_pos = panel-&gt;top_file + items / 2;</span>
+<span class='curline'><a href='../S/src--filemanager--panel.c.html#L2423'>top_file</a>         2423 src/filemanager/panel.c         if (panel-&gt;selected != panel-&gt;top_file + items - 1)</span>
+<span class='curline'><a href='../S/src--filemanager--panel.c.html#L3870'>top_file</a>         3870 src/filemanager/panel.c             if (panel-&gt;top_file + y &gt; last)</span>
+<span class='curline'><a href='../S/src--filemanager--panel.c.html#L3874'>top_file</a>         3874 src/filemanager/panel.c                 my_index = panel-&gt;top_file + y;</span>
+<span class='curline'><a href='../S/src--filemanager--panel.c.html#L3923'>top_file</a>         3923 src/filemanager/panel.c             if (panels_options.mouse_move_pages &amp;&amp; panel-&gt;top_file &gt; 0)</span>
+<span class='curline'><a href='../S/src--filemanager--panel.c.html#L3934'>top_file</a>         3934 src/filemanager/panel.c                 &amp;&amp; panel-&gt;top_file + panel_items (panel) &lt; panel-&gt;dir.len)</span>
+<span class='curline'><a href='../S/src--filemanager--panel.c.html#L4047'>top_file</a>         4047 src/filemanager/panel.c         panel-&gt;top_file = panel-&gt;selected - (WIDGET (panel)-&gt;lines - 2) / 2;</span>
+<span class='curline'><a href='../S/src--filemanager--panel.c.html#L4048'>top_file</a>         4048 src/filemanager/panel.c         if (panel-&gt;top_file &lt; 0)</span>
+<span class='curline'><a href='../S/src--filemanager--panel.c.html#L4049'>top_file</a>         4049 src/filemanager/panel.c             panel-&gt;top_file = 0;</span>
+<span class='curline'><a href='../S/src--filemanager--panel.c.html#L4202'>top_file</a>         4202 src/filemanager/panel.c     panel-&gt;top_file = 0;</span>
+<span class='curline'><a href='../S/src--filemanager--panel.c.html#L4301'>top_file</a>         4301 src/filemanager/panel.c     panel-&gt;top_file = 0;</span>
+<span class='curline'><a href='../S/src--filemanager--panel.c.html#L4641'>top_file</a>         4641 src/filemanager/panel.c     panel-&gt;top_file = panel-&gt;selected - panel_items (panel) / 2;</span>
+<span class='curline'><a href='../S/src--filemanager--panel.h.html#L106'>top_file</a>          106 src/filemanager/panel.h     int top_file;               /* The file showed on the top of the panel */</span>
+</pre>
+</body>
+</html>

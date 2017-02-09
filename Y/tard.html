@@ -1,0 +1,27 @@
+<!DOCTYPE html PUBLIC '-//W3C//DTD XHTML 1.0 Transitional//EN' 'http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd'>
+<html xmlns='http://www.w3.org/1999/xhtml'>
+<head>
+<title>tard</title>
+<meta name='robots' content='noindex,nofollow' />
+<meta name='generator' content='GLOBAL-6.5.2' />
+<meta http-equiv='Content-Style-Type' content='text/css' />
+<link rel='stylesheet' type='text/css' href='../style.css' />
+</head>
+<body>
+<pre>
+<span class='curline'><a href='../S/src--vfs--tar--tar.c.html#L353'>tard</a>              353 src/vfs/tar/tar.c tar_get_next_record (struct vfs_s_super *archive, int tard)</span>
+<span class='curline'><a href='../S/src--vfs--tar--tar.c.html#L359'>tard</a>              359 src/vfs/tar/tar.c     n = mc_read (tard, rec_buf.charptr, sizeof (rec_buf.charptr));</span>
+<span class='curline'><a href='../S/src--vfs--tar--tar.c.html#L369'>tard</a>              369 src/vfs/tar/tar.c tar_skip_n_records (struct vfs_s_super *archive, int tard, size_t n)</span>
+<span class='curline'><a href='../S/src--vfs--tar--tar.c.html#L373'>tard</a>              373 src/vfs/tar/tar.c     mc_lseek (tard, n * sizeof (rec_buf.charptr), SEEK_CUR);</span>
+<span class='curline'><a href='../S/src--vfs--tar--tar.c.html#L467'>tard</a>              467 src/vfs/tar/tar.c tar_read_header (struct vfs_class *me, struct vfs_s_super *archive, int tard, size_t * h_size)</span>
+<span class='curline'><a href='../S/src--vfs--tar--tar.c.html#L479'>tard</a>              479 src/vfs/tar/tar.c     header = tar_get_next_record (archive, tard);</span>
+<span class='curline'><a href='../S/src--vfs--tar--tar.c.html#L602'>tard</a>              602 src/vfs/tar/tar.c             data = tar_get_next_record (archive, tard)-&gt;charptr;</span>
+<span class='curline'><a href='../S/src--vfs--tar--tar.c.html#L753'>tard</a>              753 src/vfs/tar/tar.c             while (tar_get_next_record (archive, tard)-&gt;ext_hdr.isextended != 0)</span>
+<span class='curline'><a href='../S/src--vfs--tar--tar.c.html#L774'>tard</a>              774 src/vfs/tar/tar.c     int tard;</span>
+<span class='curline'><a href='../S/src--vfs--tar--tar.c.html#L778'>tard</a>              778 src/vfs/tar/tar.c     tard = tar_open_archive_int (vpath_element-&gt;class, vpath, archive);</span>
+<span class='curline'><a href='../S/src--vfs--tar--tar.c.html#L779'>tard</a>              779 src/vfs/tar/tar.c     if (tard == -1)</span>
+<span class='curline'><a href='../S/src--vfs--tar--tar.c.html#L787'>tard</a>              787 src/vfs/tar/tar.c         status = tar_read_header (vpath_element-&gt;class, archive, tard, &amp;h_size);</span>
+<span class='curline'><a href='../S/src--vfs--tar--tar.c.html#L792'>tard</a>              792 src/vfs/tar/tar.c             tar_skip_n_records (archive, tard, (h_size + RECORDSIZE - 1) / RECORDSIZE);</span>
+</pre>
+</body>
+</html>

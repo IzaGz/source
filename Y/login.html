@@ -1,0 +1,36 @@
+<!DOCTYPE html PUBLIC '-//W3C//DTD XHTML 1.0 Transitional//EN' 'http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd'>
+<html xmlns='http://www.w3.org/1999/xhtml'>
+<head>
+<title>login</title>
+<meta name='robots' content='noindex,nofollow' />
+<meta name='generator' content='GLOBAL-6.5.2' />
+<meta http-equiv='Content-Style-Type' content='text/css' />
+<link rel='stylesheet' type='text/css' href='../style.css' />
+</head>
+<body>
+<pre>
+<span class='curline'><a href='../S/src--filemanager--layout.c.html#L1390'>login</a>            1390 src/filemanager/layout.c title_path_prepare (char **path, char **login)</span>
+<span class='curline'><a href='../S/src--filemanager--layout.c.html#L1407'>login</a>            1407 src/filemanager/layout.c         *login = g_strdup_printf ("%s@%s", pw-&gt;pw_name, host);</span>
+<span class='curline'><a href='../S/src--filemanager--layout.c.html#L1409'>login</a>            1409 src/filemanager/layout.c         *login = g_strdup (host);</span>
+<span class='curline'><a href='../S/src--filemanager--layout.c.html#L1422'>login</a>            1422 src/filemanager/layout.c         char *login;</span>
+<span class='curline'><a href='../S/src--filemanager--layout.c.html#L1424'>login</a>            1424 src/filemanager/layout.c         title_path_prepare (&amp;path, &amp;login);</span>
+<span class='curline'><a href='../S/src--filemanager--layout.c.html#L1426'>login</a>            1426 src/filemanager/layout.c         p = g_strdup_printf ("mc [%s]:%s", login, path);</span>
+<span class='curline'><a href='../S/src--filemanager--layout.c.html#L1427'>login</a>            1427 src/filemanager/layout.c         g_free (login);</span>
+<span class='curline'><a href='../S/src--filemanager--layout.h.html#L94'>login</a>              94 src/filemanager/layout.h void title_path_prepare (char **path, char **login);</span>
+<span class='curline'><a href='../S/src--filemanager--midnight.c.html#L436'>login</a>             436 src/filemanager/midnight.c     char *login;</span>
+<span class='curline'><a href='../S/src--filemanager--midnight.c.html#L441'>login</a>             441 src/filemanager/midnight.c     title_path_prepare (&amp;path, &amp;login);</span>
+<span class='curline'><a href='../S/src--filemanager--midnight.c.html#L443'>login</a>             443 src/filemanager/midnight.c     p = g_strdup_printf ("%s [%s]:%s", _("Panels:"), login, path);</span>
+<span class='curline'><a href='../S/src--filemanager--midnight.c.html#L445'>login</a>             445 src/filemanager/midnight.c     g_free (login);</span>
+<span class='curline'><a href='../S/src--vfs--ftpfs--ftpfs.c.html#L270'>login</a>             270 src/vfs/ftpfs/ftpfs.c static int ftpfs_netrc_lookup (const char *host, char **login, char **pass);</span>
+<span class='curline'><a href='../S/src--vfs--ftpfs--ftpfs.c.html#L2482'>login</a>            2482 src/vfs/ftpfs/ftpfs.c ftpfs_netrc_lookup (const char *host, char **login, char **pass)</span>
+<span class='curline'><a href='../S/src--vfs--ftpfs--ftpfs.c.html#L2492'>login</a>            2492 src/vfs/ftpfs/ftpfs.c         char *login;</span>
+<span class='curline'><a href='../S/src--vfs--ftpfs--ftpfs.c.html#L2497'>login</a>            2497 src/vfs/ftpfs/ftpfs.c     MC_PTR_FREE (*login);</span>
+<span class='curline'><a href='../S/src--vfs--ftpfs--ftpfs.c.html#L2505'>login</a>            2505 src/vfs/ftpfs/ftpfs.c             *login = g_strdup (rupp-&gt;login);</span>
+<span class='curline'><a href='../S/src--vfs--ftpfs--ftpfs.c.html#L2550'>login</a>            2550 src/vfs/ftpfs/ftpfs.c             if (*login)</span>
+<span class='curline'><a href='../S/src--vfs--ftpfs--ftpfs.c.html#L2557'>login</a>            2557 src/vfs/ftpfs/ftpfs.c             *login = g_strdup (buffer);</span>
+<span class='curline'><a href='../S/src--vfs--ftpfs--ftpfs.c.html#L2569'>login</a>            2569 src/vfs/ftpfs/ftpfs.c             if (*login != NULL &amp;&amp;</span>
+<span class='curline'><a href='../S/src--vfs--ftpfs--ftpfs.c.html#L2570'>login</a>            2570 src/vfs/ftpfs/ftpfs.c                 strcmp (*login, "anonymous") != 0 &amp;&amp; strcmp (*login, "ftp") != 0</span>
+<span class='curline'><a href='../S/src--vfs--ftpfs--ftpfs.c.html#L2609'>login</a>            2609 src/vfs/ftpfs/ftpfs.c     rupp-&gt;login = g_strdup (*login);</span>
+</pre>
+</body>
+</html>

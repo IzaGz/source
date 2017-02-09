@@ -1,0 +1,73 @@
+<!DOCTYPE html PUBLIC '-//W3C//DTD XHTML 1.0 Transitional//EN' 'http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd'>
+<html xmlns='http://www.w3.org/1999/xhtml'>
+<head>
+<title>hotlist</title>
+<meta name='robots' content='noindex,nofollow' />
+<meta name='generator' content='GLOBAL-6.5.2' />
+<meta http-equiv='Content-Style-Type' content='text/css' />
+<link rel='stylesheet' type='text/css' href='../style.css' />
+</head>
+<body>
+<pre>
+<span class='curline'><a href='../S/src--filemanager--hotlist.c.html#L152'>hotlist</a>           152 src/filemanager/hotlist.c     struct hotlist *head;</span>
+<span class='curline'><a href='../S/src--filemanager--hotlist.c.html#L153'>hotlist</a>           153 src/filemanager/hotlist.c     struct hotlist *up;</span>
+<span class='curline'><a href='../S/src--filemanager--hotlist.c.html#L154'>hotlist</a>           154 src/filemanager/hotlist.c     struct hotlist *next;</span>
+<span class='curline'><a href='../S/src--filemanager--hotlist.c.html#L206'>hotlist</a>           206 src/filemanager/hotlist.c static struct hotlist *hotlist = NULL;</span>
+<span class='curline'><a href='../S/src--filemanager--hotlist.c.html#L208'>hotlist</a>           208 src/filemanager/hotlist.c static struct hotlist *current_group;</span>
+<span class='curline'><a href='../S/src--filemanager--hotlist.c.html#L222'>hotlist</a>           222 src/filemanager/hotlist.c static void init_movelist (struct hotlist *item);</span>
+<span class='curline'><a href='../S/src--filemanager--hotlist.c.html#L225'>hotlist</a>           225 src/filemanager/hotlist.c static void remove_from_hotlist (struct hotlist *entry);</span>
+<span class='curline'><a href='../S/src--filemanager--hotlist.c.html#L250'>hotlist</a>           250 src/filemanager/hotlist.c             struct hotlist *hlp = (struct hotlist *) cdata;</span>
+<span class='curline'><a href='../S/src--filemanager--hotlist.c.html#L275'>hotlist</a>           275 src/filemanager/hotlist.c     struct hotlist *current;</span>
+<span class='curline'><a href='../S/src--filemanager--hotlist.c.html#L305'>hotlist</a>           305 src/filemanager/hotlist.c unlink_entry (struct hotlist *entry)</span>
+<span class='curline'><a href='../S/src--filemanager--hotlist.c.html#L307'>hotlist</a>           307 src/filemanager/hotlist.c     struct hotlist *current = current_group-&gt;head;</span>
+<span class='curline'><a href='../S/src--filemanager--hotlist.c.html#L340'>hotlist</a>           340 src/filemanager/hotlist.c             struct hotlist *saved = current_group;</span>
+<span class='curline'><a href='../S/src--filemanager--hotlist.c.html#L341'>hotlist</a>           341 src/filemanager/hotlist.c             struct hotlist *item = NULL;</span>
+<span class='curline'><a href='../S/src--filemanager--hotlist.c.html#L342'>hotlist</a>           342 src/filemanager/hotlist.c             struct hotlist *moveto_item = NULL;</span>
+<span class='curline'><a href='../S/src--filemanager--hotlist.c.html#L343'>hotlist</a>           343 src/filemanager/hotlist.c             struct hotlist *moveto_group = NULL;</span>
+<span class='curline'><a href='../S/src--filemanager--hotlist.c.html#L370'>hotlist</a>           370 src/filemanager/hotlist.c                 struct hotlist *p = moveto_group-&gt;head;</span>
+<span class='curline'><a href='../S/src--filemanager--hotlist.c.html#L394'>hotlist</a>           394 src/filemanager/hotlist.c                 struct hotlist *p = moveto_group-&gt;head;</span>
+<span class='curline'><a href='../S/src--filemanager--hotlist.c.html#L409'>hotlist</a>           409 src/filemanager/hotlist.c             struct hotlist *entry = NULL;</span>
+<span class='curline'><a href='../S/src--filemanager--hotlist.c.html#L433'>hotlist</a>           433 src/filemanager/hotlist.c             struct hotlist *hlp;</span>
+<span class='curline'><a href='../S/src--filemanager--hotlist.c.html#L441'>hotlist</a>           441 src/filemanager/hotlist.c             hlp = (struct hotlist *) data;</span>
+<span class='curline'><a href='../S/src--filemanager--hotlist.c.html#L545'>hotlist</a>           545 src/filemanager/hotlist.c                 struct hotlist *hlp = (struct hotlist *) ldata;</span>
+<span class='curline'><a href='../S/src--filemanager--hotlist.c.html#L613'>hotlist</a>           613 src/filemanager/hotlist.c             struct hotlist *hlp = (struct hotlist *) data;</span>
+<span class='curline'><a href='../S/src--filemanager--hotlist.c.html#L810'>hotlist</a>           810 src/filemanager/hotlist.c init_movelist (struct hotlist *item)</span>
+<span class='curline'><a href='../S/src--filemanager--hotlist.c.html#L878'>hotlist</a>           878 src/filemanager/hotlist.c find_group_section (struct hotlist *grp)</span>
+<span class='curline'><a href='../S/src--filemanager--hotlist.c.html#L885'>hotlist</a>           885 src/filemanager/hotlist.c static struct hotlist *</span>
+<span class='curline'><a href='../S/src--filemanager--hotlist.c.html#L888'>hotlist</a>           888 src/filemanager/hotlist.c     struct hotlist *new;</span>
+<span class='curline'><a href='../S/src--filemanager--hotlist.c.html#L889'>hotlist</a>           889 src/filemanager/hotlist.c     struct hotlist *current = NULL;</span>
+<span class='curline'><a href='../S/src--filemanager--hotlist.c.html#L904'>hotlist</a>           904 src/filemanager/hotlist.c     new = g_new0 (struct hotlist, 1);</span>
+<span class='curline'><a href='../S/src--filemanager--hotlist.c.html#L936'>hotlist</a>           936 src/filemanager/hotlist.c         struct hotlist *p = current_group-&gt;head;</span>
+<span class='curline'><a href='../S/src--filemanager--hotlist.c.html#L946'>hotlist</a>           946 src/filemanager/hotlist.c         struct hotlist *p = current_group-&gt;head;</span>
+<span class='curline'><a href='../S/src--filemanager--hotlist.c.html#L1091'>hotlist</a>          1091 src/filemanager/hotlist.c remove_group (struct hotlist *grp)</span>
+<span class='curline'><a href='../S/src--filemanager--hotlist.c.html#L1093'>hotlist</a>          1093 src/filemanager/hotlist.c     struct hotlist *current = grp-&gt;head;</span>
+<span class='curline'><a href='../S/src--filemanager--hotlist.c.html#L1097'>hotlist</a>          1097 src/filemanager/hotlist.c         struct hotlist *next = current-&gt;next;</span>
+<span class='curline'><a href='../S/src--filemanager--hotlist.c.html#L1113'>hotlist</a>          1113 src/filemanager/hotlist.c remove_from_hotlist (struct hotlist *entry)</span>
+<span class='curline'><a href='../S/src--filemanager--hotlist.c.html#L1139'>hotlist</a>          1139 src/filemanager/hotlist.c         struct hotlist *head = entry-&gt;head;</span>
+<span class='curline'><a href='../S/src--filemanager--hotlist.c.html#L1170'>hotlist</a>          1170 src/filemanager/hotlist.c load_group (struct hotlist *grp)</span>
+<span class='curline'><a href='../S/src--filemanager--hotlist.c.html#L1174'>hotlist</a>          1174 src/filemanager/hotlist.c     struct hotlist *current = 0;</span>
+<span class='curline'><a href='../S/src--filemanager--hotlist.c.html#L1295'>hotlist</a>          1295 src/filemanager/hotlist.c hot_load_group (struct hotlist *grp)</span>
+<span class='curline'><a href='../S/src--filemanager--hotlist.c.html#L1298'>hotlist</a>          1298 src/filemanager/hotlist.c     struct hotlist *new_grp;</span>
+<span class='curline'><a href='../S/src--filemanager--hotlist.c.html#L1349'>hotlist</a>          1349 src/filemanager/hotlist.c hot_load_file (struct hotlist *grp)</span>
+<span class='curline'><a href='../S/src--filemanager--hotlist.c.html#L1352'>hotlist</a>          1352 src/filemanager/hotlist.c     struct hotlist *new_grp;</span>
+<span class='curline'><a href='../S/src--filemanager--hotlist.c.html#L1441'>hotlist</a>          1441 src/filemanager/hotlist.c     hotlist = g_new0 (struct hotlist, 1);</span>
+<span class='curline'><a href='../S/src--filemanager--hotlist.c.html#L1442'>hotlist</a>          1442 src/filemanager/hotlist.c     hotlist-&gt;type = HL_TYPE_GROUP;</span>
+<span class='curline'><a href='../S/src--filemanager--hotlist.c.html#L1443'>hotlist</a>          1443 src/filemanager/hotlist.c     hotlist-&gt;label = g_strdup (_("Top level group"));</span>
+<span class='curline'><a href='../S/src--filemanager--hotlist.c.html#L1444'>hotlist</a>          1444 src/filemanager/hotlist.c     hotlist-&gt;up = hotlist;</span>
+<span class='curline'><a href='../S/src--filemanager--hotlist.c.html#L1448'>hotlist</a>          1448 src/filemanager/hotlist.c     hotlist-&gt;directory = g_strdup ("Hotlist");</span>
+<span class='curline'><a href='../S/src--filemanager--hotlist.c.html#L1455'>hotlist</a>          1455 src/filemanager/hotlist.c         load_group (hotlist);</span>
+<span class='curline'><a href='../S/src--filemanager--hotlist.c.html#L1473'>hotlist</a>          1473 src/filemanager/hotlist.c         hot_load_file (hotlist);</span>
+<span class='curline'><a href='../S/src--filemanager--hotlist.c.html#L1491'>hotlist</a>          1491 src/filemanager/hotlist.c     current_group = hotlist;</span>
+<span class='curline'><a href='../S/src--filemanager--hotlist.c.html#L1497'>hotlist</a>          1497 src/filemanager/hotlist.c hot_save_group (struct hotlist *grp)</span>
+<span class='curline'><a href='../S/src--filemanager--hotlist.c.html#L1499'>hotlist</a>          1499 src/filemanager/hotlist.c     struct hotlist *current;</span>
+<span class='curline'><a href='../S/src--filemanager--hotlist.c.html#L1562'>hotlist</a>          1562 src/filemanager/hotlist.c     if (current_group != hotlist &amp;&amp; hotlist_has_dot_dot)</span>
+<span class='curline'><a href='../S/src--filemanager--hotlist.c.html#L1626'>hotlist</a>          1626 src/filemanager/hotlist.c         struct hotlist *hlp = NULL;</span>
+<span class='curline'><a href='../S/src--filemanager--hotlist.c.html#L1653'>hotlist</a>          1653 src/filemanager/hotlist.c             hot_save_group (hotlist);</span>
+<span class='curline'><a href='../S/src--filemanager--hotlist.c.html#L1674'>hotlist</a>          1674 src/filemanager/hotlist.c     if (hotlist != NULL)</span>
+<span class='curline'><a href='../S/src--filemanager--hotlist.c.html#L1676'>hotlist</a>          1676 src/filemanager/hotlist.c         remove_group (hotlist);</span>
+<span class='curline'><a href='../S/src--filemanager--hotlist.c.html#L1677'>hotlist</a>          1677 src/filemanager/hotlist.c         g_free (hotlist-&gt;label);</span>
+<span class='curline'><a href='../S/src--filemanager--hotlist.c.html#L1678'>hotlist</a>          1678 src/filemanager/hotlist.c         g_free (hotlist-&gt;directory);</span>
+<span class='curline'><a href='../S/src--filemanager--hotlist.c.html#L1679'>hotlist</a>          1679 src/filemanager/hotlist.c         MC_PTR_FREE (hotlist);</span>
+</pre>
+</body>
+</html>

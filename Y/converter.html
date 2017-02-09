@@ -1,0 +1,84 @@
+<!DOCTYPE html PUBLIC '-//W3C//DTD XHTML 1.0 Transitional//EN' 'http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd'>
+<html xmlns='http://www.w3.org/1999/xhtml'>
+<head>
+<title>converter</title>
+<meta name='robots' content='noindex,nofollow' />
+<meta name='generator' content='GLOBAL-6.5.2' />
+<meta http-equiv='Content-Style-Type' content='text/css' />
+<link rel='stylesheet' type='text/css' href='../style.css' />
+</head>
+<body>
+<pre>
+<span class='curline'><a href='../S/lib--vfs--interface.c.html#L449'>converter</a>         449 lib/vfs/interface.c     path_element-&gt;dir.converter = (path_element-&gt;encoding != NULL) ?</span>
+<span class='curline'><a href='../S/lib--vfs--interface.c.html#L451'>converter</a>         451 lib/vfs/interface.c     if (path_element-&gt;dir.converter == INVALID_CONV)</span>
+<span class='curline'><a href='../S/lib--vfs--interface.c.html#L452'>converter</a>         452 lib/vfs/interface.c         path_element-&gt;dir.converter = str_cnv_from_term;</span>
+<span class='curline'><a href='../S/lib--vfs--interface.c.html#L508'>converter</a>         508 lib/vfs/interface.c         str_vfs_convert_from (vfs_path_element-&gt;dir.converter, entry-&gt;d_name, vfs_str_buffer);</span>
+<span class='curline'><a href='../S/lib--vfs--interface.c.html#L541'>converter</a>         541 lib/vfs/interface.c         if (vfs_path_element-&gt;dir.converter != str_cnv_from_term)</span>
+<span class='curline'><a href='../S/lib--vfs--interface.c.html#L543'>converter</a>         543 lib/vfs/interface.c             str_close_conv (vfs_path_element-&gt;dir.converter);</span>
+<span class='curline'><a href='../S/lib--vfs--interface.c.html#L544'>converter</a>         544 lib/vfs/interface.c             vfs_path_element-&gt;dir.converter = INVALID_CONV;</span>
+<span class='curline'><a href='../S/lib--vfs--path.c.html#L391'>converter</a>         391 lib/vfs/path.c         element-&gt;dir.converter =</span>
+<span class='curline'><a href='../S/lib--vfs--path.c.html#L416'>converter</a>         416 lib/vfs/path.c         element-&gt;dir.converter =</span>
+<span class='curline'><a href='../S/lib--vfs--path.c.html#L493'>converter</a>         493 lib/vfs/path.c         element-&gt;dir.converter =</span>
+<span class='curline'><a href='../S/lib--vfs--path.c.html#L512'>converter</a>         512 lib/vfs/path.c         element-&gt;dir.converter =</span>
+<span class='curline'><a href='../S/lib--vfs--path.c.html#L682'>converter</a>         682 lib/vfs/path.c             str_vfs_convert_from (element-&gt;dir.converter, element-&gt;path, recode_buffer);</span>
+<span class='curline'><a href='../S/lib--vfs--path.c.html#L865'>converter</a>         865 lib/vfs/path.c         new_element-&gt;dir.converter = str_crt_conv_from (new_element-&gt;encoding);</span>
+<span class='curline'><a href='../S/lib--vfs--path.c.html#L867'>converter</a>         867 lib/vfs/path.c         new_element-&gt;dir.converter = element-&gt;dir.converter;</span>
+<span class='curline'><a href='../S/lib--vfs--path.c.html#L898'>converter</a>         898 lib/vfs/path.c         str_close_conv (element-&gt;dir.converter);</span>
+<span class='curline'><a href='../S/lib--vfs--path.c.html#L1038'>converter</a>        1038 lib/vfs/path.c     return (element-&gt;dir.converter != str_cnv_from_term &amp;&amp; element-&gt;dir.converter != INVALID_CONV);</span>
+<span class='curline'><a href='../S/lib--vfs--path.c.html#L1064'>converter</a>        1064 lib/vfs/path.c         str_close_conv (path_element-&gt;dir.converter);</span>
+<span class='curline'><a href='../S/lib--vfs--path.c.html#L1066'>converter</a>        1066 lib/vfs/path.c     path_element-&gt;dir.converter = str_crt_conv_from (path_element-&gt;encoding);</span>
+<span class='curline'><a href='../S/lib--vfs--path.c.html#L1185'>converter</a>        1185 lib/vfs/path.c         element-&gt;dir.converter =</span>
+<span class='curline'><a href='../S/lib--vfs--path.h.html#L50'>converter</a>          50 lib/vfs/path.h         GIConv converter;</span>
+<span class='curline'><a href='../S/lib--vfs--utilvfs.c.html#L345'>converter</a>         345 lib/vfs/utilvfs.c     path_element-&gt;dir.converter = INVALID_CONV;</span>
+<span class='curline'><a href='../S/src--diffviewer--internal.h.html#L121'>converter</a>         121 src/diffviewer/internal.h     GIConv converter;</span>
+<span class='curline'><a href='../S/src--diffviewer--ydiff.c.html#L2327'>converter</a>        2327 src/diffviewer/ydiff.c             if (dview-&gt;converter != str_cnv_from_term)</span>
+<span class='curline'><a href='../S/src--diffviewer--ydiff.c.html#L2328'>converter</a>        2328 src/diffviewer/ydiff.c                 str_close_conv (dview-&gt;converter);</span>
+<span class='curline'><a href='../S/src--diffviewer--ydiff.c.html#L2329'>converter</a>        2329 src/diffviewer/ydiff.c             dview-&gt;converter = conv;</span>
+<span class='curline'><a href='../S/src--diffviewer--ydiff.c.html#L2438'>converter</a>        2438 src/diffviewer/ydiff.c     dview-&gt;converter = str_cnv_from_term;</span>
+<span class='curline'><a href='../S/src--diffviewer--ydiff.c.html#L2497'>converter</a>        2497 src/diffviewer/ydiff.c     if (dview-&gt;converter != str_cnv_from_term)</span>
+<span class='curline'><a href='../S/src--diffviewer--ydiff.c.html#L2498'>converter</a>        2498 src/diffviewer/ydiff.c         str_close_conv (dview-&gt;converter);</span>
+<span class='curline'><a href='../S/src--diffviewer--ydiff.c.html#L2641'>converter</a>        2641 src/diffviewer/ydiff.c                                                                     dview-&gt;converter);</span>
+<span class='curline'><a href='../S/src--diffviewer--ydiff.c.html#L2645'>converter</a>        2645 src/diffviewer/ydiff.c                                 next_ch = convert_from_utf_to_current_c (next_ch, dview-&gt;converter);</span>
+<span class='curline'><a href='../S/src--diffviewer--ydiff.c.html#L2716'>converter</a>        2716 src/diffviewer/ydiff.c                             convert_from_8bit_to_utf_c ((unsigned char) next_ch, dview-&gt;converter);</span>
+<span class='curline'><a href='../S/src--diffviewer--ydiff.c.html#L2720'>converter</a>        2720 src/diffviewer/ydiff.c                     next_ch = convert_from_utf_to_current_c (next_ch, dview-&gt;converter);</span>
+<span class='curline'><a href='../S/src--editor--edit.c.html#L2144'>converter</a>        2144 src/editor/edit.c     edit-&gt;converter = str_cnv_from_term;</span>
+<span class='curline'><a href='../S/src--editor--edit.c.html#L2216'>converter</a>        2216 src/editor/edit.c     if (edit-&gt;converter != str_cnv_from_term)</span>
+<span class='curline'><a href='../S/src--editor--edit.c.html#L2217'>converter</a>        2217 src/editor/edit.c         str_close_conv (edit-&gt;converter);</span>
+<span class='curline'><a href='../S/src--editor--edit.c.html#L2280'>converter</a>        2280 src/editor/edit.c             if (edit-&gt;converter != str_cnv_from_term)</span>
+<span class='curline'><a href='../S/src--editor--edit.c.html#L2281'>converter</a>        2281 src/editor/edit.c                 str_close_conv (edit-&gt;converter);</span>
+<span class='curline'><a href='../S/src--editor--edit.c.html#L2282'>converter</a>        2282 src/editor/edit.c             edit-&gt;converter = conv;</span>
+<span class='curline'><a href='../S/src--editor--editdraw.c.html#L741'>converter</a>         741 src/editor/editdraw.c                             c = convert_from_8bit_to_utf_c ((unsigned char) c, edit-&gt;converter);</span>
+<span class='curline'><a href='../S/src--editor--editdraw.c.html#L753'>converter</a>         753 src/editor/editdraw.c                         c = convert_from_utf_to_current_c (c, edit-&gt;converter);</span>
+<span class='curline'><a href='../S/src--editor--editwidget.h.html#L83'>converter</a>          83 src/editor/editwidget.h     GIConv converter;</span>
+<span class='curline'><a href='../S/src--filemanager--panel.c.html#L4743'>converter</a>        4743 src/filemanager/panel.c         GIConv converter;</span>
+<span class='curline'><a href='../S/src--filemanager--panel.c.html#L4754'>converter</a>        4754 src/filemanager/panel.c         converter = str_crt_conv_to (path_element-&gt;encoding);</span>
+<span class='curline'><a href='../S/src--filemanager--panel.c.html#L4755'>converter</a>        4755 src/filemanager/panel.c         if (converter == INVALID_CONV)</span>
+<span class='curline'><a href='../S/src--filemanager--panel.c.html#L4763'>converter</a>        4763 src/filemanager/panel.c         str_vfs_convert_from (converter, path_element-&gt;path, tmp_conv);</span>
+<span class='curline'><a href='../S/src--filemanager--panel.c.html#L4770'>converter</a>        4770 src/filemanager/panel.c         str_close_conv (converter);</span>
+<span class='curline'><a href='../S/src--filemanager--panel.c.html#L4771'>converter</a>        4771 src/filemanager/panel.c         str_close_conv (path_element-&gt;dir.converter);</span>
+<span class='curline'><a href='../S/src--filemanager--panel.c.html#L4772'>converter</a>        4772 src/filemanager/panel.c         path_element-&gt;dir.converter = INVALID_CONV;</span>
+<span class='curline'><a href='../S/src--vfs--smbfs--helpers--libsmb--clientgen.c.html#L214'>converter</a>         214 src/vfs/smbfs/helpers/libsmb/clientgen.c fix_char_ptr (unsigned int datap, unsigned int converter, char *rdata, int rdrcnt)</span>
+<span class='curline'><a href='../S/src--vfs--smbfs--helpers--libsmb--clientgen.c.html#L222'>converter</a>         222 src/vfs/smbfs/helpers/libsmb/clientgen.c         unsigned int offset = datap - converter;</span>
+<span class='curline'><a href='../S/src--vfs--smbfs--helpers--libsmb--clientgen.c.html#L227'>converter</a>         227 src/vfs/smbfs/helpers/libsmb/clientgen.c                        datap, converter, rdrcnt));</span>
+<span class='curline'><a href='../S/src--vfs--smbfs--helpers--libsmb--clientgen.c.html#L595'>converter</a>         595 src/vfs/smbfs/helpers/libsmb/clientgen.c         int converter = SVAL (rparam, 2);</span>
+<span class='curline'><a href='../S/src--vfs--smbfs--helpers--libsmb--clientgen.c.html#L608'>converter</a>         608 src/vfs/smbfs/helpers/libsmb/clientgen.c                 const char *cmnt = comment_offset ? (rdata + comment_offset - converter) : "";</span>
+<span class='curline'><a href='../S/src--vfs--smbfs--helpers--libsmb--clientgen.c.html#L676'>converter</a>         676 src/vfs/smbfs/helpers/libsmb/clientgen.c         int converter = SVAL (rparam, 2);</span>
+<span class='curline'><a href='../S/src--vfs--smbfs--helpers--libsmb--clientgen.c.html#L687'>converter</a>         687 src/vfs/smbfs/helpers/libsmb/clientgen.c                 int comment_offset = (IVAL (p, 22) &amp; 0xFFFF) - converter;</span>
+<span class='curline'><a href='../S/src--viewer--ascii.c.html#L285'>converter</a>         285 src/viewer/ascii.c         c = convert_from_8bit_to_utf_c ((unsigned char) c, view-&gt;converter);</span>
+<span class='curline'><a href='../S/src--viewer--ascii.c.html#L303'>converter</a>         303 src/viewer/ascii.c             c = convert_from_8bit_to_utf_c ((unsigned char) c, view-&gt;converter);</span>
+<span class='curline'><a href='../S/src--viewer--ascii.c.html#L318'>converter</a>         318 src/viewer/ascii.c         c = convert_from_utf_to_current_c (c, view-&gt;converter);</span>
+<span class='curline'><a href='../S/src--viewer--hex.c.html#L330'>converter</a>         330 src/viewer/hex.c                     c = convert_from_8bit_to_utf_c ((unsigned char) c, view-&gt;converter);</span>
+<span class='curline'><a href='../S/src--viewer--hex.c.html#L336'>converter</a>         336 src/viewer/hex.c                 ch = convert_from_utf_to_current_c (ch, view-&gt;converter);</span>
+<span class='curline'><a href='../S/src--viewer--internal.h.html#L194'>converter</a>         194 src/viewer/internal.h     GIConv converter;</span>
+<span class='curline'><a href='../S/src--viewer--lib.c.html#L240'>converter</a>         240 src/viewer/lib.c     if (view-&gt;converter == INVALID_CONV)</span>
+<span class='curline'><a href='../S/src--viewer--lib.c.html#L241'>converter</a>         241 src/viewer/lib.c         view-&gt;converter = str_cnv_from_term;</span>
+<span class='curline'><a href='../S/src--viewer--lib.c.html#L243'>converter</a>         243 src/viewer/lib.c     if (view-&gt;converter != str_cnv_from_term)</span>
+<span class='curline'><a href='../S/src--viewer--lib.c.html#L245'>converter</a>         245 src/viewer/lib.c         str_close_conv (view-&gt;converter);</span>
+<span class='curline'><a href='../S/src--viewer--lib.c.html#L246'>converter</a>         246 src/viewer/lib.c         view-&gt;converter = str_cnv_from_term;</span>
+<span class='curline'><a href='../S/src--viewer--lib.c.html#L285'>converter</a>         285 src/viewer/lib.c             if (view-&gt;converter != str_cnv_from_term)</span>
+<span class='curline'><a href='../S/src--viewer--lib.c.html#L286'>converter</a>         286 src/viewer/lib.c                 str_close_conv (view-&gt;converter);</span>
+<span class='curline'><a href='../S/src--viewer--lib.c.html#L287'>converter</a>         287 src/viewer/lib.c             view-&gt;converter = conv;</span>
+<span class='curline'><a href='../S/src--viewer--mcviewer.c.html#L209'>converter</a>         209 src/viewer/mcviewer.c     view-&gt;converter = str_cnv_from_term;</span>
+</pre>
+</body>
+</html>

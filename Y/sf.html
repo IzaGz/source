@@ -1,0 +1,30 @@
+<!DOCTYPE html PUBLIC '-//W3C//DTD XHTML 1.0 Transitional//EN' 'http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd'>
+<html xmlns='http://www.w3.org/1999/xhtml'>
+<head>
+<title>sf</title>
+<meta name='robots' content='noindex,nofollow' />
+<meta name='generator' content='GLOBAL-6.5.2' />
+<meta http-equiv='Content-Style-Type' content='text/css' />
+<link rel='stylesheet' type='text/css' href='../style.css' />
+</head>
+<body>
+<pre>
+<span class='curline'><a href='../S/src--filemanager--achown.c.html#L775'>sf</a>                775 src/filemanager/achown.c apply_advanced_chowns (struct stat *sf)</span>
+<span class='curline'><a href='../S/src--filemanager--achown.c.html#L779'>sf</a>                779 src/filemanager/achown.c     gid_t a_gid = sf-&gt;st_gid;</span>
+<span class='curline'><a href='../S/src--filemanager--achown.c.html#L780'>sf</a>                780 src/filemanager/achown.c     uid_t a_uid = sf-&gt;st_uid;</span>
+<span class='curline'><a href='../S/src--filemanager--achown.c.html#L789'>sf</a>                789 src/filemanager/achown.c     else if (mc_chown (vpath, (ch_flags[9] == '+') ? sf-&gt;st_uid : (uid_t) (-1),</span>
+<span class='curline'><a href='../S/src--filemanager--achown.c.html#L790'>sf</a>                790 src/filemanager/achown.c                        (ch_flags[10] == '+') ? sf-&gt;st_gid : (gid_t) (-1)) == -1)</span>
+<span class='curline'><a href='../S/src--filemanager--achown.c.html#L801'>sf</a>                801 src/filemanager/achown.c         if (mc_stat (vpath, sf) != 0)</span>
+<span class='curline'><a href='../S/src--filemanager--achown.c.html#L807'>sf</a>                807 src/filemanager/achown.c         ch_cmode = sf-&gt;st_mode;</span>
+<span class='curline'><a href='../S/src--filemanager--chmod.c.html#L396'>sf</a>                396 src/filemanager/chmod.c do_chmod (struct stat *sf)</span>
+<span class='curline'><a href='../S/src--filemanager--chmod.c.html#L399'>sf</a>                399 src/filemanager/chmod.c     sf-&gt;st_mode &amp;= and_mask;</span>
+<span class='curline'><a href='../S/src--filemanager--chmod.c.html#L400'>sf</a>                400 src/filemanager/chmod.c     sf-&gt;st_mode |= or_mask;</span>
+<span class='curline'><a href='../S/src--filemanager--chmod.c.html#L403'>sf</a>                403 src/filemanager/chmod.c     if (mc_chmod (vpath, sf-&gt;st_mode) == -1)</span>
+<span class='curline'><a href='../S/src--filemanager--chmod.c.html#L414'>sf</a>                414 src/filemanager/chmod.c apply_mask (struct stat *sf)</span>
+<span class='curline'><a href='../S/src--filemanager--chmod.c.html#L419'>sf</a>                419 src/filemanager/chmod.c     do_chmod (sf);</span>
+<span class='curline'><a href='../S/src--filemanager--chmod.c.html#L429'>sf</a>                429 src/filemanager/chmod.c         ok = (mc_stat (vpath, sf) == 0);</span>
+<span class='curline'><a href='../S/src--filemanager--chmod.c.html#L434'>sf</a>                434 src/filemanager/chmod.c         c_stat = sf-&gt;st_mode;</span>
+<span class='curline'><a href='../S/src--filemanager--chmod.c.html#L436'>sf</a>                436 src/filemanager/chmod.c         do_chmod (sf);</span>
+</pre>
+</body>
+</html>

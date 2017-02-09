@@ -1,0 +1,46 @@
+<!DOCTYPE html PUBLIC '-//W3C//DTD XHTML 1.0 Transitional//EN' 'http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd'>
+<html xmlns='http://www.w3.org/1999/xhtml'>
+<head>
+<title>sf_stat</title>
+<meta name='robots' content='noindex,nofollow' />
+<meta name='generator' content='GLOBAL-6.5.2' />
+<meta http-equiv='Content-Style-Type' content='text/css' />
+<link rel='stylesheet' type='text/css' href='../style.css' />
+</head>
+<body>
+<pre>
+<span class='curline'><a href='../S/src--filemanager--achown.c.html#L107'>sf_stat</a>           107 src/filemanager/achown.c static struct stat *sf_stat;</span>
+<span class='curline'><a href='../S/src--filemanager--achown.c.html#L121'>sf_stat</a>           121 src/filemanager/achown.c     button_set_text (b_user, get_owner (sf_stat-&gt;st_uid));</span>
+<span class='curline'><a href='../S/src--filemanager--achown.c.html#L122'>sf_stat</a>           122 src/filemanager/achown.c     button_set_text (b_group, get_group (sf_stat-&gt;st_gid));</span>
+<span class='curline'><a href='../S/src--filemanager--achown.c.html#L352'>sf_stat</a>           352 src/filemanager/achown.c             fe = listbox_search_text (chl_list, get_owner (sf_stat-&gt;st_uid));</span>
+<span class='curline'><a href='../S/src--filemanager--achown.c.html#L362'>sf_stat</a>           362 src/filemanager/achown.c             fe = listbox_search_text (chl_list, get_group (sf_stat-&gt;st_gid));</span>
+<span class='curline'><a href='../S/src--filemanager--achown.c.html#L386'>sf_stat</a>           386 src/filemanager/achown.c                         sf_stat-&gt;st_uid = chl_pass-&gt;pw_uid;</span>
+<span class='curline'><a href='../S/src--filemanager--achown.c.html#L394'>sf_stat</a>           394 src/filemanager/achown.c                         sf_stat-&gt;st_gid = chl_grp-&gt;gr_gid;</span>
+<span class='curline'><a href='../S/src--filemanager--achown.c.html#L660'>sf_stat</a>           660 src/filemanager/achown.c     sf_stat = g_new (struct stat, 1);</span>
+<span class='curline'><a href='../S/src--filemanager--achown.c.html#L744'>sf_stat</a>           744 src/filemanager/achown.c     g_free (sf_stat);</span>
+<span class='curline'><a href='../S/src--filemanager--achown.c.html#L851'>sf_stat</a>           851 src/filemanager/achown.c         if (mc_stat (vpath, sf_stat) != 0)</span>
+<span class='curline'><a href='../S/src--filemanager--achown.c.html#L858'>sf_stat</a>           858 src/filemanager/achown.c         ch_cmode = sf_stat-&gt;st_mode;</span>
+<span class='curline'><a href='../S/src--filemanager--achown.c.html#L883'>sf_stat</a>           883 src/filemanager/achown.c                      (vpath, (ch_flags[9] == '+') ? sf_stat-&gt;st_uid : (uid_t) (-1),</span>
+<span class='curline'><a href='../S/src--filemanager--achown.c.html#L884'>sf_stat</a>           884 src/filemanager/achown.c                       (ch_flags[10] == '+') ? sf_stat-&gt;st_gid : (gid_t) (-1)) == -1)</span>
+<span class='curline'><a href='../S/src--filemanager--achown.c.html#L890'>sf_stat</a>           890 src/filemanager/achown.c             apply_advanced_chowns (sf_stat);</span>
+<span class='curline'><a href='../S/src--filemanager--chmod.c.html#L281'>sf_stat</a>           281 src/filemanager/chmod.c init_chmod (const char *fname, const struct stat *sf_stat)</span>
+<span class='curline'><a href='../S/src--filemanager--chmod.c.html#L331'>sf_stat</a>           331 src/filemanager/chmod.c     c_fown = str_trunc (get_owner (sf_stat-&gt;st_uid), file_gb_len - 3);</span>
+<span class='curline'><a href='../S/src--filemanager--chmod.c.html#L333'>sf_stat</a>           333 src/filemanager/chmod.c     c_fgrp = str_trunc (get_group (sf_stat-&gt;st_gid), file_gb_len - 3);</span>
+<span class='curline'><a href='../S/src--filemanager--chmod.c.html#L454'>sf_stat</a>           454 src/filemanager/chmod.c         struct stat sf_stat;</span>
+<span class='curline'><a href='../S/src--filemanager--chmod.c.html#L472'>sf_stat</a>           472 src/filemanager/chmod.c         if (mc_stat (vpath, &amp;sf_stat) != 0)</span>
+<span class='curline'><a href='../S/src--filemanager--chmod.c.html#L478'>sf_stat</a>           478 src/filemanager/chmod.c         c_stat = sf_stat.st_mode;</span>
+<span class='curline'><a href='../S/src--filemanager--chmod.c.html#L480'>sf_stat</a>           480 src/filemanager/chmod.c         ch_dlg = init_chmod (fname, &amp;sf_stat);</span>
+<span class='curline'><a href='../S/src--filemanager--chmod.c.html#L512'>sf_stat</a>           512 src/filemanager/chmod.c             apply_mask (&amp;sf_stat);</span>
+<span class='curline'><a href='../S/src--filemanager--chmod.c.html#L523'>sf_stat</a>           523 src/filemanager/chmod.c             apply_mask (&amp;sf_stat);</span>
+<span class='curline'><a href='../S/src--filemanager--chmod.c.html#L534'>sf_stat</a>           534 src/filemanager/chmod.c             apply_mask (&amp;sf_stat);</span>
+<span class='curline'><a href='../S/src--filemanager--chown.c.html#L335'>sf_stat</a>           335 src/filemanager/chown.c     struct stat sf_stat;</span>
+<span class='curline'><a href='../S/src--filemanager--chown.c.html#L356'>sf_stat</a>           356 src/filemanager/chown.c         if (mc_stat (vpath, &amp;sf_stat) != 0)</span>
+<span class='curline'><a href='../S/src--filemanager--chown.c.html#L365'>sf_stat</a>           365 src/filemanager/chown.c         listbox_select_entry (l_user, listbox_search_text (l_user, get_owner (sf_stat.st_uid)));</span>
+<span class='curline'><a href='../S/src--filemanager--chown.c.html#L366'>sf_stat</a>           366 src/filemanager/chown.c         listbox_select_entry (l_group, listbox_search_text (l_group, get_group (sf_stat.st_gid)));</span>
+<span class='curline'><a href='../S/src--filemanager--chown.c.html#L369'>sf_stat</a>           369 src/filemanager/chown.c         chown_label (1, str_trunc (get_owner (sf_stat.st_uid), GW - 4));</span>
+<span class='curline'><a href='../S/src--filemanager--chown.c.html#L370'>sf_stat</a>           370 src/filemanager/chown.c         chown_label (2, str_trunc (get_group (sf_stat.st_gid), GW - 4));</span>
+<span class='curline'><a href='../S/src--filemanager--chown.c.html#L371'>sf_stat</a>           371 src/filemanager/chown.c         size_trunc_len (buffer, GW - 4, sf_stat.st_size, 0, panels_options.kilobyte_si);</span>
+<span class='curline'><a href='../S/src--filemanager--chown.c.html#L373'>sf_stat</a>           373 src/filemanager/chown.c         chown_label (4, string_perm (sf_stat.st_mode));</span>
+</pre>
+</body>
+</html>

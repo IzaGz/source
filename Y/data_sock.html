@@ -1,0 +1,28 @@
+<!DOCTYPE html PUBLIC '-//W3C//DTD XHTML 1.0 Transitional//EN' 'http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd'>
+<html xmlns='http://www.w3.org/1999/xhtml'>
+<head>
+<title>data_sock</title>
+<meta name='robots' content='noindex,nofollow' />
+<meta name='generator' content='GLOBAL-6.5.2' />
+<meta http-equiv='Content-Style-Type' content='text/css' />
+<link rel='stylesheet' type='text/css' href='../style.css' />
+</head>
+<body>
+<pre>
+<span class='curline'><a href='../S/src--vfs--ftpfs--ftpfs.c.html#L1338'>data_sock</a>        1338 src/vfs/ftpfs/ftpfs.c         int data_sock;</span>
+<span class='curline'><a href='../S/src--vfs--ftpfs--ftpfs.c.html#L1340'>data_sock</a>        1340 src/vfs/ftpfs/ftpfs.c         data_sock = ftpfs_init_data_socket (me, super, &amp;data_addr, &amp;data_addrlen);</span>
+<span class='curline'><a href='../S/src--vfs--ftpfs--ftpfs.c.html#L1341'>data_sock</a>        1341 src/vfs/ftpfs/ftpfs.c         if (data_sock &lt; 0)</span>
+<span class='curline'><a href='../S/src--vfs--ftpfs--ftpfs.c.html#L1344'>data_sock</a>        1344 src/vfs/ftpfs/ftpfs.c         if (ftpfs_setup_passive (me, super, data_sock, &amp;data_addr, &amp;data_addrlen))</span>
+<span class='curline'><a href='../S/src--vfs--ftpfs--ftpfs.c.html#L1345'>data_sock</a>        1345 src/vfs/ftpfs/ftpfs.c             return data_sock;</span>
+<span class='curline'><a href='../S/src--vfs--ftpfs--ftpfs.c.html#L1350'>data_sock</a>        1350 src/vfs/ftpfs/ftpfs.c         close (data_sock);</span>
+<span class='curline'><a href='../S/src--vfs--ftpfs--ftpfs.c.html#L1356'>data_sock</a>        1356 src/vfs/ftpfs/ftpfs.c         int data_sock;</span>
+<span class='curline'><a href='../S/src--vfs--ftpfs--ftpfs.c.html#L1358'>data_sock</a>        1358 src/vfs/ftpfs/ftpfs.c         data_sock = ftpfs_init_data_socket (me, super, &amp;data_addr, &amp;data_addrlen);</span>
+<span class='curline'><a href='../S/src--vfs--ftpfs--ftpfs.c.html#L1359'>data_sock</a>        1359 src/vfs/ftpfs/ftpfs.c         if (data_sock &lt; 0)</span>
+<span class='curline'><a href='../S/src--vfs--ftpfs--ftpfs.c.html#L1362'>data_sock</a>        1362 src/vfs/ftpfs/ftpfs.c         if ((bind (data_sock, (struct sockaddr *) &amp;data_addr, data_addrlen) == 0) &amp;&amp;</span>
+<span class='curline'><a href='../S/src--vfs--ftpfs--ftpfs.c.html#L1363'>data_sock</a>        1363 src/vfs/ftpfs/ftpfs.c             (getsockname (data_sock, (struct sockaddr *) &amp;data_addr, &amp;data_addrlen) == 0) &amp;&amp;</span>
+<span class='curline'><a href='../S/src--vfs--ftpfs--ftpfs.c.html#L1364'>data_sock</a>        1364 src/vfs/ftpfs/ftpfs.c             (listen (data_sock, 1) == 0) &amp;&amp;</span>
+<span class='curline'><a href='../S/src--vfs--ftpfs--ftpfs.c.html#L1366'>data_sock</a>        1366 src/vfs/ftpfs/ftpfs.c             return data_sock;</span>
+<span class='curline'><a href='../S/src--vfs--ftpfs--ftpfs.c.html#L1368'>data_sock</a>        1368 src/vfs/ftpfs/ftpfs.c         close (data_sock);</span>
+</pre>
+</body>
+</html>

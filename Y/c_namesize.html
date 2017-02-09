@@ -1,0 +1,33 @@
+<!DOCTYPE html PUBLIC '-//W3C//DTD XHTML 1.0 Transitional//EN' 'http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd'>
+<html xmlns='http://www.w3.org/1999/xhtml'>
+<head>
+<title>c_namesize</title>
+<meta name='robots' content='noindex,nofollow' />
+<meta name='generator' content='GLOBAL-6.5.2' />
+<meta http-equiv='Content-Style-Type' content='text/css' />
+<link rel='stylesheet' type='text/css' href='../style.css' />
+</head>
+<body>
+<pre>
+<span class='curline'><a href='../S/src--vfs--cpio--cpio.c.html#L107'>c_namesize</a>        107 src/vfs/cpio/cpio.c     unsigned short c_namesize;</span>
+<span class='curline'><a href='../S/src--vfs--cpio--cpio.c.html#L125'>c_namesize</a>        125 src/vfs/cpio/cpio.c     unsigned long c_namesize;</span>
+<span class='curline'><a href='../S/src--vfs--cpio--cpio.c.html#L560'>c_namesize</a>        560 src/vfs/cpio/cpio.c     if (u.buf.c_magic != 070707 || u.buf.c_namesize == 0 || u.buf.c_namesize &gt; MC_MAXPATHLEN)</span>
+<span class='curline'><a href='../S/src--vfs--cpio--cpio.c.html#L565'>c_namesize</a>        565 src/vfs/cpio/cpio.c     name = g_malloc (u.buf.c_namesize);</span>
+<span class='curline'><a href='../S/src--vfs--cpio--cpio.c.html#L566'>c_namesize</a>        566 src/vfs/cpio/cpio.c     len = mc_read (arch-&gt;fd, name, u.buf.c_namesize);</span>
+<span class='curline'><a href='../S/src--vfs--cpio--cpio.c.html#L567'>c_namesize</a>        567 src/vfs/cpio/cpio.c     if (len &lt; u.buf.c_namesize)</span>
+<span class='curline'><a href='../S/src--vfs--cpio--cpio.c.html#L572'>c_namesize</a>        572 src/vfs/cpio/cpio.c     name[u.buf.c_namesize - 1] = '\0';</span>
+<span class='curline'><a href='../S/src--vfs--cpio--cpio.c.html#L623'>c_namesize</a>        623 src/vfs/cpio/cpio.c                 &amp;hd.c_namesize, &amp;hd.c_filesize) &lt; 10)</span>
+<span class='curline'><a href='../S/src--vfs--cpio--cpio.c.html#L629'>c_namesize</a>        629 src/vfs/cpio/cpio.c     if (hd.c_namesize == 0 || hd.c_namesize &gt; MC_MAXPATHLEN)</span>
+<span class='curline'><a href='../S/src--vfs--cpio--cpio.c.html#L634'>c_namesize</a>        634 src/vfs/cpio/cpio.c     name = g_malloc (hd.c_namesize);</span>
+<span class='curline'><a href='../S/src--vfs--cpio--cpio.c.html#L635'>c_namesize</a>        635 src/vfs/cpio/cpio.c     len = mc_read (arch-&gt;fd, name, hd.c_namesize);</span>
+<span class='curline'><a href='../S/src--vfs--cpio--cpio.c.html#L636'>c_namesize</a>        636 src/vfs/cpio/cpio.c     if ((len == -1) || ((unsigned long) len &lt; hd.c_namesize))</span>
+<span class='curline'><a href='../S/src--vfs--cpio--cpio.c.html#L641'>c_namesize</a>        641 src/vfs/cpio/cpio.c     name[hd.c_namesize - 1] = '\0';</span>
+<span class='curline'><a href='../S/src--vfs--cpio--cpio.c.html#L695'>c_namesize</a>        695 src/vfs/cpio/cpio.c                 &amp;hd.c_namesize, &amp;hd.c_chksum) &lt; 14)</span>
+<span class='curline'><a href='../S/src--vfs--cpio--cpio.c.html#L705'>c_namesize</a>        705 src/vfs/cpio/cpio.c     if (hd.c_namesize == 0 || hd.c_namesize &gt; MC_MAXPATHLEN)</span>
+<span class='curline'><a href='../S/src--vfs--cpio--cpio.c.html#L711'>c_namesize</a>        711 src/vfs/cpio/cpio.c     name = g_malloc (hd.c_namesize);</span>
+<span class='curline'><a href='../S/src--vfs--cpio--cpio.c.html#L712'>c_namesize</a>        712 src/vfs/cpio/cpio.c     len = mc_read (arch-&gt;fd, name, hd.c_namesize);</span>
+<span class='curline'><a href='../S/src--vfs--cpio--cpio.c.html#L714'>c_namesize</a>        714 src/vfs/cpio/cpio.c     if ((len == -1) || ((unsigned long) len &lt; hd.c_namesize))</span>
+<span class='curline'><a href='../S/src--vfs--cpio--cpio.c.html#L719'>c_namesize</a>        719 src/vfs/cpio/cpio.c     name[hd.c_namesize - 1] = '\0';</span>
+</pre>
+</body>
+</html>

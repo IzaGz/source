@@ -1,0 +1,48 @@
+<!DOCTYPE html PUBLIC '-//W3C//DTD XHTML 1.0 Transitional//EN' 'http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd'>
+<html xmlns='http://www.w3.org/1999/xhtml'>
+<head>
+<title>vfs_path_append_new</title>
+<meta name='robots' content='noindex,nofollow' />
+<meta name='generator' content='GLOBAL-6.5.2' />
+<meta http-equiv='Content-Style-Type' content='text/css' />
+<link rel='stylesheet' type='text/css' href='../style.css' />
+</head>
+<body>
+<pre>
+<span class='curline'><a href='../S/lib--vfs--path.h.html#L71'>vfs_path_append_new</a>   71 lib/vfs/path.h vfs_path_t *vfs_path_append_new (const vfs_path_t * vpath, const char *first_element, ...);</span>
+<span class='curline'><a href='../S/src--diffviewer--ydiff.c.html#L3550'>vfs_path_append_new</a> 3550 src/diffviewer/ydiff.c                 vfs_path_append_new (panel0-&gt;cwd_vpath, selection (panel0)-&gt;fname, (char *) NULL);</span>
+<span class='curline'><a href='../S/src--diffviewer--ydiff.c.html#L3560'>vfs_path_append_new</a> 3560 src/diffviewer/ydiff.c                 vfs_path_append_new (panel1-&gt;cwd_vpath, selection (panel1)-&gt;fname, (char *) NULL);</span>
+<span class='curline'><a href='../S/src--filemanager--cmd.c.html#L337'>vfs_path_append_new</a>  337 src/filemanager/cmd.c                 src_name = vfs_path_append_new (panel-&gt;cwd_vpath, source-&gt;fname, (char *) NULL);</span>
+<span class='curline'><a href='../S/src--filemanager--cmd.c.html#L338'>vfs_path_append_new</a>  338 src/filemanager/cmd.c                 dst_name = vfs_path_append_new (other-&gt;cwd_vpath, target-&gt;fname, (char *) NULL);</span>
+<span class='curline'><a href='../S/src--filemanager--cmd.c.html#L375'>vfs_path_append_new</a>  375 src/filemanager/cmd.c         s = vfs_path_append_new (current_panel-&gt;cwd_vpath, fname, (char *) NULL);</span>
+<span class='curline'><a href='../S/src--filemanager--cmd.c.html#L378'>vfs_path_append_new</a>  378 src/filemanager/cmd.c             d = vfs_path_append_new (other_panel-&gt;cwd_vpath, fname, (char *) NULL);</span>
+<span class='curline'><a href='../S/src--filemanager--cmd.c.html#L883'>vfs_path_append_new</a>  883 src/filemanager/cmd.c             absdir = vfs_path_append_new (current_panel-&gt;cwd_vpath, tmpdir, (char *) NULL);</span>
+<span class='curline'><a href='../S/src--filemanager--command.c.html#L426'>vfs_path_append_new</a>  426 src/filemanager/command.c                     vfs_path_append_new (current_panel-&gt;cwd_vpath, cmd + operand_pos,</span>
+<span class='curline'><a href='../S/src--filemanager--dir.c.html#L211'>vfs_path_append_new</a>  211 src/filemanager/dir.c             tmp_vpath = vfs_path_append_new (vpath, "..", (char *) NULL);</span>
+<span class='curline'><a href='../S/src--filemanager--file.c.html#L559'>vfs_path_append_new</a>  559 src/filemanager/file.c         tmp_vpath = vfs_path_append_new (dirname_vpath, dirent-&gt;d_name, (char *) NULL);</span>
+<span class='curline'><a href='../S/src--filemanager--file.c.html#L1141'>vfs_path_append_new</a> 1141 src/filemanager/file.c         tmp_vpath = vfs_path_append_new (vpath, next-&gt;d_name, (char *) NULL);</span>
+<span class='curline'><a href='../S/src--filemanager--file.c.html#L1307'>vfs_path_append_new</a> 1307 src/filemanager/file.c             p = vfs_path_append_new (panel-&gt;cwd_vpath, panel-&gt;dir.list[i].fname, (char *) NULL);</span>
+<span class='curline'><a href='../S/src--filemanager--file.c.html#L2160'>vfs_path_append_new</a> 2160 src/filemanager/file.c             dst_vpath = vfs_path_append_new (dst_vpath, x_basename (s), (char *) NULL);</span>
+<span class='curline'><a href='../S/src--filemanager--file.c.html#L2348'>vfs_path_append_new</a> 2348 src/filemanager/file.c         dst_vpath = vfs_path_append_new (dst_vpath, x_basename (s), (char *) NULL);</span>
+<span class='curline'><a href='../S/src--filemanager--file.c.html#L2865'>vfs_path_append_new</a> 2865 src/filemanager/file.c             source_with_vpath = vfs_path_append_new (panel-&gt;cwd_vpath, source, (char *) NULL);</span>
+<span class='curline'><a href='../S/src--filemanager--file.c.html#L2980'>vfs_path_append_new</a> 2980 src/filemanager/file.c                         vfs_path_append_new (panel-&gt;cwd_vpath, source2, (char *) NULL);</span>
+<span class='curline'><a href='../S/src--filemanager--filenot.c.html#L95'>vfs_path_append_new</a>   95 src/filemanager/filenot.c     q = vfs_path_append_new (s_vpath, "..", (char *) NULL);</span>
+<span class='curline'><a href='../S/src--filemanager--midnight.c.html#L659'>vfs_path_append_new</a>  659 src/filemanager/midnight.c             vpath = vfs_path_append_new (original_dir, other_dir, (char *) NULL);</span>
+<span class='curline'><a href='../S/src--filemanager--midnight.c.html#L675'>vfs_path_append_new</a>  675 src/filemanager/midnight.c             vpath = vfs_path_append_new (original_dir, current_dir, (char *) NULL);</span>
+<span class='curline'><a href='../S/src--filemanager--midnight.c.html#L751'>vfs_path_append_new</a>  751 src/filemanager/midnight.c         vpath = vfs_path_append_new (panel-&gt;cwd_vpath, selection (panel)-&gt;fname, (char *) NULL);</span>
+<span class='curline'><a href='../S/src--filemanager--midnight.c.html#L971'>vfs_path_append_new</a>  971 src/filemanager/midnight.c     return vfs_path_append_new (vfs_get_raw_current_dir (), filename, (char *) NULL);</span>
+<span class='curline'><a href='../S/src--filemanager--panel.c.html#L1012'>vfs_path_append_new</a> 1012 src/filemanager/panel.c             vfs_path_append_new (panel-&gt;cwd_vpath, panel-&gt;dir.list[panel-&gt;selected].fname,</span>
+<span class='curline'><a href='../S/src--filemanager--panel.c.html#L2801'>vfs_path_append_new</a> 2801 src/filemanager/panel.c     full_name_vpath = vfs_path_append_new (current_panel-&gt;cwd_vpath, fe-&gt;fname, (char *) NULL);</span>
+<span class='curline'><a href='../S/src--filemanager--panel.c.html#L2810'>vfs_path_append_new</a> 2810 src/filemanager/panel.c     full_name_vpath = vfs_path_append_new (current_panel-&gt;cwd_vpath, fe-&gt;fname, (char *) NULL);</span>
+<span class='curline'><a href='../S/src--filemanager--panel.c.html#L2829'>vfs_path_append_new</a> 2829 src/filemanager/panel.c         tmp_vpath = vfs_path_append_new (vfs_get_raw_current_dir (), fe-&gt;fname, (char *) NULL);</span>
+<span class='curline'><a href='../S/src--filemanager--panel.c.html#L2876'>vfs_path_append_new</a> 2876 src/filemanager/panel.c         new_dir_vpath = vfs_path_append_new (panel-&gt;cwd_vpath, entry-&gt;fname, (char *) NULL);</span>
+<span class='curline'><a href='../S/src--filemanager--panel.c.html#L2879'>vfs_path_append_new</a> 2879 src/filemanager/panel.c         new_dir_vpath = vfs_path_append_new (panel-&gt;cwd_vpath, "..", (char *) NULL);</span>
+<span class='curline'><a href='../S/src--filemanager--panel.c.html#L2961'>vfs_path_append_new</a> 2961 src/filemanager/panel.c         new_dir_vpath = vfs_path_append_new (panel-&gt;cwd_vpath, buffer, (char *) NULL);</span>
+<span class='curline'><a href='../S/src--filemanager--panelize.c.html#L420'>vfs_path_append_new</a>  420 src/filemanager/panelize.c                 vfs_path_append_new (panelized_panel.root_vpath, panelized_panel.list.list[i].fname,</span>
+<span class='curline'><a href='../S/src--filemanager--treestore.c.html#L750'>vfs_path_append_new</a>  750 src/filemanager/treestore.c         name = vfs_path_append_new (ts.check_name, subname, (char *) NULL);</span>
+<span class='curline'><a href='../S/src--filemanager--treestore.c.html#L926'>vfs_path_append_new</a>  926 src/filemanager/treestore.c             tmp_vpath = vfs_path_append_new (vpath, dp-&gt;d_name, (char *) NULL);</span>
+<span class='curline'><a href='../S/src--viewer--actions_cmd.c.html#L367'>vfs_path_append_new</a>  367 src/viewer/actions_cmd.c     vfile = vfs_path_append_new (view-&gt;workdir_vpath, dir-&gt;list[*dir_idx].fname, (char *) NULL);</span>
+<span class='curline'><a href='../S/src--viewer--mcviewer.c.html#L288'>vfs_path_append_new</a>  288 src/viewer/mcviewer.c             view-&gt;workdir_vpath = vfs_path_append_new (p, file, (char *) NULL);</span>
+</pre>
+</body>
+</html>

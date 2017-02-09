@@ -1,0 +1,34 @@
+<!DOCTYPE html PUBLIC '-//W3C//DTD XHTML 1.0 Transitional//EN' 'http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd'>
+<html xmlns='http://www.w3.org/1999/xhtml'>
+<head>
+<title>fish</title>
+<meta name='robots' content='noindex,nofollow' />
+<meta name='generator' content='GLOBAL-6.5.2' />
+<meta http-equiv='Content-Style-Type' content='text/css' />
+<link rel='stylesheet' type='text/css' href='../style.css' />
+</head>
+<body>
+<pre>
+<span class='curline'><a href='../S/src--vfs--fish--fish.c.html#L886'>fish</a>              886 src/vfs/fish/fish.c     fish_fh_data_t *fish = (fish_fh_data_t *) fh-&gt;data;</span>
+<span class='curline'><a href='../S/src--vfs--fish--fish.c.html#L938'>fish</a>              938 src/vfs/fish/fish.c     if (fish-&gt;append)</span>
+<span class='curline'><a href='../S/src--vfs--fish--fish.c.html#L1013'>fish</a>             1013 src/vfs/fish/fish.c     fish_fh_data_t *fish;</span>
+<span class='curline'><a href='../S/src--vfs--fish--fish.c.html#L1022'>fish</a>             1022 src/vfs/fish/fish.c     fish = (fish_fh_data_t *) fh-&gt;data;</span>
+<span class='curline'><a href='../S/src--vfs--fish--fish.c.html#L1029'>fish</a>             1029 src/vfs/fish/fish.c     fish-&gt;append = FALSE;</span>
+<span class='curline'><a href='../S/src--vfs--fish--fish.c.html#L1047'>fish</a>             1047 src/vfs/fish/fish.c     fish-&gt;got = 0;</span>
+<span class='curline'><a href='../S/src--vfs--fish--fish.c.html#L1050'>fish</a>             1050 src/vfs/fish/fish.c     fish-&gt;total = (off_t) strtol (reply_str, NULL, 10);</span>
+<span class='curline'><a href='../S/src--vfs--fish--fish.c.html#L1052'>fish</a>             1052 src/vfs/fish/fish.c     fish-&gt;total = (off_t) g_ascii_strtoll (reply_str, NULL, 10);</span>
+<span class='curline'><a href='../S/src--vfs--fish--fish.c.html#L1064'>fish</a>             1064 src/vfs/fish/fish.c     fish_fh_data_t *fish = (fish_fh_data_t *) fh-&gt;data;</span>
+<span class='curline'><a href='../S/src--vfs--fish--fish.c.html#L1073'>fish</a>             1073 src/vfs/fish/fish.c         n = MIN ((off_t) sizeof (buffer), (fish-&gt;total - fish-&gt;got));</span>
+<span class='curline'><a href='../S/src--vfs--fish--fish.c.html#L1079'>fish</a>             1079 src/vfs/fish/fish.c             fish-&gt;got += n;</span>
+<span class='curline'><a href='../S/src--vfs--fish--fish.c.html#L1095'>fish</a>             1095 src/vfs/fish/fish.c     fish_fh_data_t *fish = (fish_fh_data_t *) fh-&gt;data;</span>
+<span class='curline'><a href='../S/src--vfs--fish--fish.c.html#L1099'>fish</a>             1099 src/vfs/fish/fish.c     len = MIN ((size_t) (fish-&gt;total - fish-&gt;got), len);</span>
+<span class='curline'><a href='../S/src--vfs--fish--fish.c.html#L1110'>fish</a>             1110 src/vfs/fish/fish.c         fish-&gt;got += n;</span>
+<span class='curline'><a href='../S/src--vfs--fish--fish.c.html#L1123'>fish</a>             1123 src/vfs/fish/fish.c     fish_fh_data_t *fish = (fish_fh_data_t *) fh-&gt;data;</span>
+<span class='curline'><a href='../S/src--vfs--fish--fish.c.html#L1125'>fish</a>             1125 src/vfs/fish/fish.c     if (fish-&gt;total != fish-&gt;got)</span>
+<span class='curline'><a href='../S/src--vfs--fish--fish.c.html#L1152'>fish</a>             1152 src/vfs/fish/fish.c             v = vfs_s_select_on_two (FH_SUPER-&gt;u.fish.sockr, 0);</span>
+<span class='curline'><a href='../S/src--vfs--fish--fish.c.html#L1611'>fish</a>             1611 src/vfs/fish/fish.c     fish_fh_data_t *fish;</span>
+<span class='curline'><a href='../S/src--vfs--fish--fish.c.html#L1616'>fish</a>             1616 src/vfs/fish/fish.c     fish = (fish_fh_data_t *) fh-&gt;data;</span>
+<span class='curline'><a href='../S/src--vfs--fish--fish.c.html#L1623'>fish</a>             1623 src/vfs/fish/fish.c             fish-&gt;append = TRUE;</span>
+</pre>
+</body>
+</html>

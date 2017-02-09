@@ -1,0 +1,22 @@
+<!DOCTYPE html PUBLIC '-//W3C//DTD XHTML 1.0 Transitional//EN' 'http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd'>
+<html xmlns='http://www.w3.org/1999/xhtml'>
+<head>
+<title>tarfs_subclass</title>
+<meta name='robots' content='noindex,nofollow' />
+<meta name='generator' content='GLOBAL-6.5.2' />
+<meta http-equiv='Content-Style-Type' content='text/css' />
+<link rel='stylesheet' type='text/css' href='../style.css' />
+</head>
+<body>
+<pre>
+<span class='curline'><a href='../S/src--vfs--tar--tar.c.html#L922'>tarfs_subclass</a>    922 src/vfs/tar/tar.c     static struct vfs_s_subclass tarfs_subclass;</span>
+<span class='curline'><a href='../S/src--vfs--tar--tar.c.html#L924'>tarfs_subclass</a>    924 src/vfs/tar/tar.c     tarfs_subclass.flags = VFS_S_READONLY;      /* FIXME: tarfs used own temp files */</span>
+<span class='curline'><a href='../S/src--vfs--tar--tar.c.html#L925'>tarfs_subclass</a>    925 src/vfs/tar/tar.c     tarfs_subclass.archive_check = tar_super_check;</span>
+<span class='curline'><a href='../S/src--vfs--tar--tar.c.html#L926'>tarfs_subclass</a>    926 src/vfs/tar/tar.c     tarfs_subclass.archive_same = tar_super_same;</span>
+<span class='curline'><a href='../S/src--vfs--tar--tar.c.html#L927'>tarfs_subclass</a>    927 src/vfs/tar/tar.c     tarfs_subclass.open_archive = tar_open_archive;</span>
+<span class='curline'><a href='../S/src--vfs--tar--tar.c.html#L928'>tarfs_subclass</a>    928 src/vfs/tar/tar.c     tarfs_subclass.free_archive = tar_free_archive;</span>
+<span class='curline'><a href='../S/src--vfs--tar--tar.c.html#L929'>tarfs_subclass</a>    929 src/vfs/tar/tar.c     tarfs_subclass.fh_open = tar_fh_open;</span>
+<span class='curline'><a href='../S/src--vfs--tar--tar.c.html#L931'>tarfs_subclass</a>    931 src/vfs/tar/tar.c     vfs_s_init_class (&amp;vfs_tarfs_ops, &amp;tarfs_subclass);</span>
+</pre>
+</body>
+</html>

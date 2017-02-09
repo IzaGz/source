@@ -1,0 +1,44 @@
+<!DOCTYPE html PUBLIC '-//W3C//DTD XHTML 1.0 Transitional//EN' 'http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd'>
+<html xmlns='http://www.w3.org/1999/xhtml'>
+<head>
+<title>smbfs_connections</title>
+<meta name='robots' content='noindex,nofollow' />
+<meta name='generator' content='GLOBAL-6.5.2' />
+<meta http-equiv='Content-Style-Type' content='text/css' />
+<link rel='stylesheet' type='text/css' href='../style.css' />
+</head>
+<body>
+<pre>
+<span class='curline'><a href='../S/src--vfs--smbfs--smbfs.c.html#L155'>smbfs_connections</a>  155 src/vfs/smbfs/smbfs.c } smbfs_connections[SMBFS_MAX_CONNECTIONS];</span>
+<span class='curline'><a href='../S/src--vfs--smbfs--smbfs.c.html#L440'>smbfs_connections</a>  440 src/vfs/smbfs/smbfs.c         if (smbfs_connections[i].cli)</span>
+<span class='curline'><a href='../S/src--vfs--smbfs--smbfs.c.html#L443'>smbfs_connections</a>  443 src/vfs/smbfs/smbfs.c                                 smbfs_connections[i].user, "@",</span>
+<span class='curline'><a href='../S/src--vfs--smbfs--smbfs.c.html#L444'>smbfs_connections</a>  444 src/vfs/smbfs/smbfs.c                                 smbfs_connections[i].host,</span>
+<span class='curline'><a href='../S/src--vfs--smbfs--smbfs.c.html#L445'>smbfs_connections</a>  445 src/vfs/smbfs/smbfs.c                                 "/", smbfs_connections[i].service, (char *) NULL);</span>
+<span class='curline'><a href='../S/src--vfs--smbfs--smbfs.c.html#L1197'>smbfs_connections</a> 1197 src/vfs/smbfs/smbfs.c         if (!smbfs_connections[i].cli)</span>
+<span class='curline'><a href='../S/src--vfs--smbfs--smbfs.c.html#L1198'>smbfs_connections</a> 1198 src/vfs/smbfs/smbfs.c             return &amp;smbfs_connections[i];</span>
+<span class='curline'><a href='../S/src--vfs--smbfs--smbfs.c.html#L1202'>smbfs_connections</a> 1202 src/vfs/smbfs/smbfs.c         time_t oldest_time = smbfs_connections[0].last_use;</span>
+<span class='curline'><a href='../S/src--vfs--smbfs--smbfs.c.html#L1205'>smbfs_connections</a> 1205 src/vfs/smbfs/smbfs.c             if (smbfs_connections[i].last_use &lt; oldest_time)</span>
+<span class='curline'><a href='../S/src--vfs--smbfs--smbfs.c.html#L1207'>smbfs_connections</a> 1207 src/vfs/smbfs/smbfs.c                 oldest_time = smbfs_connections[i].last_use;</span>
+<span class='curline'><a href='../S/src--vfs--smbfs--smbfs.c.html#L1211'>smbfs_connections</a> 1211 src/vfs/smbfs/smbfs.c         cli_shutdown (smbfs_connections[oldest].cli);</span>
+<span class='curline'><a href='../S/src--vfs--smbfs--smbfs.c.html#L1212'>smbfs_connections</a> 1212 src/vfs/smbfs/smbfs.c         smbfs_free_bucket (&amp;smbfs_connections[oldest]);</span>
+<span class='curline'><a href='../S/src--vfs--smbfs--smbfs.c.html#L1213'>smbfs_connections</a> 1213 src/vfs/smbfs/smbfs.c         return &amp;smbfs_connections[oldest];</span>
+<span class='curline'><a href='../S/src--vfs--smbfs--smbfs.c.html#L1259'>smbfs_connections</a> 1259 src/vfs/smbfs/smbfs.c         if (!smbfs_connections[i].cli)</span>
+<span class='curline'><a href='../S/src--vfs--smbfs--smbfs.c.html#L1261'>smbfs_connections</a> 1261 src/vfs/smbfs/smbfs.c         if ((strcmp (host, smbfs_connections[i].host) == 0) &amp;&amp;</span>
+<span class='curline'><a href='../S/src--vfs--smbfs--smbfs.c.html#L1262'>smbfs_connections</a> 1262 src/vfs/smbfs/smbfs.c             (strcmp (user, smbfs_connections[i].user) == 0) &amp;&amp;</span>
+<span class='curline'><a href='../S/src--vfs--smbfs--smbfs.c.html#L1263'>smbfs_connections</a> 1263 src/vfs/smbfs/smbfs.c             (strcmp (service, smbfs_connections[i].service) == 0))</span>
+<span class='curline'><a href='../S/src--vfs--smbfs--smbfs.c.html#L1268'>smbfs_connections</a> 1268 src/vfs/smbfs/smbfs.c             while (!smbfs_chkpath (smbfs_connections[i].cli, "\\", !inshare))</span>
+<span class='curline'><a href='../S/src--vfs--smbfs--smbfs.c.html#L1270'>smbfs_connections</a> 1270 src/vfs/smbfs/smbfs.c                 if (!smbfs_reconnect (&amp;smbfs_connections[i], &amp;retries))</span>
+<span class='curline'><a href='../S/src--vfs--smbfs--smbfs.c.html#L1274'>smbfs_connections</a> 1274 src/vfs/smbfs/smbfs.c             current_bucket = &amp;smbfs_connections[i];</span>
+<span class='curline'><a href='../S/src--vfs--smbfs--smbfs.c.html#L1275'>smbfs_connections</a> 1275 src/vfs/smbfs/smbfs.c             smbfs_connections[i].last_use = time (NULL);</span>
+<span class='curline'><a href='../S/src--vfs--smbfs--smbfs.c.html#L1276'>smbfs_connections</a> 1276 src/vfs/smbfs/smbfs.c             return &amp;smbfs_connections[i];</span>
+<span class='curline'><a href='../S/src--vfs--smbfs--smbfs.c.html#L1279'>smbfs_connections</a> 1279 src/vfs/smbfs/smbfs.c         if (strcmp (host, smbfs_connections[i].host) == 0)</span>
+<span class='curline'><a href='../S/src--vfs--smbfs--smbfs.c.html#L1280'>smbfs_connections</a> 1280 src/vfs/smbfs/smbfs.c             dest_ip = &amp;smbfs_connections[i].cli-&gt;dest_ip;</span>
+<span class='curline'><a href='../S/src--vfs--smbfs--smbfs.c.html#L2002'>smbfs_connections</a> 2002 src/vfs/smbfs/smbfs.c             if (smbfs_connections[i].cli</span>
+<span class='curline'><a href='../S/src--vfs--smbfs--smbfs.c.html#L2003'>smbfs_connections</a> 2003 src/vfs/smbfs/smbfs.c                 &amp;&amp; (strcmp (p-&gt;host, smbfs_connections[i].host) == 0)</span>
+<span class='curline'><a href='../S/src--vfs--smbfs--smbfs.c.html#L2004'>smbfs_connections</a> 2004 src/vfs/smbfs/smbfs.c                 &amp;&amp; (strcmp (p-&gt;user, smbfs_connections[i].user) == 0)</span>
+<span class='curline'><a href='../S/src--vfs--smbfs--smbfs.c.html#L2005'>smbfs_connections</a> 2005 src/vfs/smbfs/smbfs.c                 &amp;&amp; (p-&gt;port == smbfs_connections[i].port))</span>
+<span class='curline'><a href='../S/src--vfs--smbfs--smbfs.c.html#L2009'>smbfs_connections</a> 2009 src/vfs/smbfs/smbfs.c                 cli_shutdown (smbfs_connections[i].cli);</span>
+<span class='curline'><a href='../S/src--vfs--smbfs--smbfs.c.html#L2012'>smbfs_connections</a> 2012 src/vfs/smbfs/smbfs.c                 smbfs_connections[i].cli = smbfs_do_connect (p-&gt;host, smbfs_connections[i].service);</span>
+</pre>
+</body>
+</html>

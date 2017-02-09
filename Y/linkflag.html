@@ -1,0 +1,30 @@
+<!DOCTYPE html PUBLIC '-//W3C//DTD XHTML 1.0 Transitional//EN' 'http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd'>
+<html xmlns='http://www.w3.org/1999/xhtml'>
+<head>
+<title>linkflag</title>
+<meta name='robots' content='noindex,nofollow' />
+<meta name='generator' content='GLOBAL-6.5.2' />
+<meta http-equiv='Content-Style-Type' content='text/css' />
+<link rel='stylesheet' type='text/css' href='../style.css' />
+</head>
+<body>
+<pre>
+<span class='curline'><a href='../S/src--vfs--tar--tar.c.html#L166'>linkflag</a>          166 src/vfs/tar/tar.c         char linkflag;</span>
+<span class='curline'><a href='../S/src--vfs--tar--tar.c.html#L391'>linkflag</a>          391 src/vfs/tar/tar.c     if (header-&gt;header.linkflag == LF_DIR)</span>
+<span class='curline'><a href='../S/src--vfs--tar--tar.c.html#L393'>linkflag</a>          393 src/vfs/tar/tar.c     else if (header-&gt;header.linkflag == LF_SYMLINK)</span>
+<span class='curline'><a href='../S/src--vfs--tar--tar.c.html#L395'>linkflag</a>          395 src/vfs/tar/tar.c     else if (header-&gt;header.linkflag == LF_CHR)</span>
+<span class='curline'><a href='../S/src--vfs--tar--tar.c.html#L397'>linkflag</a>          397 src/vfs/tar/tar.c     else if (header-&gt;header.linkflag == LF_BLK)</span>
+<span class='curline'><a href='../S/src--vfs--tar--tar.c.html#L399'>linkflag</a>          399 src/vfs/tar/tar.c     else if (header-&gt;header.linkflag == LF_FIFO)</span>
+<span class='curline'><a href='../S/src--vfs--tar--tar.c.html#L423'>linkflag</a>          423 src/vfs/tar/tar.c         switch (header-&gt;header.linkflag)</span>
+<span class='curline'><a href='../S/src--vfs--tar--tar.c.html#L524'>linkflag</a>          524 src/vfs/tar/tar.c             if (header-&gt;header.linkflag == LF_GLOBAL_EXTHDR)</span>
+<span class='curline'><a href='../S/src--vfs--tar--tar.c.html#L536'>linkflag</a>          536 src/vfs/tar/tar.c     if (header-&gt;header.linkflag == '\000')</span>
+<span class='curline'><a href='../S/src--vfs--tar--tar.c.html#L546'>linkflag</a>          546 src/vfs/tar/tar.c             header-&gt;header.linkflag = LF_DIR;</span>
+<span class='curline'><a href='../S/src--vfs--tar--tar.c.html#L552'>linkflag</a>          552 src/vfs/tar/tar.c     if (header-&gt;header.linkflag == LF_LINK || header-&gt;header.linkflag == LF_DIR)</span>
+<span class='curline'><a href='../S/src--vfs--tar--tar.c.html#L561'>linkflag</a>          561 src/vfs/tar/tar.c     if (header-&gt;header.linkflag == LF_DUMPDIR)</span>
+<span class='curline'><a href='../S/src--vfs--tar--tar.c.html#L572'>linkflag</a>          572 src/vfs/tar/tar.c     if (header-&gt;header.linkflag == LF_EXTHDR || header-&gt;header.linkflag == LF_GLOBAL_EXTHDR)</span>
+<span class='curline'><a href='../S/src--vfs--tar--tar.c.html#L579'>linkflag</a>          579 src/vfs/tar/tar.c     if (header-&gt;header.linkflag == LF_LONGNAME || header-&gt;header.linkflag == LF_LONGLINK)</span>
+<span class='curline'><a href='../S/src--vfs--tar--tar.c.html#L595'>linkflag</a>          595 src/vfs/tar/tar.c         longp = ((header-&gt;header.linkflag == LF_LONGNAME) ? &amp;next_long_name : &amp;next_long_link);</span>
+<span class='curline'><a href='../S/src--vfs--tar--tar.c.html#L709'>linkflag</a>          709 src/vfs/tar/tar.c         if (header-&gt;header.linkflag == LF_LINK)</span>
+</pre>
+</body>
+</html>

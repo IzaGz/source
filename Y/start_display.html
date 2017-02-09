@@ -1,0 +1,49 @@
+<!DOCTYPE html PUBLIC '-//W3C//DTD XHTML 1.0 Transitional//EN' 'http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd'>
+<html xmlns='http://www.w3.org/1999/xhtml'>
+<head>
+<title>start_display</title>
+<meta name='robots' content='noindex,nofollow' />
+<meta name='generator' content='GLOBAL-6.5.2' />
+<meta http-equiv='Content-Style-Type' content='text/css' />
+<link rel='stylesheet' type='text/css' href='../style.css' />
+</head>
+<body>
+<pre>
+<span class='curline'><a href='../S/src--editor--edit.c.html#L849'>start_display</a>     849 src/editor/edit.c         edit-&gt;start_display = edit-&gt;buffer.size;</span>
+<span class='curline'><a href='../S/src--editor--edit.c.html#L1209'>start_display</a>    1209 src/editor/edit.c     if (edit-&gt;start_display &gt; ac - KEY_PRESS)</span>
+<span class='curline'><a href='../S/src--editor--edit.c.html#L1212'>start_display</a>    1212 src/editor/edit.c             edit_buffer_count_lines (&amp;edit-&gt;buffer, ac - KEY_PRESS, edit-&gt;start_display);</span>
+<span class='curline'><a href='../S/src--editor--edit.c.html#L1215'>start_display</a>    1215 src/editor/edit.c     else if (edit-&gt;start_display &lt; ac - KEY_PRESS)</span>
+<span class='curline'><a href='../S/src--editor--edit.c.html#L1218'>start_display</a>    1218 src/editor/edit.c             edit_buffer_count_lines (&amp;edit-&gt;buffer, edit-&gt;start_display, ac - KEY_PRESS);</span>
+<span class='curline'><a href='../S/src--editor--edit.c.html#L1221'>start_display</a>    1221 src/editor/edit.c     edit-&gt;start_display = ac - KEY_PRESS;       /* see push and pop above */</span>
+<span class='curline'><a href='../S/src--editor--edit.c.html#L1291'>start_display</a>    1291 src/editor/edit.c     if (edit-&gt;start_display &gt; ac - KEY_PRESS)</span>
+<span class='curline'><a href='../S/src--editor--edit.c.html#L1294'>start_display</a>    1294 src/editor/edit.c             edit_buffer_count_lines (&amp;edit-&gt;buffer, ac - KEY_PRESS, edit-&gt;start_display);</span>
+<span class='curline'><a href='../S/src--editor--edit.c.html#L1297'>start_display</a>    1297 src/editor/edit.c     else if (edit-&gt;start_display &lt; ac - KEY_PRESS)</span>
+<span class='curline'><a href='../S/src--editor--edit.c.html#L1300'>start_display</a>    1300 src/editor/edit.c             edit_buffer_count_lines (&amp;edit-&gt;buffer, edit-&gt;start_display, ac - KEY_PRESS);</span>
+<span class='curline'><a href='../S/src--editor--edit.c.html#L1303'>start_display</a>    1303 src/editor/edit.c     edit-&gt;start_display = ac - KEY_PRESS;       /* see push and pop above */</span>
+<span class='curline'><a href='../S/src--editor--edit.c.html#L1551'>start_display</a>    1551 src/editor/edit.c             if (q &lt; edit-&gt;start_display)</span>
+<span class='curline'><a href='../S/src--editor--edit.c.html#L2515'>start_display</a>    2515 src/editor/edit.c     if (edit-&gt;buffer.curs1 &lt; edit-&gt;start_display)</span>
+<span class='curline'><a href='../S/src--editor--edit.c.html#L2517'>start_display</a>    2517 src/editor/edit.c         edit-&gt;start_display++;</span>
+<span class='curline'><a href='../S/src--editor--edit.c.html#L2555'>start_display</a>    2555 src/editor/edit.c     if (edit-&gt;buffer.curs1 &lt; edit-&gt;start_display)</span>
+<span class='curline'><a href='../S/src--editor--edit.c.html#L2557'>start_display</a>    2557 src/editor/edit.c         edit-&gt;start_display++;</span>
+<span class='curline'><a href='../S/src--editor--edit.c.html#L2645'>start_display</a>    2645 src/editor/edit.c     if (edit-&gt;buffer.curs1 &lt; edit-&gt;start_display)</span>
+<span class='curline'><a href='../S/src--editor--edit.c.html#L2647'>start_display</a>    2647 src/editor/edit.c         edit-&gt;start_display--;</span>
+<span class='curline'><a href='../S/src--editor--edit.c.html#L2706'>start_display</a>    2706 src/editor/edit.c     if (edit-&gt;buffer.curs1 &lt; edit-&gt;start_display)</span>
+<span class='curline'><a href='../S/src--editor--edit.c.html#L2708'>start_display</a>    2708 src/editor/edit.c         edit-&gt;start_display--;</span>
+<span class='curline'><a href='../S/src--editor--edit.c.html#L2881'>start_display</a>    2881 src/editor/edit.c         edit-&gt;start_display =</span>
+<span class='curline'><a href='../S/src--editor--edit.c.html#L2882'>start_display</a>    2882 src/editor/edit.c             edit_buffer_get_backward_offset (&amp;edit-&gt;buffer, edit-&gt;start_display, i);</span>
+<span class='curline'><a href='../S/src--editor--edit.c.html#L2903'>start_display</a>    2903 src/editor/edit.c         edit-&gt;start_display =</span>
+<span class='curline'><a href='../S/src--editor--edit.c.html#L2904'>start_display</a>    2904 src/editor/edit.c             edit_buffer_get_forward_offset (&amp;edit-&gt;buffer, edit-&gt;start_display, i, 0);</span>
+<span class='curline'><a href='../S/src--editor--edit.c.html#L3167'>start_display</a>    3167 src/editor/edit.c     edit_push_undo_action (edit, KEY_PRESS + edit-&gt;start_display);</span>
+<span class='curline'><a href='../S/src--editor--editcmd.c.html#L957'>start_display</a>     957 src/editor/editcmd.c     edit_push_undo_action (edit, KEY_PRESS + edit-&gt;start_display);</span>
+<span class='curline'><a href='../S/src--editor--editcmd.c.html#L1692'>start_display</a>    1692 src/editor/editcmd.c     edit_push_undo_action (edit, KEY_PRESS + edit-&gt;start_display);</span>
+<span class='curline'><a href='../S/src--editor--editcmd.c.html#L1882'>start_display</a>    1882 src/editor/editcmd.c     edit_push_undo_action (edit, KEY_PRESS + edit-&gt;start_display);</span>
+<span class='curline'><a href='../S/src--editor--editcmd.c.html#L1954'>start_display</a>    1954 src/editor/editcmd.c     edit_push_undo_action (edit, KEY_PRESS + edit-&gt;start_display);</span>
+<span class='curline'><a href='../S/src--editor--editcmd.c.html#L2537'>start_display</a>    2537 src/editor/editcmd.c         edit_push_undo_action (edit, KEY_PRESS + edit-&gt;start_display);</span>
+<span class='curline'><a href='../S/src--editor--editcmd.c.html#L3085'>start_display</a>    3085 src/editor/editcmd.c     edit_push_undo_action (edit, KEY_PRESS + edit-&gt;start_display);</span>
+<span class='curline'><a href='../S/src--editor--editcmd.c.html#L3118'>start_display</a>    3118 src/editor/editcmd.c     edit_push_undo_action (edit, KEY_PRESS + edit-&gt;start_display);</span>
+<span class='curline'><a href='../S/src--editor--editdraw.c.html#L927'>start_display</a>     927 src/editor/editdraw.c             b = edit_buffer_get_forward_offset (&amp;edit-&gt;buffer, edit-&gt;start_display, start_row, 0);</span>
+<span class='curline'><a href='../S/src--editor--editdraw.c.html#L946'>start_display</a>     946 src/editor/editdraw.c                 b = edit-&gt;start_display;</span>
+<span class='curline'><a href='../S/src--editor--editwidget.h.html#L100'>start_display</a>     100 src/editor/editwidget.h     long start_display;         /* First char displayed */</span>
+</pre>
+</body>
+</html>

@@ -1,0 +1,34 @@
+<!DOCTYPE html PUBLIC '-//W3C//DTD XHTML 1.0 Transitional//EN' 'http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd'>
+<html xmlns='http://www.w3.org/1999/xhtml'>
+<head>
+<title>undo_stack</title>
+<meta name='robots' content='noindex,nofollow' />
+<meta name='generator' content='GLOBAL-6.5.2' />
+<meta http-equiv='Content-Style-Type' content='text/css' />
+<link rel='stylesheet' type='text/css' href='../style.css' />
+</head>
+<body>
+<pre>
+<span class='curline'><a href='../S/src--editor--edit.c.html#L543'>undo_stack</a>        543 src/editor/edit.c     c = edit-&gt;undo_stack[sp];</span>
+<span class='curline'><a href='../S/src--editor--edit.c.html#L554'>undo_stack</a>        554 src/editor/edit.c     c = edit-&gt;undo_stack[(sp - 1) &amp; edit-&gt;undo_stack_size_mask];</span>
+<span class='curline'><a href='../S/src--editor--edit.c.html#L555'>undo_stack</a>        555 src/editor/edit.c     if (edit-&gt;undo_stack[sp] == -2)</span>
+<span class='curline'><a href='../S/src--editor--edit.c.html#L561'>undo_stack</a>        561 src/editor/edit.c         edit-&gt;undo_stack[sp]++;</span>
+<span class='curline'><a href='../S/src--editor--edit.c.html#L605'>undo_stack</a>        605 src/editor/edit.c     c = edit-&gt;undo_stack[sp];</span>
+<span class='curline'><a href='../S/src--editor--edit.c.html#L612'>undo_stack</a>        612 src/editor/edit.c     c = edit-&gt;undo_stack[(sp - 1) &amp; edit-&gt;undo_stack_size_mask];</span>
+<span class='curline'><a href='../S/src--editor--edit.c.html#L2136'>undo_stack</a>       2136 src/editor/edit.c     edit-&gt;undo_stack = g_malloc0 ((edit-&gt;undo_stack_size + 10) * sizeof (long));</span>
+<span class='curline'><a href='../S/src--editor--edit.c.html#L2207'>undo_stack</a>       2207 src/editor/edit.c     g_free (edit-&gt;undo_stack);</span>
+<span class='curline'><a href='../S/src--editor--edit.c.html#L2351'>undo_stack</a>       2351 src/editor/edit.c             t = g_realloc (edit-&gt;undo_stack, (edit-&gt;undo_stack_size * 2 + 10) * sizeof (long));</span>
+<span class='curline'><a href='../S/src--editor--edit.c.html#L2354'>undo_stack</a>       2354 src/editor/edit.c                 edit-&gt;undo_stack = t;</span>
+<span class='curline'><a href='../S/src--editor--edit.c.html#L2376'>undo_stack</a>       2376 src/editor/edit.c         if (edit-&gt;undo_stack[spm1] &lt; 0)</span>
+<span class='curline'><a href='../S/src--editor--edit.c.html#L2378'>undo_stack</a>       2378 src/editor/edit.c             d = edit-&gt;undo_stack[(sp - 2) &amp; edit-&gt;undo_stack_size_mask];</span>
+<span class='curline'><a href='../S/src--editor--edit.c.html#L2379'>undo_stack</a>       2379 src/editor/edit.c             if (d == c &amp;&amp; edit-&gt;undo_stack[spm1] &gt; -1000000000)</span>
+<span class='curline'><a href='../S/src--editor--edit.c.html#L2382'>undo_stack</a>       2382 src/editor/edit.c                     edit-&gt;undo_stack[spm1]--;</span>
+<span class='curline'><a href='../S/src--editor--edit.c.html#L2388'>undo_stack</a>       2388 src/editor/edit.c             d = edit-&gt;undo_stack[spm1];</span>
+<span class='curline'><a href='../S/src--editor--edit.c.html#L2393'>undo_stack</a>       2393 src/editor/edit.c                 edit-&gt;undo_stack[sp] = -2;</span>
+<span class='curline'><a href='../S/src--editor--edit.c.html#L2398'>undo_stack</a>       2398 src/editor/edit.c     edit-&gt;undo_stack[sp] = c;</span>
+<span class='curline'><a href='../S/src--editor--edit.c.html#L2413'>undo_stack</a>       2413 src/editor/edit.c         while (edit-&gt;undo_stack[edit-&gt;undo_stack_bottom] &lt; KEY_PRESS</span>
+<span class='curline'><a href='../S/src--editor--edit.c.html#L2418'>undo_stack</a>       2418 src/editor/edit.c         &amp;&amp; edit-&gt;undo_stack[edit-&gt;undo_stack_bottom] &lt; KEY_PRESS)</span>
+<span class='curline'><a href='../S/src--editor--editwidget.h.html#L138'>undo_stack</a>        138 src/editor/editwidget.h     long *undo_stack;</span>
+</pre>
+</body>
+</html>

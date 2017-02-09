@@ -1,0 +1,20 @@
+<!DOCTYPE html PUBLIC '-//W3C//DTD XHTML 1.0 Transitional//EN' 'http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd'>
+<html xmlns='http://www.w3.org/1999/xhtml'>
+<head>
+<title>vfs_free_handle_list</title>
+<meta name='robots' content='noindex,nofollow' />
+<meta name='generator' content='GLOBAL-6.5.2' />
+<meta http-equiv='Content-Style-Type' content='text/css' />
+<link rel='stylesheet' type='text/css' href='../style.css' />
+</head>
+<body>
+<pre>
+<span class='curline'><a href='../S/lib--vfs--vfs.c.html#L97'>vfs_free_handle_list</a>   97 lib/vfs/vfs.c  static long vfs_free_handle_list = -1;</span>
+<span class='curline'><a href='../S/lib--vfs--vfs.c.html#L232'>vfs_free_handle_list</a>  232 lib/vfs/vfs.c          g_ptr_array_index (vfs_openfiles, idx) = (void *) vfs_free_handle_list;</span>
+<span class='curline'><a href='../S/lib--vfs--vfs.c.html#L233'>vfs_free_handle_list</a>  233 lib/vfs/vfs.c          vfs_free_handle_list = idx;</span>
+<span class='curline'><a href='../S/lib--vfs--vfs.c.html#L273'>vfs_free_handle_list</a>  273 lib/vfs/vfs.c      h-&gt;handle = vfs_free_handle_list;</span>
+<span class='curline'><a href='../S/lib--vfs--vfs.c.html#L282'>vfs_free_handle_list</a>  282 lib/vfs/vfs.c          vfs_free_handle_list = (long) g_ptr_array_index (vfs_openfiles, vfs_free_handle_list);</span>
+<span class='curline'><a href='../S/lib--vfs--vfs.c.html#L504'>vfs_free_handle_list</a>  504 lib/vfs/vfs.c      vfs_free_handle_list = -1;</span>
+</pre>
+</body>
+</html>

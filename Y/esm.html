@@ -1,0 +1,50 @@
+<!DOCTYPE html PUBLIC '-//W3C//DTD XHTML 1.0 Transitional//EN' 'http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd'>
+<html xmlns='http://www.w3.org/1999/xhtml'>
+<head>
+<title>esm</title>
+<meta name='robots' content='noindex,nofollow' />
+<meta name='generator' content='GLOBAL-6.5.2' />
+<meta http-equiv='Content-Style-Type' content='text/css' />
+<link rel='stylesheet' type='text/css' href='../style.css' />
+</head>
+<body>
+<pre>
+<span class='curline'><a href='../S/src--editor--editcmd.c.html#L123'>esm</a>               123 src/editor/editcmd.c     edit_search_status_msg_t *esm = (edit_search_status_msg_t *) sm;</span>
+<span class='curline'><a href='../S/src--editor--editcmd.c.html#L127'>esm</a>               127 src/editor/editcmd.c         label_set_textv (ssm-&gt;label, _("Searching %s: %3d%%"), esm-&gt;edit-&gt;last_search_string,</span>
+<span class='curline'><a href='../S/src--editor--editcmd.c.html#L128'>esm</a>               128 src/editor/editcmd.c                          edit_buffer_calc_percent (&amp;esm-&gt;edit-&gt;buffer, esm-&gt;offset));</span>
+<span class='curline'><a href='../S/src--editor--editcmd.c.html#L130'>esm</a>               130 src/editor/editcmd.c         label_set_textv (ssm-&gt;label, _("Searching %s"), esm-&gt;edit-&gt;last_search_string);</span>
+<span class='curline'><a href='../S/src--editor--editcmd.c.html#L132'>esm</a>               132 src/editor/editcmd.c     if (esm-&gt;first)</span>
+<span class='curline'><a href='../S/src--editor--editcmd.c.html#L140'>esm</a>               140 src/editor/editcmd.c         esm-&gt;first = FALSE;</span>
+<span class='curline'><a href='../S/src--editor--editcmd.c.html#L804'>esm</a>               804 src/editor/editcmd.c editcmd_find (edit_search_status_msg_t * esm, gsize * len)</span>
+<span class='curline'><a href='../S/src--editor--editcmd.c.html#L806'>esm</a>               806 src/editor/editcmd.c     WEdit *edit = esm-&gt;edit;</span>
+<span class='curline'><a href='../S/src--editor--editcmd.c.html#L866'>esm</a>               866 src/editor/editcmd.c             ok = mc_search_run (edit-&gt;search, (void *) esm, search_start, search_end, len);</span>
+<span class='curline'><a href='../S/src--editor--editcmd.c.html#L894'>esm</a>               894 src/editor/editcmd.c     return mc_search_run (edit-&gt;search, (void *) esm, search_start, end_mark, len);</span>
+<span class='curline'><a href='../S/src--editor--editcmd.c.html#L951'>esm</a>               951 src/editor/editcmd.c     edit_search_status_msg_t esm;</span>
+<span class='curline'><a href='../S/src--editor--editcmd.c.html#L959'>esm</a>               959 src/editor/editcmd.c     esm.first = TRUE;</span>
+<span class='curline'><a href='../S/src--editor--editcmd.c.html#L960'>esm</a>               960 src/editor/editcmd.c     esm.edit = edit;</span>
+<span class='curline'><a href='../S/src--editor--editcmd.c.html#L961'>esm</a>               961 src/editor/editcmd.c     esm.offset = edit-&gt;search_start;</span>
+<span class='curline'><a href='../S/src--editor--editcmd.c.html#L963'>esm</a>               963 src/editor/editcmd.c     status_msg_init (STATUS_MSG (&amp;esm), _("Search"), 1.0, simple_status_msg_init_cb,</span>
+<span class='curline'><a href='../S/src--editor--editcmd.c.html#L975'>esm</a>               975 src/editor/editcmd.c         while (mc_search_run (edit-&gt;search, (void *) &amp;esm, q, edit-&gt;buffer.size, &amp;len))</span>
+<span class='curline'><a href='../S/src--editor--editcmd.c.html#L1005'>esm</a>              1005 src/editor/editcmd.c         if (editcmd_find (&amp;esm, &amp;len))</span>
+<span class='curline'><a href='../S/src--editor--editcmd.c.html#L1024'>esm</a>              1024 src/editor/editcmd.c     status_msg_deinit (STATUS_MSG (&amp;esm));</span>
+<span class='curline'><a href='../S/src--editor--editcmd.c.html#L1183'>esm</a>              1183 src/editor/editcmd.c edit_collect_completions_get_current_word (edit_search_status_msg_t * esm, mc_search_t * srch,</span>
+<span class='curline'><a href='../S/src--editor--editcmd.c.html#L1186'>esm</a>              1186 src/editor/editcmd.c     WEdit *edit = esm-&gt;edit;</span>
+<span class='curline'><a href='../S/src--editor--editcmd.c.html#L1191'>esm</a>              1191 src/editor/editcmd.c     if (!mc_search_run (srch, (void *) esm, word_start, edit-&gt;buffer.size, &amp;len))</span>
+<span class='curline'><a href='../S/src--editor--editcmd.c.html#L1224'>esm</a>              1224 src/editor/editcmd.c     edit_search_status_msg_t esm;</span>
+<span class='curline'><a href='../S/src--editor--editcmd.c.html#L1245'>esm</a>              1245 src/editor/editcmd.c     esm.first = TRUE;</span>
+<span class='curline'><a href='../S/src--editor--editcmd.c.html#L1246'>esm</a>              1246 src/editor/editcmd.c     esm.edit = edit;</span>
+<span class='curline'><a href='../S/src--editor--editcmd.c.html#L1247'>esm</a>              1247 src/editor/editcmd.c     esm.offset = entire_file ? 0 : word_start;</span>
+<span class='curline'><a href='../S/src--editor--editcmd.c.html#L1249'>esm</a>              1249 src/editor/editcmd.c     status_msg_init (STATUS_MSG (&amp;esm), _("Collect completions"), 1.0, simple_status_msg_init_cb,</span>
+<span class='curline'><a href='../S/src--editor--editcmd.c.html#L1252'>esm</a>              1252 src/editor/editcmd.c     current_word = edit_collect_completions_get_current_word (&amp;esm, srch, word_start);</span>
+<span class='curline'><a href='../S/src--editor--editcmd.c.html#L1257'>esm</a>              1257 src/editor/editcmd.c     while (mc_search_run (srch, (void *) &amp;esm, start + 1, last_byte, &amp;len))</span>
+<span class='curline'><a href='../S/src--editor--editcmd.c.html#L1327'>esm</a>              1327 src/editor/editcmd.c     status_msg_deinit (STATUS_MSG (&amp;esm));</span>
+<span class='curline'><a href='../S/src--editor--editcmd.c.html#L2511'>esm</a>              2511 src/editor/editcmd.c     edit_search_status_msg_t esm;</span>
+<span class='curline'><a href='../S/src--editor--editcmd.c.html#L2600'>esm</a>              2600 src/editor/editcmd.c     esm.first = TRUE;</span>
+<span class='curline'><a href='../S/src--editor--editcmd.c.html#L2601'>esm</a>              2601 src/editor/editcmd.c     esm.edit = edit;</span>
+<span class='curline'><a href='../S/src--editor--editcmd.c.html#L2602'>esm</a>              2602 src/editor/editcmd.c     esm.offset = edit-&gt;search_start;</span>
+<span class='curline'><a href='../S/src--editor--editcmd.c.html#L2604'>esm</a>              2604 src/editor/editcmd.c     status_msg_init (STATUS_MSG (&amp;esm), _("Search"), 1.0, simple_status_msg_init_cb,</span>
+<span class='curline'><a href='../S/src--editor--editcmd.c.html#L2611'>esm</a>              2611 src/editor/editcmd.c         if (!editcmd_find (&amp;esm, &amp;len))</span>
+<span class='curline'><a href='../S/src--editor--editcmd.c.html#L2727'>esm</a>              2727 src/editor/editcmd.c     status_msg_deinit (STATUS_MSG (&amp;esm));</span>
+</pre>
+</body>
+</html>

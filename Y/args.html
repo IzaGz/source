@@ -1,0 +1,121 @@
+<!DOCTYPE html PUBLIC '-//W3C//DTD XHTML 1.0 Transitional//EN' 'http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd'>
+<html xmlns='http://www.w3.org/1999/xhtml'>
+<head>
+<title>args</title>
+<meta name='robots' content='noindex,nofollow' />
+<meta name='generator' content='GLOBAL-6.5.2' />
+<meta http-equiv='Content-Style-Type' content='text/css' />
+<link rel='stylesheet' type='text/css' href='../style.css' />
+</head>
+<body>
+<pre>
+<span class='curline'><a href='../S/lib--logging.c.html#L115'>args</a>              115 lib/logging.c  mc_va_log (const char *fmt, va_list args)</span>
+<span class='curline'><a href='../S/lib--logging.c.html#L128'>args</a>              128 lib/logging.c              (void) vfprintf (f, fmt, args);</span>
+<span class='curline'><a href='../S/lib--logging.c.html#L143'>args</a>              143 lib/logging.c      va_list args;</span>
+<span class='curline'><a href='../S/lib--logging.c.html#L148'>args</a>              148 lib/logging.c      va_start (args, fmt);</span>
+<span class='curline'><a href='../S/lib--logging.c.html#L149'>args</a>              149 lib/logging.c      mc_va_log (fmt, args);</span>
+<span class='curline'><a href='../S/lib--logging.c.html#L150'>args</a>              150 lib/logging.c      va_end (args);</span>
+<span class='curline'><a href='../S/lib--logging.c.html#L158'>args</a>              158 lib/logging.c      va_list args;</span>
+<span class='curline'><a href='../S/lib--logging.c.html#L160'>args</a>              160 lib/logging.c      va_start (args, fmt);</span>
+<span class='curline'><a href='../S/lib--logging.c.html#L161'>args</a>              161 lib/logging.c      mc_va_log (fmt, args);</span>
+<span class='curline'><a href='../S/lib--logging.c.html#L162'>args</a>              162 lib/logging.c      va_end (args);</span>
+<span class='curline'><a href='../S/lib--search--search.c.html#L518'>args</a>              518 lib/search/search.c         va_list args;</span>
+<span class='curline'><a href='../S/lib--search--search.c.html#L520'>args</a>              520 lib/search/search.c         va_start (args, format);</span>
+<span class='curline'><a href='../S/lib--search--search.c.html#L521'>args</a>              521 lib/search/search.c         lc_mc_search-&gt;error_str = g_strdup_vprintf (format, args);</span>
+<span class='curline'><a href='../S/lib--search--search.c.html#L522'>args</a>              522 lib/search/search.c         va_end (args);</span>
+<span class='curline'><a href='../S/lib--tty--tty-ncurses.c.html#L673'>args</a>              673 lib/tty/tty-ncurses.c     va_list args;</span>
+<span class='curline'><a href='../S/lib--tty--tty-ncurses.c.html#L676'>args</a>              676 lib/tty/tty-ncurses.c     va_start (args, fmt);</span>
+<span class='curline'><a href='../S/lib--tty--tty-ncurses.c.html#L677'>args</a>              677 lib/tty/tty-ncurses.c     g_vsnprintf (buf, sizeof (buf), fmt, args);</span>
+<span class='curline'><a href='../S/lib--tty--tty-ncurses.c.html#L678'>args</a>              678 lib/tty/tty-ncurses.c     va_end (args);</span>
+<span class='curline'><a href='../S/lib--tty--tty-slang.c.html#L744'>args</a>              744 lib/tty/tty-slang.c     va_list args;</span>
+<span class='curline'><a href='../S/lib--tty--tty-slang.c.html#L746'>args</a>              746 lib/tty/tty-slang.c     va_start (args, fmt);</span>
+<span class='curline'><a href='../S/lib--tty--tty-slang.c.html#L747'>args</a>              747 lib/tty/tty-slang.c     SLsmg_vprintf ((char *) fmt, args);</span>
+<span class='curline'><a href='../S/lib--tty--tty-slang.c.html#L748'>args</a>              748 lib/tty/tty-slang.c     va_end (args);</span>
+<span class='curline'><a href='../S/lib--util.c.html#L1461'>args</a>             1461 lib/util.c             va_list args;</span>
+<span class='curline'><a href='../S/lib--util.c.html#L1463'>args</a>             1463 lib/util.c             va_start (args, format);</span>
+<span class='curline'><a href='../S/lib--util.c.html#L1464'>args</a>             1464 lib/util.c             tmp_error = g_error_new_valist (MC_ERROR, code, format, args);</span>
+<span class='curline'><a href='../S/lib--util.c.html#L1465'>args</a>             1465 lib/util.c             va_end (args);</span>
+<span class='curline'><a href='../S/lib--util.c.html#L1487'>args</a>             1487 lib/util.c             va_list args;</span>
+<span class='curline'><a href='../S/lib--util.c.html#L1489'>args</a>             1489 lib/util.c             va_start (args, format);</span>
+<span class='curline'><a href='../S/lib--util.c.html#L1490'>args</a>             1490 lib/util.c             tmp_error = g_error_new_valist (MC_ERROR, code, format, args);</span>
+<span class='curline'><a href='../S/lib--util.c.html#L1491'>args</a>             1491 lib/util.c             va_end (args);</span>
+<span class='curline'><a href='../S/lib--util.h.html#L253'>args</a>              253 lib/util.h     char *mc_build_filenamev (const char *first_element, va_list args);</span>
+<span class='curline'><a href='../S/lib--utilunix.c.html#L1299'>args</a>             1299 lib/utilunix.c mc_build_filenamev (const char *first_element, va_list args)</span>
+<span class='curline'><a href='../S/lib--utilunix.c.html#L1316'>args</a>             1316 lib/utilunix.c             element = va_arg (args, char *);</span>
+<span class='curline'><a href='../S/lib--utilunix.c.html#L1325'>args</a>             1325 lib/utilunix.c             element = va_arg (args, char *);</span>
+<span class='curline'><a href='../S/lib--utilunix.c.html#L1358'>args</a>             1358 lib/utilunix.c     va_list args;</span>
+<span class='curline'><a href='../S/lib--utilunix.c.html#L1364'>args</a>             1364 lib/utilunix.c     va_start (args, first_element);</span>
+<span class='curline'><a href='../S/lib--utilunix.c.html#L1365'>args</a>             1365 lib/utilunix.c     ret = mc_build_filenamev (first_element, args);</span>
+<span class='curline'><a href='../S/lib--utilunix.c.html#L1366'>args</a>             1366 lib/utilunix.c     va_end (args);</span>
+<span class='curline'><a href='../S/lib--vfs--path.c.html#L1224'>args</a>             1224 lib/vfs/path.c     va_list args;</span>
+<span class='curline'><a href='../S/lib--vfs--path.c.html#L1231'>args</a>             1231 lib/vfs/path.c     va_start (args, first_element);</span>
+<span class='curline'><a href='../S/lib--vfs--path.c.html#L1232'>args</a>             1232 lib/vfs/path.c     str_path = mc_build_filenamev (first_element, args);</span>
+<span class='curline'><a href='../S/lib--vfs--path.c.html#L1233'>args</a>             1233 lib/vfs/path.c     va_end (args);</span>
+<span class='curline'><a href='../S/lib--vfs--path.c.html#L1253'>args</a>             1253 lib/vfs/path.c     va_list args;</span>
+<span class='curline'><a href='../S/lib--vfs--path.c.html#L1261'>args</a>             1261 lib/vfs/path.c     va_start (args, first_element);</span>
+<span class='curline'><a href='../S/lib--vfs--path.c.html#L1262'>args</a>             1262 lib/vfs/path.c     str_path = mc_build_filenamev (first_element, args);</span>
+<span class='curline'><a href='../S/lib--vfs--path.c.html#L1263'>args</a>             1263 lib/vfs/path.c     va_end (args);</span>
+<span class='curline'><a href='../S/lib--vfs--path.c.html#L1287'>args</a>             1287 lib/vfs/path.c     va_list args;</span>
+<span class='curline'><a href='../S/lib--vfs--path.c.html#L1296'>args</a>             1296 lib/vfs/path.c     va_start (args, first_vpath);</span>
+<span class='curline'><a href='../S/lib--vfs--path.c.html#L1308'>args</a>             1308 lib/vfs/path.c         current_vpath = va_arg (args, const vfs_path_t *);</span>
+<span class='curline'><a href='../S/lib--vfs--path.c.html#L1311'>args</a>             1311 lib/vfs/path.c     va_end (args);</span>
+<span class='curline'><a href='../S/lib--widget--label.c.html#L187'>args</a>              187 lib/widget/label.c     va_list args;</span>
+<span class='curline'><a href='../S/lib--widget--label.c.html#L190'>args</a>              190 lib/widget/label.c     va_start (args, format);</span>
+<span class='curline'><a href='../S/lib--widget--label.c.html#L191'>args</a>              191 lib/widget/label.c     g_vsnprintf (buf, sizeof (buf), format, args);</span>
+<span class='curline'><a href='../S/lib--widget--label.c.html#L192'>args</a>              192 lib/widget/label.c     va_end (args);</span>
+<span class='curline'><a href='../S/lib--widget--wtools.c.html#L385'>args</a>              385 lib/widget/wtools.c     va_list args;</span>
+<span class='curline'><a href='../S/lib--widget--wtools.c.html#L389'>args</a>              389 lib/widget/wtools.c     va_start (args, text);</span>
+<span class='curline'><a href='../S/lib--widget--wtools.c.html#L390'>args</a>              390 lib/widget/wtools.c     p = g_strdup_vprintf (text, args);</span>
+<span class='curline'><a href='../S/lib--widget--wtools.c.html#L391'>args</a>              391 lib/widget/wtools.c     va_end (args);</span>
+<span class='curline'><a href='../S/src--diffviewer--internal.h.html#L89'>args</a>               89 src/diffviewer/internal.h     const char *args;           /* Args passed to diff */</span>
+<span class='curline'><a href='../S/src--diffviewer--ydiff.c.html#L801'>args</a>              801 src/diffviewer/ydiff.c dff_execute (const char *args, const char *extra, const char *file1, const char *file2,</span>
+<span class='curline'><a href='../S/src--diffviewer--ydiff.c.html#L819'>args</a>              819 src/diffviewer/ydiff.c     cmd = g_strdup_printf ("diff %s %s %s %s %s", args, extra, opt, file1_esc, file2_esc);</span>
+<span class='curline'><a href='../S/src--diffviewer--ydiff.c.html#L1764'>args</a>             1764 src/diffviewer/ydiff.c     ndiff = dff_execute (dview-&gt;args, extra, dview-&gt;file[DIFF_LEFT], dview-&gt;file[DIFF_RIGHT], ops);</span>
+<span class='curline'><a href='../S/src--diffviewer--ydiff.c.html#L2390'>args</a>             2390 src/diffviewer/ydiff.c dview_init (WDiff * dview, const char *args, const char *file1, const char *file2,</span>
+<span class='curline'><a href='../S/src--diffviewer--ydiff.c.html#L2426'>args</a>             2426 src/diffviewer/ydiff.c     dview-&gt;args = args;</span>
+<span class='curline'><a href='../S/src--editor--syntax.c.html#L764'>args</a>              764 src/editor/syntax.c get_args (char *l, char **args, int args_size)</span>
+<span class='curline'><a href='../S/src--editor--syntax.c.html#L779'>args</a>              779 src/editor/syntax.c         args[argc++] = convert (p);</span>
+<span class='curline'><a href='../S/src--editor--syntax.c.html#L781'>args</a>              781 src/editor/syntax.c     args[argc] = (char *) NULL;</span>
+<span class='curline'><a href='../S/src--editor--syntax.c.html#L912'>args</a>              912 src/editor/syntax.c edit_read_syntax_rules (WEdit * edit, FILE * f, char **args, int args_size)</span>
+<span class='curline'><a href='../S/src--editor--syntax.c.html#L925'>args</a>              925 src/editor/syntax.c     args[0] = NULL;</span>
+<span class='curline'><a href='../S/src--editor--syntax.c.html#L965'>args</a>              965 src/editor/syntax.c         argc = get_args (l, args, args_size);</span>
+<span class='curline'><a href='../S/src--editor--syntax.c.html#L966'>args</a>              966 src/editor/syntax.c         a = args + 1;</span>
+<span class='curline'><a href='../S/src--editor--syntax.c.html#L967'>args</a>              967 src/editor/syntax.c         if (args[0] == NULL)</span>
+<span class='curline'><a href='../S/src--editor--syntax.c.html#L971'>args</a>              971 src/editor/syntax.c         else if (strcmp (args[0], "include") == 0)</span>
+<span class='curline'><a href='../S/src--editor--syntax.c.html#L979'>args</a>              979 src/editor/syntax.c             f = open_include_file (args[1]);</span>
+<span class='curline'><a href='../S/src--editor--syntax.c.html#L989'>args</a>              989 src/editor/syntax.c         else if (strcmp (args[0], "caseinsensitive") == 0)</span>
+<span class='curline'><a href='../S/src--editor--syntax.c.html#L993'>args</a>              993 src/editor/syntax.c         else if (strcmp (args[0], "wholechars") == 0)</span>
+<span class='curline'><a href='../S/src--editor--syntax.c.html#L1014'>args</a>             1014 src/editor/syntax.c         else if (strcmp (args[0], "context") == 0)</span>
+<span class='curline'><a href='../S/src--editor--syntax.c.html#L1081'>args</a>             1081 src/editor/syntax.c             subst_defines (edit-&gt;defines, a, &amp;args[1024]);</span>
+<span class='curline'><a href='../S/src--editor--syntax.c.html#L1098'>args</a>             1098 src/editor/syntax.c         else if (strcmp (args[0], "spellcheck") == 0)</span>
+<span class='curline'><a href='../S/src--editor--syntax.c.html#L1107'>args</a>             1107 src/editor/syntax.c         else if (strcmp (args[0], "keyword") == 0)</span>
+<span class='curline'><a href='../S/src--editor--syntax.c.html#L1146'>args</a>             1146 src/editor/syntax.c             subst_defines (edit-&gt;defines, a, &amp;args[1024]);</span>
+<span class='curline'><a href='../S/src--editor--syntax.c.html#L1165'>args</a>             1165 src/editor/syntax.c         else if (*(args[0]) == '#')</span>
+<span class='curline'><a href='../S/src--editor--syntax.c.html#L1169'>args</a>             1169 src/editor/syntax.c         else if (strcmp (args[0], "file") == 0)</span>
+<span class='curline'><a href='../S/src--editor--syntax.c.html#L1173'>args</a>             1173 src/editor/syntax.c         else if (strcmp (args[0], "define") == 0)</span>
+<span class='curline'><a href='../S/src--editor--syntax.c.html#L1196'>args</a>             1196 src/editor/syntax.c         free_args (args);</span>
+<span class='curline'><a href='../S/src--editor--syntax.c.html#L1199'>args</a>             1199 src/editor/syntax.c     free_args (args);</span>
+<span class='curline'><a href='../S/src--editor--syntax.c.html#L1252'>args</a>             1252 src/editor/syntax.c     char *args[1024], *l = NULL;</span>
+<span class='curline'><a href='../S/src--editor--syntax.c.html#L1268'>args</a>             1268 src/editor/syntax.c     args[0] = NULL;</span>
+<span class='curline'><a href='../S/src--editor--syntax.c.html#L1275'>args</a>             1275 src/editor/syntax.c         (void) get_args (l, args, 1023);        /* Final NULL */</span>
+<span class='curline'><a href='../S/src--editor--syntax.c.html#L1276'>args</a>             1276 src/editor/syntax.c         if (args[0] == NULL)</span>
+<span class='curline'><a href='../S/src--editor--syntax.c.html#L1280'>args</a>             1280 src/editor/syntax.c         if (!found &amp;&amp; strcmp (args[0], "include") == 0)</span>
+<span class='curline'><a href='../S/src--editor--syntax.c.html#L1285'>args</a>             1285 src/editor/syntax.c             if (!args[1] || !(g = open_include_file (args[1])))</span>
+<span class='curline'><a href='../S/src--editor--syntax.c.html#L1294'>args</a>             1294 src/editor/syntax.c         if (strcmp (args[0], "file") != 0)</span>
+<span class='curline'><a href='../S/src--editor--syntax.c.html#L1300'>args</a>             1300 src/editor/syntax.c         if (!args[1] || !args[2])</span>
+<span class='curline'><a href='../S/src--editor--syntax.c.html#L1309'>args</a>             1309 src/editor/syntax.c             g_ptr_array_add (pnames, g_strdup (args[2]));</span>
+<span class='curline'><a href='../S/src--editor--syntax.c.html#L1314'>args</a>             1314 src/editor/syntax.c             if (strcmp (type, args[2]) == 0)</span>
+<span class='curline'><a href='../S/src--editor--syntax.c.html#L1322'>args</a>             1322 src/editor/syntax.c             q = mc_search (args[1], DEFAULT_CHARSET, editor_file, MC_SEARCH_T_REGEX);</span>
+<span class='curline'><a href='../S/src--editor--syntax.c.html#L1324'>args</a>             1324 src/editor/syntax.c             if (!q &amp;&amp; args[3])</span>
+<span class='curline'><a href='../S/src--editor--syntax.c.html#L1327'>args</a>             1327 src/editor/syntax.c                 q = mc_search (args[3], DEFAULT_CHARSET, first_line, MC_SEARCH_T_REGEX);</span>
+<span class='curline'><a href='../S/src--editor--syntax.c.html#L1334'>args</a>             1334 src/editor/syntax.c                 syntax_type = args[2];</span>
+<span class='curline'><a href='../S/src--editor--syntax.c.html#L1335'>args</a>             1335 src/editor/syntax.c                 line_error = edit_read_syntax_rules (edit, g ? g : f, args, 1023);</span>
+<span class='curline'><a href='../S/src--filemanager--ext.c.html#L527'>args</a>              527 src/filemanager/ext.c get_popen_information (const char *cmd_file, const char *args, char *buf, int buflen)</span>
+<span class='curline'><a href='../S/src--filemanager--ext.c.html#L533'>args</a>              533 src/filemanager/ext.c     command = g_strconcat (cmd_file, args, " 2&gt;/dev/null", (char *) NULL);</span>
+<span class='curline'><a href='../S/src--filemanager--ext.c.html#L591'>args</a>              591 src/filemanager/ext.c     char *tmp, *lang, *args;</span>
+<span class='curline'><a href='../S/src--filemanager--ext.c.html#L596'>args</a>              596 src/filemanager/ext.c     args = g_strconcat (" -L", lang, " -i ", tmp, (char *) NULL);</span>
+<span class='curline'><a href='../S/src--filemanager--ext.c.html#L598'>args</a>              598 src/filemanager/ext.c     ret = get_popen_information ("enca", args, buf, buflen);</span>
+<span class='curline'><a href='../S/src--filemanager--ext.c.html#L600'>args</a>              600 src/filemanager/ext.c     g_free (args);</span>
+</pre>
+</body>
+</html>

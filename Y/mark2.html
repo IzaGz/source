@@ -1,0 +1,72 @@
+<!DOCTYPE html PUBLIC '-//W3C//DTD XHTML 1.0 Transitional//EN' 'http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd'>
+<html xmlns='http://www.w3.org/1999/xhtml'>
+<head>
+<title>mark2</title>
+<meta name='robots' content='noindex,nofollow' />
+<meta name='generator' content='GLOBAL-6.5.2' />
+<meta http-equiv='Content-Style-Type' content='text/css' />
+<link rel='stylesheet' type='text/css' href='../style.css' />
+</head>
+<body>
+<pre>
+<span class='curline'><a href='../S/src--editor--edit.c.html#L932'>mark2</a>             932 src/editor/edit.c             &amp;&amp; edit-&gt;mark1 != edit-&gt;mark2</span>
+<span class='curline'><a href='../S/src--editor--edit.c.html#L971'>mark2</a>             971 src/editor/edit.c             &amp;&amp; edit-&gt;mark1 != edit-&gt;mark2</span>
+<span class='curline'><a href='../S/src--editor--edit.c.html#L1034'>mark2</a>            1034 src/editor/edit.c         &amp;&amp; edit-&gt;mark1 != edit-&gt;mark2</span>
+<span class='curline'><a href='../S/src--editor--edit.c.html#L1196'>mark2</a>            1196 src/editor/edit.c             edit-&gt;mark2 = ac - MARK_2;</span>
+<span class='curline'><a href='../S/src--editor--edit.c.html#L1198'>mark2</a>            1198 src/editor/edit.c                 (long) edit_move_forward3 (edit, edit_buffer_get_bol (&amp;edit-&gt;buffer, edit-&gt;mark2),</span>
+<span class='curline'><a href='../S/src--editor--edit.c.html#L1199'>mark2</a>            1199 src/editor/edit.c                                            0, edit-&gt;mark2);</span>
+<span class='curline'><a href='../S/src--editor--edit.c.html#L1281'>mark2</a>            1281 src/editor/edit.c             edit-&gt;mark2 = ac - MARK_2;</span>
+<span class='curline'><a href='../S/src--editor--edit.c.html#L1283'>mark2</a>            1283 src/editor/edit.c                 (long) edit_move_forward3 (edit, edit_buffer_get_bol (&amp;edit-&gt;buffer, edit-&gt;mark2),</span>
+<span class='curline'><a href='../S/src--editor--edit.c.html#L1284'>mark2</a>            1284 src/editor/edit.c                                            0, edit-&gt;mark2);</span>
+<span class='curline'><a href='../S/src--editor--edit.c.html#L2020'>mark2</a>            2020 src/editor/edit.c             off_t mark1, mark2;</span>
+<span class='curline'><a href='../S/src--editor--edit.c.html#L2023'>mark2</a>            2023 src/editor/edit.c             blocklen = edit_insert_column_from_file (edit, file, &amp;mark1, &amp;mark2, &amp;c1, &amp;c2);</span>
+<span class='curline'><a href='../S/src--editor--edit.c.html#L2024'>mark2</a>            2024 src/editor/edit.c             edit_set_markers (edit, edit-&gt;buffer.curs1, mark2, c1, c2);</span>
+<span class='curline'><a href='../S/src--editor--edit.c.html#L2543'>mark2</a>            2543 src/editor/edit.c     edit-&gt;mark2 += (edit-&gt;mark2 &gt; edit-&gt;buffer.curs1) ? 1 : 0;</span>
+<span class='curline'><a href='../S/src--editor--edit.c.html#L2575'>mark2</a>            2575 src/editor/edit.c     edit-&gt;mark2 += (edit-&gt;mark2 &gt;= edit-&gt;buffer.curs1) ? 1 : 0;</span>
+<span class='curline'><a href='../S/src--editor--edit.c.html#L2618'>mark2</a>            2618 src/editor/edit.c     if (edit-&gt;mark2 != edit-&gt;mark1)</span>
+<span class='curline'><a href='../S/src--editor--edit.c.html#L2628'>mark2</a>            2628 src/editor/edit.c         if (edit-&gt;mark2 &gt; edit-&gt;buffer.curs1)</span>
+<span class='curline'><a href='../S/src--editor--edit.c.html#L2629'>mark2</a>            2629 src/editor/edit.c             edit-&gt;mark2--;</span>
+<span class='curline'><a href='../S/src--editor--edit.c.html#L2667'>mark2</a>            2667 src/editor/edit.c     if (edit-&gt;mark2 != edit-&gt;mark1)</span>
+<span class='curline'><a href='../S/src--editor--edit.c.html#L2688'>mark2</a>            2688 src/editor/edit.c         if (edit-&gt;mark2 &gt;= edit-&gt;buffer.curs1)</span>
+<span class='curline'><a href='../S/src--editor--edit.c.html#L2689'>mark2</a>            2689 src/editor/edit.c             edit-&gt;mark2--;</span>
+<span class='curline'><a href='../S/src--editor--edit.c.html#L3043'>mark2</a>            3043 src/editor/edit.c     edit_push_undo_action (edit, MARK_2 + edit-&gt;mark2);</span>
+<span class='curline'><a href='../S/src--editor--edit.c.html#L3053'>mark2</a>            3053 src/editor/edit.c     edit-&gt;mark2 = m2;</span>
+<span class='curline'><a href='../S/src--editor--edit.c.html#L3071'>mark2</a>            3071 src/editor/edit.c     else if (edit-&gt;mark2 &gt;= 0)</span>
+<span class='curline'><a href='../S/src--editor--edit.c.html#L3118'>mark2</a>            3118 src/editor/edit.c     edit-&gt;mark2 = MIN (pos + 1, edit-&gt;buffer.size);</span>
+<span class='curline'><a href='../S/src--editor--edit.c.html#L3129'>mark2</a>            3129 src/editor/edit.c     edit-&gt;mark2 = edit_buffer_get_current_eol (&amp;edit-&gt;buffer);</span>
+<span class='curline'><a href='../S/src--editor--edit.c.html#L3168'>mark2</a>            3168 src/editor/edit.c     if (edit-&gt;mark2 == -1)</span>
+<span class='curline'><a href='../S/src--editor--edit.c.html#L3301'>mark2</a>            3301 src/editor/edit.c         if (edit-&gt;highlight == 0 || (edit-&gt;mark2 != -1 &amp;&amp; edit-&gt;mark1 != edit-&gt;mark2))</span>
+<span class='curline'><a href='../S/src--editor--edit.c.html#L3343'>mark2</a>            3343 src/editor/edit.c         if (!option_persistent_selections &amp;&amp; edit-&gt;mark1 != edit-&gt;mark2)</span>
+<span class='curline'><a href='../S/src--editor--edit.c.html#L3416'>mark2</a>            3416 src/editor/edit.c         if (!option_persistent_selections &amp;&amp; edit-&gt;mark2 &gt;= 0)</span>
+<span class='curline'><a href='../S/src--editor--edit.c.html#L3443'>mark2</a>            3443 src/editor/edit.c         if (edit-&gt;mark2 == -1)</span>
+<span class='curline'><a href='../S/src--editor--edit.c.html#L3459'>mark2</a>            3459 src/editor/edit.c         if (!option_persistent_selections &amp;&amp; edit-&gt;mark1 != edit-&gt;mark2)</span>
+<span class='curline'><a href='../S/src--editor--edit.c.html#L3481'>mark2</a>            3481 src/editor/edit.c         if (!option_persistent_selections &amp;&amp; edit-&gt;mark1 != edit-&gt;mark2)</span>
+<span class='curline'><a href='../S/src--editor--edit.c.html#L3641'>mark2</a>            3641 src/editor/edit.c         if (edit-&gt;mark1 != edit-&gt;mark2 &amp;&amp; !option_persistent_selections)</span>
+<span class='curline'><a href='../S/src--editor--edit.c.html#L3643'>mark2</a>            3643 src/editor/edit.c             if (edit-&gt;mark2 &lt; 0)</span>
+<span class='curline'><a href='../S/src--editor--edit.c.html#L3667'>mark2</a>            3667 src/editor/edit.c         if (edit-&gt;mark2 &gt;= 0)</span>
+<span class='curline'><a href='../S/src--editor--edit.c.html#L3771'>mark2</a>            3771 src/editor/edit.c         if (edit-&gt;mark1 != edit-&gt;mark2)</span>
+<span class='curline'><a href='../S/src--editor--edit.c.html#L3775'>mark2</a>            3775 src/editor/edit.c         if (edit-&gt;mark1 != edit-&gt;mark2)</span>
+<span class='curline'><a href='../S/src--editor--edit.c.html#L3786'>mark2</a>            3786 src/editor/edit.c         if (!option_persistent_selections &amp;&amp; edit-&gt;mark1 != edit-&gt;mark2)</span>
+<span class='curline'><a href='../S/src--editor--edit.c.html#L3791'>mark2</a>            3791 src/editor/edit.c         if (!option_persistent_selections &amp;&amp; edit-&gt;mark2 &gt;= 0)</span>
+<span class='curline'><a href='../S/src--editor--edit.c.html#L3841'>mark2</a>            3841 src/editor/edit.c         if (edit-&gt;mark1 != edit-&gt;mark2 &amp;&amp; !option_persistent_selections)</span>
+<span class='curline'><a href='../S/src--editor--editcmd.c.html#L578'>mark2</a>             578 src/editor/editcmd.c     if (edit-&gt;column_highlight &amp;&amp; edit-&gt;mark2 &lt; 0)</span>
+<span class='curline'><a href='../S/src--editor--editcmd.c.html#L613'>mark2</a>             613 src/editor/editcmd.c             if (edit-&gt;mark2 &lt; 0)</span>
+<span class='curline'><a href='../S/src--editor--editcmd.c.html#L2274'>mark2</a>            2274 src/editor/editcmd.c     if (edit-&gt;mark1 == edit-&gt;mark2)</span>
+<span class='curline'><a href='../S/src--editor--editcmd.c.html#L2286'>mark2</a>            2286 src/editor/editcmd.c     if (edit-&gt;mark2 &gt;= 0)</span>
+<span class='curline'><a href='../S/src--editor--editcmd.c.html#L2288'>mark2</a>            2288 src/editor/editcmd.c         *start_mark = MIN (edit-&gt;mark1, edit-&gt;mark2);</span>
+<span class='curline'><a href='../S/src--editor--editcmd.c.html#L2289'>mark2</a>            2289 src/editor/editcmd.c         *end_mark = MAX (edit-&gt;mark1, edit-&gt;mark2);</span>
+<span class='curline'><a href='../S/src--editor--editcmd.c.html#L2333'>mark2</a>            2333 src/editor/editcmd.c     off_t mark1 = 0, mark2 = 0;</span>
+<span class='curline'><a href='../S/src--editor--editcmd.c.html#L2353'>mark2</a>            2353 src/editor/editcmd.c         edit_insert_column_of_text (edit, copy_buf, size, col_delta, &amp;mark1, &amp;mark2, &amp;c1, &amp;c2);</span>
+<span class='curline'><a href='../S/src--editor--editcmd.c.html#L2371'>mark2</a>            2371 src/editor/editcmd.c         edit_set_markers (edit, edit-&gt;buffer.curs1, mark2, c1, c2);</span>
+<span class='curline'><a href='../S/src--editor--editcmd.c.html#L2394'>mark2</a>            2394 src/editor/editcmd.c     if (edit-&gt;mark2 &lt; 0)</span>
+<span class='curline'><a href='../S/src--editor--editcmd.c.html#L2400'>mark2</a>            2400 src/editor/editcmd.c         off_t mark1, mark2;</span>
+<span class='curline'><a href='../S/src--editor--editcmd.c.html#L2443'>mark2</a>            2443 src/editor/editcmd.c         edit_insert_column_of_text (edit, copy_buf, size, b_width, &amp;mark1, &amp;mark2, &amp;c1, &amp;c2);</span>
+<span class='curline'><a href='../S/src--editor--editcmd.c.html#L2444'>mark2</a>            2444 src/editor/editcmd.c         edit_set_markers (edit, mark1, mark2, c1, c2);</span>
+<span class='curline'><a href='../S/src--editor--editdraw.c.html#L157'>mark2</a>             157 src/editor/editdraw.c                     edit-&gt;mark1 != edit-&gt;mark2 ? (edit-&gt;column_highlight ? 'C' : 'B') : '-',</span>
+<span class='curline'><a href='../S/src--editor--editdraw.c.html#L172'>mark2</a>             172 src/editor/editdraw.c                     edit-&gt;mark1 != edit-&gt;mark2 ? (edit-&gt;column_highlight ? 'C' : 'B') : '-',</span>
+<span class='curline'><a href='../S/src--editor--editdraw.c.html#L294'>mark2</a>             294 src/editor/editdraw.c                     edit-&gt;mark1 != edit-&gt;mark2 ? (edit-&gt;column_highlight ? 'C' : 'B') : '-',</span>
+<span class='curline'><a href='../S/src--editor--editwidget.c.html#L703'>mark2</a>             703 src/editor/editwidget.c     if (edit-&gt;mark2 != -1 &amp;&amp; event-&gt;msg == MSG_MOUSE_UP)</span>
+<span class='curline'><a href='../S/src--editor--editwidget.h.html#L121'>mark2</a>             121 src/editor/editwidget.h     off_t mark2;                /* position of highlight end */</span>
+</pre>
+</body>
+</html>

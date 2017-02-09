@@ -1,0 +1,22 @@
+<!DOCTYPE html PUBLIC '-//W3C//DTD XHTML 1.0 Transitional//EN' 'http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd'>
+<html xmlns='http://www.w3.org/1999/xhtml'>
+<head>
+<title>cpio_subclass</title>
+<meta name='robots' content='noindex,nofollow' />
+<meta name='generator' content='GLOBAL-6.5.2' />
+<meta http-equiv='Content-Style-Type' content='text/css' />
+<link rel='stylesheet' type='text/css' href='../style.css' />
+</head>
+<body>
+<pre>
+<span class='curline'><a href='../S/src--vfs--cpio--cpio.c.html#L869'>cpio_subclass</a>     869 src/vfs/cpio/cpio.c     static struct vfs_s_subclass cpio_subclass;</span>
+<span class='curline'><a href='../S/src--vfs--cpio--cpio.c.html#L871'>cpio_subclass</a>     871 src/vfs/cpio/cpio.c     cpio_subclass.flags = VFS_S_READONLY;       /* FIXME: cpiofs used own temp files */</span>
+<span class='curline'><a href='../S/src--vfs--cpio--cpio.c.html#L872'>cpio_subclass</a>     872 src/vfs/cpio/cpio.c     cpio_subclass.archive_check = cpio_super_check;</span>
+<span class='curline'><a href='../S/src--vfs--cpio--cpio.c.html#L873'>cpio_subclass</a>     873 src/vfs/cpio/cpio.c     cpio_subclass.archive_same = cpio_super_same;</span>
+<span class='curline'><a href='../S/src--vfs--cpio--cpio.c.html#L874'>cpio_subclass</a>     874 src/vfs/cpio/cpio.c     cpio_subclass.open_archive = cpio_open_archive;</span>
+<span class='curline'><a href='../S/src--vfs--cpio--cpio.c.html#L875'>cpio_subclass</a>     875 src/vfs/cpio/cpio.c     cpio_subclass.free_archive = cpio_free_archive;</span>
+<span class='curline'><a href='../S/src--vfs--cpio--cpio.c.html#L876'>cpio_subclass</a>     876 src/vfs/cpio/cpio.c     cpio_subclass.fh_open = cpio_fh_open;</span>
+<span class='curline'><a href='../S/src--vfs--cpio--cpio.c.html#L878'>cpio_subclass</a>     878 src/vfs/cpio/cpio.c     vfs_s_init_class (&amp;vfs_cpiofs_ops, &amp;cpio_subclass);</span>
+</pre>
+</body>
+</html>

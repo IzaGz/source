@@ -1,0 +1,42 @@
+<!DOCTYPE html PUBLIC '-//W3C//DTD XHTML 1.0 Transitional//EN' 'http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd'>
+<html xmlns='http://www.w3.org/1999/xhtml'>
+<head>
+<title>source</title>
+<meta name='robots' content='noindex,nofollow' />
+<meta name='generator' content='GLOBAL-6.5.2' />
+<meta http-equiv='Content-Style-Type' content='text/css' />
+<link rel='stylesheet' type='text/css' href='../style.css' />
+</head>
+<body>
+<pre>
+<span class='curline'><a href='../S/src--filemanager--cmd.c.html#L282'>source</a>            282 src/filemanager/cmd.c         file_entry_t *source = &amp;panel-&gt;dir.list[i];</span>
+<span class='curline'><a href='../S/src--filemanager--cmd.c.html#L288'>source</a>            288 src/filemanager/cmd.c         if (S_ISDIR (source-&gt;st.st_mode))</span>
+<span class='curline'><a href='../S/src--filemanager--cmd.c.html#L294'>source</a>            294 src/filemanager/cmd.c             if (strcmp (source-&gt;fname, other-&gt;dir.list[j].fname) == 0)</span>
+<span class='curline'><a href='../S/src--filemanager--cmd.c.html#L308'>source</a>            308 src/filemanager/cmd.c                 if (source-&gt;st.st_mtime &lt; target-&gt;st.st_mtime)</span>
+<span class='curline'><a href='../S/src--filemanager--cmd.c.html#L313'>source</a>            313 src/filemanager/cmd.c             if (source-&gt;st.st_size != target-&gt;st.st_size)</span>
+<span class='curline'><a href='../S/src--filemanager--cmd.c.html#L326'>source</a>            326 src/filemanager/cmd.c                 if (source-&gt;st.st_mtime &gt; target-&gt;st.st_mtime)</span>
+<span class='curline'><a href='../S/src--filemanager--cmd.c.html#L337'>source</a>            337 src/filemanager/cmd.c                 src_name = vfs_path_append_new (panel-&gt;cwd_vpath, source-&gt;fname, (char *) NULL);</span>
+<span class='curline'><a href='../S/src--filemanager--cmd.c.html#L339'>source</a>            339 src/filemanager/cmd.c                 if (compare_files (src_name, dst_name, source-&gt;st.st_size))</span>
+<span class='curline'><a href='../S/src--filemanager--file.c.html#L1328'>source</a>           1328 src/filemanager/file.c panel_operate_init_totals (const WPanel * panel, const char *source, file_op_context_t * ctx,</span>
+<span class='curline'><a href='../S/src--filemanager--file.c.html#L1350'>source</a>           1350 src/filemanager/file.c         if (source == NULL)</span>
+<span class='curline'><a href='../S/src--filemanager--file.c.html#L1358'>source</a>           1358 src/filemanager/file.c             p = vfs_path_from_str (source);</span>
+<span class='curline'><a href='../S/src--filemanager--file.c.html#L2619'>source</a>           2619 src/filemanager/file.c     const char *source = NULL;</span>
+<span class='curline'><a href='../S/src--filemanager--file.c.html#L2654'>source</a>           2654 src/filemanager/file.c             source = selection (panel)-&gt;fname;</span>
+<span class='curline'><a href='../S/src--filemanager--file.c.html#L2656'>source</a>           2656 src/filemanager/file.c             source = panel_get_file (panel);</span>
+<span class='curline'><a href='../S/src--filemanager--file.c.html#L2658'>source</a>           2658 src/filemanager/file.c         ok = !DIR_IS_DOTDOT (source);</span>
+<span class='curline'><a href='../S/src--filemanager--file.c.html#L2666'>source</a>           2666 src/filemanager/file.c             source_vpath = vfs_path_from_str (source);</span>
+<span class='curline'><a href='../S/src--filemanager--file.c.html#L2673'>source</a>           2673 src/filemanager/file.c                          path_trunc (source, 30), unix_error_string (errno));</span>
+<span class='curline'><a href='../S/src--filemanager--file.c.html#L2706'>source</a>           2706 src/filemanager/file.c             tmp_dest_dir = source;</span>
+<span class='curline'><a href='../S/src--filemanager--file.c.html#L2735'>source</a>           2735 src/filemanager/file.c             panel_operate_generate_prompt (panel, operation, source != NULL ? &amp;src_stat : NULL);</span>
+<span class='curline'><a href='../S/src--filemanager--file.c.html#L2738'>source</a>           2738 src/filemanager/file.c             file_mask_dialog (ctx, operation, source != NULL, format,</span>
+<span class='curline'><a href='../S/src--filemanager--file.c.html#L2739'>source</a>           2739 src/filemanager/file.c                               source != NULL ? source : (const void *) &amp;panel-&gt;marked, dest_dir,</span>
+<span class='curline'><a href='../S/src--filemanager--file.c.html#L2760'>source</a>           2760 src/filemanager/file.c             panel_operate_generate_prompt (panel, OP_DELETE, source != NULL ? &amp;src_stat : NULL);</span>
+<span class='curline'><a href='../S/src--filemanager--file.c.html#L2762'>source</a>           2762 src/filemanager/file.c         if (source == NULL)</span>
+<span class='curline'><a href='../S/src--filemanager--file.c.html#L2768'>source</a>           2768 src/filemanager/file.c             g_snprintf (fmd_buf, sizeof (fmd_buf), format, str_trunc (source, i));</span>
+<span class='curline'><a href='../S/src--filemanager--file.c.html#L2862'>source</a>           2862 src/filemanager/file.c         if (g_path_is_absolute (source))</span>
+<span class='curline'><a href='../S/src--filemanager--file.c.html#L2863'>source</a>           2863 src/filemanager/file.c             source_with_vpath = vfs_path_from_str (source);</span>
+<span class='curline'><a href='../S/src--filemanager--file.c.html#L2865'>source</a>           2865 src/filemanager/file.c             source_with_vpath = vfs_path_append_new (panel-&gt;cwd_vpath, source, (char *) NULL);</span>
+<span class='curline'><a href='../S/src--vfs--smbfs--helpers--include--nameserv.h.html#L169'>source</a>            169 src/vfs/smbfs/helpers/include/nameserv.h     enum name_source source;    /* Where the name came from. */</span>
+</pre>
+</body>
+</html>

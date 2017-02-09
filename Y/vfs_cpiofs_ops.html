@@ -1,0 +1,24 @@
+<!DOCTYPE html PUBLIC '-//W3C//DTD XHTML 1.0 Transitional//EN' 'http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd'>
+<html xmlns='http://www.w3.org/1999/xhtml'>
+<head>
+<title>vfs_cpiofs_ops</title>
+<meta name='robots' content='noindex,nofollow' />
+<meta name='generator' content='GLOBAL-6.5.2' />
+<meta http-equiv='Content-Style-Type' content='text/css' />
+<link rel='stylesheet' type='text/css' href='../style.css' />
+</head>
+<body>
+<pre>
+<span class='curline'><a href='../S/src--vfs--cpio--cpio.c.html#L146'>vfs_cpiofs_ops</a>    146 src/vfs/cpio/cpio.c static struct vfs_class vfs_cpiofs_ops;</span>
+<span class='curline'><a href='../S/src--vfs--cpio--cpio.c.html#L816'>vfs_cpiofs_ops</a>    816 src/vfs/cpio/cpio.c         (*vfs_cpiofs_ops.free) ((vfsid) parc);</span>
+<span class='curline'><a href='../S/src--vfs--cpio--cpio.c.html#L817'>vfs_cpiofs_ops</a>    817 src/vfs/cpio/cpio.c         vfs_rmstamp (&amp;vfs_cpiofs_ops, (vfsid) parc);</span>
+<span class='curline'><a href='../S/src--vfs--cpio--cpio.c.html#L821'>vfs_cpiofs_ops</a>    821 src/vfs/cpio/cpio.c     vfs_stamp (&amp;vfs_cpiofs_ops, (vfsid) parc);</span>
+<span class='curline'><a href='../S/src--vfs--cpio--cpio.c.html#L878'>vfs_cpiofs_ops</a>    878 src/vfs/cpio/cpio.c     vfs_s_init_class (&amp;vfs_cpiofs_ops, &amp;cpio_subclass);</span>
+<span class='curline'><a href='../S/src--vfs--cpio--cpio.c.html#L879'>vfs_cpiofs_ops</a>    879 src/vfs/cpio/cpio.c     vfs_cpiofs_ops.name = "cpiofs";</span>
+<span class='curline'><a href='../S/src--vfs--cpio--cpio.c.html#L880'>vfs_cpiofs_ops</a>    880 src/vfs/cpio/cpio.c     vfs_cpiofs_ops.prefix = "ucpio";</span>
+<span class='curline'><a href='../S/src--vfs--cpio--cpio.c.html#L881'>vfs_cpiofs_ops</a>    881 src/vfs/cpio/cpio.c     vfs_cpiofs_ops.read = cpio_read;</span>
+<span class='curline'><a href='../S/src--vfs--cpio--cpio.c.html#L882'>vfs_cpiofs_ops</a>    882 src/vfs/cpio/cpio.c     vfs_cpiofs_ops.setctl = NULL;</span>
+<span class='curline'><a href='../S/src--vfs--cpio--cpio.c.html#L883'>vfs_cpiofs_ops</a>    883 src/vfs/cpio/cpio.c     vfs_register_class (&amp;vfs_cpiofs_ops);</span>
+</pre>
+</body>
+</html>

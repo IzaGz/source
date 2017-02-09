@@ -1,0 +1,41 @@
+<!DOCTYPE html PUBLIC '-//W3C//DTD XHTML 1.0 Transitional//EN' 'http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd'>
+<html xmlns='http://www.w3.org/1999/xhtml'>
+<head>
+<title>s_vpath</title>
+<meta name='robots' content='noindex,nofollow' />
+<meta name='generator' content='GLOBAL-6.5.2' />
+<meta http-equiv='Content-Style-Type' content='text/css' />
+<link rel='stylesheet' type='text/css' href='../style.css' />
+</head>
+<body>
+<pre>
+<span class='curline'><a href='../S/src--filemanager--file.c.html#L2454'>s_vpath</a>          2454 src/filemanager/file.c erase_dir (file_op_total_context_t * tctx, file_op_context_t * ctx, const vfs_path_t * s_vpath)</span>
+<span class='curline'><a href='../S/src--filemanager--file.c.html#L2458'>s_vpath</a>          2458 src/filemanager/file.c     file_progress_show_deleting (ctx, vfs_path_as_str (s_vpath), NULL);</span>
+<span class='curline'><a href='../S/src--filemanager--file.c.html#L2472'>s_vpath</a>          2472 src/filemanager/file.c     error = check_dir_is_empty (s_vpath);</span>
+<span class='curline'><a href='../S/src--filemanager--file.c.html#L2475'>s_vpath</a>          2475 src/filemanager/file.c         error = query_recursive (ctx, vfs_path_as_str (s_vpath));</span>
+<span class='curline'><a href='../S/src--filemanager--file.c.html#L2477'>s_vpath</a>          2477 src/filemanager/file.c             error = recursive_erase (tctx, ctx, s_vpath);</span>
+<span class='curline'><a href='../S/src--filemanager--file.c.html#L2481'>s_vpath</a>          2481 src/filemanager/file.c     while (my_rmdir (vfs_path_as_str (s_vpath)) == -1 &amp;&amp; !ctx-&gt;skip_all)</span>
+<span class='curline'><a href='../S/src--filemanager--file.c.html#L2483'>s_vpath</a>          2483 src/filemanager/file.c         error = file_error (_("Cannot remove directory \"%s\"\n%s"), vfs_path_as_str (s_vpath));</span>
+<span class='curline'><a href='../S/src--filemanager--filegui.c.html#L1034'>s_vpath</a>          1034 src/filemanager/filegui.c file_progress_show_source (file_op_context_t * ctx, const vfs_path_t * s_vpath)</span>
+<span class='curline'><a href='../S/src--filemanager--filegui.c.html#L1043'>s_vpath</a>          1043 src/filemanager/filegui.c     if (s_vpath != NULL)</span>
+<span class='curline'><a href='../S/src--filemanager--filegui.c.html#L1047'>s_vpath</a>          1047 src/filemanager/filegui.c         s = vfs_path_tokens_get (s_vpath, -1, 1);</span>
+<span class='curline'><a href='../S/src--filemanager--filegui.c.html#L1062'>s_vpath</a>          1062 src/filemanager/filegui.c file_progress_show_target (file_op_context_t * ctx, const vfs_path_t * s_vpath)</span>
+<span class='curline'><a href='../S/src--filemanager--filegui.c.html#L1071'>s_vpath</a>          1071 src/filemanager/filegui.c     if (s_vpath != NULL)</span>
+<span class='curline'><a href='../S/src--filemanager--filegui.c.html#L1075'>s_vpath</a>          1075 src/filemanager/filegui.c                         truncFileStringSecure (ui-&gt;op_dlg, vfs_path_as_str (s_vpath)));</span>
+<span class='curline'><a href='../S/src--filemanager--filegui.h.html#L37'>s_vpath</a>            37 src/filemanager/filegui.h void file_progress_show_source (file_op_context_t * ctx, const vfs_path_t * s_vpath);</span>
+<span class='curline'><a href='../S/src--filemanager--filenot.c.html#L75'>s_vpath</a>            75 src/filemanager/filenot.c my_mkdir_rec (const vfs_path_t * s_vpath, mode_t mode)</span>
+<span class='curline'><a href='../S/src--filemanager--filenot.c.html#L80'>s_vpath</a>            80 src/filemanager/filenot.c     if (mc_mkdir (s_vpath, mode) == 0)</span>
+<span class='curline'><a href='../S/src--filemanager--filenot.c.html#L86'>s_vpath</a>            86 src/filemanager/filenot.c     if (!vfs_file_is_local (s_vpath))</span>
+<span class='curline'><a href='../S/src--filemanager--filenot.c.html#L89'>s_vpath</a>            89 src/filemanager/filenot.c     if (strcmp (vfs_path_as_str (s_vpath), PATH_SEP_STR) == 0)</span>
+<span class='curline'><a href='../S/src--filemanager--filenot.c.html#L95'>s_vpath</a>            95 src/filemanager/filenot.c     q = vfs_path_append_new (s_vpath, "..", (char *) NULL);</span>
+<span class='curline'><a href='../S/src--filemanager--filenot.c.html#L100'>s_vpath</a>           100 src/filemanager/filenot.c         result = mc_mkdir (s_vpath, mode);</span>
+<span class='curline'><a href='../S/src--filemanager--filenot.c.html#L110'>s_vpath</a>           110 src/filemanager/filenot.c my_mkdir (const vfs_path_t * s_vpath, mode_t mode)</span>
+<span class='curline'><a href='../S/src--filemanager--filenot.c.html#L114'>s_vpath</a>           114 src/filemanager/filenot.c     result = my_mkdir_rec (s_vpath, mode);</span>
+<span class='curline'><a href='../S/src--filemanager--filenot.c.html#L119'>s_vpath</a>           119 src/filemanager/filenot.c         my_s = get_absolute_name (s_vpath);</span>
+<span class='curline'><a href='../S/src--filemanager--panel.c.html#L3377'>s_vpath</a>          3377 src/filemanager/panel.c         vfs_path_t *s_vpath;</span>
+<span class='curline'><a href='../S/src--filemanager--panel.c.html#L3379'>s_vpath</a>          3379 src/filemanager/panel.c         s_vpath = vfs_path_from_str (s);</span>
+<span class='curline'><a href='../S/src--filemanager--panel.c.html#L3380'>s_vpath</a>          3380 src/filemanager/panel.c         ok = _do_panel_cd (panel, s_vpath, cd_exact);</span>
+<span class='curline'><a href='../S/src--filemanager--panel.c.html#L3385'>s_vpath</a>          3385 src/filemanager/panel.c         vfs_path_free (s_vpath);</span>
+</pre>
+</body>
+</html>

@@ -1,0 +1,24 @@
+<!DOCTYPE html PUBLIC '-//W3C//DTD XHTML 1.0 Transitional//EN' 'http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd'>
+<html xmlns='http://www.w3.org/1999/xhtml'>
+<head>
+<title>vfs_path_element</title>
+<meta name='robots' content='noindex,nofollow' />
+<meta name='generator' content='GLOBAL-6.5.2' />
+<meta http-equiv='Content-Style-Type' content='text/css' />
+<link rel='stylesheet' type='text/css' href='../style.css' />
+</head>
+<body>
+<pre>
+<span class='curline'><a href='../S/lib--vfs--interface.c.html#L471'>vfs_path_element</a>  471 lib/vfs/interface.c     vfs_path_element_t *vfs_path_element;</span>
+<span class='curline'><a href='../S/lib--vfs--interface.c.html#L499'>vfs_path_element</a>  499 lib/vfs/interface.c     vfs_path_element = (vfs_path_element_t *) fsinfo;</span>
+<span class='curline'><a href='../S/lib--vfs--interface.c.html#L502'>vfs_path_element</a>  502 lib/vfs/interface.c         entry = (*vfs-&gt;readdir) (vfs_path_element-&gt;dir.info);</span>
+<span class='curline'><a href='../S/lib--vfs--interface.c.html#L508'>vfs_path_element</a>  508 lib/vfs/interface.c         str_vfs_convert_from (vfs_path_element-&gt;dir.converter, entry-&gt;d_name, vfs_str_buffer);</span>
+<span class='curline'><a href='../S/lib--vfs--interface.c.html#L538'>vfs_path_element</a>  538 lib/vfs/interface.c         vfs_path_element_t *vfs_path_element = (vfs_path_element_t *) fsinfo;</span>
+<span class='curline'><a href='../S/lib--vfs--interface.c.html#L541'>vfs_path_element</a>  541 lib/vfs/interface.c         if (vfs_path_element-&gt;dir.converter != str_cnv_from_term)</span>
+<span class='curline'><a href='../S/lib--vfs--interface.c.html#L543'>vfs_path_element</a>  543 lib/vfs/interface.c             str_close_conv (vfs_path_element-&gt;dir.converter);</span>
+<span class='curline'><a href='../S/lib--vfs--interface.c.html#L544'>vfs_path_element</a>  544 lib/vfs/interface.c             vfs_path_element-&gt;dir.converter = INVALID_CONV;</span>
+<span class='curline'><a href='../S/lib--vfs--interface.c.html#L548'>vfs_path_element</a>  548 lib/vfs/interface.c         result = vfs-&gt;closedir ? (*vfs-&gt;closedir) (vfs_path_element-&gt;dir.info) : -1;</span>
+<span class='curline'><a href='../S/lib--vfs--interface.c.html#L550'>vfs_path_element</a>  550 lib/vfs/interface.c         vfs_path_element_free (vfs_path_element);</span>
+</pre>
+</body>
+</html>

@@ -1,0 +1,42 @@
+<!DOCTYPE html PUBLIC '-//W3C//DTD XHTML 1.0 Transitional//EN' 'http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd'>
+<html xmlns='http://www.w3.org/1999/xhtml'>
+<head>
+<title>word_start</title>
+<meta name='robots' content='noindex,nofollow' />
+<meta name='generator' content='GLOBAL-6.5.2' />
+<meta http-equiv='Content-Style-Type' content='text/css' />
+<link rel='stylesheet' type='text/css' href='../style.css' />
+</head>
+<body>
+<pre>
+<span class='curline'><a href='../S/src--editor--editbuffer.c.html#L403'>word_start</a>        403 src/editor/editbuffer.c     off_t word_start;</span>
+<span class='curline'><a href='../S/src--editor--editbuffer.c.html#L408'>word_start</a>        408 src/editor/editbuffer.c     for (word_start = start_pos; word_start != 0; word_start--, cut_len++)</span>
+<span class='curline'><a href='../S/src--editor--editbuffer.c.html#L410'>word_start</a>        410 src/editor/editbuffer.c         c1 = edit_buffer_get_byte (buf, word_start);</span>
+<span class='curline'><a href='../S/src--editor--editbuffer.c.html#L411'>word_start</a>        411 src/editor/editbuffer.c         c2 = edit_buffer_get_byte (buf, word_start - 1);</span>
+<span class='curline'><a href='../S/src--editor--editbuffer.c.html#L421'>word_start</a>        421 src/editor/editbuffer.c         c1 = edit_buffer_get_byte (buf, word_start + match_expr-&gt;len);</span>
+<span class='curline'><a href='../S/src--editor--editbuffer.c.html#L422'>word_start</a>        422 src/editor/editbuffer.c         c2 = edit_buffer_get_byte (buf, word_start + match_expr-&gt;len + 1);</span>
+<span class='curline'><a href='../S/src--editor--editbuffer.c.html#L427'>word_start</a>        427 src/editor/editbuffer.c     *start = word_start;</span>
+<span class='curline'><a href='../S/src--editor--editcmd.c.html#L1133'>word_start</a>       1133 src/editor/editcmd.c edit_find_word_start (const edit_buffer_t * buf, off_t * word_start, gsize * word_len)</span>
+<span class='curline'><a href='../S/src--editor--editcmd.c.html#L1166'>word_start</a>       1166 src/editor/editcmd.c     *word_start = buf-&gt;curs1 - i;       /* start found */</span>
+<span class='curline'><a href='../S/src--editor--editcmd.c.html#L1184'>word_start</a>       1184 src/editor/editcmd.c                                            off_t word_start)</span>
+<span class='curline'><a href='../S/src--editor--editcmd.c.html#L1191'>word_start</a>       1191 src/editor/editcmd.c     if (!mc_search_run (srch, (void *) esm, word_start, edit-&gt;buffer.size, &amp;len))</span>
+<span class='curline'><a href='../S/src--editor--editcmd.c.html#L1200'>word_start</a>       1200 src/editor/editcmd.c         chr = edit_buffer_get_byte (&amp;edit-&gt;buffer, word_start + i);</span>
+<span class='curline'><a href='../S/src--editor--editcmd.c.html#L1212'>word_start</a>       1212 src/editor/editcmd.c edit_collect_completions (WEdit * edit, off_t word_start, gsize word_len,</span>
+<span class='curline'><a href='../S/src--editor--editcmd.c.html#L1238'>word_start</a>       1238 src/editor/editcmd.c     last_byte = entire_file ? edit-&gt;buffer.size : word_start;</span>
+<span class='curline'><a href='../S/src--editor--editcmd.c.html#L1247'>word_start</a>       1247 src/editor/editcmd.c     esm.offset = entire_file ? 0 : word_start;</span>
+<span class='curline'><a href='../S/src--editor--editcmd.c.html#L1252'>word_start</a>       1252 src/editor/editcmd.c     current_word = edit_collect_completions_get_current_word (&amp;esm, srch, word_start);</span>
+<span class='curline'><a href='../S/src--editor--editcmd.c.html#L1270'>word_start</a>       1270 src/editor/editcmd.c             if (start + (off_t) i == word_start)</span>
+<span class='curline'><a href='../S/src--editor--editcmd.c.html#L3327'>word_start</a>       3327 src/editor/editcmd.c     off_t word_start = 0;</span>
+<span class='curline'><a href='../S/src--editor--editcmd.c.html#L3332'>word_start</a>       3332 src/editor/editcmd.c     if (!edit_find_word_start (&amp;edit-&gt;buffer, &amp;word_start, &amp;word_len))</span>
+<span class='curline'><a href='../S/src--editor--editcmd.c.html#L3339'>word_start</a>       3339 src/editor/editcmd.c         g_string_append_c (match_expr, edit_buffer_get_byte (&amp;edit-&gt;buffer, word_start + i));</span>
+<span class='curline'><a href='../S/src--editor--editcmd.c.html#L3346'>word_start</a>       3346 src/editor/editcmd.c         edit_collect_completions (edit, word_start, word_len, match_expr-&gt;str, (GString **) &amp; compl,</span>
+<span class='curline'><a href='../S/src--editor--editcmd.c.html#L3498'>word_start</a>       3498 src/editor/editcmd.c     off_t word_start = 0;</span>
+<span class='curline'><a href='../S/src--editor--editcmd.c.html#L3512'>word_start</a>       3512 src/editor/editcmd.c     if (!edit_find_word_start (&amp;edit-&gt;buffer, &amp;word_start, &amp;word_len))</span>
+<span class='curline'><a href='../S/src--editor--editcmd.c.html#L3518'>word_start</a>       3518 src/editor/editcmd.c         g_string_append_c (match_expr, edit_buffer_get_byte (&amp;edit-&gt;buffer, word_start + i));</span>
+<span class='curline'><a href='../S/src--editor--editcmd.c.html#L3563'>word_start</a>       3563 src/editor/editcmd.c     off_t word_start = 0;</span>
+<span class='curline'><a href='../S/src--editor--editcmd.c.html#L3568'>word_start</a>       3568 src/editor/editcmd.c     match_word = edit_buffer_get_word_from_pos (&amp;edit-&gt;buffer, edit-&gt;buffer.curs1, &amp;word_start,</span>
+<span class='curline'><a href='../S/src--editor--editcmd.c.html#L3595'>word_start</a>       3595 src/editor/editcmd.c             edit-&gt;found_start = word_start;</span>
+<span class='curline'><a href='../S/src--editor--format.c.html#L345'>word_start</a>        345 src/editor/format.c         p = word_start (t, q, size);</span>
+</pre>
+</body>
+</html>

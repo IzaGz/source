@@ -1,0 +1,40 @@
+<!DOCTYPE html PUBLIC '-//W3C//DTD XHTML 1.0 Transitional//EN' 'http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd'>
+<html xmlns='http://www.w3.org/1999/xhtml'>
+<head>
+<title>subdir</title>
+<meta name='robots' content='noindex,nofollow' />
+<meta name='generator' content='GLOBAL-6.5.2' />
+<meta http-equiv='Content-Style-Type' content='text/css' />
+<link rel='stylesheet' type='text/css' href='../style.css' />
+</head>
+<body>
+<pre>
+<span class='curline'><a href='../S/lib--mcconfig--paths.c.html#L148'>subdir</a>            148 lib/mcconfig/paths.c mc_config_init_one_config_path (const char *path_base, const char *subdir, GError ** mcerror)</span>
+<span class='curline'><a href='../S/lib--mcconfig--paths.c.html#L154'>subdir</a>            154 lib/mcconfig/paths.c     full_path = g_build_filename (path_base, subdir, (char *) NULL);</span>
+<span class='curline'><a href='../S/lib--vfs--direntry.c.html#L206'>subdir</a>            206 lib/vfs/direntry.c         for (iter = root-&gt;subdir; iter != NULL; iter = g_list_next (iter))</span>
+<span class='curline'><a href='../S/lib--vfs--direntry.c.html#L269'>subdir</a>            269 lib/vfs/direntry.c     iter = g_list_find_custom (root-&gt;subdir, path, (GCompareFunc) vfs_s_entry_compare);</span>
+<span class='curline'><a href='../S/lib--vfs--direntry.c.html#L296'>subdir</a>            296 lib/vfs/direntry.c         iter = g_list_find_custom (root-&gt;subdir, path, (GCompareFunc) vfs_s_entry_compare);</span>
+<span class='curline'><a href='../S/lib--vfs--direntry.c.html#L419'>subdir</a>            419 lib/vfs/direntry.c     if (dir-&gt;subdir == NULL)    /* This can actually happen if we allow empty directories */</span>
+<span class='curline'><a href='../S/lib--vfs--direntry.c.html#L426'>subdir</a>            426 lib/vfs/direntry.c     info-&gt;cur = dir-&gt;subdir;</span>
+<span class='curline'><a href='../S/lib--vfs--direntry.c.html#L889'>subdir</a>            889 lib/vfs/direntry.c     while (ino-&gt;subdir != NULL)</span>
+<span class='curline'><a href='../S/lib--vfs--direntry.c.html#L890'>subdir</a>            890 lib/vfs/direntry.c         vfs_s_free_entry (me, (struct vfs_s_entry *) ino-&gt;subdir-&gt;data);</span>
+<span class='curline'><a href='../S/lib--vfs--direntry.c.html#L927'>subdir</a>            927 lib/vfs/direntry.c         ent-&gt;dir-&gt;subdir = g_list_remove (ent-&gt;dir-&gt;subdir, ent);</span>
+<span class='curline'><a href='../S/lib--vfs--direntry.c.html#L950'>subdir</a>            950 lib/vfs/direntry.c     dir-&gt;subdir = g_list_append (dir-&gt;subdir, ent);</span>
+<span class='curline'><a href='../S/lib--vfs--direntry.c.html#L1628'>subdir</a>           1628 lib/vfs/direntry.c     for (iter = root_inode-&gt;subdir; iter != NULL; iter = g_list_next (iter))</span>
+<span class='curline'><a href='../S/lib--vfs--xdirentry.h.html#L95'>subdir</a>             95 lib/vfs/xdirentry.h     GList *subdir;              /* If this is a directory, its entry. List of vfs_s_entry */</span>
+<span class='curline'><a href='../S/src--filemanager--panel.c.html#L4059'>subdir</a>           4059 src/filemanager/panel.c     char *subdir;</span>
+<span class='curline'><a href='../S/src--filemanager--panel.c.html#L4072'>subdir</a>           4072 src/filemanager/panel.c         subdir = vfs_strip_suffix_from_filename (name);</span>
+<span class='curline'><a href='../S/src--filemanager--panel.c.html#L4074'>subdir</a>           4074 src/filemanager/panel.c         subdir = vfs_strip_suffix_from_filename (x_basename (name));</span>
+<span class='curline'><a href='../S/src--filemanager--panel.c.html#L4079'>subdir</a>           4079 src/filemanager/panel.c         if (strcmp (subdir, panel-&gt;dir.list[i].fname) == 0)</span>
+<span class='curline'><a href='../S/src--filemanager--panel.c.html#L4082'>subdir</a>           4082 src/filemanager/panel.c             g_free (subdir);</span>
+<span class='curline'><a href='../S/src--filemanager--panel.c.html#L4090'>subdir</a>           4090 src/filemanager/panel.c     g_free (subdir);</span>
+<span class='curline'><a href='../S/src--setup.c.html#L442'>subdir</a>            442 src/setup.c    load_setup_get_full_config_name (const char *subdir, const char *config_file_name)</span>
+<span class='curline'><a href='../S/src--setup.c.html#L470'>subdir</a>            470 src/setup.c        if (subdir != NULL)</span>
+<span class='curline'><a href='../S/src--setup.c.html#L471'>subdir</a>            471 src/setup.c            ret = g_build_filename (mc_config_get_path (), subdir, lc_basename, (char *) NULL);</span>
+<span class='curline'><a href='../S/src--setup.c.html#L483'>subdir</a>            483 src/setup.c        if (subdir != NULL)</span>
+<span class='curline'><a href='../S/src--setup.c.html#L484'>subdir</a>            484 src/setup.c            ret = g_build_filename (mc_global.sysconfig_dir, subdir, lc_basename, (char *) NULL);</span>
+<span class='curline'><a href='../S/src--setup.c.html#L496'>subdir</a>            496 src/setup.c        if (subdir != NULL)</span>
+<span class='curline'><a href='../S/src--setup.c.html#L497'>subdir</a>            497 src/setup.c            ret = g_build_filename (mc_global.share_data_dir, subdir, lc_basename, (char *) NULL);</span>
+</pre>
+</body>
+</html>

@@ -1,0 +1,51 @@
+<!DOCTYPE html PUBLIC '-//W3C//DTD XHTML 1.0 Transitional//EN' 'http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd'>
+<html xmlns='http://www.w3.org/1999/xhtml'>
+<head>
+<title>panel_fields</title>
+<meta name='robots' content='noindex,nofollow' />
+<meta name='generator' content='GLOBAL-6.5.2' />
+<meta http-equiv='Content-Style-Type' content='text/css' />
+<link rel='stylesheet' type='text/css' href='../style.css' />
+</head>
+<body>
+<pre>
+<span class='curline'><a href='../S/src--filemanager--panel.c.html#L156'>panel_fields</a>      156 src/filemanager/panel.c static panel_field_t panel_fields[] = {</span>
+<span class='curline'><a href='../S/src--filemanager--panel.c.html#L1698'>panel_fields</a>     1698 src/filemanager/panel.c         for (i = 0; panel_fields[i].id != NULL; i++)</span>
+<span class='curline'><a href='../S/src--filemanager--panel.c.html#L1699'>panel_fields</a>     1699 src/filemanager/panel.c             if (strcmp ("time", panel_fields[i].id + 1) == 0)</span>
+<span class='curline'><a href='../S/src--filemanager--panel.c.html#L1700'>panel_fields</a>     1700 src/filemanager/panel.c                 panel_fields[i].min_size = i18n_timelength;</span>
+<span class='curline'><a href='../S/src--filemanager--panel.c.html#L1747'>panel_fields</a>     1747 src/filemanager/panel.c         for (i = 0; panel_fields[i].id != NULL; i++)</span>
+<span class='curline'><a href='../S/src--filemanager--panel.c.html#L1751'>panel_fields</a>     1751 src/filemanager/panel.c             klen = strlen (panel_fields[i].id);</span>
+<span class='curline'><a href='../S/src--filemanager--panel.c.html#L1753'>panel_fields</a>     1753 src/filemanager/panel.c             if (strncmp (format, panel_fields[i].id, klen) != 0)</span>
+<span class='curline'><a href='../S/src--filemanager--panel.c.html#L1758'>panel_fields</a>     1758 src/filemanager/panel.c             darr-&gt;requested_field_len = panel_fields[i].min_size;</span>
+<span class='curline'><a href='../S/src--filemanager--panel.c.html#L1759'>panel_fields</a>     1759 src/filemanager/panel.c             darr-&gt;string_fn = panel_fields[i].string_fn;</span>
+<span class='curline'><a href='../S/src--filemanager--panel.c.html#L1760'>panel_fields</a>     1760 src/filemanager/panel.c             darr-&gt;title = g_strdup (panel_get_title_without_hotkey (panel_fields[i].title_hotkey));</span>
+<span class='curline'><a href='../S/src--filemanager--panel.c.html#L1762'>panel_fields</a>     1762 src/filemanager/panel.c             darr-&gt;id = panel_fields[i].id;</span>
+<span class='curline'><a href='../S/src--filemanager--panel.c.html#L1763'>panel_fields</a>     1763 src/filemanager/panel.c             darr-&gt;expand = panel_fields[i].expands;</span>
+<span class='curline'><a href='../S/src--filemanager--panel.c.html#L1764'>panel_fields</a>     1764 src/filemanager/panel.c             darr-&gt;just_mode = panel_fields[i].default_just;</span>
+<span class='curline'><a href='../S/src--filemanager--panel.c.html#L3786'>panel_fields</a>     3786 src/filemanager/panel.c     for (i = 0; panel_fields[i].id != NULL; i++)</span>
+<span class='curline'><a href='../S/src--filemanager--panel.c.html#L3790'>panel_fields</a>     3790 src/filemanager/panel.c         title = panel_get_title_without_hotkey (panel_fields[i].title_hotkey);</span>
+<span class='curline'><a href='../S/src--filemanager--panel.c.html#L3791'>panel_fields</a>     3791 src/filemanager/panel.c         if (strcmp (title, lc_sort_name) == 0 &amp;&amp; panel_fields[i].sort_routine != NULL)</span>
+<span class='curline'><a href='../S/src--filemanager--panel.c.html#L3793'>panel_fields</a>     3793 src/filemanager/panel.c             col_sort_format = &amp;panel_fields[i];</span>
+<span class='curline'><a href='../S/src--filemanager--panel.c.html#L4822'>panel_fields</a>     4822 src/filemanager/panel.c     for (lc_index = 0; panel_fields[lc_index].id != NULL; lc_index++)</span>
+<span class='curline'><a href='../S/src--filemanager--panel.c.html#L4823'>panel_fields</a>     4823 src/filemanager/panel.c         if (panel_fields[lc_index].is_user_choice)</span>
+<span class='curline'><a href='../S/src--filemanager--panel.c.html#L4847'>panel_fields</a>     4847 src/filemanager/panel.c     for (i = 0; panel_fields[i].id != NULL; i++)</span>
+<span class='curline'><a href='../S/src--filemanager--panel.c.html#L4848'>panel_fields</a>     4848 src/filemanager/panel.c         if (panel_fields[i].is_user_choice)</span>
+<span class='curline'><a href='../S/src--filemanager--panel.c.html#L4849'>panel_fields</a>     4849 src/filemanager/panel.c             ret[lc_index++] = g_strdup (_(panel_fields[i].title_hotkey));</span>
+<span class='curline'><a href='../S/src--filemanager--panel.c.html#L4861'>panel_fields</a>     4861 src/filemanager/panel.c     for (lc_index = 0; panel_fields[lc_index].id != NULL; lc_index++)</span>
+<span class='curline'><a href='../S/src--filemanager--panel.c.html#L4862'>panel_fields</a>     4862 src/filemanager/panel.c         if (panel_fields[lc_index].id != NULL &amp;&amp; strcmp (name, panel_fields[lc_index].id) == 0)</span>
+<span class='curline'><a href='../S/src--filemanager--panel.c.html#L4863'>panel_fields</a>     4863 src/filemanager/panel.c             return &amp;panel_fields[lc_index];</span>
+<span class='curline'><a href='../S/src--filemanager--panel.c.html#L4875'>panel_fields</a>     4875 src/filemanager/panel.c     for (lc_index = 0; panel_fields[lc_index].id != NULL; lc_index++)</span>
+<span class='curline'><a href='../S/src--filemanager--panel.c.html#L4876'>panel_fields</a>     4876 src/filemanager/panel.c         if (panel_fields[lc_index].title_hotkey != NULL &amp;&amp;</span>
+<span class='curline'><a href='../S/src--filemanager--panel.c.html#L4877'>panel_fields</a>     4877 src/filemanager/panel.c             strcmp (name, _(panel_fields[lc_index].title_hotkey)) == 0)</span>
+<span class='curline'><a href='../S/src--filemanager--panel.c.html#L4878'>panel_fields</a>     4878 src/filemanager/panel.c             return &amp;panel_fields[lc_index];</span>
+<span class='curline'><a href='../S/src--filemanager--panel.c.html#L4890'>panel_fields</a>     4890 src/filemanager/panel.c     for (lc_index = 0; panel_fields[lc_index].id != NULL; lc_index++)</span>
+<span class='curline'><a href='../S/src--filemanager--panel.c.html#L4894'>panel_fields</a>     4894 src/filemanager/panel.c         title = panel_get_title_without_hotkey (panel_fields[lc_index].title_hotkey);</span>
+<span class='curline'><a href='../S/src--filemanager--panel.c.html#L4896'>panel_fields</a>     4896 src/filemanager/panel.c             return &amp;panel_fields[lc_index];</span>
+<span class='curline'><a href='../S/src--filemanager--panel.c.html#L4909'>panel_fields</a>     4909 src/filemanager/panel.c     for (lc_index = 0; panel_fields[lc_index].id != NULL; lc_index++)</span>
+<span class='curline'><a href='../S/src--filemanager--panel.c.html#L4910'>panel_fields</a>     4910 src/filemanager/panel.c         if (panel_fields[lc_index].use_in_user_format)</span>
+<span class='curline'><a href='../S/src--filemanager--panel.c.html#L4935'>panel_fields</a>     4935 src/filemanager/panel.c     for (i = 0; panel_fields[i].id != NULL; i++)</span>
+<span class='curline'><a href='../S/src--filemanager--panel.c.html#L4936'>panel_fields</a>     4936 src/filemanager/panel.c         if (panel_fields[i].use_in_user_format)</span>
+<span class='curline'><a href='../S/src--filemanager--panel.c.html#L4937'>panel_fields</a>     4937 src/filemanager/panel.c             ret[lc_index++] = g_strdup (_(panel_fields[i].title_hotkey));</span>
+</pre>
+</body>
+</html>

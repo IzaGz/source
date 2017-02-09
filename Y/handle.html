@@ -1,0 +1,161 @@
+<!DOCTYPE html PUBLIC '-//W3C//DTD XHTML 1.0 Transitional//EN' 'http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd'>
+<html xmlns='http://www.w3.org/1999/xhtml'>
+<head>
+<title>handle</title>
+<meta name='robots' content='noindex,nofollow' />
+<meta name='generator' content='GLOBAL-6.5.2' />
+<meta http-equiv='Content-Style-Type' content='text/css' />
+<link rel='stylesheet' type='text/css' href='../style.css' />
+</head>
+<body>
+<pre>
+<span class='curline'><a href='../S/lib--mcconfig.h.html#L20'>handle</a>             20 lib/mcconfig.h     GKeyFile *handle;</span>
+<span class='curline'><a href='../S/lib--mcconfig--common.c.html#L58'>handle</a>             58 lib/mcconfig/common.c     data = g_key_file_to_data (mc_config-&gt;handle, &amp;len, NULL);</span>
+<span class='curline'><a href='../S/lib--mcconfig--common.c.html#L112'>handle</a>            112 lib/mcconfig/common.c     mc_config-&gt;handle = g_key_file_new ();</span>
+<span class='curline'><a href='../S/lib--mcconfig--common.c.html#L113'>handle</a>            113 lib/mcconfig/common.c     if (mc_config-&gt;handle == NULL)</span>
+<span class='curline'><a href='../S/lib--mcconfig--common.c.html#L134'>handle</a>            134 lib/mcconfig/common.c             g_key_file_load_from_file (mc_config-&gt;handle, ini_path, flags, NULL);</span>
+<span class='curline'><a href='../S/lib--mcconfig--common.c.html#L151'>handle</a>            151 lib/mcconfig/common.c         g_key_file_free (mc_config-&gt;handle);</span>
+<span class='curline'><a href='../S/lib--mcconfig--common.c.html#L164'>handle</a>            164 lib/mcconfig/common.c     return g_key_file_has_key (mc_config-&gt;handle, group, param, NULL);</span>
+<span class='curline'><a href='../S/lib--mcconfig--common.c.html#L175'>handle</a>            175 lib/mcconfig/common.c     return g_key_file_has_group (mc_config-&gt;handle, group);</span>
+<span class='curline'><a href='../S/lib--mcconfig--common.c.html#L186'>handle</a>            186 lib/mcconfig/common.c     return g_key_file_remove_key (mc_config-&gt;handle, group, param, NULL);</span>
+<span class='curline'><a href='../S/lib--mcconfig--common.c.html#L197'>handle</a>            197 lib/mcconfig/common.c     return g_key_file_remove_group (mc_config-&gt;handle, group, NULL);</span>
+<span class='curline'><a href='../S/lib--mcconfig--common.c.html#L229'>handle</a>            229 lib/mcconfig/common.c             value = g_key_file_get_value (tmp_config-&gt;handle, *curr_grp, *curr_key, NULL);</span>
+<span class='curline'><a href='../S/lib--mcconfig--common.c.html#L233'>handle</a>            233 lib/mcconfig/common.c                     g_key_file_remove_key (mc_config-&gt;handle, *curr_grp, *curr_key, NULL);</span>
+<span class='curline'><a href='../S/lib--mcconfig--common.c.html#L235'>handle</a>            235 lib/mcconfig/common.c                     g_key_file_set_value (mc_config-&gt;handle, *curr_grp, *curr_key, value);</span>
+<span class='curline'><a href='../S/lib--mcconfig--common.c.html#L239'>handle</a>            239 lib/mcconfig/common.c                 g_key_file_remove_key (mc_config-&gt;handle, *curr_grp, *curr_key, NULL);</span>
+<span class='curline'><a href='../S/lib--mcconfig--get.c.html#L47'>handle</a>             47 lib/mcconfig/get.c         ret = g_key_file_get_groups (mc_config-&gt;handle, len);</span>
+<span class='curline'><a href='../S/lib--mcconfig--get.c.html#L67'>handle</a>             67 lib/mcconfig/get.c         ret = g_key_file_get_keys (mc_config-&gt;handle, group, len, NULL);</span>
+<span class='curline'><a href='../S/lib--mcconfig--get.c.html#L100'>handle</a>            100 lib/mcconfig/get.c     ret = g_key_file_get_string (mc_config-&gt;handle, group, param, NULL);</span>
+<span class='curline'><a href='../S/lib--mcconfig--get.c.html#L144'>handle</a>            144 lib/mcconfig/get.c     ret = g_key_file_get_string (mc_config-&gt;handle, group, param, NULL);</span>
+<span class='curline'><a href='../S/lib--mcconfig--get.c.html#L163'>handle</a>            163 lib/mcconfig/get.c     return g_key_file_get_boolean (mc_config-&gt;handle, group, param, NULL);</span>
+<span class='curline'><a href='../S/lib--mcconfig--get.c.html#L180'>handle</a>            180 lib/mcconfig/get.c     return g_key_file_get_integer (mc_config-&gt;handle, group, param, NULL);</span>
+<span class='curline'><a href='../S/lib--mcconfig--get.c.html#L193'>handle</a>            193 lib/mcconfig/get.c     return g_key_file_get_string_list (mc_config-&gt;handle, group, param, length, NULL);</span>
+<span class='curline'><a href='../S/lib--mcconfig--get.c.html#L205'>handle</a>            205 lib/mcconfig/get.c     return g_key_file_get_boolean_list (mc_config-&gt;handle, group, param, length, NULL);</span>
+<span class='curline'><a href='../S/lib--mcconfig--get.c.html#L217'>handle</a>            217 lib/mcconfig/get.c     return g_key_file_get_integer_list (mc_config-&gt;handle, group, param, length, NULL);</span>
+<span class='curline'><a href='../S/lib--mcconfig--set.c.html#L79'>handle</a>             79 lib/mcconfig/set.c     g_key_file_set_string (mc_config-&gt;handle, group, param, value);</span>
+<span class='curline'><a href='../S/lib--mcconfig--set.c.html#L91'>handle</a>             91 lib/mcconfig/set.c     g_key_file_set_value (mc_config-&gt;handle, group, param, value);</span>
+<span class='curline'><a href='../S/lib--mcconfig--set.c.html#L107'>handle</a>            107 lib/mcconfig/set.c     g_key_file_set_string (mc_config-&gt;handle, group, param, buffer);</span>
+<span class='curline'><a href='../S/lib--mcconfig--set.c.html#L121'>handle</a>            121 lib/mcconfig/set.c     g_key_file_set_boolean (mc_config-&gt;handle, group, param, value);</span>
+<span class='curline'><a href='../S/lib--mcconfig--set.c.html#L132'>handle</a>            132 lib/mcconfig/set.c     g_key_file_set_integer (mc_config-&gt;handle, group, param, value);</span>
+<span class='curline'><a href='../S/lib--mcconfig--set.c.html#L145'>handle</a>            145 lib/mcconfig/set.c     g_key_file_set_string_list (mc_config-&gt;handle, group, param, value, length);</span>
+<span class='curline'><a href='../S/lib--mcconfig--set.c.html#L158'>handle</a>            158 lib/mcconfig/set.c     g_key_file_set_boolean_list (mc_config-&gt;handle, group, param, value, length);</span>
+<span class='curline'><a href='../S/lib--mcconfig--set.c.html#L170'>handle</a>            170 lib/mcconfig/set.c     g_key_file_set_integer_list (mc_config-&gt;handle, group, param, value, length);</span>
+<span class='curline'><a href='../S/lib--vfs--direntry.c.html#L551'>handle</a>            551 lib/vfs/direntry.c     if (FH-&gt;handle != -1)</span>
+<span class='curline'><a href='../S/lib--vfs--direntry.c.html#L555'>handle</a>            555 lib/vfs/direntry.c         n = read (FH-&gt;handle, buffer, count);</span>
+<span class='curline'><a href='../S/lib--vfs--direntry.c.html#L575'>handle</a>            575 lib/vfs/direntry.c     if (FH-&gt;handle != -1)</span>
+<span class='curline'><a href='../S/lib--vfs--direntry.c.html#L579'>handle</a>            579 lib/vfs/direntry.c         n = write (FH-&gt;handle, buffer, count);</span>
+<span class='curline'><a href='../S/lib--vfs--direntry.c.html#L598'>handle</a>            598 lib/vfs/direntry.c     if (FH-&gt;handle != -1)</span>
+<span class='curline'><a href='../S/lib--vfs--direntry.c.html#L600'>handle</a>            600 lib/vfs/direntry.c         off_t retval = lseek (FH-&gt;handle, offset, whence);</span>
+<span class='curline'><a href='../S/lib--vfs--direntry.c.html#L657'>handle</a>            657 lib/vfs/direntry.c     if (FH-&gt;handle != -1)</span>
+<span class='curline'><a href='../S/lib--vfs--direntry.c.html#L658'>handle</a>            658 lib/vfs/direntry.c         close (FH-&gt;handle);</span>
+<span class='curline'><a href='../S/lib--vfs--direntry.c.html#L1293'>handle</a>           1293 lib/vfs/direntry.c     fh-&gt;handle = -1;</span>
+<span class='curline'><a href='../S/lib--vfs--direntry.c.html#L1322'>handle</a>           1322 lib/vfs/direntry.c         fh-&gt;handle = open (fh-&gt;ino-&gt;localname, NO_LINEAR (flags), mode);</span>
+<span class='curline'><a href='../S/lib--vfs--direntry.c.html#L1323'>handle</a>           1323 lib/vfs/direntry.c         if (fh-&gt;handle == -1)</span>
+<span class='curline'><a href='../S/lib--vfs--direntry.c.html#L1371'>handle</a>           1371 lib/vfs/direntry.c     int handle;</span>
+<span class='curline'><a href='../S/lib--vfs--direntry.c.html#L1383'>handle</a>           1383 lib/vfs/direntry.c     fh.handle = -1;</span>
+<span class='curline'><a href='../S/lib--vfs--direntry.c.html#L1385'>handle</a>           1385 lib/vfs/direntry.c     handle = vfs_mkstemps (&amp;tmp_vpath, me-&gt;name, ino-&gt;ent-&gt;name);</span>
+<span class='curline'><a href='../S/lib--vfs--direntry.c.html#L1388'>handle</a>           1388 lib/vfs/direntry.c     if (handle == -1)</span>
+<span class='curline'><a href='../S/lib--vfs--direntry.c.html#L1413'>handle</a>           1413 lib/vfs/direntry.c         t = write (handle, buffer, n);</span>
+<span class='curline'><a href='../S/lib--vfs--direntry.c.html#L1422'>handle</a>           1422 lib/vfs/direntry.c     close (handle);</span>
+<span class='curline'><a href='../S/lib--vfs--direntry.c.html#L1432'>handle</a>           1432 lib/vfs/direntry.c     close (handle);</span>
+<span class='curline'><a href='../S/lib--vfs--interface.c.html#L298'>handle</a>            298 lib/vfs/interface.c ssize_t mc_##name (int handle, C void *buf, size_t count) \</span>
+<span class='curline'><a href='../S/lib--vfs--interface.c.html#L303'>handle</a>            303 lib/vfs/interface.c     if (handle == -1) \</span>
+<span class='curline'><a href='../S/lib--vfs--interface.c.html#L305'>handle</a>            305 lib/vfs/interface.c     vfs = vfs_class_find_by_handle (handle, &amp;fsinfo); \</span>
+<span class='curline'><a href='../S/lib--vfs--interface.c.html#L359'>handle</a>            359 lib/vfs/interface.c mc_ctl (int handle, int ctlop, void *arg)</span>
+<span class='curline'><a href='../S/lib--vfs--interface.c.html#L364'>handle</a>            364 lib/vfs/interface.c     vfs = vfs_class_find_by_handle (handle, &amp;fsinfo);</span>
+<span class='curline'><a href='../S/lib--vfs--interface.c.html#L392'>handle</a>            392 lib/vfs/interface.c mc_close (int handle)</span>
+<span class='curline'><a href='../S/lib--vfs--interface.c.html#L398'>handle</a>            398 lib/vfs/interface.c     if (handle == -1)</span>
+<span class='curline'><a href='../S/lib--vfs--interface.c.html#L401'>handle</a>            401 lib/vfs/interface.c     vfs = vfs_class_find_by_handle (handle, &amp;fsinfo);</span>
+<span class='curline'><a href='../S/lib--vfs--interface.c.html#L405'>handle</a>            405 lib/vfs/interface.c     if (handle &lt; 3)</span>
+<span class='curline'><a href='../S/lib--vfs--interface.c.html#L406'>handle</a>            406 lib/vfs/interface.c         return close (handle);</span>
+<span class='curline'><a href='../S/lib--vfs--interface.c.html#L411'>handle</a>            411 lib/vfs/interface.c     vfs_free_handle (handle);</span>
+<span class='curline'><a href='../S/lib--vfs--interface.c.html#L423'>handle</a>            423 lib/vfs/interface.c     int handle, *handlep;</span>
+<span class='curline'><a href='../S/lib--vfs--interface.c.html#L455'>handle</a>            455 lib/vfs/interface.c     handle = vfs_new_handle (path_element-&gt;class, vfs_path_element_clone (path_element));</span>
+<span class='curline'><a href='../S/lib--vfs--interface.c.html#L458'>handle</a>            458 lib/vfs/interface.c     *handlep = handle;</span>
+<span class='curline'><a href='../S/lib--vfs--interface.c.html#L467'>handle</a>            467 lib/vfs/interface.c     int handle;</span>
+<span class='curline'><a href='../S/lib--vfs--interface.c.html#L493'>handle</a>            493 lib/vfs/interface.c     handle = *(int *) dirp;</span>
+<span class='curline'><a href='../S/lib--vfs--interface.c.html#L495'>handle</a>            495 lib/vfs/interface.c     vfs = vfs_class_find_by_handle (handle, &amp;fsinfo);</span>
+<span class='curline'><a href='../S/lib--vfs--interface.c.html#L525'>handle</a>            525 lib/vfs/interface.c     int handle;</span>
+<span class='curline'><a href='../S/lib--vfs--interface.c.html#L533'>handle</a>            533 lib/vfs/interface.c     handle = *(int *) dirp;</span>
+<span class='curline'><a href='../S/lib--vfs--interface.c.html#L535'>handle</a>            535 lib/vfs/interface.c     vfs = vfs_class_find_by_handle (handle, &amp;fsinfo);</span>
+<span class='curline'><a href='../S/lib--vfs--interface.c.html#L549'>handle</a>            549 lib/vfs/interface.c         vfs_free_handle (handle);</span>
+<span class='curline'><a href='../S/lib--vfs--interface.c.html#L605'>handle</a>            605 lib/vfs/interface.c mc_fstat (int handle, struct stat *buf)</span>
+<span class='curline'><a href='../S/lib--vfs--interface.c.html#L611'>handle</a>            611 lib/vfs/interface.c     if (handle == -1)</span>
+<span class='curline'><a href='../S/lib--vfs--interface.c.html#L614'>handle</a>            614 lib/vfs/interface.c     vfs = vfs_class_find_by_handle (handle, &amp;fsinfo);</span>
+<span class='curline'><a href='../S/lib--vfs--vfs.c.html#L86'>handle</a>             86 lib/vfs/vfs.c      int handle;</span>
+<span class='curline'><a href='../S/lib--vfs--vfs.c.html#L187'>handle</a>            187 lib/vfs/vfs.c  vfs_get_openfile (int handle)</span>
+<span class='curline'><a href='../S/lib--vfs--vfs.c.html#L191'>handle</a>            191 lib/vfs/vfs.c      if (handle &lt; VFS_FIRST_HANDLE || (guint) (handle - VFS_FIRST_HANDLE) &gt;= vfs_openfiles-&gt;len)</span>
+<span class='curline'><a href='../S/lib--vfs--vfs.c.html#L194'>handle</a>            194 lib/vfs/vfs.c      h = (struct vfs_openfile *) g_ptr_array_index (vfs_openfiles, handle - VFS_FIRST_HANDLE);</span>
+<span class='curline'><a href='../S/lib--vfs--vfs.c.html#L198'>handle</a>            198 lib/vfs/vfs.c      g_assert (h-&gt;handle == handle);</span>
+<span class='curline'><a href='../S/lib--vfs--vfs.c.html#L222'>handle</a>            222 lib/vfs/vfs.c  vfs_free_handle (int handle)</span>
+<span class='curline'><a href='../S/lib--vfs--vfs.c.html#L224'>handle</a>            224 lib/vfs/vfs.c      const int idx = handle - VFS_FIRST_HANDLE;</span>
+<span class='curline'><a href='../S/lib--vfs--vfs.c.html#L226'>handle</a>            226 lib/vfs/vfs.c      if (handle &gt;= VFS_FIRST_HANDLE &amp;&amp; (guint) idx &lt; vfs_openfiles-&gt;len)</span>
+<span class='curline'><a href='../S/lib--vfs--vfs.c.html#L242'>handle</a>            242 lib/vfs/vfs.c  vfs_class_find_by_handle (int handle, void **fsinfo)</span>
+<span class='curline'><a href='../S/lib--vfs--vfs.c.html#L246'>handle</a>            246 lib/vfs/vfs.c      h = vfs_get_openfile (handle);</span>
+<span class='curline'><a href='../S/lib--vfs--vfs.c.html#L273'>handle</a>            273 lib/vfs/vfs.c      h-&gt;handle = vfs_free_handle_list;</span>
+<span class='curline'><a href='../S/lib--vfs--vfs.c.html#L274'>handle</a>            274 lib/vfs/vfs.c      if (h-&gt;handle == -1)</span>
+<span class='curline'><a href='../S/lib--vfs--vfs.c.html#L277'>handle</a>            277 lib/vfs/vfs.c          h-&gt;handle = vfs_openfiles-&gt;len;</span>
+<span class='curline'><a href='../S/lib--vfs--vfs.c.html#L283'>handle</a>            283 lib/vfs/vfs.c          g_ptr_array_index (vfs_openfiles, h-&gt;handle) = h;</span>
+<span class='curline'><a href='../S/lib--vfs--vfs.c.html#L286'>handle</a>            286 lib/vfs/vfs.c      h-&gt;handle += VFS_FIRST_HANDLE;</span>
+<span class='curline'><a href='../S/lib--vfs--vfs.c.html#L287'>handle</a>            287 lib/vfs/vfs.c      return h-&gt;handle;</span>
+<span class='curline'><a href='../S/lib--vfs--vfs.h.html#L281'>handle</a>            281 lib/vfs/vfs.h  struct vfs_class *vfs_class_find_by_handle (int handle, void **fsinfo);</span>
+<span class='curline'><a href='../S/lib--vfs--vfs.h.html#L283'>handle</a>            283 lib/vfs/vfs.h  void vfs_free_handle (int handle);</span>
+<span class='curline'><a href='../S/lib--vfs--vfs.h.html#L293'>handle</a>            293 lib/vfs/vfs.h  ssize_t mc_read (int handle, void *buffer, size_t count);</span>
+<span class='curline'><a href='../S/lib--vfs--vfs.h.html#L294'>handle</a>            294 lib/vfs/vfs.h  ssize_t mc_write (int handle, const void *buffer, size_t count);</span>
+<span class='curline'><a href='../S/lib--vfs--vfs.h.html#L297'>handle</a>            297 lib/vfs/vfs.h  int mc_close (int handle);</span>
+<span class='curline'><a href='../S/lib--vfs--xdirentry.h.html#L108'>handle</a>            108 lib/vfs/xdirentry.h     int handle;                 /* This is for module's use, but if != -1, will be mc_close()d */</span>
+<span class='curline'><a href='../S/src--diffviewer--internal.h.html#L137'>handle</a>            137 src/diffviewer/internal.h         mc_search_t *handle;</span>
+<span class='curline'><a href='../S/src--diffviewer--search.c.html#L164'>handle</a>            164 src/diffviewer/search.c         if (mc_search_run (dview-&gt;search.handle, p-&gt;p, 0, p-&gt;u.len, NULL))</span>
+<span class='curline'><a href='../S/src--diffviewer--search.c.html#L199'>handle</a>            199 src/diffviewer/search.c         if (mc_search_run (dview-&gt;search.handle, p-&gt;p, 0, p-&gt;u.len, NULL))</span>
+<span class='curline'><a href='../S/src--diffviewer--search.c.html#L252'>handle</a>            252 src/diffviewer/search.c     mc_search_free (dview-&gt;search.handle);</span>
+<span class='curline'><a href='../S/src--diffviewer--search.c.html#L254'>handle</a>            254 src/diffviewer/search.c     dview-&gt;search.handle = mc_search_new (dview-&gt;search.last_string, cp_source);</span>
+<span class='curline'><a href='../S/src--diffviewer--search.c.html#L256'>handle</a>            256 src/diffviewer/search.c     dview-&gt;search.handle = mc_search_new (dview-&gt;search.last_string, NULL);</span>
+<span class='curline'><a href='../S/src--diffviewer--search.c.html#L259'>handle</a>            259 src/diffviewer/search.c     if (dview-&gt;search.handle == NULL)</span>
+<span class='curline'><a href='../S/src--diffviewer--search.c.html#L262'>handle</a>            262 src/diffviewer/search.c     dview-&gt;search.handle-&gt;search_type = mcdiffview_search_options.type;</span>
+<span class='curline'><a href='../S/src--diffviewer--search.c.html#L264'>handle</a>            264 src/diffviewer/search.c     dview-&gt;search.handle-&gt;is_all_charsets = mcdiffview_search_options.all_codepages;</span>
+<span class='curline'><a href='../S/src--diffviewer--search.c.html#L266'>handle</a>            266 src/diffviewer/search.c     dview-&gt;search.handle-&gt;is_case_sensitive = mcdiffview_search_options.case_sens;</span>
+<span class='curline'><a href='../S/src--diffviewer--search.c.html#L267'>handle</a>            267 src/diffviewer/search.c     dview-&gt;search.handle-&gt;whole_words = mcdiffview_search_options.whole_words;</span>
+<span class='curline'><a href='../S/src--diffviewer--search.c.html#L279'>handle</a>            279 src/diffviewer/search.c     else if (dview-&gt;search.handle == NULL)</span>
+<span class='curline'><a href='../S/src--diffviewer--ydiff.c.html#L1858'>handle</a>           1858 src/diffviewer/ydiff.c     mc_search_free (dview-&gt;search.handle);</span>
+<span class='curline'><a href='../S/src--diffviewer--ydiff.c.html#L1859'>handle</a>           1859 src/diffviewer/ydiff.c     dview-&gt;search.handle = NULL;</span>
+<span class='curline'><a href='../S/src--diffviewer--ydiff.c.html#L2468'>handle</a>           2468 src/diffviewer/ydiff.c     dview-&gt;search.handle = NULL;</span>
+<span class='curline'><a href='../S/src--vfs--ftpfs--ftpfs.c.html#L2232'>handle</a>           2232 src/vfs/ftpfs/ftpfs.c                 int handle;</span>
+<span class='curline'><a href='../S/src--vfs--ftpfs--ftpfs.c.html#L2234'>handle</a>           2234 src/vfs/ftpfs/ftpfs.c                 handle = vfs_mkstemps (&amp;vpath, me-&gt;name, fh-&gt;ino-&gt;ent-&gt;name);</span>
+<span class='curline'><a href='../S/src--vfs--ftpfs--ftpfs.c.html#L2235'>handle</a>           2235 src/vfs/ftpfs/ftpfs.c                 if (handle == -1)</span>
+<span class='curline'><a href='../S/src--vfs--ftpfs--ftpfs.c.html#L2240'>handle</a>           2240 src/vfs/ftpfs/ftpfs.c                 close (handle);</span>
+<span class='curline'><a href='../S/src--vfs--ftpfs--ftpfs.c.html#L2250'>handle</a>           2250 src/vfs/ftpfs/ftpfs.c         fh-&gt;handle =</span>
+<span class='curline'><a href='../S/src--vfs--ftpfs--ftpfs.c.html#L2255'>handle</a>           2255 src/vfs/ftpfs/ftpfs.c         if (fh-&gt;handle &lt; 0)</span>
+<span class='curline'><a href='../S/src--vfs--ftpfs--ftpfs.c.html#L2261'>handle</a>           2261 src/vfs/ftpfs/ftpfs.c         setsockopt (fh-&gt;handle, SOL_SOCKET, SO_LINGER, &amp;li, sizeof (li));</span>
+<span class='curline'><a href='../S/src--vfs--ftpfs--ftpfs.c.html#L2287'>handle</a>           2287 src/vfs/ftpfs/ftpfs.c     if (fh-&gt;handle != -1 &amp;&amp; !fh-&gt;ino-&gt;localname)</span>
+<span class='curline'><a href='../S/src--vfs--ftpfs--ftpfs.c.html#L2291'>handle</a>           2291 src/vfs/ftpfs/ftpfs.c         close (fh-&gt;handle);</span>
+<span class='curline'><a href='../S/src--vfs--ftpfs--ftpfs.c.html#L2292'>handle</a>           2292 src/vfs/ftpfs/ftpfs.c         fh-&gt;handle = -1;</span>
+<span class='curline'><a href='../S/src--vfs--sfs--sfs.c.html#L227'>handle</a>            227 src/vfs/sfs/sfs.c     int handle;</span>
+<span class='curline'><a href='../S/src--vfs--sfs--sfs.c.html#L240'>handle</a>            240 src/vfs/sfs/sfs.c     handle = vfs_mkstemps (&amp;cache_vpath, "sfs", path_element-&gt;path);</span>
+<span class='curline'><a href='../S/src--vfs--sfs--sfs.c.html#L242'>handle</a>            242 src/vfs/sfs/sfs.c     if (handle == -1)</span>
+<span class='curline'><a href='../S/src--vfs--sfs--sfs.c.html#L245'>handle</a>            245 src/vfs/sfs/sfs.c     close (handle);</span>
+<span class='curline'><a href='../S/src--vfs--sftpfs--dir.c.html#L45'>handle</a>             45 src/vfs/sftpfs/dir.c     LIBSSH2_SFTP_HANDLE *handle;</span>
+<span class='curline'><a href='../S/src--vfs--sftpfs--dir.c.html#L72'>handle</a>             72 src/vfs/sftpfs/dir.c     LIBSSH2_SFTP_HANDLE *handle;</span>
+<span class='curline'><a href='../S/src--vfs--sftpfs--dir.c.html#L91'>handle</a>             91 src/vfs/sftpfs/dir.c         handle =</span>
+<span class='curline'><a href='../S/src--vfs--sftpfs--dir.c.html#L94'>handle</a>             94 src/vfs/sftpfs/dir.c         if (handle != NULL)</span>
+<span class='curline'><a href='../S/src--vfs--sftpfs--dir.c.html#L109'>handle</a>            109 src/vfs/sftpfs/dir.c     sftpfs_dir-&gt;handle = handle;</span>
+<span class='curline'><a href='../S/src--vfs--sftpfs--dir.c.html#L137'>handle</a>            137 src/vfs/sftpfs/dir.c         rc = libssh2_sftp_readdir (sftpfs_dir-&gt;handle, mem, sizeof (mem), &amp;attrs);</span>
+<span class='curline'><a href='../S/src--vfs--sftpfs--dir.c.html#L176'>handle</a>            176 src/vfs/sftpfs/dir.c     rc = libssh2_sftp_closedir (sftpfs_dir-&gt;handle);</span>
+<span class='curline'><a href='../S/src--vfs--sftpfs--file.c.html#L45'>handle</a>             45 src/vfs/sftpfs/file.c     LIBSSH2_SFTP_HANDLE *handle;</span>
+<span class='curline'><a href='../S/src--vfs--sftpfs--file.c.html#L135'>handle</a>            135 src/vfs/sftpfs/file.c         file_handler_data-&gt;handle =</span>
+<span class='curline'><a href='../S/src--vfs--sftpfs--file.c.html#L138'>handle</a>            138 src/vfs/sftpfs/file.c         if (file_handler_data-&gt;handle != NULL)</span>
+<span class='curline'><a href='../S/src--vfs--sftpfs--file.c.html#L175'>handle</a>            175 src/vfs/sftpfs/file.c             libssh2_sftp_seek64 (file_handler_data-&gt;handle, file_info.st_size);</span>
+<span class='curline'><a href='../S/src--vfs--sftpfs--file.c.html#L202'>handle</a>            202 src/vfs/sftpfs/file.c     if (sftpfs_fh-&gt;handle == NULL)</span>
+<span class='curline'><a href='../S/src--vfs--sftpfs--file.c.html#L207'>handle</a>            207 src/vfs/sftpfs/file.c         res = libssh2_sftp_fstat_ex (sftpfs_fh-&gt;handle, &amp;attrs, 0);</span>
+<span class='curline'><a href='../S/src--vfs--sftpfs--file.c.html#L280'>handle</a>            280 src/vfs/sftpfs/file.c         rc = libssh2_sftp_read (file_handler_data-&gt;handle, buffer, count);</span>
+<span class='curline'><a href='../S/src--vfs--sftpfs--file.c.html#L295'>handle</a>            295 src/vfs/sftpfs/file.c     file_handler-&gt;pos = (off_t) libssh2_sftp_tell64 (file_handler_data-&gt;handle);</span>
+<span class='curline'><a href='../S/src--vfs--sftpfs--file.c.html#L326'>handle</a>            326 src/vfs/sftpfs/file.c     file_handler-&gt;pos = (off_t) libssh2_sftp_tell64 (file_handler_data-&gt;handle);</span>
+<span class='curline'><a href='../S/src--vfs--sftpfs--file.c.html#L330'>handle</a>            330 src/vfs/sftpfs/file.c         rc = libssh2_sftp_write (file_handler_data-&gt;handle, buffer, count);</span>
+<span class='curline'><a href='../S/src--vfs--sftpfs--file.c.html#L370'>handle</a>            370 src/vfs/sftpfs/file.c     libssh2_sftp_close (file_handler_data-&gt;handle);</span>
+<span class='curline'><a href='../S/src--vfs--sftpfs--file.c.html#L427'>handle</a>            427 src/vfs/sftpfs/file.c     libssh2_sftp_seek64 (file_handler_data-&gt;handle, file_handler-&gt;pos);</span>
+<span class='curline'><a href='../S/src--vfs--sftpfs--file.c.html#L428'>handle</a>            428 src/vfs/sftpfs/file.c     file_handler-&gt;pos = (off_t) libssh2_sftp_tell64 (file_handler_data-&gt;handle);</span>
+<span class='curline'><a href='../S/src--vfs--sftpfs--vfs_class.c.html#L151'>handle</a>            151 src/vfs/sftpfs/vfs_class.c     file_handler-&gt;handle = -1;</span>
+<span class='curline'><a href='../S/src--vfs--sftpfs--vfs_class.c.html#L494'>handle</a>            494 src/vfs/sftpfs/vfs_class.c     if (file_handler-&gt;handle != -1)</span>
+<span class='curline'><a href='../S/src--vfs--sftpfs--vfs_class.c.html#L495'>handle</a>            495 src/vfs/sftpfs/vfs_class.c         close (file_handler-&gt;handle);</span>
+</pre>
+</body>
+</html>

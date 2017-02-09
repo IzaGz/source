@@ -1,0 +1,68 @@
+<!DOCTYPE html PUBLIC '-//W3C//DTD XHTML 1.0 Transitional//EN' 'http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd'>
+<html xmlns='http://www.w3.org/1999/xhtml'>
+<head>
+<title>edit_cursor_move</title>
+<meta name='robots' content='noindex,nofollow' />
+<meta name='generator' content='GLOBAL-6.5.2' />
+<meta http-equiv='Content-Style-Type' content='text/css' />
+<link rel='stylesheet' type='text/css' href='../style.css' />
+</head>
+<body>
+<pre>
+<span class='curline'><a href='../S/src--editor--edit-impl.h.html#L174'>edit_cursor_move</a>  174 src/editor/edit-impl.h void edit_cursor_move (WEdit * edit, off_t increment);</span>
+<span class='curline'><a href='../S/src--editor--edit.c.html#L490'>edit_cursor_move</a>  490 src/editor/edit.c         edit_cursor_move (edit, offset);</span>
+<span class='curline'><a href='../S/src--editor--edit.c.html#L832'>edit_cursor_move</a>  832 src/editor/edit.c         edit_cursor_move (edit, -edit-&gt;buffer.curs1);</span>
+<span class='curline'><a href='../S/src--editor--edit.c.html#L862'>edit_cursor_move</a>  862 src/editor/edit.c     edit_cursor_move (edit, edit_buffer_get_current_bol (&amp;edit-&gt;buffer) - edit-&gt;buffer.curs1);</span>
+<span class='curline'><a href='../S/src--editor--edit.c.html#L874'>edit_cursor_move</a>  874 src/editor/edit.c     edit_cursor_move (edit, edit_buffer_get_current_eol (&amp;edit-&gt;buffer) - edit-&gt;buffer.curs1);</span>
+<span class='curline'><a href='../S/src--editor--edit.c.html#L936'>edit_cursor_move</a>  936 src/editor/edit.c         edit_cursor_move (edit, -1);</span>
+<span class='curline'><a href='../S/src--editor--edit.c.html#L975'>edit_cursor_move</a>  975 src/editor/edit.c         edit_cursor_move (edit, 1);</span>
+<span class='curline'><a href='../S/src--editor--edit.c.html#L1022'>edit_cursor_move</a> 1022 src/editor/edit.c         edit_cursor_move (edit, char_length);</span>
+<span class='curline'><a href='../S/src--editor--edit.c.html#L1049'>edit_cursor_move</a> 1049 src/editor/edit.c         edit_cursor_move (edit, -char_length);</span>
+<span class='curline'><a href='../S/src--editor--edit.c.html#L1082'>edit_cursor_move</a> 1082 src/editor/edit.c     edit_cursor_move (edit, p - edit-&gt;buffer.curs1);</span>
+<span class='curline'><a href='../S/src--editor--edit.c.html#L1160'>edit_cursor_move</a> 1160 src/editor/edit.c             edit_cursor_move (edit, 1);</span>
+<span class='curline'><a href='../S/src--editor--edit.c.html#L1163'>edit_cursor_move</a> 1163 src/editor/edit.c             edit_cursor_move (edit, -1);</span>
+<span class='curline'><a href='../S/src--editor--edit.c.html#L1247'>edit_cursor_move</a> 1247 src/editor/edit.c             edit_cursor_move (edit, 1);</span>
+<span class='curline'><a href='../S/src--editor--edit.c.html#L1250'>edit_cursor_move</a> 1250 src/editor/edit.c             edit_cursor_move (edit, -1);</span>
+<span class='curline'><a href='../S/src--editor--edit.c.html#L1497'>edit_cursor_move</a> 1497 src/editor/edit.c             edit_cursor_move (edit, curs - edit-&gt;buffer.curs1 + 1);</span>
+<span class='curline'><a href='../S/src--editor--edit.c.html#L1499'>edit_cursor_move</a> 1499 src/editor/edit.c             edit_cursor_move (edit, current - edit-&gt;buffer.curs1 + 1);</span>
+<span class='curline'><a href='../S/src--editor--edit.c.html#L1580'>edit_cursor_move</a> 1580 src/editor/edit.c         edit_cursor_move (edit, q - edit-&gt;buffer.curs1);</span>
+<span class='curline'><a href='../S/src--editor--edit.c.html#L1600'>edit_cursor_move</a> 1600 src/editor/edit.c         edit_cursor_move (edit, cur_bol - edit-&gt;buffer.curs1);</span>
+<span class='curline'><a href='../S/src--editor--edit.c.html#L1607'>edit_cursor_move</a> 1607 src/editor/edit.c             edit_cursor_move (edit,</span>
+<span class='curline'><a href='../S/src--editor--edit.c.html#L1640'>edit_cursor_move</a> 1640 src/editor/edit.c         edit_cursor_move (edit, cur_bol - edit-&gt;buffer.curs1);</span>
+<span class='curline'><a href='../S/src--editor--edit.c.html#L1730'>edit_cursor_move</a> 1730 src/editor/edit.c                         edit_cursor_move (edit, edit-&gt;buffer.size - edit-&gt;buffer.curs1);</span>
+<span class='curline'><a href='../S/src--editor--edit.c.html#L1742'>edit_cursor_move</a> 1742 src/editor/edit.c                 edit_cursor_move (edit, edit_move_forward3 (edit, p, col, 0) - edit-&gt;buffer.curs1);</span>
+<span class='curline'><a href='../S/src--editor--edit.c.html#L1753'>edit_cursor_move</a> 1753 src/editor/edit.c     edit_cursor_move (edit, cursor - edit-&gt;buffer.curs1);</span>
+<span class='curline'><a href='../S/src--editor--edit.c.html#L1809'>edit_cursor_move</a> 1809 src/editor/edit.c     edit_cursor_move (edit, curs - edit-&gt;buffer.curs1);</span>
+<span class='curline'><a href='../S/src--editor--edit.c.html#L1973'>edit_cursor_move</a> 1973 src/editor/edit.c                 edit_cursor_move (edit, -ins_len);</span>
+<span class='curline'><a href='../S/src--editor--edit.c.html#L2056'>edit_cursor_move</a> 2056 src/editor/edit.c                 edit_cursor_move (edit, -ins_len);</span>
+<span class='curline'><a href='../S/src--editor--edit.c.html#L2946'>edit_cursor_move</a> 2946 src/editor/edit.c     edit_cursor_move (edit,</span>
+<span class='curline'><a href='../S/src--editor--edit.c.html#L2985'>edit_cursor_move</a> 2985 src/editor/edit.c                 edit_cursor_move (edit,</span>
+<span class='curline'><a href='../S/src--editor--edit.c.html#L2989'>edit_cursor_move</a> 2989 src/editor/edit.c                     edit_cursor_move (edit,</span>
+<span class='curline'><a href='../S/src--editor--edit.c.html#L3559'>edit_cursor_move</a> 3559 src/editor/edit.c                 edit_cursor_move (edit, -HALF_TAB_SIZE);</span>
+<span class='curline'><a href='../S/src--editor--edit.c.html#L3571'>edit_cursor_move</a> 3571 src/editor/edit.c             edit_cursor_move (edit, HALF_TAB_SIZE);</span>
+<span class='curline'><a href='../S/src--editor--editcmd.c.html#L549'>edit_cursor_move</a>  549 src/editor/editcmd.c         edit_cursor_move (edit, p - edit-&gt;buffer.curs1);</span>
+<span class='curline'><a href='../S/src--editor--editcmd.c.html#L559'>edit_cursor_move</a>  559 src/editor/editcmd.c             edit_cursor_move (edit,</span>
+<span class='curline'><a href='../S/src--editor--editcmd.c.html#L604'>edit_cursor_move</a>  604 src/editor/editcmd.c     edit_cursor_move (edit, start_mark - edit-&gt;buffer.curs1);</span>
+<span class='curline'><a href='../S/src--editor--editcmd.c.html#L993'>edit_cursor_move</a>  993 src/editor/editcmd.c             edit_cursor_move (edit, edit-&gt;search_start - edit-&gt;buffer.curs1);</span>
+<span class='curline'><a href='../S/src--editor--editcmd.c.html#L1010'>edit_cursor_move</a> 1010 src/editor/editcmd.c             edit_cursor_move (edit, edit-&gt;search_start - edit-&gt;buffer.curs1);</span>
+<span class='curline'><a href='../S/src--editor--editcmd.c.html#L1365'>edit_cursor_move</a> 1365 src/editor/editcmd.c                     edit_cursor_move (edit, edit-&gt;buffer.size - edit-&gt;buffer.curs1);</span>
+<span class='curline'><a href='../S/src--editor--editcmd.c.html#L1376'>edit_cursor_move</a> 1376 src/editor/editcmd.c             edit_cursor_move (edit, edit_move_forward3 (edit, p, col, 0) - edit-&gt;buffer.curs1);</span>
+<span class='curline'><a href='../S/src--editor--editcmd.c.html#L1387'>edit_cursor_move</a> 1387 src/editor/editcmd.c     edit_cursor_move (edit, cursor - edit-&gt;buffer.curs1);</span>
+<span class='curline'><a href='../S/src--editor--editcmd.c.html#L2364'>edit_cursor_move</a> 2364 src/editor/editcmd.c             edit_cursor_move (edit, size_orig);</span>
+<span class='curline'><a href='../S/src--editor--editcmd.c.html#L2436'>edit_cursor_move</a> 2436 src/editor/editcmd.c         edit_cursor_move (edit, current - edit-&gt;buffer.curs1);</span>
+<span class='curline'><a href='../S/src--editor--editcmd.c.html#L2452'>edit_cursor_move</a> 2452 src/editor/editcmd.c         edit_cursor_move (edit, start_mark - edit-&gt;buffer.curs1);</span>
+<span class='curline'><a href='../S/src--editor--editcmd.c.html#L2459'>edit_cursor_move</a> 2459 src/editor/editcmd.c         edit_cursor_move (edit,</span>
+<span class='curline'><a href='../S/src--editor--editcmd.c.html#L2472'>edit_cursor_move</a> 2472 src/editor/editcmd.c             edit_cursor_move (edit, count_orig - start_mark);</span>
+<span class='curline'><a href='../S/src--editor--editcmd.c.html#L2632'>edit_cursor_move</a> 2632 src/editor/editcmd.c             edit_cursor_move (edit, edit-&gt;search_start - edit-&gt;buffer.curs1);</span>
+<span class='curline'><a href='../S/src--editor--editcmd.c.html#L3602'>edit_cursor_move</a> 3602 src/editor/editcmd.c             edit_cursor_move (edit, word_len - cut_len);</span>
+<span class='curline'><a href='../S/src--editor--editcmd.c.html#L3653'>edit_cursor_move</a> 3653 src/editor/editcmd.c         edit_cursor_move (edit, -edit-&gt;buffer.curs1);</span>
+<span class='curline'><a href='../S/src--editor--editcmd.c.html#L3670'>edit_cursor_move</a> 3670 src/editor/editcmd.c             edit_cursor_move (edit, 1);</span>
+<span class='curline'><a href='../S/src--editor--format.c.html#L364'>edit_cursor_move</a>  364 src/editor/format.c     edit_cursor_move (edit, q - edit-&gt;buffer.curs1);</span>
+<span class='curline'><a href='../S/src--editor--format.c.html#L427'>edit_cursor_move</a>  427 src/editor/format.c                 edit_cursor_move (edit, p - edit-&gt;buffer.curs1);</span>
+<span class='curline'><a href='../S/src--editor--format.c.html#L436'>edit_cursor_move</a>  436 src/editor/format.c                 edit_cursor_move (edit, p - edit-&gt;buffer.curs1);</span>
+<span class='curline'><a href='../S/src--editor--format.c.html#L541'>edit_cursor_move</a>  541 src/editor/format.c     edit_cursor_move (edit, q - edit-&gt;buffer.curs1);</span>
+<span class='curline'><a href='../S/tests--src--editor--editcmd__edit_complete_word_cmd.c.html#L253'>edit_cursor_move</a>  253 tests/src/editor/editcmd__edit_complete_word_cmd.c     edit_cursor_move (test_edit, data-&gt;input_position);</span>
+<span class='curline'><a href='../S/tests--src--editor--editcmd__edit_complete_word_cmd.c.html#L332'>edit_cursor_move</a>  332 tests/src/editor/editcmd__edit_complete_word_cmd.c     edit_cursor_move (test_edit, data-&gt;input_position);</span>
+</pre>
+</body>
+</html>

@@ -1,0 +1,29 @@
+<!DOCTYPE html PUBLIC '-//W3C//DTD XHTML 1.0 Transitional//EN' 'http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd'>
+<html xmlns='http://www.w3.org/1999/xhtml'>
+<head>
+<title>server_url</title>
+<meta name='robots' content='noindex,nofollow' />
+<meta name='generator' content='GLOBAL-6.5.2' />
+<meta http-equiv='Content-Style-Type' content='text/css' />
+<link rel='stylesheet' type='text/css' href='../style.css' />
+</head>
+<body>
+<pre>
+<span class='curline'><a href='../S/src--vfs--smbfs--smbfs.c.html#L1432'>server_url</a>       1432 src/vfs/smbfs/smbfs.c smbfs_fake_server_stat (const char *server_url, const char *path, struct stat *buf)</span>
+<span class='curline'><a href='../S/src--vfs--smbfs--smbfs.c.html#L1437'>server_url</a>       1437 src/vfs/smbfs/smbfs.c     (void) server_url;</span>
+<span class='curline'><a href='../S/src--vfs--smbfs--smbfs.c.html#L1471'>server_url</a>       1471 src/vfs/smbfs/smbfs.c smbfs_fake_share_stat (const char *server_url, const char *path, struct stat *buf)</span>
+<span class='curline'><a href='../S/src--vfs--smbfs--smbfs.c.html#L1474'>server_url</a>       1474 src/vfs/smbfs/smbfs.c     if (strlen (path) &lt; strlen (server_url))</span>
+<span class='curline'><a href='../S/src--vfs--smbfs--smbfs.c.html#L1501'>server_url</a>       1501 src/vfs/smbfs/smbfs.c     path += strlen (server_url);        /* we only want share name */</span>
+<span class='curline'><a href='../S/src--vfs--smbfs--smbfs.c.html#L1513'>server_url</a>       1513 src/vfs/smbfs/smbfs.c     DEBUG (3, ("smbfs_fake_share_stat: %s on %s\n", path, server_url));</span>
+<span class='curline'><a href='../S/src--vfs--smbfs--smbfs.c.html#L1732'>server_url</a>       1732 src/vfs/smbfs/smbfs.c     pstring server_url;</span>
+<span class='curline'><a href='../S/src--vfs--smbfs--smbfs.c.html#L1757'>server_url</a>       1757 src/vfs/smbfs/smbfs.c     pstrcpy (server_url, URL_HEADER);</span>
+<span class='curline'><a href='../S/src--vfs--smbfs--smbfs.c.html#L1760'>server_url</a>       1760 src/vfs/smbfs/smbfs.c         char *z = &amp;(server_url[sizeof (server_url) - 1]);</span>
+<span class='curline'><a href='../S/src--vfs--smbfs--smbfs.c.html#L1763'>server_url</a>       1763 src/vfs/smbfs/smbfs.c         at = &amp;(server_url[HEADER_LEN]) + (at - p + 1);</span>
+<span class='curline'><a href='../S/src--vfs--smbfs--smbfs.c.html#L1766'>server_url</a>       1766 src/vfs/smbfs/smbfs.c         at = &amp;(server_url[HEADER_LEN]);</span>
+<span class='curline'><a href='../S/src--vfs--smbfs--smbfs.c.html#L1771'>server_url</a>       1771 src/vfs/smbfs/smbfs.c     pstrcat (server_url, current_bucket-&gt;host);</span>
+<span class='curline'><a href='../S/src--vfs--smbfs--smbfs.c.html#L1780'>server_url</a>       1780 src/vfs/smbfs/smbfs.c         return smbfs_fake_server_stat (server_url, path_element-&gt;path, buf);</span>
+<span class='curline'><a href='../S/src--vfs--smbfs--smbfs.c.html#L1785'>server_url</a>       1785 src/vfs/smbfs/smbfs.c         return smbfs_fake_share_stat (server_url, path_element-&gt;path, buf);</span>
+<span class='curline'><a href='../S/src--vfs--smbfs--smbfs.c.html#L1794'>server_url</a>       1794 src/vfs/smbfs/smbfs.c         char *sp = server_url + strlen (server_url) - hostlen;</span>
+</pre>
+</body>
+</html>

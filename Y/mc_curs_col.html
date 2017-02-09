@@ -1,0 +1,40 @@
+<!DOCTYPE html PUBLIC '-//W3C//DTD XHTML 1.0 Transitional//EN' 'http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd'>
+<html xmlns='http://www.w3.org/1999/xhtml'>
+<head>
+<title>mc_curs_col</title>
+<meta name='robots' content='noindex,nofollow' />
+<meta name='generator' content='GLOBAL-6.5.2' />
+<meta http-equiv='Content-Style-Type' content='text/css' />
+<link rel='stylesheet' type='text/css' href='../style.css' />
+</head>
+<body>
+<pre>
+<span class='curline'><a href='../S/lib--tty--tty-ncurses.c.html#L84'>mc_curs_col</a>        84 lib/tty/tty-ncurses.c static int mc_curs_row, mc_curs_col;</span>
+<span class='curline'><a href='../S/lib--tty--tty-ncurses.c.html#L406'>mc_curs_col</a>       406 lib/tty/tty-ncurses.c     mc_curs_col = x;</span>
+<span class='curline'><a href='../S/lib--tty--tty-ncurses.c.html#L427'>mc_curs_col</a>       427 lib/tty/tty-ncurses.c     *px = mc_curs_col;</span>
+<span class='curline'><a href='../S/lib--tty--tty-ncurses.c.html#L458'>mc_curs_col</a>       458 lib/tty/tty-ncurses.c     mc_curs_col = x1;</span>
+<span class='curline'><a href='../S/lib--tty--tty-ncurses.c.html#L489'>mc_curs_col</a>       489 lib/tty/tty-ncurses.c     mc_curs_col = x;</span>
+<span class='curline'><a href='../S/lib--tty--tty-ncurses.c.html#L533'>mc_curs_col</a>       533 lib/tty/tty-ncurses.c     mc_curs_col = x;</span>
+<span class='curline'><a href='../S/lib--tty--tty-ncurses.c.html#L557'>mc_curs_col</a>       557 lib/tty/tty-ncurses.c     if (yx_in_screen (mc_curs_row, mc_curs_col))</span>
+<span class='curline'><a href='../S/lib--tty--tty-ncurses.c.html#L559'>mc_curs_col</a>       559 lib/tty/tty-ncurses.c     mc_curs_col++;</span>
+<span class='curline'><a href='../S/lib--tty--tty-ncurses.c.html#L575'>mc_curs_col</a>       575 lib/tty/tty-ncurses.c             if (yx_in_screen (mc_curs_row, mc_curs_col))</span>
+<span class='curline'><a href='../S/lib--tty--tty-ncurses.c.html#L577'>mc_curs_col</a>       577 lib/tty/tty-ncurses.c             mc_curs_col++;</span>
+<span class='curline'><a href='../S/lib--tty--tty-ncurses.c.html#L586'>mc_curs_col</a>       586 lib/tty/tty-ncurses.c             if (yx_in_screen (mc_curs_row, mc_curs_col))</span>
+<span class='curline'><a href='../S/lib--tty--tty-ncurses.c.html#L590'>mc_curs_col</a>       590 lib/tty/tty-ncurses.c                 mc_curs_col += 2;</span>
+<span class='curline'><a href='../S/lib--tty--tty-ncurses.c.html#L592'>mc_curs_col</a>       592 lib/tty/tty-ncurses.c                 mc_curs_col++;</span>
+<span class='curline'><a href='../S/lib--tty--tty-ncurses.c.html#L597'>mc_curs_col</a>       597 lib/tty/tty-ncurses.c         if (yx_in_screen (mc_curs_row, mc_curs_col))</span>
+<span class='curline'><a href='../S/lib--tty--tty-ncurses.c.html#L599'>mc_curs_col</a>       599 lib/tty/tty-ncurses.c         mc_curs_col++;</span>
+<span class='curline'><a href='../S/lib--tty--tty-ncurses.c.html#L608'>mc_curs_col</a>       608 lib/tty/tty-ncurses.c     if (yx_in_screen (mc_curs_row, mc_curs_col))</span>
+<span class='curline'><a href='../S/lib--tty--tty-ncurses.c.html#L632'>mc_curs_col</a>       632 lib/tty/tty-ncurses.c     mc_curs_col++;</span>
+<span class='curline'><a href='../S/lib--tty--tty-ncurses.c.html#L647'>mc_curs_col</a>       647 lib/tty/tty-ncurses.c     if (mc_curs_row &lt; 0 || mc_curs_row &gt;= LINES || mc_curs_col + len &lt;= 0 || mc_curs_col &gt;= COLS)</span>
+<span class='curline'><a href='../S/lib--tty--tty-ncurses.c.html#L649'>mc_curs_col</a>       649 lib/tty/tty-ncurses.c         mc_curs_col += len;</span>
+<span class='curline'><a href='../S/lib--tty--tty-ncurses.c.html#L654'>mc_curs_col</a>       654 lib/tty/tty-ncurses.c     if (mc_curs_col &lt; 0)</span>
+<span class='curline'><a href='../S/lib--tty--tty-ncurses.c.html#L656'>mc_curs_col</a>       656 lib/tty/tty-ncurses.c         start = -mc_curs_col;</span>
+<span class='curline'><a href='../S/lib--tty--tty-ncurses.c.html#L657'>mc_curs_col</a>       657 lib/tty/tty-ncurses.c         len += mc_curs_col;</span>
+<span class='curline'><a href='../S/lib--tty--tty-ncurses.c.html#L658'>mc_curs_col</a>       658 lib/tty/tty-ncurses.c         mc_curs_col = 0;</span>
+<span class='curline'><a href='../S/lib--tty--tty-ncurses.c.html#L661'>mc_curs_col</a>       661 lib/tty/tty-ncurses.c     mc_curs_col += len;</span>
+<span class='curline'><a href='../S/lib--tty--tty-ncurses.c.html#L662'>mc_curs_col</a>       662 lib/tty/tty-ncurses.c     if (mc_curs_col &gt;= COLS)</span>
+<span class='curline'><a href='../S/lib--tty--tty-ncurses.c.html#L663'>mc_curs_col</a>       663 lib/tty/tty-ncurses.c         len = COLS - (mc_curs_col - len);</span>
+</pre>
+</body>
+</html>

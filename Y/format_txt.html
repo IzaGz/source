@@ -1,0 +1,24 @@
+<!DOCTYPE html PUBLIC '-//W3C//DTD XHTML 1.0 Transitional//EN' 'http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd'>
+<html xmlns='http://www.w3.org/1999/xhtml'>
+<head>
+<title>format_txt</title>
+<meta name='robots' content='noindex,nofollow' />
+<meta name='generator' content='GLOBAL-6.5.2' />
+<meta http-equiv='Content-Style-Type' content='text/css' />
+<link rel='stylesheet' type='text/css' href='../style.css' />
+</head>
+<body>
+<pre>
+<span class='curline'><a href='../S/src--filemanager--panel.c.html#L1560'>format_txt</a>       1560 src/filemanager/panel.c     GString *format_txt;</span>
+<span class='curline'><a href='../S/src--filemanager--panel.c.html#L1567'>format_txt</a>       1567 src/filemanager/panel.c     format_txt = g_string_new ("");</span>
+<span class='curline'><a href='../S/src--filemanager--panel.c.html#L1577'>format_txt</a>       1577 src/filemanager/panel.c                 g_string_set_size (format_txt, 0);</span>
+<span class='curline'><a href='../S/src--filemanager--panel.c.html#L1581'>format_txt</a>       1581 src/filemanager/panel.c                     g_string_append (format_txt,</span>
+<span class='curline'><a href='../S/src--filemanager--panel.c.html#L1585'>format_txt</a>       1585 src/filemanager/panel.c                 g_string_append (format_txt, format-&gt;title);</span>
+<span class='curline'><a href='../S/src--filemanager--panel.c.html#L1590'>format_txt</a>       1590 src/filemanager/panel.c                     g_string_append (format_txt, " [");</span>
+<span class='curline'><a href='../S/src--filemanager--panel.c.html#L1591'>format_txt</a>       1591 src/filemanager/panel.c                     g_string_append (format_txt, panel-&gt;filter);</span>
+<span class='curline'><a href='../S/src--filemanager--panel.c.html#L1592'>format_txt</a>       1592 src/filemanager/panel.c                     g_string_append (format_txt, "]");</span>
+<span class='curline'><a href='../S/src--filemanager--panel.c.html#L1596'>format_txt</a>       1596 src/filemanager/panel.c                 tty_print_string (str_fit_to_term (format_txt-&gt;str, format-&gt;field_len,</span>
+<span class='curline'><a href='../S/src--filemanager--panel.c.html#L1613'>format_txt</a>       1613 src/filemanager/panel.c     g_string_free (format_txt, TRUE);</span>
+</pre>
+</body>
+</html>

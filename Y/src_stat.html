@@ -1,0 +1,50 @@
+<!DOCTYPE html PUBLIC '-//W3C//DTD XHTML 1.0 Transitional//EN' 'http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd'>
+<html xmlns='http://www.w3.org/1999/xhtml'>
+<head>
+<title>src_stat</title>
+<meta name='robots' content='noindex,nofollow' />
+<meta name='generator' content='GLOBAL-6.5.2' />
+<meta http-equiv='Content-Style-Type' content='text/css' />
+<link rel='stylesheet' type='text/css' href='../style.css' />
+</head>
+<body>
+<pre>
+<span class='curline'><a href='../S/src--filemanager--file.c.html#L1392'>src_stat</a>         1392 src/filemanager/file.c                                const struct stat *src_stat)</span>
+<span class='curline'><a href='../S/src--filemanager--file.c.html#L1437'>src_stat</a>         1437 src/filemanager/file.c     cp = (src_stat != NULL ? one_format : many_format);</span>
+<span class='curline'><a href='../S/src--filemanager--file.c.html#L1449'>src_stat</a>         1449 src/filemanager/file.c     if (src_stat != NULL)</span>
+<span class='curline'><a href='../S/src--filemanager--file.c.html#L1450'>src_stat</a>         1450 src/filemanager/file.c         cp = S_ISDIR (src_stat-&gt;st_mode) ? prompt_parts[2] : prompt_parts[0];</span>
+<span class='curline'><a href='../S/src--filemanager--file.c.html#L1500'>src_stat</a>         1500 src/filemanager/file.c     struct stat src_stat, dst_stat;</span>
+<span class='curline'><a href='../S/src--filemanager--file.c.html#L1550'>src_stat</a>         1550 src/filemanager/file.c     while ((*ctx-&gt;stat_func) (src_vpath, &amp;src_stat) != 0)</span>
+<span class='curline'><a href='../S/src--filemanager--file.c.html#L1568'>src_stat</a>         1568 src/filemanager/file.c         if (src_stat.st_dev == dst_stat.st_dev &amp;&amp; src_stat.st_ino == dst_stat.st_ino)</span>
+<span class='curline'><a href='../S/src--filemanager--file.c.html#L1579'>src_stat</a>         1579 src/filemanager/file.c             return_status = query_replace (ctx, dst_path, &amp;src_stat, &amp;dst_stat);</span>
+<span class='curline'><a href='../S/src--filemanager--file.c.html#L1588'>src_stat</a>         1588 src/filemanager/file.c         if (!ctx-&gt;follow_links &amp;&amp; src_stat.st_nlink &gt; 1</span>
+<span class='curline'><a href='../S/src--filemanager--file.c.html#L1589'>src_stat</a>         1589 src/filemanager/file.c             &amp;&amp; check_hardlinks (src_vpath, dst_vpath, &amp;src_stat))</span>
+<span class='curline'><a href='../S/src--filemanager--file.c.html#L1596'>src_stat</a>         1596 src/filemanager/file.c         if (S_ISLNK (src_stat.st_mode))</span>
+<span class='curline'><a href='../S/src--filemanager--file.c.html#L1602'>src_stat</a>         1602 src/filemanager/file.c         if (S_ISCHR (src_stat.st_mode) || S_ISBLK (src_stat.st_mode) || S_ISFIFO (src_stat.st_mode)</span>
+<span class='curline'><a href='../S/src--filemanager--file.c.html#L1603'>src_stat</a>         1603 src/filemanager/file.c             || S_ISNAM (src_stat.st_mode) || S_ISSOCK (src_stat.st_mode))</span>
+<span class='curline'><a href='../S/src--filemanager--file.c.html#L1608'>src_stat</a>         1608 src/filemanager/file.c             rdev = src_stat.st_rdev;</span>
+<span class='curline'><a href='../S/src--filemanager--file.c.html#L1611'>src_stat</a>         1611 src/filemanager/file.c             while (mc_mknod (dst_vpath, src_stat.st_mode &amp; ctx-&gt;umask_kill, rdev) &lt; 0</span>
+<span class='curline'><a href='../S/src--filemanager--file.c.html#L1624'>src_stat</a>         1624 src/filemanager/file.c                    &amp;&amp; mc_chown (dst_vpath, src_stat.st_uid, src_stat.st_gid) != 0 &amp;&amp; !ctx-&gt;skip_all)</span>
+<span class='curline'><a href='../S/src--filemanager--file.c.html#L1638'>src_stat</a>         1638 src/filemanager/file.c             while (ctx-&gt;preserve &amp;&amp; mc_chmod (dst_vpath, src_stat.st_mode &amp; ctx-&gt;umask_kill) != 0</span>
+<span class='curline'><a href='../S/src--filemanager--file.c.html#L1683'>src_stat</a>         1683 src/filemanager/file.c     while (mc_fstat (src_desc, &amp;src_stat) != 0)</span>
+<span class='curline'><a href='../S/src--filemanager--file.c.html#L1699'>src_stat</a>         1699 src/filemanager/file.c     src_mode = src_stat.st_mode;</span>
+<span class='curline'><a href='../S/src--filemanager--file.c.html#L1700'>src_stat</a>         1700 src/filemanager/file.c     src_uid = src_stat.st_uid;</span>
+<span class='curline'><a href='../S/src--filemanager--file.c.html#L1701'>src_stat</a>         1701 src/filemanager/file.c     src_gid = src_stat.st_gid;</span>
+<span class='curline'><a href='../S/src--filemanager--file.c.html#L1702'>src_stat</a>         1702 src/filemanager/file.c     get_times (&amp;src_stat, &amp;times);</span>
+<span class='curline'><a href='../S/src--filemanager--file.c.html#L1703'>src_stat</a>         1703 src/filemanager/file.c     file_size = src_stat.st_size;</span>
+<span class='curline'><a href='../S/src--filemanager--file.c.html#L2627'>src_stat</a>         2627 src/filemanager/file.c     struct stat src_stat;</span>
+<span class='curline'><a href='../S/src--filemanager--file.c.html#L2669'>src_stat</a>         2669 src/filemanager/file.c             ok = mc_lstat (source_vpath, &amp;src_stat) == 0;</span>
+<span class='curline'><a href='../S/src--filemanager--file.c.html#L2735'>src_stat</a>         2735 src/filemanager/file.c             panel_operate_generate_prompt (panel, operation, source != NULL ? &amp;src_stat : NULL);</span>
+<span class='curline'><a href='../S/src--filemanager--file.c.html#L2760'>src_stat</a>         2760 src/filemanager/file.c             panel_operate_generate_prompt (panel, OP_DELETE, source != NULL ? &amp;src_stat : NULL);</span>
+<span class='curline'><a href='../S/src--filemanager--file.c.html#L2872'>src_stat</a>         2872 src/filemanager/file.c                 if (S_ISDIR (src_stat.st_mode))</span>
+<span class='curline'><a href='../S/src--filemanager--file.c.html#L2908'>src_stat</a>         2908 src/filemanager/file.c                         ctx-&gt;stat_func (source_with_vpath, &amp;src_stat);</span>
+<span class='curline'><a href='../S/src--filemanager--file.c.html#L2910'>src_stat</a>         2910 src/filemanager/file.c                         if (S_ISDIR (src_stat.st_mode))</span>
+<span class='curline'><a href='../S/src--filemanager--file.c.html#L2921'>src_stat</a>         2921 src/filemanager/file.c                         if (S_ISDIR (src_stat.st_mode))</span>
+<span class='curline'><a href='../S/src--filemanager--file.c.html#L2972'>src_stat</a>         2972 src/filemanager/file.c                 src_stat = panel-&gt;dir.list[i].st;</span>
+<span class='curline'><a href='../S/src--filemanager--file.c.html#L2985'>src_stat</a>         2985 src/filemanager/file.c                     if (S_ISDIR (src_stat.st_mode))</span>
+<span class='curline'><a href='../S/src--filemanager--file.c.html#L3025'>src_stat</a>         3025 src/filemanager/file.c                                 ctx-&gt;stat_func (vpath, &amp;src_stat);</span>
+<span class='curline'><a href='../S/src--filemanager--file.c.html#L3028'>src_stat</a>         3028 src/filemanager/file.c                             if (S_ISDIR (src_stat.st_mode))</span>
+<span class='curline'><a href='../S/src--filemanager--file.c.html#L3037'>src_stat</a>         3037 src/filemanager/file.c                             if (S_ISDIR (src_stat.st_mode))</span>
+</pre>
+</body>
+</html>

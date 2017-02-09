@@ -1,0 +1,54 @@
+<!DOCTYPE html PUBLIC '-//W3C//DTD XHTML 1.0 Transitional//EN' 'http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd'>
+<html xmlns='http://www.w3.org/1999/xhtml'>
+<head>
+<title>groups</title>
+<meta name='robots' content='noindex,nofollow' />
+<meta name='generator' content='GLOBAL-6.5.2' />
+<meta http-equiv='Content-Style-Type' content='text/css' />
+<link rel='stylesheet' type='text/css' href='../style.css' />
+</head>
+<body>
+<pre>
+<span class='curline'><a href='../S/lib--mcconfig--common.c.html#L207'>groups</a>            207 lib/mcconfig/common.c     gchar **groups, **curr_grp;</span>
+<span class='curline'><a href='../S/lib--mcconfig--common.c.html#L218'>groups</a>            218 lib/mcconfig/common.c     groups = mc_config_get_groups (tmp_config, NULL);</span>
+<span class='curline'><a href='../S/lib--mcconfig--common.c.html#L219'>groups</a>            219 lib/mcconfig/common.c     ok = (*groups != NULL);</span>
+<span class='curline'><a href='../S/lib--mcconfig--common.c.html#L221'>groups</a>            221 lib/mcconfig/common.c     for (curr_grp = groups; *curr_grp != NULL; curr_grp++)</span>
+<span class='curline'><a href='../S/lib--mcconfig--common.c.html#L244'>groups</a>            244 lib/mcconfig/common.c     g_strfreev (groups);</span>
+<span class='curline'><a href='../S/lib--serialize.c.html#L198'>groups</a>            198 lib/serialize.c     gchar **groups, **group_iterator;</span>
+<span class='curline'><a href='../S/lib--serialize.c.html#L202'>groups</a>            202 lib/serialize.c     groups = mc_config_get_groups (data, NULL);</span>
+<span class='curline'><a href='../S/lib--serialize.c.html#L204'>groups</a>            204 lib/serialize.c     for (group_iterator = groups; *group_iterator != NULL; group_iterator++)</span>
+<span class='curline'><a href='../S/lib--serialize.c.html#L213'>groups</a>            213 lib/serialize.c             g_strfreev (groups);</span>
+<span class='curline'><a href='../S/lib--serialize.c.html#L230'>groups</a>            230 lib/serialize.c                 g_strfreev (groups);</span>
+<span class='curline'><a href='../S/lib--serialize.c.html#L244'>groups</a>            244 lib/serialize.c                 g_strfreev (groups);</span>
+<span class='curline'><a href='../S/lib--skin--colors.c.html#L335'>groups</a>            335 lib/skin/colors.c     gchar **groups, **orig_groups;</span>
+<span class='curline'><a href='../S/lib--skin--colors.c.html#L342'>groups</a>            342 lib/skin/colors.c     for (groups = orig_groups; *groups != NULL; groups++)</span>
+<span class='curline'><a href='../S/lib--skin--colors.c.html#L343'>groups</a>            343 lib/skin/colors.c         if (mc_skin_color_check_inisection (*groups))</span>
+<span class='curline'><a href='../S/lib--skin--colors.c.html#L344'>groups</a>            344 lib/skin/colors.c             mc_config_del_group (mc_skin-&gt;config, *groups);</span>
+<span class='curline'><a href='../S/lib--skin--colors.c.html#L359'>groups</a>            359 lib/skin/colors.c     gchar **groups, **orig_groups;</span>
+<span class='curline'><a href='../S/lib--skin--colors.c.html#L380'>groups</a>            380 lib/skin/colors.c     for (groups = orig_groups; *groups != NULL; groups++)</span>
+<span class='curline'><a href='../S/lib--skin--colors.c.html#L384'>groups</a>            384 lib/skin/colors.c         if (!mc_skin_color_check_inisection (*groups))</span>
+<span class='curline'><a href='../S/lib--skin--colors.c.html#L387'>groups</a>            387 lib/skin/colors.c         orig_keys = mc_config_get_keys (mc_skin-&gt;config, *groups, NULL);</span>
+<span class='curline'><a href='../S/lib--skin--colors.c.html#L391'>groups</a>            391 lib/skin/colors.c             mc_skin_color = mc_skin_color_get_from_ini_file (mc_skin, *groups, *keys);</span>
+<span class='curline'><a href='../S/lib--skin--colors.c.html#L393'>groups</a>            393 lib/skin/colors.c                 mc_skin_color_add_to_hash (mc_skin, *groups, *keys, mc_skin_color);</span>
+<span class='curline'><a href='../S/lib--utilunix.c.html#L1249'>groups</a>           1249 lib/utilunix.c     static gid_t *groups;</span>
+<span class='curline'><a href='../S/lib--utilunix.c.html#L1264'>groups</a>           1264 lib/utilunix.c         groups = g_new (gid_t, ngroups + 1);</span>
+<span class='curline'><a href='../S/lib--utilunix.c.html#L1268'>groups</a>           1268 lib/utilunix.c             ngroups = getgroups (ngroups, groups);</span>
+<span class='curline'><a href='../S/lib--utilunix.c.html#L1275'>groups</a>           1275 lib/utilunix.c         groups[ngroups++] = getegid ();</span>
+<span class='curline'><a href='../S/lib--utilunix.c.html#L1285'>groups</a>           1285 lib/utilunix.c         if (st-&gt;st_gid == groups[i])</span>
+<span class='curline'><a href='../S/src--setup.c.html#L531'>groups</a>            531 src/setup.c        char **groups, **curr_grp;</span>
+<span class='curline'><a href='../S/src--setup.c.html#L540'>groups</a>            540 src/setup.c        groups = mc_config_get_groups (tmp_cfg, NULL);</span>
+<span class='curline'><a href='../S/src--setup.c.html#L541'>groups</a>            541 src/setup.c        if (*groups == NULL)</span>
+<span class='curline'><a href='../S/src--setup.c.html#L543'>groups</a>            543 src/setup.c            g_strfreev (groups);</span>
+<span class='curline'><a href='../S/src--setup.c.html#L548'>groups</a>            548 src/setup.c        for (curr_grp = groups; *curr_grp != NULL; curr_grp++)</span>
+<span class='curline'><a href='../S/src--setup.c.html#L558'>groups</a>            558 src/setup.c            g_strfreev (groups);</span>
+<span class='curline'><a href='../S/src--setup.c.html#L562'>groups</a>            562 src/setup.c        for (curr_grp = groups; *curr_grp != NULL; curr_grp++)</span>
+<span class='curline'><a href='../S/src--setup.c.html#L570'>groups</a>            570 src/setup.c        g_strfreev (groups);</span>
+<span class='curline'><a href='../S/src--vfs--smbfs--helpers--include--proto.h.html#L102'>groups</a>            102 src/vfs/smbfs/helpers/include/proto.h BOOL in_group (gid_t group, gid_t current_gid, int ngroups, gid_t * groups);</span>
+<span class='curline'><a href='../S/src--vfs--smbfs--helpers--include--smb.h.html#L573'>groups</a>            573 src/vfs/smbfs/helpers/include/smb.h     gid_t *groups;</span>
+<span class='curline'><a href='../S/src--vfs--smbfs--helpers--include--smb.h.html#L591'>groups</a>            591 src/vfs/smbfs/helpers/include/smb.h     gid_t *groups;</span>
+<span class='curline'><a href='../S/src--vfs--smbfs--helpers--include--smb.h.html#L649'>groups</a>            649 src/vfs/smbfs/helpers/include/smb.h     gid_t *groups;</span>
+<span class='curline'><a href='../S/src--vfs--smbfs--helpers--lib--util.c.html#L139'>groups</a>            139 src/vfs/smbfs/helpers/lib/util.c in_group (gid_t group, gid_t current_gid, int ngroups, gid_t * groups)</span>
+<span class='curline'><a href='../S/src--vfs--smbfs--helpers--lib--util.c.html#L147'>groups</a>            147 src/vfs/smbfs/helpers/lib/util.c         if (group == groups[i])</span>
+</pre>
+</body>
+</html>

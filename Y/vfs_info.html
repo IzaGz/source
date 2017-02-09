@@ -1,0 +1,38 @@
+<!DOCTYPE html PUBLIC '-//W3C//DTD XHTML 1.0 Transitional//EN' 'http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd'>
+<html xmlns='http://www.w3.org/1999/xhtml'>
+<head>
+<title>vfs_info</title>
+<meta name='robots' content='noindex,nofollow' />
+<meta name='generator' content='GLOBAL-6.5.2' />
+<meta http-equiv='Content-Style-Type' content='text/css' />
+<link rel='stylesheet' type='text/css' href='../style.css' />
+</head>
+<body>
+<pre>
+<span class='curline'><a href='../S/lib--vfs--vfs.h.html#L164'>vfs_info</a>          164 lib/vfs/vfs.h      int (*close) (void *vfs_info);</span>
+<span class='curline'><a href='../S/lib--vfs--vfs.h.html#L165'>vfs_info</a>          165 lib/vfs/vfs.h      ssize_t (*read) (void *vfs_info, char *buffer, size_t count);</span>
+<span class='curline'><a href='../S/lib--vfs--vfs.h.html#L166'>vfs_info</a>          166 lib/vfs/vfs.h      ssize_t (*write) (void *vfs_info, const char *buf, size_t count);</span>
+<span class='curline'><a href='../S/lib--vfs--vfs.h.html#L169'>vfs_info</a>          169 lib/vfs/vfs.h      void *(*readdir) (void *vfs_info);</span>
+<span class='curline'><a href='../S/lib--vfs--vfs.h.html#L170'>vfs_info</a>          170 lib/vfs/vfs.h      int (*closedir) (void *vfs_info);</span>
+<span class='curline'><a href='../S/lib--vfs--vfs.h.html#L174'>vfs_info</a>          174 lib/vfs/vfs.h      int (*fstat) (void *vfs_info, struct stat * buf);</span>
+<span class='curline'><a href='../S/lib--vfs--vfs.h.html#L187'>vfs_info</a>          187 lib/vfs/vfs.h      off_t (*lseek) (void *vfs_info, off_t offset, int whence);</span>
+<span class='curline'><a href='../S/lib--vfs--vfs.h.html#L202'>vfs_info</a>          202 lib/vfs/vfs.h      int (*ctl) (void *vfs_info, int ctlop, void *arg);</span>
+<span class='curline'><a href='../S/src--vfs--fish--fish.c.html#L1303'>vfs_info</a>         1303 src/vfs/fish/fish.c fish_fstat (void *vfs_info, struct stat *buf)</span>
+<span class='curline'><a href='../S/src--vfs--fish--fish.c.html#L1307'>vfs_info</a>         1307 src/vfs/fish/fish.c     ret = vfs_s_fstat (vfs_info, buf);</span>
+<span class='curline'><a href='../S/src--vfs--ftpfs--ftpfs.c.html#L2073'>vfs_info</a>         2073 src/vfs/ftpfs/ftpfs.c ftpfs_fstat (void *vfs_info, struct stat *buf)</span>
+<span class='curline'><a href='../S/src--vfs--ftpfs--ftpfs.c.html#L2077'>vfs_info</a>         2077 src/vfs/ftpfs/ftpfs.c     ret = vfs_s_fstat (vfs_info, buf);</span>
+<span class='curline'><a href='../S/src--vfs--undelfs--undelfs.c.html#L398'>vfs_info</a>          398 src/vfs/undelfs/undelfs.c undelfs_readdir (void *vfs_info)</span>
+<span class='curline'><a href='../S/src--vfs--undelfs--undelfs.c.html#L403'>vfs_info</a>          403 src/vfs/undelfs/undelfs.c     if (vfs_info != fs)</span>
+<span class='curline'><a href='../S/src--vfs--undelfs--undelfs.c.html#L423'>vfs_info</a>          423 src/vfs/undelfs/undelfs.c undelfs_closedir (void *vfs_info)</span>
+<span class='curline'><a href='../S/src--vfs--undelfs--undelfs.c.html#L425'>vfs_info</a>          425 src/vfs/undelfs/undelfs.c     (void) vfs_info;</span>
+<span class='curline'><a href='../S/src--vfs--undelfs--undelfs.c.html#L496'>vfs_info</a>          496 src/vfs/undelfs/undelfs.c undelfs_close (void *vfs_info)</span>
+<span class='curline'><a href='../S/src--vfs--undelfs--undelfs.c.html#L498'>vfs_info</a>          498 src/vfs/undelfs/undelfs.c     undelfs_file *p = vfs_info;</span>
+<span class='curline'><a href='../S/src--vfs--undelfs--undelfs.c.html#L580'>vfs_info</a>          580 src/vfs/undelfs/undelfs.c undelfs_read (void *vfs_info, char *buffer, size_t count)</span>
+<span class='curline'><a href='../S/src--vfs--undelfs--undelfs.c.html#L582'>vfs_info</a>          582 src/vfs/undelfs/undelfs.c     undelfs_file *p = vfs_info;</span>
+<span class='curline'><a href='../S/src--vfs--undelfs--undelfs.c.html#L688'>vfs_info</a>          688 src/vfs/undelfs/undelfs.c undelfs_fstat (void *vfs_info, struct stat *buf)</span>
+<span class='curline'><a href='../S/src--vfs--undelfs--undelfs.c.html#L690'>vfs_info</a>          690 src/vfs/undelfs/undelfs.c     undelfs_file *p = vfs_info;</span>
+<span class='curline'><a href='../S/src--vfs--undelfs--undelfs.c.html#L731'>vfs_info</a>          731 src/vfs/undelfs/undelfs.c undelfs_lseek (void *vfs_info, off_t offset, int whence)</span>
+<span class='curline'><a href='../S/src--vfs--undelfs--undelfs.c.html#L733'>vfs_info</a>          733 src/vfs/undelfs/undelfs.c     (void) vfs_info;</span>
+</pre>
+</body>
+</html>

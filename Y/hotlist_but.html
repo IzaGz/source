@@ -1,0 +1,40 @@
+<!DOCTYPE html PUBLIC '-//W3C//DTD XHTML 1.0 Transitional//EN' 'http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd'>
+<html xmlns='http://www.w3.org/1999/xhtml'>
+<head>
+<title>hotlist_but</title>
+<meta name='robots' content='noindex,nofollow' />
+<meta name='generator' content='GLOBAL-6.5.2' />
+<meta http-equiv='Content-Style-Type' content='text/css' />
+<link rel='stylesheet' type='text/css' href='../style.css' />
+</head>
+<body>
+<pre>
+<span class='curline'><a href='../S/src--filemanager--hotlist.c.html#L172'>hotlist_but</a>       172 src/filemanager/hotlist.c } hotlist_but[] =</span>
+<span class='curline'><a href='../S/src--filemanager--hotlist.c.html#L204'>hotlist_but</a>       204 src/filemanager/hotlist.c static const size_t hotlist_but_num = G_N_ELEMENTS (hotlist_but);</span>
+<span class='curline'><a href='../S/src--filemanager--hotlist.c.html#L663'>hotlist_but</a>       663 src/filemanager/hotlist.c             hotlist_but[i].text = _(hotlist_but[i].text);</span>
+<span class='curline'><a href='../S/src--filemanager--hotlist.c.html#L665'>hotlist_but</a>       665 src/filemanager/hotlist.c             hotlist_but[i].len = str_term_width1 (hotlist_but[i].text) + 3;</span>
+<span class='curline'><a href='../S/src--filemanager--hotlist.c.html#L666'>hotlist_but</a>       666 src/filemanager/hotlist.c             if (hotlist_but[i].flags == DEFPUSH_BUTTON)</span>
+<span class='curline'><a href='../S/src--filemanager--hotlist.c.html#L667'>hotlist_but</a>       667 src/filemanager/hotlist.c                 hotlist_but[i].len += 2;</span>
+<span class='curline'><a href='../S/src--filemanager--hotlist.c.html#L684'>hotlist_but</a>       684 src/filemanager/hotlist.c             if ((hotlist_but[i].type &amp; list_type) != 0)</span>
+<span class='curline'><a href='../S/src--filemanager--hotlist.c.html#L688'>hotlist_but</a>       688 src/filemanager/hotlist.c                 row = hotlist_but[i].y;</span>
+<span class='curline'><a href='../S/src--filemanager--hotlist.c.html#L690'>hotlist_but</a>       690 src/filemanager/hotlist.c                 len[row] += hotlist_but[i].len + 1;</span>
+<span class='curline'><a href='../S/src--filemanager--hotlist.c.html#L700'>hotlist_but</a>       700 src/filemanager/hotlist.c             if ((hotlist_but[i].type &amp; list_type) != 0)</span>
+<span class='curline'><a href='../S/src--filemanager--hotlist.c.html#L704'>hotlist_but</a>       704 src/filemanager/hotlist.c                 row = hotlist_but[i].y;</span>
+<span class='curline'><a href='../S/src--filemanager--hotlist.c.html#L706'>hotlist_but</a>       706 src/filemanager/hotlist.c                 if (hotlist_but[i].x != 0)</span>
+<span class='curline'><a href='../S/src--filemanager--hotlist.c.html#L709'>hotlist_but</a>       709 src/filemanager/hotlist.c                     if (hotlist_but[i].ret_cmd == B_CANCEL)</span>
+<span class='curline'><a href='../S/src--filemanager--hotlist.c.html#L710'>hotlist_but</a>       710 src/filemanager/hotlist.c                         hotlist_but[i].x = cols - hotlist_but[i].len - 6;</span>
+<span class='curline'><a href='../S/src--filemanager--hotlist.c.html#L712'>hotlist_but</a>       712 src/filemanager/hotlist.c                         hotlist_but[i].x = cur_x[row];</span>
+<span class='curline'><a href='../S/src--filemanager--hotlist.c.html#L715'>hotlist_but</a>       715 src/filemanager/hotlist.c                 cur_x[row] += hotlist_but[i].len + 1;</span>
+<span class='curline'><a href='../S/src--filemanager--hotlist.c.html#L797'>hotlist_but</a>       797 src/filemanager/hotlist.c         if ((hotlist_but[i].type &amp; list_type) != 0)</span>
+<span class='curline'><a href='../S/src--filemanager--hotlist.c.html#L799'>hotlist_but</a>       799 src/filemanager/hotlist.c                                 button_new (y + hotlist_but[i].y, UX + hotlist_but[i].x,</span>
+<span class='curline'><a href='../S/src--filemanager--hotlist.c.html#L800'>hotlist_but</a>       800 src/filemanager/hotlist.c                                             hotlist_but[i].ret_cmd, hotlist_but[i].flags,</span>
+<span class='curline'><a href='../S/src--filemanager--hotlist.c.html#L801'>hotlist_but</a>       801 src/filemanager/hotlist.c                                             hotlist_but[i].text, hotlist_button_callback),</span>
+<span class='curline'><a href='../S/src--filemanager--hotlist.c.html#L802'>hotlist_but</a>       802 src/filemanager/hotlist.c                                 hotlist_but[i].pos_flags, NULL);</span>
+<span class='curline'><a href='../S/src--filemanager--hotlist.c.html#L848'>hotlist_but</a>       848 src/filemanager/hotlist.c         if ((hotlist_but[i].type &amp; LIST_MOVELIST) != 0)</span>
+<span class='curline'><a href='../S/src--filemanager--hotlist.c.html#L850'>hotlist_but</a>       850 src/filemanager/hotlist.c                                 button_new (y + hotlist_but[i].y, UX + hotlist_but[i].x,</span>
+<span class='curline'><a href='../S/src--filemanager--hotlist.c.html#L851'>hotlist_but</a>       851 src/filemanager/hotlist.c                                             hotlist_but[i].ret_cmd, hotlist_but[i].flags,</span>
+<span class='curline'><a href='../S/src--filemanager--hotlist.c.html#L852'>hotlist_but</a>       852 src/filemanager/hotlist.c                                             hotlist_but[i].text, hotlist_button_callback),</span>
+<span class='curline'><a href='../S/src--filemanager--hotlist.c.html#L853'>hotlist_but</a>       853 src/filemanager/hotlist.c                                 hotlist_but[i].pos_flags, NULL);</span>
+</pre>
+</body>
+</html>

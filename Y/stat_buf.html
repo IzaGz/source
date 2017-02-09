@@ -1,0 +1,28 @@
+<!DOCTYPE html PUBLIC '-//W3C//DTD XHTML 1.0 Transitional//EN' 'http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd'>
+<html xmlns='http://www.w3.org/1999/xhtml'>
+<head>
+<title>stat_buf</title>
+<meta name='robots' content='noindex,nofollow' />
+<meta name='generator' content='GLOBAL-6.5.2' />
+<meta http-equiv='Content-Style-Type' content='text/css' />
+<link rel='stylesheet' type='text/css' href='../style.css' />
+</head>
+<body>
+<pre>
+<span class='curline'><a href='../S/lib--util.c.html#L1314'>stat_buf</a>         1314 lib/util.c         struct stat stat_buf;</span>
+<span class='curline'><a href='../S/lib--util.c.html#L1330'>stat_buf</a>         1330 lib/util.c             if (stat (file_name, &amp;stat_buf) == 0)</span>
+<span class='curline'><a href='../S/lib--util.c.html#L1331'>stat_buf</a>         1331 lib/util.c                 chmod (backup_path, stat_buf.st_mode);</span>
+<span class='curline'><a href='../S/src--filemanager--hotlist.c.html#L1427'>stat_buf</a>         1427 src/filemanager/hotlist.c     struct stat stat_buf;</span>
+<span class='curline'><a href='../S/src--filemanager--hotlist.c.html#L1431'>stat_buf</a>         1431 src/filemanager/hotlist.c         stat (hotlist_file_name, &amp;stat_buf);</span>
+<span class='curline'><a href='../S/src--filemanager--hotlist.c.html#L1432'>stat_buf</a>         1432 src/filemanager/hotlist.c         if (hotlist_file_mtime &lt; stat_buf.st_mtime)</span>
+<span class='curline'><a href='../S/src--filemanager--hotlist.c.html#L1489'>stat_buf</a>         1489 src/filemanager/hotlist.c     stat (hotlist_file_name, &amp;stat_buf);</span>
+<span class='curline'><a href='../S/src--filemanager--hotlist.c.html#L1490'>stat_buf</a>         1490 src/filemanager/hotlist.c     hotlist_file_mtime = stat_buf.st_mtime;</span>
+<span class='curline'><a href='../S/src--filemanager--hotlist.c.html#L1642'>stat_buf</a>         1642 src/filemanager/hotlist.c     struct stat stat_buf;</span>
+<span class='curline'><a href='../S/src--filemanager--hotlist.c.html#L1655'>stat_buf</a>         1655 src/filemanager/hotlist.c             stat (hotlist_file_name, &amp;stat_buf);</span>
+<span class='curline'><a href='../S/src--filemanager--hotlist.c.html#L1656'>stat_buf</a>         1656 src/filemanager/hotlist.c             hotlist_file_mtime = stat_buf.st_mtime;</span>
+<span class='curline'><a href='../S/src--vfs--tar--tar.c.html#L845'>stat_buf</a>          845 src/vfs/tar/tar.c     static struct stat stat_buf;</span>
+<span class='curline'><a href='../S/src--vfs--tar--tar.c.html#L848'>stat_buf</a>          848 src/vfs/tar/tar.c     stat_result = mc_stat (vpath, &amp;stat_buf);</span>
+<span class='curline'><a href='../S/src--vfs--tar--tar.c.html#L850'>stat_buf</a>          850 src/vfs/tar/tar.c     return (stat_result != 0) ? NULL : &amp;stat_buf;</span>
+</pre>
+</body>
+</html>

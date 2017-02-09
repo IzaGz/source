@@ -1,0 +1,51 @@
+<!DOCTYPE html PUBLIC '-//W3C//DTD XHTML 1.0 Transitional//EN' 'http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd'>
+<html xmlns='http://www.w3.org/1999/xhtml'>
+<head>
+<title>directory</title>
+<meta name='robots' content='noindex,nofollow' />
+<meta name='generator' content='GLOBAL-6.5.2' />
+<meta http-equiv='Content-Style-Type' content='text/css' />
+<link rel='stylesheet' type='text/css' href='../style.css' />
+</head>
+<body>
+<pre>
+<span class='curline'><a href='../S/lib--utilunix.c.html#L666'>directory</a>         666 lib/utilunix.c tilde_expand (const char *directory)</span>
+<span class='curline'><a href='../S/lib--utilunix.c.html#L671'>directory</a>         671 lib/utilunix.c     if (*directory != '~')</span>
+<span class='curline'><a href='../S/lib--utilunix.c.html#L672'>directory</a>         672 lib/utilunix.c         return g_strdup (directory);</span>
+<span class='curline'><a href='../S/lib--utilunix.c.html#L674'>directory</a>         674 lib/utilunix.c     p = directory + 1;</span>
+<span class='curline'><a href='../S/lib--utilunix.c.html#L702'>directory</a>         702 lib/utilunix.c         return g_strdup (directory);</span>
+<span class='curline'><a href='../S/lib--widget--input_complete.c.html#L135'>directory</a>         135 lib/widget/input_complete.c     static DIR *directory = NULL;</span>
+<span class='curline'><a href='../S/lib--widget--input_complete.c.html#L197'>directory</a>         197 lib/widget/input_complete.c         directory = mc_opendir (dirname_vpath);</span>
+<span class='curline'><a href='../S/lib--widget--input_complete.c.html#L203'>directory</a>         203 lib/widget/input_complete.c     while (directory != NULL &amp;&amp; (entry = mc_readdir (directory)) != NULL)</span>
+<span class='curline'><a href='../S/lib--widget--input_complete.c.html#L272'>directory</a>         272 lib/widget/input_complete.c         if (directory != NULL)</span>
+<span class='curline'><a href='../S/lib--widget--input_complete.c.html#L274'>directory</a>         274 lib/widget/input_complete.c             mc_closedir (directory);</span>
+<span class='curline'><a href='../S/lib--widget--input_complete.c.html#L275'>directory</a>         275 lib/widget/input_complete.c             directory = NULL;</span>
+<span class='curline'><a href='../S/src--filemanager--find.c.html#L989'>directory</a>         989 src/filemanager/find.c search_content (WDialog * h, const char *directory, const char *filename)</span>
+<span class='curline'><a href='../S/src--filemanager--find.c.html#L1001'>directory</a>        1001 src/filemanager/find.c     vpath = vfs_path_build_filename (directory, filename, (char *) NULL);</span>
+<span class='curline'><a href='../S/src--filemanager--find.c.html#L1134'>directory</a>        1134 src/filemanager/find.c                 find_add_match (directory, result, found_start, found_start + found_len);</span>
+<span class='curline'><a href='../S/src--filemanager--find.c.html#L1267'>directory</a>        1267 src/filemanager/find.c     static char *directory = NULL;</span>
+<span class='curline'><a href='../S/src--filemanager--find.c.html#L1279'>directory</a>        1279 src/filemanager/find.c         MC_PTR_FREE (directory);</span>
+<span class='curline'><a href='../S/src--filemanager--find.c.html#L1336'>directory</a>        1336 src/filemanager/find.c                 g_free (directory);</span>
+<span class='curline'><a href='../S/src--filemanager--find.c.html#L1337'>directory</a>        1337 src/filemanager/find.c                 directory = g_strdup (vfs_path_as_str (tmp_vpath));</span>
+<span class='curline'><a href='../S/src--filemanager--find.c.html#L1343'>directory</a>        1343 src/filemanager/find.c                     g_snprintf (buffer, sizeof (buffer), _("Searching %s"), directory);</span>
+<span class='curline'><a href='../S/src--filemanager--find.c.html#L1344'>directory</a>        1344 src/filemanager/find.c                     status_update (str_trunc (directory, WIDGET (h)-&gt;cols - 8));</span>
+<span class='curline'><a href='../S/src--filemanager--find.c.html#L1369'>directory</a>        1369 src/filemanager/find.c             if (options.find_recurs &amp;&amp; (directory != NULL))</span>
+<span class='curline'><a href='../S/src--filemanager--find.c.html#L1378'>directory</a>        1378 src/filemanager/find.c                     tmp_vpath = vfs_path_build_filename (directory, dp-&gt;d_name, (char *) NULL);</span>
+<span class='curline'><a href='../S/src--filemanager--find.c.html#L1393'>directory</a>        1393 src/filemanager/find.c                     find_add_match (directory, dp-&gt;d_name, 0, 0);</span>
+<span class='curline'><a href='../S/src--filemanager--find.c.html#L1394'>directory</a>        1394 src/filemanager/find.c                 else if (search_content (h, directory, dp-&gt;d_name))</span>
+<span class='curline'><a href='../S/src--filemanager--hotlist.c.html#L150'>directory</a>         150 src/filemanager/hotlist.c     char *directory;</span>
+<span class='curline'><a href='../S/src--filemanager--hotlist.c.html#L253'>directory</a>         253 src/filemanager/hotlist.c                 text = hlp-&gt;directory;</span>
+<span class='curline'><a href='../S/src--filemanager--hotlist.c.html#L551'>directory</a>         551 src/filemanager/hotlist.c                     tmp = g_strconcat ("cd ", hlp-&gt;directory, (char *) NULL);</span>
+<span class='curline'><a href='../S/src--filemanager--hotlist.c.html#L880'>directory</a>         880 src/filemanager/hotlist.c     return g_strconcat (grp-&gt;directory, ".Group", (char *) NULL);</span>
+<span class='curline'><a href='../S/src--filemanager--hotlist.c.html#L886'>directory</a>         886 src/filemanager/hotlist.c add2hotlist (char *label, char *directory, enum HotListType type, listbox_append_t pos)</span>
+<span class='curline'><a href='../S/src--filemanager--hotlist.c.html#L908'>directory</a>         908 src/filemanager/hotlist.c     new-&gt;directory = directory;</span>
+<span class='curline'><a href='../S/src--filemanager--hotlist.c.html#L1103'>directory</a>        1103 src/filemanager/hotlist.c         g_free (current-&gt;directory);</span>
+<span class='curline'><a href='../S/src--filemanager--hotlist.c.html#L1160'>directory</a>        1160 src/filemanager/hotlist.c     g_free (entry-&gt;directory);</span>
+<span class='curline'><a href='../S/src--filemanager--hotlist.c.html#L1189'>directory</a>        1189 src/filemanager/hotlist.c     keys = mc_config_get_keys (mc_global.main_config, grp-&gt;directory, NULL);</span>
+<span class='curline'><a href='../S/src--filemanager--hotlist.c.html#L1448'>directory</a>        1448 src/filemanager/hotlist.c     hotlist-&gt;directory = g_strdup ("Hotlist");</span>
+<span class='curline'><a href='../S/src--filemanager--hotlist.c.html#L1538'>directory</a>        1538 src/filemanager/hotlist.c             for (s = current-&gt;directory; *s != '\0'; s++)</span>
+<span class='curline'><a href='../S/src--filemanager--hotlist.c.html#L1629'>directory</a>        1629 src/filemanager/hotlist.c         target = g_strdup (hlp != NULL ? hlp-&gt;directory : text);</span>
+<span class='curline'><a href='../S/src--filemanager--hotlist.c.html#L1678'>directory</a>        1678 src/filemanager/hotlist.c         g_free (hotlist-&gt;directory);</span>
+</pre>
+</body>
+</html>

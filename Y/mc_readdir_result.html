@@ -1,0 +1,23 @@
+<!DOCTYPE html PUBLIC '-//W3C//DTD XHTML 1.0 Transitional//EN' 'http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd'>
+<html xmlns='http://www.w3.org/1999/xhtml'>
+<head>
+<title>mc_readdir_result</title>
+<meta name='robots' content='noindex,nofollow' />
+<meta name='generator' content='GLOBAL-6.5.2' />
+<meta http-equiv='Content-Style-Type' content='text/css' />
+<link rel='stylesheet' type='text/css' href='../style.css' />
+</head>
+<body>
+<pre>
+<span class='curline'><a href='../S/lib--vfs--interface.c.html#L65'>mc_readdir_result</a>   65 lib/vfs/interface.c extern struct dirent *mc_readdir_result;</span>
+<span class='curline'><a href='../S/lib--vfs--interface.c.html#L69'>mc_readdir_result</a>   69 lib/vfs/interface.c struct dirent *mc_readdir_result = NULL;</span>
+<span class='curline'><a href='../S/lib--vfs--interface.c.html#L473'>mc_readdir_result</a>  473 lib/vfs/interface.c     if (!mc_readdir_result)</span>
+<span class='curline'><a href='../S/lib--vfs--interface.c.html#L485'>mc_readdir_result</a>  485 lib/vfs/interface.c         mc_readdir_result = (struct dirent *) g_malloc (sizeof (struct dirent) + MAXNAMLEN + 1);</span>
+<span class='curline'><a href='../S/lib--vfs--interface.c.html#L512'>mc_readdir_result</a>  512 lib/vfs/interface.c         mc_readdir_result-&gt;d_ino = entry-&gt;d_ino;</span>
+<span class='curline'><a href='../S/lib--vfs--interface.c.html#L513'>mc_readdir_result</a>  513 lib/vfs/interface.c         g_strlcpy (mc_readdir_result-&gt;d_name, vfs_str_buffer-&gt;str, MAXNAMLEN + 1);</span>
+<span class='curline'><a href='../S/lib--vfs--interface.c.html#L517'>mc_readdir_result</a>  517 lib/vfs/interface.c     return (entry != NULL) ? mc_readdir_result : NULL;</span>
+<span class='curline'><a href='../S/lib--vfs--vfs.c.html#L63'>mc_readdir_result</a>   63 lib/vfs/vfs.c  extern struct dirent *mc_readdir_result;</span>
+<span class='curline'><a href='../S/lib--vfs--vfs.c.html#L505'>mc_readdir_result</a>  505 lib/vfs/vfs.c      MC_PTR_FREE (mc_readdir_result);</span>
+</pre>
+</body>
+</html>

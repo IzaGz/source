@@ -1,0 +1,142 @@
+<!DOCTYPE html PUBLIC '-//W3C//DTD XHTML 1.0 Transitional//EN' 'http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd'>
+<html xmlns='http://www.w3.org/1999/xhtml'>
+<head>
+<title>g_snprintf</title>
+<meta name='robots' content='noindex,nofollow' />
+<meta name='generator' content='GLOBAL-6.5.2' />
+<meta http-equiv='Content-Style-Type' content='text/css' />
+<link rel='stylesheet' type='text/css' href='../style.css' />
+</head>
+<body>
+<pre>
+<span class='curline'><a href='../S/lib--keybind.c.html#L409'>g_snprintf</a>        409 lib/keybind.c          g_snprintf (new_bind.caption, sizeof (new_bind.caption), "%s", caption);</span>
+<span class='curline'><a href='../S/lib--search--regex.c.html#L140'>g_snprintf</a>        140 lib/search/regex.c                 g_snprintf (tmp_str, sizeof (tmp_str), "\\x%02X", (unsigned char) upp-&gt;str[loop]);</span>
+<span class='curline'><a href='../S/lib--search--regex.c.html#L143'>g_snprintf</a>        143 lib/search/regex.c                 g_snprintf (tmp_str, sizeof (tmp_str), "[\\x%02X\\x%02X]",</span>
+<span class='curline'><a href='../S/lib--skin--colors.c.html#L60'>g_snprintf</a>         60 lib/skin/colors.c     g_snprintf (kname, sizeof (kname), "%s.%s", group, key);</span>
+<span class='curline'><a href='../S/lib--skin--colors.c.html#L79'>g_snprintf</a>         79 lib/skin/colors.c     g_snprintf (kname, sizeof (kname), "%s.%s", group, key);</span>
+<span class='curline'><a href='../S/lib--tty--tty-slang.c.html#L183'>g_snprintf</a>        183 lib/tty/tty-slang.c         g_snprintf (tmp, sizeof (tmp), "k%d", key);</span>
+<span class='curline'><a href='../S/lib--tty--tty-slang.c.html#L187'>g_snprintf</a>        187 lib/tty/tty-slang.c             g_snprintf (tmp, sizeof (tmp), ESC_STR "&amp;f%dk%dd%dL%s%s", key,</span>
+<span class='curline'><a href='../S/lib--util.c.html#L368'>g_snprintf</a>        368 lib/util.c         g_snprintf (x, sizeof (x), "%.0f %s", 1.0 * size / divisor, xtra);</span>
+<span class='curline'><a href='../S/lib--util.c.html#L493'>g_snprintf</a>        493 lib/util.c                     g_snprintf (buffer, len + 1, "%s", "0");</span>
+<span class='curline'><a href='../S/lib--util.c.html#L498'>g_snprintf</a>        498 lib/util.c                     g_snprintf (buffer, len + 1, (len &gt; 1) ? "~%s" : "%s", (j &gt; 1) ? sfx[j - 1] : "B");</span>
+<span class='curline'><a href='../S/lib--util.c.html#L505'>g_snprintf</a>        505 lib/util.c                 g_snprintf (buffer, len + 1, "%" PRIuMAX "%s", size, sfx[j]);</span>
+<span class='curline'><a href='../S/lib--util.c.html#L685'>g_snprintf</a>        685 lib/util.c         g_snprintf (buffer, sizeof (buffer), "%s (%d)", strerror_currentlocale, error_num);</span>
+<span class='curline'><a href='../S/lib--utilunix.c.html#L306'>g_snprintf</a>        306 lib/utilunix.c         g_snprintf (ibuf, sizeof (ibuf), "%d", (int) uid);</span>
+<span class='curline'><a href='../S/lib--utilunix.c.html#L334'>g_snprintf</a>        334 lib/utilunix.c         g_snprintf (gbuf, sizeof (gbuf), "%d", (int) gid);</span>
+<span class='curline'><a href='../S/lib--utilunix.c.html#L1127'>g_snprintf</a>       1127 lib/utilunix.c             g_snprintf (got_path, sizeof (got_path), "%s", new_path);</span>
+<span class='curline'><a href='../S/lib--vfs--interface.c.html#L854'>g_snprintf</a>        854 lib/vfs/interface.c         g_snprintf (buffer, sizeof (buffer), "%s/mc-%s", sys_tmp, pwd-&gt;pw_name);</span>
+<span class='curline'><a href='../S/lib--vfs--interface.c.html#L856'>g_snprintf</a>        856 lib/vfs/interface.c         g_snprintf (buffer, sizeof (buffer), "%s/mc-%lu", sys_tmp, (unsigned long) getuid ());</span>
+<span class='curline'><a href='../S/lib--vfs--interface.c.html#L911'>g_snprintf</a>        911 lib/vfs/interface.c             g_snprintf (buffer, sizeof (buffer), "%s", sys_tmp);</span>
+<span class='curline'><a href='../S/lib--vfs--interface.c.html#L917'>g_snprintf</a>        917 lib/vfs/interface.c             g_snprintf (buffer, sizeof (buffer), "%s", "/dev/null/");</span>
+<span class='curline'><a href='../S/lib--vfs--path.c.html#L1108'>g_snprintf</a>       1108 lib/vfs/path.c         g_snprintf (groupname, sizeof (groupname), "path-element-%zd", element_index);</span>
+<span class='curline'><a href='../S/lib--vfs--path.c.html#L1163'>g_snprintf</a>       1163 lib/vfs/path.c         g_snprintf (groupname, sizeof (groupname), "path-element-%zu", element_index);</span>
+<span class='curline'><a href='../S/lib--widget--history.c.html#L196'>g_snprintf</a>        196 lib/widget/history.c         g_snprintf (key, sizeof (key), "%lu", (unsigned long) i);</span>
+<span class='curline'><a href='../S/lib--widget--history.c.html#L266'>g_snprintf</a>        266 lib/widget/history.c         g_snprintf (key, sizeof (key), "%d", i++);</span>
+<span class='curline'><a href='../S/src--diffviewer--ydiff.c.html#L2585'>g_snprintf</a>       2585 src/diffviewer/ydiff.c                 g_snprintf (buf, display_numbers + 1, "%*d", nwidth, p-&gt;line);</span>
+<span class='curline'><a href='../S/src--editor--editcmd_dialogs.c.html#L269'>g_snprintf</a>        269 src/editor/editcmd_dialogs.c     g_snprintf (tmp, sizeof (tmp), "\"%s\"", from_text);</span>
+<span class='curline'><a href='../S/src--editor--editcmd_dialogs.c.html#L272'>g_snprintf</a>        272 src/editor/editcmd_dialogs.c     g_snprintf (tmp, sizeof (tmp), "\"%s\"", to_text);</span>
+<span class='curline'><a href='../S/src--editor--editdraw.c.html#L128'>g_snprintf</a>        128 src/editor/editdraw.c                 g_snprintf (byte_str, sizeof (byte_str), "%04u 0x%03X",</span>
+<span class='curline'><a href='../S/src--editor--editdraw.c.html#L134'>g_snprintf</a>        134 src/editor/editdraw.c                 g_snprintf (byte_str, sizeof (byte_str), "%04d 0x%03X",</span>
+<span class='curline'><a href='../S/src--editor--editdraw.c.html#L144'>g_snprintf</a>        144 src/editor/editdraw.c             g_snprintf (byte_str, sizeof (byte_str), "%4d 0x%03X",</span>
+<span class='curline'><a href='../S/src--editor--editdraw.c.html#L155'>g_snprintf</a>        155 src/editor/editdraw.c         g_snprintf (s, w,</span>
+<span class='curline'><a href='../S/src--editor--editdraw.c.html#L170'>g_snprintf</a>        170 src/editor/editdraw.c         g_snprintf (s, w,</span>
+<span class='curline'><a href='../S/src--editor--editdraw.c.html#L386'>g_snprintf</a>        386 src/editor/editdraw.c     g_snprintf (tmp, sizeof (tmp), "[%s][%s]", edit_window_state_char, edit_window_close_char);</span>
+<span class='curline'><a href='../S/src--editor--editdraw.c.html#L558'>g_snprintf</a>        558 src/editor/editdraw.c             g_snprintf (line_stat, sizeof (line_stat), "%7ld ", cur_line + 1);</span>
+<span class='curline'><a href='../S/src--editor--editdraw.c.html#L567'>g_snprintf</a>        567 src/editor/editdraw.c             g_snprintf (line_stat, 2, "*");</span>
+<span class='curline'><a href='../S/src--editor--editoptions.c.html#L135'>g_snprintf</a>        135 src/editor/editoptions.c     g_snprintf (wrap_length, sizeof (wrap_length), "%d", option_word_wrap_line_length);</span>
+<span class='curline'><a href='../S/src--editor--editoptions.c.html#L136'>g_snprintf</a>        136 src/editor/editoptions.c     g_snprintf (tab_spacing, sizeof (tab_spacing), "%d", option_tab_spacing);</span>
+<span class='curline'><a href='../S/src--filemanager--achown.c.html#L268'>g_snprintf</a>        268 src/filemanager/achown.c     g_snprintf (buffer, sizeof (buffer), "Permissions (octal): %o", get_mode ());</span>
+<span class='curline'><a href='../S/src--filemanager--achown.c.html#L861'>g_snprintf</a>        861 src/filemanager/achown.c         g_snprintf (buffer, sizeof (buffer), "%s (%d/%d)",</span>
+<span class='curline'><a href='../S/src--filemanager--boxes.c.html#L566'>g_snprintf</a>        566 src/filemanager/boxes.c         g_snprintf (time_out, sizeof (time_out), "%d", old_esc_mode_timeout);</span>
+<span class='curline'><a href='../S/src--filemanager--boxes.c.html#L788'>g_snprintf</a>        788 src/filemanager/boxes.c         g_snprintf (panel_brief_cols_in, sizeof (panel_brief_cols_in), "%d", panel-&gt;brief_cols);</span>
+<span class='curline'><a href='../S/src--filemanager--boxes.c.html#L1085'>g_snprintf</a>       1085 src/filemanager/boxes.c     g_snprintf (buffer3, sizeof (buffer3), "%i", ftpfs_directory_timeout);</span>
+<span class='curline'><a href='../S/src--filemanager--boxes.c.html#L1088'>g_snprintf</a>       1088 src/filemanager/boxes.c     g_snprintf (buffer2, sizeof (buffer2), "%i", vfs_timeout);</span>
+<span class='curline'><a href='../S/src--filemanager--chmod.c.html#L238'>g_snprintf</a>        238 src/filemanager/chmod.c                 g_snprintf (buffer, sizeof (buffer), "%o", (unsigned int) c_stat);</span>
+<span class='curline'><a href='../S/src--filemanager--chmod.c.html#L328'>g_snprintf</a>        328 src/filemanager/chmod.c     g_snprintf (buffer, sizeof (buffer), "%o", (unsigned int) c_stat);</span>
+<span class='curline'><a href='../S/src--filemanager--cmd.c.html#L587'>g_snprintf</a>        587 src/filemanager/cmd.c             g_snprintf (view_entry, sizeof (view_entry), "View:%ld", start_line);</span>
+<span class='curline'><a href='../S/src--filemanager--file.c.html#L857'>g_snprintf</a>        857 src/filemanager/file.c     g_snprintf (buf, sizeof (buf), format, nfile1, nfile2, unix_error_string (errno));</span>
+<span class='curline'><a href='../S/src--filemanager--file.c.html#L2763'>g_snprintf</a>       2763 src/filemanager/file.c             g_snprintf (fmd_buf, sizeof (fmd_buf), format, panel-&gt;marked);</span>
+<span class='curline'><a href='../S/src--filemanager--file.c.html#L2768'>g_snprintf</a>       2768 src/filemanager/file.c             g_snprintf (fmd_buf, sizeof (fmd_buf), format, str_trunc (source, i));</span>
+<span class='curline'><a href='../S/src--filemanager--file.c.html#L3135'>g_snprintf</a>       3135 src/filemanager/file.c     g_snprintf (buf, sizeof (buf), format, path_trunc (file, 30), unix_error_string (errno));</span>
+<span class='curline'><a href='../S/src--filemanager--filegui.c.html#L346'>g_snprintf</a>        346 src/filemanager/filegui.c     g_snprintf (buffer, BUF_TINY, _("%d:%02d.%02d"), eta_hours, eta_mins, eta_s);</span>
+<span class='curline'><a href='../S/src--filemanager--filegui.c.html#L363'>g_snprintf</a>        363 src/filemanager/filegui.c     g_snprintf (buffer, BUF_TINY, _("ETA %s"), _fmt_buff);</span>
+<span class='curline'><a href='../S/src--filemanager--filegui.c.html#L373'>g_snprintf</a>        373 src/filemanager/filegui.c         g_snprintf (buffer, BUF_TINY, _("%.2f MB/s"), bps / (1024 * 1024.0));</span>
+<span class='curline'><a href='../S/src--filemanager--filegui.c.html#L377'>g_snprintf</a>        377 src/filemanager/filegui.c         g_snprintf (buffer, BUF_TINY, _("%.2f KB/s"), bps / 1024.0);</span>
+<span class='curline'><a href='../S/src--filemanager--filegui.c.html#L381'>g_snprintf</a>        381 src/filemanager/filegui.c         g_snprintf (buffer, BUF_TINY, _("%ld B/s"), bps);</span>
+<span class='curline'><a href='../S/src--filemanager--filegui.c.html#L403'>g_snprintf</a>        403 src/filemanager/filegui.c     g_snprintf (buffer, sizeof (buffer), rd_widgets [i].text, p1, p2); \</span>
+<span class='curline'><a href='../S/src--filemanager--filegui.c.html#L909'>g_snprintf</a>        909 src/filemanager/filegui.c             g_snprintf (buffer, sizeof (buffer), "%s %s", buffer2, stalled_msg);</span>
+<span class='curline'><a href='../S/src--filemanager--filegui.c.html#L915'>g_snprintf</a>        915 src/filemanager/filegui.c             g_snprintf (buffer, sizeof (buffer), "%s (%s) %s", buffer2, buffer3, stalled_msg);</span>
+<span class='curline'><a href='../S/src--filemanager--filegui.c.html#L920'>g_snprintf</a>        920 src/filemanager/filegui.c         g_snprintf (buffer, sizeof (buffer), "%s", stalled_msg);</span>
+<span class='curline'><a href='../S/src--filemanager--filegui.c.html#L942'>g_snprintf</a>        942 src/filemanager/filegui.c         g_snprintf (buffer, sizeof (buffer), _("Files processed: %zu/%zu"), done, total);</span>
+<span class='curline'><a href='../S/src--filemanager--filegui.c.html#L944'>g_snprintf</a>        944 src/filemanager/filegui.c         g_snprintf (buffer, sizeof (buffer), _("Files processed: %zu"), done);</span>
+<span class='curline'><a href='../S/src--filemanager--filegui.c.html#L991'>g_snprintf</a>        991 src/filemanager/filegui.c                 g_snprintf (buffer, sizeof (buffer), _("Time: %s %s"), buffer2, buffer3);</span>
+<span class='curline'><a href='../S/src--filemanager--filegui.c.html#L996'>g_snprintf</a>        996 src/filemanager/filegui.c                 g_snprintf (buffer, sizeof (buffer), _("Time: %s %s (%s)"), buffer2, buffer3,</span>
+<span class='curline'><a href='../S/src--filemanager--filegui.c.html#L1003'>g_snprintf</a>       1003 src/filemanager/filegui.c                 g_snprintf (buffer, sizeof (buffer), _("Time: %s"), buffer2);</span>
+<span class='curline'><a href='../S/src--filemanager--filegui.c.html#L1007'>g_snprintf</a>       1007 src/filemanager/filegui.c                 g_snprintf (buffer, sizeof (buffer), _("Time: %s (%s)"), buffer2, buffer4);</span>
+<span class='curline'><a href='../S/src--filemanager--filegui.c.html#L1018'>g_snprintf</a>       1018 src/filemanager/filegui.c             g_snprintf (buffer, sizeof (buffer), _(" Total: %s "), buffer2);</span>
+<span class='curline'><a href='../S/src--filemanager--filegui.c.html#L1022'>g_snprintf</a>       1022 src/filemanager/filegui.c             g_snprintf (buffer, sizeof (buffer), _(" Total: %s/%s "), buffer2, buffer3);</span>
+<span class='curline'><a href='../S/src--filemanager--filegui.c.html#L1217'>g_snprintf</a>       1217 src/filemanager/filegui.c         g_snprintf (fmd_buf, sizeof (fmd_buf), format, (const char *) text);</span>
+<span class='curline'><a href='../S/src--filemanager--filegui.c.html#L1223'>g_snprintf</a>       1223 src/filemanager/filegui.c         g_snprintf (fmd_buf, sizeof (fmd_buf), format, *(const int *) text);</span>
+<span class='curline'><a href='../S/src--filemanager--find.c.html#L374'>g_snprintf</a>        374 src/filemanager/find.c     g_snprintf (buffer, sizeof (buffer), _("Found: %lu"), matches);</span>
+<span class='curline'><a href='../S/src--filemanager--find.c.html#L1032'>g_snprintf</a>       1032 src/filemanager/find.c         g_snprintf (buffer, sizeof (buffer), _("Grepping in %s"), filename);</span>
+<span class='curline'><a href='../S/src--filemanager--find.c.html#L1125'>g_snprintf</a>       1125 src/filemanager/find.c                     g_snprintf (result, sizeof (result), _("Grepping in %s"), filename);</span>
+<span class='curline'><a href='../S/src--filemanager--find.c.html#L1132'>g_snprintf</a>       1132 src/filemanager/find.c                 g_snprintf (result, sizeof (result), "%d:%s", line, filename);</span>
+<span class='curline'><a href='../S/src--filemanager--find.c.html#L1312'>g_snprintf</a>       1312 src/filemanager/find.c                             g_snprintf (msg, sizeof (msg),</span>
+<span class='curline'><a href='../S/src--filemanager--find.c.html#L1343'>g_snprintf</a>       1343 src/filemanager/find.c                     g_snprintf (buffer, sizeof (buffer), _("Searching %s"), directory);</span>
+<span class='curline'><a href='../S/src--filemanager--hotlist.c.html#L1129'>g_snprintf</a>       1129 src/filemanager/hotlist.c         g_snprintf (text, sizeof (text), _("Are you sure you want to remove entry \"%s\"?"),</span>
+<span class='curline'><a href='../S/src--filemanager--hotlist.c.html#L1146'>g_snprintf</a>       1146 src/filemanager/hotlist.c             g_snprintf (text, sizeof (text), _("Group \"%s\" is not empty.\nRemove it?"),</span>
+<span class='curline'><a href='../S/src--filemanager--layout.c.html#L955'>g_snprintf</a>        955 src/filemanager/layout.c         g_snprintf (buffer, sizeof (buffer), "%ith Panel", num);</span>
+<span class='curline'><a href='../S/src--filemanager--midnight.c.html#L1027'>g_snprintf</a>       1027 src/filemanager/midnight.c         g_snprintf (msg, sizeof (msg),</span>
+<span class='curline'><a href='../S/src--filemanager--midnight.c.html#L1702'>g_snprintf</a>       1702 src/filemanager/midnight.c         g_snprintf (text, sizeof (text), _("GNU Midnight Commander %s\n"), VERSION);</span>
+<span class='curline'><a href='../S/src--filemanager--panel.c.html#L497'>g_snprintf</a>        497 src/filemanager/panel.c         g_snprintf (buf, bufsize, "%lu,%lu", (unsigned long) major_dev, (unsigned long) minor_dev);</span>
+<span class='curline'><a href='../S/src--filemanager--panel.c.html#L636'>g_snprintf</a>        636 src/filemanager/panel.c     g_snprintf (buffer, sizeof (buffer), "0%06lo", (unsigned long) fe-&gt;st.st_mode);</span>
+<span class='curline'><a href='../S/src--filemanager--panel.c.html#L650'>g_snprintf</a>        650 src/filemanager/panel.c     g_snprintf (buffer, sizeof (buffer), "%16d", (int) fe-&gt;st.st_nlink);</span>
+<span class='curline'><a href='../S/src--filemanager--panel.c.html#L664'>g_snprintf</a>        664 src/filemanager/panel.c     g_snprintf (buffer, sizeof (buffer), "%lu", (unsigned long) fe-&gt;st.st_ino);</span>
+<span class='curline'><a href='../S/src--filemanager--panel.c.html#L678'>g_snprintf</a>        678 src/filemanager/panel.c     g_snprintf (buffer, sizeof (buffer), "%lu", (unsigned long) fe-&gt;st.st_uid);</span>
+<span class='curline'><a href='../S/src--filemanager--panel.c.html#L692'>g_snprintf</a>        692 src/filemanager/panel.c     g_snprintf (buffer, sizeof (buffer), "%lu", (unsigned long) fe-&gt;st.st_gid);</span>
+<span class='curline'><a href='../S/src--filemanager--panel.c.html#L1087'>g_snprintf</a>       1087 src/filemanager/panel.c         g_snprintf (buffer, sizeof (buffer),</span>
+<span class='curline'><a href='../S/src--filemanager--panel.c.html#L1164'>g_snprintf</a>       1164 src/filemanager/panel.c         g_snprintf (tmp, sizeof (tmp), " %s/%s (%d%%) ", buffer1, buffer2,</span>
+<span class='curline'><a href='../S/src--filemanager--panel.c.html#L1322'>g_snprintf</a>       1322 src/filemanager/panel.c                 g_snprintf (buffer, sizeof (buffer), " %s ",</span>
+<span class='curline'><a href='../S/src--filemanager--panel.c.html#L1541'>g_snprintf</a>       1541 src/filemanager/panel.c         g_snprintf (translated_title, sizeof (translated_title), "%s", _(title));</span>
+<span class='curline'><a href='../S/src--filemanager--panel.c.html#L1931'>g_snprintf</a>       1931 src/filemanager/panel.c             g_snprintf (format, sizeof (format), "half %d type name", brief_cols);</span>
+<span class='curline'><a href='../S/src--filemanager--tree.c.html#L714'>g_snprintf</a>        714 src/filemanager/tree.c     g_snprintf (msg, sizeof (msg), _("Copy \"%s\" directory to:"),</span>
+<span class='curline'><a href='../S/src--filemanager--tree.c.html#L753'>g_snprintf</a>        753 src/filemanager/tree.c     g_snprintf (msg, sizeof (msg), _("Move \"%s\" directory to:"),</span>
+<span class='curline'><a href='../S/src--learn.c.html#L306'>g_snprintf</a>        306 src/learn.c            g_snprintf (buffer, sizeof (buffer), "%s%*s", label, padding, "");</span>
+<span class='curline'><a href='../S/src--selcodepage.c.html#L95'>g_snprintf</a>         95 src/selcodepage.c         g_snprintf (buffer, sizeof (buffer), "%c  %s", get_hotkey (i), name);</span>
+<span class='curline'><a href='../S/src--selcodepage.c.html#L101'>g_snprintf</a>        101 src/selcodepage.c         g_snprintf (buffer, sizeof (buffer), "%c  %s", hotkey, _("Other 8 bit"));</span>
+<span class='curline'><a href='../S/src--setup.c.html#L1495'>g_snprintf</a>       1495 src/setup.c            g_snprintf (buffer2, sizeof (buffer2), "user_status%lld", (long long) i);</span>
+<span class='curline'><a href='../S/src--setup.c.html#L1532'>g_snprintf</a>       1532 src/setup.c            g_snprintf (buffer, sizeof (buffer), "user_status%lld", (long long) i);</span>
+<span class='curline'><a href='../S/src--subshell--common.c.html#L268'>g_snprintf</a>        268 src/subshell/common.c         g_snprintf (sid_str, sizeof (sid_str), "MC_SID=%ld", (long) mc_sid);</span>
+<span class='curline'><a href='../S/src--subshell--common.c.html#L799'>g_snprintf</a>        799 src/subshell/common.c         g_snprintf (precmd, buff_size,</span>
+<span class='curline'><a href='../S/src--subshell--common.c.html#L845'>g_snprintf</a>        845 src/subshell/common.c         g_snprintf (precmd, buff_size,</span>
+<span class='curline'><a href='../S/src--subshell--common.c.html#L859'>g_snprintf</a>        859 src/subshell/common.c         g_snprintf (precmd, buff_size,</span>
+<span class='curline'><a href='../S/src--subshell--common.c.html#L865'>g_snprintf</a>        865 src/subshell/common.c         g_snprintf (precmd, buff_size,</span>
+<span class='curline'><a href='../S/src--subshell--common.c.html#L883'>g_snprintf</a>        883 src/subshell/common.c         g_snprintf (precmd, buff_size,</span>
+<span class='curline'><a href='../S/src--subshell--common.c.html#L1042'>g_snprintf</a>       1042 src/subshell/common.c             g_snprintf (tcsh_fifo, sizeof (tcsh_fifo), "%s/mc.pipe.%d",</span>
+<span class='curline'><a href='../S/src--vfs--extfs--extfs.c.html#L1585'>g_snprintf</a>       1585 src/vfs/extfs/extfs.c         g_snprintf (fullname, sizeof (fullname), "%s" PATH_SEP_STR "%s", dirname, filename);</span>
+<span class='curline'><a href='../S/src--vfs--fish--fish.c.html#L448'>g_snprintf</a>        448 src/vfs/fish/fish.c         g_snprintf (gbuf, sizeof (gbuf), "%d", super-&gt;path_element-&gt;port);</span>
+<span class='curline'><a href='../S/src--vfs--fish--fish.c.html#L1204'>g_snprintf</a>       1204 src/vfs/fish/fish.c     g_snprintf (buf, sizeof (buf), shell_commands, rpath1, rpath2);</span>
+<span class='curline'><a href='../S/src--vfs--fish--fish.c.html#L1237'>g_snprintf</a>       1237 src/vfs/fish/fish.c     g_snprintf (buf, sizeof (buf), shell_commands, rpath1, rpath2);</span>
+<span class='curline'><a href='../S/src--vfs--fish--fish.c.html#L1269'>g_snprintf</a>       1269 src/vfs/fish/fish.c     g_snprintf (buf, sizeof (buf), shell_commands, qsetto, rpath);</span>
+<span class='curline'><a href='../S/src--vfs--fish--fish.c.html#L1333'>g_snprintf</a>       1333 src/vfs/fish/fish.c     g_snprintf (buf, sizeof (buf), shell_commands, rpath, (int) (mode &amp; 07777));</span>
+<span class='curline'><a href='../S/src--vfs--fish--fish.c.html#L1377'>g_snprintf</a>       1377 src/vfs/fish/fish.c         g_snprintf (buf, sizeof (buf), shell_commands, rpath, sowner, sgroup);</span>
+<span class='curline'><a href='../S/src--vfs--fish--fish.c.html#L1442'>g_snprintf</a>       1442 src/vfs/fish/fish.c     g_snprintf (utcatime, sizeof (utcatime), "%04d%02d%02d%02d%02d.%02d",</span>
+<span class='curline'><a href='../S/src--vfs--fish--fish.c.html#L1445'>g_snprintf</a>       1445 src/vfs/fish/fish.c     g_snprintf (utcatime_w_nsec, sizeof (utcatime_w_nsec), "%04d-%02d-%02d %02d:%02d:%02d.%09ld",</span>
+<span class='curline'><a href='../S/src--vfs--fish--fish.c.html#L1451'>g_snprintf</a>       1451 src/vfs/fish/fish.c     g_snprintf (utcmtime, sizeof (utcmtime), "%04d%02d%02d%02d%02d.%02d",</span>
+<span class='curline'><a href='../S/src--vfs--fish--fish.c.html#L1454'>g_snprintf</a>       1454 src/vfs/fish/fish.c     g_snprintf (utcmtime_w_nsec, sizeof (utcmtime_w_nsec), "%04d-%02d-%02d %02d:%02d:%02d.%09ld",</span>
+<span class='curline'><a href='../S/src--vfs--fish--fish.c.html#L1495'>g_snprintf</a>       1495 src/vfs/fish/fish.c     g_snprintf (buf, sizeof (buf), shell_commands, rpath);</span>
+<span class='curline'><a href='../S/src--vfs--fish--fish.c.html#L1522'>g_snprintf</a>       1522 src/vfs/fish/fish.c     g_snprintf (buf, sizeof (buf), shell_commands, rpath);</span>
+<span class='curline'><a href='../S/src--vfs--fish--fish.c.html#L1553'>g_snprintf</a>       1553 src/vfs/fish/fish.c     g_snprintf (buf, sizeof (buf), shell_commands, rpath);</span>
+<span class='curline'><a href='../S/src--vfs--fish--fish.c.html#L1591'>g_snprintf</a>       1591 src/vfs/fish/fish.c     g_snprintf (buf, sizeof (buf), shell_commands, rpath);</span>
+<span class='curline'><a href='../S/src--vfs--fish--fish.c.html#L1679'>g_snprintf</a>       1679 src/vfs/fish/fish.c                 g_snprintf (gbuf, sizeof (gbuf), ":%d", super-&gt;path_element-&gt;port);</span>
+<span class='curline'><a href='../S/src--vfs--ftpfs--ftpfs.c.html#L850'>g_snprintf</a>        850 src/vfs/ftpfs/ftpfs.c     g_snprintf (port, sizeof (port), "%hu", (unsigned short) tmp_port);</span>
+<span class='curline'><a href='../S/src--vfs--ftpfs--ftpfs.c.html#L2090'>g_snprintf</a>       2090 src/vfs/ftpfs/ftpfs.c     g_snprintf (buf, sizeof (buf), "SITE CHMOD %4.4o /%%s", (unsigned int) (mode &amp; 07777));</span>
+<span class='curline'><a href='../S/src--vfs--undelfs--undelfs.c.html#L413'>g_snprintf</a>        413 src/vfs/undelfs/undelfs.c         g_snprintf (dirent_dest, MC_MAXPATHLEN, "%ld:%d",</span>
+<span class='curline'><a href='../S/src--viewer--display.c.html#L400'>g_snprintf</a>        400 src/viewer/display.c             g_snprintf (r_buff, sizeof (r_buff), "%" PRIuMAX, (uintmax_t) cl);</span>
+<span class='curline'><a href='../S/src--viewer--hex.c.html#L161'>g_snprintf</a>        161 src/viewer/hex.c             g_snprintf (hex_buff, sizeof (hex_buff), "%08" PRIXMAX " ", (uintmax_t) from);</span>
+<span class='curline'><a href='../S/src--viewer--mcviewer.c.html#L322'>g_snprintf</a>        322 src/viewer/mcviewer.c             g_snprintf (tmp, sizeof (tmp), _("Cannot open \"%s\"\n%s"),</span>
+<span class='curline'><a href='../S/src--viewer--mcviewer.c.html#L337'>g_snprintf</a>        337 src/viewer/mcviewer.c             g_snprintf (tmp, sizeof (tmp), _("Cannot stat \"%s\"\n%s"),</span>
+<span class='curline'><a href='../S/src--viewer--mcviewer.c.html#L387'>g_snprintf</a>        387 src/viewer/mcviewer.c                         g_snprintf (tmp, sizeof (tmp), _("Cannot open \"%s\" in parse mode\n%s"),</span>
+</pre>
+</body>
+</html>

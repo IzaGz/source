@@ -1,0 +1,21 @@
+<!DOCTYPE html PUBLIC '-//W3C//DTD XHTML 1.0 Transitional//EN' 'http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd'>
+<html xmlns='http://www.w3.org/1999/xhtml'>
+<head>
+<title>external</title>
+<meta name='robots' content='noindex,nofollow' />
+<meta name='generator' content='GLOBAL-6.5.2' />
+<meta http-equiv='Content-Style-Type' content='text/css' />
+<link rel='stylesheet' type='text/css' href='../style.css' />
+</head>
+<body>
+<pre>
+<span class='curline'><a href='../S/src--filemanager--panelize.c.html#L310'>external</a>          310 src/filemanager/panelize.c     FILE *external;</span>
+<span class='curline'><a href='../S/src--filemanager--panelize.c.html#L313'>external</a>          313 src/filemanager/panelize.c     external = popen (command, "r");</span>
+<span class='curline'><a href='../S/src--filemanager--panelize.c.html#L314'>external</a>          314 src/filemanager/panelize.c     if (!external)</span>
+<span class='curline'><a href='../S/src--filemanager--panelize.c.html#L328'>external</a>          328 src/filemanager/panelize.c         clearerr (external);</span>
+<span class='curline'><a href='../S/src--filemanager--panelize.c.html#L329'>external</a>          329 src/filemanager/panelize.c         if (fgets (line, sizeof (line), external) == NULL)</span>
+<span class='curline'><a href='../S/src--filemanager--panelize.c.html#L331'>external</a>          331 src/filemanager/panelize.c             if (ferror (external) &amp;&amp; errno == EINTR)</span>
+<span class='curline'><a href='../S/src--filemanager--panelize.c.html#L374'>external</a>          374 src/filemanager/panelize.c     if (pclose (external) &lt; 0)</span>
+</pre>
+</body>
+</html>

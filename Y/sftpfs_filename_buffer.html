@@ -1,0 +1,21 @@
+<!DOCTYPE html PUBLIC '-//W3C//DTD XHTML 1.0 Transitional//EN' 'http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd'>
+<html xmlns='http://www.w3.org/1999/xhtml'>
+<head>
+<title>sftpfs_filename_buffer</title>
+<meta name='robots' content='noindex,nofollow' />
+<meta name='generator' content='GLOBAL-6.5.2' />
+<meta http-equiv='Content-Style-Type' content='text/css' />
+<link rel='stylesheet' type='text/css' href='../style.css' />
+</head>
+<body>
+<pre>
+<span class='curline'><a href='../S/src--vfs--sftpfs--internal.c.html#L37'>sftpfs_filename_buffer</a>   37 src/vfs/sftpfs/internal.c GString *sftpfs_filename_buffer = NULL;</span>
+<span class='curline'><a href='../S/src--vfs--sftpfs--internal.c.html#L85'>sftpfs_filename_buffer</a>   85 src/vfs/sftpfs/internal.c     g_string_printf (sftpfs_filename_buffer, "%c%s", PATH_SEP, file_name);</span>
+<span class='curline'><a href='../S/src--vfs--sftpfs--internal.c.html#L86'>sftpfs_filename_buffer</a>   86 src/vfs/sftpfs/internal.c     *length = sftpfs_filename_buffer-&gt;len;</span>
+<span class='curline'><a href='../S/src--vfs--sftpfs--internal.c.html#L87'>sftpfs_filename_buffer</a>   87 src/vfs/sftpfs/internal.c     return sftpfs_filename_buffer-&gt;str;</span>
+<span class='curline'><a href='../S/src--vfs--sftpfs--internal.h.html#L56'>sftpfs_filename_buffer</a>   56 src/vfs/sftpfs/internal.h extern GString *sftpfs_filename_buffer;</span>
+<span class='curline'><a href='../S/src--vfs--sftpfs--vfs_class.c.html#L63'>sftpfs_filename_buffer</a>   63 src/vfs/sftpfs/vfs_class.c     sftpfs_filename_buffer = g_string_new ("");</span>
+<span class='curline'><a href='../S/src--vfs--sftpfs--vfs_class.c.html#L81'>sftpfs_filename_buffer</a>   81 src/vfs/sftpfs/vfs_class.c     g_string_free (sftpfs_filename_buffer, TRUE);</span>
+</pre>
+</body>
+</html>

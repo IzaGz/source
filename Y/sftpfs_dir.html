@@ -1,0 +1,26 @@
+<!DOCTYPE html PUBLIC '-//W3C//DTD XHTML 1.0 Transitional//EN' 'http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd'>
+<html xmlns='http://www.w3.org/1999/xhtml'>
+<head>
+<title>sftpfs_dir</title>
+<meta name='robots' content='noindex,nofollow' />
+<meta name='generator' content='GLOBAL-6.5.2' />
+<meta http-equiv='Content-Style-Type' content='text/css' />
+<link rel='stylesheet' type='text/css' href='../style.css' />
+</head>
+<body>
+<pre>
+<span class='curline'><a href='../S/src--vfs--sftpfs--dir.c.html#L68'>sftpfs_dir</a>         68 src/vfs/sftpfs/dir.c     sftpfs_dir_data_t *sftpfs_dir;</span>
+<span class='curline'><a href='../S/src--vfs--sftpfs--dir.c.html#L108'>sftpfs_dir</a>        108 src/vfs/sftpfs/dir.c     sftpfs_dir = g_new0 (sftpfs_dir_data_t, 1);</span>
+<span class='curline'><a href='../S/src--vfs--sftpfs--dir.c.html#L109'>sftpfs_dir</a>        109 src/vfs/sftpfs/dir.c     sftpfs_dir-&gt;handle = handle;</span>
+<span class='curline'><a href='../S/src--vfs--sftpfs--dir.c.html#L110'>sftpfs_dir</a>        110 src/vfs/sftpfs/dir.c     sftpfs_dir-&gt;super_data = super_data;</span>
+<span class='curline'><a href='../S/src--vfs--sftpfs--dir.c.html#L112'>sftpfs_dir</a>        112 src/vfs/sftpfs/dir.c     return (void *) sftpfs_dir;</span>
+<span class='curline'><a href='../S/src--vfs--sftpfs--dir.c.html#L129'>sftpfs_dir</a>        129 src/vfs/sftpfs/dir.c     sftpfs_dir_data_t *sftpfs_dir = (sftpfs_dir_data_t *) data;</span>
+<span class='curline'><a href='../S/src--vfs--sftpfs--dir.c.html#L137'>sftpfs_dir</a>        137 src/vfs/sftpfs/dir.c         rc = libssh2_sftp_readdir (sftpfs_dir-&gt;handle, mem, sizeof (mem), &amp;attrs);</span>
+<span class='curline'><a href='../S/src--vfs--sftpfs--dir.c.html#L143'>sftpfs_dir</a>        143 src/vfs/sftpfs/dir.c             sftpfs_ssherror_to_gliberror (sftpfs_dir-&gt;super_data, rc, mcerror);</span>
+<span class='curline'><a href='../S/src--vfs--sftpfs--dir.c.html#L147'>sftpfs_dir</a>        147 src/vfs/sftpfs/dir.c         sftpfs_waitsocket (sftpfs_dir-&gt;super_data, mcerror);</span>
+<span class='curline'><a href='../S/src--vfs--sftpfs--dir.c.html#L172'>sftpfs_dir</a>        172 src/vfs/sftpfs/dir.c     sftpfs_dir_data_t *sftpfs_dir = (sftpfs_dir_data_t *) data;</span>
+<span class='curline'><a href='../S/src--vfs--sftpfs--dir.c.html#L176'>sftpfs_dir</a>        176 src/vfs/sftpfs/dir.c     rc = libssh2_sftp_closedir (sftpfs_dir-&gt;handle);</span>
+<span class='curline'><a href='../S/src--vfs--sftpfs--dir.c.html#L177'>sftpfs_dir</a>        177 src/vfs/sftpfs/dir.c     g_free (sftpfs_dir);</span>
+</pre>
+</body>
+</html>

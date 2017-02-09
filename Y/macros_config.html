@@ -1,0 +1,33 @@
+<!DOCTYPE html PUBLIC '-//W3C//DTD XHTML 1.0 Transitional//EN' 'http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd'>
+<html xmlns='http://www.w3.org/1999/xhtml'>
+<head>
+<title>macros_config</title>
+<meta name='robots' content='noindex,nofollow' />
+<meta name='generator' content='GLOBAL-6.5.2' />
+<meta http-equiv='Content-Style-Type' content='text/css' />
+<link rel='stylesheet' type='text/css' href='../style.css' />
+</head>
+<body>
+<pre>
+<span class='curline'><a href='../S/src--editor--editcmd.c.html#L1441'>macros_config</a>    1441 src/editor/editcmd.c     mc_config_t *macros_config = NULL;</span>
+<span class='curline'><a href='../S/src--editor--editcmd.c.html#L1459'>macros_config</a>    1459 src/editor/editcmd.c     macros_config = mc_config_init (macros_fname, FALSE);</span>
+<span class='curline'><a href='../S/src--editor--editcmd.c.html#L1462'>macros_config</a>    1462 src/editor/editcmd.c     if (macros_config == NULL)</span>
+<span class='curline'><a href='../S/src--editor--editcmd.c.html#L1466'>macros_config</a>    1466 src/editor/editcmd.c     while (mc_config_del_key (macros_config, section_name, skeyname))</span>
+<span class='curline'><a href='../S/src--editor--editcmd.c.html#L1469'>macros_config</a>    1469 src/editor/editcmd.c     mc_config_save_file (macros_config, NULL);</span>
+<span class='curline'><a href='../S/src--editor--editcmd.c.html#L1470'>macros_config</a>    1470 src/editor/editcmd.c     mc_config_deinit (macros_config);</span>
+<span class='curline'><a href='../S/src--editor--editcmd.c.html#L1853'>macros_config</a>    1853 src/editor/editcmd.c     mc_config_t *macros_config = NULL;</span>
+<span class='curline'><a href='../S/src--editor--editcmd.c.html#L1876'>macros_config</a>    1876 src/editor/editcmd.c     macros_config = mc_config_init (macros_fname, FALSE);</span>
+<span class='curline'><a href='../S/src--editor--editcmd.c.html#L1879'>macros_config</a>    1879 src/editor/editcmd.c     if (macros_config == NULL)</span>
+<span class='curline'><a href='../S/src--editor--editcmd.c.html#L1912'>macros_config</a>    1912 src/editor/editcmd.c         mc_config_set_string (macros_config, section_name, skeyname, marcros_string-&gt;str);</span>
+<span class='curline'><a href='../S/src--editor--editcmd.c.html#L1915'>macros_config</a>    1915 src/editor/editcmd.c         mc_config_del_key (macros_config, section_name, skeyname);</span>
+<span class='curline'><a href='../S/src--editor--editcmd.c.html#L1921'>macros_config</a>    1921 src/editor/editcmd.c     mc_config_save_file (macros_config, NULL);</span>
+<span class='curline'><a href='../S/src--editor--editcmd.c.html#L1922'>macros_config</a>    1922 src/editor/editcmd.c     mc_config_deinit (macros_config);</span>
+<span class='curline'><a href='../S/src--editor--editcmd.c.html#L1970'>macros_config</a>    1970 src/editor/editcmd.c     mc_config_t *macros_config = NULL;</span>
+<span class='curline'><a href='../S/src--editor--editcmd.c.html#L1982'>macros_config</a>    1982 src/editor/editcmd.c     macros_config = mc_config_init (macros_fname, TRUE);</span>
+<span class='curline'><a href='../S/src--editor--editcmd.c.html#L1985'>macros_config</a>    1985 src/editor/editcmd.c     if (macros_config == NULL)</span>
+<span class='curline'><a href='../S/src--editor--editcmd.c.html#L1988'>macros_config</a>    1988 src/editor/editcmd.c     keys = mc_config_get_keys (macros_config, section_name, NULL);</span>
+<span class='curline'><a href='../S/src--editor--editcmd.c.html#L1998'>macros_config</a>    1998 src/editor/editcmd.c         values = mc_config_get_string_list (macros_config, section_name, *profile_keys, NULL);</span>
+<span class='curline'><a href='../S/src--editor--editcmd.c.html#L2047'>macros_config</a>    2047 src/editor/editcmd.c     mc_config_deinit (macros_config);</span>
+</pre>
+</body>
+</html>

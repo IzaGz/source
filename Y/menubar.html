@@ -1,0 +1,195 @@
+<!DOCTYPE html PUBLIC '-//W3C//DTD XHTML 1.0 Transitional//EN' 'http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd'>
+<html xmlns='http://www.w3.org/1999/xhtml'>
+<head>
+<title>menubar</title>
+<meta name='robots' content='noindex,nofollow' />
+<meta name='generator' content='GLOBAL-6.5.2' />
+<meta http-equiv='Content-Style-Type' content='text/css' />
+<link rel='stylesheet' type='text/css' href='../style.css' />
+</head>
+<body>
+<pre>
+<span class='curline'><a href='../S/lib--widget--menu.c.html#L119'>menubar</a>           119 lib/widget/menu.c menubar_paint_idx (WMenuBar * menubar, unsigned int idx, int color)</span>
+<span class='curline'><a href='../S/lib--widget--menu.c.html#L121'>menubar</a>           121 lib/widget/menu.c     Widget *w = WIDGET (menubar);</span>
+<span class='curline'><a href='../S/lib--widget--menu.c.html#L122'>menubar</a>           122 lib/widget/menu.c     const menu_t *menu = MENU (g_list_nth_data (menubar-&gt;menu, menubar-&gt;selected));</span>
+<span class='curline'><a href='../S/lib--widget--menu.c.html#L177'>menubar</a>           177 lib/widget/menu.c menubar_draw_drop (WMenuBar * menubar)</span>
+<span class='curline'><a href='../S/lib--widget--menu.c.html#L179'>menubar</a>           179 lib/widget/menu.c     Widget *w = WIDGET (menubar);</span>
+<span class='curline'><a href='../S/lib--widget--menu.c.html#L180'>menubar</a>           180 lib/widget/menu.c     const menu_t *menu = MENU (g_list_nth_data (menubar-&gt;menu, menubar-&gt;selected));</span>
+<span class='curline'><a href='../S/lib--widget--menu.c.html#L192'>menubar</a>           192 lib/widget/menu.c         menubar_paint_idx (menubar, i,</span>
+<span class='curline'><a href='../S/lib--widget--menu.c.html#L199'>menubar</a>           199 lib/widget/menu.c menubar_set_color (WMenuBar * menubar, gboolean current, gboolean hotkey)</span>
+<span class='curline'><a href='../S/lib--widget--menu.c.html#L201'>menubar</a>           201 lib/widget/menu.c     if (!widget_get_state (WIDGET (menubar), WST_FOCUSED))</span>
+<span class='curline'><a href='../S/lib--widget--menu.c.html#L212'>menubar</a>           212 lib/widget/menu.c menubar_draw (WMenuBar * menubar)</span>
+<span class='curline'><a href='../S/lib--widget--menu.c.html#L214'>menubar</a>           214 lib/widget/menu.c     Widget *w = WIDGET (menubar);</span>
+<span class='curline'><a href='../S/lib--widget--menu.c.html#L222'>menubar</a>           222 lib/widget/menu.c     for (i = menubar-&gt;menu; i != NULL; i = g_list_next (i))</span>
+<span class='curline'><a href='../S/lib--widget--menu.c.html#L225'>menubar</a>           225 lib/widget/menu.c         gboolean is_selected = (menubar-&gt;selected == (gsize) g_list_position (menubar-&gt;menu, i));</span>
+<span class='curline'><a href='../S/lib--widget--menu.c.html#L227'>menubar</a>           227 lib/widget/menu.c         menubar_set_color (menubar, is_selected, FALSE);</span>
+<span class='curline'><a href='../S/lib--widget--menu.c.html#L235'>menubar</a>           235 lib/widget/menu.c             menubar_set_color (menubar, is_selected, TRUE);</span>
+<span class='curline'><a href='../S/lib--widget--menu.c.html#L237'>menubar</a>           237 lib/widget/menu.c             menubar_set_color (menubar, is_selected, FALSE);</span>
+<span class='curline'><a href='../S/lib--widget--menu.c.html#L246'>menubar</a>           246 lib/widget/menu.c     if (menubar-&gt;is_dropped)</span>
+<span class='curline'><a href='../S/lib--widget--menu.c.html#L247'>menubar</a>           247 lib/widget/menu.c         menubar_draw_drop (menubar);</span>
+<span class='curline'><a href='../S/lib--widget--menu.c.html#L249'>menubar</a>           249 lib/widget/menu.c         widget_move (w, 0, MENU (g_list_nth_data (menubar-&gt;menu, menubar-&gt;selected))-&gt;start_x);</span>
+<span class='curline'><a href='../S/lib--widget--menu.c.html#L255'>menubar</a>           255 lib/widget/menu.c menubar_remove (WMenuBar * menubar)</span>
+<span class='curline'><a href='../S/lib--widget--menu.c.html#L259'>menubar</a>           259 lib/widget/menu.c     if (!menubar-&gt;is_dropped)</span>
+<span class='curline'><a href='../S/lib--widget--menu.c.html#L266'>menubar</a>           266 lib/widget/menu.c     h = WIDGET (menubar)-&gt;owner;</span>
+<span class='curline'><a href='../S/lib--widget--menu.c.html#L267'>menubar</a>           267 lib/widget/menu.c     h-&gt;current = g_list_find (h-&gt;widgets, dlg_find_by_id (h, menubar-&gt;previous_widget));</span>
+<span class='curline'><a href='../S/lib--widget--menu.c.html#L269'>menubar</a>           269 lib/widget/menu.c     menubar-&gt;is_dropped = FALSE;</span>
+<span class='curline'><a href='../S/lib--widget--menu.c.html#L271'>menubar</a>           271 lib/widget/menu.c     menubar-&gt;is_dropped = TRUE;</span>
+<span class='curline'><a href='../S/lib--widget--menu.c.html#L274'>menubar</a>           274 lib/widget/menu.c     h-&gt;current = g_list_find (h-&gt;widgets, menubar);</span>
+<span class='curline'><a href='../S/lib--widget--menu.c.html#L280'>menubar</a>           280 lib/widget/menu.c menubar_left (WMenuBar * menubar)</span>
+<span class='curline'><a href='../S/lib--widget--menu.c.html#L282'>menubar</a>           282 lib/widget/menu.c     menubar_remove (menubar);</span>
+<span class='curline'><a href='../S/lib--widget--menu.c.html#L283'>menubar</a>           283 lib/widget/menu.c     if (menubar-&gt;selected == 0)</span>
+<span class='curline'><a href='../S/lib--widget--menu.c.html#L284'>menubar</a>           284 lib/widget/menu.c         menubar-&gt;selected = g_list_length (menubar-&gt;menu) - 1;</span>
+<span class='curline'><a href='../S/lib--widget--menu.c.html#L286'>menubar</a>           286 lib/widget/menu.c         menubar-&gt;selected--;</span>
+<span class='curline'><a href='../S/lib--widget--menu.c.html#L287'>menubar</a>           287 lib/widget/menu.c     menubar_draw (menubar);</span>
+<span class='curline'><a href='../S/lib--widget--menu.c.html#L293'>menubar</a>           293 lib/widget/menu.c menubar_right (WMenuBar * menubar)</span>
+<span class='curline'><a href='../S/lib--widget--menu.c.html#L295'>menubar</a>           295 lib/widget/menu.c     menubar_remove (menubar);</span>
+<span class='curline'><a href='../S/lib--widget--menu.c.html#L296'>menubar</a>           296 lib/widget/menu.c     menubar-&gt;selected = (menubar-&gt;selected + 1) % g_list_length (menubar-&gt;menu);</span>
+<span class='curline'><a href='../S/lib--widget--menu.c.html#L297'>menubar</a>           297 lib/widget/menu.c     menubar_draw (menubar);</span>
+<span class='curline'><a href='../S/lib--widget--menu.c.html#L303'>menubar</a>           303 lib/widget/menu.c menubar_finish (WMenuBar * menubar)</span>
+<span class='curline'><a href='../S/lib--widget--menu.c.html#L305'>menubar</a>           305 lib/widget/menu.c     Widget *w = WIDGET (menubar);</span>
+<span class='curline'><a href='../S/lib--widget--menu.c.html#L308'>menubar</a>           308 lib/widget/menu.c     menubar-&gt;is_dropped = FALSE;</span>
+<span class='curline'><a href='../S/lib--widget--menu.c.html#L317'>menubar</a>           317 lib/widget/menu.c     dlg_select_by_id (w-&gt;owner, menubar-&gt;previous_widget);</span>
+<span class='curline'><a href='../S/lib--widget--menu.c.html#L324'>menubar</a>           324 lib/widget/menu.c menubar_drop (WMenuBar * menubar, unsigned int selected)</span>
+<span class='curline'><a href='../S/lib--widget--menu.c.html#L326'>menubar</a>           326 lib/widget/menu.c     menubar-&gt;is_dropped = TRUE;</span>
+<span class='curline'><a href='../S/lib--widget--menu.c.html#L327'>menubar</a>           327 lib/widget/menu.c     menubar-&gt;selected = selected;</span>
+<span class='curline'><a href='../S/lib--widget--menu.c.html#L328'>menubar</a>           328 lib/widget/menu.c     menubar_draw (menubar);</span>
+<span class='curline'><a href='../S/lib--widget--menu.c.html#L334'>menubar</a>           334 lib/widget/menu.c menubar_execute (WMenuBar * menubar)</span>
+<span class='curline'><a href='../S/lib--widget--menu.c.html#L336'>menubar</a>           336 lib/widget/menu.c     const menu_t *menu = MENU (g_list_nth_data (menubar-&gt;menu, menubar-&gt;selected));</span>
+<span class='curline'><a href='../S/lib--widget--menu.c.html#L341'>menubar</a>           341 lib/widget/menu.c         Widget *w = WIDGET (menubar);</span>
+<span class='curline'><a href='../S/lib--widget--menu.c.html#L343'>menubar</a>           343 lib/widget/menu.c         mc_global.widget.is_right = (menubar-&gt;selected != 0);</span>
+<span class='curline'><a href='../S/lib--widget--menu.c.html#L344'>menubar</a>           344 lib/widget/menu.c         menubar_finish (menubar);</span>
+<span class='curline'><a href='../S/lib--widget--menu.c.html#L353'>menubar</a>           353 lib/widget/menu.c menubar_down (WMenuBar * menubar)</span>
+<span class='curline'><a href='../S/lib--widget--menu.c.html#L355'>menubar</a>           355 lib/widget/menu.c     menu_t *menu = MENU (g_list_nth_data (menubar-&gt;menu, menubar-&gt;selected));</span>
+<span class='curline'><a href='../S/lib--widget--menu.c.html#L359'>menubar</a>           359 lib/widget/menu.c     menubar_paint_idx (menubar, menu-&gt;selected, MENU_ENTRY_COLOR);</span>
+<span class='curline'><a href='../S/lib--widget--menu.c.html#L368'>menubar</a>           368 lib/widget/menu.c     menubar_paint_idx (menubar, menu-&gt;selected, MENU_SELECTED_COLOR);</span>
+<span class='curline'><a href='../S/lib--widget--menu.c.html#L374'>menubar</a>           374 lib/widget/menu.c menubar_up (WMenuBar * menubar)</span>
+<span class='curline'><a href='../S/lib--widget--menu.c.html#L376'>menubar</a>           376 lib/widget/menu.c     menu_t *menu = MENU (g_list_nth_data (menubar-&gt;menu, menubar-&gt;selected));</span>
+<span class='curline'><a href='../S/lib--widget--menu.c.html#L380'>menubar</a>           380 lib/widget/menu.c     menubar_paint_idx (menubar, menu-&gt;selected, MENU_ENTRY_COLOR);</span>
+<span class='curline'><a href='../S/lib--widget--menu.c.html#L392'>menubar</a>           392 lib/widget/menu.c     menubar_paint_idx (menubar, menu-&gt;selected, MENU_SELECTED_COLOR);</span>
+<span class='curline'><a href='../S/lib--widget--menu.c.html#L398'>menubar</a>           398 lib/widget/menu.c menubar_first (WMenuBar * menubar)</span>
+<span class='curline'><a href='../S/lib--widget--menu.c.html#L400'>menubar</a>           400 lib/widget/menu.c     menu_t *menu = MENU (g_list_nth_data (menubar-&gt;menu, menubar-&gt;selected));</span>
+<span class='curline'><a href='../S/lib--widget--menu.c.html#L405'>menubar</a>           405 lib/widget/menu.c     menubar_paint_idx (menubar, menu-&gt;selected, MENU_ENTRY_COLOR);</span>
+<span class='curline'><a href='../S/lib--widget--menu.c.html#L421'>menubar</a>           421 lib/widget/menu.c     menubar_paint_idx (menubar, menu-&gt;selected, MENU_SELECTED_COLOR);</span>
+<span class='curline'><a href='../S/lib--widget--menu.c.html#L427'>menubar</a>           427 lib/widget/menu.c menubar_last (WMenuBar * menubar)</span>
+<span class='curline'><a href='../S/lib--widget--menu.c.html#L429'>menubar</a>           429 lib/widget/menu.c     menu_t *menu = MENU (g_list_nth_data (menubar-&gt;menu, menubar-&gt;selected));</span>
+<span class='curline'><a href='../S/lib--widget--menu.c.html#L436'>menubar</a>           436 lib/widget/menu.c     menubar_paint_idx (menubar, menu-&gt;selected, MENU_ENTRY_COLOR);</span>
+<span class='curline'><a href='../S/lib--widget--menu.c.html#L447'>menubar</a>           447 lib/widget/menu.c     menubar_paint_idx (menubar, menu-&gt;selected, MENU_SELECTED_COLOR);</span>
+<span class='curline'><a href='../S/lib--widget--menu.c.html#L453'>menubar</a>           453 lib/widget/menu.c menubar_handle_key (WMenuBar * menubar, int key)</span>
+<span class='curline'><a href='../S/lib--widget--menu.c.html#L461'>menubar</a>           461 lib/widget/menu.c         menubar_finish (menubar);</span>
+<span class='curline'><a href='../S/lib--widget--menu.c.html#L472'>menubar</a>           472 lib/widget/menu.c             if (menubar-&gt;is_dropped)</span>
+<span class='curline'><a href='../S/lib--widget--menu.c.html#L474'>menubar</a>           474 lib/widget/menu.c                     MENU (g_list_nth_data (menubar-&gt;menu, menubar-&gt;selected))-&gt;help_node;</span>
+<span class='curline'><a href='../S/lib--widget--menu.c.html#L479'>menubar</a>           479 lib/widget/menu.c             menubar_draw (menubar);</span>
+<span class='curline'><a href='../S/lib--widget--menu.c.html#L485'>menubar</a>           485 lib/widget/menu.c         menubar_left (menubar);</span>
+<span class='curline'><a href='../S/lib--widget--menu.c.html#L490'>menubar</a>           490 lib/widget/menu.c         menubar_right (menubar);</span>
+<span class='curline'><a href='../S/lib--widget--menu.c.html#L497'>menubar</a>           497 lib/widget/menu.c     if (!menubar-&gt;is_dropped)</span>
+<span class='curline'><a href='../S/lib--widget--menu.c.html#L502'>menubar</a>           502 lib/widget/menu.c         for (i = menubar-&gt;menu; i != NULL; i = g_list_next (i))</span>
+<span class='curline'><a href='../S/lib--widget--menu.c.html#L508'>menubar</a>           508 lib/widget/menu.c                 menubar_drop (menubar, g_list_position (menubar-&gt;menu, i));</span>
+<span class='curline'><a href='../S/lib--widget--menu.c.html#L515'>menubar</a>           515 lib/widget/menu.c             menubar_drop (menubar, menubar-&gt;selected);</span>
+<span class='curline'><a href='../S/lib--widget--menu.c.html#L521'>menubar</a>           521 lib/widget/menu.c         menu_t *menu = MENU (g_list_nth_data (menubar-&gt;menu, menubar-&gt;selected));</span>
+<span class='curline'><a href='../S/lib--widget--menu.c.html#L533'>menubar</a>           533 lib/widget/menu.c                 menubar_execute (menubar);</span>
+<span class='curline'><a href='../S/lib--widget--menu.c.html#L543'>menubar</a>           543 lib/widget/menu.c             menubar_execute (menubar);</span>
+<span class='curline'><a href='../S/lib--widget--menu.c.html#L548'>menubar</a>           548 lib/widget/menu.c             menubar_first (menubar);</span>
+<span class='curline'><a href='../S/lib--widget--menu.c.html#L553'>menubar</a>           553 lib/widget/menu.c             menubar_last (menubar);</span>
+<span class='curline'><a href='../S/lib--widget--menu.c.html#L558'>menubar</a>           558 lib/widget/menu.c             menubar_down (menubar);</span>
+<span class='curline'><a href='../S/lib--widget--menu.c.html#L563'>menubar</a>           563 lib/widget/menu.c             menubar_up (menubar);</span>
+<span class='curline'><a href='../S/lib--widget--menu.c.html#L577'>menubar</a>           577 lib/widget/menu.c menubar_refresh (WMenuBar * menubar)</span>
+<span class='curline'><a href='../S/lib--widget--menu.c.html#L579'>menubar</a>           579 lib/widget/menu.c     Widget *w = WIDGET (menubar);</span>
+<span class='curline'><a href='../S/lib--widget--menu.c.html#L595'>menubar</a>           595 lib/widget/menu.c menubar_free_menu (WMenuBar * menubar)</span>
+<span class='curline'><a href='../S/lib--widget--menu.c.html#L597'>menubar</a>           597 lib/widget/menu.c     if (menubar-&gt;menu != NULL)</span>
+<span class='curline'><a href='../S/lib--widget--menu.c.html#L598'>menubar</a>           598 lib/widget/menu.c         g_list_free_full (menubar-&gt;menu, (GDestroyNotify) destroy_menu);</span>
+<span class='curline'><a href='../S/lib--widget--menu.c.html#L606'>menubar</a>           606 lib/widget/menu.c     WMenuBar *menubar = MENUBAR (w);</span>
+<span class='curline'><a href='../S/lib--widget--menu.c.html#L612'>menubar</a>           612 lib/widget/menu.c         if (menubar_refresh (menubar))</span>
+<span class='curline'><a href='../S/lib--widget--menu.c.html#L614'>menubar</a>           614 lib/widget/menu.c             menubar_draw (menubar);</span>
+<span class='curline'><a href='../S/lib--widget--menu.c.html#L627'>menubar</a>           627 lib/widget/menu.c             menubar_handle_key (menubar, parm);</span>
+<span class='curline'><a href='../S/lib--widget--menu.c.html#L637'>menubar</a>           637 lib/widget/menu.c         if (menubar-&gt;is_visible || menubar_refresh (menubar))</span>
+<span class='curline'><a href='../S/lib--widget--menu.c.html#L638'>menubar</a>           638 lib/widget/menu.c             menubar_draw (menubar);</span>
+<span class='curline'><a href='../S/lib--widget--menu.c.html#L643'>menubar</a>           643 lib/widget/menu.c         menubar_refresh (menubar);</span>
+<span class='curline'><a href='../S/lib--widget--menu.c.html#L647'>menubar</a>           647 lib/widget/menu.c         menubar_free_menu (menubar);</span>
+<span class='curline'><a href='../S/lib--widget--menu.c.html#L658'>menubar</a>           658 lib/widget/menu.c menubar_get_menu_by_x_coord (const WMenuBar * menubar, int x)</span>
+<span class='curline'><a href='../S/lib--widget--menu.c.html#L663'>menubar</a>           663 lib/widget/menu.c     for (i = 0, menu = menubar-&gt;menu;</span>
+<span class='curline'><a href='../S/lib--widget--menu.c.html#L677'>menubar</a>           677 lib/widget/menu.c menubar_mouse_on_menu (const WMenuBar * menubar, int y, int x)</span>
+<span class='curline'><a href='../S/lib--widget--menu.c.html#L679'>menubar</a>           679 lib/widget/menu.c     Widget *w = WIDGET (menubar);</span>
+<span class='curline'><a href='../S/lib--widget--menu.c.html#L683'>menubar</a>           683 lib/widget/menu.c     if (!menubar-&gt;is_dropped)</span>
+<span class='curline'><a href='../S/lib--widget--menu.c.html#L686'>menubar</a>           686 lib/widget/menu.c     menu = MENU (g_list_nth_data (menubar-&gt;menu, menubar-&gt;selected));</span>
+<span class='curline'><a href='../S/lib--widget--menu.c.html#L703'>menubar</a>           703 lib/widget/menu.c menubar_change_selected_item (WMenuBar * menubar, int y)</span>
+<span class='curline'><a href='../S/lib--widget--menu.c.html#L709'>menubar</a>           709 lib/widget/menu.c     menu = MENU (g_list_nth_data (menubar-&gt;menu, menubar-&gt;selected));</span>
+<span class='curline'><a href='../S/lib--widget--menu.c.html#L714'>menubar</a>           714 lib/widget/menu.c         menubar_paint_idx (menubar, menu-&gt;selected, MENU_ENTRY_COLOR);</span>
+<span class='curline'><a href='../S/lib--widget--menu.c.html#L716'>menubar</a>           716 lib/widget/menu.c         menubar_paint_idx (menubar, menu-&gt;selected, MENU_SELECTED_COLOR);</span>
+<span class='curline'><a href='../S/lib--widget--menu.c.html#L727'>menubar</a>           727 lib/widget/menu.c     WMenuBar *menubar = MENUBAR (w);</span>
+<span class='curline'><a href='../S/lib--widget--menu.c.html#L730'>menubar</a>           730 lib/widget/menu.c     mouse_on_drop = menubar_mouse_on_menu (menubar, event-&gt;y, event-&gt;x);</span>
+<span class='curline'><a href='../S/lib--widget--menu.c.html#L742'>menubar</a>           742 lib/widget/menu.c             selected = menubar_get_menu_by_x_coord (menubar, event-&gt;x);</span>
+<span class='curline'><a href='../S/lib--widget--menu.c.html#L743'>menubar</a>           743 lib/widget/menu.c             menubar_activate (menubar, TRUE, selected);</span>
+<span class='curline'><a href='../S/lib--widget--menu.c.html#L744'>menubar</a>           744 lib/widget/menu.c             menubar_remove (menubar);   /* if already shown */</span>
+<span class='curline'><a href='../S/lib--widget--menu.c.html#L745'>menubar</a>           745 lib/widget/menu.c             menubar_drop (menubar, selected);</span>
+<span class='curline'><a href='../S/lib--widget--menu.c.html#L748'>menubar</a>           748 lib/widget/menu.c             menubar_change_selected_item (menubar, event-&gt;y);</span>
+<span class='curline'><a href='../S/lib--widget--menu.c.html#L752'>menubar</a>           752 lib/widget/menu.c             menubar_finish (menubar);</span>
+<span class='curline'><a href='../S/lib--widget--menu.c.html#L772'>menubar</a>           772 lib/widget/menu.c             menubar_execute (menubar);</span>
+<span class='curline'><a href='../S/lib--widget--menu.c.html#L779'>menubar</a>           779 lib/widget/menu.c         if ((event-&gt;buttons &amp; GPM_B_MIDDLE) != 0 &amp;&amp; event-&gt;y &gt; 0 &amp;&amp; menubar-&gt;is_dropped)</span>
+<span class='curline'><a href='../S/lib--widget--menu.c.html#L782'>menubar</a>           782 lib/widget/menu.c             menubar_execute (menubar);</span>
+<span class='curline'><a href='../S/lib--widget--menu.c.html#L785'>menubar</a>           785 lib/widget/menu.c             menubar_execute (menubar);</span>
+<span class='curline'><a href='../S/lib--widget--menu.c.html#L788'>menubar</a>           788 lib/widget/menu.c             menubar_finish (menubar);</span>
+<span class='curline'><a href='../S/lib--widget--menu.c.html#L794'>menubar</a>           794 lib/widget/menu.c             menubar_remove (menubar);</span>
+<span class='curline'><a href='../S/lib--widget--menu.c.html#L795'>menubar</a>           795 lib/widget/menu.c             menubar_drop (menubar, menubar_get_menu_by_x_coord (menubar, event-&gt;x));</span>
+<span class='curline'><a href='../S/lib--widget--menu.c.html#L798'>menubar</a>           798 lib/widget/menu.c             menubar_change_selected_item (menubar, event-&gt;y);</span>
+<span class='curline'><a href='../S/lib--widget--menu.c.html#L813'>menubar</a>           813 lib/widget/menu.c                     menubar_left (menubar);</span>
+<span class='curline'><a href='../S/lib--widget--menu.c.html#L815'>menubar</a>           815 lib/widget/menu.c                     menubar_right (menubar);</span>
+<span class='curline'><a href='../S/lib--widget--menu.c.html#L821'>menubar</a>           821 lib/widget/menu.c                     menubar_up (menubar);</span>
+<span class='curline'><a href='../S/lib--widget--menu.c.html#L823'>menubar</a>           823 lib/widget/menu.c                     menubar_down (menubar);</span>
+<span class='curline'><a href='../S/lib--widget--menu.c.html#L909'>menubar</a>           909 lib/widget/menu.c     WMenuBar *menubar;</span>
+<span class='curline'><a href='../S/lib--widget--menu.c.html#L912'>menubar</a>           912 lib/widget/menu.c     menubar = g_new0 (WMenuBar, 1);</span>
+<span class='curline'><a href='../S/lib--widget--menu.c.html#L913'>menubar</a>           913 lib/widget/menu.c     w = WIDGET (menubar);</span>
+<span class='curline'><a href='../S/lib--widget--menu.c.html#L918'>menubar</a>           918 lib/widget/menu.c     menubar-&gt;is_visible = visible;</span>
+<span class='curline'><a href='../S/lib--widget--menu.c.html#L919'>menubar</a>           919 lib/widget/menu.c     menubar_set_menu (menubar, menu);</span>
+<span class='curline'><a href='../S/lib--widget--menu.c.html#L921'>menubar</a>           921 lib/widget/menu.c     return menubar;</span>
+<span class='curline'><a href='../S/lib--widget--menu.c.html#L927'>menubar</a>           927 lib/widget/menu.c menubar_set_menu (WMenuBar * menubar, GList * menu)</span>
+<span class='curline'><a href='../S/lib--widget--menu.c.html#L930'>menubar</a>           930 lib/widget/menu.c     menubar_free_menu (menubar);</span>
+<span class='curline'><a href='../S/lib--widget--menu.c.html#L932'>menubar</a>           932 lib/widget/menu.c     menubar-&gt;is_dropped = FALSE;</span>
+<span class='curline'><a href='../S/lib--widget--menu.c.html#L933'>menubar</a>           933 lib/widget/menu.c     menubar-&gt;menu = menu;</span>
+<span class='curline'><a href='../S/lib--widget--menu.c.html#L934'>menubar</a>           934 lib/widget/menu.c     menubar-&gt;selected = 0;</span>
+<span class='curline'><a href='../S/lib--widget--menu.c.html#L935'>menubar</a>           935 lib/widget/menu.c     menubar_arrange (menubar);</span>
+<span class='curline'><a href='../S/lib--widget--menu.c.html#L936'>menubar</a>           936 lib/widget/menu.c     widget_set_state (WIDGET (menubar), WST_FOCUSED, FALSE);</span>
+<span class='curline'><a href='../S/lib--widget--menu.c.html#L942'>menubar</a>           942 lib/widget/menu.c menubar_add_menu (WMenuBar * menubar, menu_t * menu)</span>
+<span class='curline'><a href='../S/lib--widget--menu.c.html#L946'>menubar</a>           946 lib/widget/menu.c         menu_arrange (menu, WIDGET (menubar)-&gt;owner-&gt;get_shortcut);</span>
+<span class='curline'><a href='../S/lib--widget--menu.c.html#L947'>menubar</a>           947 lib/widget/menu.c         menubar-&gt;menu = g_list_append (menubar-&gt;menu, menu);</span>
+<span class='curline'><a href='../S/lib--widget--menu.c.html#L950'>menubar</a>           950 lib/widget/menu.c     menubar_arrange (menubar);</span>
+<span class='curline'><a href='../S/lib--widget--menu.c.html#L960'>menubar</a>           960 lib/widget/menu.c menubar_arrange (WMenuBar * menubar)</span>
+<span class='curline'><a href='../S/lib--widget--menu.c.html#L966'>menubar</a>           966 lib/widget/menu.c     if (menubar-&gt;menu == NULL)</span>
+<span class='curline'><a href='../S/lib--widget--menu.c.html#L969'>menubar</a>           969 lib/widget/menu.c     gap = WIDGET (menubar)-&gt;cols - 2;</span>
+<span class='curline'><a href='../S/lib--widget--menu.c.html#L972'>menubar</a>           972 lib/widget/menu.c     for (i = menubar-&gt;menu; i != NULL; i = g_list_next (i))</span>
+<span class='curline'><a href='../S/lib--widget--menu.c.html#L981'>menubar</a>           981 lib/widget/menu.c     if (g_list_next (menubar-&gt;menu) == NULL)</span>
+<span class='curline'><a href='../S/lib--widget--menu.c.html#L984'>menubar</a>           984 lib/widget/menu.c         gap /= (g_list_length (menubar-&gt;menu) - 1);</span>
+<span class='curline'><a href='../S/lib--widget--menu.c.html#L995'>menubar</a>           995 lib/widget/menu.c     for (i = menubar-&gt;menu; i != NULL; i = g_list_next (i))</span>
+<span class='curline'><a href='../S/lib--widget--menu.c.html#L1024'>menubar</a>          1024 lib/widget/menu.c menubar_activate (WMenuBar * menubar, gboolean dropped, int which)</span>
+<span class='curline'><a href='../S/lib--widget--menu.c.html#L1026'>menubar</a>          1026 lib/widget/menu.c     Widget *w = WIDGET (menubar);</span>
+<span class='curline'><a href='../S/lib--widget--menu.c.html#L1033'>menubar</a>          1033 lib/widget/menu.c         menubar-&gt;is_dropped = dropped;</span>
+<span class='curline'><a href='../S/lib--widget--menu.c.html#L1035'>menubar</a>          1035 lib/widget/menu.c             menubar-&gt;selected = (guint) which;</span>
+<span class='curline'><a href='../S/lib--widget--menu.c.html#L1037'>menubar</a>          1037 lib/widget/menu.c         menubar-&gt;previous_widget = dlg_get_current_widget_id (w-&gt;owner);</span>
+<span class='curline'><a href='../S/lib--widget--menu.h.html#L52'>menubar</a>            52 lib/widget/menu.h void menubar_set_menu (WMenuBar * menubar, GList * menu);</span>
+<span class='curline'><a href='../S/lib--widget--menu.h.html#L53'>menubar</a>            53 lib/widget/menu.h void menubar_add_menu (WMenuBar * menubar, menu_t * menu);</span>
+<span class='curline'><a href='../S/lib--widget--menu.h.html#L54'>menubar</a>            54 lib/widget/menu.h void menubar_arrange (WMenuBar * menubar);</span>
+<span class='curline'><a href='../S/lib--widget--menu.h.html#L58'>menubar</a>            58 lib/widget/menu.h void menubar_activate (WMenuBar * menubar, gboolean dropped, int which);</span>
+<span class='curline'><a href='../S/lib--widget--menu.h.html#L63'>menubar</a>            63 lib/widget/menu.h menubar_set_visible (WMenuBar * menubar, gboolean visible)</span>
+<span class='curline'><a href='../S/lib--widget--menu.h.html#L65'>menubar</a>            65 lib/widget/menu.h     menubar-&gt;is_visible = visible;</span>
+<span class='curline'><a href='../S/src--editor--edit-impl.h.html#L146'>menubar</a>           146 src/editor/edit-impl.h void edit_init_menu (WMenuBar * menubar);</span>
+<span class='curline'><a href='../S/src--editor--editmenu.c.html#L268'>menubar</a>           268 src/editor/editmenu.c     WMenuBar *menubar;</span>
+<span class='curline'><a href='../S/src--editor--editmenu.c.html#L270'>menubar</a>           270 src/editor/editmenu.c     menubar = find_menubar (h);</span>
+<span class='curline'><a href='../S/src--editor--editmenu.c.html#L271'>menubar</a>           271 src/editor/editmenu.c     menubar_activate (menubar, drop_menus, which);</span>
+<span class='curline'><a href='../S/src--editor--editmenu.c.html#L279'>menubar</a>           279 src/editor/editmenu.c edit_init_menu (WMenuBar * menubar)</span>
+<span class='curline'><a href='../S/src--editor--editmenu.c.html#L281'>menubar</a>           281 src/editor/editmenu.c     menubar_add_menu (menubar,</span>
+<span class='curline'><a href='../S/src--editor--editmenu.c.html#L283'>menubar</a>           283 src/editor/editmenu.c     menubar_add_menu (menubar,</span>
+<span class='curline'><a href='../S/src--editor--editmenu.c.html#L285'>menubar</a>           285 src/editor/editmenu.c     menubar_add_menu (menubar,</span>
+<span class='curline'><a href='../S/src--editor--editmenu.c.html#L288'>menubar</a>           288 src/editor/editmenu.c     menubar_add_menu (menubar,</span>
+<span class='curline'><a href='../S/src--editor--editmenu.c.html#L291'>menubar</a>           291 src/editor/editmenu.c     menubar_add_menu (menubar,</span>
+<span class='curline'><a href='../S/src--editor--editmenu.c.html#L293'>menubar</a>           293 src/editor/editmenu.c     menubar_add_menu (menubar,</span>
+<span class='curline'><a href='../S/src--editor--editmenu.c.html#L295'>menubar</a>           295 src/editor/editmenu.c     menubar_add_menu (menubar,</span>
+<span class='curline'><a href='../S/src--editor--editwidget.c.html#L757'>menubar</a>           757 src/editor/editwidget.c     WMenuBar *menubar;</span>
+<span class='curline'><a href='../S/src--editor--editwidget.c.html#L774'>menubar</a>           774 src/editor/editwidget.c         menubar = find_menubar (h);</span>
+<span class='curline'><a href='../S/src--editor--editwidget.c.html#L780'>menubar</a>           780 src/editor/editwidget.c         widget_set_size (WIDGET (menubar), w-&gt;y, w-&gt;x, 1, w-&gt;cols);</span>
+<span class='curline'><a href='../S/src--editor--editwidget.c.html#L781'>menubar</a>           781 src/editor/editwidget.c         menubar_arrange (menubar);</span>
+<span class='curline'><a href='../S/src--editor--editwidget.c.html#L1190'>menubar</a>          1190 src/editor/editwidget.c     WMenuBar *menubar;</span>
+<span class='curline'><a href='../S/src--editor--editwidget.c.html#L1220'>menubar</a>          1220 src/editor/editwidget.c     menubar = menubar_new (0, 0, COLS, NULL, TRUE);</span>
+<span class='curline'><a href='../S/src--editor--editwidget.c.html#L1221'>menubar</a>          1221 src/editor/editwidget.c     add_widget (edit_dlg, menubar);</span>
+<span class='curline'><a href='../S/src--editor--editwidget.c.html#L1222'>menubar</a>          1222 src/editor/editwidget.c     edit_init_menu (menubar);</span>
+</pre>
+</body>
+</html>

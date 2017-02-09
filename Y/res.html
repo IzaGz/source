@@ -1,0 +1,391 @@
+<!DOCTYPE html PUBLIC '-//W3C//DTD XHTML 1.0 Transitional//EN' 'http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd'>
+<html xmlns='http://www.w3.org/1999/xhtml'>
+<head>
+<title>res</title>
+<meta name='robots' content='noindex,nofollow' />
+<meta name='generator' content='GLOBAL-6.5.2' />
+<meta http-equiv='Content-Style-Type' content='text/css' />
+<link rel='stylesheet' type='text/css' href='../style.css' />
+</head>
+<body>
+<pre>
+<span class='curline'><a href='../S/lib--charsets.c.html#L472'>res</a>               472 lib/charsets.c     int res;</span>
+<span class='curline'><a href='../S/lib--charsets.c.html#L474'>res</a>               474 lib/charsets.c     res = g_unichar_to_utf8 (input_char, (char *) str);</span>
+<span class='curline'><a href='../S/lib--charsets.c.html#L475'>res</a>               475 lib/charsets.c     if (res == 0)</span>
+<span class='curline'><a href='../S/lib--charsets.c.html#L478'>res</a>               478 lib/charsets.c     str[res] = '\0';</span>
+<span class='curline'><a href='../S/lib--charsets.c.html#L512'>res</a>               512 lib/charsets.c             int res;</span>
+<span class='curline'><a href='../S/lib--charsets.c.html#L514'>res</a>               514 lib/charsets.c             res = g_utf8_get_char_validated ((char *) buf_ch, -1);</span>
+<span class='curline'><a href='../S/lib--charsets.c.html#L515'>res</a>               515 lib/charsets.c             ch = res &gt;= 0 ? res : buf_ch[0];</span>
+<span class='curline'><a href='../S/lib--charsets.c.html#L552'>res</a>               552 lib/charsets.c                 int res;</span>
+<span class='curline'><a href='../S/lib--charsets.c.html#L554'>res</a>               554 lib/charsets.c                 res = g_utf8_get_char_validated ((char *) buf_ch, -1);</span>
+<span class='curline'><a href='../S/lib--charsets.c.html#L555'>res</a>               555 lib/charsets.c                 ch = res &gt;= 0 ? res : buf_ch[0];</span>
+<span class='curline'><a href='../S/lib--keybind.c.html#L435'>res</a>               435 lib/keybind.c      name_keymap_t *res;</span>
+<span class='curline'><a href='../S/lib--keybind.c.html#L439'>res</a>               439 lib/keybind.c      res = bsearch (&amp;key, command_names, num_command_names,</span>
+<span class='curline'><a href='../S/lib--keybind.c.html#L442'>res</a>               442 lib/keybind.c      return (res != NULL) ? res-&gt;val : CK_IgnoreKey;</span>
+<span class='curline'><a href='../S/lib--search--glob.c.html#L195'>res</a>               195 lib/search/glob.c     GString *res = mc_search_regex_prepare_replace_str (lc_mc_search, repl);</span>
+<span class='curline'><a href='../S/lib--search--glob.c.html#L197'>res</a>               197 lib/search/glob.c     return res;</span>
+<span class='curline'><a href='../S/lib--skin--colors-old.c.html#L124'>res</a>               124 lib/skin/colors-old.c     mc_skin_colors_old_t *res;</span>
+<span class='curline'><a href='../S/lib--skin--colors-old.c.html#L129'>res</a>               129 lib/skin/colors-old.c     res = (mc_skin_colors_old_t *) bsearch (&amp;oc, old_colors, num_old_colors,</span>
+<span class='curline'><a href='../S/lib--skin--colors-old.c.html#L132'>res</a>               132 lib/skin/colors-old.c     if (res == NULL)</span>
+<span class='curline'><a href='../S/lib--skin--colors-old.c.html#L136'>res</a>               136 lib/skin/colors-old.c         *group = res-&gt;group;</span>
+<span class='curline'><a href='../S/lib--skin--colors-old.c.html#L138'>res</a>               138 lib/skin/colors-old.c         *key = res-&gt;key;</span>
+<span class='curline'><a href='../S/lib--tty--key.c.html#L1262'>res</a>              1262 lib/tty/key.c          const key_code_name_t **res;</span>
+<span class='curline'><a href='../S/lib--tty--key.c.html#L1272'>res</a>              1272 lib/tty/key.c          res = bsearch (&amp;keyp, key_conv_tab_sorted, key_conv_tab_size,</span>
+<span class='curline'><a href='../S/lib--tty--key.c.html#L1275'>res</a>              1275 lib/tty/key.c          if (res != NULL)</span>
+<span class='curline'><a href='../S/lib--tty--key.c.html#L1277'>res</a>              1277 lib/tty/key.c              *idx = (int) (res - key_conv_tab_sorted);</span>
+<span class='curline'><a href='../S/lib--tty--key.c.html#L1278'>res</a>              1278 lib/tty/key.c              return (*res)-&gt;code;</span>
+<span class='curline'><a href='../S/lib--tty--key.c.html#L1295'>res</a>              1295 lib/tty/key.c          const key_code_name_t **res;</span>
+<span class='curline'><a href='../S/lib--tty--key.c.html#L1299'>res</a>              1299 lib/tty/key.c          res = bsearch (&amp;keyp, key_conv_tab_sorted, key_conv_tab_size,</span>
+<span class='curline'><a href='../S/lib--tty--key.c.html#L1302'>res</a>              1302 lib/tty/key.c          if (res != NULL)</span>
+<span class='curline'><a href='../S/lib--tty--key.c.html#L1304'>res</a>              1304 lib/tty/key.c              *idx = (int) (res - key_conv_tab_sorted);</span>
+<span class='curline'><a href='../S/lib--tty--tty-ncurses.c.html#L125'>res</a>               125 lib/tty/tty-ncurses.c     int res;</span>
+<span class='curline'><a href='../S/lib--tty--tty-ncurses.c.html#L161'>res</a>               161 lib/tty/tty-ncurses.c     for (res = 0; lines_codes[res].line; res++)</span>
+<span class='curline'><a href='../S/lib--tty--tty-ncurses.c.html#L163'>res</a>               163 lib/tty/tty-ncurses.c         if (strcmp (ch, lines_codes[res].line) == 0)</span>
+<span class='curline'><a href='../S/lib--tty--tty-ncurses.c.html#L164'>res</a>               164 lib/tty/tty-ncurses.c             return lines_codes[res].line_code;</span>
+<span class='curline'><a href='../S/lib--tty--tty-ncurses.c.html#L168'>res</a>               168 lib/tty/tty-ncurses.c     res = g_utf8_get_char_validated (str2, -1);</span>
+<span class='curline'><a href='../S/lib--tty--tty-ncurses.c.html#L170'>res</a>               170 lib/tty/tty-ncurses.c     if (res &lt; 0)</span>
+<span class='curline'><a href='../S/lib--tty--tty-ncurses.c.html#L171'>res</a>               171 lib/tty/tty-ncurses.c         res = (unsigned char) str2[0];</span>
+<span class='curline'><a href='../S/lib--tty--tty-ncurses.c.html#L174'>res</a>               174 lib/tty/tty-ncurses.c     return res;</span>
+<span class='curline'><a href='../S/lib--tty--tty-ncurses.c.html#L569'>res</a>               569 lib/tty/tty-ncurses.c         int res;</span>
+<span class='curline'><a href='../S/lib--tty--tty-ncurses.c.html#L572'>res</a>               572 lib/tty/tty-ncurses.c         res = g_unichar_to_utf8 (c, (char *) str);</span>
+<span class='curline'><a href='../S/lib--tty--tty-ncurses.c.html#L573'>res</a>               573 lib/tty/tty-ncurses.c         if (res == 0)</span>
+<span class='curline'><a href='../S/lib--tty--tty-ncurses.c.html#L583'>res</a>               583 lib/tty/tty-ncurses.c             str[res] = '\0';</span>
+<span class='curline'><a href='../S/lib--tty--tty-slang.c.html#L225'>res</a>               225 lib/tty/tty-slang.c     int res;</span>
+<span class='curline'><a href='../S/lib--tty--tty-slang.c.html#L250'>res</a>               250 lib/tty/tty-slang.c     for (res = 0; lines_codes[res].line; res++)</span>
+<span class='curline'><a href='../S/lib--tty--tty-slang.c.html#L252'>res</a>               252 lib/tty/tty-slang.c         if (strcmp (str, lines_codes[res].line) == 0)</span>
+<span class='curline'><a href='../S/lib--tty--tty-slang.c.html#L253'>res</a>               253 lib/tty/tty-slang.c             return lines_codes[res].line_code;</span>
+<span class='curline'><a href='../S/lib--tty--tty-slang.c.html#L257'>res</a>               257 lib/tty/tty-slang.c     res = g_utf8_get_char_validated (str2, -1);</span>
+<span class='curline'><a href='../S/lib--tty--tty-slang.c.html#L259'>res</a>               259 lib/tty/tty-slang.c     if (res &lt; 0)</span>
+<span class='curline'><a href='../S/lib--tty--tty-slang.c.html#L260'>res</a>               260 lib/tty/tty-slang.c         res = (unsigned char) str2[0];</span>
+<span class='curline'><a href='../S/lib--tty--tty-slang.c.html#L263'>res</a>               263 lib/tty/tty-slang.c     return res;</span>
+<span class='curline'><a href='../S/lib--tty--tty-slang.c.html#L709'>res</a>               709 lib/tty/tty-slang.c         int res;</span>
+<span class='curline'><a href='../S/lib--tty--tty-slang.c.html#L711'>res</a>               711 lib/tty/tty-slang.c         res = g_unichar_to_utf8 (c, str);</span>
+<span class='curline'><a href='../S/lib--tty--tty-slang.c.html#L712'>res</a>               712 lib/tty/tty-slang.c         if (res == 0)</span>
+<span class='curline'><a href='../S/lib--tty--tty-slang.c.html#L719'>res</a>               719 lib/tty/tty-slang.c             str[res] = '\0';</span>
+<span class='curline'><a href='../S/lib--utilunix.c.html#L572'>res</a>               572 lib/utilunix.c     int res;</span>
+<span class='curline'><a href='../S/lib--utilunix.c.html#L601'>res</a>               601 lib/utilunix.c     res = select (maxfd + 1, &amp;fds, NULL, NULL, NULL);</span>
+<span class='curline'><a href='../S/lib--utilunix.c.html#L602'>res</a>               602 lib/utilunix.c     if (res &lt; 0 &amp;&amp; errno != EINTR)</span>
+<span class='curline'><a href='../S/lib--utilunix.c.html#L633'>res</a>               633 lib/utilunix.c     int res;</span>
+<span class='curline'><a href='../S/lib--utilunix.c.html#L636'>res</a>               636 lib/utilunix.c         res = close (p-&gt;out.fd);</span>
+<span class='curline'><a href='../S/lib--utilunix.c.html#L638'>res</a>               638 lib/utilunix.c         res = close (p-&gt;err.fd);</span>
+<span class='curline'><a href='../S/lib--utilunix.c.html#L644'>res</a>               644 lib/utilunix.c         res = waitpid (p-&gt;child_pid, &amp;status, 0);</span>
+<span class='curline'><a href='../S/lib--utilunix.c.html#L646'>res</a>               646 lib/utilunix.c     while (res &lt; 0 &amp;&amp; errno == EINTR);</span>
+<span class='curline'><a href='../S/lib--utilunix.c.html#L648'>res</a>               648 lib/utilunix.c     if (res &lt; 0)</span>
+<span class='curline'><a href='../S/lib--vfs--direntry.c.html#L114'>res</a>               114 lib/vfs/direntry.c     struct vfs_s_entry *res;</span>
+<span class='curline'><a href='../S/lib--vfs--direntry.c.html#L121'>res</a>               121 lib/vfs/direntry.c     res = vfs_s_generate_entry (me, path, dir, (flags &amp; FL_MKDIR) != 0 ? (0777 | S_IFDIR) : 0777);</span>
+<span class='curline'><a href='../S/lib--vfs--direntry.c.html#L122'>res</a>               122 lib/vfs/direntry.c     vfs_s_insert_entry (me, dir, res);</span>
+<span class='curline'><a href='../S/lib--vfs--direntry.c.html#L127'>res</a>               127 lib/vfs/direntry.c     return res;</span>
+<span class='curline'><a href='../S/lib--vfs--direntry.c.html#L631'>res</a>               631 lib/vfs/direntry.c     int res = 0;</span>
+<span class='curline'><a href='../S/lib--vfs--direntry.c.html#L644'>res</a>               644 lib/vfs/direntry.c         res = MEDATA-&gt;fh_close (me, fh);</span>
+<span class='curline'><a href='../S/lib--vfs--direntry.c.html#L649'>res</a>               649 lib/vfs/direntry.c             res = -1;</span>
+<span class='curline'><a href='../S/lib--vfs--direntry.c.html#L652'>res</a>               652 lib/vfs/direntry.c             res = MEDATA-&gt;file_store (me, fh, s, FH-&gt;ino-&gt;localname);</span>
+<span class='curline'><a href='../S/lib--vfs--direntry.c.html#L664'>res</a>               664 lib/vfs/direntry.c     return res;</span>
+<span class='curline'><a href='../S/lib--vfs--direntry.c.html#L1579'>res</a>              1579 lib/vfs/direntry.c     int res = 0;</span>
+<span class='curline'><a href='../S/lib--vfs--direntry.c.html#L1593'>res</a>              1593 lib/vfs/direntry.c             res = EINTR;</span>
+<span class='curline'><a href='../S/lib--vfs--direntry.c.html#L1604'>res</a>              1604 lib/vfs/direntry.c             res = 1;</span>
+<span class='curline'><a href='../S/lib--vfs--direntry.c.html#L1614'>res</a>              1614 lib/vfs/direntry.c     return res;</span>
+<span class='curline'><a href='../S/lib--widget--input.c.html#L297'>res</a>               297 lib/widget/input.c     int res;</span>
+<span class='curline'><a href='../S/lib--widget--input.c.html#L312'>res</a>               312 lib/widget/input.c     res = str_is_valid_char (in-&gt;charbuf, in-&gt;charpoint);</span>
+<span class='curline'><a href='../S/lib--widget--input.c.html#L313'>res</a>               313 lib/widget/input.c     if (res &lt; 0)</span>
+<span class='curline'><a href='../S/lib--widget--input.c.html#L315'>res</a>               315 lib/widget/input.c         if (res != -2)</span>
+<span class='curline'><a href='../S/lib--widget--input.c.html#L684'>res</a>               684 lib/widget/input.c     cb_ret_t res = MSG_HANDLED;</span>
+<span class='curline'><a href='../S/lib--widget--input.c.html#L810'>res</a>               810 lib/widget/input.c         res = MSG_NOT_HANDLED;</span>
+<span class='curline'><a href='../S/lib--widget--input.c.html#L828'>res</a>               828 lib/widget/input.c     return res;</span>
+<span class='curline'><a href='../S/lib--widget--quick.h.html#L41'>res</a>                41 lib/widget/quick.h #define QUICK_INPUT(txt, hname, res, id_, is_passwd_, strip_passwd_, completion_flags_) \</span>
+<span class='curline'><a href='../S/lib--widget--quick.h.html#L57'>res</a>                57 lib/widget/quick.h             .result = res                                                       \</span>
+<span class='curline'><a href='../S/lib--widget--quick.h.html#L62'>res</a>                62 lib/widget/quick.h #define QUICK_LABELED_INPUT(label_, label_loc, txt, hname, res, id_, is_passwd_, strip_passwd_, completion_flags_) \</span>
+<span class='curline'><a href='../S/lib--widget--quick.h.html#L78'>res</a>                78 lib/widget/quick.h             .result = res                                                       \</span>
+<span class='curline'><a href='../S/src--diffviewer--ydiff.c.html#L1981'>res</a>              1981 src/diffviewer/ydiff.c     int res = 0;</span>
+<span class='curline'><a href='../S/src--diffviewer--ydiff.c.html#L1995'>res</a>              1995 src/diffviewer/ydiff.c             res = DIFF_DEL;</span>
+<span class='curline'><a href='../S/src--diffviewer--ydiff.c.html#L1998'>res</a>              1998 src/diffviewer/ydiff.c             res = DIFF_ADD;</span>
+<span class='curline'><a href='../S/src--diffviewer--ydiff.c.html#L2001'>res</a>              2001 src/diffviewer/ydiff.c             res = DIFF_CHG;</span>
+<span class='curline'><a href='../S/src--diffviewer--ydiff.c.html#L2027'>res</a>              2027 src/diffviewer/ydiff.c     return res;</span>
+<span class='curline'><a href='../S/src--diffviewer--ydiff.c.html#L2246'>res</a>              2246 src/diffviewer/ydiff.c             int res;</span>
+<span class='curline'><a href='../S/src--diffviewer--ydiff.c.html#L2248'>res</a>              2248 src/diffviewer/ydiff.c             res = rewrite_backup_content (merge_file_name_vpath, dview-&gt;file[n_merge]);</span>
+<span class='curline'><a href='../S/src--diffviewer--ydiff.c.html#L2249'>res</a>              2249 src/diffviewer/ydiff.c             (void) res;</span>
+<span class='curline'><a href='../S/src--diffviewer--ydiff.c.html#L2987'>res</a>              2987 src/diffviewer/ydiff.c     gboolean res = TRUE;</span>
+<span class='curline'><a href='../S/src--diffviewer--ydiff.c.html#L2991'>res</a>              2991 src/diffviewer/ydiff.c         res = mc_util_unlink_backup_if_possible (dview-&gt;file[DIFF_LEFT], "~~~");</span>
+<span class='curline'><a href='../S/src--diffviewer--ydiff.c.html#L2992'>res</a>              2992 src/diffviewer/ydiff.c         dview-&gt;merged[DIFF_LEFT] = !res;</span>
+<span class='curline'><a href='../S/src--diffviewer--ydiff.c.html#L2996'>res</a>              2996 src/diffviewer/ydiff.c         res = mc_util_unlink_backup_if_possible (dview-&gt;file[DIFF_RIGHT], "~~~");</span>
+<span class='curline'><a href='../S/src--diffviewer--ydiff.c.html#L2997'>res</a>              2997 src/diffviewer/ydiff.c         dview-&gt;merged[DIFF_RIGHT] = !res;</span>
+<span class='curline'><a href='../S/src--diffviewer--ydiff.c.html#L2999'>res</a>              2999 src/diffviewer/ydiff.c     return res;</span>
+<span class='curline'><a href='../S/src--diffviewer--ydiff.c.html#L3080'>res</a>              3080 src/diffviewer/ydiff.c     gboolean res = TRUE;</span>
+<span class='curline'><a href='../S/src--diffviewer--ydiff.c.html#L3084'>res</a>              3084 src/diffviewer/ydiff.c         return res;</span>
+<span class='curline'><a href='../S/src--diffviewer--ydiff.c.html#L3098'>res</a>              3098 src/diffviewer/ydiff.c         res = FALSE;</span>
+<span class='curline'><a href='../S/src--diffviewer--ydiff.c.html#L3102'>res</a>              3102 src/diffviewer/ydiff.c         res = TRUE;</span>
+<span class='curline'><a href='../S/src--diffviewer--ydiff.c.html#L3106'>res</a>              3106 src/diffviewer/ydiff.c             res = mc_util_unlink_backup_if_possible (dview-&gt;file[DIFF_LEFT], "~~~");</span>
+<span class='curline'><a href='../S/src--diffviewer--ydiff.c.html#L3108'>res</a>              3108 src/diffviewer/ydiff.c             res = mc_util_unlink_backup_if_possible (dview-&gt;file[DIFF_RIGHT], "~~~");</span>
+<span class='curline'><a href='../S/src--diffviewer--ydiff.c.html#L3111'>res</a>              3111 src/diffviewer/ydiff.c         res = TRUE;</span>
+<span class='curline'><a href='../S/src--diffviewer--ydiff.c.html#L3114'>res</a>              3114 src/diffviewer/ydiff.c     return res;</span>
+<span class='curline'><a href='../S/src--diffviewer--ydiff.c.html#L3122'>res</a>              3122 src/diffviewer/ydiff.c     cb_ret_t res = MSG_HANDLED;</span>
+<span class='curline'><a href='../S/src--diffviewer--ydiff.c.html#L3276'>res</a>              3276 src/diffviewer/ydiff.c         res = MSG_NOT_HANDLED;</span>
+<span class='curline'><a href='../S/src--diffviewer--ydiff.c.html#L3278'>res</a>              3278 src/diffviewer/ydiff.c     return res;</span>
+<span class='curline'><a href='../S/src--editor--edit.c.html#L3363'>res</a>              3363 src/editor/edit.c             int res;</span>
+<span class='curline'><a href='../S/src--editor--edit.c.html#L3365'>res</a>              3365 src/editor/edit.c             res = g_unichar_to_utf8 (char_for_insertion, (char *) str);</span>
+<span class='curline'><a href='../S/src--editor--edit.c.html#L3366'>res</a>              3366 src/editor/edit.c             if (res == 0)</span>
+<span class='curline'><a href='../S/src--editor--edit.c.html#L3373'>res</a>              3373 src/editor/edit.c                 str[res] = '\0';</span>
+<span class='curline'><a href='../S/src--editor--editbuffer.c.html#L218'>res</a>               218 src/editor/editbuffer.c     gunichar res;</span>
+<span class='curline'><a href='../S/src--editor--editbuffer.c.html#L235'>res</a>               235 src/editor/editbuffer.c     res = g_utf8_get_char_validated (str, -1);</span>
+<span class='curline'><a href='../S/src--editor--editbuffer.c.html#L236'>res</a>               236 src/editor/editbuffer.c     if (res == (gunichar) (-2) || res == (gunichar) (-1))</span>
+<span class='curline'><a href='../S/src--editor--editbuffer.c.html#L245'>res</a>               245 src/editor/editbuffer.c         res = g_utf8_get_char_validated (utf8_buf, -1);</span>
+<span class='curline'><a href='../S/src--editor--editbuffer.c.html#L248'>res</a>               248 src/editor/editbuffer.c     if (res == (gunichar) (-2) || res == (gunichar) (-1))</span>
+<span class='curline'><a href='../S/src--editor--editbuffer.c.html#L255'>res</a>               255 src/editor/editbuffer.c         ch = res;</span>
+<span class='curline'><a href='../S/src--editor--editbuffer.c.html#L284'>res</a>               284 src/editor/editbuffer.c     gunichar res;</span>
+<span class='curline'><a href='../S/src--editor--editbuffer.c.html#L305'>res</a>               305 src/editor/editbuffer.c     res = g_utf8_get_char_validated (str, -1);</span>
+<span class='curline'><a href='../S/src--editor--editbuffer.c.html#L306'>res</a>               306 src/editor/editbuffer.c     if (res == (gunichar) (-2) || res == (gunichar) (-1))</span>
+<span class='curline'><a href='../S/src--editor--editbuffer.c.html#L313'>res</a>               313 src/editor/editbuffer.c     return (int) res;</span>
+<span class='curline'><a href='../S/src--editor--editcmd.c.html#L483'>res</a>               483 src/editor/editcmd.c     int res, save_lock = 0;</span>
+<span class='curline'><a href='../S/src--editor--editcmd.c.html#L487'>res</a>               487 src/editor/editcmd.c     res = edit_save_file (edit, edit-&gt;filename_vpath);</span>
+<span class='curline'><a href='../S/src--editor--editcmd.c.html#L490'>res</a>               490 src/editor/editcmd.c     if ((res &gt; 0 &amp;&amp; edit-&gt;locked) || save_lock)</span>
+<span class='curline'><a href='../S/src--editor--editcmd.c.html#L494'>res</a>               494 src/editor/editcmd.c     if (res == 0)</span>
+<span class='curline'><a href='../S/src--editor--editcmd.c.html#L497'>res</a>               497 src/editor/editcmd.c     if (res &gt; 0)</span>
+<span class='curline'><a href='../S/src--editor--editcmd.c.html#L1816'>res</a>              1816 src/editor/editcmd.c     gboolean res = FALSE;</span>
+<span class='curline'><a href='../S/src--editor--editcmd.c.html#L1836'>res</a>              1836 src/editor/editcmd.c                 res = TRUE;</span>
+<span class='curline'><a href='../S/src--editor--editcmd.c.html#L1841'>res</a>              1841 src/editor/editcmd.c     return res;</span>
+<span class='curline'><a href='../S/src--editor--editcmd.c.html#L3585'>res</a>              3585 src/editor/editcmd.c         unsigned int res;</span>
+<span class='curline'><a href='../S/src--editor--editcmd.c.html#L3590'>res</a>              3590 src/editor/editcmd.c         res = aspell_suggest (suggest, match_word-&gt;str, (int) word_len);</span>
+<span class='curline'><a href='../S/src--editor--editcmd.c.html#L3591'>res</a>              3591 src/editor/editcmd.c         if (res != 0)</span>
+<span class='curline'><a href='../S/src--editor--editwidget.c.html#L556'>res</a>               556 src/editor/editwidget.c             int res;</span>
+<span class='curline'><a href='../S/src--editor--editwidget.c.html#L558'>res</a>               558 src/editor/editwidget.c             res = str_is_valid_char (edit-&gt;charbuf, edit-&gt;charpoint);</span>
+<span class='curline'><a href='../S/src--editor--editwidget.c.html#L559'>res</a>               559 src/editor/editwidget.c             if (res &lt; 0 &amp;&amp; res != -2)</span>
+<span class='curline'><a href='../S/src--editor--editwidget.c.html#L568'>res</a>               568 src/editor/editwidget.c                 if (res &lt; 0)</span>
+<span class='curline'><a href='../S/src--editor--editwidget.c.html#L585'>res</a>               585 src/editor/editwidget.c                 if (res &lt; 0)</span>
+<span class='curline'><a href='../S/src--editor--spell.c.html#L484'>res</a>               484 src/editor/spell.c     int res = 0;</span>
+<span class='curline'><a href='../S/src--editor--spell.c.html#L487'>res</a>               487 src/editor/spell.c         res = mc_aspell_speller_check (global_speller-&gt;speller, word, word_size);</span>
+<span class='curline'><a href='../S/src--editor--spell.c.html#L489'>res</a>               489 src/editor/spell.c     return (res == 1);</span>
+<span class='curline'><a href='../S/src--editor--spell_dialogs.c.html#L72'>res</a>                72 src/editor/spell_dialogs.c     int res;</span>
+<span class='curline'><a href='../S/src--editor--spell_dialogs.c.html#L131'>res</a>               131 src/editor/spell_dialogs.c     res = dlg_run (sug_dlg);</span>
+<span class='curline'><a href='../S/src--editor--spell_dialogs.c.html#L132'>res</a>               132 src/editor/spell_dialogs.c     if (res == B_ENTER)</span>
+<span class='curline'><a href='../S/src--editor--spell_dialogs.c.html#L146'>res</a>               146 src/editor/spell_dialogs.c     return res;</span>
+<span class='curline'><a href='../S/src--editor--spell_dialogs.c.html#L165'>res</a>               165 src/editor/spell_dialogs.c     int res;</span>
+<span class='curline'><a href='../S/src--editor--spell_dialogs.c.html#L175'>res</a>               175 src/editor/spell_dialogs.c     res = run_listbox (lang_list);</span>
+<span class='curline'><a href='../S/src--editor--spell_dialogs.c.html#L176'>res</a>               176 src/editor/spell_dialogs.c     if (res &gt;= 0)</span>
+<span class='curline'><a href='../S/src--editor--spell_dialogs.c.html#L177'>res</a>               177 src/editor/spell_dialogs.c         selected_lang = g_strdup (g_array_index (languages, char *, (unsigned int) res));</span>
+<span class='curline'><a href='../S/src--filemanager--file.c.html#L525'>res</a>               525 src/filemanager/file.c     int res;</span>
+<span class='curline'><a href='../S/src--filemanager--file.c.html#L533'>res</a>               533 src/filemanager/file.c         res = mc_lstat (dirname_vpath, &amp;s);</span>
+<span class='curline'><a href='../S/src--filemanager--file.c.html#L534'>res</a>               534 src/filemanager/file.c         if (res != 0)</span>
+<span class='curline'><a href='../S/src--filemanager--file.c.html#L561'>res</a>               561 src/filemanager/file.c         res = mc_lstat (tmp_vpath, &amp;s);</span>
+<span class='curline'><a href='../S/src--filemanager--file.c.html#L562'>res</a>               562 src/filemanager/file.c         if (res == 0)</span>
+<span class='curline'><a href='../S/src--filemanager--find.c.html#L1150'>res</a>              1150 src/filemanager/find.c                 FindProgressStatus res;</span>
+<span class='curline'><a href='../S/src--filemanager--find.c.html#L1151'>res</a>              1151 src/filemanager/find.c                 res = check_find_events (h);</span>
+<span class='curline'><a href='../S/src--filemanager--find.c.html#L1152'>res</a>              1152 src/filemanager/find.c                 switch (res)</span>
+<span class='curline'><a href='../S/src--filemanager--hotlist.c.html#L1608'>res</a>              1608 src/filemanager/hotlist.c     int res;</span>
+<span class='curline'><a href='../S/src--filemanager--hotlist.c.html#L1619'>res</a>              1619 src/filemanager/hotlist.c     res = dlg_run (hotlist_dlg);</span>
+<span class='curline'><a href='../S/src--filemanager--hotlist.c.html#L1623'>res</a>              1623 src/filemanager/hotlist.c     if (res == B_ENTER)</span>
+<span class='curline'><a href='../S/src--filemanager--layout.c.html#L1394'>res</a>              1394 src/filemanager/layout.c     int res = 0;</span>
+<span class='curline'><a href='../S/src--filemanager--layout.c.html#L1399'>res</a>              1399 src/filemanager/layout.c     res = gethostname (host, sizeof (host));</span>
+<span class='curline'><a href='../S/src--filemanager--layout.c.html#L1400'>res</a>              1400 src/filemanager/layout.c     if (res != 0)</span>
+<span class='curline'><a href='../S/src--filemanager--midnight.c.html#L1100'>res</a>              1100 src/filemanager/midnight.c     cb_ret_t res = MSG_HANDLED;</span>
+<span class='curline'><a href='../S/src--filemanager--midnight.c.html#L1332'>res</a>              1332 src/filemanager/midnight.c         res = send_message (current_panel, midnight_dlg, MSG_ACTION, command, NULL);</span>
+<span class='curline'><a href='../S/src--filemanager--midnight.c.html#L1397'>res</a>              1397 src/filemanager/midnight.c         res = MSG_NOT_HANDLED;</span>
+<span class='curline'><a href='../S/src--filemanager--midnight.c.html#L1400'>res</a>              1400 src/filemanager/midnight.c     return res;</span>
+<span class='curline'><a href='../S/src--filemanager--panel.c.html#L797'>res</a>               797 src/filemanager/panel.c     filename_scroll_flag_t res = FILENAME_NOSCROLL;</span>
+<span class='curline'><a href='../S/src--filemanager--panel.c.html#L844'>res</a>               844 src/filemanager/panel.c                         res = FILENAME_SCROLL_LEFT;</span>
+<span class='curline'><a href='../S/src--filemanager--panel.c.html#L846'>res</a>               846 src/filemanager/panel.c                             res |= FILENAME_SCROLL_RIGHT;</span>
+<span class='curline'><a href='../S/src--filemanager--panel.c.html#L897'>res</a>               897 src/filemanager/panel.c     return res;</span>
+<span class='curline'><a href='../S/src--filemanager--panel.c.html#L3416'>res</a>              3416 src/filemanager/panel.c     int res = MSG_HANDLED;</span>
+<span class='curline'><a href='../S/src--filemanager--panel.c.html#L3522'>res</a>              3522 src/filemanager/panel.c         res = force_maybe_cd ();</span>
+<span class='curline'><a href='../S/src--filemanager--panel.c.html#L3531'>res</a>              3531 src/filemanager/panel.c         res = move_left (panel);</span>
+<span class='curline'><a href='../S/src--filemanager--panel.c.html#L3534'>res</a>              3534 src/filemanager/panel.c         res = move_right (panel);</span>
+<span class='curline'><a href='../S/src--filemanager--panel.c.html#L3587'>res</a>              3587 src/filemanager/panel.c         res = MSG_NOT_HANDLED;</span>
+<span class='curline'><a href='../S/src--filemanager--panel.c.html#L3591'>res</a>              3591 src/filemanager/panel.c     return res;</span>
+<span class='curline'><a href='../S/src--filemanager--panel.c.html#L4987'>res</a>              4987 src/filemanager/panel.c     gboolean res;</span>
+<span class='curline'><a href='../S/src--filemanager--panel.c.html#L4999'>res</a>              4999 src/filemanager/panel.c     res = do_panel_cd (current_panel, _new_dir_vpath, exact);</span>
+<span class='curline'><a href='../S/src--filemanager--panel.c.html#L5002'>res</a>              5002 src/filemanager/panel.c     if (res)</span>
+<span class='curline'><a href='../S/src--filemanager--panel.c.html#L5014'>res</a>              5014 src/filemanager/panel.c     return res;</span>
+<span class='curline'><a href='../S/src--filemanager--tree.c.html#L992'>res</a>               992 src/filemanager/tree.c     cb_ret_t res = MSG_HANDLED;</span>
+<span class='curline'><a href='../S/src--filemanager--tree.c.html#L1050'>res</a>              1050 src/filemanager/tree.c         return res;</span>
+<span class='curline'><a href='../S/src--filemanager--tree.c.html#L1052'>res</a>              1052 src/filemanager/tree.c         res = MSG_NOT_HANDLED;</span>
+<span class='curline'><a href='../S/src--filemanager--tree.c.html#L1057'>res</a>              1057 src/filemanager/tree.c     return res;</span>
+<span class='curline'><a href='../S/src--filemanager--treestore.c.html#L168'>res</a>               168 src/filemanager/treestore.c     char *res = g_strdup (buffer);</span>
+<span class='curline'><a href='../S/src--filemanager--treestore.c.html#L171'>res</a>               171 src/filemanager/treestore.c     for (p = q = res; *p; p++, q++)</span>
+<span class='curline'><a href='../S/src--filemanager--treestore.c.html#L176'>res</a>               176 src/filemanager/treestore.c             return res;</span>
+<span class='curline'><a href='../S/src--filemanager--treestore.c.html#L201'>res</a>               201 src/filemanager/treestore.c     return res;</span>
+<span class='curline'><a href='../S/src--filemanager--usermenu.c.html#L927'>res</a>               927 src/filemanager/usermenu.c     gboolean res = FALSE;</span>
+<span class='curline'><a href='../S/src--filemanager--usermenu.c.html#L1087'>res</a>              1087 src/filemanager/usermenu.c         res = FALSE;</span>
+<span class='curline'><a href='../S/src--filemanager--usermenu.c.html#L1117'>res</a>              1117 src/filemanager/usermenu.c             res = TRUE;</span>
+<span class='curline'><a href='../S/src--filemanager--usermenu.c.html#L1127'>res</a>              1127 src/filemanager/usermenu.c     return res;</span>
+<span class='curline'><a href='../S/src--vfs--cpio--cpio.c.html#L833'>res</a>               833 src/vfs/cpio/cpio.c     ssize_t res;</span>
+<span class='curline'><a href='../S/src--vfs--cpio--cpio.c.html#L840'>res</a>               840 src/vfs/cpio/cpio.c     res = mc_read (fd, buffer, count);</span>
+<span class='curline'><a href='../S/src--vfs--cpio--cpio.c.html#L841'>res</a>               841 src/vfs/cpio/cpio.c     if (res == -1)</span>
+<span class='curline'><a href='../S/src--vfs--cpio--cpio.c.html#L844'>res</a>               844 src/vfs/cpio/cpio.c     FH-&gt;pos += res;</span>
+<span class='curline'><a href='../S/src--vfs--cpio--cpio.c.html#L845'>res</a>               845 src/vfs/cpio/cpio.c     return res;</span>
+<span class='curline'><a href='../S/src--vfs--extfs--extfs.c.html#L328'>res</a>               328 src/vfs/extfs/extfs.c     struct entry *res;</span>
+<span class='curline'><a href='../S/src--vfs--extfs--extfs.c.html#L333'>res</a>               333 src/vfs/extfs/extfs.c     res = extfs_find_entry_int (dir, name, NULL, make_dirs, make_file);</span>
+<span class='curline'><a href='../S/src--vfs--extfs--extfs.c.html#L334'>res</a>               334 src/vfs/extfs/extfs.c     if (res == NULL)</span>
+<span class='curline'><a href='../S/src--vfs--extfs--extfs.c.html#L341'>res</a>               341 src/vfs/extfs/extfs.c     return res;</span>
+<span class='curline'><a href='../S/src--vfs--extfs--extfs.c.html#L779'>res</a>               779 src/vfs/extfs/extfs.c     struct entry *res;</span>
+<span class='curline'><a href='../S/src--vfs--extfs--extfs.c.html#L783'>res</a>               783 src/vfs/extfs/extfs.c     res = extfs_resolve_symlinks_int (entry, NULL);</span>
+<span class='curline'><a href='../S/src--vfs--extfs--extfs.c.html#L784'>res</a>               784 src/vfs/extfs/extfs.c     if (res == NULL)</span>
+<span class='curline'><a href='../S/src--vfs--extfs--extfs.c.html#L791'>res</a>               791 src/vfs/extfs/extfs.c     return res;</span>
+<span class='curline'><a href='../S/src--vfs--fish--fish.c.html#L340'>res</a>               340 src/vfs/fish/fish.c     int res;</span>
+<span class='curline'><a href='../S/src--vfs--fish--fish.c.html#L345'>res</a>               345 src/vfs/fish/fish.c     res = fork ();</span>
+<span class='curline'><a href='../S/src--vfs--fish--fish.c.html#L347'>res</a>               347 src/vfs/fish/fish.c     if (res != 0)</span>
+<span class='curline'><a href='../S/src--vfs--fish--fish.c.html#L349'>res</a>               349 src/vfs/fish/fish.c         if (res &lt; 0)</span>
+<span class='curline'><a href='../S/src--vfs--fish--fish.c.html#L359'>res</a>               359 src/vfs/fish/fish.c         res = dup2 (fileset1[0], STDIN_FILENO);</span>
+<span class='curline'><a href='../S/src--vfs--fish--fish.c.html#L362'>res</a>               362 src/vfs/fish/fish.c         res = dup2 (fileset2[1], STDOUT_FILENO);</span>
+<span class='curline'><a href='../S/src--vfs--fish--fish.c.html#L365'>res</a>               365 src/vfs/fish/fish.c         res = open ("/dev/null", O_WRONLY);</span>
+<span class='curline'><a href='../S/src--vfs--fish--fish.c.html#L416'>res</a>               416 src/vfs/fish/fish.c             int res;</span>
+<span class='curline'><a href='../S/src--vfs--fish--fish.c.html#L419'>res</a>               419 src/vfs/fish/fish.c             res = vfs_s_get_line_interruptible (me, buffer, sizeof (buffer), SUP-&gt;sockr);</span>
+<span class='curline'><a href='../S/src--vfs--fish--fish.c.html#L420'>res</a>               420 src/vfs/fish/fish.c             if ((res == 0) || (res == EINTR))</span>
+<span class='curline'><a href='../S/src--vfs--fish--fish.c.html#L705'>res</a>               705 src/vfs/fish/fish.c         int res;</span>
+<span class='curline'><a href='../S/src--vfs--fish--fish.c.html#L707'>res</a>               707 src/vfs/fish/fish.c         res = vfs_s_get_line_interruptible (me, buffer, sizeof (buffer), SUP-&gt;sockr);</span>
+<span class='curline'><a href='../S/src--vfs--fish--fish.c.html#L709'>res</a>               709 src/vfs/fish/fish.c         if ((res == 0) || (res == EINTR))</span>
+<span class='curline'><a href='../S/src--vfs--ftpfs--ftpfs.c.html#L824'>res</a>               824 src/vfs/ftpfs/ftpfs.c     struct addrinfo hints, *res, *curr_res;</span>
+<span class='curline'><a href='../S/src--vfs--ftpfs--ftpfs.c.html#L871'>res</a>               871 src/vfs/ftpfs/ftpfs.c     e = getaddrinfo (host, port, &amp;hints, &amp;res);</span>
+<span class='curline'><a href='../S/src--vfs--ftpfs--ftpfs.c.html#L878'>res</a>               878 src/vfs/ftpfs/ftpfs.c         e = getaddrinfo (host, port, &amp;hints, &amp;res);</span>
+<span class='curline'><a href='../S/src--vfs--ftpfs--ftpfs.c.html#L893'>res</a>               893 src/vfs/ftpfs/ftpfs.c     for (curr_res = res; curr_res != NULL; curr_res = curr_res-&gt;ai_next)</span>
+<span class='curline'><a href='../S/src--vfs--ftpfs--ftpfs.c.html#L905'>res</a>               905 src/vfs/ftpfs/ftpfs.c             freeaddrinfo (res);</span>
+<span class='curline'><a href='../S/src--vfs--ftpfs--ftpfs.c.html#L921'>res</a>               921 src/vfs/ftpfs/ftpfs.c         else if (res-&gt;ai_next == NULL)</span>
+<span class='curline'><a href='../S/src--vfs--ftpfs--ftpfs.c.html#L927'>res</a>               927 src/vfs/ftpfs/ftpfs.c         freeaddrinfo (res);</span>
+<span class='curline'><a href='../S/src--vfs--ftpfs--ftpfs.c.html#L932'>res</a>               932 src/vfs/ftpfs/ftpfs.c     freeaddrinfo (res);</span>
+<span class='curline'><a href='../S/src--vfs--ftpfs--ftpfs.c.html#L1748'>res</a>              1748 src/vfs/ftpfs/ftpfs.c         int res;</span>
+<span class='curline'><a href='../S/src--vfs--ftpfs--ftpfs.c.html#L1751'>res</a>              1751 src/vfs/ftpfs/ftpfs.c         res = vfs_s_get_line_interruptible (me, lc_buffer, sizeof (lc_buffer), sock);</span>
+<span class='curline'><a href='../S/src--vfs--ftpfs--ftpfs.c.html#L1752'>res</a>              1752 src/vfs/ftpfs/ftpfs.c         if (res == 0)</span>
+<span class='curline'><a href='../S/src--vfs--ftpfs--ftpfs.c.html#L1755'>res</a>              1755 src/vfs/ftpfs/ftpfs.c         if (res == EINTR)</span>
+<span class='curline'><a href='../S/src--vfs--sftpfs--connection.c.html#L69'>res</a>                69 src/vfs/sftpfs/connection.c     struct addrinfo hints, *res = NULL, *curr_res;</span>
+<span class='curline'><a href='../S/src--vfs--sftpfs--connection.c.html#L97'>res</a>                97 src/vfs/sftpfs/connection.c     e = getaddrinfo (super-&gt;path_element-&gt;host, port, &amp;hints, &amp;res);</span>
+<span class='curline'><a href='../S/src--vfs--sftpfs--connection.c.html#L104'>res</a>               104 src/vfs/sftpfs/connection.c         e = getaddrinfo (super-&gt;path_element-&gt;host, port, &amp;hints, &amp;res);</span>
+<span class='curline'><a href='../S/src--vfs--sftpfs--connection.c.html#L115'>res</a>               115 src/vfs/sftpfs/connection.c     for (curr_res = res; curr_res != NULL; curr_res = curr_res-&gt;ai_next)</span>
+<span class='curline'><a href='../S/src--vfs--sftpfs--connection.c.html#L142'>res</a>               142 src/vfs/sftpfs/connection.c         else if (res-&gt;ai_next == NULL)</span>
+<span class='curline'><a href='../S/src--vfs--sftpfs--connection.c.html#L153'>res</a>               153 src/vfs/sftpfs/connection.c     if (res != NULL)</span>
+<span class='curline'><a href='../S/src--vfs--sftpfs--connection.c.html#L154'>res</a>               154 src/vfs/sftpfs/connection.c         freeaddrinfo (res);</span>
+<span class='curline'><a href='../S/src--vfs--sftpfs--dir.c.html#L194'>res</a>               194 src/vfs/sftpfs/dir.c     int res;</span>
+<span class='curline'><a href='../S/src--vfs--sftpfs--dir.c.html#L220'>res</a>               220 src/vfs/sftpfs/dir.c         res = libssh2_sftp_mkdir_ex (super_data-&gt;sftp_session, fixfname, fixfname_len, mode);</span>
+<span class='curline'><a href='../S/src--vfs--sftpfs--dir.c.html#L221'>res</a>               221 src/vfs/sftpfs/dir.c         if (res &gt;= 0)</span>
+<span class='curline'><a href='../S/src--vfs--sftpfs--dir.c.html#L224'>res</a>               224 src/vfs/sftpfs/dir.c         if (res != LIBSSH2_ERROR_EAGAIN)</span>
+<span class='curline'><a href='../S/src--vfs--sftpfs--dir.c.html#L226'>res</a>               226 src/vfs/sftpfs/dir.c             sftpfs_ssherror_to_gliberror (super_data, res, mcerror);</span>
+<span class='curline'><a href='../S/src--vfs--sftpfs--dir.c.html#L233'>res</a>               233 src/vfs/sftpfs/dir.c     while (res == LIBSSH2_ERROR_EAGAIN);</span>
+<span class='curline'><a href='../S/src--vfs--sftpfs--dir.c.html#L235'>res</a>               235 src/vfs/sftpfs/dir.c     return res;</span>
+<span class='curline'><a href='../S/src--vfs--sftpfs--dir.c.html#L250'>res</a>               250 src/vfs/sftpfs/dir.c     int res;</span>
+<span class='curline'><a href='../S/src--vfs--sftpfs--dir.c.html#L276'>res</a>               276 src/vfs/sftpfs/dir.c         res = libssh2_sftp_rmdir_ex (super_data-&gt;sftp_session, fixfname, fixfname_len);</span>
+<span class='curline'><a href='../S/src--vfs--sftpfs--dir.c.html#L277'>res</a>               277 src/vfs/sftpfs/dir.c         if (res &gt;= 0)</span>
+<span class='curline'><a href='../S/src--vfs--sftpfs--dir.c.html#L280'>res</a>               280 src/vfs/sftpfs/dir.c         if (res != LIBSSH2_ERROR_EAGAIN)</span>
+<span class='curline'><a href='../S/src--vfs--sftpfs--dir.c.html#L282'>res</a>               282 src/vfs/sftpfs/dir.c             sftpfs_ssherror_to_gliberror (super_data, res, mcerror);</span>
+<span class='curline'><a href='../S/src--vfs--sftpfs--dir.c.html#L289'>res</a>               289 src/vfs/sftpfs/dir.c     while (res == LIBSSH2_ERROR_EAGAIN);</span>
+<span class='curline'><a href='../S/src--vfs--sftpfs--dir.c.html#L291'>res</a>               291 src/vfs/sftpfs/dir.c     return res;</span>
+<span class='curline'><a href='../S/src--vfs--sftpfs--file.c.html#L193'>res</a>               193 src/vfs/sftpfs/file.c     int res;</span>
+<span class='curline'><a href='../S/src--vfs--sftpfs--file.c.html#L207'>res</a>               207 src/vfs/sftpfs/file.c         res = libssh2_sftp_fstat_ex (sftpfs_fh-&gt;handle, &amp;attrs, 0);</span>
+<span class='curline'><a href='../S/src--vfs--sftpfs--file.c.html#L208'>res</a>               208 src/vfs/sftpfs/file.c         if (res &gt;= 0)</span>
+<span class='curline'><a href='../S/src--vfs--sftpfs--file.c.html#L211'>res</a>               211 src/vfs/sftpfs/file.c         if (res != LIBSSH2_ERROR_EAGAIN)</span>
+<span class='curline'><a href='../S/src--vfs--sftpfs--file.c.html#L213'>res</a>               213 src/vfs/sftpfs/file.c             sftpfs_ssherror_to_gliberror (super_data, res, mcerror);</span>
+<span class='curline'><a href='../S/src--vfs--sftpfs--file.c.html#L220'>res</a>               220 src/vfs/sftpfs/file.c     while (res == LIBSSH2_ERROR_EAGAIN);</span>
+<span class='curline'><a href='../S/src--vfs--sftpfs--internal.c.html#L154'>res</a>               154 src/vfs/sftpfs/internal.c     int res;</span>
+<span class='curline'><a href='../S/src--vfs--sftpfs--internal.c.html#L178'>res</a>               178 src/vfs/sftpfs/internal.c         res =</span>
+<span class='curline'><a href='../S/src--vfs--sftpfs--internal.c.html#L181'>res</a>               181 src/vfs/sftpfs/internal.c         if (res &gt;= 0)</span>
+<span class='curline'><a href='../S/src--vfs--sftpfs--internal.c.html#L184'>res</a>               184 src/vfs/sftpfs/internal.c         if (res != LIBSSH2_ERROR_EAGAIN)</span>
+<span class='curline'><a href='../S/src--vfs--sftpfs--internal.c.html#L186'>res</a>               186 src/vfs/sftpfs/internal.c             sftpfs_ssherror_to_gliberror (super_data, res, mcerror);</span>
+<span class='curline'><a href='../S/src--vfs--sftpfs--internal.c.html#L193'>res</a>               193 src/vfs/sftpfs/internal.c     while (res == LIBSSH2_ERROR_EAGAIN);</span>
+<span class='curline'><a href='../S/src--vfs--sftpfs--internal.c.html#L236'>res</a>               236 src/vfs/sftpfs/internal.c     int res;</span>
+<span class='curline'><a href='../S/src--vfs--sftpfs--internal.c.html#L260'>res</a>               260 src/vfs/sftpfs/internal.c         res =</span>
+<span class='curline'><a href='../S/src--vfs--sftpfs--internal.c.html#L263'>res</a>               263 src/vfs/sftpfs/internal.c         if (res &gt;= 0)</span>
+<span class='curline'><a href='../S/src--vfs--sftpfs--internal.c.html#L266'>res</a>               266 src/vfs/sftpfs/internal.c         if (res != LIBSSH2_ERROR_EAGAIN)</span>
+<span class='curline'><a href='../S/src--vfs--sftpfs--internal.c.html#L268'>res</a>               268 src/vfs/sftpfs/internal.c             sftpfs_ssherror_to_gliberror (super_data, res, mcerror);</span>
+<span class='curline'><a href='../S/src--vfs--sftpfs--internal.c.html#L275'>res</a>               275 src/vfs/sftpfs/internal.c     while (res == LIBSSH2_ERROR_EAGAIN);</span>
+<span class='curline'><a href='../S/src--vfs--sftpfs--internal.c.html#L319'>res</a>               319 src/vfs/sftpfs/internal.c     int res;</span>
+<span class='curline'><a href='../S/src--vfs--sftpfs--internal.c.html#L343'>res</a>               343 src/vfs/sftpfs/internal.c         res =</span>
+<span class='curline'><a href='../S/src--vfs--sftpfs--internal.c.html#L346'>res</a>               346 src/vfs/sftpfs/internal.c         if (res &gt;= 0)</span>
+<span class='curline'><a href='../S/src--vfs--sftpfs--internal.c.html#L349'>res</a>               349 src/vfs/sftpfs/internal.c         if (res != LIBSSH2_ERROR_EAGAIN)</span>
+<span class='curline'><a href='../S/src--vfs--sftpfs--internal.c.html#L351'>res</a>               351 src/vfs/sftpfs/internal.c             sftpfs_ssherror_to_gliberror (super_data, res, mcerror);</span>
+<span class='curline'><a href='../S/src--vfs--sftpfs--internal.c.html#L358'>res</a>               358 src/vfs/sftpfs/internal.c     while (res == LIBSSH2_ERROR_EAGAIN);</span>
+<span class='curline'><a href='../S/src--vfs--sftpfs--internal.c.html#L360'>res</a>               360 src/vfs/sftpfs/internal.c     return res;</span>
+<span class='curline'><a href='../S/src--vfs--sftpfs--internal.c.html#L382'>res</a>               382 src/vfs/sftpfs/internal.c     int res;</span>
+<span class='curline'><a href='../S/src--vfs--sftpfs--internal.c.html#L410'>res</a>               410 src/vfs/sftpfs/internal.c         res =</span>
+<span class='curline'><a href='../S/src--vfs--sftpfs--internal.c.html#L413'>res</a>               413 src/vfs/sftpfs/internal.c         if (res &gt;= 0)</span>
+<span class='curline'><a href='../S/src--vfs--sftpfs--internal.c.html#L416'>res</a>               416 src/vfs/sftpfs/internal.c         if (res != LIBSSH2_ERROR_EAGAIN)</span>
+<span class='curline'><a href='../S/src--vfs--sftpfs--internal.c.html#L418'>res</a>               418 src/vfs/sftpfs/internal.c             sftpfs_ssherror_to_gliberror (super_data, res, mcerror);</span>
+<span class='curline'><a href='../S/src--vfs--sftpfs--internal.c.html#L430'>res</a>               430 src/vfs/sftpfs/internal.c     while (res == LIBSSH2_ERROR_EAGAIN);</span>
+<span class='curline'><a href='../S/src--vfs--sftpfs--internal.c.html#L452'>res</a>               452 src/vfs/sftpfs/internal.c     int res;</span>
+<span class='curline'><a href='../S/src--vfs--sftpfs--internal.c.html#L476'>res</a>               476 src/vfs/sftpfs/internal.c         res =</span>
+<span class='curline'><a href='../S/src--vfs--sftpfs--internal.c.html#L479'>res</a>               479 src/vfs/sftpfs/internal.c         if (res &gt;= 0)</span>
+<span class='curline'><a href='../S/src--vfs--sftpfs--internal.c.html#L482'>res</a>               482 src/vfs/sftpfs/internal.c         if (res != LIBSSH2_ERROR_EAGAIN)</span>
+<span class='curline'><a href='../S/src--vfs--sftpfs--internal.c.html#L484'>res</a>               484 src/vfs/sftpfs/internal.c             sftpfs_ssherror_to_gliberror (super_data, res, mcerror);</span>
+<span class='curline'><a href='../S/src--vfs--sftpfs--internal.c.html#L491'>res</a>               491 src/vfs/sftpfs/internal.c     while (res == LIBSSH2_ERROR_EAGAIN);</span>
+<span class='curline'><a href='../S/src--vfs--sftpfs--internal.c.html#L502'>res</a>               502 src/vfs/sftpfs/internal.c         res =</span>
+<span class='curline'><a href='../S/src--vfs--sftpfs--internal.c.html#L505'>res</a>               505 src/vfs/sftpfs/internal.c         if (res &gt;= 0)</span>
+<span class='curline'><a href='../S/src--vfs--sftpfs--internal.c.html#L508'>res</a>               508 src/vfs/sftpfs/internal.c         if (res != LIBSSH2_ERROR_EAGAIN)</span>
+<span class='curline'><a href='../S/src--vfs--sftpfs--internal.c.html#L510'>res</a>               510 src/vfs/sftpfs/internal.c             sftpfs_ssherror_to_gliberror (super_data, res, mcerror);</span>
+<span class='curline'><a href='../S/src--vfs--sftpfs--internal.c.html#L517'>res</a>               517 src/vfs/sftpfs/internal.c     while (res == LIBSSH2_ERROR_EAGAIN);</span>
+<span class='curline'><a href='../S/src--vfs--sftpfs--internal.c.html#L518'>res</a>               518 src/vfs/sftpfs/internal.c     return res;</span>
+<span class='curline'><a href='../S/src--vfs--sftpfs--internal.c.html#L535'>res</a>               535 src/vfs/sftpfs/internal.c     int res;</span>
+<span class='curline'><a href='../S/src--vfs--sftpfs--internal.c.html#L559'>res</a>               559 src/vfs/sftpfs/internal.c         res = libssh2_sftp_unlink_ex (super_data-&gt;sftp_session, fixfname, fixfname_len);</span>
+<span class='curline'><a href='../S/src--vfs--sftpfs--internal.c.html#L560'>res</a>               560 src/vfs/sftpfs/internal.c         if (res &gt;= 0)</span>
+<span class='curline'><a href='../S/src--vfs--sftpfs--internal.c.html#L563'>res</a>               563 src/vfs/sftpfs/internal.c         if (res != LIBSSH2_ERROR_EAGAIN)</span>
+<span class='curline'><a href='../S/src--vfs--sftpfs--internal.c.html#L565'>res</a>               565 src/vfs/sftpfs/internal.c             sftpfs_ssherror_to_gliberror (super_data, res, mcerror);</span>
+<span class='curline'><a href='../S/src--vfs--sftpfs--internal.c.html#L572'>res</a>               572 src/vfs/sftpfs/internal.c     while (res == LIBSSH2_ERROR_EAGAIN);</span>
+<span class='curline'><a href='../S/src--vfs--sftpfs--internal.c.html#L574'>res</a>               574 src/vfs/sftpfs/internal.c     return res;</span>
+<span class='curline'><a href='../S/src--vfs--sftpfs--internal.c.html#L596'>res</a>               596 src/vfs/sftpfs/internal.c     int res;</span>
+<span class='curline'><a href='../S/src--vfs--sftpfs--internal.c.html#L623'>res</a>               623 src/vfs/sftpfs/internal.c         res =</span>
+<span class='curline'><a href='../S/src--vfs--sftpfs--internal.c.html#L626'>res</a>               626 src/vfs/sftpfs/internal.c         if (res &gt;= 0)</span>
+<span class='curline'><a href='../S/src--vfs--sftpfs--internal.c.html#L629'>res</a>               629 src/vfs/sftpfs/internal.c         if (res != LIBSSH2_ERROR_EAGAIN)</span>
+<span class='curline'><a href='../S/src--vfs--sftpfs--internal.c.html#L631'>res</a>               631 src/vfs/sftpfs/internal.c             sftpfs_ssherror_to_gliberror (super_data, res, mcerror);</span>
+<span class='curline'><a href='../S/src--vfs--sftpfs--internal.c.html#L643'>res</a>               643 src/vfs/sftpfs/internal.c     while (res == LIBSSH2_ERROR_EAGAIN);</span>
+<span class='curline'><a href='../S/src--vfs--smbfs--helpers--lib--util.c.html#L1914'>res</a>              1914 src/vfs/smbfs/helpers/lib/util.c     uint32 res;</span>
+<span class='curline'><a href='../S/src--vfs--smbfs--helpers--lib--util.c.html#L1930'>res</a>              1930 src/vfs/smbfs/helpers/lib/util.c         res = inet_addr (str);</span>
+<span class='curline'><a href='../S/src--vfs--smbfs--helpers--lib--util.c.html#L1946'>res</a>              1946 src/vfs/smbfs/helpers/lib/util.c         putip ((char *) &amp;res, (char *) hp-&gt;h_addr);</span>
+<span class='curline'><a href='../S/src--vfs--smbfs--helpers--lib--util.c.html#L1949'>res</a>              1949 src/vfs/smbfs/helpers/lib/util.c     if (res == (uint32) - 1)</span>
+<span class='curline'><a href='../S/src--vfs--smbfs--helpers--lib--util.c.html#L1952'>res</a>              1952 src/vfs/smbfs/helpers/lib/util.c     return (res);</span>
+<span class='curline'><a href='../S/src--vfs--smbfs--helpers--lib--util.c.html#L3089'>res</a>              3089 src/vfs/smbfs/helpers/lib/util.c     int res = 0;</span>
+<span class='curline'><a href='../S/src--vfs--smbfs--helpers--lib--util.c.html#L3096'>res</a>              3096 src/vfs/smbfs/helpers/lib/util.c         res ^= (c &lt;&lt; (i % 15)) ^ (c &gt;&gt; (15 - (i % 15)));</span>
+<span class='curline'><a href='../S/src--vfs--smbfs--helpers--lib--util.c.html#L3100'>res</a>              3100 src/vfs/smbfs/helpers/lib/util.c     return (res);</span>
+<span class='curline'><a href='../S/src--vfs--smbfs--helpers--lib--util_sock.c.html#L747'>res</a>               747 src/vfs/smbfs/helpers/lib/util_sock.c     int res;</span>
+<span class='curline'><a href='../S/src--vfs--smbfs--helpers--lib--util_sock.c.html#L772'>res</a>               772 src/vfs/smbfs/helpers/lib/util_sock.c     res = socket (hp-&gt;h_addrtype, type, 0);</span>
+<span class='curline'><a href='../S/src--vfs--smbfs--helpers--lib--util_sock.c.html#L773'>res</a>               773 src/vfs/smbfs/helpers/lib/util_sock.c     if (res == -1)</span>
+<span class='curline'><a href='../S/src--vfs--smbfs--helpers--lib--util_sock.c.html#L785'>res</a>               785 src/vfs/smbfs/helpers/lib/util_sock.c         setsockopt (res, SOL_SOCKET, SO_REUSEADDR, (char *) &amp;val, sizeof (val));</span>
+<span class='curline'><a href='../S/src--vfs--smbfs--helpers--lib--util_sock.c.html#L789'>res</a>               789 src/vfs/smbfs/helpers/lib/util_sock.c     if (bind (res, (struct sockaddr *) &amp;sock, sizeof (sock)) &lt; 0)</span>
+<span class='curline'><a href='../S/src--vfs--smbfs--helpers--lib--util_sock.c.html#L796'>res</a>               796 src/vfs/smbfs/helpers/lib/util_sock.c             close (res);</span>
+<span class='curline'><a href='../S/src--vfs--smbfs--helpers--lib--util_sock.c.html#L809'>res</a>               809 src/vfs/smbfs/helpers/lib/util_sock.c     return res;</span>
+<span class='curline'><a href='../S/src--vfs--smbfs--helpers--lib--util_sock.c.html#L820'>res</a>               820 src/vfs/smbfs/helpers/lib/util_sock.c     int res, ret;</span>
+<span class='curline'><a href='../S/src--vfs--smbfs--helpers--lib--util_sock.c.html#L825'>res</a>               825 src/vfs/smbfs/helpers/lib/util_sock.c     res = socket (PF_INET, type, 0);</span>
+<span class='curline'><a href='../S/src--vfs--smbfs--helpers--lib--util_sock.c.html#L826'>res</a>               826 src/vfs/smbfs/helpers/lib/util_sock.c     if (res == -1)</span>
+<span class='curline'><a href='../S/src--vfs--smbfs--helpers--lib--util_sock.c.html#L833'>res</a>               833 src/vfs/smbfs/helpers/lib/util_sock.c         return (res);</span>
+<span class='curline'><a href='../S/src--vfs--smbfs--helpers--lib--util_sock.c.html#L842'>res</a>               842 src/vfs/smbfs/helpers/lib/util_sock.c     set_blocking (res, False);</span>
+<span class='curline'><a href='../S/src--vfs--smbfs--helpers--lib--util_sock.c.html#L848'>res</a>               848 src/vfs/smbfs/helpers/lib/util_sock.c     ret = connect (res, (struct sockaddr *) &amp;sock_out, sizeof (sock_out));</span>
+<span class='curline'><a href='../S/src--vfs--smbfs--helpers--lib--util_sock.c.html#L860'>res</a>               860 src/vfs/smbfs/helpers/lib/util_sock.c         close (res);</span>
+<span class='curline'><a href='../S/src--vfs--smbfs--helpers--lib--util_sock.c.html#L876'>res</a>               876 src/vfs/smbfs/helpers/lib/util_sock.c         close (res);</span>
+<span class='curline'><a href='../S/src--vfs--smbfs--helpers--lib--util_sock.c.html#L881'>res</a>               881 src/vfs/smbfs/helpers/lib/util_sock.c     set_blocking (res, True);</span>
+<span class='curline'><a href='../S/src--vfs--smbfs--helpers--lib--util_sock.c.html#L883'>res</a>               883 src/vfs/smbfs/helpers/lib/util_sock.c     return res;</span>
+<span class='curline'><a href='../S/src--vfs--smbfs--helpers--libsmb--clientgen.c.html#L594'>res</a>               594 src/vfs/smbfs/helpers/libsmb/clientgen.c         int res = SVAL (rparam, 0);</span>
+<span class='curline'><a href='../S/src--vfs--smbfs--helpers--libsmb--clientgen.c.html#L598'>res</a>               598 src/vfs/smbfs/helpers/libsmb/clientgen.c         if (res == 0 || res == ERRmoredata)</span>
+<span class='curline'><a href='../S/src--vfs--smbfs--helpers--libsmb--clientgen.c.html#L614'>res</a>               614 src/vfs/smbfs/helpers/libsmb/clientgen.c             DEBUG (4, ("NetShareEnum res=%d\n", res));</span>
+<span class='curline'><a href='../S/src--vfs--smbfs--helpers--libsmb--clientgen.c.html#L675'>res</a>               675 src/vfs/smbfs/helpers/libsmb/clientgen.c         int res = SVAL (rparam, 0);</span>
+<span class='curline'><a href='../S/src--vfs--smbfs--helpers--libsmb--clientgen.c.html#L679'>res</a>               679 src/vfs/smbfs/helpers/libsmb/clientgen.c         if (res == 0 || res == ERRmoredata)</span>
+<span class='curline'><a href='../S/src--vfs--smbfs--helpers--libsmb--nmblib.c.html#L71'>res</a>                71 src/vfs/smbfs/helpers/libsmb/nmblib.c debug_nmb_res_rec (struct res_rec *res, const char *hdr)</span>
+<span class='curline'><a href='../S/src--vfs--smbfs--helpers--libsmb--nmblib.c.html#L76'>res</a>                76 src/vfs/smbfs/helpers/libsmb/nmblib.c                   hdr, nmb_namestr (&amp;res-&gt;rr_name), res-&gt;rr_type, res-&gt;rr_class, res-&gt;ttl));</span>
+<span class='curline'><a href='../S/src--vfs--smbfs--helpers--libsmb--nmblib.c.html#L78'>res</a>                78 src/vfs/smbfs/helpers/libsmb/nmblib.c     if (res-&gt;rdlength == 0 || res-&gt;rdata == NULL)</span>
+<span class='curline'><a href='../S/src--vfs--smbfs--helpers--libsmb--nmblib.c.html#L81'>res</a>                81 src/vfs/smbfs/helpers/libsmb/nmblib.c     for (i = 0; i &lt; res-&gt;rdlength; i += 16)</span>
+<span class='curline'><a href='../S/src--vfs--smbfs--helpers--libsmb--nmblib.c.html#L87'>res</a>                87 src/vfs/smbfs/helpers/libsmb/nmblib.c             unsigned char x = res-&gt;rdata[i + j];</span>
+<span class='curline'><a href='../S/src--vfs--smbfs--helpers--libsmb--nmblib.c.html#L91'>res</a>                91 src/vfs/smbfs/helpers/libsmb/nmblib.c             if (i + j &gt;= res-&gt;rdlength)</span>
+<span class='curline'><a href='../S/src--vfs--smbfs--helpers--libsmb--nmblib.c.html#L100'>res</a>               100 src/vfs/smbfs/helpers/libsmb/nmblib.c             if (i + j &gt;= res-&gt;rdlength)</span>
+<span class='curline'><a href='../S/src--vfs--smbfs--helpers--libsmb--nmblib.c.html#L102'>res</a>               102 src/vfs/smbfs/helpers/libsmb/nmblib.c             DEBUGADD (4, ("%02X", (unsigned char) res-&gt;rdata[i + j]));</span>
+<span class='curline'><a href='../S/src--vfs--tar--tar.c.html#L887'>res</a>               887 src/vfs/tar/tar.c     ssize_t res;</span>
+<span class='curline'><a href='../S/src--vfs--tar--tar.c.html#L894'>res</a>               894 src/vfs/tar/tar.c     res = mc_read (fd, buffer, count);</span>
+<span class='curline'><a href='../S/src--vfs--tar--tar.c.html#L895'>res</a>               895 src/vfs/tar/tar.c     if (res == -1)</span>
+<span class='curline'><a href='../S/src--vfs--tar--tar.c.html#L898'>res</a>               898 src/vfs/tar/tar.c     FH-&gt;pos += res;</span>
+<span class='curline'><a href='../S/src--vfs--tar--tar.c.html#L899'>res</a>               899 src/vfs/tar/tar.c     return res;</span>
+<span class='curline'><a href='../S/src--viewer--actions_cmd.c.html#L387'>res</a>               387 src/viewer/actions_cmd.c     int res = MSG_HANDLED;</span>
+<span class='curline'><a href='../S/src--viewer--actions_cmd.c.html#L539'>res</a>               539 src/viewer/actions_cmd.c         res = MSG_NOT_HANDLED;</span>
+<span class='curline'><a href='../S/src--viewer--actions_cmd.c.html#L541'>res</a>               541 src/viewer/actions_cmd.c     return res;</span>
+<span class='curline'><a href='../S/src--viewer--datasource.c.html#L154'>res</a>               154 src/viewer/datasource.c     int res;</span>
+<span class='curline'><a href='../S/src--viewer--datasource.c.html#L179'>res</a>               179 src/viewer/datasource.c     res = g_utf8_get_char_validated (str, -1);</span>
+<span class='curline'><a href='../S/src--viewer--datasource.c.html#L181'>res</a>               181 src/viewer/datasource.c     if (res &lt; 0)</span>
+<span class='curline'><a href='../S/src--viewer--datasource.c.html#L188'>res</a>               188 src/viewer/datasource.c             if (mcview_get_byte (view, byte_index + i, &amp;res))</span>
+<span class='curline'><a href='../S/src--viewer--datasource.c.html#L189'>res</a>               189 src/viewer/datasource.c                 utf8buf[i] = res;</span>
+<span class='curline'><a href='../S/src--viewer--datasource.c.html#L198'>res</a>               198 src/viewer/datasource.c         res = g_utf8_get_char_validated (str, -1);</span>
+<span class='curline'><a href='../S/src--viewer--datasource.c.html#L201'>res</a>               201 src/viewer/datasource.c     if (res &lt; 0)</span>
+<span class='curline'><a href='../S/src--viewer--datasource.c.html#L210'>res</a>               210 src/viewer/datasource.c         *ch = res;</span>
+<span class='curline'><a href='../S/src--viewer--datasource.c.html#L285'>res</a>               285 src/viewer/datasource.c     ssize_t res;</span>
+<span class='curline'><a href='../S/src--viewer--datasource.c.html#L303'>res</a>               303 src/viewer/datasource.c         res =</span>
+<span class='curline'><a href='../S/src--viewer--datasource.c.html#L306'>res</a>               306 src/viewer/datasource.c         if (res == -1)</span>
+<span class='curline'><a href='../S/src--viewer--datasource.c.html#L308'>res</a>               308 src/viewer/datasource.c         if (res == 0)</span>
+<span class='curline'><a href='../S/src--viewer--datasource.c.html#L310'>res</a>               310 src/viewer/datasource.c         bytes_read += (size_t) res;</span>
+<span class='curline'><a href='../S/src--viewer--dialogs.c.html#L190'>res</a>               190 src/viewer/dialogs.c     gboolean res;</span>
+<span class='curline'><a href='../S/src--viewer--dialogs.c.html#L228'>res</a>               228 src/viewer/dialogs.c     res = (qd_result != B_CANCEL &amp;&amp; exp != NULL &amp;&amp; exp[0] != '\0');</span>
+<span class='curline'><a href='../S/src--viewer--dialogs.c.html#L229'>res</a>               229 src/viewer/dialogs.c     if (res)</span>
+<span class='curline'><a href='../S/src--viewer--dialogs.c.html#L274'>res</a>               274 src/viewer/dialogs.c     return res;</span>
+<span class='curline'><a href='../S/src--viewer--hex.c.html#L195'>res</a>               195 src/viewer/hex.c                     int res;</span>
+<span class='curline'><a href='../S/src--viewer--hex.c.html#L200'>res</a>               200 src/viewer/hex.c                         if (mcview_get_byte (view, from + j, &amp;res))</span>
+<span class='curline'><a href='../S/src--viewer--hex.c.html#L201'>res</a>               201 src/viewer/hex.c                             utf8buf[j] = res;</span>
+</pre>
+</body>
+</html>

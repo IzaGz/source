@@ -1,0 +1,91 @@
+<!DOCTYPE html PUBLIC '-//W3C//DTD XHTML 1.0 Transitional//EN' 'http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd'>
+<html xmlns='http://www.w3.org/1999/xhtml'>
+<head>
+<title>LINES</title>
+<meta name='robots' content='noindex,nofollow' />
+<meta name='generator' content='GLOBAL-6.5.2' />
+<meta http-equiv='Content-Style-Type' content='text/css' />
+<link rel='stylesheet' type='text/css' href='../style.css' />
+</head>
+<body>
+<pre>
+<span class='curline'><a href='../S/lib--tty--tty-ncurses.c.html#L74'>LINES</a>              74 lib/tty/tty-ncurses.c     (y &gt;= 0 &amp;&amp; y &lt; LINES &amp;&amp; x &gt;= 0 &amp;&amp; x &lt; COLS)</span>
+<span class='curline'><a href='../S/lib--tty--tty-ncurses.c.html#L291'>LINES</a>             291 lib/tty/tty-ncurses.c         LINES = winsz.ws_row;</span>
+<span class='curline'><a href='../S/lib--tty--tty-ncurses.c.html#L410'>LINES</a>             410 lib/tty/tty-ncurses.c     if (y &gt;= LINES)</span>
+<span class='curline'><a href='../S/lib--tty--tty-ncurses.c.html#L411'>LINES</a>             411 lib/tty/tty-ncurses.c         y = LINES - 1;</span>
+<span class='curline'><a href='../S/lib--tty--tty-ncurses.c.html#L437'>LINES</a>             437 lib/tty/tty-ncurses.c     if (y &lt; 0 || y &gt;= LINES || x &gt;= COLS)</span>
+<span class='curline'><a href='../S/lib--tty--tty-ncurses.c.html#L468'>LINES</a>             468 lib/tty/tty-ncurses.c     if (x &lt; 0 || x &gt;= COLS || y &gt;= LINES)</span>
+<span class='curline'><a href='../S/lib--tty--tty-ncurses.c.html#L519'>LINES</a>             519 lib/tty/tty-ncurses.c     if (y + rows &gt; LINES)</span>
+<span class='curline'><a href='../S/lib--tty--tty-ncurses.c.html#L520'>LINES</a>             520 lib/tty/tty-ncurses.c         rows = LINES - y;</span>
+<span class='curline'><a href='../S/lib--tty--tty-ncurses.c.html#L647'>LINES</a>             647 lib/tty/tty-ncurses.c     if (mc_curs_row &lt; 0 || mc_curs_row &gt;= LINES || mc_curs_col + len &lt;= 0 || mc_curs_col &gt;= COLS)</span>
+<span class='curline'><a href='../S/lib--tty--tty-slang.c.html#L282'>LINES</a>             282 lib/tty/tty-slang.c     if ((COLS &lt; 10) || (LINES &lt; 5)</span>
+<span class='curline'><a href='../S/lib--tty--tty-slang.c.html#L283'>LINES</a>             283 lib/tty/tty-slang.c         || (COLS &gt; SLTT_MAX_SCREEN_COLS) || (LINES &gt; SLTT_MAX_SCREEN_ROWS))</span>
+<span class='curline'><a href='../S/lib--tty--tty-slang.c.html#L287'>LINES</a>             287 lib/tty/tty-slang.c                    "Check the TERM environment variable.\n"), COLS, LINES);</span>
+<span class='curline'><a href='../S/lib--tty--tty-slang.c.html#L411'>LINES</a>             411 lib/tty/tty-slang.c     SLsmg_touch_lines (0, LINES);</span>
+<span class='curline'><a href='../S/lib--tty--tty-slang.c.html#L520'>LINES</a>             520 lib/tty/tty-slang.c     SLsmg_touch_lines (0, LINES);</span>
+<span class='curline'><a href='../S/lib--tty--tty-slang.c.html#L547'>LINES</a>             547 lib/tty/tty-slang.c     if (y &lt; 0 || y &gt;= LINES || x &gt;= COLS)</span>
+<span class='curline'><a href='../S/lib--tty--tty-slang.c.html#L583'>LINES</a>             583 lib/tty/tty-slang.c     if (x &lt; 0 || x &gt;= COLS || y &gt;= LINES)</span>
+<span class='curline'><a href='../S/lib--tty--tty.c.html#L249'>LINES</a>             249 lib/tty/tty.c      tty_size.ws_row = LINES;</span>
+<span class='curline'><a href='../S/lib--widget--buttonbar.c.html#L248'>LINES</a>             248 lib/widget/buttonbar.c     widget_init (w, LINES - 1, 0, 1, COLS, buttonbar_callback, buttonbar_mouse_callback);</span>
+<span class='curline'><a href='../S/lib--widget--dialog-switch.c.html#L229'>LINES</a>             229 lib/widget/dialog-switch.c     lines = MIN ((size_t) (LINES * 2 / 3), dlg_num);</span>
+<span class='curline'><a href='../S/lib--widget--dialog-switch.c.html#L321'>LINES</a>             321 lib/widget/dialog-switch.c     tty_fill_region (0, 0, LINES, COLS, ' ');</span>
+<span class='curline'><a href='../S/lib--widget--dialog.c.html#L612'>LINES</a>             612 lib/widget/dialog.c         *lines = LINES;</span>
+<span class='curline'><a href='../S/lib--widget--dialog.c.html#L621'>LINES</a>             621 lib/widget/dialog.c             *y = (LINES - *lines) / 2;</span>
+<span class='curline'><a href='../S/lib--widget--history.c.html#L88'>LINES</a>              88 lib/widget/history.c     if (he &lt;= y || y &gt; (LINES - 6))</span>
+<span class='curline'><a href='../S/lib--widget--history.c.html#L96'>LINES</a>              96 lib/widget/history.c         he = MIN (he, LINES - y);</span>
+<span class='curline'><a href='../S/lib--widget--input_complete.c.html#L1245'>LINES</a>            1245 lib/widget/input_complete.c             else if (start_y &gt;= LINES - start_y - 1)</span>
+<span class='curline'><a href='../S/lib--widget--input_complete.c.html#L1253'>LINES</a>            1253 lib/widget/input_complete.c                 h = LINES - start_y - 1;</span>
+<span class='curline'><a href='../S/lib--widget--listbox-window.c.html#L69'>LINES</a>              69 lib/widget/listbox-window.c     lines = MIN (lines, LINES - 6);</span>
+<span class='curline'><a href='../S/lib--widget--listbox-window.c.html#L94'>LINES</a>              94 lib/widget/listbox-window.c         if (ypos + lines &gt;= LINES)</span>
+<span class='curline'><a href='../S/lib--widget--listbox-window.c.html#L95'>LINES</a>              95 lib/widget/listbox-window.c             ypos = LINES - lines - space;</span>
+<span class='curline'><a href='../S/lib--widget--menu.c.html#L585'>LINES</a>             585 lib/widget/menu.c     w-&gt;lines = LINES;</span>
+<span class='curline'><a href='../S/lib--widget--wtools.c.html#L97'>LINES</a>              97 lib/widget/wtools.c                 ypos = LINES / 3 - (w-&gt;lines - 3) / 2;</span>
+<span class='curline'><a href='../S/src--diffviewer--ydiff.c.html#L2274'>LINES</a>            2274 src/diffviewer/ydiff.c     dview-&gt;height = LINES - 2;</span>
+<span class='curline'><a href='../S/src--diffviewer--ydiff.c.html#L3386'>LINES</a>            3386 src/diffviewer/ydiff.c     widget_set_size (WIDGET (dview), 0, 0, LINES - 1, COLS);</span>
+<span class='curline'><a href='../S/src--diffviewer--ydiff.c.html#L3387'>LINES</a>            3387 src/diffviewer/ydiff.c     widget_set_size (WIDGET (bar), LINES - 1, 0, 1, COLS);</span>
+<span class='curline'><a href='../S/src--diffviewer--ydiff.c.html#L3469'>LINES</a>            3469 src/diffviewer/ydiff.c     widget_init (w, 0, 0, LINES - 1, COLS, dview_callback, dview_mouse_callback);</span>
+<span class='curline'><a href='../S/src--editor--editcmd_dialogs.c.html#L371'>LINES</a>             371 src/editor/editcmd_dialogs.c     if (compl_dlg_h &gt; LINES - 2)</span>
+<span class='curline'><a href='../S/src--editor--editcmd_dialogs.c.html#L372'>LINES</a>             372 src/editor/editcmd_dialogs.c         compl_dlg_h = LINES - 2;</span>
+<span class='curline'><a href='../S/src--editor--editcmd_dialogs.c.html#L377'>LINES</a>             377 src/editor/editcmd_dialogs.c     offset = start_y + compl_dlg_h - LINES;</span>
+<span class='curline'><a href='../S/src--editor--editcmd_dialogs.c.html#L438'>LINES</a>             438 src/editor/editcmd_dialogs.c     if (def_dlg_h &gt; LINES - 2)</span>
+<span class='curline'><a href='../S/src--editor--editcmd_dialogs.c.html#L439'>LINES</a>             439 src/editor/editcmd_dialogs.c         def_dlg_h = LINES - 2;</span>
+<span class='curline'><a href='../S/src--editor--editcmd_dialogs.c.html#L444'>LINES</a>             444 src/editor/editcmd_dialogs.c     offset = start_y + def_dlg_h - LINES;</span>
+<span class='curline'><a href='../S/src--editor--editwidget.c.html#L329'>LINES</a>             329 src/editor/editwidget.c     lines = MIN ((size_t) (LINES * 2 / 3), dlg_num);</span>
+<span class='curline'><a href='../S/src--editor--editwidget.c.html#L777'>LINES</a>             777 src/editor/editwidget.c         w-&gt;lines = LINES;</span>
+<span class='curline'><a href='../S/src--editor--spell_dialogs.c.html#L88'>LINES</a>              88 src/editor/spell_dialogs.c     ypos = (LINES - sug_dlg_h) * 2 / 3;</span>
+<span class='curline'><a href='../S/src--execute.c.html#L543'>LINES</a>             543 src/execute.c                                     LINES - mc_global.keybar_visible - output_lines -</span>
+<span class='curline'><a href='../S/src--execute.c.html#L544'>LINES</a>             544 src/execute.c                                     1, LINES - mc_global.keybar_visible - 1);</span>
+<span class='curline'><a href='../S/src--filemanager--achown.c.html#L334'>LINES</a>             334 src/filemanager/achown.c         lyy = (LINES - 13) / 2;</span>
+<span class='curline'><a href='../S/src--filemanager--boxes.c.html#L379'>LINES</a>             379 src/filemanager/boxes.c             dlg_set_size (h, LINES - 9, COLS - 20);</span>
+<span class='curline'><a href='../S/src--filemanager--boxes.c.html#L382'>LINES</a>             382 src/filemanager/boxes.c             bar-&gt;y = LINES - 1;</span>
+<span class='curline'><a href='../S/src--filemanager--boxes.c.html#L1050'>LINES</a>            1050 src/filemanager/boxes.c     dlg = dlg_create (TRUE, 0, 0, LINES - 9, COLS - 20, WPOS_CENTER, FALSE, dialog_colors,</span>
+<span class='curline'><a href='../S/src--filemanager--boxes.c.html#L1061'>LINES</a>            1061 src/filemanager/boxes.c     WIDGET (bar)-&gt;y = LINES - 1;</span>
+<span class='curline'><a href='../S/src--filemanager--ext.c.html#L505'>LINES</a>             505 src/filemanager/ext.c                                        LINES - mc_global.keybar_visible -</span>
+<span class='curline'><a href='../S/src--filemanager--ext.c.html#L506'>LINES</a>             506 src/filemanager/ext.c                                        output_lines - 1, LINES - mc_global.keybar_visible - 1);</span>
+<span class='curline'><a href='../S/src--filemanager--find.c.html#L1534'>LINES</a>            1534 src/filemanager/find.c         dlg_set_size (h, LINES - 4, COLS - 16);</span>
+<span class='curline'><a href='../S/src--filemanager--find.c.html#L1622'>LINES</a>            1622 src/filemanager/find.c     lines = LINES - 4;</span>
+<span class='curline'><a href='../S/src--filemanager--hotlist.c.html#L590'>LINES</a>             590 src/filemanager/hotlist.c         dlg_set_size (h, LINES - (h == hotlist_dlg ? 2 : 6), COLS - 6);</span>
+<span class='curline'><a href='../S/src--filemanager--hotlist.c.html#L737'>LINES</a>             737 src/filemanager/hotlist.c     lines = LINES - 2;</span>
+<span class='curline'><a href='../S/src--filemanager--hotlist.c.html#L820'>LINES</a>             820 src/filemanager/hotlist.c     lines = LINES - 6;</span>
+<span class='curline'><a href='../S/src--filemanager--layout.c.html#L348'>LINES</a>             348 src/filemanager/layout.c                     LINES - _keybar_visible - _command_prompt - _menubar_visible - _output_lines -</span>
+<span class='curline'><a href='../S/src--filemanager--layout.c.html#L359'>LINES</a>             359 src/filemanager/layout.c                     LINES - _keybar_visible - _command_prompt - _menubar_visible - _output_lines -</span>
+<span class='curline'><a href='../S/src--filemanager--layout.c.html#L723'>LINES</a>             723 src/filemanager/layout.c             LINES - mc_global.keybar_visible - (command_prompt ? 1 : 0) - menubar_visible -</span>
+<span class='curline'><a href='../S/src--filemanager--layout.c.html#L735'>LINES</a>             735 src/filemanager/layout.c             LINES - menubar_visible - (command_prompt ? 1 : 0) - mc_global.keybar_visible -</span>
+<span class='curline'><a href='../S/src--filemanager--layout.c.html#L773'>LINES</a>             773 src/filemanager/layout.c         widget_set_size (WIDGET (the_prompt), LINES, COLS, 0, 0);</span>
+<span class='curline'><a href='../S/src--filemanager--layout.c.html#L776'>LINES</a>             776 src/filemanager/layout.c     widget_set_size (WIDGET (the_bar), LINES - 1, 0, mc_global.keybar_visible, COLS);</span>
+<span class='curline'><a href='../S/src--filemanager--layout.c.html#L782'>LINES</a>             782 src/filemanager/layout.c         output_start_y = LINES - (command_prompt ? 1 : 0) - mc_global.keybar_visible - output_lines;</span>
+<span class='curline'><a href='../S/src--filemanager--layout.c.html#L784'>LINES</a>             784 src/filemanager/layout.c                                LINES - output_lines - mc_global.keybar_visible - 1,</span>
+<span class='curline'><a href='../S/src--filemanager--layout.c.html#L785'>LINES</a>             785 src/filemanager/layout.c                                LINES - mc_global.keybar_visible - 1);</span>
+<span class='curline'><a href='../S/src--filemanager--layout.c.html#L887'>LINES</a>             887 src/filemanager/layout.c     y = LINES - 1 - mc_global.keybar_visible;</span>
+<span class='curline'><a href='../S/src--filemanager--midnight.c.html#L1422'>LINES</a>            1422 src/filemanager/midnight.c                                    LINES - output_lines - mc_global.keybar_visible -</span>
+<span class='curline'><a href='../S/src--filemanager--midnight.c.html#L1423'>LINES</a>            1423 src/filemanager/midnight.c                                    1, LINES - mc_global.keybar_visible - 1);</span>
+<span class='curline'><a href='../S/src--filemanager--midnight.c.html#L1428'>LINES</a>            1428 src/filemanager/midnight.c         w-&gt;lines = LINES;</span>
+<span class='curline'><a href='../S/src--help.c.html#L870'>LINES</a>             870 src/help.c                 help_lines = MIN (LINES - 4, MAX (2 * LINES / 3, 18));</span>
+<span class='curline'><a href='../S/src--help.c.html#L873'>LINES</a>             873 src/help.c                 widget_set_size (WIDGET (bb), LINES - 1, 0, 1, COLS);</span>
+<span class='curline'><a href='../S/src--help.c.html#L1097'>LINES</a>            1097 src/help.c         help_lines = MIN (LINES - 4, MAX (2 * LINES / 3, 18));</span>
+<span class='curline'><a href='../S/src--viewer--actions_cmd.c.html#L596'>LINES</a>             596 src/viewer/actions_cmd.c     widget_set_size (WIDGET (view), 0, 0, LINES - 1, COLS);</span>
+<span class='curline'><a href='../S/src--viewer--actions_cmd.c.html#L597'>LINES</a>             597 src/viewer/actions_cmd.c     widget_set_size (WIDGET (b), LINES - 1, 0, 1, COLS);</span>
+<span class='curline'><a href='../S/src--viewer--mcviewer.c.html#L241'>LINES</a>             241 src/viewer/mcviewer.c     lc_mcview = mcview_new (0, 0, LINES - 1, COLS, FALSE);</span>
+</pre>
+</body>
+</html>

@@ -1,0 +1,37 @@
+<!DOCTYPE html PUBLIC '-//W3C//DTD XHTML 1.0 Transitional//EN' 'http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd'>
+<html xmlns='http://www.w3.org/1999/xhtml'>
+<head>
+<title>dst_path</title>
+<meta name='robots' content='noindex,nofollow' />
+<meta name='generator' content='GLOBAL-6.5.2' />
+<meta http-equiv='Content-Style-Type' content='text/css' />
+<link rel='stylesheet' type='text/css' href='../style.css' />
+</head>
+<body>
+<pre>
+<span class='curline'><a href='../S/src--filemanager--file.c.html#L388'>dst_path</a>          388 src/filemanager/file.c make_symlink (file_op_context_t * ctx, const char *src_path, const char *dst_path)</span>
+<span class='curline'><a href='../S/src--filemanager--file.c.html#L400'>dst_path</a>          400 src/filemanager/file.c     dst_vpath = vfs_path_from_str (dst_path);</span>
+<span class='curline'><a href='../S/src--filemanager--file.c.html#L441'>dst_path</a>          441 src/filemanager/file.c             if (g_path_is_absolute (dst_path))</span>
+<span class='curline'><a href='../S/src--filemanager--file.c.html#L442'>dst_path</a>          442 src/filemanager/file.c                 q = vfs_path_from_str_flags (dst_path, VPF_NO_CANON);</span>
+<span class='curline'><a href='../S/src--filemanager--file.c.html#L444'>dst_path</a>          444 src/filemanager/file.c                 q = vfs_path_build_filename (p, dst_path, (char *) NULL);</span>
+<span class='curline'><a href='../S/src--filemanager--file.c.html#L494'>dst_path</a>          494 src/filemanager/file.c         return_status = file_error (_("Cannot create target symlink \"%s\"\n%s"), dst_path);</span>
+<span class='curline'><a href='../S/src--filemanager--file.c.html#L1493'>dst_path</a>         1493 src/filemanager/file.c                 const char *src_path, const char *dst_path)</span>
+<span class='curline'><a href='../S/src--filemanager--file.c.html#L1515'>dst_path</a>         1515 src/filemanager/file.c     dst_vpath = vfs_path_from_str (dst_path);</span>
+<span class='curline'><a href='../S/src--filemanager--file.c.html#L1537'>dst_path</a>         1537 src/filemanager/file.c                 return_status = file_error (_("Cannot overwrite directory \"%s\"\n%s"), dst_path);</span>
+<span class='curline'><a href='../S/src--filemanager--file.c.html#L1571'>dst_path</a>         1571 src/filemanager/file.c                                             src_path, dst_path);</span>
+<span class='curline'><a href='../S/src--filemanager--file.c.html#L1579'>dst_path</a>         1579 src/filemanager/file.c             return_status = query_replace (ctx, dst_path, &amp;src_stat, &amp;dst_stat);</span>
+<span class='curline'><a href='../S/src--filemanager--file.c.html#L1598'>dst_path</a>         1598 src/filemanager/file.c             return_status = make_symlink (ctx, src_path, dst_path);</span>
+<span class='curline'><a href='../S/src--filemanager--file.c.html#L1614'>dst_path</a>         1614 src/filemanager/file.c                 return_status = file_error (_("Cannot create special file \"%s\"\n%s"), dst_path);</span>
+<span class='curline'><a href='../S/src--filemanager--file.c.html#L1626'>dst_path</a>         1626 src/filemanager/file.c                 temp_status = file_error (_("Cannot chown target file \"%s\"\n%s"), dst_path);</span>
+<span class='curline'><a href='../S/src--filemanager--file.c.html#L1641'>dst_path</a>         1641 src/filemanager/file.c                 temp_status = file_error (_("Cannot chmod target file \"%s\"\n%s"), dst_path);</span>
+<span class='curline'><a href='../S/src--filemanager--file.c.html#L1726'>dst_path</a>         1726 src/filemanager/file.c                 return_status = file_error (_("Cannot create target file \"%s\"\n%s"), dst_path);</span>
+<span class='curline'><a href='../S/src--filemanager--file.c.html#L1748'>dst_path</a>         1748 src/filemanager/file.c             return_status = file_error (_("Cannot fstat target file \"%s\"\n%s"), dst_path);</span>
+<span class='curline'><a href='../S/src--filemanager--file.c.html#L1768'>dst_path</a>         1768 src/filemanager/file.c             file_error (_("Cannot preallocate space for target file \"%s\"\n%s"), dst_path);</span>
+<span class='curline'><a href='../S/src--filemanager--file.c.html#L1869'>dst_path</a>         1869 src/filemanager/file.c                             file_error (_("Cannot write target file \"%s\"\n%s"), dst_path);</span>
+<span class='curline'><a href='../S/src--filemanager--file.c.html#L1954'>dst_path</a>         1954 src/filemanager/file.c         temp_status = file_error (_("Cannot close target file \"%s\"\n%s"), dst_path);</span>
+<span class='curline'><a href='../S/src--filemanager--file.c.html#L1977'>dst_path</a>         1977 src/filemanager/file.c                 temp_status = file_error (_("Cannot chown target file \"%s\"\n%s"), dst_path);</span>
+<span class='curline'><a href='../S/src--filemanager--file.c.html#L1997'>dst_path</a>         1997 src/filemanager/file.c                     temp_status = file_error (_("Cannot chmod target file \"%s\"\n%s"), dst_path);</span>
+<span class='curline'><a href='../S/src--filemanager--file.h.html#L43'>dst_path</a>           43 src/filemanager/file.h                                    const char *src_path, const char *dst_path);</span>
+</pre>
+</body>
+</html>

@@ -1,0 +1,35 @@
+<!DOCTYPE html PUBLIC '-//W3C//DTD XHTML 1.0 Transitional//EN' 'http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd'>
+<html xmlns='http://www.w3.org/1999/xhtml'>
+<head>
+<title>d_key</title>
+<meta name='robots' content='noindex,nofollow' />
+<meta name='generator' content='GLOBAL-6.5.2' />
+<meta http-equiv='Content-Style-Type' content='text/css' />
+<link rel='stylesheet' type='text/css' href='../style.css' />
+</head>
+<body>
+<pre>
+<span class='curline'><a href='../S/lib--widget--dialog.c.html#L296'>d_key</a>             296 lib/widget/dialog.c dlg_handle_key (WDialog * h, int d_key)</span>
+<span class='curline'><a href='../S/lib--widget--dialog.c.html#L300'>d_key</a>             300 lib/widget/dialog.c     command = keybind_lookup_keymap_command (dialog_map, d_key);</span>
+<span class='curline'><a href='../S/lib--widget--dialog.c.html#L381'>d_key</a>             381 lib/widget/dialog.c dlg_try_hotkey (WDialog * h, int d_key)</span>
+<span class='curline'><a href='../S/lib--widget--dialog.c.html#L408'>d_key</a>             408 lib/widget/dialog.c         if (d_key &gt;= 32 &amp;&amp; d_key &lt; 256)</span>
+<span class='curline'><a href='../S/lib--widget--dialog.c.html#L413'>d_key</a>             413 lib/widget/dialog.c     c = d_key &amp; ~ALT (0);</span>
+<span class='curline'><a href='../S/lib--widget--dialog.c.html#L414'>d_key</a>             414 lib/widget/dialog.c     if (d_key &amp; ALT (0) &amp;&amp; g_ascii_isalpha (c))</span>
+<span class='curline'><a href='../S/lib--widget--dialog.c.html#L415'>d_key</a>             415 lib/widget/dialog.c         d_key = g_ascii_tolower (c);</span>
+<span class='curline'><a href='../S/lib--widget--dialog.c.html#L419'>d_key</a>             419 lib/widget/dialog.c         handled = send_message (current, NULL, MSG_HOTKEY, d_key, NULL);</span>
+<span class='curline'><a href='../S/lib--widget--dialog.c.html#L434'>d_key</a>             434 lib/widget/dialog.c             handled = send_message (current, NULL, MSG_HOTKEY, d_key, NULL);</span>
+<span class='curline'><a href='../S/lib--widget--dialog.c.html#L449'>d_key</a>             449 lib/widget/dialog.c dlg_key_event (WDialog * h, int d_key)</span>
+<span class='curline'><a href='../S/lib--widget--dialog.c.html#L462'>d_key</a>             462 lib/widget/dialog.c         if (d_key == '\t')</span>
+<span class='curline'><a href='../S/lib--widget--dialog.c.html#L467'>d_key</a>             467 lib/widget/dialog.c         else if ((d_key &amp; ~(KEY_M_SHIFT | KEY_M_CTRL)) == '\t')</span>
+<span class='curline'><a href='../S/lib--widget--dialog.c.html#L475'>d_key</a>             475 lib/widget/dialog.c     handled = send_message (h, NULL, MSG_KEY, d_key, NULL);</span>
+<span class='curline'><a href='../S/lib--widget--dialog.c.html#L479'>d_key</a>             479 lib/widget/dialog.c         handled = dlg_try_hotkey (h, d_key);</span>
+<span class='curline'><a href='../S/lib--widget--dialog.c.html#L485'>d_key</a>             485 lib/widget/dialog.c         handled = send_message (h-&gt;current-&gt;data, NULL, MSG_KEY, d_key, NULL);</span>
+<span class='curline'><a href='../S/lib--widget--dialog.c.html#L489'>d_key</a>             489 lib/widget/dialog.c         handled = send_message (h, NULL, MSG_UNHANDLED_KEY, d_key, NULL);</span>
+<span class='curline'><a href='../S/lib--widget--dialog.c.html#L492'>d_key</a>             492 lib/widget/dialog.c         handled = dlg_handle_key (h, d_key);</span>
+<span class='curline'><a href='../S/lib--widget--dialog.c.html#L495'>d_key</a>             495 lib/widget/dialog.c     send_message (h, NULL, MSG_POST_KEY, d_key, NULL);</span>
+<span class='curline'><a href='../S/lib--widget--dialog.c.html#L517'>d_key</a>             517 lib/widget/dialog.c         int d_key;</span>
+<span class='curline'><a href='../S/lib--widget--dialog.c.html#L539'>d_key</a>             539 lib/widget/dialog.c         d_key = tty_get_event (&amp;event, h-&gt;mouse_status == MOU_REPEAT, TRUE);</span>
+<span class='curline'><a href='../S/lib--widget--dialog.c.html#L541'>d_key</a>             541 lib/widget/dialog.c         dlg_process_event (h, d_key, &amp;event);</span>
+</pre>
+</body>
+</html>

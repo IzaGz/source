@@ -1,0 +1,34 @@
+<!DOCTYPE html PUBLIC '-//W3C//DTD XHTML 1.0 Transitional//EN' 'http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd'>
+<html xmlns='http://www.w3.org/1999/xhtml'>
+<head>
+<title>ignore_dirs</title>
+<meta name='robots' content='noindex,nofollow' />
+<meta name='generator' content='GLOBAL-6.5.2' />
+<meta http-equiv='Content-Style-Type' content='text/css' />
+<link rel='stylesheet' type='text/css' href='../style.css' />
+</head>
+<body>
+<pre>
+<span class='curline'><a href='../S/src--filemanager--find.c.html#L110'>ignore_dirs</a>       110 src/filemanager/find.c     char *ignore_dirs;</span>
+<span class='curline'><a href='../S/src--filemanager--find.c.html#L233'>ignore_dirs</a>       233 src/filemanager/find.c parse_ignore_dirs (const char *ignore_dirs)</span>
+<span class='curline'><a href='../S/src--filemanager--find.c.html#L237'>ignore_dirs</a>       237 src/filemanager/find.c     if (!options.ignore_dirs_enable || ignore_dirs == NULL || ignore_dirs[0] == '\0')</span>
+<span class='curline'><a href='../S/src--filemanager--find.c.html#L240'>ignore_dirs</a>       240 src/filemanager/find.c     find_ignore_dirs = g_strsplit (ignore_dirs, ":", -1);</span>
+<span class='curline'><a href='../S/src--filemanager--find.c.html#L308'>ignore_dirs</a>       308 src/filemanager/find.c     options.ignore_dirs =</span>
+<span class='curline'><a href='../S/src--filemanager--find.c.html#L311'>ignore_dirs</a>       311 src/filemanager/find.c     if (options.ignore_dirs[0] == '\0')</span>
+<span class='curline'><a href='../S/src--filemanager--find.c.html#L312'>ignore_dirs</a>       312 src/filemanager/find.c         MC_PTR_FREE (options.ignore_dirs);</span>
+<span class='curline'><a href='../S/src--filemanager--find.c.html#L340'>ignore_dirs</a>       340 src/filemanager/find.c     mc_config_set_string (mc_global.main_config, "FindFile", "ignore_dirs", options.ignore_dirs);</span>
+<span class='curline'><a href='../S/src--filemanager--find.c.html#L565'>ignore_dirs</a>       565 src/filemanager/find.c                  char **ignore_dirs, char **pattern, char **content)</span>
+<span class='curline'><a href='../S/src--filemanager--find.c.html#L693'>ignore_dirs</a>       693 src/filemanager/find.c                    options.ignore_dirs != NULL ? options.ignore_dirs : "", "ignoredirs",</span>
+<span class='curline'><a href='../S/src--filemanager--find.c.html#L814'>ignore_dirs</a>       814 src/filemanager/find.c             g_free (options.ignore_dirs);</span>
+<span class='curline'><a href='../S/src--filemanager--find.c.html#L815'>ignore_dirs</a>       815 src/filemanager/find.c             options.ignore_dirs = g_strdup (in_ignore-&gt;buffer);</span>
+<span class='curline'><a href='../S/src--filemanager--find.c.html#L855'>ignore_dirs</a>       855 src/filemanager/find.c                 *ignore_dirs = NULL;</span>
+<span class='curline'><a href='../S/src--filemanager--find.c.html#L857'>ignore_dirs</a>       857 src/filemanager/find.c                 *ignore_dirs = g_strdup (in_ignore-&gt;buffer);</span>
+<span class='curline'><a href='../S/src--filemanager--find.c.html#L1717'>ignore_dirs</a>      1717 src/filemanager/find.c do_find (const char *start_dir, ssize_t start_dir_len, const char *ignore_dirs,</span>
+<span class='curline'><a href='../S/src--filemanager--find.c.html#L1733'>ignore_dirs</a>      1733 src/filemanager/find.c     parse_ignore_dirs (ignore_dirs);</span>
+<span class='curline'><a href='../S/src--filemanager--find.c.html#L1856'>ignore_dirs</a>      1856 src/filemanager/find.c     char *start_dir = NULL, *pattern = NULL, *content = NULL, *ignore_dirs = NULL;</span>
+<span class='curline'><a href='../S/src--filemanager--find.c.html#L1859'>ignore_dirs</a>      1859 src/filemanager/find.c     while (find_parameters (&amp;start_dir, &amp;start_dir_len, &amp;ignore_dirs, &amp;pattern, &amp;content))</span>
+<span class='curline'><a href='../S/src--filemanager--find.c.html#L1870'>ignore_dirs</a>      1870 src/filemanager/find.c             v = do_find (start_dir, start_dir_len, ignore_dirs, pattern, content, &amp;dirname,</span>
+<span class='curline'><a href='../S/src--filemanager--find.c.html#L1875'>ignore_dirs</a>      1875 src/filemanager/find.c         g_free (ignore_dirs);</span>
+</pre>
+</body>
+</html>

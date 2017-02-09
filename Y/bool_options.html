@@ -1,0 +1,22 @@
+<!DOCTYPE html PUBLIC '-//W3C//DTD XHTML 1.0 Transitional//EN' 'http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd'>
+<html xmlns='http://www.w3.org/1999/xhtml'>
+<head>
+<title>bool_options</title>
+<meta name='robots' content='noindex,nofollow' />
+<meta name='generator' content='GLOBAL-6.5.2' />
+<meta http-equiv='Content-Style-Type' content='text/css' />
+<link rel='stylesheet' type='text/css' href='../style.css' />
+</head>
+<body>
+<pre>
+<span class='curline'><a href='../S/src--setup.c.html#L279'>bool_options</a>      279 src/setup.c    } bool_options [] = {</span>
+<span class='curline'><a href='../S/src--setup.c.html#L606'>bool_options</a>      606 src/setup.c        for (i = 0; bool_options[i].opt_name != NULL; i++)</span>
+<span class='curline'><a href='../S/src--setup.c.html#L607'>bool_options</a>      607 src/setup.c            *bool_options[i].opt_addr =</span>
+<span class='curline'><a href='../S/src--setup.c.html#L608'>bool_options</a>      608 src/setup.c                mc_config_get_bool (mc_global.main_config, CONFIG_APP_SECTION, bool_options[i].opt_name,</span>
+<span class='curline'><a href='../S/src--setup.c.html#L609'>bool_options</a>      609 src/setup.c                                    *bool_options[i].opt_addr);</span>
+<span class='curline'><a href='../S/src--setup.c.html#L957'>bool_options</a>      957 src/setup.c        for (i = 0; bool_options[i].opt_name != NULL; i++)</span>
+<span class='curline'><a href='../S/src--setup.c.html#L958'>bool_options</a>      958 src/setup.c            mc_config_set_bool (mc_global.main_config, CONFIG_APP_SECTION, bool_options[i].opt_name,</span>
+<span class='curline'><a href='../S/src--setup.c.html#L959'>bool_options</a>      959 src/setup.c                                *bool_options[i].opt_addr);</span>
+</pre>
+</body>
+</html>

@@ -1,0 +1,51 @@
+<!DOCTYPE html PUBLIC '-//W3C//DTD XHTML 1.0 Transitional//EN' 'http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd'>
+<html xmlns='http://www.w3.org/1999/xhtml'>
+<head>
+<title>mc_config_get_string</title>
+<meta name='robots' content='noindex,nofollow' />
+<meta name='generator' content='GLOBAL-6.5.2' />
+<meta http-equiv='Content-Style-Type' content='text/css' />
+<link rel='stylesheet' type='text/css' href='../style.css' />
+</head>
+<body>
+<pre>
+<span class='curline'><a href='../S/lib--filehighlight--ini-file-read.c.html#L74'>mc_config_get_string</a>   74 lib/filehighlight/ini-file-read.c     gchar *param_type = mc_config_get_string (fhl-&gt;config, group_name, "type", "");</span>
+<span class='curline'><a href='../S/lib--filehighlight--ini-file-read.c.html#L106'>mc_config_get_string</a>  106 lib/filehighlight/ini-file-read.c     gchar *regexp = mc_config_get_string (fhl-&gt;config, group_name, "regexp", "");</span>
+<span class='curline'><a href='../S/lib--logging.c.html#L105'>mc_config_get_string</a>  105 lib/logging.c          return mc_config_get_string (mc_global.main_config, CONFIG_GROUP_NAME, CONFIG_KEY_NAME_FILE,</span>
+<span class='curline'><a href='../S/lib--mcconfig.h.html#L53'>mc_config_get_string</a>   53 lib/mcconfig.h gchar *mc_config_get_string (mc_config_t *, const gchar *, const gchar *, const gchar *);</span>
+<span class='curline'><a href='../S/lib--skin--common.c.html#L79'>mc_config_get_string</a>   79 lib/skin/common.c     return mc_config_get_string (mc_global.main_config, CONFIG_APP_SECTION, "skin", "default");</span>
+<span class='curline'><a href='../S/lib--skin--common.c.html#L206'>mc_config_get_string</a>  206 lib/skin/common.c     return mc_config_get_string (mc_skin__default.config, group, key, default_value);</span>
+<span class='curline'><a href='../S/lib--skin--ini-file.c.html#L184'>mc_config_get_string</a>  184 lib/skin/ini-file.c         mc_config_get_string (mc_skin-&gt;config, "skin", "description", "- no description -");</span>
+<span class='curline'><a href='../S/src--filemanager--find.c.html#L309'>mc_config_get_string</a>  309 src/filemanager/find.c         mc_config_get_string (mc_global.main_config, "FindFile", "ignore_dirs", "");</span>
+<span class='curline'><a href='../S/src--filemanager--hotlist.c.html#L1183'>mc_config_get_string</a> 1183 src/filemanager/hotlist.c         add2hotlist (mc_config_get_string (mc_global.main_config, group_section, *profile_keys, ""),</span>
+<span class='curline'><a href='../S/src--filemanager--hotlist.c.html#L1192'>mc_config_get_string</a> 1192 src/filemanager/hotlist.c         add2hotlist (mc_config_get_string (mc_global.main_config, group_section, *profile_keys, ""),</span>
+<span class='curline'><a href='../S/src--filemanager--panelize.c.html#L596'>mc_config_get_string</a>  596 src/filemanager/panelize.c                           mc_config_get_string (mc_global.main_config, panelize_section,</span>
+<span class='curline'><a href='../S/src--main.c.html#L308'>mc_config_get_string</a>  308 src/main.c             buffer = mc_config_get_string (mc_global.panels_config, "Dirs", "other_dir", ".");</span>
+<span class='curline'><a href='../S/src--setup.c.html#L620'>mc_config_get_string</a>  620 src/setup.c                mc_config_get_string (mc_global.main_config, CONFIG_APP_SECTION,</span>
+<span class='curline'><a href='../S/src--setup.c.html#L650'>mc_config_get_string</a>  650 src/setup.c        buffer = mc_config_get_string (mc_global.panels_config, section, "display", "listing");</span>
+<span class='curline'><a href='../S/src--setup.c.html#L731'>mc_config_get_string</a>  731 src/setup.c                valcopy = mc_config_get_string (cfg, section_name, *profile_keys, "");</span>
+<span class='curline'><a href='../S/src--setup.c.html#L758'>mc_config_get_string</a>  758 src/setup.c                    value = mc_config_get_string (cfg, section_name, *profile_keys, "");</span>
+<span class='curline'><a href='../S/src--setup.c.html#L856'>mc_config_get_string</a>  856 src/setup.c        fname2 = mc_config_get_string (mc_global.main_config, CONFIG_APP_SECTION, "keymap", NULL);</span>
+<span class='curline'><a href='../S/src--setup.c.html#L1111'>mc_config_get_string</a> 1111 src/setup.c            mc_config_get_string (mc_global.main_config, CONFIG_MISC_SECTION, "timeformat_recent",</span>
+<span class='curline'><a href='../S/src--setup.c.html#L1114'>mc_config_get_string</a> 1114 src/setup.c            mc_config_get_string (mc_global.main_config, CONFIG_MISC_SECTION, "timeformat_old",</span>
+<span class='curline'><a href='../S/src--setup.c.html#L1119'>mc_config_get_string</a> 1119 src/setup.c            mc_config_get_string (mc_global.main_config, CONFIG_MISC_SECTION, "ftp_proxy_host", "gate");</span>
+<span class='curline'><a href='../S/src--setup.c.html#L1125'>mc_config_get_string</a> 1125 src/setup.c            mc_config_get_string (mc_global.main_config, "Colors", "base_color", "");</span>
+<span class='curline'><a href='../S/src--setup.c.html#L1127'>mc_config_get_string</a> 1127 src/setup.c            mc_config_get_string (mc_global.main_config, "Colors", getenv ("TERM"), "");</span>
+<span class='curline'><a href='../S/src--setup.c.html#L1129'>mc_config_get_string</a> 1129 src/setup.c            mc_config_get_string (mc_global.main_config, "Colors", "color_terminals", "");</span>
+<span class='curline'><a href='../S/src--setup.c.html#L1139'>mc_config_get_string</a> 1139 src/setup.c                mc_config_get_string (mc_global.main_config, CONFIG_MISC_SECTION, "display_codepage",</span>
+<span class='curline'><a href='../S/src--setup.c.html#L1148'>mc_config_get_string</a> 1148 src/setup.c                mc_config_get_string (mc_global.main_config, CONFIG_MISC_SECTION, "source_codepage",</span>
+<span class='curline'><a href='../S/src--setup.c.html#L1160'>mc_config_get_string</a> 1160 src/setup.c            mc_config_get_string (mc_global.main_config, CONFIG_MISC_SECTION, "autodetect_codeset", "");</span>
+<span class='curline'><a href='../S/src--setup.c.html#L1172'>mc_config_get_string</a> 1172 src/setup.c            mc_config_get_string (mc_global.main_config, CONFIG_MISC_SECTION, "spell_language", "en");</span>
+<span class='curline'><a href='../S/src--setup.c.html#L1176'>mc_config_get_string</a> 1176 src/setup.c            mc_config_get_string (mc_global.main_config, CONFIG_MISC_SECTION, "clipboard_store", "");</span>
+<span class='curline'><a href='../S/src--setup.c.html#L1178'>mc_config_get_string</a> 1178 src/setup.c            mc_config_get_string (mc_global.main_config, CONFIG_MISC_SECTION, "clipboard_paste", "");</span>
+<span class='curline'><a href='../S/src--setup.c.html#L1327'>mc_config_get_string</a> 1327 src/setup.c            mc_config_get_string (mc_global.main_config, CONFIG_MISC_SECTION, "ftpfs_password", "");</span>
+<span class='curline'><a href='../S/src--setup.c.html#L1467'>mc_config_get_string</a> 1467 src/setup.c        buffer = mc_config_get_string (mc_global.panels_config, section, "sort_order", "name");</span>
+<span class='curline'><a href='../S/src--setup.c.html#L1475'>mc_config_get_string</a> 1475 src/setup.c        buffer = mc_config_get_string (mc_global.panels_config, section, "list_mode", "full");</span>
+<span class='curline'><a href='../S/src--setup.c.html#L1490'>mc_config_get_string</a> 1490 src/setup.c            mc_config_get_string (mc_global.panels_config, section, "user_format", DEFAULT_USER_FORMAT);</span>
+<span class='curline'><a href='../S/src--setup.c.html#L1497'>mc_config_get_string</a> 1497 src/setup.c                mc_config_get_string (mc_global.panels_config, section, buffer2, DEFAULT_USER_FORMAT);</span>
+<span class='curline'><a href='../S/tests--lib--mcconfig--config_string.c.html#L188'>mc_config_get_string</a>  188 tests/lib/mcconfig/config_string.c         mc_config_get_string (mc_config, data-&gt;input_group, data-&gt;input_param,</span>
+<span class='curline'><a href='../S/tests--lib--serialize.c.html#L328'>mc_config_get_string</a>  328 tests/lib/serialize.c     actual_value = mc_config_get_string (actual, "group1", "param2", "");</span>
+<span class='curline'><a href='../S/tests--lib--serialize.c.html#L340'>mc_config_get_string</a>  340 tests/lib/serialize.c     actual_value = mc_config_get_string (actual, "group3", "param2", "");</span>
+</pre>
+</body>
+</html>

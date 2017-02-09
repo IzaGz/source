@@ -1,0 +1,25 @@
+<!DOCTYPE html PUBLIC '-//W3C//DTD XHTML 1.0 Transitional//EN' 'http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd'>
+<html xmlns='http://www.w3.org/1999/xhtml'>
+<head>
+<title>dst_stat</title>
+<meta name='robots' content='noindex,nofollow' />
+<meta name='generator' content='GLOBAL-6.5.2' />
+<meta http-equiv='Content-Style-Type' content='text/css' />
+<link rel='stylesheet' type='text/css' href='../style.css' />
+</head>
+<body>
+<pre>
+<span class='curline'><a href='../S/src--filemanager--file.c.html#L1500'>dst_stat</a>         1500 src/filemanager/file.c     struct stat src_stat, dst_stat;</span>
+<span class='curline'><a href='../S/src--filemanager--file.c.html#L1529'>dst_stat</a>         1529 src/filemanager/file.c     while (mc_stat (dst_vpath, &amp;dst_stat) == 0)</span>
+<span class='curline'><a href='../S/src--filemanager--file.c.html#L1531'>dst_stat</a>         1531 src/filemanager/file.c         if (S_ISDIR (dst_stat.st_mode))</span>
+<span class='curline'><a href='../S/src--filemanager--file.c.html#L1568'>dst_stat</a>         1568 src/filemanager/file.c         if (src_stat.st_dev == dst_stat.st_dev &amp;&amp; src_stat.st_ino == dst_stat.st_ino)</span>
+<span class='curline'><a href='../S/src--filemanager--file.c.html#L1579'>dst_stat</a>         1579 src/filemanager/file.c             return_status = query_replace (ctx, dst_path, &amp;src_stat, &amp;dst_stat);</span>
+<span class='curline'><a href='../S/src--filemanager--file.c.html#L1742'>dst_stat</a>         1742 src/filemanager/file.c     while (mc_fstat (dest_desc, &amp;dst_stat) != 0)</span>
+<span class='curline'><a href='../S/src--filemanager--file.c.html#L1758'>dst_stat</a>         1758 src/filemanager/file.c     while (vfs_preallocate (dest_desc, file_size, appending ? dst_stat.st_size : 0) != 0)</span>
+<span class='curline'><a href='../S/src--filemanager--file.c.html#L1813'>dst_stat</a>         1813 src/filemanager/file.c         bufsize = io_blksize (dst_stat);</span>
+<span class='curline'><a href='../S/src--filemanager--file.c.html#L2949'>dst_stat</a>         2949 src/filemanager/file.c             struct stat dst_stat;</span>
+<span class='curline'><a href='../S/src--filemanager--file.c.html#L2951'>dst_stat</a>         2951 src/filemanager/file.c             dst_result = mc_stat (dest_vpath, &amp;dst_stat);</span>
+<span class='curline'><a href='../S/src--filemanager--file.c.html#L2953'>dst_stat</a>         2953 src/filemanager/file.c             if ((dst_result != 0) || S_ISDIR (dst_stat.st_mode))</span>
+</pre>
+</body>
+</html>

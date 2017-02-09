@@ -1,0 +1,23 @@
+<!DOCTYPE html PUBLIC '-//W3C//DTD XHTML 1.0 Transitional//EN' 'http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd'>
+<html xmlns='http://www.w3.org/1999/xhtml'>
+<head>
+<title>list_types</title>
+<meta name='robots' content='noindex,nofollow' />
+<meta name='generator' content='GLOBAL-6.5.2' />
+<meta http-equiv='Content-Style-Type' content='text/css' />
+<link rel='stylesheet' type='text/css' href='../style.css' />
+</head>
+<body>
+<pre>
+<span class='curline'><a href='../S/src--filemanager--boxes.c.html#L750'>list_types</a>        750 src/filemanager/boxes.c         const char *list_types[LIST_TYPES] = {</span>
+<span class='curline'><a href='../S/src--filemanager--boxes.c.html#L760'>list_types</a>        760 src/filemanager/boxes.c                 QUICK_RADIO (LIST_TYPES, list_types, &amp;result, &amp;panel_listing_types_id),</span>
+<span class='curline'><a href='../S/src--setup.c.html#L235'>list_types</a>        235 src/setup.c    } list_types [] = {</span>
+<span class='curline'><a href='../S/src--setup.c.html#L1477'>list_types</a>       1477 src/setup.c        for (i = 0; list_types[i].key != NULL; i++)</span>
+<span class='curline'><a href='../S/src--setup.c.html#L1478'>list_types</a>       1478 src/setup.c            if (g_ascii_strcasecmp (list_types[i].key, buffer) == 0)</span>
+<span class='curline'><a href='../S/src--setup.c.html#L1480'>list_types</a>       1480 src/setup.c                panel-&gt;list_type = list_types[i].list_type;</span>
+<span class='curline'><a href='../S/src--setup.c.html#L1519'>list_types</a>       1519 src/setup.c        for (i = 0; list_types[i].key != NULL; i++)</span>
+<span class='curline'><a href='../S/src--setup.c.html#L1520'>list_types</a>       1520 src/setup.c            if (list_types[i].list_type == (int) panel-&gt;list_type)</span>
+<span class='curline'><a href='../S/src--setup.c.html#L1522'>list_types</a>       1522 src/setup.c                mc_config_set_string (mc_global.panels_config, section, "list_mode", list_types[i].key);</span>
+</pre>
+</body>
+</html>

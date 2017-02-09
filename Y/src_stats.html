@@ -1,0 +1,21 @@
+<!DOCTYPE html PUBLIC '-//W3C//DTD XHTML 1.0 Transitional//EN' 'http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd'>
+<html xmlns='http://www.w3.org/1999/xhtml'>
+<head>
+<title>src_stats</title>
+<meta name='robots' content='noindex,nofollow' />
+<meta name='generator' content='GLOBAL-6.5.2' />
+<meta http-equiv='Content-Style-Type' content='text/css' />
+<link rel='stylesheet' type='text/css' href='../style.css' />
+</head>
+<body>
+<pre>
+<span class='curline'><a href='../S/src--filemanager--file.c.html#L928'>src_stats</a>         928 src/filemanager/file.c     struct stat src_stats, dst_stats;</span>
+<span class='curline'><a href='../S/src--filemanager--file.c.html#L948'>src_stats</a>         948 src/filemanager/file.c     while (mc_lstat (src_vpath, &amp;src_stats) != 0)</span>
+<span class='curline'><a href='../S/src--filemanager--file.c.html#L966'>src_stats</a>         966 src/filemanager/file.c         if (src_stats.st_dev == dst_stats.st_dev &amp;&amp; src_stats.st_ino == dst_stats.st_ino)</span>
+<span class='curline'><a href='../S/src--filemanager--file.c.html#L982'>src_stats</a>         982 src/filemanager/file.c             return_status = query_replace (ctx, d, &amp;src_stats, &amp;dst_stats);</span>
+<span class='curline'><a href='../S/src--filemanager--file.c.html#L991'>src_stats</a>         991 src/filemanager/file.c         if (S_ISLNK (src_stats.st_mode) &amp;&amp; ctx-&gt;stable_symlinks)</span>
+<span class='curline'><a href='../S/src--filemanager--file.c.html#L1001'>src_stats</a>        1001 src/filemanager/file.c             return_status = progress_update_one (tctx, ctx, src_stats.st_size);</span>
+<span class='curline'><a href='../S/src--filemanager--file.c.html#L1060'>src_stats</a>        1060 src/filemanager/file.c         return_status = progress_update_one (tctx, ctx, src_stats.st_size);</span>
+</pre>
+</body>
+</html>

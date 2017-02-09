@@ -1,0 +1,20 @@
+<!DOCTYPE html PUBLIC '-//W3C//DTD XHTML 1.0 Transitional//EN' 'http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd'>
+<html xmlns='http://www.w3.org/1999/xhtml'>
+<head>
+<title>mc_global_config</title>
+<meta name='robots' content='noindex,nofollow' />
+<meta name='generator' content='GLOBAL-6.5.2' />
+<meta http-equiv='Content-Style-Type' content='text/css' />
+<link rel='stylesheet' type='text/css' href='../style.css' />
+</head>
+<body>
+<pre>
+<span class='curline'><a href='../S/src--setup.c.html#L1304'>mc_global_config</a> 1304 src/setup.c        mc_config_t *mc_global_config;</span>
+<span class='curline'><a href='../S/src--setup.c.html#L1306'>mc_global_config</a> 1306 src/setup.c        mc_global_config = mc_config_init (global_profile_name, FALSE);</span>
+<span class='curline'><a href='../S/src--setup.c.html#L1307'>mc_global_config</a> 1307 src/setup.c        if (mc_global_config != NULL)</span>
+<span class='curline'><a href='../S/src--setup.c.html#L1309'>mc_global_config</a> 1309 src/setup.c            load_keys_from_section ("general", mc_global_config);</span>
+<span class='curline'><a href='../S/src--setup.c.html#L1310'>mc_global_config</a> 1310 src/setup.c            load_keys_from_section (getenv ("TERM"), mc_global_config);</span>
+<span class='curline'><a href='../S/src--setup.c.html#L1311'>mc_global_config</a> 1311 src/setup.c            mc_config_deinit (mc_global_config);</span>
+</pre>
+</body>
+</html>

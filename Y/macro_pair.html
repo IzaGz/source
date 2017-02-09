@@ -1,0 +1,25 @@
+<!DOCTYPE html PUBLIC '-//W3C//DTD XHTML 1.0 Transitional//EN' 'http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd'>
+<html xmlns='http://www.w3.org/1999/xhtml'>
+<head>
+<title>macro_pair</title>
+<meta name='robots' content='noindex,nofollow' />
+<meta name='generator' content='GLOBAL-6.5.2' />
+<meta http-equiv='Content-Style-Type' content='text/css' />
+<link rel='stylesheet' type='text/css' href='../style.css' />
+</head>
+<body>
+<pre>
+<span class='curline'><a href='../S/src--editor--editcmd.c.html#L2003'>macro_pair</a>       2003 src/editor/editcmd.c             char **macro_pair = NULL;</span>
+<span class='curline'><a href='../S/src--editor--editcmd.c.html#L2005'>macro_pair</a>       2005 src/editor/editcmd.c             macro_pair = g_strsplit (*curr_values, ":", 2);</span>
+<span class='curline'><a href='../S/src--editor--editcmd.c.html#L2006'>macro_pair</a>       2006 src/editor/editcmd.c             if (macro_pair != NULL)</span>
+<span class='curline'><a href='../S/src--editor--editcmd.c.html#L2009'>macro_pair</a>       2009 src/editor/editcmd.c                 if (macro_pair[0] == NULL || macro_pair[0][0] == '\0')</span>
+<span class='curline'><a href='../S/src--editor--editcmd.c.html#L2013'>macro_pair</a>       2013 src/editor/editcmd.c                     m_act.action = keybind_lookup_action (macro_pair[0]);</span>
+<span class='curline'><a href='../S/src--editor--editcmd.c.html#L2014'>macro_pair</a>       2014 src/editor/editcmd.c                     MC_PTR_FREE (macro_pair[0]);</span>
+<span class='curline'><a href='../S/src--editor--editcmd.c.html#L2016'>macro_pair</a>       2016 src/editor/editcmd.c                 if (macro_pair[1] == NULL || macro_pair[1][0] == '\0')</span>
+<span class='curline'><a href='../S/src--editor--editcmd.c.html#L2020'>macro_pair</a>       2020 src/editor/editcmd.c                     m_act.ch = strtol (macro_pair[1], NULL, 0);</span>
+<span class='curline'><a href='../S/src--editor--editcmd.c.html#L2021'>macro_pair</a>       2021 src/editor/editcmd.c                     MC_PTR_FREE (macro_pair[1]);</span>
+<span class='curline'><a href='../S/src--editor--editcmd.c.html#L2034'>macro_pair</a>       2034 src/editor/editcmd.c                 g_strfreev (macro_pair);</span>
+<span class='curline'><a href='../S/src--editor--editcmd.c.html#L2035'>macro_pair</a>       2035 src/editor/editcmd.c                 macro_pair = NULL;</span>
+</pre>
+</body>
+</html>

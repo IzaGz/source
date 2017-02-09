@@ -1,0 +1,46 @@
+<!DOCTYPE html PUBLIC '-//W3C//DTD XHTML 1.0 Transitional//EN' 'http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd'>
+<html xmlns='http://www.w3.org/1999/xhtml'>
+<head>
+<title>chown_advanced_but</title>
+<meta name='robots' content='noindex,nofollow' />
+<meta name='generator' content='GLOBAL-6.5.2' />
+<meta http-equiv='Content-Style-Type' content='text/css' />
+<link rel='stylesheet' type='text/css' href='../style.css' />
+</head>
+<body>
+<pre>
+<span class='curline'><a href='../S/src--filemanager--achown.c.html#L81'>chown_advanced_but</a>   81 src/filemanager/achown.c } chown_advanced_but[BUTTONS] =</span>
+<span class='curline'><a href='../S/src--filemanager--achown.c.html#L480'>chown_advanced_but</a>  480 src/filemanager/achown.c         if (chown_advanced_but[i].id == id)</span>
+<span class='curline'><a href='../S/src--filemanager--achown.c.html#L647'>chown_advanced_but</a>  647 src/filemanager/achown.c             chown_advanced_but[i].text = _(chown_advanced_but[i].text);</span>
+<span class='curline'><a href='../S/src--filemanager--achown.c.html#L650'>chown_advanced_but</a>  650 src/filemanager/achown.c             chown_advanced_but[i].len = str_term_width1 (chown_advanced_but[i].text) + 3;</span>
+<span class='curline'><a href='../S/src--filemanager--achown.c.html#L651'>chown_advanced_but</a>  651 src/filemanager/achown.c             if (chown_advanced_but[i].flags == DEFPUSH_BUTTON)</span>
+<span class='curline'><a href='../S/src--filemanager--achown.c.html#L652'>chown_advanced_but</a>  652 src/filemanager/achown.c                 chown_advanced_but[i].len += 2; /* "&lt;&gt;" */</span>
+<span class='curline'><a href='../S/src--filemanager--achown.c.html#L681'>chown_advanced_but</a>  681 src/filemanager/achown.c #define XTRACT(i,y) y, BX+chown_advanced_but[i].x, \</span>
+<span class='curline'><a href='../S/src--filemanager--achown.c.html#L682'>chown_advanced_but</a>  682 src/filemanager/achown.c         chown_advanced_but[i].ret_cmd, chown_advanced_but[i].flags, \</span>
+<span class='curline'><a href='../S/src--filemanager--achown.c.html#L683'>chown_advanced_but</a>  683 src/filemanager/achown.c         (chown_advanced_but[i].text), NULL</span>
+<span class='curline'><a href='../S/src--filemanager--achown.c.html#L685'>chown_advanced_but</a>  685 src/filemanager/achown.c     chown_advanced_but[0].id = add_widget (ch_dlg, b_att[0]);</span>
+<span class='curline'><a href='../S/src--filemanager--achown.c.html#L687'>chown_advanced_but</a>  687 src/filemanager/achown.c     chown_advanced_but[1].id = add_widget (ch_dlg, b_att[1]);</span>
+<span class='curline'><a href='../S/src--filemanager--achown.c.html#L689'>chown_advanced_but</a>  689 src/filemanager/achown.c     chown_advanced_but[2].id = add_widget (ch_dlg, b_att[2]);</span>
+<span class='curline'><a href='../S/src--filemanager--achown.c.html#L691'>chown_advanced_but</a>  691 src/filemanager/achown.c     chown_advanced_but[3].id = add_widget (ch_dlg, b_user);</span>
+<span class='curline'><a href='../S/src--filemanager--achown.c.html#L693'>chown_advanced_but</a>  693 src/filemanager/achown.c     chown_advanced_but[4].id = add_widget (ch_dlg, b_group);</span>
+<span class='curline'><a href='../S/src--filemanager--achown.c.html#L704'>chown_advanced_but</a>  704 src/filemanager/achown.c         chown_advanced_but[i].id = add_widget (ch_dlg,</span>
+<span class='curline'><a href='../S/src--filemanager--achown.c.html#L707'>chown_advanced_but</a>  707 src/filemanager/achown.c                                                            chown_advanced_but[i].len,</span>
+<span class='curline'><a href='../S/src--filemanager--achown.c.html#L708'>chown_advanced_but</a>  708 src/filemanager/achown.c                                                            chown_advanced_but[i].ret_cmd,</span>
+<span class='curline'><a href='../S/src--filemanager--achown.c.html#L709'>chown_advanced_but</a>  709 src/filemanager/achown.c                                                            chown_advanced_but[i].flags,</span>
+<span class='curline'><a href='../S/src--filemanager--achown.c.html#L710'>chown_advanced_but</a>  710 src/filemanager/achown.c                                                            chown_advanced_but[i].text, NULL));</span>
+<span class='curline'><a href='../S/src--filemanager--achown.c.html#L712'>chown_advanced_but</a>  712 src/filemanager/achown.c         chown_advanced_but[i].id = add_widget (ch_dlg,</span>
+<span class='curline'><a href='../S/src--filemanager--achown.c.html#L714'>chown_advanced_but</a>  714 src/filemanager/achown.c                                                            chown_advanced_but[i].ret_cmd,</span>
+<span class='curline'><a href='../S/src--filemanager--achown.c.html#L715'>chown_advanced_but</a>  715 src/filemanager/achown.c                                                            chown_advanced_but[i].flags,</span>
+<span class='curline'><a href='../S/src--filemanager--achown.c.html#L716'>chown_advanced_but</a>  716 src/filemanager/achown.c                                                            chown_advanced_but[i].text, NULL));</span>
+<span class='curline'><a href='../S/src--filemanager--achown.c.html#L722'>chown_advanced_but</a>  722 src/filemanager/achown.c     chown_advanced_but[i].id = add_widget (ch_dlg,</span>
+<span class='curline'><a href='../S/src--filemanager--achown.c.html#L725'>chown_advanced_but</a>  725 src/filemanager/achown.c                                                        chown_advanced_but[i].len,</span>
+<span class='curline'><a href='../S/src--filemanager--achown.c.html#L726'>chown_advanced_but</a>  726 src/filemanager/achown.c                                                        chown_advanced_but[i].ret_cmd,</span>
+<span class='curline'><a href='../S/src--filemanager--achown.c.html#L727'>chown_advanced_but</a>  727 src/filemanager/achown.c                                                        chown_advanced_but[i].flags,</span>
+<span class='curline'><a href='../S/src--filemanager--achown.c.html#L728'>chown_advanced_but</a>  728 src/filemanager/achown.c                                                        chown_advanced_but[i].text, NULL));</span>
+<span class='curline'><a href='../S/src--filemanager--achown.c.html#L730'>chown_advanced_but</a>  730 src/filemanager/achown.c     chown_advanced_but[i].id = add_widget (ch_dlg,</span>
+<span class='curline'><a href='../S/src--filemanager--achown.c.html#L732'>chown_advanced_but</a>  732 src/filemanager/achown.c                                                        chown_advanced_but[i].ret_cmd,</span>
+<span class='curline'><a href='../S/src--filemanager--achown.c.html#L733'>chown_advanced_but</a>  733 src/filemanager/achown.c                                                        chown_advanced_but[i].flags,</span>
+<span class='curline'><a href='../S/src--filemanager--achown.c.html#L734'>chown_advanced_but</a>  734 src/filemanager/achown.c                                                        chown_advanced_but[i].text, NULL));</span>
+</pre>
+</body>
+</html>

@@ -1,0 +1,37 @@
+<!DOCTYPE html PUBLIC '-//W3C//DTD XHTML 1.0 Transitional//EN' 'http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd'>
+<html xmlns='http://www.w3.org/1999/xhtml'>
+<head>
+<title>mypath</title>
+<meta name='robots' content='noindex,nofollow' />
+<meta name='generator' content='GLOBAL-6.5.2' />
+<meta http-equiv='Content-Style-Type' content='text/css' />
+<link rel='stylesheet' type='text/css' href='../style.css' />
+</head>
+<body>
+<pre>
+<span class='curline'><a href='../S/src--vfs--smbfs--smbfs.c.html#L1536'>mypath</a>           1536 src/vfs/smbfs/smbfs.c     char *mypath;</span>
+<span class='curline'><a href='../S/src--vfs--smbfs--smbfs.c.html#L1540'>mypath</a>           1540 src/vfs/smbfs/smbfs.c     mypath = smbfs_convert_path (path, FALSE);</span>
+<span class='curline'><a href='../S/src--vfs--smbfs--smbfs.c.html#L1552'>mypath</a>           1552 src/vfs/smbfs/smbfs.c     if (cli_list (sc-&gt;cli, mypath, attribute, smbfs_loaddir_helper, single_entry) &lt; 1)</span>
+<span class='curline'><a href='../S/src--vfs--smbfs--smbfs.c.html#L1555'>mypath</a>           1555 src/vfs/smbfs/smbfs.c         g_free (mypath);</span>
+<span class='curline'><a href='../S/src--vfs--smbfs--smbfs.c.html#L1564'>mypath</a>           1564 src/vfs/smbfs/smbfs.c     g_free (mypath);</span>
+<span class='curline'><a href='../S/src--vfs--smbfs--smbfs.c.html#L1595'>mypath</a>           1595 src/vfs/smbfs/smbfs.c     const char *mypath = path;</span>
+<span class='curline'><a href='../S/src--vfs--smbfs--smbfs.c.html#L1597'>mypath</a>           1597 src/vfs/smbfs/smbfs.c     mypath++;                   /* cut off leading '/' */</span>
+<span class='curline'><a href='../S/src--vfs--smbfs--smbfs.c.html#L1598'>mypath</a>           1598 src/vfs/smbfs/smbfs.c     if ((p = strrchr (mypath, '/')))</span>
+<span class='curline'><a href='../S/src--vfs--smbfs--smbfs.c.html#L1599'>mypath</a>           1599 src/vfs/smbfs/smbfs.c         mypath = p + 1;         /* advance until last file/dir name */</span>
+<span class='curline'><a href='../S/src--vfs--smbfs--smbfs.c.html#L1601'>mypath</a>           1601 src/vfs/smbfs/smbfs.c                mypath, current_info-&gt;dirname));</span>
+<span class='curline'><a href='../S/src--vfs--smbfs--smbfs.c.html#L1612'>mypath</a>           1612 src/vfs/smbfs/smbfs.c     if (smbfs_search_dir_entry (current_info-&gt;entries, mypath, buf) == 0)</span>
+<span class='curline'><a href='../S/src--vfs--smbfs--smbfs.c.html#L1625'>mypath</a>           1625 src/vfs/smbfs/smbfs.c         if (strcmp (mydir, mypath) == 0)</span>
+<span class='curline'><a href='../S/src--vfs--smbfs--smbfs.c.html#L1640'>mypath</a>           1640 src/vfs/smbfs/smbfs.c                    mypath, current_info-&gt;dirname));</span>
+<span class='curline'><a href='../S/src--vfs--smbfs--smbfs.c.html#L1647'>mypath</a>           1647 src/vfs/smbfs/smbfs.c         if (strcmp (mypath, dnp) == 0)</span>
+<span class='curline'><a href='../S/src--vfs--smbfs--smbfs.c.html#L1660'>mypath</a>           1660 src/vfs/smbfs/smbfs.c         if (smbfs_search_dir_entry (previous_info-&gt;entries, mypath, buf) == 0)</span>
+<span class='curline'><a href='../S/src--vfs--smbfs--smbfs.c.html#L1667'>mypath</a>           1667 src/vfs/smbfs/smbfs.c         if (smbfs_search_dir_entry (current_share_info-&gt;entries, mypath, buf) == 0)</span>
+<span class='curline'><a href='../S/src--vfs--smbfs--smbfs.c.html#L1674'>mypath</a>           1674 src/vfs/smbfs/smbfs.c         if (smbfs_search_dir_entry (current_server_info-&gt;entries, mypath, buf) == 0)</span>
+<span class='curline'><a href='../S/src--vfs--smbfs--smbfs.c.html#L1706'>mypath</a>           1706 src/vfs/smbfs/smbfs.c     char *mypath, *p;</span>
+<span class='curline'><a href='../S/src--vfs--smbfs--smbfs.c.html#L1710'>mypath</a>           1710 src/vfs/smbfs/smbfs.c     mypath = g_strdup (path_element-&gt;path);</span>
+<span class='curline'><a href='../S/src--vfs--smbfs--smbfs.c.html#L1711'>mypath</a>           1711 src/vfs/smbfs/smbfs.c     p = strrchr (mypath, '/');</span>
+<span class='curline'><a href='../S/src--vfs--smbfs--smbfs.c.html#L1713'>mypath</a>           1713 src/vfs/smbfs/smbfs.c     if (p &gt; mypath)</span>
+<span class='curline'><a href='../S/src--vfs--smbfs--smbfs.c.html#L1715'>mypath</a>           1715 src/vfs/smbfs/smbfs.c     DEBUG (6, ("smbfs_loaddir_by_name(%s)\n", mypath));</span>
+<span class='curline'><a href='../S/src--vfs--smbfs--smbfs.c.html#L1718'>mypath</a>           1718 src/vfs/smbfs/smbfs.c     g_free (mypath);</span>
+</pre>
+</body>
+</html>

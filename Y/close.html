@@ -1,0 +1,162 @@
+<!DOCTYPE html PUBLIC '-//W3C//DTD XHTML 1.0 Transitional//EN' 'http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd'>
+<html xmlns='http://www.w3.org/1999/xhtml'>
+<head>
+<title>close</title>
+<meta name='robots' content='noindex,nofollow' />
+<meta name='generator' content='GLOBAL-6.5.2' />
+<meta http-equiv='Content-Style-Type' content='text/css' />
+<link rel='stylesheet' type='text/css' href='../style.css' />
+</head>
+<body>
+<pre>
+<span class='curline'><a href='../S/lib--utilunix.c.html#L636'>close</a>             636 lib/utilunix.c         res = close (p-&gt;out.fd);</span>
+<span class='curline'><a href='../S/lib--utilunix.c.html#L638'>close</a>             638 lib/utilunix.c         res = close (p-&gt;err.fd);</span>
+<span class='curline'><a href='../S/lib--utilunix.c.html#L722'>close</a>             722 lib/utilunix.c     if (old_error &lt; 0 || close (STDERR_FILENO) != 0 || dup (error_pipe[1]) != STDERR_FILENO)</span>
+<span class='curline'><a href='../S/lib--utilunix.c.html#L726'>close</a>             726 lib/utilunix.c         close (error_pipe[0]);</span>
+<span class='curline'><a href='../S/lib--utilunix.c.html#L751'>close</a>             751 lib/utilunix.c     close (error_pipe[1]);</span>
+<span class='curline'><a href='../S/lib--utilunix.c.html#L790'>close</a>             790 lib/utilunix.c         close (old_error);</span>
+<span class='curline'><a href='../S/lib--utilunix.c.html#L795'>close</a>             795 lib/utilunix.c         close (error_pipe[0]);</span>
+<span class='curline'><a href='../S/lib--vfs--direntry.c.html#L658'>close</a>             658 lib/vfs/direntry.c         close (FH-&gt;handle);</span>
+<span class='curline'><a href='../S/lib--vfs--direntry.c.html#L1277'>close</a>            1277 lib/vfs/direntry.c             close (tmp_handle);</span>
+<span class='curline'><a href='../S/lib--vfs--direntry.c.html#L1422'>close</a>            1422 lib/vfs/direntry.c     close (handle);</span>
+<span class='curline'><a href='../S/lib--vfs--direntry.c.html#L1432'>close</a>            1432 lib/vfs/direntry.c     close (handle);</span>
+<span class='curline'><a href='../S/lib--vfs--direntry.c.html#L1450'>close</a>            1450 lib/vfs/direntry.c     vclass-&gt;close = vfs_s_close;</span>
+<span class='curline'><a href='../S/lib--vfs--interface.c.html#L109'>close</a>             109 lib/vfs/interface.c     i = close (fdout);</span>
+<span class='curline'><a href='../S/lib--vfs--interface.c.html#L122'>close</a>             122 lib/vfs/interface.c         close (fdout);</span>
+<span class='curline'><a href='../S/lib--vfs--interface.c.html#L159'>close</a>             159 lib/vfs/interface.c         if (close (fdin) == -1)</span>
+<span class='curline'><a href='../S/lib--vfs--interface.c.html#L179'>close</a>             179 lib/vfs/interface.c         close (fdin);</span>
+<span class='curline'><a href='../S/lib--vfs--interface.c.html#L406'>close</a>             406 lib/vfs/interface.c         return close (handle);</span>
+<span class='curline'><a href='../S/lib--vfs--interface.c.html#L408'>close</a>             408 lib/vfs/interface.c     if (!vfs-&gt;close)</span>
+<span class='curline'><a href='../S/lib--vfs--interface.c.html#L410'>close</a>             410 lib/vfs/interface.c     result = (*vfs-&gt;close) (fsinfo);</span>
+<span class='curline'><a href='../S/lib--vfs--interface.c.html#L898'>close</a>             898 lib/vfs/interface.c             close (test_fd);</span>
+<span class='curline'><a href='../S/lib--vfs--interface.c.html#L902'>close</a>             902 lib/vfs/interface.c                 close (test_fd);</span>
+<span class='curline'><a href='../S/lib--vfs--vfs.h.html#L164'>close</a>             164 lib/vfs/vfs.h      int (*close) (void *vfs_info);</span>
+<span class='curline'><a href='../S/lib--widget--dialog.c.html#L1238'>close</a>            1238 lib/widget/dialog.c         close (i);</span>
+<span class='curline'><a href='../S/src--background.c.html#L543'>close</a>             543 src/background.c         (void) close (comm[0]);</span>
+<span class='curline'><a href='../S/src--background.c.html#L544'>close</a>             544 src/background.c         (void) close (comm[1]);</span>
+<span class='curline'><a href='../S/src--background.c.html#L545'>close</a>             545 src/background.c         (void) close (back_comm[0]);</span>
+<span class='curline'><a href='../S/src--background.c.html#L546'>close</a>             546 src/background.c         (void) close (back_comm[1]);</span>
+<span class='curline'><a href='../S/src--background.c.html#L562'>close</a>             562 src/background.c         close (STDIN_FILENO);</span>
+<span class='curline'><a href='../S/src--background.c.html#L563'>close</a>             563 src/background.c         close (STDOUT_FILENO);</span>
+<span class='curline'><a href='../S/src--background.c.html#L564'>close</a>             564 src/background.c         close (STDERR_FILENO);</span>
+<span class='curline'><a href='../S/src--cons.handler.c.html#L145'>close</a>             145 src/cons.handler.c         status = close (pipefd1[1]);</span>
+<span class='curline'><a href='../S/src--cons.handler.c.html#L146'>close</a>             146 src/cons.handler.c         status = close (pipefd2[0]);</span>
+<span class='curline'><a href='../S/src--cons.handler.c.html#L159'>close</a>             159 src/cons.handler.c             status = close (pipefd1[1]);</span>
+<span class='curline'><a href='../S/src--cons.handler.c.html#L160'>close</a>             160 src/cons.handler.c             status = close (pipefd1[0]);</span>
+<span class='curline'><a href='../S/src--cons.handler.c.html#L161'>close</a>             161 src/cons.handler.c             status = close (pipefd2[1]);</span>
+<span class='curline'><a href='../S/src--cons.handler.c.html#L162'>close</a>             162 src/cons.handler.c             status = close (pipefd2[0]);</span>
+<span class='curline'><a href='../S/src--cons.handler.c.html#L169'>close</a>             169 src/cons.handler.c             status = close (pipefd1[0]);</span>
+<span class='curline'><a href='../S/src--cons.handler.c.html#L170'>close</a>             170 src/cons.handler.c             status = close (pipefd2[1]);</span>
+<span class='curline'><a href='../S/src--cons.handler.c.html#L176'>close</a>             176 src/cons.handler.c                 status = close (pipefd1[1]);</span>
+<span class='curline'><a href='../S/src--cons.handler.c.html#L177'>close</a>             177 src/cons.handler.c                 status = close (pipefd2[0]);</span>
+<span class='curline'><a href='../S/src--cons.handler.c.html#L188'>close</a>             188 src/cons.handler.c             status = close (pipefd1[1]);</span>
+<span class='curline'><a href='../S/src--cons.handler.c.html#L189'>close</a>             189 src/cons.handler.c             status = close (pipefd2[0]);</span>
+<span class='curline'><a href='../S/src--cons.handler.c.html#L196'>close</a>             196 src/cons.handler.c                 status = close (pipefd1[0]);</span>
+<span class='curline'><a href='../S/src--cons.handler.c.html#L201'>close</a>             201 src/cons.handler.c                 status = close (pipefd2[1]);</span>
+<span class='curline'><a href='../S/src--cons.handler.c.html#L206'>close</a>             206 src/cons.handler.c                 status = close (status);</span>
+<span class='curline'><a href='../S/src--cons.handler.c.html#L248'>close</a>             248 src/cons.handler.c             close (pipefd1[1]);</span>
+<span class='curline'><a href='../S/src--cons.handler.c.html#L249'>close</a>             249 src/cons.handler.c             close (pipefd2[0]);</span>
+<span class='curline'><a href='../S/src--consaver--cons.saver.c.html#L169'>close</a>             169 src/consaver/cons.saver.c     close (STDERR_FILENO);</span>
+<span class='curline'><a href='../S/src--diffviewer--ydiff.c.html#L482'>close</a>             482 src/diffviewer/ydiff.c         rv = close (fs-&gt;fd);</span>
+<span class='curline'><a href='../S/src--editor--editcmd.c.html#L286'>close</a>             286 src/editor/editcmd.c         close (fd);</span>
+<span class='curline'><a href='../S/src--filemanager--cmd.c.html#L258'>close</a>             258 src/filemanager/cmd.c             close (file2);</span>
+<span class='curline'><a href='../S/src--filemanager--cmd.c.html#L260'>close</a>             260 src/filemanager/cmd.c         close (file1);</span>
+<span class='curline'><a href='../S/src--filemanager--mountlist.c.html#L1145'>close</a>            1145 src/filemanager/mountlist.c                     close (lockfd);</span>
+<span class='curline'><a href='../S/src--filemanager--mountlist.c.html#L1178'>close</a>            1178 src/filemanager/mountlist.c         if (lockfd &gt;= 0 &amp;&amp; close (lockfd) != 0)</span>
+<span class='curline'><a href='../S/src--filemanager--mountlist.c.html#L1351'>close</a>            1351 src/filemanager/mountlist.c     close (fd);</span>
+<span class='curline'><a href='../S/src--filemanager--mountlist.c.html#L1564'>close</a>            1564 src/filemanager/mountlist.c             close (fd);</span>
+<span class='curline'><a href='../S/src--filemanager--mountlist.c.html#L1567'>close</a>            1567 src/filemanager/mountlist.c         close (fd);</span>
+<span class='curline'><a href='../S/src--main.c.html#L452'>close</a>             452 src/main.c                 ret2 = close (last_wd_fd);</span>
+<span class='curline'><a href='../S/src--subshell--common.c.html#L344'>close</a>             344 src/subshell/common.c     close (subshell_pipe[READ]);</span>
+<span class='curline'><a href='../S/src--subshell--common.c.html#L345'>close</a>             345 src/subshell/common.c     close (subshell_pty_slave); /* These may be FD_CLOEXEC, but just in case... */</span>
+<span class='curline'><a href='../S/src--subshell--common.c.html#L351'>close</a>             351 src/subshell/common.c     close (mc_global.tty.subshell_pty);</span>
+<span class='curline'><a href='../S/src--subshell--common.c.html#L658'>close</a>             658 src/subshell/common.c         close (pty_master);</span>
+<span class='curline'><a href='../S/src--subshell--common.c.html#L686'>close</a>             686 src/subshell/common.c             close (pty_slave);</span>
+<span class='curline'><a href='../S/src--subshell--common.c.html#L696'>close</a>             696 src/subshell/common.c             close (pty_slave);</span>
+<span class='curline'><a href='../S/src--subshell--common.c.html#L706'>close</a>             706 src/subshell/common.c             close (pty_slave);</span>
+<span class='curline'><a href='../S/src--subshell--common.c.html#L746'>close</a>             746 src/subshell/common.c                 close (pty_master);</span>
+<span class='curline'><a href='../S/src--vfs--extfs--extfs.c.html#L929'>close</a>             929 src/vfs/extfs/extfs.c         close (local_handle);</span>
+<span class='curline'><a href='../S/src--vfs--extfs--extfs.c.html#L987'>close</a>             987 src/vfs/extfs/extfs.c     close (file-&gt;local_handle);</span>
+<span class='curline'><a href='../S/src--vfs--extfs--extfs.c.html#L1602'>close</a>            1602 src/vfs/extfs/extfs.c                 close (f);</span>
+<span class='curline'><a href='../S/src--vfs--extfs--extfs.c.html#L1728'>close</a>            1728 src/vfs/extfs/extfs.c     vfs_extfs_ops.close = extfs_close;</span>
+<span class='curline'><a href='../S/src--vfs--fish--fish.c.html#L310'>close</a>             310 src/vfs/fish/fish.c         close (SUP-&gt;sockw);</span>
+<span class='curline'><a href='../S/src--vfs--fish--fish.c.html#L311'>close</a>             311 src/vfs/fish/fish.c         close (SUP-&gt;sockr);</span>
+<span class='curline'><a href='../S/src--vfs--fish--fish.c.html#L352'>close</a>             352 src/vfs/fish/fish.c         close (fileset1[0]);</span>
+<span class='curline'><a href='../S/src--vfs--fish--fish.c.html#L354'>close</a>             354 src/vfs/fish/fish.c         close (fileset2[1]);</span>
+<span class='curline'><a href='../S/src--vfs--fish--fish.c.html#L360'>close</a>             360 src/vfs/fish/fish.c         close (fileset1[0]);</span>
+<span class='curline'><a href='../S/src--vfs--fish--fish.c.html#L361'>close</a>             361 src/vfs/fish/fish.c         close (fileset1[1]);</span>
+<span class='curline'><a href='../S/src--vfs--fish--fish.c.html#L363'>close</a>             363 src/vfs/fish/fish.c         close (STDERR_FILENO);</span>
+<span class='curline'><a href='../S/src--vfs--fish--fish.c.html#L366'>close</a>             366 src/vfs/fish/fish.c         close (fileset2[0]);</span>
+<span class='curline'><a href='../S/src--vfs--fish--fish.c.html#L367'>close</a>             367 src/vfs/fish/fish.c         close (fileset2[1]);</span>
+<span class='curline'><a href='../S/src--vfs--fish--fish.c.html#L901'>close</a>             901 src/vfs/fish/fish.c         close (h);</span>
+<span class='curline'><a href='../S/src--vfs--fish--fish.c.html#L962'>close</a>             962 src/vfs/fish/fish.c         close (h);</span>
+<span class='curline'><a href='../S/src--vfs--fish--fish.c.html#L975'>close</a>             975 src/vfs/fish/fish.c             close (h);</span>
+<span class='curline'><a href='../S/src--vfs--fish--fish.c.html#L996'>close</a>             996 src/vfs/fish/fish.c     close (h);</span>
+<span class='curline'><a href='../S/src--vfs--fish--fish.c.html#L1003'>close</a>            1003 src/vfs/fish/fish.c     close (h);</span>
+<span class='curline'><a href='../S/src--vfs--fish--fish.c.html#L1638'>close</a>            1638 src/vfs/fish/fish.c             close (tmp_handle);</span>
+<span class='curline'><a href='../S/src--vfs--ftpfs--ftpfs.c.html#L453'>close</a>             453 src/vfs/ftpfs/ftpfs.c         close (SUP-&gt;sock);</span>
+<span class='curline'><a href='../S/src--vfs--ftpfs--ftpfs.c.html#L574'>close</a>             574 src/vfs/ftpfs/ftpfs.c         close (SUP-&gt;sock);</span>
+<span class='curline'><a href='../S/src--vfs--ftpfs--ftpfs.c.html#L917'>close</a>             917 src/vfs/ftpfs/ftpfs.c         close (my_socket);</span>
+<span class='curline'><a href='../S/src--vfs--ftpfs--ftpfs.c.html#L968'>close</a>             968 src/vfs/ftpfs/ftpfs.c             close (SUP-&gt;sock);</span>
+<span class='curline'><a href='../S/src--vfs--ftpfs--ftpfs.c.html#L1350'>close</a>            1350 src/vfs/ftpfs/ftpfs.c         close (data_sock);</span>
+<span class='curline'><a href='../S/src--vfs--ftpfs--ftpfs.c.html#L1368'>close</a>            1368 src/vfs/ftpfs/ftpfs.c         close (data_sock);</span>
+<span class='curline'><a href='../S/src--vfs--ftpfs--ftpfs.c.html#L1399'>close</a>            1399 src/vfs/ftpfs/ftpfs.c         close (s);</span>
+<span class='curline'><a href='../S/src--vfs--ftpfs--ftpfs.c.html#L1408'>close</a>            1408 src/vfs/ftpfs/ftpfs.c             close (s);</span>
+<span class='curline'><a href='../S/src--vfs--ftpfs--ftpfs.c.html#L1426'>close</a>            1426 src/vfs/ftpfs/ftpfs.c         close (s);</span>
+<span class='curline'><a href='../S/src--vfs--ftpfs--ftpfs.c.html#L1439'>close</a>            1439 src/vfs/ftpfs/ftpfs.c         close (s);</span>
+<span class='curline'><a href='../S/src--vfs--ftpfs--ftpfs.c.html#L1464'>close</a>            1464 src/vfs/ftpfs/ftpfs.c             close (dsock);</span>
+<span class='curline'><a href='../S/src--vfs--ftpfs--ftpfs.c.html#L1472'>close</a>            1472 src/vfs/ftpfs/ftpfs.c             close (dsock);</span>
+<span class='curline'><a href='../S/src--vfs--ftpfs--ftpfs.c.html#L1492'>close</a>            1492 src/vfs/ftpfs/ftpfs.c                     close (dsock);</span>
+<span class='curline'><a href='../S/src--vfs--ftpfs--ftpfs.c.html#L1498'>close</a>            1498 src/vfs/ftpfs/ftpfs.c         close (dsock);</span>
+<span class='curline'><a href='../S/src--vfs--ftpfs--ftpfs.c.html#L1618'>close</a>            1618 src/vfs/ftpfs/ftpfs.c         close (sock);</span>
+<span class='curline'><a href='../S/src--vfs--ftpfs--ftpfs.c.html#L1758'>close</a>            1758 src/vfs/ftpfs/ftpfs.c             close (sock);</span>
+<span class='curline'><a href='../S/src--vfs--ftpfs--ftpfs.c.html#L1787'>close</a>            1787 src/vfs/ftpfs/ftpfs.c     close (sock);</span>
+<span class='curline'><a href='../S/src--vfs--ftpfs--ftpfs.c.html#L1859'>close</a>            1859 src/vfs/ftpfs/ftpfs.c         close (h);</span>
+<span class='curline'><a href='../S/src--vfs--ftpfs--ftpfs.c.html#L1910'>close</a>            1910 src/vfs/ftpfs/ftpfs.c     close (sock);</span>
+<span class='curline'><a href='../S/src--vfs--ftpfs--ftpfs.c.html#L1912'>close</a>            1912 src/vfs/ftpfs/ftpfs.c     close (h);</span>
+<span class='curline'><a href='../S/src--vfs--ftpfs--ftpfs.c.html#L1918'>close</a>            1918 src/vfs/ftpfs/ftpfs.c     close (sock);</span>
+<span class='curline'><a href='../S/src--vfs--ftpfs--ftpfs.c.html#L1920'>close</a>            1920 src/vfs/ftpfs/ftpfs.c     close (h);</span>
+<span class='curline'><a href='../S/src--vfs--ftpfs--ftpfs.c.html#L1968'>close</a>            1968 src/vfs/ftpfs/ftpfs.c         close (FH_SOCK);</span>
+<span class='curline'><a href='../S/src--vfs--ftpfs--ftpfs.c.html#L2240'>close</a>            2240 src/vfs/ftpfs/ftpfs.c                 close (handle);</span>
+<span class='curline'><a href='../S/src--vfs--ftpfs--ftpfs.c.html#L2291'>close</a>            2291 src/vfs/ftpfs/ftpfs.c         close (fh-&gt;handle);</span>
+<span class='curline'><a href='../S/src--vfs--local--local.c.html#L388'>close</a>             388 src/vfs/local/local.c     return close (fd);</span>
+<span class='curline'><a href='../S/src--vfs--local--local.c.html#L428'>close</a>             428 src/vfs/local/local.c     vfs_local_ops.close = local_close;</span>
+<span class='curline'><a href='../S/src--vfs--sfs--sfs.c.html#L245'>close</a>             245 src/vfs/sfs/sfs.c     close (handle);</span>
+<span class='curline'><a href='../S/src--vfs--sfs--sfs.c.html#L556'>close</a>             556 src/vfs/sfs/sfs.c     vfs_sfs_ops.close = local_close;</span>
+<span class='curline'><a href='../S/src--vfs--sftpfs--connection.c.html#L138'>close</a>             138 src/vfs/sftpfs/connection.c         close (my_socket);</span>
+<span class='curline'><a href='../S/src--vfs--sftpfs--connection.c.html#L472'>close</a>             472 src/vfs/sftpfs/connection.c         close (super_data-&gt;socket_handle);</span>
+<span class='curline'><a href='../S/src--vfs--sftpfs--vfs_class.c.html#L495'>close</a>             495 src/vfs/sftpfs/vfs_class.c         close (file_handler-&gt;handle);</span>
+<span class='curline'><a href='../S/src--vfs--sftpfs--vfs_class.c.html#L717'>close</a>             717 src/vfs/sftpfs/vfs_class.c     sftpfs_class.close = sftpfs_cb_close;</span>
+<span class='curline'><a href='../S/src--vfs--smbfs--helpers--lib--netmask.c.html#L94'>close</a>              94 src/vfs/smbfs/helpers/lib/netmask.c         close (fd);</span>
+<span class='curline'><a href='../S/src--vfs--smbfs--helpers--lib--netmask.c.html#L131'>close</a>             131 src/vfs/smbfs/helpers/lib/netmask.c             close (fd);</span>
+<span class='curline'><a href='../S/src--vfs--smbfs--helpers--lib--netmask.c.html#L134'>close</a>             134 src/vfs/smbfs/helpers/lib/netmask.c         close (fd);</span>
+<span class='curline'><a href='../S/src--vfs--smbfs--helpers--lib--netmask.c.html#L146'>close</a>             146 src/vfs/smbfs/helpers/lib/netmask.c     close (fd);</span>
+<span class='curline'><a href='../S/src--vfs--smbfs--helpers--lib--netmask.c.html#L201'>close</a>             201 src/vfs/smbfs/helpers/lib/netmask.c         close (fd);</span>
+<span class='curline'><a href='../S/src--vfs--smbfs--helpers--lib--netmask.c.html#L226'>close</a>             226 src/vfs/smbfs/helpers/lib/netmask.c         close (fd);</span>
+<span class='curline'><a href='../S/src--vfs--smbfs--helpers--lib--netmask.c.html#L241'>close</a>             241 src/vfs/smbfs/helpers/lib/netmask.c         close (fd);</span>
+<span class='curline'><a href='../S/src--vfs--smbfs--helpers--lib--netmask.c.html#L245'>close</a>             245 src/vfs/smbfs/helpers/lib/netmask.c     close (fd);</span>
+<span class='curline'><a href='../S/src--vfs--smbfs--helpers--lib--netmask.c.html#L304'>close</a>             304 src/vfs/smbfs/helpers/lib/netmask.c         close (fd);</span>
+<span class='curline'><a href='../S/src--vfs--smbfs--helpers--lib--netmask.c.html#L330'>close</a>             330 src/vfs/smbfs/helpers/lib/netmask.c         close (fd);</span>
+<span class='curline'><a href='../S/src--vfs--smbfs--helpers--lib--netmask.c.html#L340'>close</a>             340 src/vfs/smbfs/helpers/lib/netmask.c         close (fd);</span>
+<span class='curline'><a href='../S/src--vfs--smbfs--helpers--lib--netmask.c.html#L344'>close</a>             344 src/vfs/smbfs/helpers/lib/netmask.c     close (fd);</span>
+<span class='curline'><a href='../S/src--vfs--smbfs--helpers--lib--util.c.html#L973'>close</a>             973 src/vfs/smbfs/helpers/lib/util.c     close (0);</span>
+<span class='curline'><a href='../S/src--vfs--smbfs--helpers--lib--util.c.html#L974'>close</a>             974 src/vfs/smbfs/helpers/lib/util.c     close (1);</span>
+<span class='curline'><a href='../S/src--vfs--smbfs--helpers--lib--util.c.html#L975'>close</a>             975 src/vfs/smbfs/helpers/lib/util.c     close (2);</span>
+<span class='curline'><a href='../S/src--vfs--smbfs--helpers--lib--util_sock.c.html#L196'>close</a>             196 src/vfs/smbfs/helpers/lib/util_sock.c     close (Client);</span>
+<span class='curline'><a href='../S/src--vfs--smbfs--helpers--lib--util_sock.c.html#L733'>close</a>             733 src/vfs/smbfs/helpers/lib/util_sock.c     close (out_fd);</span>
+<span class='curline'><a href='../S/src--vfs--smbfs--helpers--lib--util_sock.c.html#L796'>close</a>             796 src/vfs/smbfs/helpers/lib/util_sock.c             close (res);</span>
+<span class='curline'><a href='../S/src--vfs--smbfs--helpers--lib--util_sock.c.html#L860'>close</a>             860 src/vfs/smbfs/helpers/lib/util_sock.c         close (res);</span>
+<span class='curline'><a href='../S/src--vfs--smbfs--helpers--lib--util_sock.c.html#L876'>close</a>             876 src/vfs/smbfs/helpers/lib/util_sock.c         close (res);</span>
+<span class='curline'><a href='../S/src--vfs--smbfs--helpers--libsmb--clientgen.c.html#L2608'>close</a>            2608 src/vfs/smbfs/helpers/libsmb/clientgen.c         close (cli-&gt;fd);</span>
+<span class='curline'><a href='../S/src--vfs--smbfs--helpers--libsmb--clientgen.c.html#L2790'>close</a>            2790 src/vfs/smbfs/helpers/libsmb/clientgen.c                 close (cli-&gt;fd);</span>
+<span class='curline'><a href='../S/src--vfs--smbfs--helpers--libsmb--namequery.c.html#L390'>close</a>             390 src/vfs/smbfs/helpers/libsmb/namequery.c                 close (sock);</span>
+<span class='curline'><a href='../S/src--vfs--smbfs--helpers--libsmb--namequery.c.html#L394'>close</a>             394 src/vfs/smbfs/helpers/libsmb/namequery.c         close (sock);</span>
+<span class='curline'><a href='../S/src--vfs--smbfs--helpers--libsmb--namequery.c.html#L444'>close</a>             444 src/vfs/smbfs/helpers/libsmb/namequery.c                 close (sock);</span>
+<span class='curline'><a href='../S/src--vfs--smbfs--helpers--libsmb--namequery.c.html#L447'>close</a>             447 src/vfs/smbfs/helpers/libsmb/namequery.c             close (sock);</span>
+<span class='curline'><a href='../S/src--vfs--smbfs--smbfs.c.html#L2248'>close</a>            2248 src/vfs/smbfs/smbfs.c     vfs_smbfs_ops.close = smbfs_close;</span>
+<span class='curline'><a href='../S/src--vfs--undelfs--undelfs.c.html#L721'>close</a>             721 src/vfs/undelfs/undelfs.c     close (fd);</span>
+<span class='curline'><a href='../S/src--vfs--undelfs--undelfs.c.html#L823'>close</a>             823 src/vfs/undelfs/undelfs.c     vfs_undelfs_ops.close = undelfs_close;</span>
+<span class='curline'><a href='../S/tests--lib--vfs--tempdir.c.html#L110'>close</a>             110 tests/lib/vfs/tempdir.c     close (fd);</span>
+</pre>
+</body>
+</html>

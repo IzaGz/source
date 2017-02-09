@@ -1,0 +1,30 @@
+<!DOCTYPE html PUBLIC '-//W3C//DTD XHTML 1.0 Transitional//EN' 'http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd'>
+<html xmlns='http://www.w3.org/1999/xhtml'>
+<head>
+<title>cbuf</title>
+<meta name='robots' content='noindex,nofollow' />
+<meta name='generator' content='GLOBAL-6.5.2' />
+<meta http-equiv='Content-Style-Type' content='text/css' />
+<link rel='stylesheet' type='text/css' href='../style.css' />
+</head>
+<body>
+<pre>
+<span class='curline'><a href='../S/src--filemanager--file.c.html#L2043'>cbuf</a>             2043 src/filemanager/file.c     struct stat buf, cbuf;</span>
+<span class='curline'><a href='../S/src--filemanager--file.c.html#L2056'>cbuf</a>             2056 src/filemanager/file.c     if ((*ctx-&gt;stat_func) (src_vpath, &amp;cbuf) != 0)</span>
+<span class='curline'><a href='../S/src--filemanager--file.c.html#L2071'>cbuf</a>             2071 src/filemanager/file.c     if (is_in_linklist (dest_dirs, src_vpath, &amp;cbuf))</span>
+<span class='curline'><a href='../S/src--filemanager--file.c.html#L2084'>cbuf</a>             2084 src/filemanager/file.c     if (ctx-&gt;preserve &amp;&amp; cbuf.st_nlink &gt; 1 &amp;&amp; check_hardlinks (src_vpath, dst_vpath, &amp;cbuf))</span>
+<span class='curline'><a href='../S/src--filemanager--file.c.html#L2090'>cbuf</a>             2090 src/filemanager/file.c     if (!S_ISDIR (cbuf.st_mode))</span>
+<span class='curline'><a href='../S/src--filemanager--file.c.html#L2105'>cbuf</a>             2105 src/filemanager/file.c     if (is_in_linklist (parent_dirs, src_vpath, &amp;cbuf))</span>
+<span class='curline'><a href='../S/src--filemanager--file.c.html#L2115'>cbuf</a>             2115 src/filemanager/file.c     lp-&gt;ino = cbuf.st_ino;</span>
+<span class='curline'><a href='../S/src--filemanager--file.c.html#L2116'>cbuf</a>             2116 src/filemanager/file.c     lp-&gt;dev = cbuf.st_dev;</span>
+<span class='curline'><a href='../S/src--filemanager--file.c.html#L2172'>cbuf</a>             2172 src/filemanager/file.c         while (my_mkdir (dst_vpath, (cbuf.st_mode &amp; ctx-&gt;umask_kill) | S_IRWXU) != 0)</span>
+<span class='curline'><a href='../S/src--filemanager--file.c.html#L2196'>cbuf</a>             2196 src/filemanager/file.c         while (mc_chown (dst_vpath, cbuf.st_uid, cbuf.st_gid) != 0)</span>
+<span class='curline'><a href='../S/src--filemanager--file.c.html#L2281'>cbuf</a>             2281 src/filemanager/file.c         mc_chmod (dst_vpath, cbuf.st_mode &amp; ctx-&gt;umask_kill);</span>
+<span class='curline'><a href='../S/src--filemanager--file.c.html#L2282'>cbuf</a>             2282 src/filemanager/file.c         get_times (&amp;cbuf, &amp;times);</span>
+<span class='curline'><a href='../S/src--filemanager--file.c.html#L2287'>cbuf</a>             2287 src/filemanager/file.c         cbuf.st_mode = umask (-1);</span>
+<span class='curline'><a href='../S/src--filemanager--file.c.html#L2288'>cbuf</a>             2288 src/filemanager/file.c         umask (cbuf.st_mode);</span>
+<span class='curline'><a href='../S/src--filemanager--file.c.html#L2289'>cbuf</a>             2289 src/filemanager/file.c         cbuf.st_mode = 0100777 &amp; ~cbuf.st_mode;</span>
+<span class='curline'><a href='../S/src--filemanager--file.c.html#L2290'>cbuf</a>             2290 src/filemanager/file.c         mc_chmod (dst_vpath, cbuf.st_mode &amp; ctx-&gt;umask_kill);</span>
+</pre>
+</body>
+</html>

@@ -1,0 +1,36 @@
+<!DOCTYPE html PUBLIC '-//W3C//DTD XHTML 1.0 Transitional//EN' 'http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd'>
+<html xmlns='http://www.w3.org/1999/xhtml'>
+<head>
+<title>S_IFDIR</title>
+<meta name='robots' content='noindex,nofollow' />
+<meta name='generator' content='GLOBAL-6.5.2' />
+<meta http-equiv='Content-Style-Type' content='text/css' />
+<link rel='stylesheet' type='text/css' href='../style.css' />
+</head>
+<body>
+<pre>
+<span class='curline'><a href='../S/lib--vfs--direntry.c.html#L121'>S_IFDIR</a>           121 lib/vfs/direntry.c     res = vfs_s_generate_entry (me, path, dir, (flags &amp; FL_MKDIR) != 0 ? (0777 | S_IFDIR) : 0777);</span>
+<span class='curline'><a href='../S/lib--vfs--direntry.c.html#L285'>S_IFDIR</a>           285 lib/vfs/direntry.c         ino = vfs_s_new_inode (me, root-&gt;super, vfs_s_default_stat (me, S_IFDIR | 0755));</span>
+<span class='curline'><a href='../S/lib--vfs--direntry.c.html#L1180'>S_IFDIR</a>          1180 lib/vfs/direntry.c         super-&gt;root = vfs_s_new_inode (me, super, vfs_s_default_stat (me, S_IFDIR | 0755));</span>
+<span class='curline'><a href='../S/lib--vfs--parse_ls_vga.c.html#L239'>S_IFDIR</a>           239 lib/vfs/parse_ls_vga.c         type = S_IFDIR;</span>
+<span class='curline'><a href='../S/lib--vfs--parse_ls_vga.c.html#L495'>S_IFDIR</a>           495 lib/vfs/parse_ls_vga.c         local_type = S_IFDIR;</span>
+<span class='curline'><a href='../S/src--vfs--cpio--cpio.c.html#L262'>S_IFDIR</a>           262 src/vfs/cpio/cpio.c     mode |= S_IFDIR;</span>
+<span class='curline'><a href='../S/src--vfs--extfs--extfs.c.html#L304'>S_IFDIR</a>           304 src/vfs/extfs/extfs.c                     pent = extfs_generate_entry (dir-&gt;inode-&gt;archive, p, pdir, S_IFDIR | 0777);</span>
+<span class='curline'><a href='../S/src--vfs--extfs--extfs.c.html#L472'>S_IFDIR</a>           472 src/vfs/extfs/extfs.c     mode |= S_IFDIR;</span>
+<span class='curline'><a href='../S/src--vfs--fish--fish.c.html#L180'>S_IFDIR</a>           180 src/vfs/fish/fish.c     s = vfs_s_default_stat (me, S_IFDIR | 0755);</span>
+<span class='curline'><a href='../S/src--vfs--ftpfs--ftpfs.c.html#L290'>S_IFDIR</a>           290 src/vfs/ftpfs/ftpfs.c     s = vfs_s_default_stat (me, S_IFDIR | 0755);</span>
+<span class='curline'><a href='../S/src--vfs--sftpfs--vfs_subclass.c.html#L122'>S_IFDIR</a>           122 src/vfs/sftpfs/vfs_subclass.c                          vfs_s_default_stat (vpath_element-&gt;class, S_IFDIR | 0755));</span>
+<span class='curline'><a href='../S/src--vfs--smbfs--helpers--include--smb.h.html#L1376'>S_IFDIR</a>          1376 src/vfs/smbfs/helpers/include/smb.h #ifndef S_IFDIR</span>
+<span class='curline'><a href='../S/src--vfs--smbfs--helpers--include--smb.h.html#L1380'>S_IFDIR</a>          1380 src/vfs/smbfs/helpers/include/smb.h #define S_ISDIR(mode)   ((mode &amp; 0xF000) == S_IFDIR)</span>
+<span class='curline'><a href='../S/src--vfs--smbfs--smbfs.c.html#L564'>S_IFDIR</a>           564 src/vfs/smbfs/smbfs.c             (S_IFDIR | S_IRUSR | S_IRGRP | S_IROTH | S_IXUSR | S_IXGRP | S_IXOTH) &amp; myumask;</span>
+<span class='curline'><a href='../S/src--vfs--smbfs--smbfs.c.html#L611'>S_IFDIR</a>           611 src/vfs/smbfs/smbfs.c             S_IFDIR | S_IXUSR | S_IXGRP | S_IXOTH;</span>
+<span class='curline'><a href='../S/src--vfs--smbfs--smbfs.c.html#L671'>S_IFDIR</a>           671 src/vfs/smbfs/smbfs.c         (S_IFDIR | S_IRUSR | S_IRGRP | S_IROTH | S_IXUSR | S_IXGRP | S_IXOTH) &amp; myumask;</span>
+<span class='curline'><a href='../S/src--vfs--smbfs--smbfs.c.html#L1493'>S_IFDIR</a>          1493 src/vfs/smbfs/smbfs.c                 (S_IFDIR | S_IRUSR | S_IRGRP | S_IROTH | S_IXUSR | S_IXGRP | S_IXOTH) &amp; myumask;</span>
+<span class='curline'><a href='../S/src--vfs--smbfs--smbfs.c.html#L1628'>S_IFDIR</a>          1628 src/vfs/smbfs/smbfs.c             buf-&gt;st_mode = (S_IFDIR | S_IRUSR | S_IRGRP | S_IROTH) &amp; myumask;</span>
+<span class='curline'><a href='../S/src--vfs--smbfs--smbfs.c.html#L1650'>S_IFDIR</a>          1650 src/vfs/smbfs/smbfs.c             buf-&gt;st_mode = (S_IFDIR | S_IRUSR | S_IRGRP | S_IROTH) &amp; myumask;</span>
+<span class='curline'><a href='../S/src--vfs--smbfs--smbfs.c.html#L1801'>S_IFDIR</a>          1801 src/vfs/smbfs/smbfs.c             buf-&gt;st_mode = (S_IFDIR | S_IRUSR | S_IRGRP | S_IROTH) &amp; myumask;</span>
+<span class='curline'><a href='../S/src--vfs--tar--tar.c.html#L337'>S_IFDIR</a>           337 src/vfs/tar/tar.c     mode |= S_IFDIR;</span>
+<span class='curline'><a href='../S/src--vfs--tar--tar.c.html#L392'>S_IFDIR</a>           392 src/vfs/tar/tar.c         st-&gt;st_mode |= S_IFDIR;</span>
+</pre>
+</body>
+</html>

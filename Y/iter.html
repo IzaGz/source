@@ -1,0 +1,41 @@
+<!DOCTYPE html PUBLIC '-//W3C//DTD XHTML 1.0 Transitional//EN' 'http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd'>
+<html xmlns='http://www.w3.org/1999/xhtml'>
+<head>
+<title>iter</title>
+<meta name='robots' content='noindex,nofollow' />
+<meta name='generator' content='GLOBAL-6.5.2' />
+<meta http-equiv='Content-Style-Type' content='text/css' />
+<link rel='stylesheet' type='text/css' href='../style.css' />
+</head>
+<body>
+<pre>
+<span class='curline'><a href='../S/lib--vfs--direntry.c.html#L192'>iter</a>              192 lib/vfs/direntry.c         GList *iter;</span>
+<span class='curline'><a href='../S/lib--vfs--direntry.c.html#L206'>iter</a>              206 lib/vfs/direntry.c         for (iter = root-&gt;subdir; iter != NULL; iter = g_list_next (iter))</span>
+<span class='curline'><a href='../S/lib--vfs--direntry.c.html#L208'>iter</a>              208 lib/vfs/direntry.c             ent = (struct vfs_s_entry *) iter-&gt;data;</span>
+<span class='curline'><a href='../S/lib--vfs--direntry.c.html#L214'>iter</a>              214 lib/vfs/direntry.c         ent = iter != NULL ? (struct vfs_s_entry *) iter-&gt;data : NULL;</span>
+<span class='curline'><a href='../S/lib--vfs--direntry.c.html#L246'>iter</a>              246 lib/vfs/direntry.c     GList *iter;</span>
+<span class='curline'><a href='../S/lib--vfs--direntry.c.html#L269'>iter</a>              269 lib/vfs/direntry.c     iter = g_list_find_custom (root-&gt;subdir, path, (GCompareFunc) vfs_s_entry_compare);</span>
+<span class='curline'><a href='../S/lib--vfs--direntry.c.html#L270'>iter</a>              270 lib/vfs/direntry.c     ent = iter != NULL ? (struct vfs_s_entry *) iter-&gt;data : NULL;</span>
+<span class='curline'><a href='../S/lib--vfs--direntry.c.html#L296'>iter</a>              296 lib/vfs/direntry.c         iter = g_list_find_custom (root-&gt;subdir, path, (GCompareFunc) vfs_s_entry_compare);</span>
+<span class='curline'><a href='../S/lib--vfs--direntry.c.html#L297'>iter</a>              297 lib/vfs/direntry.c         ent = iter != NULL ? (struct vfs_s_entry *) iter-&gt;data : NULL;</span>
+<span class='curline'><a href='../S/lib--vfs--direntry.c.html#L687'>iter</a>              687 lib/vfs/direntry.c     GList *iter;</span>
+<span class='curline'><a href='../S/lib--vfs--direntry.c.html#L689'>iter</a>              689 lib/vfs/direntry.c     for (iter = MEDATA-&gt;supers; iter != NULL; iter = g_list_next (iter))</span>
+<span class='curline'><a href='../S/lib--vfs--direntry.c.html#L691'>iter</a>              691 lib/vfs/direntry.c         const struct vfs_s_super *super = (const struct vfs_s_super *) iter-&gt;data;</span>
+<span class='curline'><a href='../S/lib--vfs--direntry.c.html#L1063'>iter</a>             1063 lib/vfs/direntry.c     GList *iter;</span>
+<span class='curline'><a href='../S/lib--vfs--direntry.c.html#L1085'>iter</a>             1085 lib/vfs/direntry.c     for (iter = subclass-&gt;supers; iter != NULL; iter = g_list_next (iter))</span>
+<span class='curline'><a href='../S/lib--vfs--direntry.c.html#L1089'>iter</a>             1089 lib/vfs/direntry.c         super = (struct vfs_s_super *) iter-&gt;data;</span>
+<span class='curline'><a href='../S/lib--vfs--direntry.c.html#L1626'>iter</a>             1626 lib/vfs/direntry.c     GList *iter;</span>
+<span class='curline'><a href='../S/lib--vfs--direntry.c.html#L1628'>iter</a>             1628 lib/vfs/direntry.c     for (iter = root_inode-&gt;subdir; iter != NULL; iter = g_list_next (iter))</span>
+<span class='curline'><a href='../S/lib--vfs--direntry.c.html#L1630'>iter</a>             1630 lib/vfs/direntry.c         struct vfs_s_entry *entry = (struct vfs_s_entry *) iter-&gt;data;</span>
+<span class='curline'><a href='../S/src--vfs--fish--fish.c.html#L1658'>iter</a>             1658 src/vfs/fish/fish.c     GList *iter;</span>
+<span class='curline'><a href='../S/src--vfs--fish--fish.c.html#L1660'>iter</a>             1660 src/vfs/fish/fish.c     for (iter = MEDATA-&gt;supers; iter != NULL; iter = g_list_next (iter))</span>
+<span class='curline'><a href='../S/src--vfs--fish--fish.c.html#L1662'>iter</a>             1662 src/vfs/fish/fish.c         const struct vfs_s_super *super = (const struct vfs_s_super *) iter-&gt;data;</span>
+<span class='curline'><a href='../S/src--vfs--ftpfs--ftpfs.c.html#L2324'>iter</a>             2324 src/vfs/ftpfs/ftpfs.c     GList *iter;</span>
+<span class='curline'><a href='../S/src--vfs--ftpfs--ftpfs.c.html#L2326'>iter</a>             2326 src/vfs/ftpfs/ftpfs.c     for (iter = MEDATA-&gt;supers; iter != NULL; iter = g_list_next (iter))</span>
+<span class='curline'><a href='../S/src--vfs--ftpfs--ftpfs.c.html#L2328'>iter</a>             2328 src/vfs/ftpfs/ftpfs.c         const struct vfs_s_super *super = (const struct vfs_s_super *) iter-&gt;data;</span>
+<span class='curline'><a href='../S/src--vfs--sftpfs--vfs_class.c.html#L650'>iter</a>              650 src/vfs/sftpfs/vfs_class.c     GList *iter;</span>
+<span class='curline'><a href='../S/src--vfs--sftpfs--vfs_class.c.html#L654'>iter</a>              654 src/vfs/sftpfs/vfs_class.c     for (iter = sftpfs_subclass.supers; iter != NULL; iter = g_list_next (iter))</span>
+<span class='curline'><a href='../S/src--vfs--sftpfs--vfs_class.c.html#L656'>iter</a>              656 src/vfs/sftpfs/vfs_class.c         const struct vfs_s_super *super = (const struct vfs_s_super *) iter-&gt;data;</span>
+</pre>
+</body>
+</html>

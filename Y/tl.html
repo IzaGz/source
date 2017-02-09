@@ -1,0 +1,24 @@
+<!DOCTYPE html PUBLIC '-//W3C//DTD XHTML 1.0 Transitional//EN' 'http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd'>
+<html xmlns='http://www.w3.org/1999/xhtml'>
+<head>
+<title>tl</title>
+<meta name='robots' content='noindex,nofollow' />
+<meta name='generator' content='GLOBAL-6.5.2' />
+<meta http-equiv='Content-Style-Type' content='text/css' />
+<link rel='stylesheet' type='text/css' href='../style.css' />
+</head>
+<body>
+<pre>
+<span class='curline'><a href='../S/src--filemanager--boxes.c.html#L429'>tl</a>                429 src/filemanager/boxes.c     TaskList *tl;</span>
+<span class='curline'><a href='../S/src--filemanager--boxes.c.html#L437'>tl</a>                437 src/filemanager/boxes.c     for (tl = task_list; tl != NULL; tl = tl-&gt;next)</span>
+<span class='curline'><a href='../S/src--filemanager--boxes.c.html#L441'>tl</a>                441 src/filemanager/boxes.c         s = g_strconcat (state_str[tl-&gt;state], " ", tl-&gt;info, (char *) NULL);</span>
+<span class='curline'><a href='../S/src--filemanager--boxes.c.html#L442'>tl</a>                442 src/filemanager/boxes.c         listbox_add_item (list, LISTBOX_APPEND_AT_END, 0, s, (void *) tl, FALSE);</span>
+<span class='curline'><a href='../S/src--filemanager--boxes.c.html#L452'>tl</a>                452 src/filemanager/boxes.c     TaskList *tl;</span>
+<span class='curline'><a href='../S/src--filemanager--boxes.c.html#L461'>tl</a>                461 src/filemanager/boxes.c     listbox_get_current (bg_list, NULL, (void **) &amp;tl);</span>
+<span class='curline'><a href='../S/src--filemanager--boxes.c.html#L467'>tl</a>                467 src/filemanager/boxes.c         tl-&gt;state = Task_Stopped;</span>
+<span class='curline'><a href='../S/src--filemanager--boxes.c.html#L472'>tl</a>                472 src/filemanager/boxes.c         tl-&gt;state = Task_Running;</span>
+<span class='curline'><a href='../S/src--filemanager--boxes.c.html#L480'>tl</a>                480 src/filemanager/boxes.c         unregister_task_running (tl-&gt;pid, tl-&gt;fd);</span>
+<span class='curline'><a href='../S/src--filemanager--boxes.c.html#L482'>tl</a>                482 src/filemanager/boxes.c     kill (tl-&gt;pid, sig);</span>
+</pre>
+</body>
+</html>

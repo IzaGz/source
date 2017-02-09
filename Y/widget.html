@@ -1,0 +1,226 @@
+<!DOCTYPE html PUBLIC '-//W3C//DTD XHTML 1.0 Transitional//EN' 'http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd'>
+<html xmlns='http://www.w3.org/1999/xhtml'>
+<head>
+<title>widget</title>
+<meta name='robots' content='noindex,nofollow' />
+<meta name='generator' content='GLOBAL-6.5.2' />
+<meta http-equiv='Content-Style-Type' content='text/css' />
+<link rel='stylesheet' type='text/css' href='../style.css' />
+</head>
+<body>
+<pre>
+<span class='curline'><a href='../S/lib--global.c.html#L75'>widget</a>             75 lib/global.c       .widget =</span>
+<span class='curline'><a href='../S/lib--global.h.html#L214'>widget</a>            214 lib/global.h       } widget;</span>
+<span class='curline'><a href='../S/lib--widget--button.h.html#L33'>widget</a>             33 lib/widget/button.h     Widget widget;</span>
+<span class='curline'><a href='../S/lib--widget--buttonbar.h.html#L24'>widget</a>             24 lib/widget/buttonbar.h     Widget widget;</span>
+<span class='curline'><a href='../S/lib--widget--check.h.html#L19'>widget</a>             19 lib/widget/check.h     Widget widget;</span>
+<span class='curline'><a href='../S/lib--widget--dialog.c.html#L847'>widget</a>            847 lib/widget/dialog.c     Widget *widget;</span>
+<span class='curline'><a href='../S/lib--widget--dialog.c.html#L854'>widget</a>            854 lib/widget/dialog.c     widget = WIDGET (w);</span>
+<span class='curline'><a href='../S/lib--widget--dialog.c.html#L857'>widget</a>            857 lib/widget/dialog.c         widget-&gt;x = (wh-&gt;cols - widget-&gt;cols) / 2;</span>
+<span class='curline'><a href='../S/lib--widget--dialog.c.html#L858'>widget</a>            858 lib/widget/dialog.c     widget-&gt;x += wh-&gt;x;</span>
+<span class='curline'><a href='../S/lib--widget--dialog.c.html#L861'>widget</a>            861 lib/widget/dialog.c         widget-&gt;y = (wh-&gt;lines - widget-&gt;lines) / 2;</span>
+<span class='curline'><a href='../S/lib--widget--dialog.c.html#L862'>widget</a>            862 lib/widget/dialog.c     widget-&gt;y += wh-&gt;y;</span>
+<span class='curline'><a href='../S/lib--widget--dialog.c.html#L864'>widget</a>            864 lib/widget/dialog.c     widget-&gt;owner = h;</span>
+<span class='curline'><a href='../S/lib--widget--dialog.c.html#L865'>widget</a>            865 lib/widget/dialog.c     widget-&gt;pos_flags = pos_flags;</span>
+<span class='curline'><a href='../S/lib--widget--dialog.c.html#L866'>widget</a>            866 lib/widget/dialog.c     widget-&gt;id = h-&gt;widget_id++;</span>
+<span class='curline'><a href='../S/lib--widget--dialog.c.html#L870'>widget</a>            870 lib/widget/dialog.c         h-&gt;widgets = g_list_append (h-&gt;widgets, widget);</span>
+<span class='curline'><a href='../S/lib--widget--dialog.c.html#L884'>widget</a>            884 lib/widget/dialog.c         h-&gt;widgets = g_list_insert_before (h-&gt;widgets, b, widget);</span>
+<span class='curline'><a href='../S/lib--widget--dialog.c.html#L894'>widget</a>            894 lib/widget/dialog.c         send_message (widget, NULL, MSG_INIT, 0, NULL);</span>
+<span class='curline'><a href='../S/lib--widget--dialog.c.html#L895'>widget</a>            895 lib/widget/dialog.c         widget_select (widget);</span>
+<span class='curline'><a href='../S/lib--widget--dialog.c.html#L900'>widget</a>            900 lib/widget/dialog.c     return widget-&gt;id;</span>
+<span class='curline'><a href='../S/lib--widget--dialog.h.html#L61'>widget</a>             61 lib/widget/dialog.h     Widget widget;</span>
+<span class='curline'><a href='../S/lib--widget--gauge.h.html#L19'>widget</a>             19 lib/widget/gauge.h     Widget widget;</span>
+<span class='curline'><a href='../S/lib--widget--groupbox.h.html#L19'>widget</a>             19 lib/widget/groupbox.h     Widget widget;</span>
+<span class='curline'><a href='../S/lib--widget--history.c.html#L64'>widget</a>             64 lib/widget/history.c     Widget *widget;</span>
+<span class='curline'><a href='../S/lib--widget--history.c.html#L85'>widget</a>             85 lib/widget/history.c     y = data-&gt;widget-&gt;y;</span>
+<span class='curline'><a href='../S/lib--widget--history.c.html#L99'>widget</a>             99 lib/widget/history.c     if (data-&gt;widget-&gt;x &gt; 2)</span>
+<span class='curline'><a href='../S/lib--widget--history.c.html#L100'>widget</a>            100 lib/widget/history.c         x = data-&gt;widget-&gt;x - 2;</span>
+<span class='curline'><a href='../S/lib--widget--history.c.html#L288'>widget</a>            288 lib/widget/history.c history_show (GList ** history, Widget * widget, int current)</span>
+<span class='curline'><a href='../S/lib--widget--history.c.html#L317'>widget</a>            317 lib/widget/history.c     hist_data.widget = widget;</span>
+<span class='curline'><a href='../S/lib--widget--history.c.html#L340'>widget</a>            340 lib/widget/history.c     if (WIDGET (query_dlg)-&gt;y &lt; widget-&gt;y)</span>
+<span class='curline'><a href='../S/lib--widget--history.c.html#L379'>widget</a>            379 lib/widget/history.c     if (WIDGET (query_dlg)-&gt;y &lt; widget-&gt;y)</span>
+<span class='curline'><a href='../S/lib--widget--history.h.html#L31'>widget</a>             31 lib/widget/history.h char *history_show (GList ** history, Widget * widget, int current);</span>
+<span class='curline'><a href='../S/lib--widget--hline.h.html#L19'>widget</a>             19 lib/widget/hline.h     Widget widget;</span>
+<span class='curline'><a href='../S/lib--widget--input.h.html#L48'>widget</a>             48 lib/widget/input.h     Widget widget;</span>
+<span class='curline'><a href='../S/lib--widget--input_complete.c.html#L1454'>widget</a>           1454 lib/widget/input_complete.c         if (mc_global.widget.show_all_if_ambiguous)</span>
+<span class='curline'><a href='../S/lib--widget--label.h.html#L19'>widget</a>             19 lib/widget/label.h     Widget widget;</span>
+<span class='curline'><a href='../S/lib--widget--listbox.c.html#L321'>widget</a>            321 lib/widget/listbox.c         if (l-&gt;deletable &amp;&amp; mc_global.widget.confirm_history_cleanup</span>
+<span class='curline'><a href='../S/lib--widget--listbox.h.html#L48'>widget</a>             48 lib/widget/listbox.h     Widget widget;</span>
+<span class='curline'><a href='../S/lib--widget--menu.c.html#L343'>widget</a>            343 lib/widget/menu.c         mc_global.widget.is_right = (menubar-&gt;selected != 0);</span>
+<span class='curline'><a href='../S/lib--widget--menu.h.html#L31'>widget</a>             31 lib/widget/menu.h     Widget widget;</span>
+<span class='curline'><a href='../S/lib--widget--quick.c.html#L58'>widget</a>             58 lib/widget/quick.c     Widget *widget;</span>
+<span class='curline'><a href='../S/lib--widget--quick.c.html#L100'>widget</a>            100 lib/widget/quick.c         label.widget = WIDGET (label_new (*y, x, I18N (quick_widget-&gt;u.input.label_text)));</span>
+<span class='curline'><a href='../S/lib--widget--quick.c.html#L101'>widget</a>            101 lib/widget/quick.c         *y += label.widget-&gt;lines - 1;</span>
+<span class='curline'><a href='../S/lib--widget--quick.c.html#L104'>widget</a>            104 lib/widget/quick.c         in.widget = WIDGET (quick_create_input (++(*y), x, quick_widget));</span>
+<span class='curline'><a href='../S/lib--widget--quick.c.html#L108'>widget</a>            108 lib/widget/quick.c         *width = MAX (label.widget-&gt;cols, in.widget-&gt;cols);</span>
+<span class='curline'><a href='../S/lib--widget--quick.c.html#L112'>widget</a>            112 lib/widget/quick.c         label.widget = WIDGET (label_new (*y, x, I18N (quick_widget-&gt;u.input.label_text)));</span>
+<span class='curline'><a href='../S/lib--widget--quick.c.html#L115'>widget</a>            115 lib/widget/quick.c         in.widget = WIDGET (quick_create_input (*y, x + label.widget-&gt;cols + 1, quick_widget));</span>
+<span class='curline'><a href='../S/lib--widget--quick.c.html#L119'>widget</a>            119 lib/widget/quick.c         *width = label.widget-&gt;cols + in.widget-&gt;cols + 1;</span>
+<span class='curline'><a href='../S/lib--widget--quick.c.html#L123'>widget</a>            123 lib/widget/quick.c         in.widget = WIDGET (quick_create_input (*y, x, quick_widget));</span>
+<span class='curline'><a href='../S/lib--widget--quick.c.html#L127'>widget</a>            127 lib/widget/quick.c         label.widget =</span>
+<span class='curline'><a href='../S/lib--widget--quick.c.html#L129'>widget</a>            129 lib/widget/quick.c                     (*y, x + in.widget-&gt;cols + 1, I18N (quick_widget-&gt;u.input.label_text)));</span>
+<span class='curline'><a href='../S/lib--widget--quick.c.html#L132'>widget</a>            132 lib/widget/quick.c         *width = label.widget-&gt;cols + in.widget-&gt;cols + 1;</span>
+<span class='curline'><a href='../S/lib--widget--quick.c.html#L136'>widget</a>            136 lib/widget/quick.c         in.widget = WIDGET (quick_create_input (*y, x, quick_widget));</span>
+<span class='curline'><a href='../S/lib--widget--quick.c.html#L140'>widget</a>            140 lib/widget/quick.c         label.widget = WIDGET (label_new (++(*y), x, I18N (quick_widget-&gt;u.input.label_text)));</span>
+<span class='curline'><a href='../S/lib--widget--quick.c.html#L141'>widget</a>            141 lib/widget/quick.c         *y += label.widget-&gt;lines - 1;</span>
+<span class='curline'><a href='../S/lib--widget--quick.c.html#L144'>widget</a>            144 lib/widget/quick.c         *width = MAX (label.widget-&gt;cols, in.widget-&gt;cols);</span>
+<span class='curline'><a href='../S/lib--widget--quick.c.html#L151'>widget</a>            151 lib/widget/quick.c     INPUT (in.widget)-&gt;label = LABEL (label.widget);</span>
+<span class='curline'><a href='../S/lib--widget--quick.c.html#L205'>widget</a>            205 lib/widget/quick.c             item.widget =</span>
+<span class='curline'><a href='../S/lib--widget--quick.c.html#L210'>widget</a>            210 lib/widget/quick.c             width = item.widget-&gt;cols;</span>
+<span class='curline'><a href='../S/lib--widget--quick.c.html#L221'>widget</a>            221 lib/widget/quick.c             item.widget = WIDGET (button_new (++y, x, quick_widget-&gt;u.button.action,</span>
+<span class='curline'><a href='../S/lib--widget--quick.c.html#L227'>widget</a>            227 lib/widget/quick.c             width = item.widget-&gt;cols;</span>
+<span class='curline'><a href='../S/lib--widget--quick.c.html#L246'>widget</a>            246 lib/widget/quick.c                 item.widget = WIDGET (quick_create_input (y, x, quick_widget));</span>
+<span class='curline'><a href='../S/lib--widget--quick.c.html#L248'>widget</a>            248 lib/widget/quick.c                 width = item.widget-&gt;cols;</span>
+<span class='curline'><a href='../S/lib--widget--quick.c.html#L259'>widget</a>            259 lib/widget/quick.c             item.widget = WIDGET (label_new (++y, x, I18N (quick_widget-&gt;u.label.text)));</span>
+<span class='curline'><a href='../S/lib--widget--quick.c.html#L261'>widget</a>            261 lib/widget/quick.c             y += item.widget-&gt;lines - 1;</span>
+<span class='curline'><a href='../S/lib--widget--quick.c.html#L262'>widget</a>            262 lib/widget/quick.c             width = item.widget-&gt;cols;</span>
+<span class='curline'><a href='../S/lib--widget--quick.c.html#L285'>widget</a>            285 lib/widget/quick.c                 item.widget = WIDGET (r);</span>
+<span class='curline'><a href='../S/lib--widget--quick.c.html#L287'>widget</a>            287 lib/widget/quick.c                 y += item.widget-&gt;lines - 1;</span>
+<span class='curline'><a href='../S/lib--widget--quick.c.html#L288'>widget</a>            288 lib/widget/quick.c                 width = item.widget-&gt;cols;</span>
+<span class='curline'><a href='../S/lib--widget--quick.c.html#L302'>widget</a>            302 lib/widget/quick.c             item.widget = WIDGET (g);</span>
+<span class='curline'><a href='../S/lib--widget--quick.c.html#L324'>widget</a>            324 lib/widget/quick.c                 item.widget = WIDGET (hline_new (y, x, 1));</span>
+<span class='curline'><a href='../S/lib--widget--quick.c.html#L355'>widget</a>            355 lib/widget/quick.c                     item.widget = WIDGET (hline_new (y, 1, -1));</span>
+<span class='curline'><a href='../S/lib--widget--quick.c.html#L365'>widget</a>            365 lib/widget/quick.c                 item.widget = WIDGET (button_new (y, x++, quick_widget-&gt;u.button.action,</span>
+<span class='curline'><a href='../S/lib--widget--quick.c.html#L372'>widget</a>            372 lib/widget/quick.c                 blen += item.widget-&gt;cols + 1;</span>
+<span class='curline'><a href='../S/lib--widget--quick.c.html#L447'>widget</a>            447 lib/widget/quick.c             if (item-&gt;widget-&gt;x != x1)</span>
+<span class='curline'><a href='../S/lib--widget--quick.c.html#L448'>widget</a>            448 lib/widget/quick.c                 item-&gt;widget-&gt;x = x2;</span>
+<span class='curline'><a href='../S/lib--widget--quick.c.html#L450'>widget</a>            450 lib/widget/quick.c                 item-&gt;widget-&gt;x += 2;</span>
+<span class='curline'><a href='../S/lib--widget--quick.c.html#L456'>widget</a>            456 lib/widget/quick.c                 if (item-&gt;widget-&gt;x != x1)</span>
+<span class='curline'><a href='../S/lib--widget--quick.c.html#L457'>widget</a>            457 lib/widget/quick.c                     item-&gt;widget-&gt;x = x2;</span>
+<span class='curline'><a href='../S/lib--widget--quick.c.html#L459'>widget</a>            459 lib/widget/quick.c                     item-&gt;widget-&gt;x += 2;</span>
+<span class='curline'><a href='../S/lib--widget--quick.c.html#L463'>widget</a>            463 lib/widget/quick.c                 item-&gt;widget-&gt;x = x;</span>
+<span class='curline'><a href='../S/lib--widget--quick.c.html#L464'>widget</a>            464 lib/widget/quick.c                 x += item-&gt;widget-&gt;cols + 1;</span>
+<span class='curline'><a href='../S/lib--widget--quick.c.html#L470'>widget</a>            470 lib/widget/quick.c                 Widget *label = WIDGET (INPUT (item-&gt;widget)-&gt;label);</span>
+<span class='curline'><a href='../S/lib--widget--quick.c.html#L480'>widget</a>            480 lib/widget/quick.c                     item-&gt;widget-&gt;x = label-&gt;x + label-&gt;cols + 1 - WIDGET (label-&gt;owner)-&gt;x;</span>
+<span class='curline'><a href='../S/lib--widget--quick.c.html#L481'>widget</a>            481 lib/widget/quick.c                     item-&gt;widget-&gt;cols = width - label-&gt;cols - 1;</span>
+<span class='curline'><a href='../S/lib--widget--quick.c.html#L485'>widget</a>            485 lib/widget/quick.c                     if (item-&gt;widget-&gt;x != x1)</span>
+<span class='curline'><a href='../S/lib--widget--quick.c.html#L486'>widget</a>            486 lib/widget/quick.c                         item-&gt;widget-&gt;x = x2;</span>
+<span class='curline'><a href='../S/lib--widget--quick.c.html#L488'>widget</a>            488 lib/widget/quick.c                         item-&gt;widget-&gt;x += 2;</span>
+<span class='curline'><a href='../S/lib--widget--quick.c.html#L489'>widget</a>            489 lib/widget/quick.c                     item-&gt;widget-&gt;cols = width - label-&gt;cols - 1;</span>
+<span class='curline'><a href='../S/lib--widget--quick.c.html#L490'>widget</a>            490 lib/widget/quick.c                     label-&gt;x = item-&gt;widget-&gt;x + item-&gt;widget-&gt;cols + 1;</span>
+<span class='curline'><a href='../S/lib--widget--quick.c.html#L494'>widget</a>            494 lib/widget/quick.c                     if (item-&gt;widget-&gt;x != x1)</span>
+<span class='curline'><a href='../S/lib--widget--quick.c.html#L495'>widget</a>            495 lib/widget/quick.c                         item-&gt;widget-&gt;x = x2;</span>
+<span class='curline'><a href='../S/lib--widget--quick.c.html#L497'>widget</a>            497 lib/widget/quick.c                         item-&gt;widget-&gt;x += 2;</span>
+<span class='curline'><a href='../S/lib--widget--quick.c.html#L498'>widget</a>            498 lib/widget/quick.c                     item-&gt;widget-&gt;cols = width;</span>
+<span class='curline'><a href='../S/lib--widget--quick.c.html#L503'>widget</a>            503 lib/widget/quick.c                 widget_set_size (item-&gt;widget, item-&gt;widget-&gt;y, item-&gt;widget-&gt;x, 1,</span>
+<span class='curline'><a href='../S/lib--widget--quick.c.html#L504'>widget</a>            504 lib/widget/quick.c                                  item-&gt;widget-&gt;cols);</span>
+<span class='curline'><a href='../S/lib--widget--quick.c.html#L509'>widget</a>            509 lib/widget/quick.c             g = GROUPBOX (item-&gt;widget);</span>
+<span class='curline'><a href='../S/lib--widget--quick.c.html#L510'>widget</a>            510 lib/widget/quick.c             if (item-&gt;widget-&gt;x != x1)</span>
+<span class='curline'><a href='../S/lib--widget--quick.c.html#L511'>widget</a>            511 lib/widget/quick.c                 item-&gt;widget-&gt;x = x2;</span>
+<span class='curline'><a href='../S/lib--widget--quick.c.html#L512'>widget</a>            512 lib/widget/quick.c             item-&gt;widget-&gt;cols = column_width;</span>
+<span class='curline'><a href='../S/lib--widget--quick.c.html#L520'>widget</a>            520 lib/widget/quick.c             if (item-&gt;widget != NULL)</span>
+<span class='curline'><a href='../S/lib--widget--quick.c.html#L526'>widget</a>            526 lib/widget/quick.c                     HLINE (item-&gt;widget)-&gt;auto_adjust_cols = FALSE;</span>
+<span class='curline'><a href='../S/lib--widget--quick.c.html#L527'>widget</a>            527 lib/widget/quick.c                     item-&gt;widget-&gt;x = wg-&gt;x + 1 - WIDGET (wg-&gt;owner)-&gt;x;</span>
+<span class='curline'><a href='../S/lib--widget--quick.c.html#L528'>widget</a>            528 lib/widget/quick.c                     item-&gt;widget-&gt;cols = wg-&gt;cols;</span>
+<span class='curline'><a href='../S/lib--widget--quick.c.html#L532'>widget</a>            532 lib/widget/quick.c                     HLINE (item-&gt;widget)-&gt;auto_adjust_cols = FALSE;</span>
+<span class='curline'><a href='../S/lib--widget--quick.c.html#L533'>widget</a>            533 lib/widget/quick.c                     if (item-&gt;widget-&gt;x != x1)</span>
+<span class='curline'><a href='../S/lib--widget--quick.c.html#L534'>widget</a>            534 lib/widget/quick.c                         item-&gt;widget-&gt;x = x2;</span>
+<span class='curline'><a href='../S/lib--widget--quick.c.html#L535'>widget</a>            535 lib/widget/quick.c                     item-&gt;widget-&gt;x--;</span>
+<span class='curline'><a href='../S/lib--widget--quick.c.html#L536'>widget</a>            536 lib/widget/quick.c                     item-&gt;widget-&gt;cols = column_width + 2;</span>
+<span class='curline'><a href='../S/lib--widget--quick.c.html#L539'>widget</a>            539 lib/widget/quick.c                     HLINE (item-&gt;widget)-&gt;auto_adjust_cols = TRUE;</span>
+<span class='curline'><a href='../S/lib--widget--quick.c.html#L560'>widget</a>            560 lib/widget/quick.c         if (item-&gt;widget != NULL)</span>
+<span class='curline'><a href='../S/lib--widget--quick.c.html#L565'>widget</a>            565 lib/widget/quick.c             item-&gt;widget-&gt;options |= item-&gt;quick_widget-&gt;options;       /* FIXME: cannot reset flags, setup only */</span>
+<span class='curline'><a href='../S/lib--widget--quick.c.html#L566'>widget</a>            566 lib/widget/quick.c             item-&gt;widget-&gt;state |= item-&gt;quick_widget-&gt;state;   /* FIXME: cannot reset flags, setup only */</span>
+<span class='curline'><a href='../S/lib--widget--quick.c.html#L567'>widget</a>            567 lib/widget/quick.c             id = add_widget_autopos (dd, item-&gt;widget, item-&gt;quick_widget-&gt;pos_flags, NULL);</span>
+<span class='curline'><a href='../S/lib--widget--quick.c.html#L589'>widget</a>            589 lib/widget/quick.c                 *item-&gt;quick_widget-&gt;u.checkbox.state = CHECK (item-&gt;widget)-&gt;state;</span>
+<span class='curline'><a href='../S/lib--widget--quick.c.html#L595'>widget</a>            595 lib/widget/quick.c                         tilde_expand (INPUT (item-&gt;widget)-&gt;buffer);</span>
+<span class='curline'><a href='../S/lib--widget--quick.c.html#L597'>widget</a>            597 lib/widget/quick.c                     *item-&gt;quick_widget-&gt;u.input.result = g_strdup (INPUT (item-&gt;widget)-&gt;buffer);</span>
+<span class='curline'><a href='../S/lib--widget--quick.c.html#L601'>widget</a>            601 lib/widget/quick.c                 *item-&gt;quick_widget-&gt;u.radio.value = RADIO (item-&gt;widget)-&gt;sel;</span>
+<span class='curline'><a href='../S/lib--widget--radio.h.html#L19'>widget</a>             19 lib/widget/radio.h     Widget widget;</span>
+<span class='curline'><a href='../S/lib--widget--widget-common.c.html#L333'>widget</a>            333 lib/widget/widget-common.c widget_set_size (Widget * widget, int y, int x, int lines, int cols)</span>
+<span class='curline'><a href='../S/lib--widget--widget-common.c.html#L335'>widget</a>            335 lib/widget/widget-common.c     widget-&gt;x = x;</span>
+<span class='curline'><a href='../S/lib--widget--widget-common.c.html#L336'>widget</a>            336 lib/widget/widget-common.c     widget-&gt;y = y;</span>
+<span class='curline'><a href='../S/lib--widget--widget-common.c.html#L337'>widget</a>            337 lib/widget/widget-common.c     widget-&gt;cols = cols;</span>
+<span class='curline'><a href='../S/lib--widget--widget-common.c.html#L338'>widget</a>            338 lib/widget/widget-common.c     widget-&gt;lines = lines;</span>
+<span class='curline'><a href='../S/lib--widget--widget-common.c.html#L339'>widget</a>            339 lib/widget/widget-common.c     send_message (widget, NULL, MSG_RESIZE, 0, NULL);</span>
+<span class='curline'><a href='../S/lib--widget--widget-common.c.html#L340'>widget</a>            340 lib/widget/widget-common.c     if (widget-&gt;owner != NULL &amp;&amp; widget_get_state (WIDGET (widget-&gt;owner), WST_ACTIVE))</span>
+<span class='curline'><a href='../S/lib--widget--widget-common.c.html#L341'>widget</a>            341 lib/widget/widget-common.c         send_message (widget, NULL, MSG_DRAW, 0, NULL);</span>
+<span class='curline'><a href='../S/lib--widget--widget-common.h.html#L121'>widget</a>            121 lib/widget/widget-common.h typedef cb_ret_t (*widget_cb_fn) (Widget * widget, Widget * sender, widget_msg_t msg, int parm,</span>
+<span class='curline'><a href='../S/lib--widget--widget-common.h.html#L183'>widget</a>            183 lib/widget/widget-common.h void widget_set_size (Widget * widget, int y, int x, int lines, int cols);</span>
+<span class='curline'><a href='../S/src--diffviewer--internal.h.html#L87'>widget</a>             87 src/diffviewer/internal.h     Widget widget;</span>
+<span class='curline'><a href='../S/src--editor--editwidget.h.html#L66'>widget</a>             66 src/editor/editwidget.h     Widget widget;</span>
+<span class='curline'><a href='../S/src--filemanager--boxes.c.html#L545'>widget</a>            545 src/filemanager/boxes.c                                     &amp;mc_global.widget.show_all_if_ambiguous, NULL),</span>
+<span class='curline'><a href='../S/src--filemanager--boxes.c.html#L901'>widget</a>            901 src/filemanager/boxes.c                         &amp;mc_global.widget.confirm_history_cleanup, NULL),</span>
+<span class='curline'><a href='../S/src--filemanager--info.c.html#L67'>widget</a>             67 src/filemanager/info.c     Widget widget;</span>
+<span class='curline'><a href='../S/src--filemanager--layout.c.html#L132'>widget</a>            132 src/filemanager/layout.c     Widget *widget;</span>
+<span class='curline'><a href='../S/src--filemanager--layout.c.html#L160'>widget</a>            160 src/filemanager/layout.c     WCheck *widget;</span>
+<span class='curline'><a href='../S/src--filemanager--layout.c.html#L226'>widget</a>            226 src/filemanager/layout.c         check_options[0].widget-&gt;state = panels_layout.horizontal_equal ? 1 : 0;</span>
+<span class='curline'><a href='../S/src--filemanager--layout.c.html#L228'>widget</a>            228 src/filemanager/layout.c         check_options[0].widget-&gt;state = panels_layout.vertical_equal ? 1 : 0;</span>
+<span class='curline'><a href='../S/src--filemanager--layout.c.html#L229'>widget</a>            229 src/filemanager/layout.c     widget_redraw (WIDGET (check_options[0].widget));</span>
+<span class='curline'><a href='../S/src--filemanager--layout.c.html#L231'>widget</a>            231 src/filemanager/layout.c     tty_setcolor (check_options[0].widget-&gt;state ? DISABLED_COLOR : COLOR_NORMAL);</span>
+<span class='curline'><a href='../S/src--filemanager--layout.c.html#L336'>widget</a>            336 src/filemanager/layout.c             _menubar_visible = check_options[1].widget-&gt;state;</span>
+<span class='curline'><a href='../S/src--filemanager--layout.c.html#L337'>widget</a>            337 src/filemanager/layout.c             _command_prompt = check_options[2].widget-&gt;state;</span>
+<span class='curline'><a href='../S/src--filemanager--layout.c.html#L338'>widget</a>            338 src/filemanager/layout.c             _keybar_visible = check_options[3].widget-&gt;state;</span>
+<span class='curline'><a href='../S/src--filemanager--layout.c.html#L339'>widget</a>            339 src/filemanager/layout.c             _message_visible = check_options[4].widget-&gt;state;</span>
+<span class='curline'><a href='../S/src--filemanager--layout.c.html#L407'>widget</a>            407 src/filemanager/layout.c         if (sender == WIDGET (check_options[0].widget))</span>
+<span class='curline'><a href='../S/src--filemanager--layout.c.html#L413'>widget</a>            413 src/filemanager/layout.c                 panels_layout.horizontal_equal = check_options[0].widget-&gt;state;</span>
+<span class='curline'><a href='../S/src--filemanager--layout.c.html#L418'>widget</a>            418 src/filemanager/layout.c                 panels_layout.vertical_equal = check_options[0].widget-&gt;state;</span>
+<span class='curline'><a href='../S/src--filemanager--layout.c.html#L525'>widget</a>            525 src/filemanager/layout.c     check_options[0].widget = check_new (5, 5, XTRACT (0));</span>
+<span class='curline'><a href='../S/src--filemanager--layout.c.html#L526'>widget</a>            526 src/filemanager/layout.c     add_widget (layout_dlg, check_options[0].widget);</span>
+<span class='curline'><a href='../S/src--filemanager--layout.c.html#L566'>widget</a>            566 src/filemanager/layout.c         check_options[i].widget = check_new (i + 2, 6 + l1, XTRACT (i));</span>
+<span class='curline'><a href='../S/src--filemanager--layout.c.html#L567'>widget</a>            567 src/filemanager/layout.c         add_widget (layout_dlg, check_options[i].widget);</span>
+<span class='curline'><a href='../S/src--filemanager--layout.c.html#L591'>widget</a>            591 src/filemanager/layout.c         set_panel_formats (PANEL (panels[idx].widget));</span>
+<span class='curline'><a href='../S/src--filemanager--layout.c.html#L593'>widget</a>            593 src/filemanager/layout.c         panel_update_cols (panels[idx].widget, frame_half);</span>
+<span class='curline'><a href='../S/src--filemanager--layout.c.html#L652'>widget</a>            652 src/filemanager/layout.c             if (check_options[i].widget != NULL)</span>
+<span class='curline'><a href='../S/src--filemanager--layout.c.html#L653'>widget</a>            653 src/filemanager/layout.c                 *check_options[i].variable = check_options[i].widget-&gt;state;</span>
+<span class='curline'><a href='../S/src--filemanager--layout.c.html#L673'>widget</a>            673 src/filemanager/layout.c panel_update_cols (Widget * widget, panel_display_t frame_size)</span>
+<span class='curline'><a href='../S/src--filemanager--layout.c.html#L680'>widget</a>            680 src/filemanager/layout.c     if (widget-&gt;owner == NULL)</span>
+<span class='curline'><a href='../S/src--filemanager--layout.c.html#L685'>widget</a>            685 src/filemanager/layout.c         widget-&gt;cols = COLS;</span>
+<span class='curline'><a href='../S/src--filemanager--layout.c.html#L694'>widget</a>            694 src/filemanager/layout.c     else if (widget == get_panel_widget (0))</span>
+<span class='curline'><a href='../S/src--filemanager--layout.c.html#L705'>widget</a>            705 src/filemanager/layout.c     widget-&gt;cols = cols;</span>
+<span class='curline'><a href='../S/src--filemanager--layout.c.html#L706'>widget</a>            706 src/filemanager/layout.c     widget-&gt;x = origin;</span>
+<span class='curline'><a href='../S/src--filemanager--layout.c.html#L749'>widget</a>            749 src/filemanager/layout.c         widget_set_size (panels[0].widget, start_y, 0, panels_layout.top_panel_size,</span>
+<span class='curline'><a href='../S/src--filemanager--layout.c.html#L750'>widget</a>            750 src/filemanager/layout.c                          panels[0].widget-&gt;cols);</span>
+<span class='curline'><a href='../S/src--filemanager--layout.c.html#L751'>widget</a>            751 src/filemanager/layout.c         widget_set_size (panels[1].widget, start_y + panels_layout.top_panel_size, 0,</span>
+<span class='curline'><a href='../S/src--filemanager--layout.c.html#L752'>widget</a>            752 src/filemanager/layout.c                          height - panels_layout.top_panel_size, panels[1].widget-&gt;cols);</span>
+<span class='curline'><a href='../S/src--filemanager--layout.c.html#L756'>widget</a>            756 src/filemanager/layout.c         widget_set_size (panels[0].widget, start_y, 0, height, panels[0].widget-&gt;cols);</span>
+<span class='curline'><a href='../S/src--filemanager--layout.c.html#L757'>widget</a>            757 src/filemanager/layout.c         widget_set_size (panels[1].widget, start_y, panels[1].widget-&gt;x, height,</span>
+<span class='curline'><a href='../S/src--filemanager--layout.c.html#L758'>widget</a>            758 src/filemanager/layout.c                          panels[1].widget-&gt;cols);</span>
+<span class='curline'><a href='../S/src--filemanager--layout.c.html#L998'>widget</a>            998 src/filemanager/layout.c     if (panels[num].widget != NULL)</span>
+<span class='curline'><a href='../S/src--filemanager--layout.c.html#L1000'>widget</a>           1000 src/filemanager/layout.c         Widget *w = panels[num].widget;</span>
+<span class='curline'><a href='../S/src--filemanager--layout.c.html#L1049'>widget</a>           1049 src/filemanager/layout.c         the_other_panel = PANEL (panels[the_other].widget);</span>
+<span class='curline'><a href='../S/src--filemanager--layout.c.html#L1068'>widget</a>           1068 src/filemanager/layout.c     panels[num].widget = new_widget;</span>
+<span class='curline'><a href='../S/src--filemanager--layout.c.html#L1133'>widget</a>           1133 src/filemanager/layout.c     panel1 = PANEL (panels[0].widget);</span>
+<span class='curline'><a href='../S/src--filemanager--layout.c.html#L1134'>widget</a>           1134 src/filemanager/layout.c     panel2 = PANEL (panels[1].widget);</span>
+<span class='curline'><a href='../S/src--filemanager--layout.c.html#L1171'>widget</a>           1171 src/filemanager/layout.c         if (widget_is_active (panels[0].widget))</span>
+<span class='curline'><a href='../S/src--filemanager--layout.c.html#L1172'>widget</a>           1172 src/filemanager/layout.c             widget_select (panels[1].widget);</span>
+<span class='curline'><a href='../S/src--filemanager--layout.c.html#L1173'>widget</a>           1173 src/filemanager/layout.c         else if (widget_is_active (panels[1].widget))</span>
+<span class='curline'><a href='../S/src--filemanager--layout.c.html#L1174'>widget</a>           1174 src/filemanager/layout.c             widget_select (panels[0].widget);</span>
+<span class='curline'><a href='../S/src--filemanager--layout.c.html#L1203'>widget</a>           1203 src/filemanager/layout.c         x = panels[0].widget-&gt;x;</span>
+<span class='curline'><a href='../S/src--filemanager--layout.c.html#L1204'>widget</a>           1204 src/filemanager/layout.c         y = panels[0].widget-&gt;y;</span>
+<span class='curline'><a href='../S/src--filemanager--layout.c.html#L1205'>widget</a>           1205 src/filemanager/layout.c         cols = panels[0].widget-&gt;cols;</span>
+<span class='curline'><a href='../S/src--filemanager--layout.c.html#L1206'>widget</a>           1206 src/filemanager/layout.c         lines = panels[0].widget-&gt;lines;</span>
+<span class='curline'><a href='../S/src--filemanager--layout.c.html#L1208'>widget</a>           1208 src/filemanager/layout.c         panels[0].widget-&gt;x = panels[1].widget-&gt;x;</span>
+<span class='curline'><a href='../S/src--filemanager--layout.c.html#L1209'>widget</a>           1209 src/filemanager/layout.c         panels[0].widget-&gt;y = panels[1].widget-&gt;y;</span>
+<span class='curline'><a href='../S/src--filemanager--layout.c.html#L1210'>widget</a>           1210 src/filemanager/layout.c         panels[0].widget-&gt;cols = panels[1].widget-&gt;cols;</span>
+<span class='curline'><a href='../S/src--filemanager--layout.c.html#L1211'>widget</a>           1211 src/filemanager/layout.c         panels[0].widget-&gt;lines = panels[1].widget-&gt;lines;</span>
+<span class='curline'><a href='../S/src--filemanager--layout.c.html#L1213'>widget</a>           1213 src/filemanager/layout.c         panels[1].widget-&gt;x = x;</span>
+<span class='curline'><a href='../S/src--filemanager--layout.c.html#L1214'>widget</a>           1214 src/filemanager/layout.c         panels[1].widget-&gt;y = y;</span>
+<span class='curline'><a href='../S/src--filemanager--layout.c.html#L1215'>widget</a>           1215 src/filemanager/layout.c         panels[1].widget-&gt;cols = cols;</span>
+<span class='curline'><a href='../S/src--filemanager--layout.c.html#L1216'>widget</a>           1216 src/filemanager/layout.c         panels[1].widget-&gt;lines = lines;</span>
+<span class='curline'><a href='../S/src--filemanager--layout.c.html#L1218'>widget</a>           1218 src/filemanager/layout.c         tmp_widget = panels[0].widget;</span>
+<span class='curline'><a href='../S/src--filemanager--layout.c.html#L1219'>widget</a>           1219 src/filemanager/layout.c         panels[0].widget = panels[1].widget;</span>
+<span class='curline'><a href='../S/src--filemanager--layout.c.html#L1220'>widget</a>           1220 src/filemanager/layout.c         panels[1].widget = tmp_widget;</span>
+<span class='curline'><a href='../S/src--filemanager--layout.c.html#L1227'>widget</a>           1227 src/filemanager/layout.c             set_panel_formats (PANEL (panels[0].widget));</span>
+<span class='curline'><a href='../S/src--filemanager--layout.c.html#L1229'>widget</a>           1229 src/filemanager/layout.c             set_panel_formats (PANEL (panels[1].widget));</span>
+<span class='curline'><a href='../S/src--filemanager--layout.c.html#L1246'>widget</a>           1246 src/filemanager/layout.c     return panels[idx].widget;</span>
+<span class='curline'><a href='../S/src--filemanager--layout.c.html#L1254'>widget</a>           1254 src/filemanager/layout.c     if (panels[0].widget == WIDGET (current_panel))</span>
+<span class='curline'><a href='../S/src--filemanager--layout.c.html#L1282'>widget</a>           1282 src/filemanager/layout.c     if (panels[0].widget == WIDGET (current_panel))</span>
+<span class='curline'><a href='../S/src--filemanager--layout.c.html#L1294'>widget</a>           1294 src/filemanager/layout.c     if (panels[0].widget == WIDGET (current_panel))</span>
+<span class='curline'><a href='../S/src--filemanager--layout.c.html#L1307'>widget</a>           1307 src/filemanager/layout.c     Widget *widget = get_panel_widget (idx);</span>
+<span class='curline'><a href='../S/src--filemanager--layout.c.html#L1309'>widget</a>           1309 src/filemanager/layout.c     if ((type == view_listing) &amp;&amp; (widget != NULL))</span>
+<span class='curline'><a href='../S/src--filemanager--layout.c.html#L1311'>widget</a>           1311 src/filemanager/layout.c         WPanel *w = PANEL (widget);</span>
+<span class='curline'><a href='../S/src--filemanager--layout.c.html#L1324'>widget</a>           1324 src/filemanager/layout.c get_panel_dir_for (const WPanel * widget)</span>
+<span class='curline'><a href='../S/src--filemanager--layout.c.html#L1329'>widget</a>           1329 src/filemanager/layout.c         if (PANEL (get_panel_widget (i)) == widget)</span>
+<span class='curline'><a href='../S/src--filemanager--layout.h.html#L58'>widget</a>             58 src/filemanager/layout.h void panel_update_cols (Widget * widget, panel_display_t frame_size);</span>
+<span class='curline'><a href='../S/src--filemanager--layout.h.html#L79'>widget</a>             79 src/filemanager/layout.h char *get_panel_dir_for (const WPanel * widget);</span>
+<span class='curline'><a href='../S/src--filemanager--midnight.h.html#L17'>widget</a>             17 src/filemanager/midnight.h #define MENU_PANEL (mc_global.widget.is_right ? right_panel : left_panel)</span>
+<span class='curline'><a href='../S/src--filemanager--midnight.h.html#L18'>widget</a>             18 src/filemanager/midnight.h #define MENU_PANEL_IDX  (mc_global.widget.is_right ? 1 : 0)</span>
+<span class='curline'><a href='../S/src--filemanager--panel.h.html#L93'>widget</a>             93 src/filemanager/panel.h     Widget widget;</span>
+<span class='curline'><a href='../S/src--filemanager--tree.c.html#L96'>widget</a>             96 src/filemanager/tree.c     Widget widget;</span>
+<span class='curline'><a href='../S/src--setup.c.html#L291'>widget</a>            291 src/setup.c        { "confirm_history_cleanup", &amp;mc_global.widget.confirm_history_cleanup },</span>
+<span class='curline'><a href='../S/src--setup.c.html#L308'>widget</a>            308 src/setup.c        { "show_all_if_ambiguous", &amp;mc_global.widget.show_all_if_ambiguous },</span>
+<span class='curline'><a href='../S/src--viewer--internal.h.html#L105'>widget</a>            105 src/viewer/internal.h     Widget widget;</span>
+</pre>
+</body>
+</html>

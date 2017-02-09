@@ -1,0 +1,57 @@
+<!DOCTYPE html PUBLIC '-//W3C//DTD XHTML 1.0 Transitional//EN' 'http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd'>
+<html xmlns='http://www.w3.org/1999/xhtml'>
+<head>
+<title>sc</title>
+<meta name='robots' content='noindex,nofollow' />
+<meta name='generator' content='GLOBAL-6.5.2' />
+<meta http-equiv='Content-Style-Type' content='text/css' />
+<link rel='stylesheet' type='text/css' href='../style.css' />
+</head>
+<body>
+<pre>
+<span class='curline'><a href='../S/src--vfs--smbfs--helpers--libsmb--smbdes.c.html#L118'>sc</a>                118 src/vfs/smbfs/helpers/libsmb/smbdes.c static uchar sc[16] = { 1, 1, 2, 2, 2, 2, 2, 2, 1, 2, 2, 2, 2, 2, 2, 1 };</span>
+<span class='curline'><a href='../S/src--vfs--smbfs--helpers--libsmb--smbdes.c.html#L220'>sc</a>                220 src/vfs/smbfs/helpers/libsmb/smbdes.c         lshift (c, sc[i], 28);</span>
+<span class='curline'><a href='../S/src--vfs--smbfs--helpers--libsmb--smbdes.c.html#L221'>sc</a>                221 src/vfs/smbfs/helpers/libsmb/smbdes.c         lshift (d, sc[i], 28);</span>
+<span class='curline'><a href='../S/src--vfs--smbfs--smbfs.c.html#L1336'>sc</a>               1336 src/vfs/smbfs/smbfs.c smbfs_get_path (smbfs_connection ** sc, const vfs_path_t * vpath)</span>
+<span class='curline'><a href='../S/src--vfs--smbfs--smbfs.c.html#L1358'>sc</a>               1358 src/vfs/smbfs/smbfs.c         *sc = smbfs_open_link (url-&gt;host, url-&gt;path, url-&gt;user, &amp;url-&gt;port, url-&gt;password);</span>
+<span class='curline'><a href='../S/src--vfs--smbfs--smbfs.c.html#L1361'>sc</a>               1361 src/vfs/smbfs/smbfs.c         if (*sc != NULL)</span>
+<span class='curline'><a href='../S/src--vfs--smbfs--smbfs.c.html#L1378'>sc</a>               1378 src/vfs/smbfs/smbfs.c             s = mc_build_filename ((*sc)-&gt;home, remote_path + 3 - f, (char *) NULL);</span>
+<span class='curline'><a href='../S/src--vfs--smbfs--smbfs.c.html#L1407'>sc</a>               1407 src/vfs/smbfs/smbfs.c     smbfs_connection *sc;</span>
+<span class='curline'><a href='../S/src--vfs--smbfs--smbfs.c.html#L1414'>sc</a>               1414 src/vfs/smbfs/smbfs.c     if (!(remote_dir = smbfs_get_path (&amp;sc, vpath)))</span>
+<span class='curline'><a href='../S/src--vfs--smbfs--smbfs.c.html#L1422'>sc</a>               1422 src/vfs/smbfs/smbfs.c     smbfs_info-&gt;conn = sc;</span>
+<span class='curline'><a href='../S/src--vfs--smbfs--smbfs.c.html#L1480'>sc</a>               1480 src/vfs/smbfs/smbfs.c         smbfs_connection *sc;</span>
+<span class='curline'><a href='../S/src--vfs--smbfs--smbfs.c.html#L1485'>sc</a>               1485 src/vfs/smbfs/smbfs.c         p = smbfs_get_path (&amp;sc, vpath);</span>
+<span class='curline'><a href='../S/src--vfs--smbfs--smbfs.c.html#L1533'>sc</a>               1533 src/vfs/smbfs/smbfs.c smbfs_get_remote_stat (smbfs_connection * sc, const char *path, struct stat *buf)</span>
+<span class='curline'><a href='../S/src--vfs--smbfs--smbfs.c.html#L1552'>sc</a>               1552 src/vfs/smbfs/smbfs.c     if (cli_list (sc-&gt;cli, mypath, attribute, smbfs_loaddir_helper, single_entry) &lt; 1)</span>
+<span class='curline'><a href='../S/src--vfs--smbfs--smbfs.c.html#L1589'>sc</a>               1589 src/vfs/smbfs/smbfs.c smbfs_get_stat_info (smbfs_connection * sc, const char *path, struct stat *buf)</span>
+<span class='curline'><a href='../S/src--vfs--smbfs--smbfs.c.html#L1679'>sc</a>               1679 src/vfs/smbfs/smbfs.c     return smbfs_get_remote_stat (sc, path, buf);</span>
+<span class='curline'><a href='../S/src--vfs--smbfs--smbfs.c.html#L1688'>sc</a>               1688 src/vfs/smbfs/smbfs.c     smbfs_connection *sc;</span>
+<span class='curline'><a href='../S/src--vfs--smbfs--smbfs.c.html#L1693'>sc</a>               1693 src/vfs/smbfs/smbfs.c     if (!(remote_dir = smbfs_get_path (&amp;sc, vpath)))</span>
+<span class='curline'><a href='../S/src--vfs--smbfs--smbfs.c.html#L1731'>sc</a>               1731 src/vfs/smbfs/smbfs.c     smbfs_connection *sc;</span>
+<span class='curline'><a href='../S/src--vfs--smbfs--smbfs.c.html#L1789'>sc</a>               1789 src/vfs/smbfs/smbfs.c     if (!(service = smbfs_get_path (&amp;sc, vpath)))       /* connects if necessary */</span>
+<span class='curline'><a href='../S/src--vfs--smbfs--smbfs.c.html#L1833'>sc</a>               1833 src/vfs/smbfs/smbfs.c     return smbfs_get_stat_info (sc, path_element-&gt;path, buf);</span>
+<span class='curline'><a href='../S/src--vfs--smbfs--smbfs.c.html#L1894'>sc</a>               1894 src/vfs/smbfs/smbfs.c     smbfs_connection *sc;</span>
+<span class='curline'><a href='../S/src--vfs--smbfs--smbfs.c.html#L1901'>sc</a>               1901 src/vfs/smbfs/smbfs.c     if ((remote_file = smbfs_get_path (&amp;sc, vpath)) == 0)</span>
+<span class='curline'><a href='../S/src--vfs--smbfs--smbfs.c.html#L1906'>sc</a>               1906 src/vfs/smbfs/smbfs.c     if (!cli_mkdir (sc-&gt;cli, cpath))</span>
+<span class='curline'><a href='../S/src--vfs--smbfs--smbfs.c.html#L1908'>sc</a>               1908 src/vfs/smbfs/smbfs.c         my_errno = cli_error (sc-&gt;cli, NULL, &amp;err, NULL);</span>
+<span class='curline'><a href='../S/src--vfs--smbfs--smbfs.c.html#L1910'>sc</a>               1910 src/vfs/smbfs/smbfs.c                  cli_errstr (sc-&gt;cli), CNV_LANG (cpath));</span>
+<span class='curline'><a href='../S/src--vfs--smbfs--smbfs.c.html#L1923'>sc</a>               1923 src/vfs/smbfs/smbfs.c     smbfs_connection *sc;</span>
+<span class='curline'><a href='../S/src--vfs--smbfs--smbfs.c.html#L1930'>sc</a>               1930 src/vfs/smbfs/smbfs.c     if ((remote_file = smbfs_get_path (&amp;sc, vpath)) == 0)</span>
+<span class='curline'><a href='../S/src--vfs--smbfs--smbfs.c.html#L1935'>sc</a>               1935 src/vfs/smbfs/smbfs.c     if (!cli_rmdir (sc-&gt;cli, cpath))</span>
+<span class='curline'><a href='../S/src--vfs--smbfs--smbfs.c.html#L1937'>sc</a>               1937 src/vfs/smbfs/smbfs.c         my_errno = cli_error (sc-&gt;cli, NULL, &amp;err, NULL);</span>
+<span class='curline'><a href='../S/src--vfs--smbfs--smbfs.c.html#L1939'>sc</a>               1939 src/vfs/smbfs/smbfs.c                  cli_errstr (sc-&gt;cli), CNV_LANG (cpath));</span>
+<span class='curline'><a href='../S/src--vfs--smbfs--smbfs.c.html#L2108'>sc</a>               2108 src/vfs/smbfs/smbfs.c     smbfs_connection *sc;</span>
+<span class='curline'><a href='../S/src--vfs--smbfs--smbfs.c.html#L2115'>sc</a>               2115 src/vfs/smbfs/smbfs.c     if (!(remote_file = smbfs_get_path (&amp;sc, vpath)))</span>
+<span class='curline'><a href='../S/src--vfs--smbfs--smbfs.c.html#L2121'>sc</a>               2121 src/vfs/smbfs/smbfs.c     remote_handle-&gt;cli = sc-&gt;cli;</span>
+<span class='curline'><a href='../S/src--vfs--smbfs--smbfs.c.html#L2138'>sc</a>               2138 src/vfs/smbfs/smbfs.c     smbfs_connection *sc;</span>
+<span class='curline'><a href='../S/src--vfs--smbfs--smbfs.c.html#L2141'>sc</a>               2141 src/vfs/smbfs/smbfs.c     if ((remote_file = smbfs_get_path (&amp;sc, vpath)) == 0)</span>
+<span class='curline'><a href='../S/src--vfs--smbfs--smbfs.c.html#L2146'>sc</a>               2146 src/vfs/smbfs/smbfs.c     if (!cli_unlink (sc-&gt;cli, remote_file))</span>
+<span class='curline'><a href='../S/src--vfs--smbfs--smbfs.c.html#L2149'>sc</a>               2149 src/vfs/smbfs/smbfs.c                  cli_errstr (sc-&gt;cli), CNV_LANG (remote_file));</span>
+<span class='curline'><a href='../S/src--vfs--smbfs--smbfs.c.html#L2162'>sc</a>               2162 src/vfs/smbfs/smbfs.c     smbfs_connection *sc;</span>
+<span class='curline'><a href='../S/src--vfs--smbfs--smbfs.c.html#L2166'>sc</a>               2166 src/vfs/smbfs/smbfs.c     if ((ra = smbfs_get_path (&amp;sc, vpath1)) == 0)</span>
+<span class='curline'><a href='../S/src--vfs--smbfs--smbfs.c.html#L2169'>sc</a>               2169 src/vfs/smbfs/smbfs.c     if ((rb = smbfs_get_path (&amp;sc, vpath2)) == 0)</span>
+<span class='curline'><a href='../S/src--vfs--smbfs--smbfs.c.html#L2178'>sc</a>               2178 src/vfs/smbfs/smbfs.c     retval = cli_rename (sc-&gt;cli, ra, rb);</span>
+<span class='curline'><a href='../S/src--vfs--smbfs--smbfs.c.html#L2185'>sc</a>               2185 src/vfs/smbfs/smbfs.c         message (D_ERROR, MSG_ERROR, _("%s renaming files\n"), cli_errstr (sc-&gt;cli));</span>
+</pre>
+</body>
+</html>

@@ -1,0 +1,49 @@
+<!DOCTYPE html PUBLIC '-//W3C//DTD XHTML 1.0 Transitional//EN' 'http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd'>
+<html xmlns='http://www.w3.org/1999/xhtml'>
+<head>
+<title>skip_len</title>
+<meta name='robots' content='noindex,nofollow' />
+<meta name='generator' content='GLOBAL-6.5.2' />
+<meta http-equiv='Content-Style-Type' content='text/css' />
+<link rel='stylesheet' type='text/css' href='../style.css' />
+</head>
+<body>
+<pre>
+<span class='curline'><a href='../S/lib--search--regex.c.html#L454'>skip_len</a>          454 lib/search/regex.c                                          gsize * skip_len, int *ret)</span>
+<span class='curline'><a href='../S/lib--search--regex.c.html#L463'>skip_len</a>          463 lib/search/regex.c             for (*skip_len = 2; /* \{ */</span>
+<span class='curline'><a href='../S/lib--search--regex.c.html#L464'>skip_len</a>          464 lib/search/regex.c                  current_pos + *skip_len &lt; replace_str-&gt;len &amp;&amp; curr_str[*skip_len] &gt;= '0'</span>
+<span class='curline'><a href='../S/lib--search--regex.c.html#L465'>skip_len</a>          465 lib/search/regex.c                  &amp;&amp; curr_str[*skip_len] &lt;= '7'; (*skip_len)++)</span>
+<span class='curline'><a href='../S/lib--search--regex.c.html#L468'>skip_len</a>          468 lib/search/regex.c             if (current_pos + *skip_len &lt; replace_str-&gt;len &amp;&amp; curr_str[*skip_len] == '}')</span>
+<span class='curline'><a href='../S/lib--search--regex.c.html#L470'>skip_len</a>          470 lib/search/regex.c                 (*skip_len)++;</span>
+<span class='curline'><a href='../S/lib--search--regex.c.html#L483'>skip_len</a>          483 lib/search/regex.c             *skip_len = 2;      /* \x */</span>
+<span class='curline'><a href='../S/lib--search--regex.c.html#L487'>skip_len</a>          487 lib/search/regex.c                 for (*skip_len = 3;     /* \x{ */</span>
+<span class='curline'><a href='../S/lib--search--regex.c.html#L488'>skip_len</a>          488 lib/search/regex.c                      current_pos + *skip_len &lt; replace_str-&gt;len</span>
+<span class='curline'><a href='../S/lib--search--regex.c.html#L489'>skip_len</a>          489 lib/search/regex.c                      &amp;&amp; g_ascii_isxdigit ((guchar) curr_str[*skip_len]); (*skip_len)++)</span>
+<span class='curline'><a href='../S/lib--search--regex.c.html#L492'>skip_len</a>          492 lib/search/regex.c                 if (current_pos + *skip_len &lt; replace_str-&gt;len &amp;&amp; curr_str[*skip_len] == '}')</span>
+<span class='curline'><a href='../S/lib--search--regex.c.html#L494'>skip_len</a>          494 lib/search/regex.c                     (*skip_len)++;</span>
+<span class='curline'><a href='../S/lib--search--regex.c.html#L506'>skip_len</a>          506 lib/search/regex.c                 *skip_len = 2;  /* \x without number behind */</span>
+<span class='curline'><a href='../S/lib--search--regex.c.html#L514'>skip_len</a>          514 lib/search/regex.c                     *skip_len = 3;      /* \xH */</span>
+<span class='curline'><a href='../S/lib--search--regex.c.html#L516'>skip_len</a>          516 lib/search/regex.c                     *skip_len = 4;      /* \xHH */</span>
+<span class='curline'><a href='../S/lib--search--regex.c.html#L525'>skip_len</a>          525 lib/search/regex.c         *skip_len = 2;</span>
+<span class='curline'><a href='../S/lib--search--regex.c.html#L536'>skip_len</a>          536 lib/search/regex.c                                       gsize * skip_len, replace_transform_type_t * replace_flags)</span>
+<span class='curline'><a href='../S/lib--search--regex.c.html#L544'>skip_len</a>          544 lib/search/regex.c     *skip_len = 0;</span>
+<span class='curline'><a href='../S/lib--search--regex.c.html#L553'>skip_len</a>          553 lib/search/regex.c             *skip_len = 1;</span>
+<span class='curline'><a href='../S/lib--search--regex.c.html#L557'>skip_len</a>          557 lib/search/regex.c         for (*skip_len = 0;</span>
+<span class='curline'><a href='../S/lib--search--regex.c.html#L558'>skip_len</a>          558 lib/search/regex.c              current_pos + *skip_len + 2 &lt; replace_str-&gt;len</span>
+<span class='curline'><a href='../S/lib--search--regex.c.html#L559'>skip_len</a>          559 lib/search/regex.c              &amp;&amp; (curr_str[2 + *skip_len] &amp; (char) 0xf0) == 0x30; (*skip_len)++)</span>
+<span class='curline'><a href='../S/lib--search--regex.c.html#L562'>skip_len</a>          562 lib/search/regex.c         if (curr_str[2 + *skip_len] != '}')</span>
+<span class='curline'><a href='../S/lib--search--regex.c.html#L565'>skip_len</a>          565 lib/search/regex.c         tmp_str = g_strndup (curr_str + 2, *skip_len);</span>
+<span class='curline'><a href='../S/lib--search--regex.c.html#L572'>skip_len</a>          572 lib/search/regex.c         *skip_len += 3;         /* ${} */</span>
+<span class='curline'><a href='../S/lib--search--regex.c.html#L580'>skip_len</a>          580 lib/search/regex.c             *skip_len = 1;</span>
+<span class='curline'><a href='../S/lib--search--regex.c.html#L587'>skip_len</a>          587 lib/search/regex.c             *skip_len = 2;      /* \\ and one digit */</span>
+<span class='curline'><a href='../S/lib--search--regex.c.html#L591'>skip_len</a>          591 lib/search/regex.c         if (!mc_search_regex__replace_handle_esc_seq (replace_str, current_pos, skip_len, &amp;ret))</span>
+<span class='curline'><a href='../S/lib--search--regex.c.html#L595'>skip_len</a>          595 lib/search/regex.c         *skip_len += 2;</span>
+<span class='curline'><a href='../S/src--editor--spell_dialogs.c.html#L78'>skip_len</a>           78 src/editor/spell_dialogs.c     int skip_len;</span>
+<span class='curline'><a href='../S/src--editor--spell_dialogs.c.html#L98'>skip_len</a>           98 src/editor/spell_dialogs.c     skip_len = button_get_len (skip_btn);</span>
+<span class='curline'><a href='../S/src--editor--spell_dialogs.c.html#L102'>skip_len</a>          102 src/editor/spell_dialogs.c     max_btn_len = MAX (replace_len, skip_len);</span>
+<span class='curline'><a href='../S/tests--lib--search--regex_replace_esc_seq.c.html#L42'>skip_len</a>           42 tests/lib/search/regex_replace_esc_seq.c     skip_len = 0;\</span>
+<span class='curline'><a href='../S/tests--lib--search--regex_replace_esc_seq.c.html#L44'>skip_len</a>           44 tests/lib/search/regex_replace_esc_seq.c         mc_search_regex__replace_handle_esc_seq( replace_str, pos, &amp;skip_len, &amp;ret ), r,\</span>
+<span class='curline'><a href='../S/tests--lib--search--regex_replace_esc_seq.c.html#L45'>skip_len</a>           45 tests/lib/search/regex_replace_esc_seq.c         skip_len, skip,\</span>
+</pre>
+</body>
+</html>

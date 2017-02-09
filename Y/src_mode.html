@@ -1,0 +1,24 @@
+<!DOCTYPE html PUBLIC '-//W3C//DTD XHTML 1.0 Transitional//EN' 'http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd'>
+<html xmlns='http://www.w3.org/1999/xhtml'>
+<head>
+<title>src_mode</title>
+<meta name='robots' content='noindex,nofollow' />
+<meta name='generator' content='GLOBAL-6.5.2' />
+<meta http-equiv='Content-Style-Type' content='text/css' />
+<link rel='stylesheet' type='text/css' href='../style.css' />
+</head>
+<body>
+<pre>
+<span class='curline'><a href='../S/src--filemanager--file.c.html#L1499'>src_mode</a>         1499 src/filemanager/file.c     mode_t src_mode = 0;        /* The mode of the source file */</span>
+<span class='curline'><a href='../S/src--filemanager--file.c.html#L1699'>src_mode</a>         1699 src/filemanager/file.c     src_mode = src_stat.st_mode;</span>
+<span class='curline'><a href='../S/src--filemanager--file.c.html#L1718'>src_mode</a>         1718 src/filemanager/file.c     while ((dest_desc = mc_open (dst_vpath, open_flags, src_mode)) &lt; 0)</span>
+<span class='curline'><a href='../S/src--filemanager--file.c.html#L1847'>src_mode</a>         1847 src/filemanager/file.c                 if ((src_mode &amp; (S_IRWXU | S_IRWXG | S_IRWXO)) == 0)</span>
+<span class='curline'><a href='../S/src--filemanager--file.c.html#L1848'>src_mode</a>         1848 src/filemanager/file.c                     src_mode = S_IRUSR | S_IWUSR | S_IRGRP | S_IROTH;</span>
+<span class='curline'><a href='../S/src--filemanager--file.c.html#L1995'>src_mode</a>         1995 src/filemanager/file.c                 while (mc_chmod (dst_vpath, (src_mode &amp; ctx-&gt;umask_kill)) != 0 &amp;&amp; !ctx-&gt;skip_all)</span>
+<span class='curline'><a href='../S/src--filemanager--file.c.html#L2012'>src_mode</a>         2012 src/filemanager/file.c                 src_mode = umask (-1);</span>
+<span class='curline'><a href='../S/src--filemanager--file.c.html#L2013'>src_mode</a>         2013 src/filemanager/file.c                 umask (src_mode);</span>
+<span class='curline'><a href='../S/src--filemanager--file.c.html#L2014'>src_mode</a>         2014 src/filemanager/file.c                 src_mode = 0100666 &amp; ~src_mode;</span>
+<span class='curline'><a href='../S/src--filemanager--file.c.html#L2015'>src_mode</a>         2015 src/filemanager/file.c                 mc_chmod (dst_vpath, (src_mode &amp; ctx-&gt;umask_kill));</span>
+</pre>
+</body>
+</html>

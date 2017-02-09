@@ -1,0 +1,23 @@
+<!DOCTYPE html PUBLIC '-//W3C//DTD XHTML 1.0 Transitional//EN' 'http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd'>
+<html xmlns='http://www.w3.org/1999/xhtml'>
+<head>
+<title>new_display_codepage</title>
+<meta name='robots' content='noindex,nofollow' />
+<meta name='generator' content='GLOBAL-6.5.2' />
+<meta http-equiv='Content-Style-Type' content='text/css' />
+<link rel='stylesheet' type='text/css' href='../style.css' />
+</head>
+<body>
+<pre>
+<span class='curline'><a href='../S/src--filemanager--boxes.c.html#L108'>new_display_codepage</a>  108 src/filemanager/boxes.c static int new_display_codepage;</span>
+<span class='curline'><a href='../S/src--filemanager--boxes.c.html#L342'>new_display_codepage</a>  342 src/filemanager/boxes.c     new_dcp = select_charset (-1, -1, new_display_codepage, TRUE);</span>
+<span class='curline'><a href='../S/src--filemanager--boxes.c.html#L348'>new_display_codepage</a>  348 src/filemanager/boxes.c         new_display_codepage = new_dcp;</span>
+<span class='curline'><a href='../S/src--filemanager--boxes.c.html#L349'>new_display_codepage</a>  349 src/filemanager/boxes.c         cpname = (new_display_codepage == SELECT_CHARSET_OTHER_8BIT) ?</span>
+<span class='curline'><a href='../S/src--filemanager--boxes.c.html#L351'>new_display_codepage</a>  351 src/filemanager/boxes.c             ((codepage_desc *) g_ptr_array_index (codepages, new_display_codepage))-&gt;name;</span>
+<span class='curline'><a href='../S/src--filemanager--boxes.c.html#L978'>new_display_codepage</a>  978 src/filemanager/boxes.c     new_display_codepage = mc_global.display_codepage;</span>
+<span class='curline'><a href='../S/src--filemanager--boxes.c.html#L980'>new_display_codepage</a>  980 src/filemanager/boxes.c     cpname = (new_display_codepage &lt; 0) ? _("Other 8 bit")</span>
+<span class='curline'><a href='../S/src--filemanager--boxes.c.html#L981'>new_display_codepage</a>  981 src/filemanager/boxes.c         : ((codepage_desc *) g_ptr_array_index (codepages, new_display_codepage))-&gt;name;</span>
+<span class='curline'><a href='../S/src--filemanager--boxes.c.html#L1013'>new_display_codepage</a> 1013 src/filemanager/boxes.c             mc_global.display_codepage = new_display_codepage;</span>
+</pre>
+</body>
+</html>

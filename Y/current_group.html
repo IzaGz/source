@@ -1,0 +1,52 @@
+<!DOCTYPE html PUBLIC '-//W3C//DTD XHTML 1.0 Transitional//EN' 'http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd'>
+<html xmlns='http://www.w3.org/1999/xhtml'>
+<head>
+<title>current_group</title>
+<meta name='robots' content='noindex,nofollow' />
+<meta name='generator' content='GLOBAL-6.5.2' />
+<meta http-equiv='Content-Style-Type' content='text/css' />
+<link rel='stylesheet' type='text/css' href='../style.css' />
+</head>
+<body>
+<pre>
+<span class='curline'><a href='../S/lib--serialize.c.html#L277'>current_group</a>     277 lib/serialize.c     char *current_group = NULL, *current_param = NULL, *current_value = NULL;</span>
+<span class='curline'><a href='../S/lib--serialize.c.html#L291'>current_group</a>     291 lib/serialize.c         if ((current_status == WAIT_GROUP) &amp;&amp; (*data == 'p') &amp;&amp; (current_group != NULL))</span>
+<span class='curline'><a href='../S/lib--serialize.c.html#L297'>current_group</a>     297 lib/serialize.c             g_free (current_group);</span>
+<span class='curline'><a href='../S/lib--serialize.c.html#L299'>current_group</a>     299 lib/serialize.c             current_group = mc_deserialize_str ('g', data, error);</span>
+<span class='curline'><a href='../S/lib--serialize.c.html#L300'>current_group</a>     300 lib/serialize.c             if (current_group == NULL)</span>
+<span class='curline'><a href='../S/lib--serialize.c.html#L303'>current_group</a>     303 lib/serialize.c             data = go_to_end_of_serialized_string (data, current_group, &amp;current_position);</span>
+<span class='curline'><a href='../S/lib--serialize.c.html#L312'>current_group</a>     312 lib/serialize.c                 g_free (current_group);</span>
+<span class='curline'><a href='../S/lib--serialize.c.html#L323'>current_group</a>     323 lib/serialize.c                 g_free (current_group);</span>
+<span class='curline'><a href='../S/lib--serialize.c.html#L327'>current_group</a>     327 lib/serialize.c             mc_config_set_string (ret_data, current_group, current_param, current_value);</span>
+<span class='curline'><a href='../S/lib--serialize.c.html#L337'>current_group</a>     337 lib/serialize.c     g_free (current_group);</span>
+<span class='curline'><a href='../S/src--filemanager--hotlist.c.html#L208'>current_group</a>     208 src/filemanager/hotlist.c static struct hotlist *current_group;</span>
+<span class='curline'><a href='../S/src--filemanager--hotlist.c.html#L259'>current_group</a>     259 src/filemanager/hotlist.c     p = g_strconcat (" ", current_group-&gt;label, " ", (char *) NULL);</span>
+<span class='curline'><a href='../S/src--filemanager--hotlist.c.html#L280'>current_group</a>     280 src/filemanager/hotlist.c     for (current = current_group-&gt;head; current != NULL; current = current-&gt;next)</span>
+<span class='curline'><a href='../S/src--filemanager--hotlist.c.html#L307'>current_group</a>     307 src/filemanager/hotlist.c     struct hotlist *current = current_group-&gt;head;</span>
+<span class='curline'><a href='../S/src--filemanager--hotlist.c.html#L310'>current_group</a>     310 src/filemanager/hotlist.c         current_group-&gt;head = entry-&gt;next;</span>
+<span class='curline'><a href='../S/src--filemanager--hotlist.c.html#L340'>current_group</a>     340 src/filemanager/hotlist.c             struct hotlist *saved = current_group;</span>
+<span class='curline'><a href='../S/src--filemanager--hotlist.c.html#L355'>current_group</a>     355 src/filemanager/hotlist.c             moveto_group = current_group;</span>
+<span class='curline'><a href='../S/src--filemanager--hotlist.c.html#L357'>current_group</a>     357 src/filemanager/hotlist.c             current_group = saved;</span>
+<span class='curline'><a href='../S/src--filemanager--hotlist.c.html#L448'>current_group</a>     448 src/filemanager/hotlist.c                 current_group = hlp;</span>
+<span class='curline'><a href='../S/src--filemanager--hotlist.c.html#L461'>current_group</a>     461 src/filemanager/hotlist.c             current_group = current_group-&gt;up;</span>
+<span class='curline'><a href='../S/src--filemanager--hotlist.c.html#L895'>current_group</a>     895 src/filemanager/hotlist.c     if (current_group == NULL)</span>
+<span class='curline'><a href='../S/src--filemanager--hotlist.c.html#L909'>current_group</a>     909 src/filemanager/hotlist.c     new-&gt;up = current_group;</span>
+<span class='curline'><a href='../S/src--filemanager--hotlist.c.html#L913'>current_group</a>     913 src/filemanager/hotlist.c         current_group = new;</span>
+<span class='curline'><a href='../S/src--filemanager--hotlist.c.html#L915'>current_group</a>     915 src/filemanager/hotlist.c         current_group = new-&gt;up;</span>
+<span class='curline'><a href='../S/src--filemanager--hotlist.c.html#L918'>current_group</a>     918 src/filemanager/hotlist.c     if (current_group-&gt;head == NULL)</span>
+<span class='curline'><a href='../S/src--filemanager--hotlist.c.html#L921'>current_group</a>     921 src/filemanager/hotlist.c         current_group-&gt;head = new;</span>
+<span class='curline'><a href='../S/src--filemanager--hotlist.c.html#L928'>current_group</a>     928 src/filemanager/hotlist.c     else if (pos == LISTBOX_APPEND_BEFORE &amp;&amp; current == current_group-&gt;head)</span>
+<span class='curline'><a href='../S/src--filemanager--hotlist.c.html#L932'>current_group</a>     932 src/filemanager/hotlist.c         current_group-&gt;head = new;</span>
+<span class='curline'><a href='../S/src--filemanager--hotlist.c.html#L936'>current_group</a>     936 src/filemanager/hotlist.c         struct hotlist *p = current_group-&gt;head;</span>
+<span class='curline'><a href='../S/src--filemanager--hotlist.c.html#L946'>current_group</a>     946 src/filemanager/hotlist.c         struct hotlist *p = current_group-&gt;head;</span>
+<span class='curline'><a href='../S/src--filemanager--hotlist.c.html#L1180'>current_group</a>    1180 src/filemanager/hotlist.c     current_group = grp;</span>
+<span class='curline'><a href='../S/src--filemanager--hotlist.c.html#L1301'>current_group</a>    1301 src/filemanager/hotlist.c     current_group = grp;</span>
+<span class='curline'><a href='../S/src--filemanager--hotlist.c.html#L1313'>current_group</a>    1313 src/filemanager/hotlist.c             current_group = grp;</span>
+<span class='curline'><a href='../S/src--filemanager--hotlist.c.html#L1355'>current_group</a>    1355 src/filemanager/hotlist.c     current_group = grp;</span>
+<span class='curline'><a href='../S/src--filemanager--hotlist.c.html#L1367'>current_group</a>    1367 src/filemanager/hotlist.c             current_group = grp;</span>
+<span class='curline'><a href='../S/src--filemanager--hotlist.c.html#L1491'>current_group</a>    1491 src/filemanager/hotlist.c     current_group = hotlist;</span>
+<span class='curline'><a href='../S/src--filemanager--hotlist.c.html#L1562'>current_group</a>    1562 src/filemanager/hotlist.c     if (current_group != hotlist &amp;&amp; hotlist_has_dot_dot)</span>
+<span class='curline'><a href='../S/src--filemanager--hotlist.c.html#L1686'>current_group</a>    1686 src/filemanager/hotlist.c     current_group = NULL;</span>
+</pre>
+</body>
+</html>

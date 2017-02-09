@@ -1,0 +1,34 @@
+<!DOCTYPE html PUBLIC '-//W3C//DTD XHTML 1.0 Transitional//EN' 'http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd'>
+<html xmlns='http://www.w3.org/1999/xhtml'>
+<head>
+<title>search_handle</title>
+<meta name='robots' content='noindex,nofollow' />
+<meta name='generator' content='GLOBAL-6.5.2' />
+<meta http-equiv='Content-Style-Type' content='text/css' />
+<link rel='stylesheet' type='text/css' href='../style.css' />
+</head>
+<body>
+<pre>
+<span class='curline'><a href='../S/src--filemanager--file.c.html#L244'>search_handle</a>     244 src/filemanager/file.c     if (mc_search_run (ctx-&gt;search_handle, fnsource, 0, strlen (fnsource), NULL))</span>
+<span class='curline'><a href='../S/src--filemanager--file.c.html#L246'>search_handle</a>     246 src/filemanager/file.c         q = mc_search_prepare_replace_str2 (ctx-&gt;search_handle, ctx-&gt;dest_mask);</span>
+<span class='curline'><a href='../S/src--filemanager--file.c.html#L247'>search_handle</a>     247 src/filemanager/file.c         if (ctx-&gt;search_handle-&gt;error != MC_SEARCH_E_OK)</span>
+<span class='curline'><a href='../S/src--filemanager--file.c.html#L249'>search_handle</a>     249 src/filemanager/file.c             if (ctx-&gt;search_handle-&gt;error_str != NULL)</span>
+<span class='curline'><a href='../S/src--filemanager--file.c.html#L250'>search_handle</a>     250 src/filemanager/file.c                 message (D_ERROR, MSG_ERROR, "%s", ctx-&gt;search_handle-&gt;error_str);</span>
+<span class='curline'><a href='../S/src--filemanager--file.c.html#L2886'>search_handle</a>    2886 src/filemanager/file.c                     repl_dest = mc_search_prepare_replace_str2 (ctx-&gt;search_handle, dest);</span>
+<span class='curline'><a href='../S/src--filemanager--file.c.html#L2887'>search_handle</a>    2887 src/filemanager/file.c                     if (ctx-&gt;search_handle-&gt;error != MC_SEARCH_E_OK)</span>
+<span class='curline'><a href='../S/src--filemanager--file.c.html#L2889'>search_handle</a>    2889 src/filemanager/file.c                         if (ctx-&gt;search_handle-&gt;error_str != NULL)</span>
+<span class='curline'><a href='../S/src--filemanager--file.c.html#L2890'>search_handle</a>    2890 src/filemanager/file.c                             message (D_ERROR, MSG_ERROR, "%s", ctx-&gt;search_handle-&gt;error_str);</span>
+<span class='curline'><a href='../S/src--filemanager--file.c.html#L2999'>search_handle</a>    2999 src/filemanager/file.c                         repl_dest = mc_search_prepare_replace_str2 (ctx-&gt;search_handle, dest);</span>
+<span class='curline'><a href='../S/src--filemanager--file.c.html#L3000'>search_handle</a>    3000 src/filemanager/file.c                         if (ctx-&gt;search_handle-&gt;error != MC_SEARCH_E_OK)</span>
+<span class='curline'><a href='../S/src--filemanager--file.c.html#L3002'>search_handle</a>    3002 src/filemanager/file.c                             if (ctx-&gt;search_handle-&gt;error_str != NULL)</span>
+<span class='curline'><a href='../S/src--filemanager--file.c.html#L3003'>search_handle</a>    3003 src/filemanager/file.c                                 message (D_ERROR, MSG_ERROR, "%s", ctx-&gt;search_handle-&gt;error_str);</span>
+<span class='curline'><a href='../S/src--filemanager--filegui.c.html#L1304'>search_handle</a>    1304 src/filemanager/filegui.c         ctx-&gt;search_handle = mc_search_new (source_mask, NULL);</span>
+<span class='curline'><a href='../S/src--filemanager--filegui.c.html#L1306'>search_handle</a>    1306 src/filemanager/filegui.c         if (ctx-&gt;search_handle == NULL)</span>
+<span class='curline'><a href='../S/src--filemanager--filegui.c.html#L1317'>search_handle</a>    1317 src/filemanager/filegui.c         ctx-&gt;search_handle-&gt;is_case_sensitive = TRUE;</span>
+<span class='curline'><a href='../S/src--filemanager--filegui.c.html#L1319'>search_handle</a>    1319 src/filemanager/filegui.c             ctx-&gt;search_handle-&gt;search_type = MC_SEARCH_T_GLOB;</span>
+<span class='curline'><a href='../S/src--filemanager--filegui.c.html#L1321'>search_handle</a>    1321 src/filemanager/filegui.c             ctx-&gt;search_handle-&gt;search_type = MC_SEARCH_T_REGEX;</span>
+<span class='curline'><a href='../S/src--filemanager--fileopctx.c.html#L104'>search_handle</a>     104 src/filemanager/fileopctx.c         mc_search_free (ctx-&gt;search_handle);</span>
+<span class='curline'><a href='../S/src--filemanager--fileopctx.h.html#L138'>search_handle</a>     138 src/filemanager/fileopctx.h     struct mc_search_struct *search_handle;</span>
+</pre>
+</body>
+</html>

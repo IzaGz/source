@@ -1,0 +1,50 @@
+<!DOCTYPE html PUBLIC '-//W3C//DTD XHTML 1.0 Transitional//EN' 'http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd'>
+<html xmlns='http://www.w3.org/1999/xhtml'>
+<head>
+<title>verrno</title>
+<meta name='robots' content='noindex,nofollow' />
+<meta name='generator' content='GLOBAL-6.5.2' />
+<meta http-equiv='Content-Style-Type' content='text/css' />
+<link rel='stylesheet' type='text/css' href='../style.css' />
+</head>
+<body>
+<pre>
+<span class='curline'><a href='../S/lib--vfs--direntry.c.html#L220'>verrno</a>            220 lib/vfs/direntry.c             me-&gt;verrno = ENOENT;</span>
+<span class='curline'><a href='../S/lib--vfs--direntry.c.html#L413'>verrno</a>            413 lib/vfs/direntry.c         path_element-&gt;class-&gt;verrno = ENOTDIR;</span>
+<span class='curline'><a href='../S/lib--vfs--direntry.c.html#L421'>verrno</a>            421 lib/vfs/direntry.c         path_element-&gt;class-&gt;verrno = EAGAIN;</span>
+<span class='curline'><a href='../S/lib--vfs--direntry.c.html#L514'>verrno</a>            514 lib/vfs/direntry.c         path_element-&gt;class-&gt;verrno = EINVAL;</span>
+<span class='curline'><a href='../S/lib--vfs--direntry.c.html#L520'>verrno</a>            520 lib/vfs/direntry.c         path_element-&gt;class-&gt;verrno = EFAULT;</span>
+<span class='curline'><a href='../S/lib--vfs--direntry.c.html#L557'>verrno</a>            557 lib/vfs/direntry.c             me-&gt;verrno = errno;</span>
+<span class='curline'><a href='../S/lib--vfs--direntry.c.html#L581'>verrno</a>            581 lib/vfs/direntry.c             me-&gt;verrno = errno;</span>
+<span class='curline'><a href='../S/lib--vfs--direntry.c.html#L602'>verrno</a>            602 lib/vfs/direntry.c             FH-&gt;ino-&gt;super-&gt;me-&gt;verrno = errno;</span>
+<span class='curline'><a href='../S/lib--vfs--direntry.c.html#L706'>verrno</a>            706 lib/vfs/direntry.c     return me-&gt;verrno;</span>
+<span class='curline'><a href='../S/lib--vfs--direntry.c.html#L1136'>verrno</a>           1136 lib/vfs/direntry.c         path_element-&gt;class-&gt;verrno = EIO;</span>
+<span class='curline'><a href='../S/lib--vfs--direntry.c.html#L1156'>verrno</a>           1156 lib/vfs/direntry.c         path_element-&gt;class-&gt;verrno = EIO;</span>
+<span class='curline'><a href='../S/lib--vfs--direntry.c.html#L1237'>verrno</a>           1237 lib/vfs/direntry.c         path_element-&gt;class-&gt;verrno = EEXIST;</span>
+<span class='curline'><a href='../S/lib--vfs--direntry.c.html#L1286'>verrno</a>           1286 lib/vfs/direntry.c         path_element-&gt;class-&gt;verrno = EISDIR;</span>
+<span class='curline'><a href='../S/lib--vfs--direntry.c.html#L1326'>verrno</a>           1326 lib/vfs/direntry.c             path_element-&gt;class-&gt;verrno = errno;</span>
+<span class='curline'><a href='../S/lib--vfs--direntry.c.html#L1390'>verrno</a>           1390 lib/vfs/direntry.c         me-&gt;verrno = errno;</span>
+<span class='curline'><a href='../S/lib--vfs--direntry.c.html#L1417'>verrno</a>           1417 lib/vfs/direntry.c                 me-&gt;verrno = errno;</span>
+<span class='curline'><a href='../S/lib--vfs--vfs.h.html#L145'>verrno</a>            145 lib/vfs/vfs.h      int verrno;                 /* can't use errno because glibc2 might define errno as function */</span>
+<span class='curline'><a href='../S/lib--vfs--xdirentry.h.html#L35'>verrno</a>             35 lib/vfs/xdirentry.h #define ERRNOR(a, b) do { me-&gt;verrno = a; return b; } while (0)</span>
+<span class='curline'><a href='../S/src--vfs--extfs--extfs.c.html#L702'>verrno</a>            702 src/vfs/extfs/extfs.c         path_element-&gt;class-&gt;verrno = EIO;</span>
+<span class='curline'><a href='../S/src--vfs--extfs--extfs.c.html#L1181'>verrno</a>           1181 src/vfs/extfs/extfs.c         path_element-&gt;class-&gt;verrno = EINVAL;</span>
+<span class='curline'><a href='../S/src--vfs--extfs--extfs.c.html#L1250'>verrno</a>           1250 src/vfs/extfs/extfs.c         path_element-&gt;class-&gt;verrno = EISDIR;</span>
+<span class='curline'><a href='../S/src--vfs--extfs--extfs.c.html#L1284'>verrno</a>           1284 src/vfs/extfs/extfs.c         path_element-&gt;class-&gt;verrno = EEXIST;</span>
+<span class='curline'><a href='../S/src--vfs--extfs--extfs.c.html#L1295'>verrno</a>           1295 src/vfs/extfs/extfs.c         path_element-&gt;class-&gt;verrno = ENOTDIR;</span>
+<span class='curline'><a href='../S/src--vfs--extfs--extfs.c.html#L1334'>verrno</a>           1334 src/vfs/extfs/extfs.c         path_element-&gt;class-&gt;verrno = ENOTDIR;</span>
+<span class='curline'><a href='../S/src--vfs--fish--fish.c.html#L712'>verrno</a>            712 src/vfs/fish/fish.c             me-&gt;verrno = ECONNRESET;</span>
+<span class='curline'><a href='../S/src--vfs--fish--fish.c.html#L874'>verrno</a>            874 src/vfs/fish/fish.c     me-&gt;verrno = reply_code == ERROR ? EACCES : E_REMOTE;</span>
+<span class='curline'><a href='../S/src--vfs--fish--fish.c.html#L986'>verrno</a>            986 src/vfs/fish/fish.c                 me-&gt;verrno = errno;</span>
+<span class='curline'><a href='../S/src--vfs--fish--fish.c.html#L988'>verrno</a>            988 src/vfs/fish/fish.c                 me-&gt;verrno = EIO;</span>
+<span class='curline'><a href='../S/src--vfs--fish--fish.c.html#L1564'>verrno</a>           1564 src/vfs/fish/fish.c         path_element-&gt;class-&gt;verrno = EACCES;</span>
+<span class='curline'><a href='../S/src--vfs--ftpfs--ftpfs.c.html#L1757'>verrno</a>           1757 src/vfs/ftpfs/ftpfs.c             me-&gt;verrno = ECONNRESET;</span>
+<span class='curline'><a href='../S/src--vfs--ftpfs--ftpfs.c.html#L1789'>verrno</a>           1789 src/vfs/ftpfs/ftpfs.c     me-&gt;verrno = E_REMOTE;</span>
+<span class='curline'><a href='../S/src--vfs--ftpfs--ftpfs.c.html#L2038'>verrno</a>           2038 src/vfs/ftpfs/ftpfs.c         path_element-&gt;class-&gt;verrno = EPERM;</span>
+<span class='curline'><a href='../S/src--vfs--sftpfs--vfs_class.c.html#L115'>verrno</a>            115 src/vfs/sftpfs/vfs_class.c         path_element-&gt;class-&gt;verrno = EEXIST;</span>
+<span class='curline'><a href='../S/src--vfs--sftpfs--vfs_class.c.html#L144'>verrno</a>            144 src/vfs/sftpfs/vfs_class.c         path_element-&gt;class-&gt;verrno = EISDIR;</span>
+<span class='curline'><a href='../S/src--vfs--sftpfs--vfs_subclass.c.html#L102'>verrno</a>            102 src/vfs/sftpfs/vfs_subclass.c         vpath_element-&gt;class-&gt;verrno = EPERM;</span>
+<span class='curline'><a href='../S/src--vfs--sftpfs--vfs_subclass.c.html#L115'>verrno</a>            115 src/vfs/sftpfs/vfs_subclass.c         vpath_element-&gt;class-&gt;verrno = ret_value;</span>
+</pre>
+</body>
+</html>

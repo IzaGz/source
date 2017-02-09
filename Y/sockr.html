@@ -1,0 +1,30 @@
+<!DOCTYPE html PUBLIC '-//W3C//DTD XHTML 1.0 Transitional//EN' 'http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd'>
+<html xmlns='http://www.w3.org/1999/xhtml'>
+<head>
+<title>sockr</title>
+<meta name='robots' content='noindex,nofollow' />
+<meta name='generator' content='GLOBAL-6.5.2' />
+<meta http-equiv='Content-Style-Type' content='text/css' />
+<link rel='stylesheet' type='text/css' href='../style.css' />
+</head>
+<body>
+<pre>
+<span class='curline'><a href='../S/src--vfs--fish--fish.c.html#L126'>sockr</a>             126 src/vfs/fish/fish.c     int sockr;</span>
+<span class='curline'><a href='../S/src--vfs--fish--fish.c.html#L295'>sockr</a>             295 src/vfs/fish/fish.c         return fish_get_reply (me, SUP-&gt;sockr,</span>
+<span class='curline'><a href='../S/src--vfs--fish--fish.c.html#L306'>sockr</a>             306 src/vfs/fish/fish.c     if ((SUP-&gt;sockw != -1) || (SUP-&gt;sockr != -1))</span>
+<span class='curline'><a href='../S/src--vfs--fish--fish.c.html#L311'>sockr</a>             311 src/vfs/fish/fish.c         close (SUP-&gt;sockr);</span>
+<span class='curline'><a href='../S/src--vfs--fish--fish.c.html#L312'>sockr</a>             312 src/vfs/fish/fish.c         SUP-&gt;sockw = SUP-&gt;sockr = -1;</span>
+<span class='curline'><a href='../S/src--vfs--fish--fish.c.html#L355'>sockr</a>             355 src/vfs/fish/fish.c         SUP-&gt;sockr = fileset2[0];</span>
+<span class='curline'><a href='../S/src--vfs--fish--fish.c.html#L419'>sockr</a>             419 src/vfs/fish/fish.c             res = vfs_s_get_line_interruptible (me, buffer, sizeof (buffer), SUP-&gt;sockr);</span>
+<span class='curline'><a href='../S/src--vfs--fish--fish.c.html#L486'>sockr</a>             486 src/vfs/fish/fish.c     if (vfs_s_get_line (me, SUP-&gt;sockr, answer, sizeof (answer), ':') == 0)</span>
+<span class='curline'><a href='../S/src--vfs--fish--fish.c.html#L707'>sockr</a>             707 src/vfs/fish/fish.c         res = vfs_s_get_line_interruptible (me, buffer, sizeof (buffer), SUP-&gt;sockr);</span>
+<span class='curline'><a href='../S/src--vfs--fish--fish.c.html#L998'>sockr</a>             998 src/vfs/fish/fish.c     if (fish_get_reply (me, SUP-&gt;sockr, NULL, 0) != COMPLETE)</span>
+<span class='curline'><a href='../S/src--vfs--fish--fish.c.html#L1004'>sockr</a>            1004 src/vfs/fish/fish.c     fish_get_reply (me, SUP-&gt;sockr, NULL, 0);</span>
+<span class='curline'><a href='../S/src--vfs--fish--fish.c.html#L1076'>sockr</a>            1076 src/vfs/fish/fish.c             n = read (SUP-&gt;sockr, buffer, n);</span>
+<span class='curline'><a href='../S/src--vfs--fish--fish.c.html#L1084'>sockr</a>            1084 src/vfs/fish/fish.c     if (fish_get_reply (me, SUP-&gt;sockr, NULL, 0) != COMPLETE)</span>
+<span class='curline'><a href='../S/src--vfs--fish--fish.c.html#L1101'>sockr</a>            1101 src/vfs/fish/fish.c     while (len != 0 &amp;&amp; ((n = read (SUP-&gt;sockr, buf, len)) &lt; 0))</span>
+<span class='curline'><a href='../S/src--vfs--fish--fish.c.html#L1113'>sockr</a>            1113 src/vfs/fish/fish.c     else if (fish_get_reply (me, SUP-&gt;sockr, NULL, 0) != COMPLETE)</span>
+<span class='curline'><a href='../S/src--vfs--fish--fish.c.html#L1152'>sockr</a>            1152 src/vfs/fish/fish.c             v = vfs_s_select_on_two (FH_SUPER-&gt;u.fish.sockr, 0);</span>
+</pre>
+</body>
+</html>

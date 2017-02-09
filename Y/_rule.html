@@ -1,0 +1,52 @@
+<!DOCTYPE html PUBLIC '-//W3C//DTD XHTML 1.0 Transitional//EN' 'http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd'>
+<html xmlns='http://www.w3.org/1999/xhtml'>
+<head>
+<title>_rule</title>
+<meta name='robots' content='noindex,nofollow' />
+<meta name='generator' content='GLOBAL-6.5.2' />
+<meta http-equiv='Content-Style-Type' content='text/css' />
+<link rel='stylesheet' type='text/css' href='../style.css' />
+</head>
+<body>
+<pre>
+<span class='curline'><a href='../S/src--editor--syntax.c.html#L375'>_rule</a>             375 src/editor/syntax.c     edit_syntax_rule_t _rule = edit-&gt;rule;</span>
+<span class='curline'><a href='../S/src--editor--syntax.c.html#L384'>_rule</a>             384 src/editor/syntax.c     if (_rule.keyword != 0)</span>
+<span class='curline'><a href='../S/src--editor--syntax.c.html#L387'>_rule</a>             387 src/editor/syntax.c             _rule.keyword = 0;</span>
+<span class='curline'><a href='../S/src--editor--syntax.c.html#L390'>_rule</a>             390 src/editor/syntax.c             _rule.keyword = 0;</span>
+<span class='curline'><a href='../S/src--editor--syntax.c.html#L396'>_rule</a>             396 src/editor/syntax.c     if (_rule.context != 0 &amp;&amp; _rule.keyword == 0)</span>
+<span class='curline'><a href='../S/src--editor--syntax.c.html#L400'>_rule</a>             400 src/editor/syntax.c         r = CONTEXT_RULE (g_ptr_array_index (edit-&gt;rules, _rule.context));</span>
+<span class='curline'><a href='../S/src--editor--syntax.c.html#L406'>_rule</a>             406 src/editor/syntax.c             _rule.end = e;</span>
+<span class='curline'><a href='../S/src--editor--syntax.c.html#L408'>_rule</a>             408 src/editor/syntax.c             _rule.border = RULE_ON_RIGHT_BORDER;</span>
+<span class='curline'><a href='../S/src--editor--syntax.c.html#L410'>_rule</a>             410 src/editor/syntax.c                 _rule.context = 0;</span>
+<span class='curline'><a href='../S/src--editor--syntax.c.html#L416'>_rule</a>             416 src/editor/syntax.c             _rule.border = 0;</span>
+<span class='curline'><a href='../S/src--editor--syntax.c.html#L418'>_rule</a>             418 src/editor/syntax.c                 _rule.context = 0;</span>
+<span class='curline'><a href='../S/src--editor--syntax.c.html#L424'>_rule</a>             424 src/editor/syntax.c             _rule.border = 0;</span>
+<span class='curline'><a href='../S/src--editor--syntax.c.html#L429'>_rule</a>             429 src/editor/syntax.c     if (_rule.keyword == 0)</span>
+<span class='curline'><a href='../S/src--editor--syntax.c.html#L433'>_rule</a>             433 src/editor/syntax.c         r = CONTEXT_RULE (g_ptr_array_index (edit-&gt;rules, _rule.context));</span>
+<span class='curline'><a href='../S/src--editor--syntax.c.html#L450'>_rule</a>             450 src/editor/syntax.c                     _rule.end = e;</span>
+<span class='curline'><a href='../S/src--editor--syntax.c.html#L451'>_rule</a>             451 src/editor/syntax.c                     _rule.keyword = count;</span>
+<span class='curline'><a href='../S/src--editor--syntax.c.html#L459'>_rule</a>             459 src/editor/syntax.c     if (_rule.context == 0)</span>
+<span class='curline'><a href='../S/src--editor--syntax.c.html#L465'>_rule</a>             465 src/editor/syntax.c                 _rule.border = 0;</span>
+<span class='curline'><a href='../S/src--editor--syntax.c.html#L466'>_rule</a>             466 src/editor/syntax.c                 _rule.context = 0;</span>
+<span class='curline'><a href='../S/src--editor--syntax.c.html#L468'>_rule</a>             468 src/editor/syntax.c                 _rule.keyword = 0;</span>
+<span class='curline'><a href='../S/src--editor--syntax.c.html#L473'>_rule</a>             473 src/editor/syntax.c                 r = CONTEXT_RULE (g_ptr_array_index (edit-&gt;rules, _rule._context));</span>
+<span class='curline'><a href='../S/src--editor--syntax.c.html#L474'>_rule</a>             474 src/editor/syntax.c                 _rule.border = 0;</span>
+<span class='curline'><a href='../S/src--editor--syntax.c.html#L477'>_rule</a>             477 src/editor/syntax.c                     _rule.context = _rule._context;</span>
+<span class='curline'><a href='../S/src--editor--syntax.c.html#L479'>_rule</a>             479 src/editor/syntax.c                     _rule.keyword = 0;</span>
+<span class='curline'><a href='../S/src--editor--syntax.c.html#L489'>_rule</a>             489 src/editor/syntax.c                             _rule.end = e;</span>
+<span class='curline'><a href='../S/src--editor--syntax.c.html#L491'>_rule</a>             491 src/editor/syntax.c                             _rule.border = RULE_ON_RIGHT_BORDER;</span>
+<span class='curline'><a href='../S/src--editor--syntax.c.html#L492'>_rule</a>             492 src/editor/syntax.c                             _rule.context = 0;</span>
+<span class='curline'><a href='../S/src--editor--syntax.c.html#L512'>_rule</a>             512 src/editor/syntax.c                     if (e &gt;= end &amp;&amp; (_rule.keyword == 0 || keyword_foundright))</span>
+<span class='curline'><a href='../S/src--editor--syntax.c.html#L514'>_rule</a>             514 src/editor/syntax.c                         _rule.end = e;</span>
+<span class='curline'><a href='../S/src--editor--syntax.c.html#L516'>_rule</a>             516 src/editor/syntax.c                         _rule.border = RULE_ON_LEFT_BORDER;</span>
+<span class='curline'><a href='../S/src--editor--syntax.c.html#L517'>_rule</a>             517 src/editor/syntax.c                         _rule._context = count;</span>
+<span class='curline'><a href='../S/src--editor--syntax.c.html#L518'>_rule</a>             518 src/editor/syntax.c                         if (!r-&gt;between_delimiters &amp;&amp; _rule.keyword == 0)</span>
+<span class='curline'><a href='../S/src--editor--syntax.c.html#L520'>_rule</a>             520 src/editor/syntax.c                             _rule.context = count;</span>
+<span class='curline'><a href='../S/src--editor--syntax.c.html#L531'>_rule</a>             531 src/editor/syntax.c     if (contextchanged &amp;&amp; _rule.keyword == 0)</span>
+<span class='curline'><a href='../S/src--editor--syntax.c.html#L535'>_rule</a>             535 src/editor/syntax.c         r = CONTEXT_RULE (g_ptr_array_index (edit-&gt;rules, _rule.context));</span>
+<span class='curline'><a href='../S/src--editor--syntax.c.html#L550'>_rule</a>             550 src/editor/syntax.c                 _rule.end = e;</span>
+<span class='curline'><a href='../S/src--editor--syntax.c.html#L551'>_rule</a>             551 src/editor/syntax.c                 _rule.keyword = count;</span>
+<span class='curline'><a href='../S/src--editor--syntax.c.html#L557'>_rule</a>             557 src/editor/syntax.c     edit-&gt;rule = _rule;</span>
+</pre>
+</body>
+</html>
